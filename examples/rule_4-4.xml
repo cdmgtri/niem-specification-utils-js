@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div class="rule-section">
+  <div class="heading">
+    <a name="req-ct"></a>
+    <a name="rule_4-4"></a>
+    Rule 4-4. Document element has attribute <code>ct:conformanceTargets</code></div>
+  <div class="box">
+    <div class="normativeHead">[Rule 4-4] (REF, EXT) (Constraint)</div>
+    <pre>
+      <sch:pattern>
+        <sch:rule context="*[. is nf:get-document-element(.)
+                            or exists(@ct:conformanceTargets)]">
+          <sch:assert test="(. is nf:get-document-element(.)) = exists(@ct:conformanceTargets)"
+            >The [document element] of the XML document, and only the [document element], MUST own an attribute {http://release.niem.gov/niem/conformanceTargets/3.0/}conformanceTargets.</sch:assert>
+        </sch:rule>
+      </sch:pattern>
+    </pre>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div class="section">
+  <div class="heading">
+    <a name="section_4.1.3"></a>
+    4.1.3. Schema document set
+  </div>
+  <p>A <a name="d3e1864"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_conformant_schema_document_set"><span
+        class="termRef">conformant schema document set</span></a> is a set of schema documents that are capable of
+    validating XML documents.</p>
+  <div class="box">
+    <div class="normativeHead"><a name="definition_conformant_schema_document_set"></a>[Definition: <dfn>conformant
+        schema document set</dfn>]</div>
+    <div class="sub">
+      <p>A <strong>conformant schema document set</strong> is a collection of <a name="d3e1875"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_schema_document"><span
+            class="termRef">schema documents</span></a> that together are capable of <a name="d3e1878"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_valid"><span
+            class="termRef">validating</span></a> a <a name="d3e1881"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_conformant_instance_XML_document"><span
+            class="termRef">conformant instance XML document</span></a>. It is a <a name="d3e1884"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_conformance_target"><span
+            class="termRef">conformance target</span></a> of this specification. A conformant schema document set MUST
+        conform to all rules of this specification that apply to this conformance target.</p>
+    </div>
+  </div>
+</div>

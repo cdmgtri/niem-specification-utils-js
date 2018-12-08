@@ -1,0 +1,34 @@
+{
+  "name": "niem-specification-utils-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node index.js",
+    "build:debug": "cross-env DEBUG=niem node index.js",
+    "convert:yaml": "yaml2json -p -s schemas",
+    "deref": "npm-run-all deref:*",
+    "deref:exec": "json-dereference -s schemas/niem-rule-schema.yaml -o schemas/niem-rule-schema-deref.json",
+    "deref:beautify": "js-beautify schemas/niem-rule-schema-deref.json -o schemas/niem-rule-schema-deref.json\"",
+    "jsdocs": "npm run deref && node schemas/build-jsdocs.js",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "cross-env": "^5.2.0",
+    "debug": "^4.1.0",
+    "fs-extra": "^7.0.1",
+    "js-beautify": "^1.8.9",
+    "json-dereference-cli": "^0.1.2",
+    "json-schema-to-jsdoc": "github:n3ps/json-schema-to-jsdoc",
+    "npm-run-all": "^4.1.5",
+    "yamljs": "^0.3.0"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.2",
+    "jest": "^23.6.0"
+  }
+}

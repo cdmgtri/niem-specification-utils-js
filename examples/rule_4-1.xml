@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div class="rule-section">
+  <div class="heading">
+  	<a name="rule_4-1"></a>
+  	Rule 4-1. Schema marked as reference schema document must conform
+  </div>
+  <div class="box">
+    <div class="normativeHead">[Rule 4-1] (SET) (Constraint)</div>
+    <p>
+    	Any <a name="d3e1914"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_schema_document"><span
+          class="termRef">schema document</span></a> with an <a name="d3e1917"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_effective_conformance_target_identifier"><span
+          class="termRef">effective conformance target identifier</span></a> of <code>http://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/#ReferenceSchemaDocument</code>
+      MUST be a <a name="d3e1923"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_reference_schema_document"><span
+          class="termRef">reference schema document</span></a>.
+    </p>
+  </div>
+</div>

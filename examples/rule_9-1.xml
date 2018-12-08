@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div class="rule-section">
+	<div class="heading">
+		<a name="rule-base-type-not-xml-ns">
+		</a>
+		<a name="rule_9-1">
+		</a>
+		Rule 9-1. No base type in the XML namespace
+	</div>
+	<p>
+		Although the XML namespace is to be imported as if it is conformant, types from that namespace may not be the <a name="d3e5424">
+		</a>
+		<a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_base_type_definition">
+			<span class="termRef">base type definition</span>
+		</a> of any type.
+	</p>
+	<div class="box">
+		<div class="normativeHead">[Rule 9-1] (REF, EXT) (Constraint)</div>
+		<pre>
+			<sch:pattern>
+  			<sch:rule context="xs:*[exists(@base)]">
+    			<sch:assert test="namespace-uri-from-QName(resolve-QName(@base, .)) != xs:anyURI('http://www.w3.org/XML/1998/namespace')"
+              >A schema component must not have a base type definition with a {target namespace} that is the XML namespace.</sch:assert>
+			  </sch:rule>
+			</sch:pattern>
+		</pre>
+	</div>
+	
+	<p>
+		The term <a name="d3e5446">
+		</a>
+		<a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_base_type_definition">
+			<span class="termRef">base type definition</span>
+		</a> has a normative definition.
+	</p>
+</div>
+
+

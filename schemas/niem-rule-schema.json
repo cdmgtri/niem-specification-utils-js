@@ -1,0 +1,137 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "properties": {
+    "NIEMRule": {
+      "type": "object",
+      "properties": {
+        "specification": {
+          "$ref": "#/definitions/SpecificationType"
+        },
+        "section": {
+          "$ref": "#/definitions/SectionType"
+        },
+        "id": {
+          "type": "string",
+          "example": "rule_9-1"
+        },
+        "name": {
+          "type": "string",
+          "example": "rule-base-type-not-xml-ns"
+        },
+        "number": {
+          "type": "string",
+          "example": "9-1"
+        },
+        "title": {
+          "type": "string",
+          "example": "No base type in the XML namespace"
+        },
+        "link": {
+          "type": "string",
+          "example": "https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#rule_9-1"
+        },
+        "applicability": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "example": [
+            "REF",
+            "EXT"
+          ]
+        },
+        "classification": {
+          "type": "string",
+          "enum": [
+            "Constraint",
+            "Interpretation"
+          ],
+          "example": "Constraint"
+        },
+        "style": {
+          "type": "string",
+          "enum": [
+            "text",
+            "schematron"
+          ],
+          "example": "text"
+        },
+        "pre": {
+          "type": "string",
+          "description": "Descriptive text that precedes a rule"
+        },
+        "text": {
+          "type": "string",
+          "description": "The descriptive text portion of a rule"
+        },
+        "post": {
+          "type": "string",
+          "description": "Descriptive text that follows a rule"
+        },
+        "schematron": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "definitions": {
+    "SpecificationType": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "example": "Naming and Design Rules"
+        },
+        "id": {
+          "type": "string",
+          "example": "NDR"
+        },
+        "version": {
+          "type": "string",
+          "example": "NDR-4.0"
+        },
+        "versionLabel": {
+          "type": "string",
+          "example": "4.0"
+        },
+        "current": {
+          "type": "boolean",
+          "default": false
+        },
+        "niem": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "example": [
+            "4.0",
+            "4.1",
+            "4.2"
+          ]
+        },
+        "link": {
+          "type": "string",
+          "format": "uri",
+          "example": "https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html"
+        }
+      }
+    },
+    "SectionType": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "example": "section_9.1.1.1"
+        },
+        "name": {
+          "type": "string",
+          "example": "9.1.1.1"
+        },
+        "link": {
+          "type": "string",
+          "example": "https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#section_9.1.1.1"
+        }
+      }
+    }
+  }
+}

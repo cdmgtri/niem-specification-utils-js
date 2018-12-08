@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div class="section">
+  <div class="heading">
+    <a name="SectionNIEMConformanceTargets"></a>
+    <a name="section_4"></a>
+    4. Conformance targets
+  </div>
+  <div class="section">
+    <div class="heading">
+      <a name="SectionConformanceTargetsDefined"></a>
+      <a name="section_4.1"></a>
+      4.1. Conformance
+      targets defined
+    </div>
+    <p>This section defines and describes conformance targets of this specification. Each conformance target has a
+      formal definition, along with a notional description of the characteristics and intent of each. These include:</p>
+    <ul>
+      <li><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#section_4.1.1">Section
+          4.1.1, <em>Reference schema document</em></a></li>
+      <li><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#section_4.1.2">Section
+          4.1.2, <em>Extension schema document</em></a></li>
+      <li><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#section_4.1.3">Section
+          4.1.3, <em>Schema document set</em></a></li>
+      <li><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#section_4.1.4">Section
+          4.1.4, <em>Instance documents and elements</em></a></li>
+    </ul>
+    <div class="section">
+      <div class="heading"><a name="section_4.1.1"></a>4.1.1. Reference schema document</div>
+      <div class="box">
+        <div class="normativeHead"><a name="definition_reference_schema_document"></a>[Definition: <dfn>reference
+            schema document</dfn>]</div>
+        <div class="sub">
+          <p>A <strong>reference schema document</strong> is a <a name="d3e1688"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_schema_document"><span
+                class="termRef">schema document</span></a> that is intended to provide the authoritative definitions of
+            broadly reusable <a name="d3e1691"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_schema_component"><span
+                class="termRef">schema components</span></a>. It is a <a name="d3e1694"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_conformance_target"><span
+                class="termRef">conformance target</span></a> of this specification. A reference schema document MUST
+            conform to all rules of this specification that apply to this conformance target. An <a name="d3e1697"></a><a
+              href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_XML_document"><span
+                class="termRef">XML document</span></a> with a <a name="d3e1701"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_conformance_target_identifier"><span
+                class="termRef">conformance target identifier</span></a> of <code>http://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/#ReferenceSchemaDocument</code>
+            MUST be a conformant reference schema document.</p>
+        </div>
+      </div>
+      <p>A <a name="d3e1711"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_reference_schema_document"><span
+            class="termRef">reference schema document</span></a> is a <a name="d3e1714"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_schema_document"><span
+            class="termRef">schema document</span></a> that is intended to be the authoritative definition schema for a
+        namespace. Examples include NIEM Core and NIEM domains.</p>
+      <p>Some characteristics of a <a name="d3e1720"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_reference_schema_document"><span
+            class="termRef">reference schema document</span></a>:</p>
+      <ul>
+        <li>It is explicitly designated as a reference schema via the conformance targets attribute, per <a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#rule_4-5">Rule
+            4-5, <em>Schema claims reference schema conformance target</em> (REF), below</a>.</li>
+        <li>It provides the broadest, most fundamental definitions of components in its namespace.</li>
+        <li>It provides the authoritative definition of business semantics for components in its namespace.</li>
+        <li>It is intended to serve as the basis for components in information exchanges and extension schema
+          documents.</li>
+        <li>It satisfies all rules specified in the Naming and Design Rules for reference schemas.</li>
+      </ul>
+      <p>Any schema that defines components that are intended to be incorporated into NIEM Core or a NIEM domain will
+        be defined as a reference schema.</p>
+      <p>The rules for reference schema documents are more stringent than are the rules for other classes of
+        NIEM-conformant schemas. Reference schema documents are intended to support the broadest reuse. They are very
+        uniform in their structure. As they are the primary definitions for schema components, they do not need to
+        restrict other data definitions, and they are not allowed to use XML Schema’s restriction mechanism (e.g., <a
+          href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#rule_9-30">Rule
+          9-30, <em>Complex content uses extension</em> (REF), below</a>). Reference schema documents are intended to
+        be as regular and simple as possible.</p>
+    </div>
+    <div class="section">
+      <div class="heading"><a name="section_4.1.2"></a>4.1.2. Extension schema document</div>
+      <div class="box">
+        <div class="normativeHead"><a name="definition_extension_schema_document"></a>[Definition: <dfn>extension
+            schema document</dfn>]</div>
+        <div class="sub">
+          <p>An <strong>extension schema document</strong> is a <a name="d3e1772"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_schema_document"><span
+                class="termRef">schema document</span></a> that is intended to provide definitions of <a name="d3e1775"></a><a
+              href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_schema_component"><span
+                class="termRef">schema components</span></a> that are intended for reuse within a more narrow scope
+            than those defined by a <a name="d3e1778"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_reference_schema_document"><span
+                class="termRef">reference schema document</span></a>. It is a <a name="d3e1781"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_conformance_target"><span
+                class="termRef">conformance target</span></a> of this specification. An extension schema document MUST
+            conform to all rules of this specification that apply to this conformance target. An XML document with a <a
+              name="d3e1785"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_conformance_target_identifier"><span
+                class="termRef">conformance target identifier</span></a> of <code>http://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/#ExtensionSchemaDocument</code>
+            MUST be an extension schema document.</p>
+        </div>
+      </div>
+      <p>Characteristics of an <a name="d3e1795"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_extension_schema_document"><span
+            class="termRef">extension schema document</span></a> include:</p>
+      <ul>
+        <li>It is explicitly designated as an <a name="d3e1804"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_extension_schema_document"><span
+              class="termRef">extension schema document</span></a> via the conformance targets attribute.</li>
+        <li>It provides the authoritative definition of business semantics for components in its namespace.</li>
+        <li>It contains components that, when appropriate, use or are derived from the components in <a name="d3e1815"></a><a
+            href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_reference_schema_document"><span
+              class="termRef">reference schema documents</span></a>.</li>
+        <li>It is intended to express the additional vocabulary required for an information exchange, above and beyond
+          the vocabulary available from reference schemas, and to also support additional XML Schema validation
+          requirements for an exchange.</li>
+        <li>It satisfies all rules specified in this document for <a name="d3e1826"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_extension_schema_document"><span
+              class="termRef">extension schema documents</span></a>.</li>
+      </ul>
+      <p>An extension schema in an information exchange specification serves several functions. First, it defines new
+        content within a new namespace, which may be an exchange-specific namespace or a namespace shared by several
+        exchanges. This content is NIEM-conformant but has fewer restrictions on it than do <a name="d3e1833"></a><a
+          href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_reference_schema_document"><span
+            class="termRef">reference schema documents</span></a>. Second, the <a name="d3e1836"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_extension_schema_document"><span
+            class="termRef">extension schema document</span></a> bases its content on content from <a name="d3e1839"></a><a
+          href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_reference_schema_document"><span
+            class="termRef">reference schema documents</span></a>, where appropriate. Methods of deriving content
+        include using (by reference) existing <a name="d3e1842"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_schema_component"><span
+            class="termRef">schema components</span></a>, as well as creating extensions and restrictions of existing
+        components.</p>
+      <p>For example, an information exchange specification may define a type for an exchange-specific phone number and
+        base that type on a type defined by the NIEM Core reference schema document. This exchange-specific phone
+        number type may restrict the NIEM Core type to limit those possibilities that are permitted of the base type.
+        Exchange extensions and restrictions must include annotations and documentation to be conformant, but they are
+        allowed to use restriction, choice, and some other constructs that are not allowed in <a name="d3e1848"></a><a
+          href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_reference_schema_document"><span
+            class="termRef">reference schema documents</span></a>.</p>
+      <p>Note that exchange specifications may define schemas that meet the criteria of reference schemas for those
+        components that its developers wish to nominate for later inclusion in NIEM Core or in domains.</p>
+    </div>
+    <div class="section">
+      <div class="heading"><a name="section_4.1.3"></a>4.1.3. Schema document set</div>
+      <p>A <a name="d3e1864"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_conformant_schema_document_set"><span
+            class="termRef">conformant schema document set</span></a> is a set of schema documents that are capable of
+        validating XML documents.</p>
+      <div class="box">
+        <div class="normativeHead"><a name="definition_conformant_schema_document_set"></a>[Definition: <dfn>conformant
+            schema document set</dfn>]</div>
+        <div class="sub">
+          <p>A <strong>conformant schema document set</strong> is a collection of <a name="d3e1875"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_schema_document"><span
+                class="termRef">schema documents</span></a> that together are capable of <a name="d3e1878"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_valid"><span
+                class="termRef">validating</span></a> a <a name="d3e1881"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_conformant_instance_XML_document"><span
+                class="termRef">conformant instance XML document</span></a>. It is a <a name="d3e1884"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_conformance_target"><span
+                class="termRef">conformance target</span></a> of this specification. A conformant schema document set
+            MUST conform to all rules of this specification that apply to this conformance target.</p>
+        </div>
+      </div>
+    </div>
+    <p>A <a name="d3e1892"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_conformant_schema_document_set"><span
+          class="termRef">conformant schema document set</span></a> has strong dependencies on <a name="d3e1895"></a><a
+        href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_reference_schema_document"><span
+          class="termRef">reference schema documents</span></a> and <a name="d3e1898"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_extension_schema_document"><span
+          class="termRef">extension schema documents</span></a>. Without the guarantees provided by those conformance
+      targets, the rules for a <a name="d3e1901"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_conformant_schema_document_set"><span
+          class="termRef">conformant schema document set</span></a> would not be helpful. Those schemas in a schema set
+      that are marked as reference or extension schemas are required to conform to the appropriate conformance targets.</p>
+    <div class="rule-section">
+      <div class="heading"><a name="rule_4-1"></a>Rule 4-1. Schema marked as reference schema document must conform</div>
+      <div class="box">
+        <div class="normativeHead">[Rule 4-1] (SET) (Constraint)</div>
+        <p>Any <a name="d3e1914"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_schema_document"><span
+              class="termRef">schema document</span></a> with an <a name="d3e1917"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_effective_conformance_target_identifier"><span
+              class="termRef">effective conformance target identifier</span></a> of <code>http://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/#ReferenceSchemaDocument</code>
+          MUST be a <a name="d3e1923"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_reference_schema_document"><span
+              class="termRef">reference schema document</span></a>.</p>
+      </div>
+    </div>
+    <div class="rule-section">
+      <div class="heading"><a name="rule_4-2"></a>Rule 4-2. Schema marked as extension schema document must conform</div>
+      <div class="box">
+        <div class="normativeHead">[Rule 4-2] (SET) (Constraint)</div>
+        <p>Any <a name="d3e1938"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_schema_document"><span
+              class="termRef">schema document</span></a> with an <a name="d3e1941"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_effective_conformance_target_identifier"><span
+              class="termRef">effective conformance target identifier</span></a> of <code>http://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/#ExtensionSchemaDocument</code>
+          MUST be an <a name="d3e1947"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_extension_schema_document"><span
+              class="termRef">extension schema document</span></a>.</p>
+      </div>
+    </div>
+    <div class="section">
+      <div class="heading"><a name="section_4.1.4"></a>4.1.4. Instance documents and elements</div>
+      <p>This document has specific rules about how NIEM content should be used in XML documents. As well as containing
+        rules for XML Schema documents, this NDR contains rules for NIEM-conformant XML content at a finer granularity
+        than the XML document.</p>
+      <div class="box">
+        <div class="normativeHead"><a name="definition_conformant_instance_XML_document"></a>[Definition: <dfn>conformant
+            instance XML document</dfn>]</div>
+        <div class="sub">
+          <p>A <strong>conformant instance XML document</strong> is an <a name="d3e1968"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_XML_document"><span
+                class="termRef">XML document</span></a> that is <a name="d3e1971"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_instance_document"><span
+                class="termRef">instance document</span></a> <a name="d3e1974"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_valid"><span
+                class="termRef">valid</span></a> to a <a name="d3e1977"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_conformant_schema_document_set"><span
+                class="termRef">conformant schema document set</span></a>. It is a <a name="d3e1981"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_conformance_target"><span
+                class="termRef">conformance target</span></a> of this specification. A conformant instance XML document
+            MUST conform to all rules of this specification that apply to this conformance target.</p>
+        </div>
+      </div>
+      <p>Characteristics of a <a name="d3e1988"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_conformant_instance_XML_document"><span
+            class="termRef">conformant instance XML document</span></a> include:</p>
+      <ul>
+        <li>The <a name="d3e1997"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_document_element"><span
+              class="termRef">document element</span></a> is locally schema-valid.</li>
+        <li>Each element information item within the <a name="d3e2004"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_XML_document"><span
+              class="termRef">XML document</span></a> that has property [namespace name] matching the target namespace
+          of a <a name="d3e2007"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_reference_schema_document"><span
+              class="termRef">reference schema document</span></a> or <a name="d3e2010"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_extension_schema_document"><span
+              class="termRef">extension schema document</span></a> is a <a name="d3e2013"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_conformant_element_information_item"><span
+              class="termRef">conformant element information item</span></a>.</li>
+      </ul>
+      <p>Schema-validity may be assessed against a single set of schemas or against multiple sets of schemas.</p>
+      <p>Assessment against schemas may be directed by a Model Package Description (MPD), by other instructions, or by
+        other tools.</p>
+      <p>Note that this specification does not require the <a name="d3e2027"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_document_element"><span
+            class="termRef">document element</span></a> of a <a name="d3e2030"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_conformant_instance_XML_document"><span
+            class="termRef">conformant instance XML document</span></a> to be a <a name="d3e2033"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_conformant_element_information_item"><span
+            class="termRef">conformant element information item</span></a>. Other specifications, such as the MPD
+        specification, may add additional constraints to these in order to specify MPD-specific or exchange-specific
+        conformance constraints.</p>
+      <div class="box">
+        <div class="normativeHead"><a name="definition_conformant_element_information_item"></a>[Definition: <dfn>conformant
+            element information item</dfn>]</div>
+        <div class="sub">
+          <p>A <em>conformant element information item</em> is an element information item that satisfies all of the
+            following criteria:</p>
+          <ul>
+            <li>Its [namespace name] and [local name] matches an element declared by a <a name="d3e2050"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_reference_schema_document"><span
+                  class="termRef">reference schema document</span></a> or <a name="d3e2053"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_extension_schema_document"><span
+                  class="termRef">extension schema document</span></a>.</li>
+            <li>It occurs within a <a name="d3e2060"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_conformant_instance_XML_document"><span
+                  class="termRef">conformant instance XML document</span></a>.</li>
+            <li>It is locally schema-valid.</li>
+            <li>It satisfies all rules specified in this document applicable to an element in a <a name="d3e2071"></a><a
+                href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_conformant_instance_XML_document"><span
+                  class="termRef">conformant instance XML document</span></a>.</li>
+          </ul>
+        </div>
+      </div>
+      <p>Because each NIEM-conformant element information item must be locally schema-valid, each element must validate
+        against the schema definition of the element, even if the element information item is allowed within the
+        document because of a wildcard that the {process contents} with a value of <q>skip</q>. As described by <a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#XMLSchema-1"
+          class="ref">[XML Schema Structures]</a> <a target="_blank" href="http://www.w3.org/TR/2004/REC-xmlschema-1-20041028/#process_contents">Section
+          3.10.1, <em>The Wildcard Schema Component</em></a>, the content of an element introduced by a wildcard with
+        {process contents} set to <q>skip</q> does not have any schema validity constraint; it is only required to be
+        well-formed XML. Within a NIEM-conformant XML document, each element that is from a NIEM namespace conforms to
+        its schema specification.</p>
+    </div>
+  </div>
+  <div class="section">
+    <div class="heading"><a name="section_4.2"></a>4.2. Applicability of rules to conformance targets</div>
+    <p>Each rule within this document is applicable to one or more of the conformance targets identified by <a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#section_4.1">Section
+        4.1, <em>Conformance targets defined</em>, above</a>. Each rule identifies its applicability as described in <a
+        href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#section_2.4.1">Section
+        2.4.1, <em>Rules</em>, above</a>. The applicability field of each rule will contain one or more code values
+      from <a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#table_4-1">Table
+        4-1, <em>Codes representing conformance targets</em>, below</a>. A rule is applicable to the identified
+      conformance targets.</p>
+    <div class="table">
+      <div class="caption"><a name="table_4-1"></a>Table 4-1: Codes representing conformance targets</div>
+      <table>
+        <thead>
+          <tr>
+            <th>Code</th>
+            <th>Conformance target</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a name="conformance_target_REF"></a>REF</td>
+            <td><a name="d3e2130"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_reference_schema_document"><span
+                  class="termRef">reference schema document</span></a></td>
+          </tr>
+          <tr>
+            <td><a name="conformance_target_EXT"></a>EXT</td>
+            <td><a name="d3e2141"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_extension_schema_document"><span
+                  class="termRef">extension schema document</span></a></td>
+          </tr>
+          <tr>
+            <td><a name="conformance_target_SET"></a>SET</td>
+            <td><a name="d3e2152"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_conformant_schema_document_set"><span
+                  class="termRef">conformant schema document set</span></a></td>
+          </tr>
+          <tr>
+            <td><a name="conformance_target_INS"></a>INS</td>
+            <td><a name="d3e2164"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_conformant_instance_XML_document"><span
+                  class="termRef">conformant instance XML document</span></a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="section">
+    <div class="heading"><a name="section_4.3"></a>4.3. Conformance target identifiers</div>
+    <p>A conformant schema document claims to be conformant thorough the use of a set of <a name="d3e2176"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_conformance_target_identifier"><span
+          class="termRef">conformance target identifiers</span></a>.</p>
+    <div class="rule-section">
+      <div class="heading"><a name="is-ctas-conformant-document"></a><a name="rule_4-3"></a>Rule 4-3. Schema is
+        CTAS-conformant</div>
+      <div class="box">
+        <div class="normativeHead">[Rule 4-3] (REF, EXT) (Constraint)</div>
+        <p>The schema document MUST be a conformant document as defined by the NIEM Conformance Targets Attribute
+          Specification.</p>
+      </div>
+      <p>The term <q>conformant document</q> is defined by <a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#CTAS"
+          class="ref">[CTAS]</a> <a target="_blank" href="http://reference.niem.gov/niem/specification/conformance-targets-attribute/3.0/NIEM-CTAS-3.0-2014-07-31.html#section_3.2">Section
+          3.2, <em>Conformance to this Specification</em></a>.</p>
+    </div>
+    <div class="rule-section">
+      <div class="heading"><a name="req-ct"></a><a name="rule_4-4"></a>Rule 4-4. Document element has attribute <code>ct:conformanceTargets</code></div>
+      <div class="box">
+        <div class="normativeHead">[Rule 4-4] (REF, EXT) (Constraint)</div>
+        <pre><sch:pattern>
+  <sch:rule context="*[. is nf:get-document-element(.)
+                       or exists(@ct:conformanceTargets)]">
+    <sch:assert test="(. is nf:get-document-element(.)) = exists(@ct:conformanceTargets)"
+      >The [document element] of the XML document, and only the [document element], MUST own an attribute {http://release.niem.gov/niem/conformanceTargets/3.0/}conformanceTargets.</sch:assert>
+  </sch:rule>
+</sch:pattern></pre>
+      </div>
+    </div>
+    <div class="rule-section">
+      <div class="heading"><a name="req-ct-ref"></a><a name="rule_4-5"></a>Rule 4-5. Schema claims reference schema
+        conformance target</div>
+      <div class="box">
+        <div class="normativeHead">[Rule 4-5] (REF) (Constraint)</div>
+        <pre><sch:pattern>
+  <sch:rule context="*[. is nf:get-document-element(.)]">
+    <sch:assert test="nf:has-effective-conformance-target-identifier(., xs:anyURI('http://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/#ReferenceSchemaDocument'))"
+      >The document MUST have an effective conformance target identifier of http://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/#ReferenceSchemaDocument.</sch:assert>
+  </sch:rule>
+</sch:pattern></pre>
+      </div>
+      <p>This document defines the term <a name="d3e2249"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_effective_conformance_target_identifier"><span
+            class="termRef">effective conformance target identifier</span></a>.</p>
+    </div>
+    <div class="rule-section">
+      <div class="heading"><a name="req-ct-ext"></a><a name="rule_4-6"></a>Rule 4-6. Schema claims extension
+        conformance target</div>
+      <div class="box">
+        <div class="normativeHead">[Rule 4-6] (EXT) (Constraint)</div>
+        <pre><sch:pattern>
+  <sch:rule context="*[. is nf:get-document-element(.)]">
+    <sch:assert test="nf:has-effective-conformance-target-identifier(., xs:anyURI('http://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/#ExtensionSchemaDocument'))"
+      >The document MUST have an effective conformance target identifier of http://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/#ExtensionSchemaDocument.</sch:assert>
+  </sch:rule>
+</sch:pattern></pre>
+      </div>
+      <p>This document defines the term <a name="d3e2276"></a><a href="https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_effective_conformance_target_identifier"><span
+            class="termRef">effective conformance target identifier</span></a>.</p>
+    </div>
+  </div>
+</div>
