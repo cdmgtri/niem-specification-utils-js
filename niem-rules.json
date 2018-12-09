@@ -17056,5 +17056,1049 @@
     "post": "The applicable elements for a metadata element are identified by Rule 10-41, Metadata element has applicable elements (REF, EXT, SET), above.",
     "style": "text",
     "text": "Given that an element $SUBJECT-ELEMENT uses a metadata element $METADATA-ELEMENT through a value in either an attribute structures:metadata or an attribute structures:relationshipMetadata, the element $SUBJECT-ELEMENT MUST be an applicable element for $METADATA-ELEMENT."
+  },
+  {
+    "specification": {
+      "id": "CodeLists",
+      "name": "Code Lists Specification",
+      "version": "CodeLists-4.0",
+      "versionLabel": "4.0",
+      "current": true,
+      "niem": [
+        "3.0",
+        "3.1",
+        "3.2",
+        "4.0",
+        "4.1",
+        "4.2"
+      ],
+      "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html"
+    },
+    "section": {
+      "name": "3.4. Code list-enabled schema document",
+      "id": "section_3.4",
+      "link": "undefined#section_3.4"
+    },
+    "number": "3-1",
+    "title": "Code list-enabled schema document has conformance target",
+    "name": "",
+    "id": "rule_3-1",
+    "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_3-1",
+    "applicability": [
+      "XSD"
+    ],
+    "classification": "Constraint",
+    "pre": "",
+    "post": "",
+    "style": "text",
+    "text": "A code list-enabled schema document MUST have an effective conformance target identifier of http://reference.niem.gov/niem/specification/code-lists/4.0/#SchemaDocument "
+  },
+  {
+    "specification": {
+      "id": "CodeLists",
+      "name": "Code Lists Specification",
+      "version": "CodeLists-4.0",
+      "versionLabel": "4.0",
+      "current": true,
+      "niem": [
+        "3.0",
+        "3.1",
+        "3.2",
+        "4.0",
+        "4.1",
+        "4.2"
+      ],
+      "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html"
+    },
+    "section": {
+      "name": "3.4. Code list-enabled schema document",
+      "id": "section_3.4",
+      "link": "undefined#section_3.4"
+    },
+    "number": "3-2",
+    "title": "Document with conformance target is a code list-enabled schema document",
+    "name": "",
+    "id": "rule_3-2",
+    "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_3-2",
+    "applicability": [
+      "VSET"
+    ],
+    "classification": "Constraint",
+    "pre": "",
+    "post": "",
+    "style": "text",
+    "text": "A resource with an effective conformance target identifier of http://reference.niem.gov/niem/specification/code-lists/4.0/#SchemaDocument MUST be a code list-enabled schema document."
+  },
+  {
+    "specification": {
+      "id": "CodeLists",
+      "name": "Code Lists Specification",
+      "version": "CodeLists-4.0",
+      "versionLabel": "4.0",
+      "current": true,
+      "niem": [
+        "3.0",
+        "3.1",
+        "3.2",
+        "4.0",
+        "4.1",
+        "4.2"
+      ],
+      "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html"
+    },
+    "section": {
+      "name": "4.4.1. Syntax for run-time code list binding",
+      "id": "section_4.4.1",
+      "link": "undefined#section_4.4.1"
+    },
+    "number": "4-1",
+    "title": "Content in the cli namespace conforms to schema",
+    "name": "",
+    "id": "rule_4-1",
+    "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_4-1",
+    "applicability": [
+      "INS"
+    ],
+    "classification": "Constraint",
+    "pre": "",
+    "post": "",
+    "style": "text",
+    "text": "Any XML content in the namespace http://reference.niem.gov/niem/specification/code-lists/4.0/code-lists-instance/ MUST be schema-valid to the XML Schema definitions contained in the schema document in Appendix B, XML Schema document for the code lists instance namespace, below."
+  },
+  {
+    "specification": {
+      "id": "CodeLists",
+      "name": "Code Lists Specification",
+      "version": "CodeLists-4.0",
+      "versionLabel": "4.0",
+      "current": true,
+      "niem": [
+        "3.0",
+        "3.1",
+        "3.2",
+        "4.0",
+        "4.1",
+        "4.2"
+      ],
+      "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html"
+    },
+    "section": {
+      "name": "4.4.1. Syntax for run-time code list binding",
+      "id": "section_4.4.1",
+      "link": "undefined#section_4.4.1"
+    },
+    "number": "4-2",
+    "title": "Code list URI is an absolute URI",
+    "name": "",
+    "id": "rule_4-2",
+    "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_4-2",
+    "applicability": [
+      "INS"
+    ],
+    "classification": "Constraint",
+    "pre": "",
+    "post": "",
+    "style": "text",
+    "text": "The normalized value of an attribute cli:codeListURI MUST be an absolute URI."
+  },
+  {
+    "specification": {
+      "id": "CodeLists",
+      "name": "Code Lists Specification",
+      "version": "CodeLists-4.0",
+      "versionLabel": "4.0",
+      "current": true,
+      "niem": [
+        "3.0",
+        "3.1",
+        "3.2",
+        "4.0",
+        "4.1",
+        "4.2"
+      ],
+      "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html"
+    },
+    "section": {
+      "name": "4.4.1. Syntax for run-time code list binding",
+      "id": "section_4.4.1",
+      "link": "undefined#section_4.4.1"
+    },
+    "number": "4-3",
+    "title": "Column identifier accompanied by code list identifier",
+    "name": "",
+    "id": "rule_4-3",
+    "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_4-3",
+    "applicability": [
+      "INS"
+    ],
+    "classification": "Constraint",
+    "pre": "",
+    "post": "",
+    "style": "text",
+    "text": "An element having an attribute cli:codeListColumnName MUST have an attribute cli:codeListURI."
+  },
+  {
+    "specification": {
+      "id": "CodeLists",
+      "name": "Code Lists Specification",
+      "version": "CodeLists-4.0",
+      "versionLabel": "4.0",
+      "current": true,
+      "niem": [
+        "3.0",
+        "3.1",
+        "3.2",
+        "4.0",
+        "4.1",
+        "4.2"
+      ],
+      "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html"
+    },
+    "section": {
+      "name": "4.4.1. Syntax for run-time code list binding",
+      "id": "section_4.4.1",
+      "link": "undefined#section_4.4.1"
+    },
+    "number": "4-4",
+    "title": "Constraining indicator accompanied by code list identifier",
+    "name": "",
+    "id": "rule_4-4",
+    "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_4-4",
+    "applicability": [
+      "INS"
+    ],
+    "classification": "Constraint",
+    "pre": "",
+    "post": "",
+    "style": "text",
+    "text": "An element having an attribute cli:codeListConstrainingIndicator MUST have an attribute cli:codeListURI."
+  },
+  {
+    "specification": {
+      "id": "CodeLists",
+      "name": "Code Lists Specification",
+      "version": "CodeLists-4.0",
+      "versionLabel": "4.0",
+      "current": true,
+      "niem": [
+        "3.0",
+        "3.1",
+        "3.2",
+        "4.0",
+        "4.1",
+        "4.2"
+      ],
+      "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html"
+    },
+    "section": {
+      "name": "4.4.2. Run-time effective code list binding",
+      "id": "section_4.4.2",
+      "link": "undefined#section_4.4.2"
+    },
+    "number": "4-5",
+    "title": "Effective run-time binding.",
+    "name": "",
+    "id": "rule_4-5",
+    "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_4-5",
+    "applicability": [
+      "INS"
+    ],
+    "classification": "Interpretation",
+    "pre": "",
+    "post": "",
+    "style": "text",
+    "text": "An element $element with an attribute $attribute cli:codeListURI denotes a code list binding of:"
+  },
+  {
+    "specification": {
+      "id": "CodeLists",
+      "name": "Code Lists Specification",
+      "version": "CodeLists-4.0",
+      "versionLabel": "4.0",
+      "current": true,
+      "niem": [
+        "3.0",
+        "3.1",
+        "3.2",
+        "4.0",
+        "4.1",
+        "4.2"
+      ],
+      "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html"
+    },
+    "section": {
+      "name": "4.5.1. Syntax for schema-time code list binding",
+      "id": "section_4.5.1",
+      "link": "undefined#section_4.5.1"
+    },
+    "number": "4-6",
+    "title": "Content in the clsa namespace conforms to schema",
+    "name": "",
+    "id": "rule_4-6",
+    "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_4-6",
+    "applicability": [
+      "XSD"
+    ],
+    "classification": "Constraint",
+    "pre": "",
+    "post": "",
+    "style": "text",
+    "text": "Any XML content in the namespace http://reference.niem.gov/niem/specification/code-lists/4.0/code-lists-schema-appinfo/ MUST be schema-valid to the XML Schema definitions contained in the schema document in Appendix C, XML Schema document for the code list schema appinfo namespace, below."
+  },
+  {
+    "specification": {
+      "id": "CodeLists",
+      "name": "Code Lists Specification",
+      "version": "CodeLists-4.0",
+      "versionLabel": "4.0",
+      "current": true,
+      "niem": [
+        "3.0",
+        "3.1",
+        "3.2",
+        "4.0",
+        "4.1",
+        "4.2"
+      ],
+      "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html"
+    },
+    "section": {
+      "name": "4.5.1. Syntax for schema-time code list binding",
+      "id": "section_4.5.1",
+      "link": "undefined#section_4.5.1"
+    },
+    "number": "4-7",
+    "title": "Elements are xs:appinfo annotations",
+    "name": "",
+    "id": "rule_4-7",
+    "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_4-7",
+    "applicability": [
+      "XSD"
+    ],
+    "classification": "Constraint",
+    "pre": "",
+    "post": "",
+    "style": "text",
+    "text": "An element clsa:SimpleCodeListBinding or clsa:ComplexCodeListBinding MUST have [parent] element xs:appinfo."
+  },
+  {
+    "specification": {
+      "id": "CodeLists",
+      "name": "Code Lists Specification",
+      "version": "CodeLists-4.0",
+      "versionLabel": "4.0",
+      "current": true,
+      "niem": [
+        "3.0",
+        "3.1",
+        "3.2",
+        "4.0",
+        "4.1",
+        "4.2"
+      ],
+      "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html"
+    },
+    "section": {
+      "name": "4.5.1. Syntax for schema-time code list binding",
+      "id": "section_4.5.1",
+      "link": "undefined#section_4.5.1"
+    },
+    "number": "4-8",
+    "title": "Code list URI is absolute URI",
+    "name": "",
+    "id": "rule_4-8",
+    "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_4-8",
+    "applicability": [
+      "XSD"
+    ],
+    "classification": "Constraint",
+    "pre": "",
+    "post": "",
+    "style": "text",
+    "text": "An attribute codeListURI that has [owner element] of clsa:SimpleCodeListBinding or clsa:ComplexCodeListBinding MUST have a normalized value that is an absolute URI."
+  },
+  {
+    "specification": {
+      "id": "CodeLists",
+      "name": "Code Lists Specification",
+      "version": "CodeLists-4.0",
+      "versionLabel": "4.0",
+      "current": true,
+      "niem": [
+        "3.0",
+        "3.1",
+        "3.2",
+        "4.0",
+        "4.1",
+        "4.2"
+      ],
+      "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html"
+    },
+    "section": {
+      "name": "4.5.1. Syntax for schema-time code list binding",
+      "id": "section_4.5.1",
+      "link": "undefined#section_4.5.1"
+    },
+    "number": "4-9",
+    "title": "Simple code list binding to schema components",
+    "name": "",
+    "id": "rule_4-9",
+    "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_4-9",
+    "applicability": [
+      "XSD"
+    ],
+    "classification": "Constraint",
+    "pre": "",
+    "post": "",
+    "style": "text",
+    "text": "Element clsa:SimpleCodeListBinding MUST be application information on one of:"
+  },
+  {
+    "specification": {
+      "id": "CodeLists",
+      "name": "Code Lists Specification",
+      "version": "CodeLists-4.0",
+      "versionLabel": "4.0",
+      "current": true,
+      "niem": [
+        "3.0",
+        "3.1",
+        "3.2",
+        "4.0",
+        "4.1",
+        "4.2"
+      ],
+      "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html"
+    },
+    "section": {
+      "name": "4.5.1. Syntax for schema-time code list binding",
+      "id": "section_4.5.1",
+      "link": "undefined#section_4.5.1"
+    },
+    "number": "4-10",
+    "title": "Complex code list binding to schema components",
+    "name": "",
+    "id": "rule_4-10",
+    "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_4-10",
+    "applicability": [
+      "XSD"
+    ],
+    "classification": "Constraint",
+    "pre": "",
+    "post": "",
+    "style": "text",
+    "text": "Element clsa:ComplexCodeListBinding MUST be application information on one of:"
+  },
+  {
+    "specification": {
+      "id": "CodeLists",
+      "name": "Code Lists Specification",
+      "version": "CodeLists-4.0",
+      "versionLabel": "4.0",
+      "current": true,
+      "niem": [
+        "3.0",
+        "3.1",
+        "3.2",
+        "4.0",
+        "4.1",
+        "4.2"
+      ],
+      "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html"
+    },
+    "section": {
+      "name": "4.5.2. Simple binding of schema components",
+      "id": "section_4.5.2",
+      "link": "undefined#section_4.5.2"
+    },
+    "number": "4-11",
+    "title": "Attribute declaration effective simple binding",
+    "name": "",
+    "id": "rule_4-11",
+    "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_4-11",
+    "applicability": [
+      "VSET"
+    ],
+    "classification": "Interpretation",
+    "pre": "",
+    "post": "",
+    "style": "text",
+    "text": "An element xs:attribute defining an attribute declaration $attribute-declaration with application information of an element $binding-element clsa:SimpleCodeListBinding entails:"
+  },
+  {
+    "specification": {
+      "id": "CodeLists",
+      "name": "Code Lists Specification",
+      "version": "CodeLists-4.0",
+      "versionLabel": "4.0",
+      "current": true,
+      "niem": [
+        "3.0",
+        "3.1",
+        "3.2",
+        "4.0",
+        "4.1",
+        "4.2"
+      ],
+      "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html"
+    },
+    "section": {
+      "name": "4.5.2. Simple binding of schema components",
+      "id": "section_4.5.2",
+      "link": "undefined#section_4.5.2"
+    },
+    "number": "4-12",
+    "title": "Element declaration effective simple binding",
+    "name": "",
+    "id": "rule_4-12",
+    "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_4-12",
+    "applicability": [
+      "VSET"
+    ],
+    "classification": "Interpretation",
+    "pre": "",
+    "post": "",
+    "style": "text",
+    "text": "An element xs:element defining an element declaration $element-declaration with application information of an element $binding-element clsa:SimpleCodeListBinding entails:"
+  },
+  {
+    "specification": {
+      "id": "CodeLists",
+      "name": "Code Lists Specification",
+      "version": "CodeLists-4.0",
+      "versionLabel": "4.0",
+      "current": true,
+      "niem": [
+        "3.0",
+        "3.1",
+        "3.2",
+        "4.0",
+        "4.1",
+        "4.2"
+      ],
+      "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html"
+    },
+    "section": {
+      "name": "4.5.2. Simple binding of schema components",
+      "id": "section_4.5.2",
+      "link": "undefined#section_4.5.2"
+    },
+    "number": "4-13",
+    "title": "Type definition effective simple binding",
+    "name": "",
+    "id": "rule_4-13",
+    "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_4-13",
+    "applicability": [
+      "VSET"
+    ],
+    "classification": "Interpretation",
+    "pre": "",
+    "post": "",
+    "style": "text",
+    "text": "An element xs:simpleType or xs:complexType defining a type definition $type-definition with application information of an element $binding-element clsa:SimpleCodeListBinding entails:"
+  },
+  {
+    "specification": {
+      "id": "CodeLists",
+      "name": "Code Lists Specification",
+      "version": "CodeLists-4.0",
+      "versionLabel": "4.0",
+      "current": true,
+      "niem": [
+        "3.0",
+        "3.1",
+        "3.2",
+        "4.0",
+        "4.1",
+        "4.2"
+      ],
+      "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html"
+    },
+    "section": {
+      "name": "4.5.3. Complex binding of schema components",
+      "id": "section_4.5.3",
+      "link": "undefined#section_4.5.3"
+    },
+    "number": "4-14",
+    "title": "Element declaration effective complex binding",
+    "name": "",
+    "id": "rule_4-14",
+    "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_4-14",
+    "applicability": [
+      "VSET"
+    ],
+    "classification": "Interpretation",
+    "pre": "",
+    "post": "",
+    "style": "text",
+    "text": "An element xs:element defining an element declaration $element-declaration with application information of an element $binding-element clsa:ComplexCodeListBinding entails:"
+  },
+  {
+    "specification": {
+      "id": "CodeLists",
+      "name": "Code Lists Specification",
+      "version": "CodeLists-4.0",
+      "versionLabel": "4.0",
+      "current": true,
+      "niem": [
+        "3.0",
+        "3.1",
+        "3.2",
+        "4.0",
+        "4.1",
+        "4.2"
+      ],
+      "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html"
+    },
+    "section": {
+      "name": "4.5.3. Complex binding of schema components",
+      "id": "section_4.5.3",
+      "link": "undefined#section_4.5.3"
+    },
+    "number": "4-15",
+    "title": "Complex type definition effective complex binding",
+    "name": "",
+    "id": "rule_4-15",
+    "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_4-15",
+    "applicability": [
+      "VSET"
+    ],
+    "classification": "Interpretation",
+    "pre": "",
+    "post": "",
+    "style": "text",
+    "text": "An element xs:complexType defining a complex type definition $type-definition with application information of an element $binding-element clsa:ComplexCodeListBinding entails:"
+  },
+  {
+    "specification": {
+      "id": "CodeLists",
+      "name": "Code Lists Specification",
+      "version": "CodeLists-4.0",
+      "versionLabel": "4.0",
+      "current": true,
+      "niem": [
+        "3.0",
+        "3.1",
+        "3.2",
+        "4.0",
+        "4.1",
+        "4.2"
+      ],
+      "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html"
+    },
+    "section": {
+      "name": "4.6. Matches for code list bindings",
+      "id": "section_4.6",
+      "link": "undefined#section_4.6"
+    },
+    "number": "4-16",
+    "title": "Matches and validity for a code list binding",
+    "name": "",
+    "id": "rule_4-16",
+    "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_4-16",
+    "applicability": [
+      "VSET"
+    ],
+    "classification": "Interpretation",
+    "pre": "",
+    "post": "",
+    "style": "text",
+    "text": "A code list binding matching against against a code list validation set yields a set of distinct entries and a validity value (valid or invalid).The matches for a code list binding $binding against a code list validation set MUST be:"
+  },
+  {
+    "specification": {
+      "id": "CodeLists",
+      "name": "Code Lists Specification",
+      "version": "CodeLists-4.0",
+      "versionLabel": "4.0",
+      "current": true,
+      "niem": [
+        "3.0",
+        "3.1",
+        "3.2",
+        "4.0",
+        "4.1",
+        "4.2"
+      ],
+      "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html"
+    },
+    "section": {
+      "name": "4.6. Matches for code list bindings",
+      "id": "section_4.6",
+      "link": "undefined#section_4.6"
+    },
+    "number": "4-17",
+    "title": "Value comparisons based on types",
+    "name": "",
+    "id": "rule_4-17",
+    "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_4-17",
+    "applicability": [
+      "VSET"
+    ],
+    "classification": "Interpretation",
+    "pre": "[XPathFunctions] Section 17, Casting provides a set of rules for type casting among XML Schema primitive types.",
+    "post": "",
+    "style": "text",
+    "text": "Comparisons between a value $instance-value of a column/value pair and a code value $code-value MUST be conducted as follows:"
+  },
+  {
+    "specification": {
+      "id": "CodeLists",
+      "name": "Code Lists Specification",
+      "version": "CodeLists-4.0",
+      "versionLabel": "4.0",
+      "current": true,
+      "niem": [
+        "3.0",
+        "3.1",
+        "3.2",
+        "4.0",
+        "4.1",
+        "4.2"
+      ],
+      "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html"
+    },
+    "section": {
+      "name": "4.6. Matches for code list bindings",
+      "id": "section_4.6",
+      "link": "undefined#section_4.6"
+    },
+    "number": "4-18",
+    "title": "Code list identified by candidate code list identifiers",
+    "name": "",
+    "id": "rule_4-18",
+    "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_4-18",
+    "applicability": [
+      "VSET"
+    ],
+    "classification": "Constraint",
+    "pre": "Each class of code list document specifies how its instances define code list identifiers that may refer to a code list. This rule ensures that code lists are referred to via the correct code list identifier, when it is defined.",
+    "post": "",
+    "style": "text",
+    "text": "When a code list document defines candidate code list identifiers, a code list identifier against which a code list document resource is resolved MUST be a candidate code list identifier for that code list document."
+  },
+  {
+    "specification": {
+      "id": "CodeLists",
+      "name": "Code Lists Specification",
+      "version": "CodeLists-4.0",
+      "versionLabel": "4.0",
+      "current": true,
+      "niem": [
+        "3.0",
+        "3.1",
+        "3.2",
+        "4.0",
+        "4.1",
+        "4.2"
+      ],
+      "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html"
+    },
+    "section": {
+      "name": "5. Comma-separated values (CSV) code lists",
+      "id": "section_5",
+      "link": "undefined#section_5"
+    },
+    "number": "5-1",
+    "title": "CSV code list document is a CSV file",
+    "name": "",
+    "id": "rule_5-1",
+    "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_5-1",
+    "applicability": [
+      "CSV-CLD"
+    ],
+    "classification": "Constraint",
+    "pre": "",
+    "post": "",
+    "style": "text",
+    "text": "A CSV code list document MUST be a CSV file."
+  },
+  {
+    "specification": {
+      "id": "CodeLists",
+      "name": "Code Lists Specification",
+      "version": "CodeLists-4.0",
+      "versionLabel": "4.0",
+      "current": true,
+      "niem": [
+        "3.0",
+        "3.1",
+        "3.2",
+        "4.0",
+        "4.1",
+        "4.2"
+      ],
+      "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html"
+    },
+    "section": {
+      "name": "5. Comma-separated values (CSV) code lists",
+      "id": "section_5",
+      "link": "undefined#section_5"
+    },
+    "number": "5-2",
+    "title": "CSV code list document has header",
+    "name": "",
+    "id": "rule_5-2",
+    "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_5-2",
+    "applicability": [
+      "CSV-CLD"
+    ],
+    "classification": "Constraint",
+    "pre": "",
+    "post": "",
+    "style": "text",
+    "text": "A CSV code list document MUST have a CSV header."
+  },
+  {
+    "specification": {
+      "id": "CodeLists",
+      "name": "Code Lists Specification",
+      "version": "CodeLists-4.0",
+      "versionLabel": "4.0",
+      "current": true,
+      "niem": [
+        "3.0",
+        "3.1",
+        "3.2",
+        "4.0",
+        "4.1",
+        "4.2"
+      ],
+      "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html"
+    },
+    "section": {
+      "name": "5. Comma-separated values (CSV) code lists",
+      "id": "section_5",
+      "link": "undefined#section_5"
+    },
+    "number": "5-3",
+    "title": "CSV column name is not empty",
+    "name": "",
+    "id": "rule_5-3",
+    "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_5-3",
+    "applicability": [
+      "CSV-CLD"
+    ],
+    "classification": "Constraint",
+    "pre": "",
+    "post": "",
+    "style": "text",
+    "text": "A CSV column name of a CSV code list document MUST not be empty."
+  },
+  {
+    "specification": {
+      "id": "CodeLists",
+      "name": "Code Lists Specification",
+      "version": "CodeLists-4.0",
+      "versionLabel": "4.0",
+      "current": true,
+      "niem": [
+        "3.0",
+        "3.1",
+        "3.2",
+        "4.0",
+        "4.1",
+        "4.2"
+      ],
+      "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html"
+    },
+    "section": {
+      "name": "5. Comma-separated values (CSV) code lists",
+      "id": "section_5",
+      "link": "undefined#section_5"
+    },
+    "number": "5-4",
+    "title": "CSV file as a code list document",
+    "name": "",
+    "id": "rule_5-4",
+    "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_5-4",
+    "applicability": [
+      "CSV-CLD"
+    ],
+    "classification": "Interpretation",
+    "pre": "",
+    "post": "",
+    "style": "text",
+    "text": "A CSV file may act as a CSV code list document in the following manner:"
+  },
+  {
+    "specification": {
+      "id": "CodeLists",
+      "name": "Code Lists Specification",
+      "version": "CodeLists-4.0",
+      "versionLabel": "4.0",
+      "current": true,
+      "niem": [
+        "3.0",
+        "3.1",
+        "3.2",
+        "4.0",
+        "4.1",
+        "4.2"
+      ],
+      "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html"
+    },
+    "section": {
+      "name": "6. Genericode code lists",
+      "id": "section_6",
+      "link": "undefined#section_6"
+    },
+    "number": "6-1",
+    "title": "Genericode code list document defined by Genericode",
+    "name": "",
+    "id": "rule_6-1",
+    "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_6-1",
+    "applicability": [
+      "GC-CLD"
+    ],
+    "classification": "Constraint",
+    "pre": "",
+    "post": "",
+    "style": "text",
+    "text": "A Genericode code list document MUST be a Genericode code list document as defined by [Genericode] Section 3.2, Genericode Document Types, which states:"
+  },
+  {
+    "specification": {
+      "id": "CodeLists",
+      "name": "Code Lists Specification",
+      "version": "CodeLists-4.0",
+      "versionLabel": "4.0",
+      "current": true,
+      "niem": [
+        "3.0",
+        "3.1",
+        "3.2",
+        "4.0",
+        "4.1",
+        "4.2"
+      ],
+      "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html"
+    },
+    "section": {
+      "name": "6. Genericode code lists",
+      "id": "section_6",
+      "link": "undefined#section_6"
+    },
+    "number": "6-2",
+    "title": "Document with conformance target is Genericode code list document",
+    "name": "",
+    "id": "rule_6-2",
+    "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_6-2",
+    "applicability": [
+      "VSET"
+    ],
+    "classification": "Constraint",
+    "pre": "",
+    "post": "",
+    "style": "text",
+    "text": "A resource with an effective conformance target identifier of http://reference.niem.gov/niem/specification/code-lists/4.0/#GenericodeCodeListDocument MUST be a Genericode code list document."
+  },
+  {
+    "specification": {
+      "id": "CodeLists",
+      "name": "Code Lists Specification",
+      "version": "CodeLists-4.0",
+      "versionLabel": "4.0",
+      "current": true,
+      "niem": [
+        "3.0",
+        "3.1",
+        "3.2",
+        "4.0",
+        "4.1",
+        "4.2"
+      ],
+      "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html"
+    },
+    "section": {
+      "name": "6. Genericode code lists",
+      "id": "section_6",
+      "link": "undefined#section_6"
+    },
+    "number": "6-3",
+    "title": "Genericode code list document is schema-valid",
+    "name": "",
+    "id": "rule_6-3",
+    "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_6-3",
+    "applicability": [
+      "GC-CLD"
+    ],
+    "classification": "Constraint",
+    "pre": "",
+    "post": "",
+    "style": "text",
+    "text": "A Genericode code list document MUST be schema-valid against the schema document for the Genericode namespace as provided at http://docs.oasis-open.org/codelist/ns/genericode/1.0/."
+  },
+  {
+    "specification": {
+      "id": "CodeLists",
+      "name": "Code Lists Specification",
+      "version": "CodeLists-4.0",
+      "versionLabel": "4.0",
+      "current": true,
+      "niem": [
+        "3.0",
+        "3.1",
+        "3.2",
+        "4.0",
+        "4.1",
+        "4.2"
+      ],
+      "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html"
+    },
+    "section": {
+      "name": "6. Genericode code lists",
+      "id": "section_6",
+      "link": "undefined#section_6"
+    },
+    "number": "6-4",
+    "title": "XML Schema alternate datatypes are treated the same as built in datatypes",
+    "name": "",
+    "id": "rule_6-4",
+    "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_6-4",
+    "applicability": [
+      "GC-CLD"
+    ],
+    "classification": "Interpretation",
+    "pre": "[Genericode] uses this alternate namespace name as a default for the datatype library in Genericode documents, referring to it as the URI for W3C XML Schema datatypes. As this separate namespace is not expressing a semantic distinction, and in order to keep Genericode documents simple, this document specifies that the alternate namespace name is to be treated as if it was the namespace name for the XML Schema definition language.",
+    "post": "",
+    "style": "text",
+    "text": "A datatype with a namespace name of http://www.w3.org/2001/XMLSchema-datatypes MUST be evaluated as if it had a namespace name of http://www.w3.org/2001/XMLSchema."
+  },
+  {
+    "specification": {
+      "id": "CodeLists",
+      "name": "Code Lists Specification",
+      "version": "CodeLists-4.0",
+      "versionLabel": "4.0",
+      "current": true,
+      "niem": [
+        "3.0",
+        "3.1",
+        "3.2",
+        "4.0",
+        "4.1",
+        "4.2"
+      ],
+      "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html"
+    },
+    "section": {
+      "name": "6. Genericode code lists",
+      "id": "section_6",
+      "link": "undefined#section_6"
+    },
+    "number": "6-5",
+    "title": "Genericode file as a code list document",
+    "name": "",
+    "id": "rule_6-5",
+    "link": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_6-5",
+    "applicability": [
+      "GC-CLD"
+    ],
+    "classification": "Interpretation",
+    "pre": "",
+    "post": "",
+    "style": "text",
+    "text": "A Genericode code list document may act as a code list document in the following manner:"
   }
 ]

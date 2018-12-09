@@ -89,10 +89,6 @@ class NDR extends NIEMSpec {
     return xml;
   }
 
-  static generateAllRules() {
-    return super.generateAllRules(NDR, NDR.versions);
-  }
-
 }
 
 NDR.versions = ["3.0", "4.0"];
