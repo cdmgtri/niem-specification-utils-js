@@ -7,7 +7,7 @@ let debug = require("debug")("niem");
 /** @type {CheerioStatic} */
 let $;
 
-let { NIEMRule } = require("./assets/typedefs/index");
+let { NIEMRule, NIEMDefinition, NIEMSection } = require("./assets/typedefs/index");
 
 class NIEMSpec {
 
@@ -23,6 +23,7 @@ class NIEMSpec {
     loadHTMLProcessor(html);
 
     this.rules = this.generateRules();
+    this.defs = this.generateDefinitions();
   }
 
   /**
@@ -56,6 +57,7 @@ class NIEMSpec {
    * @returns {string} - Reformatted HTML
    */
   format(html) {
+    return this.cleanUp(html);
   }
 
   /**
@@ -69,7 +71,7 @@ class NIEMSpec {
 
     let specification = this.specificationData;
 
-    debug("\nLoading NDR %s rules", this.version);
+    debug("\nLoading %s %s rules", this.constructor.name, this.version);
 
     // Process each div with class="rule-section"
     $("div .rule-section").each( (index, ruleSectionNode) => {
@@ -79,22 +81,54 @@ class NIEMSpec {
 
       // Define basic specification information for the rule
       rule.specification = specification;
-      processRuleSection(rule, ruleSectionNode, this.url);
+      rule.section = getSection(ruleSectionNode, this.url);
+
       processRuleHeading(rule, ruleSectionNode, this.url);
       processRuleLabel(rule, ruleSectionNode);
       processRuleDescription(rule, ruleSectionNode);
-      processRuleSection(rule, ruleSectionNode);
 
       rules.push(rule);
-      // console.log(index, rule.id, rule.name, rule.title);
       debug("%s %s %s %s %s", index, this.version, rule.id, rule.name, rule.title);
     });
 
-    // Save the rules
-    let rulesPath = path.join(__dirname, "../../rules", `ndr-rules-${this.version}.json`);
-    fs.outputJSONSync(rulesPath, rules);
-
     return rules;
+  }
+
+  /**
+   * Generates the JSON rules file from the specification HTML.
+   * @returns {NIEMDefinition[]}
+   */
+  generateDefinitions() {
+
+    /** @type {NIEMDefinition[]} */
+    let defs = [];
+
+    let specification = this.specificationData;
+
+    debug("\nLoading %s %s definitions", this.constructor.name, this.version);
+
+    // Process each div with class="rule-section"
+    $("a[name*='definition_']").each( (index, defIDNode) => {
+
+      /** @type {NIEMDefinition} */
+      let def = {};
+
+      // Define basic specification information for the rule
+      def.specification = specification;
+      def.id = defIDNode.attribs["name"];
+      def.link = this.url + "#" + def.id;
+
+      let defNormativeNode = $(defIDNode).closest(".normativeHead");
+      def.title = defNormativeNode.find("dfn").text();
+
+      def.section = getSection(defIDNode, this.url);
+      def.text = defNormativeNode.next().text();
+
+      defs.push(def);
+      debug("%s %s %s %s %s", index, this.version, def.id, def.name, def.title);
+    });
+
+    return defs;
   }
 
   /**
@@ -142,7 +176,7 @@ class NIEMSpec {
   }
 
   /**
-   * Generates rule files for all NDR versions that are currently handled (3.0 and 4.0).
+   * Generates rule files for all available specification versions.
    * @static
    * @param {NIEMSpec} spec
    * @param {string[]} versions
@@ -161,6 +195,45 @@ class NIEMSpec {
     });
 
     return allRules;
+  }
+
+  /**
+   * Generates and returns an array of definitions for the given version.
+   *
+   * @static
+   * @param {string} version
+   * @returns {NIEMDefinition[]}
+   */
+  static generateDefinitions(version) {
+    // Load the specification HTML text
+    let filePath = path.join(__dirname, `./assets/specifications/${this.fileNameRoot}-${version}.html`);
+
+    let html = fs.readFileSync(filePath, {encoding: "utf8"});
+
+    let spec = new this(version, html);
+    return spec.defs;
+  }
+
+  /**
+   * Generates def files for all available specification versions.
+   * @static
+   * @param {NIEMSpec} spec
+   * @param {string[]} versions
+   * @returns {NIEMDefinition[]}
+   */
+  static generateAllDefinitions() {
+
+    /** @type {NIEMDefinition[][]} */
+    let allDefs = [];
+
+    debug(`\nCompiling ${this.name} defs into single defs file.`);
+
+    this.versions.forEach( version => {
+      let defs = this.generateDefinitions(version);
+      allDefs.push( ...defs );
+    });
+
+    return allDefs;
   }
 
 }
@@ -203,7 +276,7 @@ function processRuleHeading(rule, ruleSectionNode, baseURL) {
   rule.number = title.split(". ")[0].replace("Rule ", "");
   rule.title = title.split(". ")[1];
 
-  let ruleNameNodes = $(ruleSectionNode).find(".heading a [name]");
+  let ruleNameNodes = $(ruleSectionNode).find(".heading a[name]");
 
   // Parse the rule id and name
   ruleNameNodes.each( (i, ruleNameNode) => {
@@ -291,27 +364,30 @@ function processRuleDescription(rule, ruleSectionNode) {
   }
   else {
     let ruleSchematronNode = $(ruleBoxNode).find("pre");
+
+    // TODO: Check for sch:report=true() as text rule
     rule.style = "schematron";
     rule.schematron = $(ruleSchematronNode).html();
-    rule.text = ruleSchematronNode.find("sch\\:assert").text();
+
+    let ruleTextNode = ruleSchematronNode.find("sch\\:assert");
+    rule.text = ruleTextNode.text();
   }
 
 }
 
 /**
- * Sets the information about the section that the rule appears under.
+ * Sets the information about the section that the rule or definition appears under.
  *
- * @param {NIEMRule} rule
- * @param {CheerioElement} ruleSectionNode
+ * @param {CheerioElement} childNode
  * @param {String} baseURL
  */
-function processRuleSection(rule, ruleSectionNode, baseURL) {
+function getSection(childNode, baseURL) {
 
-  let sectionNode = $(ruleSectionNode).closest(".section");
+  let sectionNode = $(childNode).closest(".section");
   let sectionHeadingNode = $(sectionNode).find("> .heading");
 
-  // Set the section name
-  rule.section = {
+  /** @type {NIEMSection} */
+  let section = {
     name: sectionHeadingNode.text()
   }
 
@@ -321,10 +397,12 @@ function processRuleSection(rule, ruleSectionNode, baseURL) {
     .each( (i, aNode) => {
       let name = aNode.attribs["name"];
       if (name.startsWith("section_")) {
-        rule.section.id = name;
+        section.id = name;
       }
     });
 
   // Set the section link
-  rule.section.link = baseURL + "#" + rule.section.id;
+  section.link = baseURL + "#" + section.id;
+
+  return section;
 }

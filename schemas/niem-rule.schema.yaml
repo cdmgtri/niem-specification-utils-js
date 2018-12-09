@@ -1,15 +1,8 @@
 
 $schema: http://json-schema.org/draft-07/schema
+$id: niem-rule.schema.json
 
 properties:
-
-  NIEMSpecification:
-    $ref: "#/definitions/SpecificationType"
-    description: Basic metadata about a NIEM specification.
-
-  NIEMSection:
-    $ref: "#/definitions/SectionType"
-    description: Basic metadata about a section in a NIEM specification.
 
   NIEMRule:
     type: object
@@ -17,10 +10,10 @@ properties:
     properties:
 
       specification:
-        $ref: "#/definitions/SpecificationType"
+        $ref: niem-base.schema.json/#/definitions/SpecificationType
 
       section:
-        $ref: "#/definitions/SectionType"
+        $ref: niem-base.schema.json/#/definitions/SectionType
 
       id:
         type: string

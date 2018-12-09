@@ -66,49 +66,31 @@ let NIEMSection = {};
 /** @type {NIEMRuleType} */ 
 let NIEMRule = {}; 
 
-/**
- * @typedef {"REF"|"EXT"|"SET"|"INS"} NIEMRuleApplicabilityType
- *
- * A conformance target to which this rule applies.
- */
-
-/** @type {NIEMRuleApplicabilityType} */ 
-let NIEMRuleApplicability = {}; 
 
 /**
- * @typedef {"REF"|"EXT"|"SET"|"INS"} NIEMRuleApplicabilityNDRType
+ * @typedef {Object} NIEMDefinitionType
  *
- * A NDR conformance target to which this rule applies.
+ * Information about a definition in a NIEM specification.
+ *
+ * @property {object} [specification] -  
+ * @property {string} [specification.name] - Example: Naming and Design Rules 
+ * @property {string} [specification.id] - Example: NDR 
+ * @property {string} [specification.version] - Example: NDR-4.0 
+ * @property {string} [specification.versionLabel] - Example: 4.0 
+ * @property {boolean} [specification.current] -  
+ * @property {array} [specification.niem] - Example: 4.0,4.1,4.2 
+ * @property {string} [specification.link] - Example: https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html 
+ * @property {object} [section] -  
+ * @property {string} [section.id] - Example: section_9.1.1.1 
+ * @property {string} [section.name] - Example: 9.1.1.1 
+ * @property {string} [section.link] - Example: https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#section_9.1.1.1 
+ * @property {string} [id] - Example: definition_conformance_target_identifier 
+ * @property {string} [title] - Example: conformance target identifier 
+ * @property {string} [text] - The text of the definition. 
+ * @property {string} [link] - Example: https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_conformance_target_identifier 
  */
 
-/** @type {NIEMRuleApplicabilityNDRType} */ 
-let NIEMRuleApplicabilityNDR = {}; 
+/** @type {NIEMDefinitionType} */ 
+let NIEMDefinition = {}; 
 
-/**
- * @typedef {"Constraint"|"Interpretation"} NIEMRuleClassificationType
- *
- * Specifies if the rule is a requirement or principle.
- */
-
-/** @type {NIEMRuleClassificationType} */ 
-let NIEMRuleClassification = {}; 
-
-/**
- * @typedef {"text"|"schematron"} NIEMRuleStyleType
- *
- * Indicates if and how the rule may be automated.
- */
-
-/** @type {NIEMRuleStyleType} */ 
-let NIEMRuleStyle = {}; 
-
-/**
- * @typedef {"all"|"xml"|"json"} NIEMRuleLanguageType
- *
- * Specifies the NIEM document language to which this rule applies.
- */
-
-/** @type {NIEMRuleLanguageType} */ 
-let NIEMRuleLanguage = {}; 
-
-module.exports = { NIEMSpecification, NIEMSection, NIEMRule, NIEMRuleApplicability, NIEMRuleApplicabilityNDR, NIEMRuleClassification, NIEMRuleStyle, NIEMRuleLanguage }
+module.exports = { NIEMSpecification, NIEMSection, NIEMRule, NIEMDefinition }

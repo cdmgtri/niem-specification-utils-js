@@ -1,0 +1,21 @@
+
+$schema: http://json-schema.org/draft-07/schema
+$id: niem-spec.schema.json
+
+properties:
+
+  NIEMSpecification:
+    $ref: niem-base.schema.json#/properties/NIEMSpecification
+    description: Basic metadata about a NIEM specification.
+
+  NIEMSection:
+    $ref: niem-base.schema.json#/properties/NIEMSection
+    description: Basic metadata about a section in a NIEM specification.
+
+  NIEMRule:
+    $ref: niem-rule.schema.json#/properties/NIEMRule
+    description: Information about a rule in a NIEM specification.
+
+  NIEMDefinition:
+    $ref: niem-def.schema.json#/properties/NIEMDefinition
+    description: Information about a definition in a NIEM specification.

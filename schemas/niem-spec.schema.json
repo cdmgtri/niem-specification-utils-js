@@ -1,10 +1,66 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
-    "$id": "niem-rule.schema.json",
+    "$id": "niem-spec.schema.json",
     "properties": {
-        "NIEMRule": {
+        "NIEMSpecification": {
+            "description": "Basic metadata about a NIEM specification.",
             "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "example": "Naming and Design Rules"
+                },
+                "id": {
+                    "type": "string",
+                    "example": "NDR"
+                },
+                "version": {
+                    "type": "string",
+                    "example": "NDR-4.0"
+                },
+                "versionLabel": {
+                    "type": "string",
+                    "example": "4.0"
+                },
+                "current": {
+                    "type": "boolean",
+                    "default": false
+                },
+                "niem": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "example": ["4.0", "4.1", "4.2"]
+                },
+                "link": {
+                    "type": "string",
+                    "format": "uri",
+                    "example": "https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html"
+                }
+            }
+        },
+        "NIEMSection": {
+            "description": "Basic metadata about a section in a NIEM specification.",
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "example": "section_9.1.1.1"
+                },
+                "name": {
+                    "type": "string",
+                    "example": "9.1.1.1"
+                },
+                "link": {
+                    "type": "string",
+                    "example": "https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#section_9.1.1.1"
+                }
+            }
+        },
+        "NIEMRule": {
             "description": "Information about a rule in a NIEM specification.",
+            "type": "object",
             "properties": {
                 "specification": {
                     "type": "object",
@@ -119,106 +175,81 @@
                 }
             }
         },
-        "NIEMRuleApplicability": {
-            "description": "A conformance target to which this rule applies.",
-            "type": "string",
-            "enum": ["REF", "EXT", "SET", "INS"]
-        },
-        "NIEMRuleApplicabilityNDR": {
-            "description": "A NDR conformance target to which this rule applies.",
-            "type": "string",
-            "enum": ["REF", "EXT", "SET", "INS"]
-        },
-        "NIEMRuleClassification": {
-            "description": "Specifies if the rule is a requirement or principle.",
-            "type": "string",
-            "enum": ["Constraint", "Interpretation"]
-        },
-        "NIEMRuleStyle": {
-            "description": "Indicates if and how the rule may be automated.",
-            "type": "string",
-            "enum": ["text", "schematron"]
-        },
-        "NIEMRuleLanguage": {
-            "description": "Specifies the NIEM document language to which this rule applies.",
-            "type": "string",
-            "enum": ["all", "xml", "json"]
-        }
-    },
-    "definitions": {
-        "SpecificationType": {
+        "NIEMDefinition": {
+            "description": "Information about a definition in a NIEM specification.",
             "type": "object",
             "properties": {
-                "name": {
-                    "type": "string",
-                    "example": "Naming and Design Rules"
+                "specification": {
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "type": "string",
+                            "example": "Naming and Design Rules"
+                        },
+                        "id": {
+                            "type": "string",
+                            "example": "NDR"
+                        },
+                        "version": {
+                            "type": "string",
+                            "example": "NDR-4.0"
+                        },
+                        "versionLabel": {
+                            "type": "string",
+                            "example": "4.0"
+                        },
+                        "current": {
+                            "type": "boolean",
+                            "default": false
+                        },
+                        "niem": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            },
+                            "example": ["4.0", "4.1", "4.2"]
+                        },
+                        "link": {
+                            "type": "string",
+                            "format": "uri",
+                            "example": "https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html"
+                        }
+                    }
+                },
+                "section": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "string",
+                            "example": "section_9.1.1.1"
+                        },
+                        "name": {
+                            "type": "string",
+                            "example": "9.1.1.1"
+                        },
+                        "link": {
+                            "type": "string",
+                            "example": "https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#section_9.1.1.1"
+                        }
+                    }
                 },
                 "id": {
                     "type": "string",
-                    "example": "NDR"
+                    "example": "definition_conformance_target_identifier"
                 },
-                "version": {
+                "title": {
                     "type": "string",
-                    "example": "NDR-4.0"
+                    "example": "conformance target identifier"
                 },
-                "versionLabel": {
+                "text": {
                     "type": "string",
-                    "example": "4.0"
-                },
-                "current": {
-                    "type": "boolean",
-                    "default": false
-                },
-                "niem": {
-                    "type": "array",
-                    "items": {
-                        "type": "string"
-                    },
-                    "example": ["4.0", "4.1", "4.2"]
+                    "description": "The text of the definition."
                 },
                 "link": {
                     "type": "string",
-                    "format": "uri",
-                    "example": "https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html"
+                    "example": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_conformance_target_identifier"
                 }
             }
-        },
-        "SectionType": {
-            "type": "object",
-            "properties": {
-                "id": {
-                    "type": "string",
-                    "example": "section_9.1.1.1"
-                },
-                "name": {
-                    "type": "string",
-                    "example": "9.1.1.1"
-                },
-                "link": {
-                    "type": "string",
-                    "example": "https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#section_9.1.1.1"
-                }
-            }
-        },
-        "RuleApplicabilityType": {
-            "type": "string",
-            "enum": ["REF", "EXT", "SET", "INS"]
-        },
-        "RuleApplicabilityNDRType": {
-            "type": "string",
-            "enum": ["REF", "EXT", "SET", "INS"]
-        },
-        "RuleClassificationType": {
-            "type": "string",
-            "enum": ["Constraint", "Interpretation"]
-        },
-        "RuleStyleType": {
-            "type": "string",
-            "enum": ["text", "schematron"]
-        },
-        "RuleLanguageType": {
-            "type": "string",
-            "enum": ["all", "xml", "json"]
         }
     }
 }

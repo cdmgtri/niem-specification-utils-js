@@ -1,13 +1,16 @@
 
 let debug = require("debug")("niem");
 
+let NIEMSpec = require("./src/index");
 let NDR = require("./src/ndr/index");
 let MPD = require("./src/mpd/index");
 let CodeLists = require("./src/code-lists/index");
 
 let TypeDefs = require("./src/assets/typedefs/index");
 
-let { NIEMRule } = TypeDefs;
+let { NIEMRule, NIEMDefinition } = TypeDefs;
+
+let specs = [NDR, MPD, CodeLists];
 
 class NIEMSpecs {
 
@@ -18,11 +21,27 @@ class NIEMSpecs {
 
     debug("\nCompiling specification rules into single rules file.");
 
-    allRules.push( ...NDR.generateAllRules() );
-    allRules.push( ...MPD.generateAllRules() );
-    allRules.push( ...CodeLists.generateAllRules() );
+    specs.forEach( spec => {
+      let rules = spec.generateAllRules();
+      allRules.push(...rules);
+    });
 
     return allRules;
+  }
+
+  static generateAllDefinitions() {
+
+    /** @type {NIEMDefinition[]} */
+    let allDefs = [];
+
+    debug("\nCompiling specification defs into single defs file.");
+
+    specs.forEach( spec => {
+      let defs = spec.generateAllDefinitions();
+      allDefs.push(...defs);
+    });
+
+    return allDefs;
   }
 }
 

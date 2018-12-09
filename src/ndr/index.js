@@ -62,8 +62,7 @@ class NDR extends NIEMSpec {
    * @param {string} html
    */
   format(html) {
-
-    html = this.cleanUp(html);
+    html = super.format(html);
     html = convertRuleApplicability(html);
     return html;
   }

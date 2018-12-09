@@ -5,6 +5,9 @@ let NIEMSpecs = require("../index");
 
 let ajv = new Ajv();
 
+let allRules = NIEMSpecs.generateAllRules();
+let allDefs = NIEMSpecs.generateAllDefinitions();
+
 describe("NDR 4.0 rules", () => {
   let ndrRules = NIEMSpecs.NDR.generateRules("4.0");
 
@@ -60,8 +63,6 @@ describe("NDR 4.0 rules", () => {
 describe("Test rule counts", () => {
 
   test("All rules", () => {
-    let allRules = NIEMSpecs.generateAllRules();
-    fs.outputJSONSync("test/output/niem-rules.json", allRules, {spaces: 2});
     expect(allRules.length).toEqual(583);
   });
 
@@ -87,15 +88,115 @@ describe("Test rule counts", () => {
 
 });
 
+describe("Test def counts", () => {
+
+  test("All defs", () => {
+    expect(allDefs.length).toEqual(206);
+  });
+
+  test("NDR 3.0", () => {
+    let defs = NIEMSpecs.NDR.generateDefinitions("3.0");
+    expect(defs.length).toEqual(54);
+  });
+
+  test("NDR 4.0", () => {
+    let defs = NIEMSpecs.NDR.generateDefinitions("4.0");
+    expect(defs.length).toEqual(52);
+  });
+
+  test("Code Lists 4.0", () => {
+    let defs = NIEMSpecs.CodeLists.generateDefinitions("4.0");
+    expect(defs.length).toEqual(56);
+  });
+
+  test("MPD 3.0.1", () => {
+    let defs = NIEMSpecs.MPD.generateDefinitions("3.0.1");
+    expect(defs.length).toEqual(44);
+  });
+
+});
+
+describe("Rule fields", () => {
+
+  test("id required", () => {
+    expect( emptyFields(allRules, "id") ).toEqual(0);
+  });
+
+  test("number required", () => {
+    expect( emptyFields(allRules, "number") ).toEqual(0);
+  });
+
+  test("title required", () => {
+    expect( emptyFields(allRules, "title") ).toEqual(0);
+  });
+
+  test("text required", () => {
+    expect( emptyFields(allRules, "text") ).toEqual(0);
+  });
+
+  test("section id required", () => {
+    expect( emptyFields(allRules, "section", "id") ).toEqual(0);
+  });
+
+});
+
+describe("Def fields", () => {
+
+  test("id required", () => {
+    expect( emptyFields(allDefs, "id") ).toEqual(0);
+  });
+
+  test("title required", () => {
+    expect( emptyFields(allDefs, "title") ).toEqual(0);
+  });
+
+  test("text required", () => {
+    expect( emptyFields(allDefs, "text") ).toEqual(0);
+  });
+
+  test("section id required", () => {
+    expect( emptyFields(allDefs, "section", "id") ).toEqual(0);
+  });
+
+});
+
+/**
+ * Check to see that the given array does not contain any fields with a "" value.
+ *
+ * @param {Object[]} items
+ * @param {string} field
+ */
+function emptyFields(items, field, subField) {
+
+  let label = field;
+  let results = items.filter( elt => ! elt[field] || elt[field] === "");
+
+  if (subField) {
+    label += "." + subField;
+    results = items.filter( elt => elt[field][subField] === "");
+  }
+
+  if (results.length > 0) {
+    console.log(
+      results
+        .map( result => result.specification.version + " " + label + " " + result.id || result.number)
+        .join("\n"),
+      "\n", results.length
+    );
+  }
+
+  return results.length;
+}
+
 describe("JSON validation", () => {
 
   test("test/niem-rules.json", () => {
     let valid = validate("schemas/niem-rule.schema.json", "test/niem-rules.json");
-    let errs = ajv.errors;
+    expect(valid).toBeTruthy();
+  });
 
-    if (errs) {
-      console.log(errs.toString());
-    }
+  test("test/niem-defs.json", () => {
+    let valid = validate("schemas/niem-def.schema.json", "test/niem-defs.json");
     expect(valid).toBeTruthy();
   });
 
@@ -114,6 +215,11 @@ async function validate(schemaPath, instancePath) {
 
   let validate = ajv.compile(schema);
   let valid = validate(instance);
+
+  let errs = ajv.errors;
+  if (errs) {
+    console.log(errs.toString());
+  }
 
   return valid;
 }
