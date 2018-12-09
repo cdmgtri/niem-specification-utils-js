@@ -1,7 +1,7 @@
 
 let debug = require("debug")("niem");
 
-let { NIEMRule } = require("../jsdocs/index");
+let { NIEMRule } = require("./assets/typedefs/index");
 
 class NIEMSpec {
 

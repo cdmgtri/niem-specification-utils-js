@@ -1,11 +1,9 @@
 
 let fs = require("fs-extra");
+let Ajv = require("ajv");
 let NIEMSpecs = require("../index");
 
-test("NDR 3.0 rules", () => {
-  let ndrRules = NIEMSpecs.NDR.generateRules("3.0");
-  expect(ndrRules.length).toEqual(239);
-});
+let ajv = new Ajv();
 
 describe("NDR 4.0 rules", () => {
   let ndrRules = NIEMSpecs.NDR.generateRules("4.0");
@@ -59,8 +57,48 @@ describe("NDR 4.0 rules", () => {
 
 });
 
-test("All rules", () => {
-  let allRules = NIEMSpecs.generateAllRules();
-  fs.writeJSONSync("test/niem-rules.json", allRules, {spaces: 2});
-  expect(allRules.length).toEqual(494);
+describe("Test rule counts", () => {
+
+  test("All rules", () => {
+    let allRules = NIEMSpecs.generateAllRules();
+    fs.outputJSONSync("test/output/niem-rules.json", allRules, {spaces: 2});
+    expect(allRules.length).toEqual(494);
+  });
+
+  test("NDR 3.0", () => {
+    let ndrRules = NIEMSpecs.NDR.generateRules("3.0");
+    expect(ndrRules.length).toEqual(239);
+  });
+
 });
+
+describe("JSON validation", () => {
+
+  test("test/niem-rules.json", () => {
+    let valid = validate("schemas/niem-rule.schema.json", "test/niem-rules.json");
+    let errs = ajv.errors;
+
+    if (errs) {
+      console.log(errs.toString());
+    }
+    expect(valid).toBeTruthy();
+  });
+
+});
+
+/**
+ * Validates the given JSON instance against the given schema.
+ *
+ * @param {string} schemaPath
+ * @param {string} instancePath
+ */
+async function validate(schemaPath, instancePath) {
+
+  let schema = fs.readJSONSync(schemaPath);
+  let instance = fs.readJsonSync(instancePath);
+
+  let validate = ajv.compile(schema);
+  let valid = validate(instance);
+
+  return valid;
+}

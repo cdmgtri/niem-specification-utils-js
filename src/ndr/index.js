@@ -5,7 +5,7 @@ let debug = require("debug")("niem");
 let cheerio = require("cheerio");
 
 let NIEMSpec = require("../index");
-let { NIEMRule, NIEMSpecification } = require("../../jsdocs/index");
+let { NIEMRule, NIEMSpecification } = require("../assets/typedefs/index");
 
 /** @type {CheerioStatic} */
 let $;
@@ -111,7 +111,7 @@ class NDR extends NIEMSpec {
     html = cleanUp(html);
     html = convertRuleApplicability(html);
 
-    fs.outputFileSync(path.join(__dirname, `html/ndr-${this.version}.html`), html);
+    // fs.outputFileSync(path.join(__dirname, `html/ndr-${this.version}.html`), html);
     return html;
   }
 
@@ -124,7 +124,7 @@ class NDR extends NIEMSpec {
    */
   static generateRules(version) {
     // Load the specification HTML text
-    let filePath = path.join(__dirname, `assets/niem-ndr-doc-${version}.html`);
+    let filePath = path.join(__dirname, `../assets/specifications/niem-ndr-doc-${version}.html`);
     let html = fs.readFileSync(filePath, {encoding: "utf8"});
 
     let ndr = new NDR(version, html);

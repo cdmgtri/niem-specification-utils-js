@@ -3,15 +3,19 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "bin": {
+    "rules": "bin/rules"
+  },
   "scripts": {
-    "build": "node index.js",
-    "build:debug": "cross-env DEBUG=niem node index.js",
-    "convert:yaml": "yaml2json -p -s schemas",
-    "deref": "npm-run-all deref:*",
-    "deref:exec": "json-dereference -s schemas/niem-rule-schema.yaml -o schemas/niem-rule-schema-deref.json",
-    "deref:beautify": "js-beautify schemas/niem-rule-schema-deref.json -o schemas/niem-rule-schema-deref.json\"",
-    "jsdocs": "npm run deref && node schemas/build-jsdocs.js",
-    "test": "jest"
+    "build": "node bin/rules && npm run test:json",
+    "build:debug": "cross-env DEBUG=niem npm run build",
+    "build:schema": "npm-run-all schema:*",
+    "schema:convert": "json-dereference -s schemas/niem-rule.schema.yaml -o schemas/niem-rule.schema.json",
+    "schema:beautify": "js-beautify schemas/niem-rule.schema.json -o schemas/niem-rule.schema.json -s 2",
+    "schema:typedefs": "jsonschema-jsdoc schemas/niem-rule.schema.json src/assets/typedefs/index.js",
+    "schema:test": "ajv -s schemas/json-schema-07.json -d schemas/niem-rule.schema.json",
+    "test": "jest",
+    "test:json": "ajv -s schemas/niem-rule.schema.json -d \"niem-*.json\""
   },
   "keywords": [],
   "author": "",
@@ -23,11 +27,13 @@
     "fs-extra": "^7.0.1",
     "js-beautify": "^1.8.9",
     "json-dereference-cli": "^0.1.2",
-    "json-schema-to-jsdoc": "github:n3ps/json-schema-to-jsdoc",
+    "json-schema-to-jsdoc": "github:cdmgtri/json-schema-to-jsdoc#dev",
     "npm-run-all": "^4.1.5",
     "yamljs": "^0.3.0"
   },
   "devDependencies": {
+    "ajv": "^6.6.1",
+    "ajv-cli": "^3.0.0",
     "coveralls": "^3.0.2",
     "jest": "^23.6.0"
   }
