@@ -3,6 +3,7 @@ let fs = require("fs-extra");
 let path = require("path");
 let cheerio = require("cheerio");
 let debug = require("debug")("niem");
+let beautify = require("js-beautify");
 
 /** @type {CheerioStatic} */
 let $;
@@ -12,7 +13,7 @@ let { NIEMRule, NIEMDefinition, NIEMSection } = require("./assets/typedefs/index
 class NIEMSpec {
 
   /**
-   * @param {"3.0"|"4.0"} version - The version of the specification.
+   * @param {string} version - The version of the specification.
    * @param {string} html - The HTML text of the specification.
    */
   constructor(version, html) {
@@ -24,6 +25,8 @@ class NIEMSpec {
 
     this.rules = this.generateRules();
     this.defs = this.generateDefinitions();
+
+    this.handleExceptions();
   }
 
   /**
@@ -113,22 +116,53 @@ class NIEMSpec {
       /** @type {NIEMDefinition} */
       let def = {};
 
-      // Define basic specification information for the rule
+      // Define basic information for the rule
       def.specification = specification;
       def.id = defIDNode.attribs["name"];
       def.link = this.url + "#" + def.id;
-
-      let defNormativeNode = $(defIDNode).closest(".normativeHead");
-      def.title = defNormativeNode.find("dfn").text();
-
       def.section = getSection(defIDNode, this.url);
-      def.text = defNormativeNode.next().text();
+      def.term = "";
+
+      // Parse the definition term and descriptive text
+      let defNormativeNode = $(defIDNode).closest(".normativeHead");
+      let defPNode = $(defIDNode).closest("p");
+
+      if (defNormativeNode.length > 0) {
+        // Definition style 1 (div.normativeHead)
+        def.term = parseDefinitionTerm(defNormativeNode);
+        def.text = defNormativeNode.next().text();
+      }
+      else if (defPNode.length) {
+        // Definition style 2 (paragraph)
+        def.term = parseDefinitionTerm(defPNode);
+        def.text = defPNode.text();
+      }
+      else {
+        //  Definition style 3 (li)
+        let defLiNode = $(defIDNode).closest("li");
+        def.term = parseDefinitionTerm(defLiNode);
+        def.text = defLiNode.text().split(": ")[1];
+
+        if (! def.text) {
+          def.text = defLiNode.text();
+        }
+      }
 
       defs.push(def);
       debug("%s %s %s %s %s", index, this.version, def.id, def.name, def.title);
     });
 
+    // Sort definitions by term
+    defs = defs.sort( (a, b) => ( a.term.toLowerCase() < b.term.toLowerCase() ) ? -1 : 1 );
+
     return defs;
+  }
+
+  /**
+   * Handles inconsistencies in rules and definitions.
+   * @abstract
+   */
+  handleExceptions() {
   }
 
   /**
@@ -253,12 +287,23 @@ function loadHTMLProcessor(html) {
 
   $ = cheerio.load(html, {
     normalizeWhitespace: true,
-    xmlMode: false,
+    xmlMode: true,
     decodeEntities: true,
     recognizeSelfClosing: true,
     ignoreWhitespace: true
   });
 
+}
+
+/**
+ * Parses a node for the definition term inside the <dfn></dfn> tags.
+ *
+ * @param {CheerioElement} parentNode
+ * @returns {string}
+ */
+function parseDefinitionTerm(parentNode) {
+  let defNode = $(parentNode).find("dfn");
+  return defNode.text();
 }
 
 /**
@@ -357,20 +402,20 @@ function processRuleDescription(rule, ruleSectionNode) {
 
 
   let ruleTextNode = $(ruleBoxNode).find("p");
+  let ruleSchematronNode = $(ruleBoxNode).find("pre");
 
   if ( ruleTextNode.length > 0 ) {
     rule.style = "text";
     rule.text = $(ruleBoxNode).find("> p").text();
   }
   else {
-    let ruleSchematronNode = $(ruleBoxNode).find("pre");
-
-    // TODO: Check for sch:report=true() as text rule
     rule.style = "schematron";
-    rule.schematron = $(ruleSchematronNode).html();
+    rule.schematron = ruleSchematronNode.text().replace("\n", " ");
 
-    let ruleTextNode = ruleSchematronNode.find("sch\\:assert");
-    rule.text = ruleTextNode.text();
+    // Capture the text between the <sch:assert> or <sch:report> tags
+    let re = /(?:assert|report)[^>]*>([^<]*)</;
+    let matches = re.exec(rule.schematron);
+    rule.text = matches[1];
   }
 
 }

@@ -1,5 +1,5 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema",
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "niem-spec.schema.json",
     "properties": {
         "NIEMSpecification": {
@@ -237,8 +237,9 @@
                     "type": "string",
                     "example": "definition_conformance_target_identifier"
                 },
-                "title": {
+                "term": {
                     "type": "string",
+                    "description": "The term being defined.",
                     "example": "conformance target identifier"
                 },
                 "text": {

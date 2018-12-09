@@ -11,7 +11,7 @@
     "build": "npm run build:json && npm run test:json",
     "build:json": "node bin/rules && node bin/defs",
     "build:debug": "cross-env DEBUG=niem npm run build",
-    "build:schema": "npm-run-all schema:*",
+    "build:schemas": "npm-run-all schema:*",
     "schema:convert": "yaml2json -p -s schemas",
     "schema:deref": "foreach -g \"schemas/niem-*.json\" -x \"json-dereference -s #{path} -o #{path}\"",
     "schema:beautify": "foreach -g \"schemas/niem-*.json\" -x \"js-beautify #{path} -o #{path}\"",

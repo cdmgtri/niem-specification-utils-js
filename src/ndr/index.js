@@ -67,25 +67,11 @@ class NDR extends NIEMSpec {
     return html;
   }
 
-  /**
-   * Cleans up the XML for processing
-   *
-   * @param {string} xml
-   * @returns {string}
-   */
-  cleanUp(xml) {
-
-    xml = super.cleanUp(xml);
-
-    // Close tags or remove brackets
-    xml = xml.replace("[Definition: <term>]", "[Definition: <term/>]");
-    xml = xml.replace("[Principle <number>]", "[Principle <number/>]");
-    xml = xml.replace("[Rule <section>-<number>] (<applicability>) (<classification>)", "[Rule <section/>-<number/>] (<applicability/>) (<classification/>)");
-    xml = xml.replace(/<absolute-URI>/g, "<absolute-URI/>");
-    xml = xml.replace(/<schema>/g, "<schema/>");
-    xml = xml.replace("<webb.roberts@gtri.gatech.edu>", "webb.roberts@gtri.gatech.edu");
-
-    return xml;
+  handleExceptions() {
+    if (this.version === "3.0") {
+      let rule = this.rules.find( rule => rule.number === "9-83" );
+      rule.text = "The value of the attribute targetNamespace MUST match the production <absolute-URI> as defined by RFC 3986.";
+    }
   }
 
 }

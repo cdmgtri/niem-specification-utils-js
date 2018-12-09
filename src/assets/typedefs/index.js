@@ -85,7 +85,7 @@ let NIEMRule = {};
  * @property {string} [section.name] - Example: 9.1.1.1 
  * @property {string} [section.link] - Example: https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#section_9.1.1.1 
  * @property {string} [id] - Example: definition_conformance_target_identifier 
- * @property {string} [title] - Example: conformance target identifier 
+ * @property {string} [term] - The term being defined. 
  * @property {string} [text] - The text of the definition. 
  * @property {string} [link] - Example: https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_conformance_target_identifier 
  */

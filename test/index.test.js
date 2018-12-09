@@ -146,8 +146,8 @@ describe("Def fields", () => {
     expect( emptyFields(allDefs, "id") ).toEqual(0);
   });
 
-  test("title required", () => {
-    expect( emptyFields(allDefs, "title") ).toEqual(0);
+  test("term required", () => {
+    expect( emptyFields(allDefs, "term") ).toEqual(0);
   });
 
   test("text required", () => {
@@ -180,6 +180,7 @@ function emptyFields(items, field, subField) {
     console.log(
       results
         .map( result => result.specification.version + " " + label + " " + result.id || result.number)
+        .sort()
         .join("\n"),
       "\n", results.length
     );
@@ -191,27 +192,26 @@ function emptyFields(items, field, subField) {
 describe("JSON validation", () => {
 
   test("test/niem-rules.json", () => {
-    let valid = validate("schemas/niem-rule.schema.json", "test/niem-rules.json");
+    let valid = validate("schemas/niem-rule.schema.json", allRules);
     expect(valid).toBeTruthy();
   });
 
   test("test/niem-defs.json", () => {
-    let valid = validate("schemas/niem-def.schema.json", "test/niem-defs.json");
+    let valid = validate("schemas/niem-def.schema.json", allDefs);
     expect(valid).toBeTruthy();
   });
 
 });
 
 /**
- * Validates the given JSON instance against the given schema.
+ * Validates the given JSON instance against the specified schema.
  *
  * @param {string} schemaPath
- * @param {string} instancePath
+ * @param {Object} instance
  */
-async function validate(schemaPath, instancePath) {
+async function validate(schemaPath, instance) {
 
   let schema = fs.readJSONSync(schemaPath);
-  let instance = fs.readJsonSync(instancePath);
 
   let validate = ajv.compile(schema);
   let valid = validate(instance);
