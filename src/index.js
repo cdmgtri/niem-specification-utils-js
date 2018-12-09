@@ -1,4 +1,6 @@
 
+let fs = require("fs-extra");
+let path = require("path");
 let debug = require("debug")("niem");
 
 let { NIEMRule } = require("./assets/typedefs/index");
@@ -70,6 +72,49 @@ class NIEMSpec {
 
     return allRules;
   }
+
+  /**
+   * Generates and returns an array of rules for the given version.
+   *
+   * @static
+   * @param {string} version
+   * @returns {NIEMRule[]}
+   */
+  static generateRules(version) {
+    // Load the specification HTML text
+    let filePath = path.join(__dirname, `./assets/specifications/${this.fileNameRoot}-${version}.html`);
+
+    let html = fs.readFileSync(filePath, {encoding: "utf8"});
+
+    let spec = new this(version, html);
+    return spec.rules;
+  }
+
+  /**
+   * Generates rule files for all NDR versions that are currently handled (3.0 and 4.0).
+   * @static
+   * @param {NIEMSpec} spec
+   * @param {string[]} versions
+   * @returns {NIEMRule[]}
+   */
+  static generateAllRules() {
+
+    /** @type {NIEMRule[][]} */
+    let allRules = [];
+
+    this.versions.forEach( version => {
+      let rules = this.generateRules(version);
+      allRules.push( ...rules );
+    });
+
+    return allRules;
+  }
+
 }
+
+/** @type {string[]} */
+NIEMSpec.versions = [];
+
+NIEMSpec.fileNameRoot = "";
 
 module.exports = NIEMSpec;

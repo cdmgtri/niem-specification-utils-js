@@ -7,7 +7,7 @@ let TypeDefs = require("./src/assets/typedefs/index");
 
 let { NIEMRule } = TypeDefs;
 
-class NIEMSpecifications {
+class NIEMSpecs {
 
   static generateAllRules() {
 
@@ -22,7 +22,7 @@ class NIEMSpecifications {
   }
 }
 
-NIEMSpecifications.NDR = NDR;
-NIEMSpecifications.TypeDefs = TypeDefs;
+NIEMSpecs.NDR = NDR;
+NIEMSpecs.TypeDefs = TypeDefs;
 
-module.exports = NIEMSpecifications;
+module.exports = NIEMSpecs;

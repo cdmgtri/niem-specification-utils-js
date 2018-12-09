@@ -17,7 +17,7 @@ class NDR extends NIEMSpec {
    * @readonly
    */
   get url() {
-    return url(this.version);
+    return `https://reference.niem.gov/niem/specification/naming-and-design-rules/${this.version}/niem-ndr-${this.version}.html`;
   }
 
   /**
@@ -46,6 +46,24 @@ class NDR extends NIEMSpec {
   }
 
   /**
+   * @type {NIEMSpecification}
+   */
+  get specificationData() {
+
+    /** @type {NIEMSpecification} */
+    let specification = {
+      id: "NDR",
+      name: "Naming and Design Rules",
+      version: "NDR-" + this.version,
+      versionLabel: this.version,
+      current: this.current,
+      niem: this.niem,
+      link: this.url
+    };
+    return specification;
+  }
+
+  /**
    * Generates the JSON rules file for the NDR.
    * @returns {NIEMRule[]}
    */
@@ -62,16 +80,7 @@ class NDR extends NIEMSpec {
       ignoreWhitespace: true
     });
 
-    /** @type {NIEMSpecification} */
-    let specification = {
-      id: "NDR",
-      name: "Naming and Design Rules",
-      version: "NDR-" + this.version,
-      versionLabel: this.version,
-      current: this.current,
-      niem: this.niem,
-      link: this.url
-    };
+    let specification = this.specificationData;
 
     debug("\nLoading NDR %s rules", this.version);
 
@@ -110,42 +119,17 @@ class NDR extends NIEMSpec {
   format(html) {
     html = cleanUp(html);
     html = convertRuleApplicability(html);
-
-    // fs.outputFileSync(path.join(__dirname, `html/ndr-${this.version}.html`), html);
     return html;
   }
 
-  /**
-   * Generates and returns an array of NDR rules for the given version.
-   *
-   * @static
-   * @param {"3.0"|"4.0"} version
-   * @returns {NIEMRule[]}
-   */
-  static generateRules(version) {
-    // Load the specification HTML text
-    let filePath = path.join(__dirname, `../assets/specifications/niem-ndr-doc-${version}.html`);
-    let html = fs.readFileSync(filePath, {encoding: "utf8"});
-
-    let ndr = new NDR(version, html);
-    return ndr.rules;
-  }
-
-  /**
-   * Generates rule files for all NDR versions that are currently handled (3.0 and 4.0).
-   * @static
-   */
   static generateAllRules() {
-    /** @type {NIEMRule[][]} */
-    let rules = [];
-
-    rules.push( ...NDR.generateRules("3.0") );
-    rules.push( ...NDR.generateRules("4.0") );
-
-    return rules;
+    return super.generateAllRules(NDR, NDR.versions);
   }
 
 }
+
+NDR.versions = ["3.0", "4.0"];
+NDR.fileNameRoot = "niem-ndr-doc";
 
 module.exports = NDR;
 
@@ -348,13 +332,4 @@ function convertRuleApplicability(xml) {
 
   return xml;
 
-}
-
-/**
- * Returns the URL for the rendered-HTML version of the NDR specification.
- * @param {string} version
- * @returns {string}
- */
-function url(version) {
-  return `https://reference.niem.gov/niem/specification/naming-and-design-rules/${version}/niem-ndr-${version}.html`;
 }
