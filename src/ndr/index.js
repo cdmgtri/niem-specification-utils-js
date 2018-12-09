@@ -1,14 +1,6 @@
 
-let fs = require("fs-extra");
-let path = require("path");
-let debug = require("debug")("niem");
-let cheerio = require("cheerio");
-
 let NIEMSpec = require("../index");
-let { NIEMRule, NIEMSpecification } = require("../assets/typedefs/index");
-
-/** @type {CheerioStatic} */
-let $;
+let { NIEMSpecification } = require("../assets/typedefs/index");
 
 class NDR extends NIEMSpec {
 
@@ -64,62 +56,37 @@ class NDR extends NIEMSpec {
   }
 
   /**
-   * Generates the JSON rules file for the NDR.
-   * @returns {NIEMRule[]}
-   */
-  generateRules() {
-
-    /** @type {NIEMRule[]} */
-    let rules = [];
-
-    $ = cheerio.load(this.html, {
-      normalizeWhitespace: true,
-      xmlMode: false,
-      decodeEntities: true,
-      recognizeSelfClosing: true,
-      ignoreWhitespace: true
-    });
-
-    let specification = this.specificationData;
-
-    debug("\nLoading NDR %s rules", this.version);
-
-    // Process each div with class="rule-section"
-    $("div .rule-section").each( (index, ruleSectionNode) => {
-
-      /** @type {NIEMRule} */
-      let rule = {};
-
-      // Define basic specification information for the rule
-      rule.specification = specification;
-      processRuleSection(rule, ruleSectionNode, this.url);
-      processRuleHeading(rule, ruleSectionNode, this.url);
-      processRuleLabel(rule, ruleSectionNode);
-      processRuleDescription(rule, ruleSectionNode);
-      processRuleSection(rule, ruleSectionNode);
-
-      rules.push(rule);
-      // console.log(index, rule.id, rule.name, rule.title);
-      debug("%s %s %s %s %s", index, this.version, rule.id, rule.name, rule.title);
-    });
-
-    // Save the rules
-    let rulesPath = path.join(__dirname, "../../rules", `ndr-rules-${this.version}.json`);
-    fs.outputJSONSync(rulesPath, rules);
-
-    return rules;
-  }
-
-  /**
    * Clean up unclosed tags, simplify rule applicability values, and otherwise
    * prepare the file for rule processing.
    *
    * @param {string} html
    */
   format(html) {
-    html = cleanUp(html);
+
+    html = this.cleanUp(html);
     html = convertRuleApplicability(html);
     return html;
+  }
+
+  /**
+   * Cleans up the XML for processing
+   *
+   * @param {string} xml
+   * @returns {string}
+   */
+  cleanUp(xml) {
+
+    xml = super.cleanUp(xml);
+
+    // Close tags or remove brackets
+    xml = xml.replace("[Definition: <term>]", "[Definition: <term/>]");
+    xml = xml.replace("[Principle <number>]", "[Principle <number/>]");
+    xml = xml.replace("[Rule <section>-<number>] (<applicability>) (<classification>)", "[Rule <section/>-<number/>] (<applicability/>) (<classification/>)");
+    xml = xml.replace(/<absolute-URI>/g, "<absolute-URI/>");
+    xml = xml.replace(/<schema>/g, "<schema/>");
+    xml = xml.replace("<webb.roberts@gtri.gatech.edu>", "webb.roberts@gtri.gatech.edu");
+
+    return xml;
   }
 
   static generateAllRules() {
@@ -133,181 +100,6 @@ NDR.fileNameRoot = "niem-ndr-doc";
 
 module.exports = NDR;
 
-/**
- * Sets basic rule fields.
- * Parses the rule id, name, and title, if available.
- *
- * @param {NIEMRule} rule
- * @param {CheerioElement} ruleSectionNode
- * @param {string} baseURL
- */
-function processRuleHeading(rule, ruleSectionNode, baseURL) {
-
-  // Parse the rule title
-  let title = $(ruleSectionNode).find("div .heading").text();
-  rule.number = title.split(". ")[0].replace("Rule ", "");
-  rule.title = title.split(". ")[1];
-
-  let ruleNameNodes = $(ruleSectionNode).find(".heading a");
-
-  // Parse the rule id and name
-  ruleNameNodes.each( (i, ruleNameNode) => {
-
-    let val = ruleNameNode.attribs["name"];
-
-    // Not all rules have names.  Set default value.
-    rule.name = "";
-
-    if (val.startsWith("rule_")) {
-      // Example: rule_9-1
-      rule.id = val;
-    }
-    else if (val.startsWith("rule-")) {
-      // Example: rule-base-type-not-xml-ns
-      rule.name = val || "";
-    }
-  });
-
-  rule.link = baseURL + "#" + rule.id;
-}
-
-/**
- * Sets the rule applicability and classification fields.
- *
- * @param {NIEMRule} rule
- * @param {CheerioElement} ruleSectionNode
- */
-function processRuleLabel(rule, ruleSectionNode) {
-
-  // Example: [Rule 9-1] (REF, EXT) (Constraint)
-  let label = $(ruleSectionNode).find(".normativeHead").text();
-
-  rule.applicability = parseApplicability(label);
-  rule.classification = parseClassification(label);
-}
-
-/**
- * Parses the rule label for the rule applicability array.
- *
- * @param {string} label - Example: "[Rule 4-3] (REF, EXT) (Constraint)"
- * @returns {string[]}
- */
-function parseApplicability(label) {
-  let re = /] \(([^)]*)\)/;
-  let applicabilityString = label.match(re)[1];
-  return applicabilityString.split(", ");
-}
-
-/**
- * Parses the rule label for the rule classification string.
- *
- * @param {string} label
- * @returns {string}
- */
-function parseClassification(label) {
-  if (label.includes("(Constraint)")) {
-    return "Constraint";
-  }
-  else if (label.includes("(Interpretation)")) {
-    return "Interpretation";
-  }
-  return "";
-}
-
-/**
- * Sets the rule description field from text that may precede the rule box.
- *
- * @param {NIEMRule} rule
- * @param {CheerioElement} ruleSectionNode
- */
-function processRuleDescription(rule, ruleSectionNode) {
-
-  let ruleBoxNode = $(ruleSectionNode).find(".box");
-
-  rule.pre = $(ruleBoxNode).prev("p").text();
-  rule.post = $(ruleBoxNode).next("p").text();
-
-
-  let ruleTextNode = $(ruleBoxNode).find("p");
-
-  if ( ruleTextNode.length > 0 ) {
-    rule.style = "text";
-    rule.text = $(ruleBoxNode).find("> p").text();
-  }
-  else {
-    let ruleSchematronNode = $(ruleBoxNode).find("pre");
-    rule.style = "schematron";
-    rule.schematron = $(ruleSchematronNode).html();
-    rule.text = ruleSchematronNode.find("sch\\:assert").text();
-  }
-
-}
-
-/**
- * Sets the information about the section that the rule appears under.
- *
- * @param {NIEMRule} rule
- * @param {CheerioElement} ruleSectionNode
- * @param {String} baseURL
- */
-function processRuleSection(rule, ruleSectionNode, baseURL) {
-
-  let sectionNode = $(ruleSectionNode).closest(".section");
-  let sectionHeadingNode = $(sectionNode).find("> .heading");
-
-  // Set the section name
-  rule.section = {
-    name: sectionHeadingNode.text()
-  }
-
-  // Set the section ID
-  $(sectionHeadingNode)
-    .find("a")
-    .each( (i, aNode) => {
-      let name = aNode.attribs["name"];
-      if (name.startsWith("section_")) {
-        rule.section.id = name;
-      }
-    });
-
-  // Set the section link
-  rule.section.link = baseURL + "#" + rule.section.id;
-}
-
-/**
- * Cleans up the XML for processing
- *
- * @param {string} xml
- * @returns {string}
- */
-function cleanUp(xml) {
-
-  // Replace escaped characters
-  xml = xml.replace(/&lt;/g, "<");
-  xml = xml.replace(/&gt;/g, ">");
-
-  // Add a newline between tags
-  // xml = xml.replace(/></g, ">\n<");
-
-  // Remove the HTML doctype header
-  xml = xml.replace(/<!DOCTYPE .*>/, "");
-
-  // Close the meta tag
-  xml = xml.replace(/<meta ([^>]*)>/, "<meta $1/>");
-
-  // Remove contents from image tags and close (unneeded)
-  xml = xml.replace(/<img src=[^>]*>/g, "<img/>");
-
-  // Close tags or remove brackets
-  xml = xml.replace("[Definition: <term>]", "[Definition: <term/>]");
-  xml = xml.replace("[Principle <number>]", "[Principle <number/>]");
-  xml = xml.replace("[Rule <section>-<number>] (<applicability>) (<classification>)", "[Rule <section/>-<number/>] (<applicability/>) (<classification/>)");
-  xml = xml.replace(/<absolute-URI>/g, "<absolute-URI/>");
-  xml = xml.replace(/<schema>/g, "<schema/>");
-  xml = xml.replace("<webb.roberts@gtri.gatech.edu>", "webb.roberts@gtri.gatech.edu");
-
-  return xml;
-}
 
 /**
  * Replaces hyperlinks to conformance targets in rule applicabilities to
