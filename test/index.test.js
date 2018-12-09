@@ -62,7 +62,7 @@ describe("Test rule counts", () => {
   test("All rules", () => {
     let allRules = NIEMSpecs.generateAllRules();
     fs.outputJSONSync("test/output/niem-rules.json", allRules, {spaces: 2});
-    expect(allRules.length).toEqual(523);
+    expect(allRules.length).toEqual(583);
   });
 
   test("NDR 3.0", () => {
@@ -78,6 +78,11 @@ describe("Test rule counts", () => {
   test("Code Lists 4.0", () => {
     let rules = NIEMSpecs.CodeLists.generateRules("4.0");
     expect(rules.length).toEqual(29);
+  });
+
+  test("MPD 3.0.1", () => {
+    let rules = NIEMSpecs.MPD.generateRules("3.0.1");
+    expect(rules.length).toEqual(60);
   });
 
 });

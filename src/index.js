@@ -20,6 +20,7 @@ class NIEMSpec {
     this.version = version;
 
     this.html = this.format(html);
+    loadHTMLProcessor(html);
 
     this.rules = this.generateRules();
   }
@@ -65,14 +66,6 @@ class NIEMSpec {
 
     /** @type {NIEMRule[]} */
     let rules = [];
-
-    $ = cheerio.load(this.html, {
-      normalizeWhitespace: true,
-      xmlMode: false,
-      decodeEntities: true,
-      recognizeSelfClosing: true,
-      ignoreWhitespace: true
-    });
 
     let specification = this.specificationData;
 
@@ -180,6 +173,22 @@ NIEMSpec.fileNameRoot = "";
 module.exports = NIEMSpec;
 
 /**
+ * Loads the cheerio HTML processor ($).
+ * @param {string} html
+ */
+function loadHTMLProcessor(html) {
+
+  $ = cheerio.load(html, {
+    normalizeWhitespace: true,
+    xmlMode: false,
+    decodeEntities: true,
+    recognizeSelfClosing: true,
+    ignoreWhitespace: true
+  });
+
+}
+
+/**
  * Sets basic rule fields.
  * Parses the rule id, name, and title, if available.
  *
@@ -194,7 +203,7 @@ function processRuleHeading(rule, ruleSectionNode, baseURL) {
   rule.number = title.split(". ")[0].replace("Rule ", "");
   rule.title = title.split(". ")[1];
 
-  let ruleNameNodes = $(ruleSectionNode).find(".heading a");
+  let ruleNameNodes = $(ruleSectionNode).find(".heading a [name]");
 
   // Parse the rule id and name
   ruleNameNodes.each( (i, ruleNameNode) => {
