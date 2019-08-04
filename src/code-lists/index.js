@@ -4,12 +4,24 @@ let { NIEMSpecification } = require("../assets/typedefs/index");
 
 class CodeLists extends NIEMSpec {
 
+  static url (version) {
+    return `https://reference.niem.gov/niem/specification/code-lists/${version}/niem-code-lists-${version}.html`;
+  }
+
   /**
-   * Returns the URL for the rendered-HTML version of the CodeLists specification.
-   * @readonly
+   * @param {String} version - Specification version
+   * @param {String} number - Rule number ("4-1")
    */
-  get url() {
-    return `https://reference.niem.gov/niem/specification/code-lists/${this.version}/niem-code-lists-${this.version}.html`;
+  static ruleURL(version, number) {
+    return CodeLists.url(version) + "#rule_" + number;
+  }
+
+  /**
+   * @param {String} version - Specification version
+   * @param {String} term - Definition term ("application information")
+   */
+  static defURL(version, term) {
+    return CodeLists.url(version) + "#definition_" + term.replace(/ /g, "_");
   }
 
   /**

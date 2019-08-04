@@ -29,12 +29,16 @@ class NIEMSpec {
     this.handleExceptions();
   }
 
+  static url(version) {
+    return "";
+  }
+
   /**
    * Get the URL for the rendered-HTML version of this specification.
    * @abstract
    */
   get url() {
-    return "";
+    return this.constructor.url(this.version);
   }
 
   /**
@@ -53,19 +57,26 @@ class NIEMSpec {
     return [];
   }
 
+  static ruleURL(version, number) {
+    return undefined;
+  }
 
   /**
    * @param {String} number - Rule number ("4-1")
    */
   ruleURL(number) {
-    return this.url + "#rule_" + number;
+    return this.constructor.ruleURL(this.version, number);
+  }
+
+  static defURL(version, number) {
+    return undefined;
   }
 
   /**
    * @param {String} term - Definition term ("application information")
    */
   defURL(term) {
-    return this.url + "#definition_" + term.replace(/ /g, "_");
+    return this.constructor.defURL(this.version, term);
   }
 
   /**

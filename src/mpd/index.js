@@ -4,12 +4,24 @@ let { NIEMSpecification } = require("../assets/typedefs/index");
 
 class MPD extends NIEMSpec {
 
+  static url(version) {
+    return `https://reference.niem.gov/niem/specification/model-package-description/${version}/model-package-description-${version}.html`;
+  }
+
   /**
-   * Returns the URL for the rendered-HTML version of the MPD specification.
-   * @readonly
+   * @param {String} version - Specification version
+   * @param {String} number - Rule number ("4-1")
    */
-  get url() {
-    return `https://reference.niem.gov/niem/specification/model-package-description/${this.version}/model-package-description-${this.version}.html`;
+  static ruleURL(version, number) {
+    return MPD.url(version) + "#rule_" + number;
+  }
+
+  /**
+   * @param {String} version - Specification version
+   * @param {String} term - Definition term ("application information")
+   */
+  static defURL(version, term) {
+    return MPD.url(version) + "#definition_" + term.replace(/ /g, "_");
   }
 
   /**

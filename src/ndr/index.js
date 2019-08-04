@@ -4,12 +4,24 @@ let { NIEMSpecification } = require("../assets/typedefs/index");
 
 class NDR extends NIEMSpec {
 
+  static url(version) {
+    return `https://reference.niem.gov/niem/specification/naming-and-design-rules/${version}/niem-ndr-${version}.html`;
+  }
+
   /**
-   * Returns the URL for the rendered-HTML version of the NDR specification.
-   * @readonly
+   * @param {String} version - Specification version
+   * @param {String} number - Rule number ("4-1")
    */
-  get url() {
-    return `https://reference.niem.gov/niem/specification/naming-and-design-rules/${this.version}/niem-ndr-${this.version}.html`;
+  static ruleURL(version, number) {
+    return NDR.url(version) + "#rule_" + number;
+  }
+
+  /**
+   * @param {String} version - Specification version
+   * @param {String} term - Definition term ("application information")
+   */
+  static defURL(version, term) {
+    return NDR.url(version) + "#definition_" + term.replace(/ /g, "_");
   }
 
   /**

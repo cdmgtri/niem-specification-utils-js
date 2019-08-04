@@ -51,17 +51,46 @@ class NIEMSpecs {
    * @param {String} version
    */
   static create(specID, version) {
-    switch (specID) {
-      case "NDR":
-        return new NDR(version, "");
-      case "MPD":
-        return new MPD(version, "");
-      case "CL":
-      case "CodeLists":
-        return new CodeLists(version, "");
-    }
+    let Spec = getSpecificationClass(specID);
+    return new Spec(version, "");
   }
 
+  /**
+   * Returns a URL to the specification rule
+   *
+   * @param {"NDR"|"MPD"|"CodeLists"|"CL"} specID
+   * @param {String} version
+   * @param {String} number - Rule number
+   */
+  static ruleURL(specID, version, number) {
+    let Spec = getSpecificationClass(specID);
+    return Spec ? Spec.ruleURL(version, number) : undefined;
+  }
+
+  /**
+   * Returns a URL to the specification definition
+   *
+   * @param {"NDR"|"MPD"|"CodeLists"|"CL"} specID
+   * @param {String} version
+   * @param {String} term - Definition term
+   */
+  static defURL(specID, version, term) {
+    let Spec = getSpecificationClass(specID);
+    return Spec.defURL(version, term);
+  }
+
+}
+
+function getSpecificationClass(specID) {
+  switch (specID) {
+    case "NDR":
+      return NDR;
+    case "MPD":
+      return MPD;
+    case "CL":
+    case "CodeLists":
+      return CodeLists;
+  }
 }
 
 NIEMSpecs.NDR = NDR;

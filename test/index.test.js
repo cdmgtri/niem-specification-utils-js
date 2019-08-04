@@ -173,11 +173,21 @@ describe("Specification URLs", () => {
   });
 
   test("rule url", () => {
-    expect(ndr.ruleURL("9-1")).toBe("https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#rule_9-1");
+    let expected = "https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#rule_9-1";
+
+    expect(ndr.ruleURL("9-1")).toBe(expected);
+    expect(NIEMSpecs.ruleURL("NDR", "4.0", "9-1")).toBe(expected);
   });
 
   test("document url", () => {
-    expect(ndr.defURL("application information")).toBe("https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_application_information");
+    let expected = "https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_application_information";
+
+    expect(ndr.defURL("application information")).toBe(expected);
+    expect(NIEMSpecs.defURL("NDR", "4.0", "application information"));
+  });
+
+  test("invalid input", () => {
+    expect(NIEMSpecs.ruleURL("Bogus", "1.0", "52")).not.toBeDefined();
   });
 
 });
