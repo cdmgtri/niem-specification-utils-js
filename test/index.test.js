@@ -160,6 +160,29 @@ describe("Def fields", () => {
 
 });
 
+describe("Specification URLs", () => {
+
+  let ndr = new NIEMSpecs.NDR("4.0");
+
+  test("version", () => {
+    expect(ndr.version).toBe("4.0");
+  });
+
+  test("document url", () => {
+    expect(ndr.url).toBe("https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html");
+  });
+
+  test("rule url", () => {
+    expect(ndr.ruleURL("9-1")).toBe("https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#rule_9-1");
+  });
+
+  test("document url", () => {
+    expect(ndr.defURL("application information")).toBe("https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_application_information");
+  });
+
+});
+
+
 /**
  * Check to see that the given array does not contain any fields with a "" value.
  *

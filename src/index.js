@@ -16,7 +16,7 @@ class NIEMSpec {
    * @param {string} version - The version of the specification.
    * @param {string} html - The HTML text of the specification.
    */
-  constructor(version, html) {
+  constructor(version, html="") {
 
     this.version = version;
 
@@ -51,6 +51,21 @@ class NIEMSpec {
    */
   get niem() {
     return [];
+  }
+
+
+  /**
+   * @param {String} number - Rule number ("4-1")
+   */
+  ruleURL(number) {
+    return this.url + "#rule_" + number;
+  }
+
+  /**
+   * @param {String} term - Definition term ("application information")
+   */
+  defURL(term) {
+    return this.url + "#definition_" + term.replace(/ /g, "_");
   }
 
   /**

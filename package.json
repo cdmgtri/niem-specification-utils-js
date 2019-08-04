@@ -36,6 +36,7 @@
     "yamljs": "^0.3.0"
   },
   "devDependencies": {
+    "@types/jest": "^24.0.16",
     "ajv": "^6.10.2",
     "ajv-cli": "^3.0.0",
     "coveralls": "^3.0.5",
