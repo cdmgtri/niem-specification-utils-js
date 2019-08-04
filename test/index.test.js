@@ -162,7 +162,7 @@ describe("Def fields", () => {
 
 describe("Specification URLs", () => {
 
-  let ndr = new NIEMSpecs.NDR("4.0");
+  let ndr = NIEMSpecs.create("NDR", "4.0");
 
   test("version", () => {
     expect(ndr.version).toBe("4.0");

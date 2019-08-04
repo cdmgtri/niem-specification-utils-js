@@ -43,6 +43,25 @@ class NIEMSpecs {
 
     return allDefs;
   }
+
+  /**
+   * Creates a new specification object with the given spec ID and version.
+   *
+   * @param {"NDR"|"MPD"|"CodeLists"|"CL"} specID
+   * @param {String} version
+   */
+  static create(specID, version) {
+    switch (specID) {
+      case "NDR":
+        return new NDR(version, "");
+      case "MPD":
+        return new MPD(version, "");
+      case "CL":
+      case "CodeLists":
+        return new CodeLists(version, "");
+    }
+  }
+
 }
 
 NIEMSpecs.NDR = NDR;
