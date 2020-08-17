@@ -1,9 +1,6 @@
 
-let fs = require("fs-extra");
-let path = require("path");
 let cheerio = require("cheerio");
 let debug = require("debug")("niem");
-let beautify = require("js-beautify");
 
 /** @type {CheerioStatic} */
 let $;
@@ -226,6 +223,9 @@ class NIEMSpec {
    * @returns {NIEMRule[]}
    */
   static generateRules(version) {
+    let fs = require("fs-extra");
+    let path = require("path");
+
     // Load the specification HTML text
     let filePath = path.join(__dirname, `./assets/specifications/${this.fileNameRoot}-${version}.html`);
 
@@ -265,6 +265,9 @@ class NIEMSpec {
    * @returns {NIEMDefinition[]}
    */
   static generateDefinitions(version) {
+    let fs = require("fs-extra");
+    let path = require("path");
+
     // Load the specification HTML text
     let filePath = path.join(__dirname, `./assets/specifications/${this.fileNameRoot}-${version}.html`);
 
