@@ -16,8 +16,7 @@ describe("NDR 4.0 rules", () => {
   });
 
   test("NIEM releases", () => {
-    expect(ndrRules[0].specification.niem.includes("4.0")).toBeTruthy();
-    expect(ndrRules[0].specification.niem.includes("3.0")).toBeFalsy();
+    expect(ndrRules[0].specificationID).toEqual("NDR-4.0");
   });
 
   describe("style", () => {
@@ -62,10 +61,6 @@ describe("NDR 4.0 rules", () => {
 
 describe("Test rule counts", () => {
 
-  test("All rules", () => {
-    expect(allRules.length).toEqual(583);
-  });
-
   test("NDR 3.0", () => {
     let rules = NIEMSpecs.NDR.generateRules("3.0");
     expect(rules.length).toEqual(239);
@@ -89,10 +84,6 @@ describe("Test rule counts", () => {
 });
 
 describe("Test def counts", () => {
-
-  test("All defs", () => {
-    expect(allDefs.length).toEqual(206);
-  });
 
   test("NDR 3.0", () => {
     let defs = NIEMSpecs.NDR.generateDefinitions("3.0");
@@ -134,10 +125,6 @@ describe("Rule fields", () => {
     expect( emptyFields(allRules, "text") ).toEqual(0);
   });
 
-  test("section id required", () => {
-    expect( emptyFields(allRules, "section", "id") ).toEqual(0);
-  });
-
 });
 
 describe("Def fields", () => {
@@ -152,10 +139,6 @@ describe("Def fields", () => {
 
   test("text required", () => {
     expect( emptyFields(allDefs, "text") ).toEqual(0);
-  });
-
-  test("section id required", () => {
-    expect( emptyFields(allDefs, "section", "id") ).toEqual(0);
   });
 
 });

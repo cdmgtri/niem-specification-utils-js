@@ -1,13 +1,15 @@
 
 let cheerio = require("cheerio");
+let fs = require("fs-extra");
 let debug = require("debug")("niem");
+let yaml = require("yamljs");
 
 /** @type {CheerioStatic} */
 let $;
 
-let { NIEMRule, NIEMDefinition, NIEMSection } = require("./assets/typedefs/index");
+let { SpecificationType, SectionType, RuleType, DefinitionType } = require("./assets/typedefs/index");
 
-class NIEMSpec {
+class Specification {
 
   /**
    * @param {string} version - The version of the specification.
@@ -88,11 +90,11 @@ class NIEMSpec {
 
   /**
    * Generates the JSON rules file from the specification HTML.
-   * @returns {NIEMRule[]}
+   * @returns {RuleType[]}
    */
   generateRules() {
 
-    /** @type {NIEMRule[]} */
+    /** @type {RuleType[]} */
     let rules = [];
 
     let specification = this.specificationData;
@@ -102,12 +104,16 @@ class NIEMSpec {
     // Process each div with class="rule-section"
     $("div .rule-section").each( (index, ruleSectionNode) => {
 
-      /** @type {NIEMRule} */
+      /** @type {RuleType} */
       let rule = {};
 
       // Define basic specification information for the rule
-      rule.specification = specification;
-      rule.section = getSection(ruleSectionNode, this.url);
+      rule.specificationID = specification.version;
+
+      let section = getSection(ruleSectionNode, this.url);
+      rule.sectionID = section.id;
+      rule.sectionName = section.name;
+      rule.sectionLink = section.link;
 
       processRuleHeading(rule, ruleSectionNode, this.url);
       processRuleLabel(rule, ruleSectionNode);
@@ -122,11 +128,11 @@ class NIEMSpec {
 
   /**
    * Generates the JSON rules file from the specification HTML.
-   * @returns {NIEMDefinition[]}
+   * @returns {DefinitionType[]}
    */
   generateDefinitions() {
 
-    /** @type {NIEMDefinition[]} */
+    /** @type {DefinitionType[]} */
     let defs = [];
 
     let specification = this.specificationData;
@@ -136,14 +142,19 @@ class NIEMSpec {
     // Process each div with class="rule-section"
     $("a[name*='definition_']").each( (index, defIDNode) => {
 
-      /** @type {NIEMDefinition} */
+      /** @type {DefinitionType} */
       let def = {};
 
       // Define basic information for the rule
-      def.specification = specification;
+      def.specificationID = specification.version;
+
+      let section = getSection(defIDNode, this.url);
+      def.sectionID = section.id;
+      def.sectionName = section.name;
+      def.sectionLink = section.link;
+
       def.id = defIDNode.attribs["name"];
       def.link = this.url + "#" + def.id;
-      def.section = getSection(defIDNode, this.url);
       def.term = "";
 
       // Parse the definition term and descriptive text
@@ -215,12 +226,19 @@ class NIEMSpec {
     return xml;
   }
 
+    /**
+   * @type {SpecificationType}
+   */
+  get specificationData() {
+    return {};
+  }
+
   /**
    * Generates and returns an array of rules for the given version.
    *
    * @static
    * @param {string} version
-   * @returns {NIEMRule[]}
+   * @returns {RuleType[]}
    */
   static generateRules(version) {
     let fs = require("fs-extra");
@@ -232,19 +250,26 @@ class NIEMSpec {
     let html = fs.readFileSync(filePath, {encoding: "utf8"});
 
     let spec = new this(version, html);
+
+    console.log("Saving", spec.specificationData.version, "rules and definitions...");
+
+    let outputPath = `./output/${spec.specificationData.version.toLowerCase().replace("-", "-rules-")}`;
+    fs.outputJSONSync(outputPath + ".json", spec.rules, {spaces: 2});
+    fs.outputFileSync(outputPath + ".yaml", yaml.stringify(spec.rules));
+
     return spec.rules;
   }
 
   /**
    * Generates rule files for all available specification versions.
    * @static
-   * @param {NIEMSpec} spec
+   * @param {Specification} spec
    * @param {string[]} versions
-   * @returns {NIEMRule[]}
+   * @returns {RuleType[]}
    */
   static generateAllRules() {
 
-    /** @type {NIEMRule[][]} */
+    /** @type {RuleType[][]} */
     let allRules = [];
 
     debug(`\nCompiling ${this.name} rules into single rules file.`);
@@ -262,7 +287,7 @@ class NIEMSpec {
    *
    * @static
    * @param {string} version
-   * @returns {NIEMDefinition[]}
+   * @returns {DefinitionType[]}
    */
   static generateDefinitions(version) {
     let fs = require("fs-extra");
@@ -274,19 +299,24 @@ class NIEMSpec {
     let html = fs.readFileSync(filePath, {encoding: "utf8"});
 
     let spec = new this(version, html);
+
+    let outputPath = `./output/${spec.specificationData.version.toLowerCase().replace("-", "-defs-")}`;
+    fs.outputJSONSync(outputPath + ".json", spec.defs, {spaces: 2});
+    fs.outputFileSync(outputPath + ".yaml", yaml.stringify(spec.defs));
+
     return spec.defs;
   }
 
   /**
    * Generates def files for all available specification versions.
    * @static
-   * @param {NIEMSpec} spec
+   * @param {Specification} spec
    * @param {string[]} versions
-   * @returns {NIEMDefinition[]}
+   * @returns {DefinitionType[]}
    */
   static generateAllDefinitions() {
 
-    /** @type {NIEMDefinition[][]} */
+    /** @type {DefinitionType[][]} */
     let allDefs = [];
 
     debug(`\nCompiling ${this.name} defs into single defs file.`);
@@ -302,11 +332,11 @@ class NIEMSpec {
 }
 
 /** @type {string[]} */
-NIEMSpec.versions = [];
+Specification.versions = [];
 
-NIEMSpec.fileNameRoot = "";
+Specification.fileNameRoot = "";
 
-module.exports = NIEMSpec;
+module.exports = Specification;
 
 /**
  * Loads the cheerio HTML processor ($).
@@ -339,7 +369,7 @@ function parseDefinitionTerm(parentNode) {
  * Sets basic rule fields.
  * Parses the rule id, name, and title, if available.
  *
- * @param {NIEMRule} rule
+ * @param {RuleType} rule
  * @param {CheerioElement} ruleSectionNode
  * @param {string} baseURL
  */
@@ -358,7 +388,7 @@ function processRuleHeading(rule, ruleSectionNode, baseURL) {
     let val = ruleNameNode.attribs["name"];
 
     // Not all rules have names.  Set default value.
-    rule.name = "";
+    // rule.name = "";
 
     if (val.startsWith("rule_")) {
       // Example: rule_9-1
@@ -376,7 +406,7 @@ function processRuleHeading(rule, ruleSectionNode, baseURL) {
 /**
  * Sets the rule applicability and classification fields.
  *
- * @param {NIEMRule} rule
+ * @param {RuleType} rule
  * @param {CheerioElement} ruleSectionNode
  */
 function processRuleLabel(rule, ruleSectionNode) {
@@ -419,16 +449,12 @@ function parseClassification(label) {
 /**
  * Sets the rule description field from text that may precede the rule box.
  *
- * @param {NIEMRule} rule
+ * @param {RuleType} rule
  * @param {CheerioElement} ruleSectionNode
  */
 function processRuleDescription(rule, ruleSectionNode) {
 
   let ruleBoxNode = $(ruleSectionNode).find(".box");
-
-  rule.pre = $(ruleBoxNode).prev("p").text();
-  rule.post = $(ruleBoxNode).next("p").text();
-
 
   let ruleTextNode = $(ruleBoxNode).find("p");
   let ruleSchematronNode = $(ruleBoxNode).find("pre");
@@ -460,7 +486,7 @@ function getSection(childNode, baseURL) {
   let sectionNode = $(childNode).closest(".section");
   let sectionHeadingNode = $(sectionNode).find("> .heading");
 
-  /** @type {NIEMSection} */
+  /** @type {SectionType} */
   let section = {
     name: sectionHeadingNode.text()
   }

@@ -1,0 +1,963 @@
+[
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_3.2.1",
+    "sectionName": "3.2.1. The Model Package Description Conformance Target",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_3.2.1",
+    "number": "3-1",
+    "title": "MPD Conformance Target Identifier",
+    "id": "rule_3-1",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_3-1",
+    "applicability": [
+      "WF-MPD"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "An MPD MUST have an MPD class of http://reference.niem.gov/niem/specification/model-package-description/3.0/#MPD."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_3.2.2",
+    "sectionName": "3.2.2. IEPD Conformance Target",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_3.2.2",
+    "number": "3-2",
+    "title": "MPD with MPD class of IEPD is an IEPD",
+    "name": "rule-mpd-class-iepd",
+    "id": "rule_3-2",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_3-2",
+    "applicability": [
+      "MPD"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "A model package description with an MPD class of http://reference.niem.gov/niem/specification/model-package-description/3.0/#IEPD MUST be an information exchange package documentation."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_3.2.2",
+    "sectionName": "3.2.2. IEPD Conformance Target",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_3.2.2",
+    "number": "3-3",
+    "title": "IEPD Conformance Target Identifier",
+    "id": "rule_3-3",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_3-3",
+    "applicability": [
+      "IEPD"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "An IEPD MUST have the conformance target identifier http://reference.niem.gov/niem/specification/model-package-description/3.0/#IEPD as a value of its c:mpdClassURIList attribute."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_4.2.1",
+    "sectionName": "4.2.1. Basic Subset Concepts",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_4.2.1",
+    "number": "4-1",
+    "title": "Fundamental NIEM Subset Rule",
+    "id": "rule_4-1",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_4-1",
+    "applicability": [
+      "Schema-subset"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "A schema document subset ($SUBSET) for a given reference schema document set ($REFERENCE) MUST be defined such that for all instance XML documents ($XML), where $XML is valid to $SUBSET, $XML is valid to $REFERENCE."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_5.1",
+    "sectionName": "5.1. NIEM MPD Catalog",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.1",
+    "number": "5-1",
+    "title": "MPD Has an mpd-catalog.xml in its Root Directory",
+    "id": "rule_5-1",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-1",
+    "applicability": [
+      "WF-MPD"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "Within its root directory, an MPD MUST contain an MPD catalog document artifact with name mpd-catalog.xml."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_5.1",
+    "sectionName": "5.1. NIEM MPD Catalog",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.1",
+    "number": "5-2",
+    "title": "MPD Catalog Document Valid to mpd-catalog-3.0.xsd",
+    "id": "rule_5-2",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-2",
+    "applicability": [
+      "MPD-catalog"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "An MPD catalog document MUST be valid to mpd-catalog-3.0.xsd Appendix A, MPD Catalog XML Schema Document, below."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_5.1.2",
+    "sectionName": "5.1.2. Extending an MPD Catalog",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.1.2",
+    "number": "5-3",
+    "title": "MPD Catalog Extension XML Catalog Document in Root Directory",
+    "id": "rule_5-3",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-3",
+    "applicability": [
+      "MPD-catalog"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "An MPD catalog extension XML catalog document MUST reside in the same relative directory as the mpd-catalog.xml artifact (normally in the MPD root directory)"
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_5.1.2",
+    "sectionName": "5.1.2. Extending an MPD Catalog",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.1.2",
+    "number": "5-4",
+    "title": "MPD Catalog Extension XML Catalog Document Name Is mpd-catalog-extension-xml-catalog.xml",
+    "id": "rule_5-4",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-4",
+    "applicability": [
+      "MPD-catalog"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "An MPD catalog extension XML catalog document MUST bear the file name (and type) mpd-catalog-extension-xml-catalog.xml."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_5.1.2",
+    "sectionName": "5.1.2. Extending an MPD Catalog",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.1.2",
+    "number": "5-5",
+    "title": "MPD Catalog Extension XML Catalog Document Resolves Namespaces to URIs",
+    "id": "rule_5-5",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-5",
+    "applicability": [
+      "MPD-catalog"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "An MPD catalog extension XML catalog document MUST resolve all MPD catalog schema extension document namespaces to the correct corresponding local URIs in the MPD."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_5.1.2",
+    "sectionName": "5.1.2. Extending an MPD Catalog",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.1.2",
+    "number": "5-6",
+    "title": "MPD Catalog Extension Schema Document Conforms to NDR Extension Rules",
+    "id": "rule_5-6",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-6",
+    "applicability": [
+      "MPD-catalog"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "An MPD catalog extension schema document MUST conform to the [NIEM Naming and Design Rules 3.0] extension schema conformance target rules."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_5.1.2",
+    "sectionName": "5.1.2. Extending an MPD Catalog",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.1.2",
+    "number": "5-7",
+    "title": "MPD Catalog Schema and Its Extensions Conform to NDR Schema Set Rules",
+    "id": "rule_5-7",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-7",
+    "applicability": [
+      "MPD-catalog"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "Within an MPD, the schema set formed by mpd-catalog-3.0.xsd and all MPD catalog extension schema documents MUST conform to the [NIEM Naming and Design Rules 3.0] schema set conformance target rules."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_5.1.2",
+    "sectionName": "5.1.2. Extending an MPD Catalog",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.1.2",
+    "number": "5-8",
+    "title": "MPD Schema Document Extension Support Schemas Are Supersets of Spec Subsets",
+    "id": "rule_5-8",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-8",
+    "applicability": [
+      "MPD-catalog"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "Subset schema documents provided to support an MPD schema document extension MUST be a superset of the subset schema documents provided with this specification to support the MPD catalog schema document."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_5.2.2",
+    "sectionName": "5.2.2. MPD Class (c:mpdClassURIList)",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.2",
+    "number": "5-9",
+    "title": "MPD Class Determined by Conformance Target Identifier in c:mpdClassURIList",
+    "id": "rule_5-9",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-9",
+    "applicability": [
+      "WF-MPD"
+    ],
+    "classification": "Interpretation",
+    "style": "text",
+    "text": "An MPD MUST have an MPD class of a conformance target identifier if and only if that conformance target identifier appears in the c:mpdClassURIList attribute within its MPD catalog document."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_5.2.3",
+    "sectionName": "5.2.3. MPD Version Numbering Scheme (c:mpdVersionID)",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.3",
+    "number": "5-10",
+    "title": "MPD Version Number Syntax",
+    "id": "rule_5-10",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-10",
+    "applicability": [
+      "WF-MPD"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "An MPD MUST be assigned a version number that adheres to the regular expression:The meaning of the status values are as follows:"
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_5.2.4.1",
+    "sectionName": "5.2.4.1. MPD URI Scheme (c:mpdURI)",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4.1",
+    "number": "5-11",
+    "title": "MPD URI Is Absolute",
+    "id": "rule_5-11",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-11",
+    "applicability": [
+      "WF-MPD"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "In an MPD catalog document, the value of a c:mpdURI attribute of type xs:anyURI MUST match the production <absolute-URI> as defined by [RFC 3986 URI],  §4.3, Absolute URI."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_5.2.4.2",
+    "sectionName": "5.2.4.2. URI Scheme for MPD Artifacts (c:externalURI)",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4.2",
+    "number": "5-12",
+    "title": "MPD URI Supports Fragment",
+    "id": "rule_5-12",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-12",
+    "applicability": [
+      "WF-MPD"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "A valid MPD URI MUST support the inclusion of a fragment identifier (as a suffix) [RFC 3986 URI]."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_5.2.4.2",
+    "sectionName": "5.2.4.2. URI Scheme for MPD Artifacts (c:externalURI)",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4.2",
+    "number": "5-13",
+    "title": "MPD URI Has No Fragment",
+    "id": "rule_5-13",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-13",
+    "applicability": [
+      "WF-MPD"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "A valid MPD URI MUST NOT contain a fragment identifier [RFC 3986 URI]."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_5.2.4.2",
+    "sectionName": "5.2.4.2. URI Scheme for MPD Artifacts (c:externalURI)",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4.2",
+    "number": "5-14",
+    "title": "MPD Artifact URI Syntax",
+    "id": "rule_5-14",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-14",
+    "applicability": [
+      "WF-MPD"
+    ],
+    "classification": "Interpretation",
+    "style": "text",
+    "text": "Within an MPD a URI reference to an artifact in another external MPD (i.e., an MPD artifact URI) is the concatenation of:"
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_5.2.4.3",
+    "sectionName": "5.2.4.3. URI Scheme for Local MPD Artifacts (c:pathURI)",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4.3",
+    "number": "5-15",
+    "title": "c:pathURI Resolves to a Resource",
+    "id": "rule_5-15",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-15",
+    "applicability": [
+      "WF-MPD"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "Within an MPD catalog document, the value of a c:pathURI attribute MUST resolve to a resource."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_5.2.4.3",
+    "sectionName": "5.2.4.3. URI Scheme for Local MPD Artifacts (c:pathURI)",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4.3",
+    "number": "5-16",
+    "title": "c:pathURI for c:XMLCatalog",
+    "id": "rule_5-16",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-16",
+    "applicability": [
+      "WF-MPD"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "Within an MPD catalog document, the value of a c:pathURI attribute owned by a c:XMLCatalog element MUST resolve to an XML catalog document."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_5.2.4.3",
+    "sectionName": "5.2.4.3. URI Scheme for Local MPD Artifacts (c:pathURI)",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4.3",
+    "number": "5-17",
+    "title": "c:pathURI for c:MPDChangeLog",
+    "id": "rule_5-17",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-17",
+    "applicability": [
+      "WF-MPD"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "Within an MPD catalog document, the value of a c:pathURI attribute owned by a c:MPDChangeLog element MUST resolve to a change log."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_5.2.4.3",
+    "sectionName": "5.2.4.3. URI Scheme for Local MPD Artifacts (c:pathURI)",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4.3",
+    "number": "5-18",
+    "title": "c:pathURI for c:ReadMe",
+    "id": "rule_5-18",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-18",
+    "applicability": [
+      "WF-MPD"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "Within an MPD catalog document, the value of a c:pathURI attribute owned by a c:ReadMe element MUST resolve to a readme artifact."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_5.2.4.3",
+    "sectionName": "5.2.4.3. URI Scheme for Local MPD Artifacts (c:pathURI)",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4.3",
+    "number": "5-19",
+    "title": "c:pathURI for c:IEPSampleXMLDocument",
+    "id": "rule_5-19",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-19",
+    "applicability": [
+      "WF-MPD"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "Within an MPD catalog document, the value of a c:pathURI attribute owned by a c:IEPSampleXMLDocument element MUST resolve to an XML document."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_5.2.4.3",
+    "sectionName": "5.2.4.3. URI Scheme for Local MPD Artifacts (c:pathURI)",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4.3",
+    "number": "5-20",
+    "title": "c:pathURI for c:BusinessRulesArtifact",
+    "id": "rule_5-20",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-20",
+    "applicability": [
+      "WF-MPD"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "Within an MPD catalog document, the value of a c:pathURI attribute owned by a c:BusinessRulesArtifact element MUST resolve to a business rule schema or business rules artifact."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_5.2.4.3",
+    "sectionName": "5.2.4.3. URI Scheme for Local MPD Artifacts (c:pathURI)",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4.3",
+    "number": "5-21",
+    "title": "c:pathURI for c:XMLSchemaDocument",
+    "id": "rule_5-21",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-21",
+    "applicability": [
+      "WF-MPD"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "Within an MPD catalog document, the value of a c:pathURI attribute owned by a c:XMLSchemaDocument element MUST resolve to an XML schema document."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_5.2.4.3",
+    "sectionName": "5.2.4.3. URI Scheme for Local MPD Artifacts (c:pathURI)",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4.3",
+    "number": "5-22",
+    "title": "c:pathURI for c:ExternalSchemaDocument",
+    "id": "rule_5-22",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-22",
+    "applicability": [
+      "WF-MPD"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "Within an MPD catalog document, the value of a c:pathURI attribute owned by a c:ExternalSchemaDocument element MUST resolve to an XML schema document."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_5.2.4.3",
+    "sectionName": "5.2.4.3. URI Scheme for Local MPD Artifacts (c:pathURI)",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4.3",
+    "number": "5-23",
+    "title": "c:pathURI for c:ReferenceSchemaDocument",
+    "id": "rule_5-23",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-23",
+    "applicability": [
+      "WF-MPD"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "Within an MPD catalog document, the value of a c:pathURI attribute owned by a c:ReferenceSchemaDocument element MUST resolve to a NIEM reference schema document."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_5.2.4.3",
+    "sectionName": "5.2.4.3. URI Scheme for Local MPD Artifacts (c:pathURI)",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4.3",
+    "number": "5-24",
+    "title": "c:pathURI for c:ExtensionSchemaDocument",
+    "id": "rule_5-24",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-24",
+    "applicability": [
+      "WF-MPD"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "Within an MPD catalog document, the value of a c:pathURI attribute owned by a c:ExtensionSchemaDocument element MUST resolve to a NIEM extension schema document."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_5.2.4.3",
+    "sectionName": "5.2.4.3. URI Scheme for Local MPD Artifacts (c:pathURI)",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4.3",
+    "number": "5-25",
+    "title": "c:pathURI for c:SubsetSchemaDocument",
+    "id": "rule_5-25",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-25",
+    "applicability": [
+      "WF-MPD"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "Within an MPD catalog document, the value of a c:pathURI attribute owned by a c:SubsetSchemaDocument element MUST resolve to a NIEM subset schema document."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_5.2.4.3",
+    "sectionName": "5.2.4.3. URI Scheme for Local MPD Artifacts (c:pathURI)",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4.3",
+    "number": "5-26",
+    "title": "c:pathURI for c:Wantlist",
+    "id": "rule_5-26",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-26",
+    "applicability": [
+      "WF-MPD"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "Within an MPD catalog document, the value of a c:pathURI attribute owned by a c:Wantlist element MUST resolve to a NIEM wantlist XML document."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_5.2.4.3",
+    "sectionName": "5.2.4.3. URI Scheme for Local MPD Artifacts (c:pathURI)",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4.3",
+    "number": "5-27",
+    "title": "c:pathURI for c:SchematronSchema",
+    "id": "rule_5-27",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-27",
+    "applicability": [
+      "WF-MPD"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "Within an MPD catalog document, the value of a c:pathURI attribute owned by a c:SchematronSchema element MUST resolve to a Schematron schema."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_5.2.4.3",
+    "sectionName": "5.2.4.3. URI Scheme for Local MPD Artifacts (c:pathURI)",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4.3",
+    "number": "5-28",
+    "title": "c:pathURI for c:RelaxNGSchema",
+    "id": "rule_5-28",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-28",
+    "applicability": [
+      "WF-MPD"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "Within an MPD catalog document, the value of a c:pathURI attribute owned by a c:RelaxNGSchema element MUST resolve to a RelaxNG schema."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_5.2.4.3",
+    "sectionName": "5.2.4.3. URI Scheme for Local MPD Artifacts (c:pathURI)",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4.3",
+    "number": "5-29",
+    "title": "c:pathURI for c:SchemaDocumentSet",
+    "id": "rule_5-29",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-29",
+    "applicability": [
+      "WF-MPD"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "Within an MPD catalog document, the value of a c:pathURI attribute owned by a c:SchemaDocumentSet element MUST resolve to an XML schema document set."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_5.2.4.3",
+    "sectionName": "5.2.4.3. URI Scheme for Local MPD Artifacts (c:pathURI)",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4.3",
+    "number": "5-30",
+    "title": "c:pathURI for c:ConstraintSchemaDocumentSet",
+    "id": "rule_5-30",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-30",
+    "applicability": [
+      "WF-MPD"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "Within an MPD catalog document, the value of a c:pathURI attribute owned by a c:ConstraintSchemaDocumentSet element MUST resolve to a NIEM XML schema document set."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_5.2.4.3",
+    "sectionName": "5.2.4.3. URI Scheme for Local MPD Artifacts (c:pathURI)",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4.3",
+    "number": "5-31",
+    "title": "(none)",
+    "id": "rule_5-31",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-31",
+    "applicability": [
+      "WF-MPD"
+    ],
+    "classification": "Interpretation",
+    "style": "text",
+    "text": "Any XML schema document set whose c:pathURI attribute resolves to a constraint schema document set MUST be interpreted to be a constraint schema document set."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_5.2.4.5",
+    "sectionName": "5.2.4.5. Resolving an MPD URI with a Fragment",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4.5",
+    "number": "5-32",
+    "title": "Resolve MPD URI with Fragment",
+    "id": "rule_5-32",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-32",
+    "applicability": [
+      "WF-MPD"
+    ],
+    "classification": "Interpretation",
+    "style": "text",
+    "text": "Given an absolute MPD URI [RFC 3986 URI],  §4.3, Absolute URI with a fragment, resolve this URI as follows:"
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_5.2.4.7",
+    "sectionName": "5.2.4.7. XML Catalog URI",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4.7",
+    "number": "5-33",
+    "title": "XML Catalog uri Value Resolves to Resource",
+    "id": "rule_5-33",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-33",
+    "applicability": [
+      "XML-catalog"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "Within an XML catalog document, the value of a uri attribute owned by a er:uri element MUST resolve to a resource."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_5.2.4.7",
+    "sectionName": "5.2.4.7. XML Catalog URI",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4.7",
+    "number": "5-34",
+    "title": "XML Catalog uri Value Resolves to Resource with Correct Target Namespace",
+    "id": "rule_5-34",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-34",
+    "applicability": [
+      "XML-catalog"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "Within an XML catalog document, given an XML schema document resolved by the value of a uri attribute owned by a er:uri element, the XML schema document target namespace MUST equal the value of the name (a namespace string) attribute owned by the er:uri element."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_5.3.2",
+    "sectionName": "5.3.2. Change Log for IEPDs",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.3.2",
+    "number": "5-35",
+    "title": "IEPD Has a Change Log",
+    "id": "rule_5-35",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-35",
+    "applicability": [
+      "IEPD"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "An IEPD MUST contain a change log artifact that is identified by a c:MPDChangeLog element in its MPD catalog document."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_5.4",
+    "sectionName": "5.4. ReadMe Artifact",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.4",
+    "number": "5-36",
+    "title": "Readme Describes Purpose, Scope, Business Value, etc.",
+    "id": "rule_5-36",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-36",
+    "applicability": [
+      "WF-MPD"
+    ],
+    "classification": "Interpretation",
+    "style": "text",
+    "text": "A readme artifact SHOULD (at a minimum) describe the MPD purpose, scope, business value, exchange information, typical senders/receivers, interactions, and references to other documentation."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_5.4",
+    "sectionName": "5.4. ReadMe Artifact",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.4",
+    "number": "5-37",
+    "title": "IEPD Has a ReadMe Artifact",
+    "id": "rule_5-37",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-37",
+    "applicability": [
+      "IEPD"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "An IEPD MUST contain a readme artifact that is identified by a c:ReadMe element in its MPD catalog document."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_5.6",
+    "sectionName": "5.6. Defining Information Exchange Packages",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.6",
+    "number": "5-38",
+    "title": "Conformance Target Identifier",
+    "id": "rule_5-38",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-38",
+    "applicability": [
+      "MPD-catalog"
+    ],
+    "classification": "Interpretation",
+    "style": "text",
+    "text": "A conformance target identifier for an IEP conformance target declared in an MPD is formed by concatenating in sequence:"
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_5.6",
+    "sectionName": "5.6. Defining Information Exchange Packages",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.6",
+    "number": "5-39",
+    "title": "IEP Conformance Target Has a structures:id",
+    "id": "rule_5-39",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-39",
+    "applicability": [
+      "MPD-catalog"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "A c:IEPConformanceTarget element MUST own a structures:id attribute."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_5.6",
+    "sectionName": "5.6. Defining Information Exchange Packages",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.6",
+    "number": "5-40",
+    "title": "IEPD Declares One or More IEP Conformance Targets",
+    "id": "rule_5-40",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-40",
+    "applicability": [
+      "IEPD"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "The MPD catalog document of an IEPD MUST contain one or more c:IEPConformanceTarget elements."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_5.6.2.3",
+    "sectionName": "5.6.2.3. c:ValidityContext",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.6.2.3",
+    "number": "5-41",
+    "title": "(none)",
+    "id": "rule_5-41",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-41",
+    "applicability": [
+      "MPD-catalog"
+    ],
+    "classification": "Interpretation",
+    "style": "text",
+    "text": "Given a c:xPathText attribute owned by c:ValidityContext, the validity constraint context for the descendant’s validity constraint SHALL be the value of c:xPathText evaluated against the IEP’s document information item (See [W3-XML-InfoSet],  §2.1, The Document Information Item)."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_5.6.2.4",
+    "sectionName": "5.6.2.4. c:HasDocumentElement",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.6.2.4",
+    "number": "5-42",
+    "title": "Identifying the Document Element of an IEP",
+    "id": "rule_5-42",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-42",
+    "applicability": [
+      "IEP"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "Within an MPD catalog document, if an c:IEPConformanceTarget element for an IEP has a c:HasDocumentElement child element owning a c:qualifiedNameList attribute with a value of $LIST, then the document element of the IEP MUST have a QName that is a member of $LIST."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_5.6.2.5",
+    "sectionName": "5.6.2.5. c:ValidToXPath",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.6.2.5",
+    "number": "5-43",
+    "title": "Validating an XPath Expression",
+    "id": "rule_5-43",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-43",
+    "applicability": [
+      "IEP"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "Within an MPD catalog document with a c:xPathText attribute owned by a c:ValidToXPath element, a candidate IEP is a valid IEP, ONLY IF the value of c:ValidToXPath applied to the candidate IEP (an XML document) has an effective Boolean value (EBV) equal to true. EBV is defined by [W3C XPath 2.0],  §2.4.3, Effective Boolean Value."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_5.6.3",
+    "sectionName": "5.6.3. IEP Sample Instance XML Documents",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.6.3",
+    "number": "5-44",
+    "title": "IEPD Has an IEP Sample for Each c:IEPConformanceTarget",
+    "id": "rule_5-44",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-44",
+    "applicability": [
+      "IEPD"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "Within the MPD catalog document of an IEPD, a c:IEPConformanceTarget element MUST contain a c:IEPSampleXMLDocument child element."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_5.6.3",
+    "sectionName": "5.6.3. IEP Sample Instance XML Documents",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.6.3",
+    "number": "5-45",
+    "title": "Validating an IEP Sample XML Document",
+    "id": "rule_5-45",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-45",
+    "applicability": [
+      "IEP"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "Within an MPD catalog document with a c:pathURI attribute owned by a c:IEPSampleXMLDocument, the artifact resolved by the value of c:pathURI MUST be valid for the validity constraints of the c:IEPConformanceTarget parent of c:IEPSampleXMLDocument."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_5.7",
+    "sectionName": "5.7. Conformance Assertion",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.7",
+    "number": "5-46",
+    "title": "IEPD Has Conformance Assertion",
+    "id": "rule_5-46",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-46",
+    "applicability": [
+      "IEPD"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "An IEPD MUST contain a conformance assertion artifact that is identified by a c:ConformanceAssertion element in its MPD catalog document."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_6.1",
+    "sectionName": "6.1. NIEM Wantlist",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_6.1",
+    "number": "6-1",
+    "title": "Wantlist Location",
+    "id": "rule_6-1",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_6-1",
+    "applicability": [
+      "WF-MPD"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "If present, a NIEM wantlist MUST reside within the root of the MPD subdirectory that groups and defines its corresponding subset schema document set (e.g., niem)."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_7",
+    "sectionName": "7. Organization, Packaging, and Other Criteria",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_7",
+    "number": "7-1",
+    "title": "An MPD in ZIP File Format Preserves Logical Directory Structure.",
+    "id": "rule_7-1",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_7-1",
+    "applicability": [
+      "WF-MPD"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "An MPD in ZIP file format represents a sub-tree of a file system. Such an archive MUST preserve and store the logical directory structure intended by its author for respository format."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_7",
+    "sectionName": "7. Organization, Packaging, and Other Criteria",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_7",
+    "number": "7-2",
+    "title": "XSD and XML Documents Conform to Applicable NDR Conformance Targets",
+    "id": "rule_7-2",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_7-2",
+    "applicability": [
+      "WF-MPD"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "Within an MPD, each XML schema document (XSD) or instance XML document (XML) artifact that uses a conformance targets attribute (as defined by [NIEM Conformance Targets Attribute Specification 3.0]) MUST satisfy the [NIEM Naming and Design Rules 3.0] rules for the conformance targets it declares."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_7",
+    "sectionName": "7. Organization, Packaging, and Other Criteria",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_7",
+    "number": "7-3",
+    "title": "MPD Archive Uncompresses to a Single Root Directory",
+    "id": "rule_7-3",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_7-3",
+    "applicability": [
+      "WF-MPD"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "An MPD in ZIP file format MUST uncompress (unzip) to one and only one MPD root directory."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_7.1.1",
+    "sectionName": "7.1.1. Constraint on Elements of Type c:SchemaDocumentSetType",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_7.1.1",
+    "number": "7-4",
+    "title": "Constraint on Elements of Type c:SchemaDocumentSetType",
+    "id": "rule_7-4",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_7-4",
+    "applicability": [
+      "MPD-catalog"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "An element information item with a type definition validly derived from c:SchemaDocumentSetType MUST have a child element with an element declaration that is in the substitution group of c:XMLCatalog or c:XMLSchemaDocument."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_7.2",
+    "sectionName": "7.2. IEPD File Name Syntax",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_7.2",
+    "number": "7-5",
+    "title": "IEPD ZIP file Name Syntax",
+    "id": "rule_7-5",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_7-5",
+    "applicability": [
+      "IEPD"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "The file name of an IEPD ZIP file (iepd-filename) SHOULD adhere to the syntax defined by the regular expression:The status values are as defined in Rule 5-10, MPD Version Number Syntax, above."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_7.3",
+    "sectionName": "7.3. Artifact Links to Other Resources",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_7.3",
+    "number": "7-6",
+    "title": "MPD Reference to Resource Uses Common URI Scheme",
+    "id": "rule_7-6",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_7-6",
+    "applicability": [
+      "WF-MPD"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "An absolute reference to an Internet resource MUST use a well-known URI scheme (e.g., http, https, ftp, ftps) and MUST resolve. If applicable, documentation SHOULD describe how to resolve with security, account, and/or password information."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_7.4",
+    "sectionName": "7.4. IEPD Completeness",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_7.4",
+    "number": "7-7",
+    "title": "IEPD Completeness",
+    "id": "rule_7-7",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_7-7",
+    "applicability": [
+      "IEPD"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "An IEPD SHOULD contain all artifacts needed to understand it and facilitate its correct implementation."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_7.4",
+    "sectionName": "7.4. IEPD Completeness",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_7.4",
+    "number": "7-8",
+    "title": "MPD External Schema Documents Are Local Resources",
+    "id": "rule_7-8",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_7-8",
+    "applicability": [
+      "WF-MPD"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "Within an MPD, a non-NIEM-conformant external schema document reference to another schema document and/or namespace MUST resolve to a local resource. schemaLocation attributes or XML catalogs can be used to ensure resolution."
+  },
+  {
+    "specificationID": "MPD-3.0.1",
+    "sectionID": "section_7.4",
+    "sectionName": "7.4. IEPD Completeness",
+    "sectionLink": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_7.4",
+    "number": "7-9",
+    "title": "Key MPD Resources Are Local Resources",
+    "id": "rule_7-9",
+    "link": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_7-9",
+    "applicability": [
+      "WF-MPD"
+    ],
+    "classification": "Constraint",
+    "style": "text",
+    "text": "Within any artifact of an MPD, any direct reference to another resource (i.e., another artifact such as an image, schema, stylesheet, etc.) that is required to process or display an artifact SHOULD exist within the MPD at the location specified by that reference."
+  }
+]

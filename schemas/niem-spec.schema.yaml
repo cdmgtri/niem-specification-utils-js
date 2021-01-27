@@ -4,18 +4,190 @@ $id: niem-spec.schema.json
 
 properties:
 
-  NIEMSpecification:
-    $ref: niem-base.schema.json#/properties/NIEMSpecification
+  specification:
+    $ref: "#/definitions/SpecificationType"
     description: Basic metadata about a NIEM specification.
 
-  NIEMSection:
-    $ref: niem-base.schema.json#/properties/NIEMSection
+  sections:
+    type: array
+    items:
+      $ref: "#/definitions/SectionType"
     description: Basic metadata about a section in a NIEM specification.
 
-  NIEMRule:
-    $ref: niem-rule.schema.json#/properties/NIEMRule
+  rules:
+    type: array
+    items:
+      $ref: "#/definitions/RuleType"
     description: Information about a rule in a NIEM specification.
 
-  NIEMDefinition:
-    $ref: niem-def.schema.json#/properties/NIEMDefinition
+  definitions:
+    type: array
+    items:
+      $ref: "#/definitions/DefinitionType"
     description: Information about a definition in a NIEM specification.
+
+  specificationID:
+    type: string
+    examples:
+      - NDR-4.0
+
+  sectionID:
+    type: string
+    examples:
+    - section_9.1.1.1
+
+  sectionName:
+    type: string
+    examples:
+    - 9.1.1.1
+
+  sectionLink:
+    type: string
+    examples:
+    - https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#section_9.1
+
+definitions:
+
+  SpecificationType:
+    type: "object"
+    properties:
+      name:
+        type: string
+        examples:
+        - Naming and Design Rules
+      id:
+        type: string
+        examples:
+        - NDR
+      version:
+        type: string
+        examples:
+        - NDR-4.0
+      versionLabel:
+        type: string
+        examples:
+        - "4.0"
+      current:
+        type: boolean
+        default: false
+      niem:
+        type: array
+        items:
+          type: string
+        examples:
+        - ["4.0", "4.1", "4.2"]
+      link:
+        type: string
+        format: uri
+        examples:
+        - https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html
+
+  SectionType:
+    type: object
+
+  RuleType:
+    type: object
+    description: Information about a rule in a NIEM specification.
+    properties:
+
+      specificationID:
+        $ref: "#/properties/specificationID"
+
+      sectionID:
+        $ref: "#/properties/sectionID"
+
+      sectionName:
+        $ref: "#/properties/sectionName"
+
+      sectionLink:
+        $ref: "#/properties/sectionLink"
+
+      id:
+        type: string
+        examples:
+        - "rule_9-1"
+
+      # name:
+      #   type: string
+      #   examples:
+      #   - "rule-base-type-not-xml-ns"
+
+      number:
+        type: string
+        examples:
+        - 9-1
+
+      title:
+        type: string
+        examples:
+        - No base type in the XML namespace
+
+      link:
+        type: string
+        examples:
+        - https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#rule_9-1
+
+      targets:
+        type: array
+        items:
+          type: string
+        examples:
+        - ["REF", "EXT"]
+
+      classification:
+        type: string
+        enum: ["Constraint", "Interpretation"]
+
+      style:
+        type: string
+        enum: ["text", "schematron"]
+        examples:
+        - text
+
+      # language:
+      #   type: string
+      #   enum: ["all", "xml", "json"]
+
+      text:
+        type: string
+        description: The descriptive text portion of a rule
+
+      schematron:
+        type: string
+
+  DefinitionType:
+    type: object
+    description: Information about a definition in a NIEM specification.
+    properties:
+
+      specificationID:
+        $ref: "#/properties/specificationID"
+
+      sectionID:
+        $ref: "#/properties/sectionID"
+
+      sectionName:
+        $ref: "#/properties/sectionName"
+
+      sectionLink:
+        $ref: "#/properties/sectionLink"
+
+      id:
+        type: string
+        examples:
+          - definition_conformance_target_identifier
+
+      term:
+        type: string
+        description: The term being defined.
+        examples:
+          - conformance target identifier
+
+      text:
+        type: string
+        description: The text of the definition.
+
+      link:
+        type: string
+        examples:
+          - https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_conformance_target_identifier

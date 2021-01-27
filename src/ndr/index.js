@@ -1,6 +1,6 @@
 
 let NIEMSpec = require("../index");
-let { NIEMSpecification } = require("../assets/typedefs/index");
+let { SpecificationType } = require("../assets/typedefs/index");
 
 class NDR extends NIEMSpec {
 
@@ -29,7 +29,7 @@ class NDR extends NIEMSpec {
    * @readonly
    */
   get current() {
-    return this.version === "4.0" ? true : false;
+    return this.version === "5.0" ? true : false;
   }
 
   /**
@@ -46,16 +46,16 @@ class NDR extends NIEMSpec {
         return ["3.0", "3.1", "3.2"];
       case "4.0":
         return ["4.0", "4.1", "4.2"];
+      case "5.0":
+        return ["5.0"];
     }
   }
 
   /**
-   * @type {NIEMSpecification}
+   * @type {SpecificationType}
    */
   get specificationData() {
-
-    /** @type {NIEMSpecification} */
-    let specification = {
+    return {
       id: "NDR",
       name: "Naming and Design Rules",
       version: "NDR-" + this.version,
@@ -64,7 +64,6 @@ class NDR extends NIEMSpec {
       niem: this.niem,
       link: this.url
     };
-    return specification;
   }
 
   /**
@@ -88,7 +87,7 @@ class NDR extends NIEMSpec {
 
 }
 
-NDR.versions = ["3.0", "4.0"];
+NDR.versions = ["3.0", "4.0", "5.0"];
 NDR.fileNameRoot = "niem-ndr-doc";
 
 module.exports = NDR;
@@ -105,15 +104,19 @@ function convertRuleApplicability(xml) {
 
   // Convert REF
   xml = xml.replace(/<a href="https:\/\/reference.niem.gov\/niem\/specification\/naming-and-design-rules\/4.0\/niem-ndr-4.0.html#conformance_target_REF">REF<\/a>/g, "REF");
+  xml = xml.replace(/<a href="https:\/\/reference.niem.gov\/niem\/specification\/naming-and-design-rules\/5.0\/niem-ndr-5.0.html#conformance_target_REF">REF<\/a>/g, "REF");
 
   // Convert EXT
   xml = xml.replace(/<a href="https:\/\/reference.niem.gov\/niem\/specification\/naming-and-design-rules\/4.0\/niem-ndr-4.0.html#conformance_target_EXT">EXT<\/a>/g, "EXT");
+  xml = xml.replace(/<a href="https:\/\/reference.niem.gov\/niem\/specification\/naming-and-design-rules\/5.0\/niem-ndr-5.0.html#conformance_target_EXT">EXT<\/a>/g, "EXT");
 
   // Convert SET
   xml = xml.replace(/<a href="https:\/\/reference.niem.gov\/niem\/specification\/naming-and-design-rules\/4.0\/niem-ndr-4.0.html#conformance_target_SET">SET<\/a>/g, "SET");
+  xml = xml.replace(/<a href="https:\/\/reference.niem.gov\/niem\/specification\/naming-and-design-rules\/5.0\/niem-ndr-5.0.html#conformance_target_SET">SET<\/a>/g, "SET");
 
   // Convert INS
   xml = xml.replace(/<a href="https:\/\/reference.niem.gov\/niem\/specification\/naming-and-design-rules\/4.0\/niem-ndr-4.0.html#conformance_target_INS">INS<\/a>/g, "INS");
+  xml = xml.replace(/<a href="https:\/\/reference.niem.gov\/niem\/specification\/naming-and-design-rules\/5.0\/niem-ndr-5.0.html#conformance_target_INS">INS<\/a>/g, "INS");
 
   return xml;
 
