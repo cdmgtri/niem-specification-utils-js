@@ -9,8 +9,10 @@
   "scripts": {
     "build": "node bin/index.js",
     "build:debug": "cross-env DEBUG=niem npm run build",
-    "ci": "jest --coverage && coveralls < coverage/lcov.info",
-    "test": "jest"
+    "ci": "npm run test:cov && npm run coverage",
+    "coverage": "coveralls < coverage/lcov.info",
+    "test": "jest",
+    "test:cov": "jest --coverage"
   },
   "keywords": [],
   "author": "",

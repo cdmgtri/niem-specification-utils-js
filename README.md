@@ -3,10 +3,13 @@
 
 Extracts rule and definition information from NIEM specifications into JSON and YAML files.
 
-**Branch status**: master: [![Build Status](https://travis-ci.org/cdmgtri/niem-specification-utils.svg?branch=master)](https://travis-ci.org/cdmgtri/niem-specification-utils)
-[![Coverage Status](https://coveralls.io/repos/github/cdmgtri/niem-specification-utils/badge.svg?branch=master)](https://coveralls.io/github/cdmgtri/niem-specification-utils?branch=master)
-dev: [![Build Status](https://travis-ci.org/cdmgtri/niem-specification-utils.svg?branch=dev)](https://travis-ci.org/cdmgtri/niem-specification-utils)
-[![Coverage Status](https://coveralls.io/repos/github/cdmgtri/niem-specification-utils/badge.svg?branch=dev)](https://coveralls.io/github/cdmgtri/niem-specification-utils?branch=dev)
+**Branch status**:
+master:
+[![Master Build Status](https://github.com/cdmgtri/niem-specification-utils/workflows/build/badge.svg?branch=master)](https://github.com/cdmgtri/niem-specification-utils/actions)
+[![Master Coverage Status](https://coveralls.io/repos/github/cdmgtri/niem-specification-utils/badge.svg?branch=master)](https://coveralls.io/github/cdmgtri/niem-specification-utils?branch=master)
+dev:
+[![Dev Build Status](https://github.com/cdmgtri/niem-specification-utils/workflows/build/badge.svg?branch=dev)](https://github.com/cdmgtri/niem-specification-utils/actions)
+[![Dev Coverage Status](https://coveralls.io/repos/github/cdmgtri/niem-specification-utils/badge.svg?branch=dev)](https://coveralls.io/github/cdmgtri/niem-specification-utils?branch=dev)
 
 ## Install
 
@@ -26,6 +29,14 @@ This will generate separate rules and definition files for each version of each 
 
 ```bash
 npm test
+```
+
+## CI
+
+Run GitHub Actions CI locally before committing
+
+```bash
+act -j build
 ```
 
 ## Add a new version of a specification
