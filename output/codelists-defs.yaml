@@ -503,9 +503,9 @@
     sectionID: section_2.2
     sectionLabel: 'Section 2.2. RFC 3986: Uniform Resource Identifier (URI): Generic Syntax'
     sectionURL: 'https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#section_2.2'
-    definitionID: definition_uniform_resource_identifierURI
-    definitionURL: 'https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_uniform_resource_identifierURI'
-    definitionTerm: 'uniform resource identifierURI'
+    definitionID: definition_uniform_resource_identifier
+    definitionURL: 'https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_uniform_resource_identifier'
+    definitionTerm: 'uniform resource identifier'
     definitionText: '[RFC3986] defines uniform resource identifier (URI), which it describes as: A Uniform Resource Identifier (URI) is a compact sequence of characters that identifies an abstract or physical resource.'
     definitionIsLocal: false
 -
@@ -513,9 +513,9 @@
     sectionID: section_2.2
     sectionLabel: 'Section 2.2. RFC 3986: Uniform Resource Identifier (URI): Generic Syntax'
     sectionURL: 'https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#section_2.2'
-    definitionID: definition_uniform_resource_identifierURI
-    definitionURL: 'https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_uniform_resource_identifierURI'
-    definitionTerm: 'uniform resource identifierURI'
+    definitionID: definition_URI
+    definitionURL: 'https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_URI'
+    definitionTerm: URI
     definitionText: '[RFC3986] defines uniform resource identifier (URI), which it describes as: A Uniform Resource Identifier (URI) is a compact sequence of characters that identifies an abstract or physical resource.'
     definitionIsLocal: false
 -

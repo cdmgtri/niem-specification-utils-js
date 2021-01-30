@@ -90,7 +90,7 @@ class Parser {
       let def = new Definition(this.spec, section);
       def.isLocal = false;
 
-      // def.id = defIDNode.attribs["name"];
+      def.id = defIDNode.attribs["name"];
 
       // Parse the definition term and descriptive text
       let defNormativeNode = $(defIDNode).closest(".normativeHead");
@@ -147,14 +147,26 @@ class Parser {
   /**
    * Given a node, converts the <li> elements to a string delimited by " \n- "
    * @param {CheerioElement} node
+   * @param {{text: String}} object - A definition or rule
    */
   appendListString(node, object) {
     let separator = " \n- ";
     let listText = $(node).find("li").map( (i, li) => $(li).text() ).get().join(separator);
 
     if (listText) {
-      object["text"] += separator + listText;
+      object.text += separator + listText;
     }
+
+    if (object.text.endsWith(":")) {
+      object.text += " " + $(node).find("> blockquote").text();
+    }
+
+  }
+
+  /**
+   * @param {CheerioElement} pNode - Paragraph node
+   */
+  appendBlockQuote(pNode, object) {
   }
 
   /**
@@ -251,19 +263,9 @@ class Parser {
     let ruleTextNode = $(ruleBoxNode).find("p");
     let ruleSchematronNode = $(ruleBoxNode).find("pre");
 
-    let listSeparator = " \n- ";
-
     if ( ruleTextNode.length > 0 ) {
-      // console.log(rule.id, rule.number);
       rule.style = "text";
       rule.text = $(ruleBoxNode).find("> p").text();
-
-      // Parse potential lists (`<ul>`) following the paragraph node with additional rule text
-      // let listText = $(ruleBoxNode).find("li").map( (i, li) => $(li).text() ).get().join(listSeparator);
-
-      // if (listText) {
-      //   rule.text += listSeparator + listText;
-      // }
 
       this.appendListString(ruleBoxNode, rule);
 

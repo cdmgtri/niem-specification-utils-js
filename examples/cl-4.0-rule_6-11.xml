@@ -1,0 +1,10 @@
+<div class="rule-section">
+  <div class="heading"><a name="rule_6-1"></a>Rule 6-1. Genericode code list document defined by Genericode</div>
+  <div class="box">
+    <div class="normativeHead">[Rule 6-1] (<a href="#conformance_target_GC-CLD">GC-CLD</a>) (Constraint)</div>
+    <p>A <a name="d3e5017"></a><a href="#definition_Genericode_code_list_document"><span class="termRef">Genericode code list document</span></a> MUST be a Genericode code list document as defined by <a href="#Genericode" class="ref">[Genericode]</a> <a target="_blank" href="http://docs.oasis-open.org/codelist/cs-genericode-1.0/doc/oasis-code-list-representation-genericode.html#_Toc190622791">Section 3.2, <em>Genericode Document Types</em></a>, which states:</p>
+    <blockquote>
+      <p>A Genericode code list document has the root element <code>&lt;gc:CodeList&gt;</code>. It contains metadata describing the code list as a whole, as well as explicit code list data — codes and associated values.</p>
+    </blockquote>
+  </div>
+</div>

@@ -3,7 +3,7 @@ let fs = require("fs-extra");
 let NIEMSpecs = require("../src/index");
 
 /** @type {NIEMSpecs} */
-let specs;
+let niem;
 
 /**
  * Test that the newly-generated rule and definition files match the expected ones in the output directory
@@ -11,7 +11,7 @@ let specs;
 describe("Specification checks", () => {
 
   beforeAll( () => {
-    specs = NIEMSpecs.parse("./test/output");
+    niem = NIEMSpecs.parse("./test/output");
   });
 
   test("#compare files", () => {
@@ -25,7 +25,7 @@ describe("Specification checks", () => {
   /**
    * Checks for expected specifications, rule counts, and definition counts.
    */
-  test("#check counts", () => {
+  test("#check for expected counts", () => {
     checkCounts("NDR-3.0", 239, 54);
     checkCounts("NDR-4.0", 255, 52);
     checkCounts("NDR-5.0", 260, 52);
@@ -35,15 +35,36 @@ describe("Specification checks", () => {
 
   /**
    * Checks for truncated rule and definition texts.
+   * Text paragraphs may be followed by lists or blockquotes which must be parsed separately.
+   *
    * - strings ending with ":"
    */
-  test("#check truncated", () => {
+  test("#check for truncated text", () => {
 
-    let ruleErrors = specs.rules.filter( rule => rule.text.endsWith(":") );
-    // expect(ruleErrors.length).toBe(0);
+    let ruleErrors = niem.rules.filter( rule => rule.text.endsWith(":") );
+    expect(ruleErrors.length).toBe(0);
 
-    let defErrors = specs.definitions.filter( def => def.text.endsWith(":") );
+    let defErrors = niem.definitions.filter( def => def.text.endsWith(":") );
     expect(defErrors.length).toBe(0);
+
+  });
+
+  /**
+   * Checks for rule and definition IDs that do not match the spec.
+   */
+  test("#check for invalid IDs", () => {
+
+    niem.specifications.forEach( spec => {
+      // Combine all parsed rule and definition IDs
+      let parsedIDs = [...spec.rules.map( rule => rule.id ), ...spec.defs.map( def => def.id )];
+
+      // Grab all rule and definition IDs from the specification's html
+      let matches = [...spec.html.match(/a name="rule_[^"]*"/g), ...spec.html.match(/a name="definition_[^"]*"/g)];
+      let htmlIDs = matches.map( match => match.split("\"")[1] );
+
+      let unknownIDs = parsedIDs.filter( parsedID => !htmlIDs.includes(parsedID) );
+      expect(unknownIDs.join("\n")).toBe("");
+    });
 
   });
 
@@ -70,7 +91,7 @@ function checkSpecificationFiles(tag, versions) {
  * @param {Number} expectedDefinitionCount
  */
 function checkCounts(specificationID, expectedRuleCount, expectedDefinitionCount) {
-  let spec = specs.specification(specificationID);
+  let spec = niem.specification(specificationID);
   expect(spec.rules.length).toBe(expectedRuleCount);
   expect(spec.defs.length).toBe(expectedDefinitionCount);
 }

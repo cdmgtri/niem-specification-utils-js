@@ -9,6 +9,7 @@
   "scripts": {
     "build": "node bin/index.js",
     "build:debug": "cross-env DEBUG=niem npm run build",
+    "ci": "jest --coverage && coveralls < coverage/lcov.info",
     "test": "jest"
   },
   "keywords": [],

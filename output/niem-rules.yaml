@@ -11743,7 +11743,7 @@
     ruleTargets: [GC-CLD]
     ruleClassification: Constraint
     ruleStyle: text
-    ruleText: 'A Genericode code list document MUST be a Genericode code list document as defined by [Genericode] Section 3.2, Genericode Document Types, which states:'
+    ruleText: 'A Genericode code list document MUST be a Genericode code list document as defined by [Genericode] Section 3.2, Genericode Document Types, which states: A Genericode code list document has the root element . It contains metadata describing the code list as a whole, as well as explicit code list data — codes and associated values.'
 -
     specificationID: CodeLists-4.0
     sectionID: section_6

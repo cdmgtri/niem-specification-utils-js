@@ -98,6 +98,13 @@ class NIEMSpecifications {
   }
 
   /**
+   * Returns all specifications
+   */
+  get specifications() {
+    return utils.flatten( this.sets.map( set => set.specifications ) );
+  }
+
+  /**
    * @param {"all"|"set"|"spec"} scope
    * @param {"rules"|"defs"} style
    * @param {"NDR"|"IEPD"|"MPD"|"CodeLists"|"CTAS"} label - Specification set ID or specification tag
