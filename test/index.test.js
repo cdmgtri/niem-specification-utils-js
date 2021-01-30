@@ -1,241 +1,91 @@
 
 let fs = require("fs-extra");
-let Ajv = require("ajv");
-let NIEMSpecs = require("../index");
+let NIEMSpecs = require("../src/index");
 
-let ajv = new Ajv();
-
-let allRules = NIEMSpecs.generateAllRules();
-let allDefs = NIEMSpecs.generateAllDefinitions();
-
-describe("NDR 4.0 rules", () => {
-  let ndrRules = NIEMSpecs.NDR.generateRules("4.0");
-
-  test("rule count", () => {
-    expect(ndrRules.length).toEqual(255);
-  });
-
-  test("NIEM releases", () => {
-    expect(ndrRules[0].specificationID).toEqual("NDR-4.0");
-  });
-
-  describe("style", () => {
-    test("text rules", () => {
-      expect(ndrRules.filter( rule => rule.style === "text" ).length).toEqual(68);
-    });
-
-    test("schematron rules", () => {
-      expect(ndrRules.filter( rule => rule.style === "schematron" ).length).toEqual(187);
-    });
-  });
-
-  describe("applicability", () => {
-    test("REF rules", () => {
-      expect(ndrRules.filter( rule => rule.applicability.includes("REF") ).length).toEqual(218);
-    });
-
-    test("EXT rules", () => {
-      expect(ndrRules.filter( rule => rule.applicability.includes("EXT") ).length).toEqual(203);
-    });
-
-    test("SET rules", () => {
-      expect(ndrRules.filter( rule => rule.applicability.includes("SET") ).length).toEqual(15);
-    });
-
-    test("INS rules", () => {
-      expect(ndrRules.filter( rule => rule.applicability.includes("INS") ).length).toEqual(23);
-    });
-  });
-
-  describe("classification", () => {
-    test("CONSTRAINT rules", () => {
-      expect(ndrRules.filter( rule => rule.classification === "Constraint").length).toEqual(236);
-    });
-
-    test("INTERPRETATION rules", () => {
-      expect(ndrRules.filter( rule => rule.classification === "Interpretation").length).toEqual(19);
-    });
-  });
-
-});
-
-describe("Test rule counts", () => {
-
-  test("NDR 3.0", () => {
-    let rules = NIEMSpecs.NDR.generateRules("3.0");
-    expect(rules.length).toEqual(239);
-  });
-
-  test("NDR 4.0", () => {
-    let rules = NIEMSpecs.NDR.generateRules("4.0");
-    expect(rules.length).toEqual(255);
-  });
-
-  test("Code Lists 4.0", () => {
-    let rules = NIEMSpecs.CodeLists.generateRules("4.0");
-    expect(rules.length).toEqual(29);
-  });
-
-  test("MPD 3.0.1", () => {
-    let rules = NIEMSpecs.MPD.generateRules("3.0.1");
-    expect(rules.length).toEqual(60);
-  });
-
-});
-
-describe("Test def counts", () => {
-
-  test("NDR 3.0", () => {
-    let defs = NIEMSpecs.NDR.generateDefinitions("3.0");
-    expect(defs.length).toEqual(54);
-  });
-
-  test("NDR 4.0", () => {
-    let defs = NIEMSpecs.NDR.generateDefinitions("4.0");
-    expect(defs.length).toEqual(52);
-  });
-
-  test("Code Lists 4.0", () => {
-    let defs = NIEMSpecs.CodeLists.generateDefinitions("4.0");
-    expect(defs.length).toEqual(56);
-  });
-
-  test("MPD 3.0.1", () => {
-    let defs = NIEMSpecs.MPD.generateDefinitions("3.0.1");
-    expect(defs.length).toEqual(44);
-  });
-
-});
-
-describe("Rule fields", () => {
-
-  test("id required", () => {
-    expect( emptyFields(allRules, "id") ).toEqual(0);
-  });
-
-  test("number required", () => {
-    expect( emptyFields(allRules, "number") ).toEqual(0);
-  });
-
-  test("title required", () => {
-    expect( emptyFields(allRules, "title") ).toEqual(0);
-  });
-
-  test("text required", () => {
-    expect( emptyFields(allRules, "text") ).toEqual(0);
-  });
-
-});
-
-describe("Def fields", () => {
-
-  test("id required", () => {
-    expect( emptyFields(allDefs, "id") ).toEqual(0);
-  });
-
-  test("term required", () => {
-    expect( emptyFields(allDefs, "term") ).toEqual(0);
-  });
-
-  test("text required", () => {
-    expect( emptyFields(allDefs, "text") ).toEqual(0);
-  });
-
-});
-
-describe("Specification URLs", () => {
-
-  let ndr = NIEMSpecs.create("NDR", "4.0");
-
-  test("version", () => {
-    expect(ndr.version).toBe("4.0");
-  });
-
-  test("document url", () => {
-    expect(ndr.url).toBe("https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html");
-  });
-
-  test("rule url", () => {
-    let expected = "https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#rule_9-1";
-
-    expect(ndr.ruleURL("9-1")).toBe(expected);
-    expect(NIEMSpecs.ruleURL("NDR", "4.0", "9-1")).toBe(expected);
-  });
-
-  test("document url", () => {
-    let expected = "https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_application_information";
-
-    expect(ndr.defURL("application information")).toBe(expected);
-    expect(NIEMSpecs.defURL("NDR", "4.0", "application information"));
-  });
-
-  test("invalid input", () => {
-    expect(NIEMSpecs.ruleURL("Bogus", "1.0", "52")).not.toBeDefined();
-  });
-
-});
-
+/** @type {NIEMSpecs} */
+let specs;
 
 /**
- * Check to see that the given array does not contain any fields with a "" value.
- *
- * @param {Object[]} items
- * @param {string} field
+ * Test that the newly-generated rule and definition files match the expected ones in the output directory
  */
-function emptyFields(items, field, subField) {
+describe("Specification checks", () => {
 
-  let label = field;
-  let results = items.filter( elt => ! elt[field] || elt[field] === "");
+  beforeAll( () => {
+    specs = NIEMSpecs.parse("./test/output");
+  });
 
-  if (subField) {
-    label += "." + subField;
-    results = items.filter( elt => elt[field][subField] === "");
-  }
+  test("#compare files", () => {
+    checkSpecificationFiles("NDR", ["3.0", "4.0", "5.0"]);
+    checkSpecificationFiles("MPD", ["3.0.1"]);
+    checkSpecificationFiles("CodeLists", ["4.0"]);
+    checkOutput("niem-rules");
+    checkOutput("niem-defs");
+  });
 
-  if (results.length > 0) {
-    console.log(
-      results
-        .map( result => result.specification.version + " " + label + " " + result.id || result.number)
-        .sort()
-        .join("\n"),
-      "\n", results.length
-    );
-  }
+  /**
+   * Checks for expected specifications, rule counts, and definition counts.
+   */
+  test("#check counts", () => {
+    checkCounts("NDR-3.0", 239, 54);
+    checkCounts("NDR-4.0", 255, 52);
+    checkCounts("NDR-5.0", 260, 52);
+    checkCounts("MPD-3.0.1", 60, 44);
+    checkCounts("CodeLists-4.0", 29, 56);
+  });
 
-  return results.length;
+  /**
+   * Checks for truncated rule and definition texts.
+   * - strings ending with ":"
+   */
+  test("#check truncated", () => {
+
+    let ruleErrors = specs.rules.filter( rule => rule.text.endsWith(":") );
+    // expect(ruleErrors.length).toBe(0);
+
+    let defErrors = specs.definitions.filter( def => def.text.endsWith(":") );
+    expect(defErrors.length).toBe(0);
+
+  });
+
+});
+
+/**
+ * Compares the generated specification and specification set rule and definitions files with
+ * those in the output directory.
+ *
+ * @param {String} tag
+ * @param {String[]} versions
+ */
+function checkSpecificationFiles(tag, versions) {
+  checkOutput( NIEMSpecs.fileName("set", "rules", tag) );
+  checkOutput( NIEMSpecs.fileName("set", "defs", tag) );
 }
 
-describe("JSON validation", () => {
-
-  test("test/niem-rules.json", () => {
-    let valid = validate("schemas/niem-rule.schema.json", allRules);
-    expect(valid).toBeTruthy();
-  });
-
-  test("test/niem-defs.json", () => {
-    let valid = validate("schemas/niem-def.schema.json", allDefs);
-    expect(valid).toBeTruthy();
-  });
-
-});
+/**
+ * Finds the specification with the given ID.
+ * Compares the actual rule and definition counts with the expected counts.
+ *
+ * @param {String} specificationID
+ * @param {Number} expectedRuleCount
+ * @param {Number} expectedDefinitionCount
+ */
+function checkCounts(specificationID, expectedRuleCount, expectedDefinitionCount) {
+  let spec = specs.specification(specificationID);
+  expect(spec.rules.length).toBe(expectedRuleCount);
+  expect(spec.defs.length).toBe(expectedDefinitionCount);
+}
 
 /**
- * Validates the given JSON instance against the specified schema.
- *
- * @param {string} schemaPath
- * @param {Object} instance
+ * Does a simple string comparison of the export files from the tests vs the files in the /output directory
  */
-async function validate(schemaPath, instance) {
+function checkOutput(fileName) {
 
-  let schema = fs.readJSONSync(schemaPath);
+  let testJSON = fs.readFileSync(`./test/output/${fileName}.json`, "utf8");
+  let expectedJSON = fs.readFileSync(`./output/${fileName}.json`, "utf8");
+  expect(testJSON).toEqual(expectedJSON);
 
-  let validate = ajv.compile(schema);
-  let valid = validate(instance);
+  let testYAML = fs.readFileSync(`./test/output/${fileName}.yaml`, "utf8");
+  let expectedYAML = fs.readFileSync(`./output/${fileName}.yaml`, "utf8");
+  expect(testYAML).toEqual(expectedYAML);
 
-  let errs = ajv.errors;
-  if (errs) {
-    console.log(errs.toString());
-  }
-
-  return valid;
 }

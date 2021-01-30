@@ -1,0 +1,6 @@
+<div>
+  <p>The term <a name="definition_catalog_entry_file"></a><dfn>catalog entry file</dfn> is defined by <a href="#XMLCatalogs" class="ref">[XML Catalogs]</a> <a target="_blank" href="https://www.oasis-open.org/committees/download.php/14809/std-entity-xml-catalogs-1.1.html#s.terminology">Section 2, <em>Terminology</em></a>, which states:</p>
+  <blockquote>
+    <p>A catalog may be physically contained in one or more catalog entry files. A catalog entry file is a document that contains a set of catalog entries.</p>
+  </blockquote>
+</div>

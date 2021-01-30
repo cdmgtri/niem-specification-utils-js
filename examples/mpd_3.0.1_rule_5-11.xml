@@ -1,0 +1,7 @@
+<div class="rule-section">
+  <div class="heading"><a name="r-mpduri"></a><a name="rule_5-11"></a>Rule 5-11. MPD URI Is Absolute</div>
+  <div class="box">
+    <div class="normativeHead">[Rule 5-11] (WF-MPD) (Constraint)</div>
+    <p>In an MPD catalog document, the value of a <code>c:mpdURI</code> attribute of type <code>xs:anyURI</code> MUST match the production &lt;absolute-URI&gt; as defined by <a href="#RFC3986-URI" class="ref">[RFC 3986 URI]</a>, <a target="_blank" href="http://tools.ietf.org/html/rfc3986#section-4.3"> §4.3, <q>Absolute URI</q></a>.</p>
+  </div>
+</div>

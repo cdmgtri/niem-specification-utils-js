@@ -3,7 +3,9 @@
 
 Extracts rule and definition information from NIEM specifications into JSON and YAML files.
 
-[![Build Status](https://travis-ci.org/cdmgtri/niem-specification-utils.svg?branch=dev)](https://travis-ci.org/cdmgtri/niem-specification-utils)
+**Branch status**: master: [![Build Status](https://travis-ci.org/cdmgtri/niem-specification-utils.svg?branch=master)](https://travis-ci.org/cdmgtri/niem-specification-utils)
+[![Coverage Status](https://coveralls.io/repos/github/cdmgtri/niem-specification-utils/badge.svg?branch=master)](https://coveralls.io/github/cdmgtri/niem-specification-utils?branch=master)
+dev: [![Build Status](https://travis-ci.org/cdmgtri/niem-specification-utils.svg?branch=dev)](https://travis-ci.org/cdmgtri/niem-specification-utils)
 [![Coverage Status](https://coveralls.io/repos/github/cdmgtri/niem-specification-utils/badge.svg?branch=dev)](https://coveralls.io/github/cdmgtri/niem-specification-utils?branch=dev)
 
 ## Install
@@ -32,9 +34,13 @@ npm test
 
   - Rename the file if necessary so the name follows the same pattern as the other versions of the spec
 
-- In the custom specification class, add the new version number to the class's static version array:
+- In the custom specification class:
+  - add the new version number to the class's static version array
+  - update the static currentVersion constant
 
   ```js
   // File src/ndr/index.js
+
+  NDR.currentVersion = "5.0";
   NDR.versions = ["3.0", "4.0", "5.0"];
   ```

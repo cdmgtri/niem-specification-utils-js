@@ -1,0 +1,12 @@
+<div class="rule-section">
+  <div class="heading"><a name="r-mpd-uri-syntax"></a><a name="rule_5-14"></a>Rule 5-14. MPD Artifact URI Syntax</div>
+  <div class="box">
+    <div class="normativeHead">[Rule 5-14] (WF-MPD) (Interpretation)</div>
+    <p>Within an <a name="d3e3860"></a><a href="#definition_model_package_description"><span class="termRef">MPD</span></a> a URI reference to an artifact in another external MPD (i.e., an MPD artifact URI) is the concatenation of:</p>
+    <ul>
+      <li>The URI of the <a name="d3e3869"></a><a href="#definition_model_package_description"><span class="termRef">MPD</span></a> that contains the artifact.</li>
+      <li>A pound-sign character ("#" — also known as a hashtag character).</li>
+      <li>An identifier that is the artifact’s locally unique <a name="d3e3884"></a><a href="#definition_path_name"><span class="termRef">path name</span></a> relative to the <a name="d3e3887"></a><a href="#definition_MPD_root_directory"><span class="termRef">MPD root directory</span></a>.</li>
+    </ul>
+  </div>
+</div>

@@ -1,508 +1,141 @@
 
-let cheerio = require("cheerio");
-let fs = require("fs-extra");
-let debug = require("debug")("niem");
-let yaml = require("yamljs");
+let utils = require("./utils");
 
-/** @type {CheerioStatic} */
-let $;
+let Specification = require("./specification");
+let SpecificationSet = require("./set");
 
-let { SpecificationType, SectionType, RuleType, DefinitionType } = require("./assets/typedefs/index");
+let NDR = require("./specification-ndr");
+let IEPD = require("./specification-iepd");
+let CodeLists = require("./specification-code-lists");
+let CTAS = require("./specification-ctas");
 
-class Specification {
+let specificationData = require("../specificationData");
 
-  /**
-   * @param {string} version - The version of the specification.
-   * @param {string} html - The HTML text of the specification.
-   */
-  constructor(version, html="") {
+class NIEMSpecifications {
 
-    this.version = version;
+  constructor() {
 
-    this.html = this.format(html);
-    loadHTMLProcessor(html);
+    this.NDR = new SpecificationSet("NDR", "Naming and Design Rules");
+    this.IEPD = new SpecificationSet("IEPD", "Information Exchange Package Description");
+    this.CodeLists = new SpecificationSet("CodeLists", "Code Lists");
+    this.CTAS = new SpecificationSet("CTAS", "Conformance Targets Attribute Specification");
 
-    this.rules = this.generateRules();
-    this.defs = this.generateDefinitions();
+    this.sets = [this.NDR, this.IEPD, this.CodeLists, this.CTAS];
 
-    this.handleExceptions();
-  }
-
-  static url(version) {
-    return "";
   }
 
   /**
-   * Get the URL for the rendered-HTML version of this specification.
-   * @abstract
+   * Load specification objects from a set of data fields
    */
-  get url() {
-    return this.constructor.url(this.version);
-  }
+  load() {
 
-  /**
-   * Return true if this version of the specification is the latest stable version.
-   * @abstract
-   */
-  get current() {
-    return false;
-  }
+    let specificationClasses = {NDR, IEPD, CodeLists, CTAS};
 
-  /**
-   * Return an array of NIEM release numbers to which this specification may apply.
-   * @abstract
-   */
-  get niem() {
-    return [];
-  }
+    // Process each entry in the /specificationData.js file
+    specificationData.forEach( entry => {
 
-  static ruleURL(version, number) {
-    return undefined;
-  }
+      let html = utils.specificationHTML(entry.tag || entry.setID, entry.version);
 
-  /**
-   * @param {String} number - Rule number ("4-1")
-   */
-  ruleURL(number) {
-    return this.constructor.ruleURL(this.version, number);
-  }
+      /** @type {SpecificationSet} */
+      let specificationSet = this[entry.setID];
 
-  static defURL(version, number) {
-    return undefined;
-  }
+      /** @type {Specification} */
+      let SpecificationClass = specificationClasses[entry.setID];
 
-  /**
-   * @param {String} term - Definition term ("application information")
-   */
-  defURL(term) {
-    return this.constructor.defURL(this.version, term);
-  }
+      let specification = new SpecificationClass(specificationSet, entry.tag, entry.name, entry.version, entry.current, entry.url, html);
 
-  /**
-   * Cleans up and reformats the specification HTML as needed for processing.
-   * @abstract
-   * @param {string} html
-   * @returns {string} - Reformatted HTML
-   */
-  format(html) {
-    return this.cleanUp(html);
-  }
+      specificationSet.specifications.push(specification);
 
-  /**
-   * Generates the JSON rules file from the specification HTML.
-   * @returns {RuleType[]}
-   */
-  generateRules() {
-
-    /** @type {RuleType[]} */
-    let rules = [];
-
-    let specification = this.specificationData;
-
-    debug("\nLoading %s %s rules", this.constructor.name, this.version);
-
-    // Process each div with class="rule-section"
-    $("div .rule-section").each( (index, ruleSectionNode) => {
-
-      /** @type {RuleType} */
-      let rule = {};
-
-      // Define basic specification information for the rule
-      rule.specificationID = specification.version;
-
-      let section = getSection(ruleSectionNode, this.url);
-      rule.sectionID = section.id;
-      rule.sectionName = section.name;
-      rule.sectionLink = section.link;
-
-      processRuleHeading(rule, ruleSectionNode, this.url);
-      processRuleLabel(rule, ruleSectionNode);
-      processRuleDescription(rule, ruleSectionNode);
-
-      rules.push(rule);
-      debug("%s %s %s %s %s", index, this.version, rule.id, rule.name, rule.title);
     });
 
-    return rules;
+  }
+
+  get rules() {
+    return utils.flatten(this.sets.map( set => set.rules ));
+  }
+
+  get definitions() {
+    return utils.flatten(this.sets.map( set => set.defs ));
   }
 
   /**
-   * Generates the JSON rules file from the specification HTML.
-   * @returns {DefinitionType[]}
-   */
-  generateDefinitions() {
-
-    /** @type {DefinitionType[]} */
-    let defs = [];
-
-    let specification = this.specificationData;
-
-    debug("\nLoading %s %s definitions", this.constructor.name, this.version);
-
-    // Process each div with class="rule-section"
-    $("a[name*='definition_']").each( (index, defIDNode) => {
-
-      /** @type {DefinitionType} */
-      let def = {};
-
-      // Define basic information for the rule
-      def.specificationID = specification.version;
-
-      let section = getSection(defIDNode, this.url);
-      def.sectionID = section.id;
-      def.sectionName = section.name;
-      def.sectionLink = section.link;
-
-      def.id = defIDNode.attribs["name"];
-      def.link = this.url + "#" + def.id;
-      def.term = "";
-
-      // Parse the definition term and descriptive text
-      let defNormativeNode = $(defIDNode).closest(".normativeHead");
-      let defPNode = $(defIDNode).closest("p");
-
-      if (defNormativeNode.length > 0) {
-        // Definition style 1 (div.normativeHead)
-        def.term = parseDefinitionTerm(defNormativeNode);
-        def.text = defNormativeNode.next().text();
-      }
-      else if (defPNode.length) {
-        // Definition style 2 (paragraph)
-        def.term = parseDefinitionTerm(defPNode);
-        def.text = defPNode.text();
-      }
-      else {
-        //  Definition style 3 (li)
-        let defLiNode = $(defIDNode).closest("li");
-        def.term = parseDefinitionTerm(defLiNode);
-        def.text = defLiNode.text().split(": ")[1];
-
-        if (! def.text) {
-          def.text = defLiNode.text();
-        }
-      }
-
-      defs.push(def);
-      debug("%s %s %s %s %s", index, this.version, def.id, def.name, def.title);
-    });
-
-    // Sort definitions by term
-    defs = defs.sort( (a, b) => ( a.term.toLowerCase() < b.term.toLowerCase() ) ? -1 : 1 );
-
-    return defs;
-  }
-
-  /**
-   * Handles inconsistencies in rules and definitions.
-   * @abstract
-   */
-  handleExceptions() {
-  }
-
-  /**
-   * Cleans up the XML for processing
+   * Saves rules and definitions for all NIEM specifications together (e.g,. `niem-rules.json`).
+   * Also calls each specification set individually to save its rules and defs.
    *
-   * @param {string} xml
-   * @returns {string}
+   * @param {String} [folder='./output/'] - Folder to save output files.  Defaults to /output.
    */
-  cleanUp(xml) {
+  save(folder="./output/") {
+    // Save all NIEM rules and definitions
+    utils.save( NIEMSpecifications.fileName("all", "rules"), this.rules, folder);
+    utils.save(NIEMSpecifications.fileName("all", "defs"), this.definitions, folder);
 
-    // Replace escaped characters
-    xml = xml.replace(/&lt;/g, "<");
-    xml = xml.replace(/&gt;/g, ">");
-
-    // Add a newline between tags
-    // xml = xml.replace(/></g, ">\n<");
-
-    // Remove the HTML doctype header
-    xml = xml.replace(/<!DOCTYPE .*>/, "");
-
-    // Close the meta tag
-    xml = xml.replace(/<meta ([^>]*)>/, "<meta $1/>");
-
-    // Remove contents from image tags and close (unneeded)
-    xml = xml.replace(/<img src=[^>]*>/g, "<img/>");
-
-    return xml;
-  }
-
-    /**
-   * @type {SpecificationType}
-   */
-  get specificationData() {
-    return {};
+    // Save each set of rules and definitions
+    this.sets.forEach( set => set.save(folder) );
   }
 
   /**
-   * Generates and returns an array of rules for the given version.
-   *
-   * @static
-   * @param {string} version
-   * @returns {RuleType[]}
+   * Returns the specification with the given ID.
+   * @example "NDR-3.0"
+   * @param {String} specificationID
    */
-  static generateRules(version) {
-    let fs = require("fs-extra");
-    let path = require("path");
+  specification(specificationID) {
 
-    // Load the specification HTML text
-    let filePath = path.join(__dirname, `./assets/specifications/${this.fileNameRoot}-${version}.html`);
+    if (!specificationID.includes("-")) return;
 
-    let html = fs.readFileSync(filePath, {encoding: "utf8"});
+    // Parse the specification tag and version from the specification ID
+    let [tag, version] = specificationID.split("-");
 
-    let spec = new this(version, html);
+    // Adjust the specification set for MPDs.
+    let setID = tag.replace("MPD", "IEPD");
 
-    console.log("Saving", spec.specificationData.version, "rules and definitions...");
+    /** @type {SpecificationSet} */
+    let set = this[setID];
 
-    let outputPath = `./output/${spec.specificationData.version.toLowerCase().replace("-", "-rules-")}`;
-    fs.outputJSONSync(outputPath + ".json", spec.rules, {spaces: 2});
-    fs.outputFileSync(outputPath + ".yaml", yaml.stringify(spec.rules));
-
-    return spec.rules;
-  }
-
-  /**
-   * Generates rule files for all available specification versions.
-   * @static
-   * @param {Specification} spec
-   * @param {string[]} versions
-   * @returns {RuleType[]}
-   */
-  static generateAllRules() {
-
-    /** @type {RuleType[][]} */
-    let allRules = [];
-
-    debug(`\nCompiling ${this.name} rules into single rules file.`);
-
-    this.versions.forEach( version => {
-      let rules = this.generateRules(version);
-      allRules.push( ...rules );
-    });
-
-    return allRules;
-  }
-
-  /**
-   * Generates and returns an array of definitions for the given version.
-   *
-   * @static
-   * @param {string} version
-   * @returns {DefinitionType[]}
-   */
-  static generateDefinitions(version) {
-    let fs = require("fs-extra");
-    let path = require("path");
-
-    // Load the specification HTML text
-    let filePath = path.join(__dirname, `./assets/specifications/${this.fileNameRoot}-${version}.html`);
-
-    let html = fs.readFileSync(filePath, {encoding: "utf8"});
-
-    let spec = new this(version, html);
-
-    let outputPath = `./output/${spec.specificationData.version.toLowerCase().replace("-", "-defs-")}`;
-    fs.outputJSONSync(outputPath + ".json", spec.defs, {spaces: 2});
-    fs.outputFileSync(outputPath + ".yaml", yaml.stringify(spec.defs));
-
-    return spec.defs;
-  }
-
-  /**
-   * Generates def files for all available specification versions.
-   * @static
-   * @param {Specification} spec
-   * @param {string[]} versions
-   * @returns {DefinitionType[]}
-   */
-  static generateAllDefinitions() {
-
-    /** @type {DefinitionType[][]} */
-    let allDefs = [];
-
-    debug(`\nCompiling ${this.name} defs into single defs file.`);
-
-    this.versions.forEach( version => {
-      let defs = this.generateDefinitions(version);
-      allDefs.push( ...defs );
-    });
-
-    return allDefs;
-  }
-
-}
-
-/** @type {string[]} */
-Specification.versions = [];
-
-Specification.fileNameRoot = "";
-
-module.exports = Specification;
-
-/**
- * Loads the cheerio HTML processor ($).
- * @param {string} html
- */
-function loadHTMLProcessor(html) {
-
-  $ = cheerio.load(html, {
-    normalizeWhitespace: true,
-    xmlMode: true,
-    decodeEntities: true,
-    recognizeSelfClosing: true,
-    ignoreWhitespace: true
-  });
-
-}
-
-/**
- * Parses a node for the definition term inside the <dfn></dfn> tags.
- *
- * @param {CheerioElement} parentNode
- * @returns {string}
- */
-function parseDefinitionTerm(parentNode) {
-  let defNode = $(parentNode).find("dfn");
-  return defNode.text();
-}
-
-/**
- * Sets basic rule fields.
- * Parses the rule id, name, and title, if available.
- *
- * @param {RuleType} rule
- * @param {CheerioElement} ruleSectionNode
- * @param {string} baseURL
- */
-function processRuleHeading(rule, ruleSectionNode, baseURL) {
-
-  // Parse the rule title
-  let title = $(ruleSectionNode).find("div .heading").text();
-  rule.number = title.split(". ")[0].replace("Rule ", "");
-  rule.title = title.split(". ")[1];
-
-  let ruleNameNodes = $(ruleSectionNode).find(".heading a[name]");
-
-  // Parse the rule id and name
-  ruleNameNodes.each( (i, ruleNameNode) => {
-
-    let val = ruleNameNode.attribs["name"];
-
-    // Not all rules have names.  Set default value.
-    // rule.name = "";
-
-    if (val.startsWith("rule_")) {
-      // Example: rule_9-1
-      rule.id = val;
+    if (set) {
+      return set.version(version);
     }
-    else if (val.startsWith("rule-")) {
-      // Example: rule-base-type-not-xml-ns
-      rule.name = val || "";
+
+  }
+
+  /**
+   * @param {"all"|"set"|"spec"} scope
+   * @param {"rules"|"defs"} style
+   * @param {"NDR"|"IEPD"|"MPD"|"CodeLists"|"CTAS"} label - Specification set ID or specification tag
+   * @param {String} version
+   */
+  static fileName(scope, style, label, version) {
+    switch (scope) {
+      case "all":
+        return `niem-${style}`.toLowerCase();
+      case "set":
+        return `${label.replace("MPD", "IEPD")}-${style}`.toLowerCase();
+      case "spec":
+        return `${label}-${style}-${version}`.toLowerCase();
     }
-  });
-
-  rule.link = baseURL + "#" + rule.id;
-}
-
-/**
- * Sets the rule applicability and classification fields.
- *
- * @param {RuleType} rule
- * @param {CheerioElement} ruleSectionNode
- */
-function processRuleLabel(rule, ruleSectionNode) {
-
-  // Example: [Rule 9-1] (REF, EXT) (Constraint)
-  let label = $(ruleSectionNode).find(".normativeHead").text();
-
-  rule.applicability = parseApplicability(label);
-  rule.classification = parseClassification(label);
-}
-
-/**
- * Parses the rule label for the rule applicability array.
- *
- * @param {string} label - Example: "[Rule 4-3] (REF, EXT) (Constraint)"
- * @returns {string[]}
- */
-function parseApplicability(label) {
-  let re = /] \(([^)]*)\)/;
-  let applicabilityString = label.match(re)[1];
-  return applicabilityString.split(", ");
-}
-
-/**
- * Parses the rule label for the rule classification string.
- *
- * @param {string} label
- * @returns {string}
- */
-function parseClassification(label) {
-  if (label.includes("(Constraint)")) {
-    return "Constraint";
   }
-  else if (label.includes("(Interpretation)")) {
-    return "Interpretation";
-  }
-  return "";
-}
 
-/**
- * Sets the rule description field from text that may precede the rule box.
- *
- * @param {RuleType} rule
- * @param {CheerioElement} ruleSectionNode
- */
-function processRuleDescription(rule, ruleSectionNode) {
-
-  let ruleBoxNode = $(ruleSectionNode).find(".box");
-
-  let ruleTextNode = $(ruleBoxNode).find("p");
-  let ruleSchematronNode = $(ruleBoxNode).find("pre");
-
-  if ( ruleTextNode.length > 0 ) {
-    rule.style = "text";
-    rule.text = $(ruleBoxNode).find("> p").text();
-  }
-  else {
-    rule.style = "schematron";
-    rule.schematron = ruleSchematronNode.text().replace("\n", " ");
-
-    // Capture the text between the <sch:assert> or <sch:report> tags
-    let re = /(?:assert|report)[^>]*>([^<]*)</;
-    let matches = re.exec(rule.schematron);
-    rule.text = matches[1];
+  /**
+   * Loads and parses NIEM specifications, and saves rules and definitions.
+   *
+   * @param {String} [folder='./output/'] - Folder to save output files.  Defaults to /output.
+   */
+  static parse(folder="./output/") {
+    let niemSpecs = new NIEMSpecifications();
+    niemSpecs.load();
+    niemSpecs.save(folder);
+    return niemSpecs;
   }
 
 }
 
-/**
- * Sets the information about the section that the rule or definition appears under.
- *
- * @param {CheerioElement} childNode
- * @param {String} baseURL
- */
-function getSection(childNode, baseURL) {
+NIEMSpecifications.SpecificationSet = SpecificationSet;
+NIEMSpecifications.Specification = Specification;
+NIEMSpecifications.Rule = require("./rule");
+NIEMSpecifications.Definition = require("./definition");
 
-  let sectionNode = $(childNode).closest(".section");
-  let sectionHeadingNode = $(sectionNode).find("> .heading");
+NIEMSpecifications.NDR = NDR;
+NIEMSpecifications.IEPD = IEPD;
+NIEMSpecifications.CodeLists = CodeLists;
+NIEMSpecifications.CTAS = CTAS;
 
-  /** @type {SectionType} */
-  let section = {
-    name: sectionHeadingNode.text()
-  }
-
-  // Set the section ID
-  $(sectionHeadingNode)
-    .find("a")
-    .each( (i, aNode) => {
-      let name = aNode.attribs["name"];
-      if (name.startsWith("section_")) {
-        section.id = name;
-      }
-    });
-
-  // Set the section link
-  section.link = baseURL + "#" + section.id;
-
-  return section;
-}
+module.exports = NIEMSpecifications;

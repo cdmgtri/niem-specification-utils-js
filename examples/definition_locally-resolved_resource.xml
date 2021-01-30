@@ -1,0 +1,6 @@
+<div class="box">
+  <div class="normativeHead"><a name="definition_locally-resolved_resource"></a>[Definition: <dfn>locally-resolved resource</dfn>]</div>
+  <div class="sub">
+    <p>A <strong>locally-resolved resource</strong> for a <a name="d3e2431"></a><a href="#definition_URI"><span class="termRef">URI</span></a> relative to an entity catalog is the <a name="d3e2434"></a><a href="#definition_resource"><span class="termRef">resource</span></a> yielded through the process of <a name="d3e2437"></a><a href="#definition_resolve"><span class="termRef">resolving</span></a> the URI into a resource URI using the entity catalog, and then producing the corresponding resource from the <a name="d3e2440"></a><a href="#definition_local_context"><span class="termRef">local context</span></a> of the entity catalog.</p>
+  </div>
+</div>
