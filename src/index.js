@@ -2,7 +2,7 @@
 let utils = require("./utils");
 
 let Specification = require("./specification");
-let SpecificationSet = require("./set");
+let SpecificationClass = require("./specification-class");
 
 let NDR = require("./specification-ndr");
 let IEPD = require("./specification-iepd");
@@ -12,18 +12,18 @@ let CTAS = require("./specification-ctas");
 let specificationData = require("../specificationData");
 
 /**
- * Information about the sets of NIEM specifications.
+ * Information about the set of NIEM specifications.
  */
 class NIEMSpecifications {
 
   constructor() {
 
-    this.NDR = new SpecificationSet("NDR", "Naming and Design Rules");
-    this.IEPD = new SpecificationSet("IEPD", "Information Exchange Package Description");
-    this.CodeLists = new SpecificationSet("CodeLists", "Code Lists");
-    this.CTAS = new SpecificationSet("CTAS", "Conformance Targets Attribute Specification");
+    this.NDR = new SpecificationClass("NDR", "Naming and Design Rules");
+    this.IEPD = new SpecificationClass("IEPD", "Information Exchange Package Description");
+    this.CodeLists = new SpecificationClass("CodeLists", "Code Lists");
+    this.CTAS = new SpecificationClass("CTAS", "Conformance Targets Attribute Specification");
 
-    this.sets = [this.NDR, this.IEPD, this.CodeLists, this.CTAS];
+    this.specificationClasses = [this.NDR, this.IEPD, this.CodeLists, this.CTAS];
 
   }
 
@@ -37,33 +37,33 @@ class NIEMSpecifications {
     // Process each entry in the /specificationData.js file
     specificationData.forEach( entry => {
 
-      let html = utils.readSpecificationHTMLText(entry.tag || entry.setID, entry.version);
+      let html = utils.readSpecificationHTMLText(entry.tag || entry.classID, entry.version);
 
-      /** @type {SpecificationSet} */
-      let specificationSet = this[entry.setID];
+      /** @type {SpecificationClass} */
+      let specificationClass = this[entry.classID];
 
       /** @type {Specification} */
-      let SpecificationClass = specificationClasses[entry.setID];
+      let SpecificationClass = specificationClasses[entry.classID];
 
-      let specification = new SpecificationClass(specificationSet, entry.tag, entry.name, entry.version, entry.current, entry.url, html);
+      let specification = new SpecificationClass(specificationClass, entry.tag, entry.name, entry.version, entry.current, entry.url, html);
 
-      specificationSet.specifications.push(specification);
+      specificationClass.specifications.push(specification);
 
     });
 
   }
 
   get rules() {
-    return utils.flatten(this.sets.map( set => set.rules ));
+    return utils.flatten(this.specificationClasses.map( specClass => specClass.rules ));
   }
 
   get definitions() {
-    return utils.flatten(this.sets.map( set => set.defs ));
+    return utils.flatten(this.specificationClasses.map( specClass => specClass.defs ));
   }
 
   /**
    * Saves rules and definitions for all NIEM specifications together (e.g,. `niem-rules.json`).
-   * Also calls each specification set individually to save its rules and defs.
+   * Also calls each specification class individually to save its rules and defs.
    *
    * @param {String} [folder='./output/'] - Folder to save output files.  Defaults to /output.
    */
@@ -73,7 +73,7 @@ class NIEMSpecifications {
     utils.save(NIEMSpecifications.fileName("all", "defs"), this.definitions, folder);
 
     // Save each set of rules and definitions
-    this.sets.forEach( set => set.save(folder) );
+    this.specificationClasses.forEach( specClass => specClass.save(folder) );
   }
 
   /**
@@ -88,14 +88,14 @@ class NIEMSpecifications {
     // Parse the specification tag and version from the specification ID
     let [tag, version] = specificationID.split("-");
 
-    // Adjust the specification set for MPDs.
-    let setID = tag.replace("MPD", "IEPD");
+    // Adjust the specification class for MPDs.
+    let specClassID = tag.replace("MPD", "IEPD");
 
-    /** @type {SpecificationSet} */
-    let set = this[setID];
+    /** @type {SpecificationClass} */
+    let specClass = this[specClassID];
 
-    if (set) {
-      return set.version(version);
+    if (specClass) {
+      return specClass.version(version);
     }
 
   }
@@ -104,20 +104,20 @@ class NIEMSpecifications {
    * Returns all specifications
    */
   get specifications() {
-    return utils.flatten( this.sets.map( set => set.specifications ) );
+    return utils.flatten( this.specificationClasses.map( specClass => specClass.specifications ) );
   }
 
   /**
-   * @param {"all"|"set"|"spec"} scope
+   * @param {"all"|"class"|"spec"} scope
    * @param {"rules"|"defs"} style
-   * @param {"NDR"|"IEPD"|"MPD"|"CodeLists"|"CTAS"} label - Specification set ID or specification tag
+   * @param {"NDR"|"IEPD"|"MPD"|"CodeLists"|"CTAS"} label - Specification class ID or tag
    * @param {String} version
    */
   static fileName(scope, style, label, version) {
     switch (scope) {
       case "all":
         return `niem-${style}`.toLowerCase();
-      case "set":
+      case "class":
         return `${label.replace("MPD", "IEPD")}-${style}`.toLowerCase();
       case "spec":
         return `${label}-${style}-${version}`.toLowerCase();

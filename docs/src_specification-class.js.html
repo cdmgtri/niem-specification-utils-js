@@ -3,7 +3,7 @@
 <head>
     
     <meta charset="utf-8">
-    <title>CodeLists - Documentation</title>
+    <title>src/specification-class.js - Documentation</title>
     
     
     <script src="scripts/prettify/prettify.js"></script>
@@ -32,232 +32,83 @@
 
 <div id="main">
     
-    <h1 class="page-title">CodeLists</h1>
+    <h1 class="page-title">src/specification-class.js</h1>
     
 
     
 
 
 
-
-<section>
-
-<header>
     
-        <h2>
-        CodeLists
-        </h2>
-        
-            <div class="class-description usertext">Information about the NIEM Code Lists Specification</div>
-        
-    
-</header>
-
-<article>
-    
-        <div class="container-overview">
-        
-            
-
-    
-    <h2>Constructor</h2>
-    
-
-    <h4 class="name" id="CodeLists"><span class="type-signature"></span>new CodeLists<span class="signature">()</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-
-<dl class="details">
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="src_specification-code-lists.js.html">src/specification-code-lists.js</a>, <a href="src_specification-code-lists.js.html#line7">line 7</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-        </div>
-    
-
-    
-
-    
-
-    
-    
-    
-
-     
-
-    
-
-    
-
-    
-        <h3 class="subsection-title">Methods</h3>
-
-        
-            
-
-    
-
-    <h4 class="name" id="postProcessData"><span class="type-signature"></span>postProcessData<span class="signature">()</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-
-<dl class="details">
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="src_specification-code-lists.js.html">src/specification-code-lists.js</a>, <a href="src_specification-code-lists.js.html#line12">line 12</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-<div class="description usertext">
-    Handles inconsistencies in Code Lists rules and definitions.
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-    
-
-    
-
-    
-</article>
-
-</section>
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>
+let utils = require("./utils");
+
+/**
+ * Information about a versioned series of related NIEM specifications.
+ */
+class SpecificationClass {
+
+  /**
+   *
+   *
+   * @param {"NDR"|"IEPD"|"CodeLists"|"CTAS"} classID - The id of the specification, e.g., "NDR"
+   * @param {string} className - The name of the specification, e.g., "Naming and Design Rules"
+   */
+  constructor(classID, className) {
+
+    this.classID = classID;
+    this.className = className;
+
+    /** @type {Specification[]} */
+    this.specifications = [];
+
+  }
+
+  get rules() {
+    return utils.flatten( this.specifications.map( spec => spec.rules ) );
+  }
+
+  get defs() {
+    return utils.flatten( this.specifications.map( spec => spec.defs ) );
+  }
+
+  /**
+   * Saves rules and definitions for all versions of the specification together (e.g., `ndr-rules.json`).
+   *
+   * @param {String} [folder='./output/'] - Folder to save output files.  Defaults to /output.
+   * @param {Boolean} [saveVersions=false] - True to also save info about each version of the spec separately
+   */
+  save(folder="./output/", saveVersions=false) {
+    let NIEMSpecs = require("./index");
+
+    // Save all versions of the specification rules and definitions together
+    utils.save( NIEMSpecs.fileName("class", "rules", this.classID), this.rules, folder );
+    utils.save( NIEMSpecs.fileName("class", "defs", this.classID), this.defs, folder );
+
+    // Save each specification's rules and definitions separately
+    if (saveVersions) {
+      this.specifications.forEach( spec => spec.save(folder) );
+    }
+  }
+
+  /**
+   * Returns the specification with the given version.
+   * @param {String} version
+   */
+  version(version) {
+    return this.specifications.find( spec => spec.version == version );
+  }
+
+}
+
+let Specification = require("./specification");
+
+module.exports = SpecificationClass;
+</code></pre>
+        </article>
+    </section>
 
 
 

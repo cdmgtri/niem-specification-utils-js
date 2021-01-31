@@ -1,7 +1,7 @@
 
 module.exports = {
     NIEMSpecifications: require("./src/index"),
-    SpecificationSet: require("./src/set"),
+    SpecificationClass: require("./src/specification-class"),
     Specification: require("./src/specification"),
     Rule: require("./src/rule"),
     Definition: require("./src/definition"),

@@ -4,18 +4,18 @@ let utils = require("./utils");
 /**
  * Information about a versioned series of related NIEM specifications.
  */
-class SpecificationSet {
+class SpecificationClass {
 
   /**
    *
    *
-   * @param {"NDR"|"IEPD"|"CodeLists"|"CTAS"} setID - The id of the specification, e.g., "NDR"
-   * @param {string} setName - The name of the specification, e.g., "Naming and Design Rules"
+   * @param {"NDR"|"IEPD"|"CodeLists"|"CTAS"} classID - The id of the specification, e.g., "NDR"
+   * @param {string} className - The name of the specification, e.g., "Naming and Design Rules"
    */
-  constructor(setID, setName) {
+  constructor(classID, className) {
 
-    this.setID = setID;
-    this.setName = setName;
+    this.classID = classID;
+    this.className = className;
 
     /** @type {Specification[]} */
     this.specifications = [];
@@ -40,8 +40,8 @@ class SpecificationSet {
     let NIEMSpecs = require("./index");
 
     // Save all versions of the specification rules and definitions together
-    utils.save( NIEMSpecs.fileName("set", "rules", this.setID), this.rules, folder );
-    utils.save( NIEMSpecs.fileName("set", "defs", this.setID), this.defs, folder );
+    utils.save( NIEMSpecs.fileName("class", "rules", this.classID), this.rules, folder );
+    utils.save( NIEMSpecs.fileName("class", "defs", this.classID), this.defs, folder );
 
     // Save each specification's rules and definitions separately
     if (saveVersions) {
@@ -61,4 +61,4 @@ class SpecificationSet {
 
 let Specification = require("./specification");
 
-module.exports = SpecificationSet;
+module.exports = SpecificationClass;

@@ -71,15 +71,15 @@ describe("Specification checks", () => {
 });
 
 /**
- * Compares the generated specification and specification set rule and definitions files with
+ * Compares the generated specification and specification class rule and definitions files with
  * those in the output directory.
  *
  * @param {String} tag
  * @param {String[]} versions
  */
 function checkSpecificationFiles(tag, versions) {
-  checkOutput( NIEMSpecifications.fileName("set", "rules", tag) );
-  checkOutput( NIEMSpecifications.fileName("set", "defs", tag) );
+  checkOutput( NIEMSpecifications.fileName("class", "rules", tag) );
+  checkOutput( NIEMSpecifications.fileName("class", "defs", tag) );
 }
 
 /**

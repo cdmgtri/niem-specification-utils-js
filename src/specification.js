@@ -5,21 +5,21 @@ let { parseSpecification } = require("./parser");
 class Specification {
 
   /**
-   * @param {SpecificationSet} set - The specification group to which this individual version of a spec belongs
+   * @param {SpecificationClass} specClass - The specification group to which this individual version of a spec belongs
    * @param {"NDR"|"MPD"|"IEPD"|"CodeLists"|"CTAS"} tag - The tag of the specification, e.g., "NDR"
    * @param {string} name - The name of the specification, e.g., "Naming and Design Rules"
    * @param {string} version - The version of the specification, e.g., "3.0"
-   * @param {Boolean} current - True if this specification is the most current of the set
+   * @param {Boolean} current - True if this specification is the most current of the spec class
    * @param {string} html - The HTML text of the specification.
    */
-  constructor(set, tag="", name="", version="", current=false, url="", html="") {
+  constructor(specClass, tag="", name="", version="", current=false, url="", html="") {
 
     /** @private */
-    this.specificationSet = set;
+    this.specificationClass = specClass;
 
-    // Default to set values if not given
-    this.tag = tag || set.setID;
-    this.name = name || set.setName;
+    // Default to class values if not given
+    this.tag = tag || specClass.classID;
+    this.name = name || specClass.className;
 
     this.version = version;
     this.current = current;
@@ -81,6 +81,6 @@ class Specification {
 
 let Rule = require("./rule");
 let Definition = require("./definition");
-let SpecificationSet = require("./set");
+let SpecificationClass = require("./specification-class");
 
 module.exports = Specification;
