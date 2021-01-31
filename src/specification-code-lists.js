@@ -6,7 +6,7 @@ class CodeLists extends Specification {
   /**
    * Handles inconsistencies in Code Lists rules and definitions.
    */
-  processExceptions() {
+  postProcessParsedData() {
     if (this.version === "3.0") {
       let rule = this.rules.find( rule => rule.number === "9-83" );
       rule.text = "The value of the attribute targetNamespace MUST match the production <absolute-URI> as defined by RFC 3986.";

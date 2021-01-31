@@ -62,7 +62,7 @@ class Specification {
    * Specification-specific.
    * @abstract
    */
-  processExceptions() {
+  postProcessParsedData() {
   }
 
 

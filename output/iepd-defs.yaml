@@ -136,7 +136,7 @@
     definitionID: definition_external_schema_document
     definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_external_schema_document'
     definitionTerm: 'external schema document'
-    definitionText: 'As defined by [NIEM Naming and Design Rules 3.0]:Any XML schema document that is not one of:a reference schema document,an extension schema document, oran XML schema document that has the structures namespace as its target namespace.'
+    definitionText: 'As defined by [NIEM Naming and Design Rules 3.0]:Any XML schema document that is not one of: a reference schema document, an extension schema document, or an XML schema document that has the structures namespace as its target namespace.'
     definitionIsLocal: true
 -
     specificationID: MPD-3.0.1
@@ -186,7 +186,7 @@
     definitionID: definition_information_exchange_package_documentation
     definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_information_exchange_package_documentation'
     definitionTerm: 'information exchange package documentation'
-    definitionText: 'An information exchange package documentation is a model package description that:has an MPD class of http://reference.niem.gov/niem/specification/model-package-description/3.0/#IEPD, andconforms to all the rules in this specification for the conformance target information exchange package documentation (i.e., applicability code IEPD).This term may be abbreviated IEPD. Rules specifying this conformance target use the applicability code IEPD.'
+    definitionText: 'An information exchange package documentation is a model package description that: has an MPD class of http://reference.niem.gov/niem/specification/model-package-description/3.0/#IEPD, and conforms to all the rules in this specification for the conformance target information exchange package documentation (i.e., applicability code IEPD).This term may be abbreviated IEPD. Rules specifying this conformance target use the applicability code IEPD.'
     definitionIsLocal: true
 -
     specificationID: MPD-3.0.1
@@ -216,7 +216,7 @@
     definitionID: definition_model_package_description
     definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_model_package_description'
     definitionTerm: 'model package description'
-    definitionText: 'A model package description is a set of artifacts (possibly in a ZIP file) that:includes a set of logically cohesive W3C XML Schema documents and other supporting files that represent one or more reusable or implementable XML information models, andhas an MPD class of http://reference.niem.gov/niem/specification/model-package-description/3.0/#MPD, andadheres to all the rules within this specification for the model package description conformance target.This term may be abbreviated MPD. Rules specifying this conformance target use the applicability code WF-MPD.'
+    definitionText: 'A model package description is a set of artifacts (possibly in a ZIP file) that: includes a set of logically cohesive W3C XML Schema documents and other supporting files that represent one or more reusable or implementable XML information models, and has an MPD class of http://reference.niem.gov/niem/specification/model-package-description/3.0/#MPD, and adheres to all the rules within this specification for the model package description conformance target.This term may be abbreviated MPD. Rules specifying this conformance target use the applicability code WF-MPD.'
     definitionIsLocal: true
 -
     specificationID: MPD-3.0.1
@@ -226,7 +226,7 @@
     definitionID: definition_MPD_catalog_document
     definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_MPD_catalog_document'
     definitionTerm: 'MPD catalog document'
-    definitionText: 'An instance XML document that:conforms to all the rules in this specification for the conformance target MPD catalog document (i.e., applicability code MPD-catalog), andcontains metadata describing:MPD unique identificationConformance targetsBasic characteristics and propertiesKey artifacts and directory structureRelationships to other MPDs and their artifactsThis term may be abbreviated MPD-catalog. Rules specifying this conformance target use the applicability code MPD-catalog.'
+    definitionText: 'An instance XML document that: conforms to all the rules in this specification for the conformance target MPD catalog document (i.e., applicability code MPD-catalog), and contains metadata describing: MPD unique identification Conformance targets Basic characteristics and properties Key artifacts and directory structure Relationships to other MPDs and their artifactsThis term may be abbreviated MPD-catalog. Rules specifying this conformance target use the applicability code MPD-catalog.'
     definitionIsLocal: true
 -
     specificationID: MPD-3.0.1
@@ -356,7 +356,7 @@
     definitionID: definition_subset_schema_document
     definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_subset_schema_document'
     definitionTerm: 'subset schema document'
-    definitionText: 'An XML schema document that meets all of the following criteria:It is built from a reference schema document set where one or more reference schema documents have been substituted by corresponding subset schema documents.It is built from a reference schema document by applying subset operations to the XML schema statements in a reference schema document.It is explicitly designated as a subset schema document. This is accomplished by declaration in the relevant MPD catalog or by a tool-specific mechanism outside the subset schema document.It has a target namespace previously defined by a reference schema document. That is, it does not provide original definitions and declarations for schema components, but instead provides an alternate schema representation of components that are defined by a reference schema document.It does not alter the business semantics of components in its namespace. The reference schema document defines these business semantics.It is intended to express the limited vocabulary necessary for an IEPD and to support XML Schema validation for an IEPD.'
+    definitionText: 'An XML schema document that meets all of the following criteria: It is built from a reference schema document set where one or more reference schema documents have been substituted by corresponding subset schema documents. It is built from a reference schema document by applying subset operations to the XML schema statements in a reference schema document. It is explicitly designated as a subset schema document. This is accomplished by declaration in the relevant MPD catalog or by a tool-specific mechanism outside the subset schema document. It has a target namespace previously defined by a reference schema document. That is, it does not provide original definitions and declarations for schema components, but instead provides an alternate schema representation of components that are defined by a reference schema document. It does not alter the business semantics of components in its namespace. The reference schema document defines these business semantics. It is intended to express the limited vocabulary necessary for an IEPD and to support XML Schema validation for an IEPD.'
     definitionIsLocal: true
 -
     specificationID: MPD-3.0.1

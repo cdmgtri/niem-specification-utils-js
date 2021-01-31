@@ -62,7 +62,7 @@
     "definitionID": "definition_augmentable_type",
     "definitionURL": "https://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/niem-ndr-3.0.html#definition_augmentable_type",
     "definitionTerm": "augmentable type",
-    "definitionText": "An augmentable type is complex type definition thatis defined by either a reference schema document or by an extension schema document, andis eitheran association type, oran object type that has complex content and is not an external adapter type.",
+    "definitionText": "An augmentable type is complex type definition that is defined by either a reference schema document or by an extension schema document, and is either an association type, or an object type that has complex content and is not an external adapter type.",
     "definitionIsLocal": true
   },
   {
@@ -73,7 +73,7 @@
     "definitionID": "definition_augmentation",
     "definitionURL": "https://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/niem-ndr-3.0.html#definition_augmentation",
     "definitionTerm": "augmentation",
-    "definitionText": "An augmentation is an element thatis a child of an element that is an instance of an augmentable type, andis a member of the substitution group of the augmentation point element declaration for the augmentable type.",
+    "definitionText": "An augmentation is an element that is a child of an element that is an instance of an augmentable type, and is a member of the substitution group of the augmentation point element declaration for the augmentable type.",
     "definitionIsLocal": true
   },
   {
@@ -84,7 +84,7 @@
     "definitionID": "definition_augmentation_element_declaration",
     "definitionURL": "https://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/niem-ndr-3.0.html#definition_augmentation_element_declaration",
     "definitionTerm": "augmentation element declaration",
-    "definitionText": "An augmentation element declaration is an element declaration thathas a type that is an augmentation type, andcarries elements that establish a relationship to its parent object or associationis designed to be used as an augmentation of its parent object or association",
+    "definitionText": "An augmentation element declaration is an element declaration that has a type that is an augmentation type, and carries elements that establish a relationship to its parent object or association is designed to be used as an augmentation of its parent object or association",
     "definitionIsLocal": true
   },
   {
@@ -95,7 +95,7 @@
     "definitionID": "definition_augmentation_type",
     "definitionURL": "https://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/niem-ndr-3.0.html#definition_augmentation_type",
     "definitionTerm": "augmentation type",
-    "definitionText": "An augmentation type is a complex type definition thatprovides elements that establish relationships to a base object or association, rather than to the instance of the augmentation type itself, andis designed to be the type of an augmentation element declaration.",
+    "definitionText": "An augmentation type is a complex type definition that provides elements that establish relationships to a base object or association, rather than to the instance of the augmentation type itself, and is designed to be the type of an augmentation element declaration.",
     "definitionIsLocal": true
   },
   {
@@ -172,7 +172,7 @@
     "definitionID": "definition_conformant_element_information_item",
     "definitionURL": "https://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/niem-ndr-3.0.html#definition_conformant_element_information_item",
     "definitionTerm": "conformant element information item",
-    "definitionText": "A conformant element information item is an element information item that satisfies all of the following criteria:Its [namespace name] and [local name] matches an element declared by a reference schema document or extension schema document.It occurs within a conformant instance XML document.It is locally schema-valid.It satisfies all rules specified in this document applicable to an element in a conformant instance XML document.",
+    "definitionText": "A conformant element information item is an element information item that satisfies all of the following criteria: Its [namespace name] and [local name] matches an element declared by a reference schema document or extension schema document. It occurs within a conformant instance XML document. It is locally schema-valid. It satisfies all rules specified in this document applicable to an element in a conformant instance XML document.",
     "definitionIsLocal": true
   },
   {
@@ -315,7 +315,7 @@
     "definitionID": "definition_external_schema_document",
     "definitionURL": "https://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/niem-ndr-3.0.html#definition_external_schema_document",
     "definitionTerm": "external schema document",
-    "definitionText": "An external schema document is any schema document that is not one ofa reference schema document,an extension schema document, ora schema document that has the structures namespace as its target namespace.",
+    "definitionText": "An external schema document is any schema document that is not one of a reference schema document, an extension schema document, or a schema document that has the structures namespace as its target namespace.",
     "definitionIsLocal": true
   },
   {
@@ -359,7 +359,7 @@
     "definitionID": "definition_local_term",
     "definitionURL": "https://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/niem-ndr-3.0.html#definition_local_term",
     "definitionTerm": "local term",
-    "definitionText": "In a conformant schema document, a local term is a word, phrase, acronym, or other string of characters for which all of the following are true:It is not a term defined in the [OED], or it has a non-OED definition, or its word sense may not be clear.It is introduced into the schema document via an appinfo element with a [namespace name] of the local terminology appinfo namespace.It is used in the local name of a schema component within the schema document.",
+    "definitionText": "In a conformant schema document, a local term is a word, phrase, acronym, or other string of characters for which all of the following are true: It is not a term defined in the [OED], or it has a non-OED definition, or its word sense may not be clear. It is introduced into the schema document via an appinfo element with a [namespace name] of the local terminology appinfo namespace. It is used in the local name of a schema component within the schema document.",
     "definitionIsLocal": true
   },
   {
@@ -381,7 +381,7 @@
     "definitionID": "definition_machine-readable_annotation",
     "definitionURL": "https://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/niem-ndr-3.0.html#definition_machine-readable_annotation",
     "definitionTerm": "machine-readable annotation",
-    "definitionText": "An information item within a schema is defined to be a machine-readable annotation when all of the following are true:It is one of the following:It is an element information item that is a child of an xs:appinfo element.It is an attribute information item that satisfies the {any attributes with non- schema namespace . . .} clause within the declaration of an XML Schema element.The namespace name property of the item is not the XML namespace, XML Schema namespace, or the XSI namespace.",
+    "definitionText": "An information item within a schema is defined to be a machine-readable annotation when all of the following are true: It is one of the following: It is an element information item that is a child of an xs:appinfo element. It is an attribute information item that satisfies the {any attributes with non- schema namespace . . .} clause within the declaration of an XML Schema element. The namespace name property of the item is not the XML namespace, XML Schema namespace, or the XSI namespace.",
     "definitionIsLocal": true
   },
   {
@@ -469,7 +469,7 @@
     "definitionID": "definition_resolved_element_information_item",
     "definitionURL": "https://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/niem-ndr-3.0.html#definition_resolved_element_information_item",
     "definitionTerm": "resolved element information item",
-    "definitionText": "Within an XML document $document, for any element information item $element there is a resolved element information item, which is:If all of the following are true:$document is a conformant instance XML document.$element and $referent are conformant element information items within $document.$element owns attribute information item structures:ref with a value $ref.$referent owns attribute information item structures:id with a value $id.$ref is equal to $id.Then the resolved element information item for $element is $referent.Otherwise, the resolved element information item for $element is $element.",
+    "definitionText": "Within an XML document $document, for any element information item $element there is a resolved element information item, which is: If all of the following are true: $document is a conformant instance XML document. $element and $referent are conformant element information items within $document. $element owns attribute information item structures:ref with a value $ref. $referent owns attribute information item structures:id with a value $id. $ref is equal to $id.Then the resolved element information item for $element is $referent. Otherwise, the resolved element information item for $element is $element.",
     "definitionIsLocal": true
   },
   {
@@ -491,7 +491,7 @@
     "definitionID": "definition_RoleOf_element",
     "definitionURL": "https://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/niem-ndr-3.0.html#definition_RoleOf_element",
     "definitionTerm": "RoleOf element",
-    "definitionText": "A RoleOf element is an element declaration thatis defined by a reference schema document or an extension schema document, andhas a {name} that begins with RoleOf.A RoleOf element represents a base type for a role type.",
+    "definitionText": "A RoleOf element is an element declaration that is defined by a reference schema document or an extension schema document, and has a {name} that begins with RoleOf.A RoleOf element represents a base type for a role type.",
     "definitionIsLocal": true
   },
   {
@@ -546,7 +546,7 @@
     "definitionID": "definition_valid",
     "definitionURL": "https://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/niem-ndr-3.0.html#definition_valid",
     "definitionTerm": "valid",
-    "definitionText": "The term valid is as defined by [XML Schema Structures] Section 2.1, Overview of XML Schema, which states:[Definition:] the word valid and its derivatives are used to refer to clause 1 above, the determination of local schema-validity.The referenced clause 1 is a part of a description of schema-validity:Schema-validity assessment has two aspects:Determining local schema-validity, that is whether an element or attribute information item satisfies the constraints embodied in the relevant components of an XML Schema;Synthesizing an overall validation outcome for the item, combining local schema-validity with the results of schema-validity assessments of its descendants, if any, and adding appropriate augmentations to the infoset to record this outcome.",
+    "definitionText": "The term valid is as defined by [XML Schema Structures] Section 2.1, Overview of XML Schema, which states:[Definition:] the word valid and its derivatives are used to refer to clause 1 above, the determination of local schema-validity.The referenced clause 1 is a part of a description of schema-validity:Schema-validity assessment has two aspects: Determining local schema-validity, that is whether an element or attribute information item satisfies the constraints embodied in the relevant components of an XML Schema; Synthesizing an overall validation outcome for the item, combining local schema-validity with the results of schema-validity assessments of its descendants, if any, and adding appropriate augmentations to the infoset to record this outcome.",
     "definitionIsLocal": true
   },
   {
@@ -667,7 +667,7 @@
     "definitionID": "definition_augmentable_type",
     "definitionURL": "https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_augmentable_type",
     "definitionTerm": "augmentable type",
-    "definitionText": "An augmentable type is complex type definition thatis defined by either a reference schema document or by an extension schema document, andis eitheran association type, oran object type that has complex content and is not an external adapter type.",
+    "definitionText": "An augmentable type is complex type definition that is defined by either a reference schema document or by an extension schema document, and is either an association type, or an object type that has complex content and is not an external adapter type.",
     "definitionIsLocal": true
   },
   {
@@ -678,7 +678,7 @@
     "definitionID": "definition_augmentation",
     "definitionURL": "https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_augmentation",
     "definitionTerm": "augmentation",
-    "definitionText": "An augmentation is a conformant element information item that:is an instance of an augmentation element declaration,is a child of a conformant element information item that is an instance of an augmentable type, andappears in the instance as a substitution for an augmentation point element.",
+    "definitionText": "An augmentation is a conformant element information item that: is an instance of an augmentation element declaration, is a child of a conformant element information item that is an instance of an augmentable type, and appears in the instance as a substitution for an augmentation point element.",
     "definitionIsLocal": true
   },
   {
@@ -689,7 +689,7 @@
     "definitionID": "definition_augmentation_element_declaration",
     "definitionURL": "https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_augmentation_element_declaration",
     "definitionTerm": "augmentation element declaration",
-    "definitionText": "An augmentation element declaration is an element declaration thathas a type that is an augmentation type, andcarries elements that establish a relationship to its parent object or associationis designed to be used as an augmentation of its parent object or association",
+    "definitionText": "An augmentation element declaration is an element declaration that has a type that is an augmentation type, and carries elements that establish a relationship to its parent object or association is designed to be used as an augmentation of its parent object or association",
     "definitionIsLocal": true
   },
   {
@@ -700,7 +700,7 @@
     "definitionID": "definition_augmentation_type",
     "definitionURL": "https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_augmentation_type",
     "definitionTerm": "augmentation type",
-    "definitionText": "An augmentation type is a complex type definition thatprovides elements that establish relationships to a base object or association, rather than to the instance of the augmentation type itself, andis designed to be the type of an augmentation element declaration.",
+    "definitionText": "An augmentation type is a complex type definition that provides elements that establish relationships to a base object or association, rather than to the instance of the augmentation type itself, and is designed to be the type of an augmentation element declaration.",
     "definitionIsLocal": true
   },
   {
@@ -777,7 +777,7 @@
     "definitionID": "definition_conformant_element_information_item",
     "definitionURL": "https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_conformant_element_information_item",
     "definitionTerm": "conformant element information item",
-    "definitionText": "A conformant element information item is an element information item that satisfies all of the following criteria:Its [namespace name] and [local name] matches an element declared by a reference schema document or extension schema document.It occurs within a conformant instance XML document.It is locally schema-valid.It satisfies all rules specified in this document applicable to an element in a conformant instance XML document.",
+    "definitionText": "A conformant element information item is an element information item that satisfies all of the following criteria: Its [namespace name] and [local name] matches an element declared by a reference schema document or extension schema document. It occurs within a conformant instance XML document. It is locally schema-valid. It satisfies all rules specified in this document applicable to an element in a conformant instance XML document.",
     "definitionIsLocal": true
   },
   {
@@ -920,7 +920,7 @@
     "definitionID": "definition_external_schema_document",
     "definitionURL": "https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_external_schema_document",
     "definitionTerm": "external schema document",
-    "definitionText": "An external schema document is any schema document that is not one ofa reference schema document,an extension schema document, ora schema document that has the structures namespace as its target namespace.",
+    "definitionText": "An external schema document is any schema document that is not one of a reference schema document, an extension schema document, or a schema document that has the structures namespace as its target namespace.",
     "definitionIsLocal": true
   },
   {
@@ -964,7 +964,7 @@
     "definitionID": "definition_local_term",
     "definitionURL": "https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_local_term",
     "definitionTerm": "local term",
-    "definitionText": "In a conformant schema document, a local term is a word, phrase, acronym, or other string of characters for which all of the following are true:It is not a term defined in the [OED], or it has a non-OED definition, or its word sense may not be clear.It is introduced into the schema document via an appinfo element appinfo:LocalTerm.It may be used in the local name of a schema component within the schema document.",
+    "definitionText": "In a conformant schema document, a local term is a word, phrase, acronym, or other string of characters for which all of the following are true: It is not a term defined in the [OED], or it has a non-OED definition, or its word sense may not be clear. It is introduced into the schema document via an appinfo element appinfo:LocalTerm. It may be used in the local name of a schema component within the schema document.",
     "definitionIsLocal": true
   },
   {
@@ -975,7 +975,7 @@
     "definitionID": "definition_machine-readable_annotation",
     "definitionURL": "https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_machine-readable_annotation",
     "definitionTerm": "machine-readable annotation",
-    "definitionText": "An information item within a schema is defined to be a machine-readable annotation when all of the following are true:It is one of the following:It is an element information item that is a child of an xs:appinfo element.It is an attribute information item that satisfies the {any attributes with non- schema namespace . . .} clause within the declaration of an XML Schema element.The namespace name property of the item is not the XML namespace, XML Schema namespace, or the XSI namespace.",
+    "definitionText": "An information item within a schema is defined to be a machine-readable annotation when all of the following are true: It is one of the following: It is an element information item that is a child of an xs:appinfo element. It is an attribute information item that satisfies the {any attributes with non- schema namespace . . .} clause within the declaration of an XML Schema element. The namespace name property of the item is not the XML namespace, XML Schema namespace, or the XSI namespace.",
     "definitionIsLocal": true
   },
   {
@@ -1063,7 +1063,7 @@
     "definitionID": "definition_RoleOf_element",
     "definitionURL": "https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_RoleOf_element",
     "definitionTerm": "RoleOf element",
-    "definitionText": "A RoleOf element is an element declaration thatis defined by a reference schema document or an extension schema document, andhas a {name} that begins with RoleOf.A RoleOf element represents a base type for a role type.",
+    "definitionText": "A RoleOf element is an element declaration that is defined by a reference schema document or an extension schema document, and has a {name} that begins with RoleOf.A RoleOf element represents a base type for a role type.",
     "definitionIsLocal": true
   },
   {
@@ -1118,7 +1118,7 @@
     "definitionID": "definition_valid",
     "definitionURL": "https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_valid",
     "definitionTerm": "valid",
-    "definitionText": "The term valid is as defined by [XML Schema Structures] Section 2.1, Overview of XML Schema, which states:[Definition:] the word valid and its derivatives are used to refer to clause 1 above, the determination of local schema-validity.The referenced clause 1 is a part of a description of schema-validity:Schema-validity assessment has two aspects:Determining local schema-validity, that is whether an element or attribute information item satisfies the constraints embodied in the relevant components of an XML Schema;Synthesizing an overall validation outcome for the item, combining local schema-validity with the results of schema-validity assessments of its descendants, if any, and adding appropriate augmentations to the infoset to record this outcome.",
+    "definitionText": "The term valid is as defined by [XML Schema Structures] Section 2.1, Overview of XML Schema, which states:[Definition:] the word valid and its derivatives are used to refer to clause 1 above, the determination of local schema-validity.The referenced clause 1 is a part of a description of schema-validity:Schema-validity assessment has two aspects: Determining local schema-validity, that is whether an element or attribute information item satisfies the constraints embodied in the relevant components of an XML Schema; Synthesizing an overall validation outcome for the item, combining local schema-validity with the results of schema-validity assessments of its descendants, if any, and adding appropriate augmentations to the infoset to record this outcome.",
     "definitionIsLocal": true
   },
   {
@@ -1239,7 +1239,7 @@
     "definitionID": "definition_augmentable_type",
     "definitionURL": "https://reference.niem.gov/niem/specification/naming-and-design-rules/5.0/niem-ndr-5.0.html#definition_augmentable_type",
     "definitionTerm": "augmentable type",
-    "definitionText": "An augmentable type is complex type definition thatis defined by either a reference schema document or by an extension schema document, andis eitheran association type, oran object type that has complex content and is not an external adapter type.",
+    "definitionText": "An augmentable type is complex type definition that is defined by either a reference schema document or by an extension schema document, and is either an association type, or an object type that has complex content and is not an external adapter type.",
     "definitionIsLocal": true
   },
   {
@@ -1250,7 +1250,7 @@
     "definitionID": "definition_augmentation",
     "definitionURL": "https://reference.niem.gov/niem/specification/naming-and-design-rules/5.0/niem-ndr-5.0.html#definition_augmentation",
     "definitionTerm": "augmentation",
-    "definitionText": "An augmentation is a conformant element information item that:is an instance of an augmentation element declaration,is a child of a conformant element information item that is an instance of an augmentable type, andappears in the instance as a substitution for an augmentation point element.",
+    "definitionText": "An augmentation is a conformant element information item that: is an instance of an augmentation element declaration, is a child of a conformant element information item that is an instance of an augmentable type, and appears in the instance as a substitution for an augmentation point element.",
     "definitionIsLocal": true
   },
   {
@@ -1261,7 +1261,7 @@
     "definitionID": "definition_augmentation_element_declaration",
     "definitionURL": "https://reference.niem.gov/niem/specification/naming-and-design-rules/5.0/niem-ndr-5.0.html#definition_augmentation_element_declaration",
     "definitionTerm": "augmentation element declaration",
-    "definitionText": "An augmentation element declaration is an element declaration thathas a type that is an augmentation type, andcarries elements that establish a relationship to its parent object or associationis designed to be used as an augmentation of its parent object or association",
+    "definitionText": "An augmentation element declaration is an element declaration that has a type that is an augmentation type, and carries elements that establish a relationship to its parent object or association is designed to be used as an augmentation of its parent object or association",
     "definitionIsLocal": true
   },
   {
@@ -1272,7 +1272,7 @@
     "definitionID": "definition_augmentation_type",
     "definitionURL": "https://reference.niem.gov/niem/specification/naming-and-design-rules/5.0/niem-ndr-5.0.html#definition_augmentation_type",
     "definitionTerm": "augmentation type",
-    "definitionText": "An augmentation type is a complex type definition thatprovides elements that establish relationships to a base object or association, rather than to the instance of the augmentation type itself, andis designed to be the type of an augmentation element declaration.",
+    "definitionText": "An augmentation type is a complex type definition that provides elements that establish relationships to a base object or association, rather than to the instance of the augmentation type itself, and is designed to be the type of an augmentation element declaration.",
     "definitionIsLocal": true
   },
   {
@@ -1349,7 +1349,7 @@
     "definitionID": "definition_conformant_element_information_item",
     "definitionURL": "https://reference.niem.gov/niem/specification/naming-and-design-rules/5.0/niem-ndr-5.0.html#definition_conformant_element_information_item",
     "definitionTerm": "conformant element information item",
-    "definitionText": "A conformant element information item is an element information item that satisfies all of the following criteria:Its [namespace name] and [local name] matches an element declared by a reference schema document or extension schema document.It occurs within a conformant instance XML document.It is locally schema-valid.It satisfies all rules specified in this document applicable to an element in a conformant instance XML document.",
+    "definitionText": "A conformant element information item is an element information item that satisfies all of the following criteria: Its [namespace name] and [local name] matches an element declared by a reference schema document or extension schema document. It occurs within a conformant instance XML document. It is locally schema-valid. It satisfies all rules specified in this document applicable to an element in a conformant instance XML document.",
     "definitionIsLocal": true
   },
   {
@@ -1492,7 +1492,7 @@
     "definitionID": "definition_external_schema_document",
     "definitionURL": "https://reference.niem.gov/niem/specification/naming-and-design-rules/5.0/niem-ndr-5.0.html#definition_external_schema_document",
     "definitionTerm": "external schema document",
-    "definitionText": "An external schema document is any schema document that is not one ofa reference schema document,an extension schema document, ora schema document that has the structures namespace as its target namespace.",
+    "definitionText": "An external schema document is any schema document that is not one of a reference schema document, an extension schema document, or a schema document that has the structures namespace as its target namespace.",
     "definitionIsLocal": true
   },
   {
@@ -1536,7 +1536,7 @@
     "definitionID": "definition_local_term",
     "definitionURL": "https://reference.niem.gov/niem/specification/naming-and-design-rules/5.0/niem-ndr-5.0.html#definition_local_term",
     "definitionTerm": "local term",
-    "definitionText": "In a conformant schema document, a local term is a word, phrase, acronym, or other string of characters for which all of the following are true:It is not a term defined in the [OED], or it has a non-OED definition, or its word sense may not be clear.It is introduced into the schema document via an appinfo element appinfo:LocalTerm.It may be used in the local name of a schema component within the schema document.",
+    "definitionText": "In a conformant schema document, a local term is a word, phrase, acronym, or other string of characters for which all of the following are true: It is not a term defined in the [OED], or it has a non-OED definition, or its word sense may not be clear. It is introduced into the schema document via an appinfo element appinfo:LocalTerm. It may be used in the local name of a schema component within the schema document.",
     "definitionIsLocal": true
   },
   {
@@ -1547,7 +1547,7 @@
     "definitionID": "definition_machine-readable_annotation",
     "definitionURL": "https://reference.niem.gov/niem/specification/naming-and-design-rules/5.0/niem-ndr-5.0.html#definition_machine-readable_annotation",
     "definitionTerm": "machine-readable annotation",
-    "definitionText": "An information item within a schema is defined to be a machine-readable annotation when all of the following are true:It is one of the following:It is an element information item that is a child of an xs:appinfo element.It is an attribute information item that satisfies the {any attributes with non- schema namespace . . .} clause within the declaration of an XML Schema element.The namespace name property of the item is not the XML namespace, XML Schema namespace, or the XSI namespace.",
+    "definitionText": "An information item within a schema is defined to be a machine-readable annotation when all of the following are true: It is one of the following: It is an element information item that is a child of an xs:appinfo element. It is an attribute information item that satisfies the {any attributes with non- schema namespace . . .} clause within the declaration of an XML Schema element. The namespace name property of the item is not the XML namespace, XML Schema namespace, or the XSI namespace.",
     "definitionIsLocal": true
   },
   {
@@ -1635,7 +1635,7 @@
     "definitionID": "definition_RoleOf_element",
     "definitionURL": "https://reference.niem.gov/niem/specification/naming-and-design-rules/5.0/niem-ndr-5.0.html#definition_RoleOf_element",
     "definitionTerm": "RoleOf element",
-    "definitionText": "A RoleOf element is an element declaration thatis defined by a reference schema document or an extension schema document, andhas a {name} that begins with RoleOf.A RoleOf element represents a base type for a role type.",
+    "definitionText": "A RoleOf element is an element declaration that is defined by a reference schema document or an extension schema document, and has a {name} that begins with RoleOf.A RoleOf element represents a base type for a role type.",
     "definitionIsLocal": true
   },
   {
@@ -1690,7 +1690,7 @@
     "definitionID": "definition_valid",
     "definitionURL": "https://reference.niem.gov/niem/specification/naming-and-design-rules/5.0/niem-ndr-5.0.html#definition_valid",
     "definitionTerm": "valid",
-    "definitionText": "The term valid is as defined by [XML Schema Structures] Section 2.1, Overview of XML Schema, which states:[Definition:] the word valid and its derivatives are used to refer to clause 1 above, the determination of local schema-validity.The referenced clause 1 is a part of a description of schema-validity:Schema-validity assessment has two aspects:Determining local schema-validity, that is whether an element or attribute information item satisfies the constraints embodied in the relevant components of an XML Schema;Synthesizing an overall validation outcome for the item, combining local schema-validity with the results of schema-validity assessments of its descendants, if any, and adding appropriate augmentations to the infoset to record this outcome.",
+    "definitionText": "The term valid is as defined by [XML Schema Structures] Section 2.1, Overview of XML Schema, which states:[Definition:] the word valid and its derivatives are used to refer to clause 1 above, the determination of local schema-validity.The referenced clause 1 is a part of a description of schema-validity:Schema-validity assessment has two aspects: Determining local schema-validity, that is whether an element or attribute information item satisfies the constraints embodied in the relevant components of an XML Schema; Synthesizing an overall validation outcome for the item, combining local schema-validity with the results of schema-validity assessments of its descendants, if any, and adding appropriate augmentations to the infoset to record this outcome.",
     "definitionIsLocal": true
   },
   {

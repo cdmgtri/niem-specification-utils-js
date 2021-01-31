@@ -20,7 +20,7 @@ class Parser {
     this.spec = spec;
 
     // Clean up tags and then run specification-specific formatting adjustments
-    let html = this.cleanUp(spec.html);
+    let html = this.preProcessHTML(spec.html);
     this.html = spec.format(html);
 
     $ = cheerio.load(this.html, {
@@ -42,7 +42,7 @@ class Parser {
     this.parseDefinitions();
 
     // Apply any necessary special fixes
-    this.spec.processExceptions();
+    this.spec.postProcessParsedData();
 
     console.log(`${this.spec.id} (${this.spec.rules.length} rules, ${this.spec.defs.length} defs)`);
 
@@ -119,9 +119,7 @@ class Parser {
       }
 
       // Check for a following blockquote
-      if (def.text.endsWith(":")) {
-        def.text += " " + $(defPNode).next("blockquote").text();
-      }
+      this.appendTextFollowup(defPNode, def);
 
       this.spec.defs.push(def);
       debug("%s %s %s %s %s", index, this.spec.id, def.id, def.name, def.title);
@@ -145,11 +143,14 @@ class Parser {
   }
 
   /**
-   * Given a node, converts the <li> elements to a string delimited by " \n- "
+   * Appends rule or definition text that follows the main paragraph node in a list or blockquote.
+   *
    * @param {CheerioElement} node
    * @param {{text: String}} object - A definition or rule
    */
-  appendListString(node, object) {
+  appendTextFollowup(node, object) {
+
+    // Append list items
     let separator = " \n- ";
     let listText = $(node).find("li").map( (i, li) => $(li).text() ).get().join(separator);
 
@@ -157,16 +158,12 @@ class Parser {
       object.text += separator + listText;
     }
 
+    // Append a blockquote
     if (object.text.endsWith(":")) {
       object.text += " " + $(node).find("> blockquote").text();
+      object.text += " " + $(node).next("blockquote").text();
     }
 
-  }
-
-  /**
-   * @param {CheerioElement} pNode - Paragraph node
-   */
-  appendBlockQuote(pNode, object) {
   }
 
   /**
@@ -267,7 +264,7 @@ class Parser {
       rule.style = "text";
       rule.text = $(ruleBoxNode).find("> p").text();
 
-      this.appendListString(ruleBoxNode, rule);
+      this.appendTextFollowup(ruleBoxNode, rule);
 
     }
     else {
@@ -315,7 +312,7 @@ class Parser {
     * @param {String} html
     * @returns {String}
     */
-  cleanUp(html) {
+  preProcessHTML(html) {
 
     // Replace escaped characters
     html = html.replace(/&lt;/g, "<");
@@ -332,6 +329,12 @@ class Parser {
 
     // Fix tags disappearing from the parsed text
     html = html.replace(/<absolute-URI>/g, "&lt;absolute-URI&gt;")
+
+    // Add space following adjacent list-close and list-open tags so the parsed list text doesn't run together
+    html = html.replace(/<\/li><li>/g, "</li> <li>");
+    html = html.replace(/<\/li><ul>/g, "</li> <ul>");
+    html = html.replace(/<\/p><ul>/g, "</p> <ul>");
+    html = html.replace(/<\/p><ol>/g, "</p> <ol>");
 
     return html;
 

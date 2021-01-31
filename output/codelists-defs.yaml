@@ -46,7 +46,7 @@
     definitionID: definition_catalog_entry_file
     definitionURL: 'https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_catalog_entry_file'
     definitionTerm: 'catalog entry file'
-    definitionText: 'The term catalog entry file is defined by [XML Catalogs] Section 2, Terminology, which states: A catalog may be physically contained in one or more catalog entry files. A catalog entry file is a document that contains a set of catalog entries.'
+    definitionText: 'The term catalog entry file is defined by [XML Catalogs] Section 2, Terminology, which states:  A catalog may be physically contained in one or more catalog entry files. A catalog entry file is a document that contains a set of catalog entries.'
     definitionIsLocal: false
 -
     specificationID: CodeLists-4.0
@@ -66,7 +66,7 @@
     definitionID: definition_code_list_binding
     definitionURL: 'https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_code_list_binding'
     definitionTerm: 'code list binding'
-    definitionText: 'A code list binding is an assigned correspondence between a set of data values, such as data within an XML document, and a set of columns within a code list, identified via a code list identifier and a set of column names.A code list binding has the following properties:a code list identifiera set of column/value pairs, each having:a column reference: either a column name or a well-known column reference, anda data valueA boolean value, constraining.'
+    definitionText: 'A code list binding is an assigned correspondence between a set of data values, such as data within an XML document, and a set of columns within a code list, identified via a code list identifier and a set of column names.A code list binding has the following properties: a code list identifier a set of column/value pairs, each having: a column reference: either a column name or a well-known column reference, and a data value A boolean value, constraining.'
     definitionIsLocal: true
 -
     specificationID: CodeLists-4.0
@@ -96,7 +96,7 @@
     definitionID: definition_code_list_validation_set
     definitionURL: 'https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_code_list_validation_set'
     definitionTerm: 'code list validation set'
-    definitionText: 'A code list validation set is an abstraction that contains one or more of:The instance, a code list-enabled instance documentThe catalog, an entity catalog, with its local contextThe schema, an XML Schema, andA code list document'
+    definitionText: 'A code list validation set is an abstraction that contains one or more of: The instance, a code list-enabled instance document The catalog, an entity catalog, with its local context The schema, an XML Schema, and A code list document'
     definitionIsLocal: true
 -
     specificationID: CodeLists-4.0
@@ -196,7 +196,7 @@
     definitionID: definition_conformance_target
     definitionURL: 'https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_conformance_target'
     definitionTerm: 'conformance target'
-    definitionText: 'The term conformance target is defined by [CTAS] Section 3.1, Conformance Target Defined which states: A conformance target is a class of artifact, such as an interface, protocol, document, platform, process or service, that is the subject of conformance clauses and normative statements. There may be several conformance targets defined within a specification, and these targets may be diverse so as to reflect different aspects of a specification. For example, a protocol message and a protocol engine may be different conformance targets.'
+    definitionText: 'The term conformance target is defined by [CTAS] Section 3.1, Conformance Target Defined which states:  A conformance target is a class of artifact, such as an interface, protocol, document, platform, process or service, that is the subject of conformance clauses and normative statements. There may be several conformance targets defined within a specification, and these targets may be diverse so as to reflect different aspects of a specification. For example, a protocol message and a protocol engine may be different conformance targets.'
     definitionIsLocal: false
 -
     specificationID: CodeLists-4.0
@@ -206,7 +206,7 @@
     definitionID: definition_conformance_target_identifier
     definitionURL: 'https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_conformance_target_identifier'
     definitionTerm: 'conformance target identifier'
-    definitionText: 'The term conformance target identifier is defined by [CTAS] Section 3.1, Conformance Target Defined, which states: A conformance target identifier is an internationalized resource identifier that uniquely identifies a conformance target.'
+    definitionText: 'The term conformance target identifier is defined by [CTAS] Section 3.1, Conformance Target Defined, which states:  A conformance target identifier is an internationalized resource identifier that uniquely identifies a conformance target.'
     definitionIsLocal: false
 -
     specificationID: CodeLists-4.0
@@ -296,7 +296,7 @@
     definitionID: definition_effective_conformance_target_identifier
     definitionURL: 'https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_effective_conformance_target_identifier'
     definitionTerm: 'effective conformance target identifier'
-    definitionText: 'The term effective conformance target identifier is defined by [CTAS] Section 4, Semantics and Use, which states: An effective conformance target identifier of a conformant document is an internationalized resource identifier reference that occurs in the document’s effective conformance targets attribute.'
+    definitionText: 'The term effective conformance target identifier is defined by [CTAS] Section 4, Semantics and Use, which states:  An effective conformance target identifier of a conformant document is an internationalized resource identifier reference that occurs in the document’s effective conformance targets attribute.'
     definitionIsLocal: false
 -
     specificationID: CodeLists-4.0
@@ -326,7 +326,7 @@
     definitionID: definition_entity_catalog
     definitionURL: 'https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_entity_catalog'
     definitionTerm: 'entity catalog'
-    definitionText: 'The term entity catalog is defined by [XML Catalogs], which states in [XML Catalogs] Section 3, An Entity Catalog: The catalog is effectively an ordered list of (one or more) catalog entry files. It is up to the application to determine the ordered list of catalog entry files to be used as the logical catalog.'
+    definitionText: 'The term entity catalog is defined by [XML Catalogs], which states in [XML Catalogs] Section 3, An Entity Catalog:  The catalog is effectively an ordered list of (one or more) catalog entry files. It is up to the application to determine the ordered list of catalog entry files to be used as the logical catalog.'
     definitionIsLocal: false
 -
     specificationID: CodeLists-4.0
@@ -426,7 +426,7 @@
     definitionID: definition_resource
     definitionURL: 'https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_resource'
     definitionTerm: resource
-    definitionText: 'The term resource is defined by [RFC3986] Section 1.1, Overview of URIs, which states: This specification does not limit the scope of what might be a resource; rather, the term resource is used in a general sense for whatever might be identified by a URI. Familiar examples include an electronic document, an image, a source of information with a consistent purpose (e.g., today’s weather report for Los Angeles), a service (e.g., an HTTP-to-SMS gateway), and a collection of other resources.'
+    definitionText: 'The term resource is defined by [RFC3986] Section 1.1, Overview of URIs, which states:  This specification does not limit the scope of what might be a resource; rather, the term resource is used in a general sense for whatever might be identified by a URI. Familiar examples include an electronic document, an image, a source of information with a consistent purpose (e.g., today’s weather report for Los Angeles), a service (e.g., an HTTP-to-SMS gateway), and a collection of other resources.'
     definitionIsLocal: false
 -
     specificationID: CodeLists-4.0
@@ -436,7 +436,7 @@
     definitionID: definition_schema_component
     definitionURL: 'https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_schema_component'
     definitionTerm: 'schema component'
-    definitionText: 'The term schema component is defined by [XMLSchema1] Section 2.2, XML Schema Abstract Data Model, which states: Schema component is the generic term for the building blocks that comprise the abstract data model of the schema.'
+    definitionText: 'The term schema component is defined by [XMLSchema1] Section 2.2, XML Schema Abstract Data Model, which states:  Schema component is the generic term for the building blocks that comprise the abstract data model of the schema.'
     definitionIsLocal: false
 -
     specificationID: CodeLists-4.0
@@ -446,7 +446,7 @@
     definitionID: definition_schema_document
     definitionURL: 'https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_schema_document'
     definitionTerm: 'schema document'
-    definitionText: 'The term schema document is defined by [XMLSchema1] Section 3.1.2, XML Representations of Components, which states: A document in this form (i.e. a  element information item) is a schema document.'
+    definitionText: 'The term schema document is defined by [XMLSchema1] Section 3.1.2, XML Representations of Components, which states:  A document in this form (i.e. a  element information item) is a schema document.'
     definitionIsLocal: false
 -
     specificationID: CodeLists-4.0
@@ -506,7 +506,7 @@
     definitionID: definition_uniform_resource_identifier
     definitionURL: 'https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_uniform_resource_identifier'
     definitionTerm: 'uniform resource identifier'
-    definitionText: '[RFC3986] defines uniform resource identifier (URI), which it describes as: A Uniform Resource Identifier (URI) is a compact sequence of characters that identifies an abstract or physical resource.'
+    definitionText: '[RFC3986] defines uniform resource identifier (URI), which it describes as:  A Uniform Resource Identifier (URI) is a compact sequence of characters that identifies an abstract or physical resource.'
     definitionIsLocal: false
 -
     specificationID: CodeLists-4.0
@@ -516,7 +516,7 @@
     definitionID: definition_URI
     definitionURL: 'https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_URI'
     definitionTerm: URI
-    definitionText: '[RFC3986] defines uniform resource identifier (URI), which it describes as: A Uniform Resource Identifier (URI) is a compact sequence of characters that identifies an abstract or physical resource.'
+    definitionText: '[RFC3986] defines uniform resource identifier (URI), which it describes as:  A Uniform Resource Identifier (URI) is a compact sequence of characters that identifies an abstract or physical resource.'
     definitionIsLocal: false
 -
     specificationID: CodeLists-4.0
@@ -526,7 +526,7 @@
     definitionID: definition_XML_document
     definitionURL: 'https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_XML_document'
     definitionTerm: 'XML document'
-    definitionText: 'The term XML document is defined by [XML] Section 2, Documents, which states: A data object is an XML document if it is well-formed, as defined in this specification.'
+    definitionText: 'The term XML document is defined by [XML] Section 2, Documents, which states:  A data object is an XML document if it is well-formed, as defined in this specification.'
     definitionIsLocal: false
 -
     specificationID: CodeLists-4.0
@@ -536,7 +536,7 @@
     definitionID: definition_XML_Schema
     definitionURL: 'https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_XML_Schema'
     definitionTerm: 'XML Schema'
-    definitionText: 'The term XML Schema is defined by [XMLSchema1] Section 2.2, XML Schema Abstract Data Model, which states: An XML Schema is a set of schema components.'
+    definitionText: 'The term XML Schema is defined by [XMLSchema1] Section 2.2, XML Schema Abstract Data Model, which states:  An XML Schema is a set of schema components.'
     definitionIsLocal: false
 -
     specificationID: CodeLists-4.0
@@ -546,7 +546,7 @@
     definitionID: definition_XML_Schema_definition_language
     definitionURL: 'https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_XML_Schema_definition_language'
     definitionTerm: 'XML Schema definition language'
-    definitionText: 'The term XML Schema definition language is defined by [XMLSchema1] subsection Abstract, which states: XML Schema: Structures specifies the XML Schema definition language, which offers facilities for describing the structure and constraining the contents of XML 1.0 documents, including those which exploit the XML Namespace facility. The schema language, which is itself represented in XML 1.0 and uses namespaces, substantially reconstructs and considerably extends the capabilities found in XML 1.0 document type definitions (DTDs).'
+    definitionText: 'The term XML Schema definition language is defined by [XMLSchema1] subsection Abstract, which states:  XML Schema: Structures specifies the XML Schema definition language, which offers facilities for describing the structure and constraining the contents of XML 1.0 documents, including those which exploit the XML Namespace facility. The schema language, which is itself represented in XML 1.0 and uses namespaces, substantially reconstructs and considerably extends the capabilities found in XML 1.0 document type definitions (DTDs).'
     definitionIsLocal: false
 -
     specificationID: CodeLists-4.0
@@ -556,5 +556,5 @@
     definitionID: definition_XML_Schema_document_set
     definitionURL: 'https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_XML_Schema_document_set'
     definitionTerm: 'XML Schema document set'
-    definitionText: 'The term XML Schema document set is defined by [NIEM NDR] Section 3.4, XML Schema terminology, which states: An XML Schema document set is a set of schema documents that together define an XML Schema suitable for assessing the validity of an XML document.'
+    definitionText: 'The term XML Schema document set is defined by [NIEM NDR] Section 3.4, XML Schema terminology, which states:  An XML Schema document set is a set of schema documents that together define an XML Schema suitable for assessing the validity of an XML document.'
     definitionIsLocal: false

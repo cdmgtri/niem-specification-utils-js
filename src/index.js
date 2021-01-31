@@ -135,14 +135,4 @@ class NIEMSpecifications {
 
 }
 
-NIEMSpecifications.SpecificationSet = SpecificationSet;
-NIEMSpecifications.Specification = Specification;
-NIEMSpecifications.Rule = require("./rule");
-NIEMSpecifications.Definition = require("./definition");
-
-NIEMSpecifications.NDR = NDR;
-NIEMSpecifications.IEPD = IEPD;
-NIEMSpecifications.CodeLists = CodeLists;
-NIEMSpecifications.CTAS = CTAS;
-
 module.exports = NIEMSpecifications;
