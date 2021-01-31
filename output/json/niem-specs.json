@@ -2,7 +2,7 @@
   {
     "id": "NDR-3.0",
     "classID": "NDR",
-    "tag": "NDR",
+    "customID": "NDR",
     "name": "Naming and Design Rules",
     "version": "3.0",
     "url": "https://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/niem-ndr-3.0.html",
@@ -15,7 +15,7 @@
   {
     "id": "NDR-4.0",
     "classID": "NDR",
-    "tag": "NDR",
+    "customID": "NDR",
     "name": "Naming and Design Rules",
     "version": "4.0",
     "url": "https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html",
@@ -28,7 +28,7 @@
   {
     "id": "NDR-5.0",
     "classID": "NDR",
-    "tag": "NDR",
+    "customID": "NDR",
     "name": "Naming and Design Rules",
     "version": "5.0",
     "url": "https://niem.github.io/NIEM-NDR/v5.0/niem-ndr.html",
@@ -41,7 +41,7 @@
   {
     "id": "MPD-3.0.1",
     "classID": "IEPD",
-    "tag": "MPD",
+    "customID": "MPD",
     "name": "Model Package Description",
     "version": "3.0.1",
     "url": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html",
@@ -54,7 +54,7 @@
   {
     "id": "CodeLists-4.0",
     "classID": "CodeLists",
-    "tag": "CodeLists",
+    "customID": "CodeLists",
     "name": "Code Lists Specification",
     "version": "4.0",
     "url": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html",
@@ -67,7 +67,7 @@
   {
     "id": "CTAS-3.0",
     "classID": "CTAS",
-    "tag": "CTAS",
+    "customID": "CTAS",
     "name": "Conformance Targets Attribute Specification",
     "version": "3.0",
     "url": "https://reference.niem.gov/niem/specification/conformance-targets-attribute/3.0/NIEM-CTAS-3.0-2014-07-31.html",

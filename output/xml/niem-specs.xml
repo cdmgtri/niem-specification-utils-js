@@ -3,7 +3,7 @@
   <specification>
     <id>NDR-3.0</id>
     <classID>NDR</classID>
-    <tag>NDR</tag>
+    <customID>NDR</customID>
     <name>Naming and Design Rules</name>
     <version>3.0</version>
     <url>https://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/niem-ndr-3.0.html</url>
@@ -16,7 +16,7 @@
   <specification>
     <id>NDR-4.0</id>
     <classID>NDR</classID>
-    <tag>NDR</tag>
+    <customID>NDR</customID>
     <name>Naming and Design Rules</name>
     <version>4.0</version>
     <url>https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html</url>
@@ -29,7 +29,7 @@
   <specification>
     <id>NDR-5.0</id>
     <classID>NDR</classID>
-    <tag>NDR</tag>
+    <customID>NDR</customID>
     <name>Naming and Design Rules</name>
     <version>5.0</version>
     <url>https://niem.github.io/NIEM-NDR/v5.0/niem-ndr.html</url>
@@ -42,7 +42,7 @@
   <specification>
     <id>MPD-3.0.1</id>
     <classID>IEPD</classID>
-    <tag>MPD</tag>
+    <customID>MPD</customID>
     <name>Model Package Description</name>
     <version>3.0.1</version>
     <url>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html</url>
@@ -55,7 +55,7 @@
   <specification>
     <id>CodeLists-4.0</id>
     <classID>CodeLists</classID>
-    <tag>CodeLists</tag>
+    <customID>CodeLists</customID>
     <name>Code Lists Specification</name>
     <version>4.0</version>
     <url>https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html</url>
@@ -68,7 +68,7 @@
   <specification>
     <id>CTAS-3.0</id>
     <classID>CTAS</classID>
-    <tag>CTAS</tag>
+    <customID>CTAS</customID>
     <name>Conformance Targets Attribute Specification</name>
     <version>3.0</version>
     <url>https://reference.niem.gov/niem/specification/conformance-targets-attribute/3.0/NIEM-CTAS-3.0-2014-07-31.html</url>

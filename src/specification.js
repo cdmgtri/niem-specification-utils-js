@@ -45,7 +45,7 @@ class Specification {
    * @example "NDR-4.0"
    */
   get id() {
-    return this.tag + "-" + this.version;
+    return this.customID + "-" + this.version;
   }
 
   /**
@@ -65,7 +65,7 @@ class Specification {
    * The standard abbreviation for this specific version of the specification.
    * Adds support for the legacy "MPD" abbreviation.
    */
-  get tag() {
+  get customID() {
     if (!this.specificationClass) return "";
 
     if (this.specificationClass.id == "IEPD" && this.version.startsWith("3.0")) {
@@ -100,15 +100,15 @@ class Specification {
    * @param {String} [folder] - Save to the given or default folder
    */
   save(folder) {
-    utils.nameFileAndSave("spec", "rules", this.tag, this.version, this.rules, folder);
-    utils.nameFileAndSave("spec", "defs", this.tag, this.version, this.defs, folder);
+    utils.nameFileAndSave("spec", "rules", this.customID, this.version, this.rules, folder);
+    utils.nameFileAndSave("spec", "defs", this.customID, this.version, this.defs, folder);
   }
 
   toJSON() {
     return {
       id: this.id,
       classID: this.specificationClass.id,
-      tag: this.tag,
+      customID: this.customID,
       name: this.name,
       version: this.version,
       url: this.url,
