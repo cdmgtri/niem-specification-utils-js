@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>Home - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="CodeLists.html">CodeLists</a><ul class='methods'><li data-type='method'><a href="CodeLists.html#postProcessData">postProcessData</a></li></ul></li><li><a href="CTAS.html">CTAS</a></li><li><a href="Definition.html">Definition</a></li><li><a href="IEPD.html">IEPD</a><ul class='methods'><li data-type='method'><a href="IEPD.html#postProcessData">postProcessData</a></li></ul></li><li><a href="NDR.html">NDR</a><ul class='methods'><li data-type='method'><a href="NDR.html#postProcessData">postProcessData</a></li><li data-type='method'><a href="NDR.html#preProcessHTML">preProcessHTML</a></li></ul></li><li><a href="NIEMSpecifications.html">NIEMSpecifications</a><ul class='methods'><li data-type='method'><a href="NIEMSpecifications.html#.fileName">fileName</a></li><li data-type='method'><a href="NIEMSpecifications.html#.fileName">fileName</a></li><li data-type='method'><a href="NIEMSpecifications.html#.parse">parse</a></li><li data-type='method'><a href="NIEMSpecifications.html#.parse">parse</a></li><li data-type='method'><a href="NIEMSpecifications.html#load">load</a></li><li data-type='method'><a href="NIEMSpecifications.html#load">load</a></li><li data-type='method'><a href="NIEMSpecifications.html#save">save</a></li><li data-type='method'><a href="NIEMSpecifications.html#save">save</a></li><li data-type='method'><a href="NIEMSpecifications.html#specification">specification</a></li><li data-type='method'><a href="NIEMSpecifications.html#specification">specification</a></li></ul></li><li></li><li><a href="Parser.html">Parser</a><ul class='methods'><li data-type='method'><a href="Parser.html#.parseSpecification">parseSpecification</a></li><li data-type='method'><a href="Parser.html#appendTextFollowup">appendTextFollowup</a></li><li data-type='method'><a href="Parser.html#parseDefinitions">parseDefinitions</a></li><li data-type='method'><a href="Parser.html#parseDefinitionTerm">parseDefinitionTerm</a></li><li data-type='method'><a href="Parser.html#parseHTML">parseHTML</a></li><li data-type='method'><a href="Parser.html#parseRuleClassification">parseRuleClassification</a></li><li data-type='method'><a href="Parser.html#parseRuleDescription">parseRuleDescription</a></li><li data-type='method'><a href="Parser.html#parseRuleHeading">parseRuleHeading</a></li><li data-type='method'><a href="Parser.html#parseRuleLabel">parseRuleLabel</a></li><li data-type='method'><a href="Parser.html#parseRules">parseRules</a></li><li data-type='method'><a href="Parser.html#parseRuleTargets">parseRuleTargets</a></li><li data-type='method'><a href="Parser.html#parseSection">parseSection</a></li><li data-type='method'><a href="Parser.html#preProcessHTML">preProcessHTML</a></li></ul></li><li><a href="Rule.html">Rule</a></li><li><a href="Section.html">Section</a></li><li><a href="Specification.html">Specification</a><ul class='methods'><li data-type='method'><a href="Specification.html#postProcessData">postProcessData</a></li><li data-type='method'><a href="Specification.html#preProcessHTML">preProcessHTML</a></li><li data-type='method'><a href="Specification.html#save">save</a></li></ul></li><li><a href="SpecificationSet.html">SpecificationSet</a><ul class='methods'><li data-type='method'><a href="SpecificationSet.html#save">save</a></li><li data-type='method'><a href="SpecificationSet.html#version">version</a></li></ul></li><li><a href="Utils.html">Utils</a><ul class='methods'><li data-type='method'><a href="Utils.html#.flatten">flatten</a></li><li data-type='method'><a href="Utils.html#.readSpecificationHTMLText">readSpecificationHTMLText</a></li><li data-type='method'><a href="Utils.html#.save">save</a></li></ul></li></ul>
+</nav>
+
+<div id="main">
+    
+
+    
+
+
+
+    
+
+
+    <section class="package">
+        <h3> </h3>		
+    </section>
+
+
+
+
+
+
+
+
+
+    
+
+
+
+    <section class="readme usertext">
+        <article><h1>NIEM Specification Utils</h1>
+<p>Extracts rule and definition information from NIEM specifications into JSON and YAML files.</p>
+<p><strong>Branch status</strong>:
+master:
+<a href="https://github.com/cdmgtri/niem-specification-utils/actions"><img src="https://github.com/cdmgtri/niem-specification-utils/workflows/build/badge.svg?branch=master" alt="Master Build Status"></a>
+<a href="https://coveralls.io/github/cdmgtri/niem-specification-utils?branch=master"><img src="https://coveralls.io/repos/github/cdmgtri/niem-specification-utils/badge.svg?branch=master" alt="Master Coverage Status"></a>
+dev:
+<a href="https://github.com/cdmgtri/niem-specification-utils/actions"><img src="https://github.com/cdmgtri/niem-specification-utils/workflows/build/badge.svg?branch=dev" alt="Dev Build Status"></a>
+<a href="https://coveralls.io/github/cdmgtri/niem-specification-utils?branch=dev"><img src="https://coveralls.io/repos/github/cdmgtri/niem-specification-utils/badge.svg?branch=dev" alt="Dev Coverage Status"></a></p>
+<p>This project parses <a href="https://reference.niem.gov/niem/specification/">NIEM HTML specifications</a> to extract rule and definition information that is used on <a href="https:%5C/%5C/niem.github.io">https://niem.github.io</a>.</p>
+<p>Additional metadata has been added to support linking specific NDR rules with their applicable <a href="https://niem.github.io/reference/concepts/">NIEM model concepts</a>.  See the <a href="https://niem.github.io/reference/concepts/augmentation/element/modeling/#references">modeling references</a> section on <a href="https://niem.github.io/reference/concepts/augmentation/element/">augmentation elements</a> for an example.</p>
+<p><strong>Contents</strong></p>
+<ul>
+<li><a href="#supported-specifications">Supported specifications</a></li>
+<li><a href="#output">Output</a></li>
+<li><a href="#install">Install</a></li>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#load-a-new-specification">Load a new specification</a></li>
+<li><a href="#update-metadata-for-existing-specifications">Update metadata for existing specifications</a></li>
+<li><a href="#test-changes">Test changes</a></li>
+</ul>
+<h2>Supported specifications</h2>
+<p>The following NIEM specifications are supported:</p>
+<ul>
+<li><a href="https://niem.github.io/NIEM-NDR/">Naming and Design Rules (NDR)</a>, versions 3.0, 4.0, and 5.0</li>
+<li><a href="https://reference.niem.gov/niem/specification/model-package-description">Model Package Description (MPD)</a>, version 3.0.1</li>
+<li><a href="https://reference.niem.gov/niem/specification/code-lists/">Code Lists</a>, version 4.0</li>
+<li><a href="https://reference.niem.gov/niem/specification/conformance-targets-attribute/">Conformance Targets Attribute Specification</a>, version 3.0</li>
+</ul>
+<p>See the update instructions below for information about adding a new set of specifications, or adding a new version of a specification to an existing set.</p>
+<h2>Output</h2>
+<p>Information about rules and definitions are saved as JSON and YAML files to the <code>output/</code> directory</p>
+<p><strong>Sample rule information from niem-rules.yaml</strong></p>
+<p>Rule information includes basic info about the specification section of the specification in which the rule appears, the rule number, title, full text, link, applicable conformance targets, and whether or not the rule is defined as text or schematron.</p>
+<blockquote>
+<p>Note: Schematron rules are capable of being validated by the <a href="https://niem.github.io/reference/tools/contesa/">Conformance Testing Assistant (ConTesA)</a> or by using the schematron validation feature in the Oxygen XML Editor (<a href="https://niem.github.io/reference/tools/oxygen/ndr/">see instructions for NIEM</a>).  Text rules require manual evaluation.</p>
+</blockquote>
+<pre class="prettyprint source lang-yaml"><code>-
+    specificationID: NDR-5.0
+    sectionID: section_9.2.4
+    sectionLabel: 'Section 9.2.4. Notation declaration'
+    sectionURL: 'https://reference.niem.gov/niem/specification/naming-and-design-rules/5.0/niem-ndr-5.0.html#section_9.2.4'
+    ruleNumber: 9-59
+    ruleTitle: 'No use of element xs:notation'
+    ruleName: &quot;&quot;
+    ruleID: rule_9-59
+    ruleURL: 'https://reference.niem.gov/niem/specification/naming-and-design-rules/5.0/niem-ndr-5.0.html#rule_9-59'
+    ruleTargets: [REF, EXT]
+    ruleClassification: Constraint
+    ruleStyle: schematron
+    ruleText: 'The schema MUST NOT contain the element xs:notation.'
+-
+    specificationID: NDR-5.0
+    sectionID: section_9.3.1
+    sectionLabel: 'Section 9.3.1. Model group'
+    sectionURL: 'https://reference.niem.gov/niem/specification/naming-and-design-rules/5.0/niem-ndr-5.0.html#section_9.3.1'
+    ruleNumber: 9-60
+    ruleTitle: 'Model group does not affect meaning'
+    ruleName: &quot;&quot;
+    ruleID: rule_9-60
+    ruleURL: 'https://reference.niem.gov/niem/specification/naming-and-design-rules/5.0/niem-ndr-5.0.html#rule_9-60'
+    ruleTargets: [EXT]
+    ruleClassification: Interpretation
+    ruleStyle: text
+    ruleText: 'The use of model groups xs:all, xs:sequence, and xs:choice MUST NOT define the semantics of an instance. The meaning of an element occurrence within an element occurrence MUST be identical, regardless of the model group used to define a schema component.'
+</code></pre>
+<p><strong>Sample definition information from niem-defs.yaml</strong></p>
+<p>Definition information includes basic info about the section of the specification in which the definition appears, the definition term, full text, link, and whether or not the definition is defined locally by the specification or is a reference to another source.</p>
+<pre class="prettyprint source lang-yaml"><code>-
+    specificationID: NDR-3.0
+    sectionID: section_10.4.1
+    sectionLabel: 'Section 10.4.1. Augmentable types'
+    sectionURL: 'https://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/niem-ndr-3.0.html#section_10.4.1'
+    definitionID: definition_augmentable_type
+    definitionURL: 'https://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/niem-ndr-3.0.html#definition_augmentable_type'
+    definitionTerm: 'augmentable type'
+    definitionText: 'An augmentable type is complex type definition that is defined by either a reference schema document or by an extension schema document, and is either an association type, or an object type that has complex content and is not an external adapter type.'
+    definitionIsLocal: true
+-
+    specificationID: NDR-3.0
+    sectionID: section_10.4
+    sectionLabel: 'Section 10.4. Augmentations'
+    sectionURL: 'https://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/niem-ndr-3.0.html#section_10.4'
+    definitionID: definition_augmentation
+    definitionURL: 'https://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/niem-ndr-3.0.html#definition_augmentation'
+    definitionTerm: augmentation
+    definitionText: 'An augmentation is an element that is a child of an element that is an instance of an augmentable type, and is a member of the substitution group of the augmentation point element declaration for the augmentable type.'
+    definitionIsLocal: true
+</code></pre>
+<h2>Install</h2>
+<pre class="prettyprint source lang-bash"><code>npm install cdmgtri/niem-specification-utils
+</code></pre>
+<h2>Usage</h2>
+<p>The following will generate rule and definition files to the <code>output/</code> directory in JSON and YAML:</p>
+<ul>
+<li>for each set of specifications (e.g., <code>ndr-rules.json</code>, and</li>
+<li>for all NIEM specifications combined (e.g., <code>niem-rules.json</code>).</li>
+</ul>
+<pre class="prettyprint source lang-bash"><code>$ npm run build
+# NDR-3.0 (239 rules, 54 defs)
+# NDR-4.0 (255 rules, 52 defs)
+# NDR-5.0 (260 rules, 52 defs)
+# MPD-3.0.1 (60 rules, 44 defs)
+# CodeLists-4.0 (29 rules, 56 defs)
+# CTAS-3.0 (6 rules, 5 defs)
+</code></pre>
+<h2>Load a new specification</h2>
+<p>Basic metadata about the specification must be manually entered.</p>
+<ul>
+<li>
+<p>Save the specification HTML file to the <code>/specifications/</code> directory.</p>
+</li>
+<li>
+<p>Rename the file if necessary so the name follows the same pattern as the other versions of the spec (e.g., <code>NDR-5.0.html</code>).</p>
+</li>
+<li>
+<p>In the <code>data/index.js</code> file,</p>
+<ul>
+<li>add the new version number to the class's static version array</li>
+<li>update the static currentVersion constant</li>
+</ul>
+</li>
+<li>
+<p>Update the supported specifications section in this <code>README.md</code> file.</p>
+</li>
+</ul>
+<h2>Update metadata for existing specifications</h2>
+<p>To update information like where to view a specification or submit an issue, update the appropriate fields in the <code>data/index.js</code> file.</p>
+<h2>Test changes</h2>
+<p>The Jest tests in <code>test/index.test.js</code> primarily ensure that changes to the code set do not break existing functionality by comparing newly-generated output files in <code>test/output/</code> against the files in the root <code>output/</code> which have already been approved.</p>
+<p>Review any differences between the test output and the expected output to determine if the changes are valid.  If so, run <code>npm run build</code> to update the files in the root <code>output/</code> directory.</p>
+<pre class="prettyprint source lang-bash"><code>npm test
+</code></pre>
+<p>Tests also include such things as checking for valid parsed IDs and truncated rule and definition text fields.</p></article>
+    </section>
+
+
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on Sat Jan 30 2021 23:25:12 GMT-0500 (Eastern Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+
+
+</body>
+</html>

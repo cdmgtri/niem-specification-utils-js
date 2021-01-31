@@ -2,15 +2,16 @@
   "name": "niem-specification-utils",
   "version": "1.0.0",
   "description": "Extracts rule and definition information from NIEM specifications.",
-  "main": "./src/index.js",
+  "main": "./index.js",
   "bin": {
     "cli": "bin/index.js"
   },
   "scripts": {
-    "build": "node bin/index.js",
+    "build": "trash output && node bin/index.js",
     "build:debug": "cross-env DEBUG=niem npm run build",
-    "ci": "npm run test:cov && npm run coverage",
+    "ci": "npm run test:cov && npm run coverage && npm run docs",
     "coverage": "coveralls < coverage/lcov.info",
+    "docs": "trash docs && jsdoc . ./src/index.js ./src ./README.md -d docs -t node_modules/docdash",
     "test": "jest",
     "test:cov": "jest --coverage"
   },
@@ -27,6 +28,9 @@
   "devDependencies": {
     "@types/jest": "^26.0.20",
     "coveralls": "^3.1.0",
-    "jest": "^26.6.3"
+    "docdash": "^1.2.0",
+    "jest": "^26.6.3",
+    "jsdoc": "^3.6.6",
+    "trash-cli": "^4.0.0"
   }
 }

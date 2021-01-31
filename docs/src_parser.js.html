@@ -1,4 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>src/parser.js - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
 
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="CodeLists.html">CodeLists</a><ul class='methods'><li data-type='method'><a href="CodeLists.html#postProcessData">postProcessData</a></li></ul></li><li><a href="CTAS.html">CTAS</a></li><li><a href="Definition.html">Definition</a></li><li><a href="IEPD.html">IEPD</a><ul class='methods'><li data-type='method'><a href="IEPD.html#postProcessData">postProcessData</a></li></ul></li><li><a href="NDR.html">NDR</a><ul class='methods'><li data-type='method'><a href="NDR.html#postProcessData">postProcessData</a></li><li data-type='method'><a href="NDR.html#preProcessHTML">preProcessHTML</a></li></ul></li><li><a href="NIEMSpecifications.html">NIEMSpecifications</a><ul class='methods'><li data-type='method'><a href="NIEMSpecifications.html#.fileName">fileName</a></li><li data-type='method'><a href="NIEMSpecifications.html#.fileName">fileName</a></li><li data-type='method'><a href="NIEMSpecifications.html#.parse">parse</a></li><li data-type='method'><a href="NIEMSpecifications.html#.parse">parse</a></li><li data-type='method'><a href="NIEMSpecifications.html#load">load</a></li><li data-type='method'><a href="NIEMSpecifications.html#load">load</a></li><li data-type='method'><a href="NIEMSpecifications.html#save">save</a></li><li data-type='method'><a href="NIEMSpecifications.html#save">save</a></li><li data-type='method'><a href="NIEMSpecifications.html#specification">specification</a></li><li data-type='method'><a href="NIEMSpecifications.html#specification">specification</a></li></ul></li><li></li><li><a href="Parser.html">Parser</a><ul class='methods'><li data-type='method'><a href="Parser.html#.parseSpecification">parseSpecification</a></li><li data-type='method'><a href="Parser.html#appendTextFollowup">appendTextFollowup</a></li><li data-type='method'><a href="Parser.html#parseDefinitions">parseDefinitions</a></li><li data-type='method'><a href="Parser.html#parseDefinitionTerm">parseDefinitionTerm</a></li><li data-type='method'><a href="Parser.html#parseHTML">parseHTML</a></li><li data-type='method'><a href="Parser.html#parseRuleClassification">parseRuleClassification</a></li><li data-type='method'><a href="Parser.html#parseRuleDescription">parseRuleDescription</a></li><li data-type='method'><a href="Parser.html#parseRuleHeading">parseRuleHeading</a></li><li data-type='method'><a href="Parser.html#parseRuleLabel">parseRuleLabel</a></li><li data-type='method'><a href="Parser.html#parseRules">parseRules</a></li><li data-type='method'><a href="Parser.html#parseRuleTargets">parseRuleTargets</a></li><li data-type='method'><a href="Parser.html#parseSection">parseSection</a></li><li data-type='method'><a href="Parser.html#preProcessHTML">preProcessHTML</a></li></ul></li><li><a href="Rule.html">Rule</a></li><li><a href="Section.html">Section</a></li><li><a href="Specification.html">Specification</a><ul class='methods'><li data-type='method'><a href="Specification.html#postProcessData">postProcessData</a></li><li data-type='method'><a href="Specification.html#preProcessHTML">preProcessHTML</a></li><li data-type='method'><a href="Specification.html#save">save</a></li></ul></li><li><a href="SpecificationSet.html">SpecificationSet</a><ul class='methods'><li data-type='method'><a href="SpecificationSet.html#save">save</a></li><li data-type='method'><a href="SpecificationSet.html#version">version</a></li></ul></li><li><a href="Utils.html">Utils</a><ul class='methods'><li data-type='method'><a href="Utils.html#.flatten">flatten</a></li><li data-type='method'><a href="Utils.html#.readSpecificationHTMLText">readSpecificationHTMLText</a></li><li data-type='method'><a href="Utils.html#.save">save</a></li></ul></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">src/parser.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>
 let cheerio = require("cheerio");
 let debug = require("debug")("niem");
 
@@ -131,13 +175,13 @@ class Parser {
     });
 
     // Sort definitions by term
-    this.spec.defs = this.spec.defs.sort( (a, b) => ( a.term.toLowerCase() < b.term.toLowerCase() ) ? -1 : 1 );
+    this.spec.defs = this.spec.defs.sort( (a, b) => ( a.term.toLowerCase() &lt; b.term.toLowerCase() ) ? -1 : 1 );
 
   }
 
 
   /**
-   * Parses a node for the definition term inside the <dfn></dfn> tags.
+   * Parses a node for the definition term inside the &lt;dfn>&lt;/dfn> tags.
    *
    * @param {CheerioElement} parentNode
    * @returns {string}
@@ -276,8 +320,8 @@ class Parser {
       rule.style = "schematron";
       rule.text = ruleSchematronNode.text().replace("\n", " ").trim();
 
-      // Capture the text between the <sch:assert> or <sch:report> tags
-      // let re = /(?:assert|report)[^>]*>([^<]*)</;
+      // Capture the text between the &lt;sch:assert> or &lt;sch:report> tags
+      // let re = /(?:assert|report)[^>]*>([^&lt;]*)&lt;/;
       // let matches = re.exec(rule.schematron);
       // rule.ruleText = matches[1];
     }
@@ -320,26 +364,26 @@ class Parser {
   preProcessHTML(html) {
 
     // Replace escaped characters
-    html = html.replace(/&lt;/g, "<");
-    html = html.replace(/&gt;/g, ">");
+    html = html.replace(/&amp;lt;/g, "&lt;");
+    html = html.replace(/&amp;gt;/g, ">");
 
     // Remove the HTML doctype header
-    html = html.replace(/<!DOCTYPE .*>/, "");
+    html = html.replace(/&lt;!DOCTYPE .*>/, "");
 
     // Close the meta tag
-    html = html.replace(/<meta ([^>]*)>/, "<meta $1/>");
+    html = html.replace(/&lt;meta ([^>]*)>/, "&lt;meta $1/>");
 
     // Remove contents from image tags and close (unneeded)
-    html = html.replace(/<img src=[^>]*>/g, "<img/>");
+    html = html.replace(/&lt;img src=[^>]*>/g, "&lt;img/>");
 
     // Fix tags disappearing from the parsed text
-    html = html.replace(/<absolute-URI>/g, "&lt;absolute-URI&gt;")
+    html = html.replace(/&lt;absolute-URI>/g, "&amp;lt;absolute-URI&amp;gt;")
 
     // Add space following adjacent list-close and list-open tags so the parsed list text doesn't run together
-    html = html.replace(/<\/li><li>/g, "</li> <li>");
-    html = html.replace(/<\/li><ul>/g, "</li> <ul>");
-    html = html.replace(/<\/p><ul>/g, "</p> <ul>");
-    html = html.replace(/<\/p><ol>/g, "</p> <ol>");
+    html = html.replace(/&lt;\/li>&lt;li>/g, "&lt;/li> &lt;li>");
+    html = html.replace(/&lt;\/li>&lt;ul>/g, "&lt;/li> &lt;ul>");
+    html = html.replace(/&lt;\/p>&lt;ul>/g, "&lt;/p> &lt;ul>");
+    html = html.replace(/&lt;\/p>&lt;ol>/g, "&lt;/p> &lt;ol>");
 
     return html;
 
@@ -359,3 +403,28 @@ class Parser {
 let Specification = require("./specification");
 
 module.exports = Parser;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on Sat Jan 30 2021 23:25:12 GMT-0500 (Eastern Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+
+
+</body>
+</html>

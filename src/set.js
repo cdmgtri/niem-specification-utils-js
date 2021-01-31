@@ -1,9 +1,14 @@
 
 let utils = require("./utils");
 
+/**
+ * Information about a versioned series of related NIEM specifications.
+ */
 class SpecificationSet {
 
   /**
+   *
+   *
    * @param {"NDR"|"IEPD"|"CodeLists"|"CTAS"} setID - The id of the specification, e.g., "NDR"
    * @param {string} setName - The name of the specification, e.g., "Naming and Design Rules"
    */

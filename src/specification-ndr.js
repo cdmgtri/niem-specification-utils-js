@@ -1,6 +1,9 @@
 
 let Specification = require("./specification");
 
+/**
+ * Information about the NIEM Naming and Design Rules specification.
+ */
 class NDR extends Specification {
 
   /**
@@ -9,8 +12,8 @@ class NDR extends Specification {
    *
    * @param {string} html
    */
-  format(html) {
-    html = super.format(html);
+  preProcessHTML(html) {
+    html = super.preProcessHTML(html);
     html = convertRuleApplicability(html);
     return html;
   }
@@ -18,7 +21,7 @@ class NDR extends Specification {
   /**
    * Handles inconsistencies in NDR rules.
    */
-  postProcessParsedData() {
+  postProcessData() {
     if (this.version === "3.0") {
       let rule = this.rules.find( rule => rule.number === "9-83" );
       rule.text = "The value of the attribute targetNamespace MUST match the production <absolute-URI> as defined by RFC 3986.";
@@ -33,6 +36,7 @@ module.exports = NDR;
 /**
  * Replaces hyperlinks to conformance targets in rule applicabilities to simple strings.
  *
+ * @private
  * @param {string} xml
  * @returns {string}
  */

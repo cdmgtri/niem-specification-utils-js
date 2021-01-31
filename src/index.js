@@ -11,6 +11,9 @@ let CTAS = require("./specification-ctas");
 
 let specificationData = require("../specificationData");
 
+/**
+ * Information about the sets of NIEM specifications.
+ */
 class NIEMSpecifications {
 
   constructor() {
@@ -34,7 +37,7 @@ class NIEMSpecifications {
     // Process each entry in the /specificationData.js file
     specificationData.forEach( entry => {
 
-      let html = utils.specificationHTML(entry.tag || entry.setID, entry.version);
+      let html = utils.readSpecificationHTMLText(entry.tag || entry.setID, entry.version);
 
       /** @type {SpecificationSet} */
       let specificationSet = this[entry.setID];

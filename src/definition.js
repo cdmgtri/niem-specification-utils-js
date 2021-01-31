@@ -2,6 +2,8 @@
 class Definition {
 
   /**
+   * Information about a term defined by a NIEM specification.
+   *
    * @param {Specification} [specification]
    * @param {Section} [section]
    *
@@ -20,11 +22,6 @@ class Definition {
     this.isLocal = isLocal;
 
   }
-
-  // get id() {
-  //   // Truncate string parentheses and replace spaces with underscores
-  //   return "definition_" + this.term.split("(")[0].replace(/ /g, "_");
-  // }
 
   get url() {
     return this.specification.url + "#" + this.id

@@ -2,7 +2,7 @@
 let Specification = require("./specification");
 
 /**
- * Conformance Targets Attribute Specification
+ * Information about the NIEM Conformance Targets Attribute Specification (CTAS)
  */
 class CTAS extends Specification {
 

@@ -3,6 +3,9 @@ let fs = require("fs-extra");
 let path = require("path");
 let yaml = require("yamljs");
 
+/**
+ * General utility functions to support the project.
+ */
 class Utils {
 
   /**
@@ -37,7 +40,7 @@ class Utils {
   /**
    * Reads the specification html file in the specifications directory with the given tag and version
    */
-  static specificationHTML(tag, version) {
+  static readSpecificationHTMLText(tag, version) {
     let html = fs.readFileSync(`specifications/${tag}-${version}.html`, {encoding: "utf8"});
     return html;
   }

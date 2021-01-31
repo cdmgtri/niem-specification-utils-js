@@ -1,6 +1,6 @@
 
 let utils = require("./utils");
-let parseSpecification = require("./parser");
+let { parseSpecification } = require("./parser");
 
 class Specification {
 
@@ -53,16 +53,15 @@ class Specification {
    * @param {string} html
    * @returns {string} - Reformatted HTML
    */
-  format(html) {
+  preProcessHTML(html) {
     return html;
   }
 
   /**
-   * Handles inconsistencies in rules.
-   * Specification-specific.
+   * Handles inconsistencies in rules or definitions.  Specification-specific.
    * @abstract
    */
-  postProcessParsedData() {
+  postProcessData() {
   }
 
 

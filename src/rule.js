@@ -5,6 +5,8 @@
 class Rule {
 
   /**
+   * Information about a specific requirement for a NIEM artifact as defined by a NIEM specification.
+   *
    * @param {Specification} [specification]
    * @param {Section} [section]
    *
