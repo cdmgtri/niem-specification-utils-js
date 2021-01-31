@@ -1,5 +1,6 @@
 
 let fs = require("fs-extra");
+let json2csv = require("json2csv");
 let path = require("path");
 let trash = require("trash");
 let xmlConverter = require("xml-js");
@@ -62,34 +63,6 @@ class Utils {
   }
 
   /**
-   * Saves given data as JSON and YAML to the default or given output directory.
-   *
-   * @param {String} fileName - Base file name, no extension or path
-   * @param {Object} data - Data to save
-   * @param {String} [folder='./output/'] - Folder to save output files.  Defaults to /output.
-   * @param {"rules"|"defs"|"classes"|"specs"} style - Used to generate additional XML tags to wrap the data
-   */
-  static save(fileName, data, folder="./output/", style) {
-
-    // Create custom subfolders for each export format
-    let subfolder = (extension) => path.join(folder, extension, fileName.toLowerCase() + "." + extension);
-
-    // Save JSON
-    fs.outputJSONSync( subfolder("json"), data, {spaces: 2} );
-
-    // Save YAML (library isn't calling toJSON on stringify so do it manually)
-    let yamlData = JSON.parse(JSON.stringify(data));
-    fs.outputFileSync( subfolder("yaml"), yaml.stringify(yamlData) );
-
-    // Save XML
-    let xmlData = convertObjectToXML(data, style);
-    fs.outputFileSync( subfolder("xml"), xmlData );
-
-    // Save CSV
-
-  }
-
-  /**
    * Reads the specification html file in the specifications directory with the given tag and version
    */
   static readSpecificationHTMLText(tag, version) {
@@ -107,6 +80,38 @@ class Utils {
     let normalizedPath = path.join(__dirname, filePath);
     let text = fs.readFileSync(normalizedPath, "utf-8");
     return yaml.parse(text);
+  }
+
+  /**
+   * Saves given data as JSON and YAML to the default or given output directory.
+   *
+   * @param {String} fileName - Base file name, no extension or path
+   * @param {Object} data - Data to save
+   * @param {String} [folder='./output/'] - Folder to save output files.  Defaults to /output.
+   * @param {"rules"|"defs"|"classes"|"specs"} style - Used to generate additional XML tags to wrap the data
+   */
+  static save(fileName, data, folder="./output/", style) {
+
+    let originalJSON = JSON.stringify(data);
+    let convertedData = JSON.parse(originalJSON);
+
+    // Create custom subfolders for each export format
+    let subfolder = (extension) => path.join(folder, extension, fileName.toLowerCase() + "." + extension);
+
+    // Save JSON
+    fs.outputJSONSync( subfolder("json"), data, {spaces: 2} );
+
+    // Save YAML (library isn't calling toJSON on stringify so do it manually)
+    fs.outputFileSync( subfolder("yaml"), yaml.stringify(convertedData) );
+
+    // Save XML
+    let xmlData = convertObjectToXML(data, style);
+    fs.outputFileSync( subfolder("xml"), xmlData );
+
+    // Save CSV
+    let csvData = json2csv.parse(convertedData);
+    fs.outputFileSync( subfolder("csv"), csvData );
+
   }
 
   /**
