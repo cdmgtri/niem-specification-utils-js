@@ -2,6 +2,7 @@
 let fs = require("fs-extra");
 let path = require("path");
 let trash = require("trash");
+let xmlConverter = require("xml-js");
 let yaml = require("yamljs");
 
 /**
@@ -31,6 +32,7 @@ class Utils {
   static nameFile(scope, style, label, version) {
 
     if (scope == "all") {
+      style = style.replace("classes", "spec-classes");
       return `niem-${style}`.toLowerCase();
     }
     else if (scope == "class") {
@@ -56,7 +58,7 @@ class Utils {
    */
   static nameFileAndSave(scope, style, label, version, data, folder="./output/") {
     let fileName = Utils.nameFile(scope, style, label, version);
-    return Utils.save(fileName, data, folder);
+    return Utils.save(fileName, data, folder, style);
   }
 
   /**
@@ -65,16 +67,25 @@ class Utils {
    * @param {String} fileName - Base file name, no extension or path
    * @param {Object} data - Data to save
    * @param {String} [folder='./output/'] - Folder to save output files.  Defaults to /output.
+   * @param {"rules"|"defs"|"classes"|"specs"} style - Used to generate additional XML tags to wrap the data
    */
-  static save(fileName, data, folder="./output/") {
+  static save(fileName, data, folder="./output/", style) {
 
-    let outputPath = path.resolve(folder, fileName.toLowerCase());
+    // Create custom subfolders for each export format
+    let subfolder = (extension) => path.join(folder, extension, fileName.toLowerCase() + "." + extension);
 
-    fs.outputJSONSync(outputPath + ".json", data, {spaces: 2});
+    // Save JSON
+    fs.outputJSONSync( subfolder("json"), data, {spaces: 2} );
 
-    // YAML library isn't calling toJSON on stringify so run it through manually
+    // Save YAML (library isn't calling toJSON on stringify so do it manually)
     let yamlData = JSON.parse(JSON.stringify(data));
-    fs.outputFileSync(outputPath + ".yaml", yaml.stringify(yamlData));
+    fs.outputFileSync( subfolder("yaml"), yaml.stringify(yamlData) );
+
+    // Save XML
+    let xmlData = convertObjectToXML(data, style);
+    fs.outputFileSync( subfolder("xml"), xmlData );
+
+    // Save CSV
 
   }
 
@@ -105,6 +116,37 @@ class Utils {
     let normalizedPath = path.resolve(__dirname, folder);
     return trash(normalizedPath);
   }
+
+}
+
+/**
+ * Converts an array of objects to an XML string.
+ * Wraps the array with a root element and adds tags for each element of the array.
+ *
+ * @param {{}[]} dataArray
+ * @param {String} rootTag - Word (plural form) to use as the root tag for the XML document
+ */
+function convertObjectToXML(dataArray, rootTag) {
+
+  let xmlObject = {};
+
+  // Adjust tag name
+  if (rootTag == "classes") rootTag = "specificationClasses";
+  if (rootTag == "specs" ) rootTag = "specifications";
+  if (rootTag == "defs") rootTag = "definitions";
+
+  // Root-level tag for the XML
+  xmlObject[rootTag] = {};
+
+  // Generate a tag name to use for the anonymous array elements
+  let elementTag = rootTag.replace(/s$/, "").replace(/Classe$/, "Class");
+  xmlObject[rootTag][elementTag] = dataArray;
+
+  // Convert XML-formatted object to an XML string
+  let json = JSON.stringify(xmlObject);
+  let xmlText = xmlConverter.json2xml(json, {compact: true, spaces: 2});
+
+  return `<?xml version="1.0" encoding="UTF-8"?>\n` + xmlText;
 
 }
 

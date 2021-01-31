@@ -102,12 +102,12 @@ function checkCounts(specificationID, expectedRuleCount, expectedDefinitionCount
  */
 function checkOutput(fileName) {
 
-  let testJSON = fs.readFileSync(`./test/output/${fileName}.json`, "utf8");
-  let expectedJSON = fs.readFileSync(`./output/${fileName}.json`, "utf8");
+  let testJSON = fs.readFileSync(`./test/output/json/${fileName}.json`, "utf8");
+  let expectedJSON = fs.readFileSync(`./output/json/${fileName}.json`, "utf8");
   expect(testJSON).toEqual(expectedJSON);
 
-  let testYAML = fs.readFileSync(`./test/output/${fileName}.yaml`, "utf8");
-  let expectedYAML = fs.readFileSync(`./output/${fileName}.yaml`, "utf8");
+  let testYAML = fs.readFileSync(`./test/output/yaml/${fileName}.yaml`, "utf8");
+  let expectedYAML = fs.readFileSync(`./output/yaml/${fileName}.yaml`, "utf8");
   expect(testYAML).toEqual(expectedYAML);
 
 }

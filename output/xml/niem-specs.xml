@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specifications>
+  <specification>
+    <id>NDR-3.0</id>
+    <classID>NDR</classID>
+    <tag>NDR</tag>
+    <name>Naming and Design Rules</name>
+    <version>3.0</version>
+    <url>https://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/niem-ndr-3.0.html</url>
+    <year>2014</year>
+    <applicableReleases>NIEM 3.0 - NIEM 3.2</applicableReleases>
+    <resources>https://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/niem-ndr-3.0.zip</resources>
+    <examples/>
+    <current>false</current>
+  </specification>
+  <specification>
+    <id>NDR-4.0</id>
+    <classID>NDR</classID>
+    <tag>NDR</tag>
+    <name>Naming and Design Rules</name>
+    <version>4.0</version>
+    <url>https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html</url>
+    <year>2017</year>
+    <applicableReleases>NIEM 4.0 - NIEM 4.2</applicableReleases>
+    <resources>https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.zip</resources>
+    <examples/>
+    <current>false</current>
+  </specification>
+  <specification>
+    <id>NDR-5.0</id>
+    <classID>NDR</classID>
+    <tag>NDR</tag>
+    <name>Naming and Design Rules</name>
+    <version>5.0</version>
+    <url>https://niem.github.io/NIEM-NDR/v5.0/niem-ndr.html</url>
+    <year>2020</year>
+    <applicableReleases>NIEM 5.0 - NIEM 5.2 (future)</applicableReleases>
+    <resources>https://niem.github.io/NIEM-NDR/v5.0/niem-ndr-v5.0.zip</resources>
+    <examples/>
+    <current>true</current>
+  </specification>
+  <specification>
+    <id>MPD-3.0.1</id>
+    <classID>IEPD</classID>
+    <tag>MPD</tag>
+    <name>Model Package Description</name>
+    <version>3.0.1</version>
+    <url>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html</url>
+    <year>2015</year>
+    <applicableReleases>NIEM 3.0 - NIEM 4.2</applicableReleases>
+    <resources>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/mpd-toolkit-3.0.zip</resources>
+    <examples>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/iepd-examples/</examples>
+    <current>true</current>
+  </specification>
+  <specification>
+    <id>CodeLists-4.0</id>
+    <classID>CodeLists</classID>
+    <tag>CodeLists</tag>
+    <name>Code Lists Specification</name>
+    <version>4.0</version>
+    <url>https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html</url>
+    <year>2017</year>
+    <applicableReleases>NIEM 4.0 - NIEM 4.2</applicableReleases>
+    <resources/>
+    <examples>https://github.com/NIEM/NIEM-Releases/blob/niem-4.0/niem/codes/genc/geo-political/3-6/genc_geo-political_3-6_char3.csv</examples>
+    <current>true</current>
+  </specification>
+  <specification>
+    <id>CTAS-3.0</id>
+    <classID>CTAS</classID>
+    <tag>CTAS</tag>
+    <name>Conformance Targets Attribute Specification</name>
+    <version>3.0</version>
+    <url>https://reference.niem.gov/niem/specification/conformance-targets-attribute/3.0/NIEM-CTAS-3.0-2014-07-31.html</url>
+    <year>2014</year>
+    <applicableReleases>NIEM 3.0 and later releases</applicableReleases>
+    <resources/>
+    <examples/>
+    <current>true</current>
+  </specification>
+</specifications>

@@ -1,0 +1,80 @@
+[
+  {
+    "id": "NDR-3.0",
+    "classID": "NDR",
+    "tag": "NDR",
+    "name": "Naming and Design Rules",
+    "version": "3.0",
+    "url": "https://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/niem-ndr-3.0.html",
+    "year": "2014",
+    "applicableReleases": "NIEM 3.0 - NIEM 3.2",
+    "resources": "https://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/niem-ndr-3.0.zip",
+    "examples": null,
+    "current": false
+  },
+  {
+    "id": "NDR-4.0",
+    "classID": "NDR",
+    "tag": "NDR",
+    "name": "Naming and Design Rules",
+    "version": "4.0",
+    "url": "https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html",
+    "year": "2017",
+    "applicableReleases": "NIEM 4.0 - NIEM 4.2",
+    "resources": "https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.zip",
+    "examples": null,
+    "current": false
+  },
+  {
+    "id": "NDR-5.0",
+    "classID": "NDR",
+    "tag": "NDR",
+    "name": "Naming and Design Rules",
+    "version": "5.0",
+    "url": "https://niem.github.io/NIEM-NDR/v5.0/niem-ndr.html",
+    "year": "2020",
+    "applicableReleases": "NIEM 5.0 - NIEM 5.2 (future)",
+    "resources": "https://niem.github.io/NIEM-NDR/v5.0/niem-ndr-v5.0.zip",
+    "examples": null,
+    "current": true
+  },
+  {
+    "id": "MPD-3.0.1",
+    "classID": "IEPD",
+    "tag": "MPD",
+    "name": "Model Package Description",
+    "version": "3.0.1",
+    "url": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html",
+    "year": "2015",
+    "applicableReleases": "NIEM 3.0 - NIEM 4.2",
+    "resources": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/mpd-toolkit-3.0.zip",
+    "examples": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/iepd-examples/",
+    "current": true
+  },
+  {
+    "id": "CodeLists-4.0",
+    "classID": "CodeLists",
+    "tag": "CodeLists",
+    "name": "Code Lists Specification",
+    "version": "4.0",
+    "url": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html",
+    "year": "2017",
+    "applicableReleases": "NIEM 4.0 - NIEM 4.2",
+    "resources": null,
+    "examples": "https://github.com/NIEM/NIEM-Releases/blob/niem-4.0/niem/codes/genc/geo-political/3-6/genc_geo-political_3-6_char3.csv",
+    "current": true
+  },
+  {
+    "id": "CTAS-3.0",
+    "classID": "CTAS",
+    "tag": "CTAS",
+    "name": "Conformance Targets Attribute Specification",
+    "version": "3.0",
+    "url": "https://reference.niem.gov/niem/specification/conformance-targets-attribute/3.0/NIEM-CTAS-3.0-2014-07-31.html",
+    "year": "2014",
+    "applicableReleases": "NIEM 3.0 and later releases",
+    "resources": null,
+    "examples": null,
+    "current": true
+  }
+]

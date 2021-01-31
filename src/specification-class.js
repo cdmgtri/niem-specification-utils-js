@@ -95,8 +95,7 @@ class SpecificationClass {
       changeHistory: this.changeHistory,
       changeHistoryRelativeURL: convertURL(this.changeHistory),
       description: this.description,
-      versions: this.specifications.map( spec => spec.version ).join(", "),
-      specifications: this.specifications
+      versions: this.specifications.map( spec => spec.version ).join(", ")
     }
   }
 
