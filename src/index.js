@@ -9,8 +9,6 @@ let IEPD = require("./specification-iepd");
 let CodeLists = require("./specification-code-lists");
 let CTAS = require("./specification-ctas");
 
-let specificationData = require("../specificationData");
-
 /**
  * Information about the set of NIEM specifications.
  */
@@ -18,35 +16,72 @@ class NIEMSpecifications {
 
   constructor() {
 
-    this.NDR = new SpecificationClass("NDR", "Naming and Design Rules");
-    this.IEPD = new SpecificationClass("IEPD", "Information Exchange Package Description");
-    this.CodeLists = new SpecificationClass("CodeLists", "Code Lists");
-    this.CTAS = new SpecificationClass("CTAS", "Conformance Targets Attribute Specification");
+    /** @type {SpecificationClass} */
+    this.NDR;
 
-    this.specificationClasses = [this.NDR, this.IEPD, this.CodeLists, this.CTAS];
+    /** @type {SpecificationClass} */
+    this.IEPD;
+
+    /** @type {SpecificationClass} */
+    this.CodeLists;
+
+    /** @type {SpecificationClass} */
+    this.CTAS;
 
   }
 
   /**
-   * Load specification objects from a set of data fields
+   * Loads metadata about specification classes and individual specifications
+   * from the information in the `/data` directory.
    */
   load() {
+    this.loadSpecificationClassMetadata();
+    this.loadSpecificationMetadata();
+  }
 
-    let specificationClasses = {NDR, IEPD, CodeLists, CTAS};
+  /**
+   * Loads metadata about specification classes from `/data/classes.yaml`.
+   */
+  loadSpecificationClassMetadata() {
 
-    // Process each entry in the /specificationData.js file
-    specificationData.forEach( entry => {
+    /**
+     * @type {{id, name, repo, landingPage, issueTracker, tutorial, changeHistory, description}[]}
+     */
+    let metadata = utils.readYAML("../data/classes.yaml");
 
-      let html = utils.readSpecificationHTMLText(entry.tag || entry.classID, entry.version);
+    metadata.forEach( entry => {
 
-      /** @type {SpecificationClass} */
-      let specificationClass = this[entry.classID];
+      this[entry.id] = new SpecificationClass(entry.id, entry.name, entry.repo, entry.landingPage, entry.issueTracker, entry.tutorial, entry.changeHistory, entry.description);
 
-      /** @type {Specification} */
-      let SpecificationClass = specificationClasses[entry.classID];
+    });
 
-      let specification = new SpecificationClass(specificationClass, entry.tag, entry.name, entry.version, entry.current, entry.url, html);
+  }
 
+  /**
+   * Loads metadata about specifications from `/data/specifications.yaml`.
+   */
+  loadSpecificationMetadata() {
+
+    let SpecificationConstructors = {NDR, IEPD, CodeLists, CTAS};
+
+    /**
+     * @type {{classID, version, url, year, applicableReleases, resources, examples, current}[]}
+     */
+    let metadata = utils.readYAML("../data/specifications.yaml");
+
+    metadata.forEach( entry => {
+
+      // Get the text from the HTML specification
+      let html = utils.readSpecificationHTMLText(entry.classID, entry.version);
+
+      // Find the corresponding specification class for this specification
+      let specificationClass = this.specificationClass(entry.classID);
+
+      // Create the new specification from the metadata
+      let SpecializedSpecificationConstructor = SpecificationConstructors[entry.classID];
+      let specification = new SpecializedSpecificationConstructor(specificationClass, entry.version, entry.url, entry.year, entry.applicableReleases, entry.resources, entry.examples, entry.current, html);
+
+      // Add the specification object to its specification class
       specificationClass.specifications.push(specification);
 
     });
@@ -65,12 +100,16 @@ class NIEMSpecifications {
    * Saves rules and definitions for all NIEM specifications together (e.g,. `niem-rules.json`).
    * Also calls each specification class individually to save its rules and defs.
    *
-   * @param {String} [folder='./output/'] - Folder to save output files.  Defaults to /output.
+   * @param {String} [folder] - Saves to the given or default folder.
    */
-  save(folder="./output/") {
+  save(folder) {
+    // Save all metadata about specifications and specification classes
+    utils.nameFileAndSave("all", "classes", null, null, this.specificationClasses, folder);
+    utils.nameFileAndSave("all", "specs", null, null, this.specifications, folder);
+
     // Save all NIEM rules and definitions
-    utils.save( NIEMSpecifications.fileName("all", "rules"), this.rules, folder);
-    utils.save(NIEMSpecifications.fileName("all", "defs"), this.definitions, folder);
+    utils.nameFileAndSave("all", "rules", null, null, this.rules, folder);
+    utils.nameFileAndSave("all", "defs", null, null, this.definitions, folder);
 
     // Save each set of rules and definitions
     this.specificationClasses.forEach( specClass => specClass.save(folder) );
@@ -101,27 +140,23 @@ class NIEMSpecifications {
   }
 
   /**
+   * Returns the specification class object for the given ID
+   * @param {"NDR"|"IEPD"|"CodeLists"|"CTAS"} classID
+   * @returns {SpecificationClass}
+   */
+  specificationClass(classID) {
+    return this[classID];
+  }
+
+  get specificationClasses() {
+    return [this.NDR, this.IEPD, this.CodeLists, this.CTAS];
+  }
+
+  /**
    * Returns all specifications
    */
   get specifications() {
     return utils.flatten( this.specificationClasses.map( specClass => specClass.specifications ) );
-  }
-
-  /**
-   * @param {"all"|"class"|"spec"} scope
-   * @param {"rules"|"defs"} style
-   * @param {"NDR"|"IEPD"|"MPD"|"CodeLists"|"CTAS"} label - Specification class ID or tag
-   * @param {String} version
-   */
-  static fileName(scope, style, label, version) {
-    switch (scope) {
-      case "all":
-        return `niem-${style}`.toLowerCase();
-      case "class":
-        return `${label.replace("MPD", "IEPD")}-${style}`.toLowerCase();
-      case "spec":
-        return `${label}-${style}-${version}`.toLowerCase();
-    }
   }
 
   /**

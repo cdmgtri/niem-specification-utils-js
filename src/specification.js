@@ -5,25 +5,28 @@ let { parseSpecification } = require("./parser");
 class Specification {
 
   /**
-   * @param {SpecificationClass} specClass - The specification group to which this individual version of a spec belongs
-   * @param {"NDR"|"MPD"|"IEPD"|"CodeLists"|"CTAS"} tag - The tag of the specification, e.g., "NDR"
-   * @param {string} name - The name of the specification, e.g., "Naming and Design Rules"
-   * @param {string} version - The version of the specification, e.g., "3.0"
-   * @param {Boolean} current - True if this specification is the most current of the spec class
-   * @param {string} html - The HTML text of the specification.
+   * @param {SpecificationClass} specificationClass - The class object for this spec
+   * @param {String} version - Version number (e.g., "3.0")
+   * @param {String} url - URL for reading the spec
+   * @param {String} year - Year the spec was published
+   * @param {String} applicableReleases - NIEM releases for which this spec applies
+   * @param {String} resources - URL to view or download additional resources for this spec
+   * @param {String} examples - URL to view examples associated with this spec
+   * @param {Boolean} current - True if this specification is the most current of its class
+   * @param {String} html - The HTML text of the specification.
    */
-  constructor(specClass, tag="", name="", version="", current=false, url="", html="") {
+  constructor(specificationClass, version="", url="", year="", applicableReleases="", resources="", examples="", current=false, html="") {
 
     /** @private */
-    this.specificationClass = specClass;
-
-    // Default to class values if not given
-    this.tag = tag || specClass.classID;
-    this.name = name || specClass.className;
+    this.specificationClass = specificationClass;
 
     this.version = version;
-    this.current = current;
     this.url = url;
+    this.year = year;
+    this.applicableReleases = applicableReleases;
+    this.resources = resources;
+    this.examples = examples;
+    this.current = current;
     this.html = html;
 
     /** @type {Rule[]} */
@@ -43,6 +46,32 @@ class Specification {
    */
   get id() {
     return this.tag + "-" + this.version;
+  }
+
+  /**
+   * The standard name for this specific version of the specification.
+   * Adds support for the legacy "MPD" name.
+   */
+  get name() {
+    if (!this.specificationClass) return "";
+
+    if (this.specificationClass.id == "IEPD" && this.version.startsWith("3.0")) {
+      return "Model Package Description";
+    }
+    return this.specificationClass.name;
+  }
+
+  /**
+   * The standard abbreviation for this specific version of the specification.
+   * Adds support for the legacy "MPD" abbreviation.
+   */
+  get tag() {
+    if (!this.specificationClass) return "";
+
+    if (this.specificationClass.id == "IEPD" && this.version.startsWith("3.0")) {
+      return "MPD";
+    }
+    return this.specificationClass.id;
   }
 
   /**
@@ -68,13 +97,27 @@ class Specification {
   /**
    * Saves all rules and definitions for the specification (e.g., `ndr-rules-3.0.json`).
    *
-   * @param {String} [folder='./output/'] - Folder to save output files.  Defaults to /output.
+   * @param {String} [folder] - Save to the given or default folder
    */
-  save(folder="./output/") {
-    let NIEMSpecs = require("./index");
+  save(folder) {
+    utils.nameFileAndSave("spec", "rules", this.tag, this.version, this.rules, folder);
+    utils.nameFileAndSave("spec", "defs", this.tag, this.version, this.defs, folder);
+  }
 
-    utils.save( NIEMSpecs.fileName("spec", "rules", this.tag, this.version), this.rules, folder );
-    utils.save( NIEMSpecs.fileName("spec", "defs", this.tag, this.version), this.defs, folder );
+  toJSON() {
+    return {
+      id: this.id,
+      classID: this.specificationClass.id,
+      tag: this.tag,
+      name: this.name,
+      version: this.version,
+      url: this.url,
+      year: this.year.toString(),
+      applicableReleases: this.applicableReleases,
+      resources: this.resources,
+      examples: this.examples,
+      current: this.current,
+    }
   }
 
 }

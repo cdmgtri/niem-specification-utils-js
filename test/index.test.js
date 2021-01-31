@@ -1,6 +1,7 @@
 
 let fs = require("fs-extra");
-let { NIEMSpecifications } = require("../index");
+let { NIEMSpecifications, Utils } = require("../index");
+
 
 /** @type {NIEMSpecifications} */
 let niem;
@@ -78,8 +79,8 @@ describe("Specification checks", () => {
  * @param {String[]} versions
  */
 function checkSpecificationFiles(tag, versions) {
-  checkOutput( NIEMSpecifications.fileName("class", "rules", tag) );
-  checkOutput( NIEMSpecifications.fileName("class", "defs", tag) );
+  checkOutput( Utils.nameFile("class", "rules", tag) );
+  checkOutput( Utils.nameFile("class", "defs", tag) );
 }
 
 /**

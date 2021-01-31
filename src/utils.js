@@ -1,6 +1,7 @@
 
 let fs = require("fs-extra");
 let path = require("path");
+let trash = require("trash");
 let yaml = require("yamljs");
 
 /**
@@ -19,7 +20,47 @@ class Utils {
   }
 
   /**
-   * Saves given data as JSON and YAML to the output directory
+   * Saves given data as JSON and YAML to the default or given output directory.
+   * Also constructs the file name from the given fields.
+   *
+   * @param {"all"|"class"|"spec"} scope
+   * @param {"rules"|"defs"|"classes"|"specs"} style
+   * @param {"NDR"|"IEPD"|"MPD"|"CodeLists"|"CTAS"} label - Specification class ID or tag
+   * @param {String} version
+   */
+  static nameFile(scope, style, label, version) {
+
+    if (scope == "all") {
+      return `niem-${style}`.toLowerCase();
+    }
+    else if (scope == "class") {
+      return `${label.replace("MPD", "IEPD")}-${style}`.toLowerCase();
+    }
+    else if (scope == "spec") {
+      return `${label}-${style}-${version}`.toLowerCase();
+    }
+
+    console.log("Given scope not supported:", scope);
+    return;
+
+  }
+
+  /**
+   * Saves given data as JSON and YAML to the default or given output directory.
+   * Also constructs the file name from the given fields.
+   *
+   * @param {"all"|"class"|"spec"} scope
+   * @param {"rules"|"defs"|"classes"|"specs"} style
+   * @param {"NDR"|"IEPD"|"MPD"|"CodeLists"|"CTAS"} label - Specification class ID or tag
+   * @param {String} version
+   */
+  static nameFileAndSave(scope, style, label, version, data, folder="./output/") {
+    let fileName = Utils.nameFile(scope, style, label, version);
+    return Utils.save(fileName, data, folder);
+  }
+
+  /**
+   * Saves given data as JSON and YAML to the default or given output directory.
    *
    * @param {String} fileName - Base file name, no extension or path
    * @param {Object} data - Data to save
@@ -43,6 +84,26 @@ class Utils {
   static readSpecificationHTMLText(tag, version) {
     let html = fs.readFileSync(`specifications/${tag}-${version}.html`, {encoding: "utf8"});
     return html;
+  }
+
+  /**
+   * Reads in a YAML file at the given path and returns the data as an object.
+   *
+   * @param {String} filePath
+   * @returns {Object}
+   */
+  static readYAML(filePath) {
+    let normalizedPath = path.join(__dirname, filePath);
+    let text = fs.readFileSync(normalizedPath, "utf-8");
+    return yaml.parse(text);
+  }
+
+  /**
+   * Sends files in the given folder to the OS-specific recycle bin.
+   */
+  static async trash(folder) {
+    let normalizedPath = path.resolve(__dirname, folder);
+    return trash(normalizedPath);
   }
 
 }

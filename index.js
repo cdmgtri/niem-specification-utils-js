@@ -9,5 +9,7 @@ module.exports = {
     NDR: require("./src/specification-ndr"),
     IEPD: require("./src/specification-iepd"),
     CodeLists: require("./src/specification-code-lists"),
-    CTAS: require("./src/specification-ctas")
+    CTAS: require("./src/specification-ctas"),
+
+    Utils: require("./src/utils")
 };
