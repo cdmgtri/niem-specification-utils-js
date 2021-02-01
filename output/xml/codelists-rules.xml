@@ -14,6 +14,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>A code list-enabled schema document MUST have an effective conformance target identifier of http://reference.niem.gov/niem/specification/code-lists/4.0/#SchemaDocument </ruleText>
+    <ruleCurrent>true</ruleCurrent>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
@@ -29,6 +30,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>A resource with an effective conformance target identifier of http://reference.niem.gov/niem/specification/code-lists/4.0/#SchemaDocument MUST be a code list-enabled schema document.</ruleText>
+    <ruleCurrent>true</ruleCurrent>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
@@ -44,6 +46,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Any XML content in the namespace http://reference.niem.gov/niem/specification/code-lists/4.0/code-lists-instance/ MUST be schema-valid to the XML Schema definitions contained in the schema document in Appendix B, XML Schema document for the code lists instance namespace, below.</ruleText>
+    <ruleCurrent>true</ruleCurrent>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
@@ -59,6 +62,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>The normalized value of an attribute cli:codeListURI MUST be an absolute URI.</ruleText>
+    <ruleCurrent>true</ruleCurrent>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
@@ -74,6 +78,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>An element having an attribute cli:codeListColumnName MUST have an attribute cli:codeListURI.</ruleText>
+    <ruleCurrent>true</ruleCurrent>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
@@ -89,6 +94,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>An element having an attribute cli:codeListConstrainingIndicator MUST have an attribute cli:codeListURI.</ruleText>
+    <ruleCurrent>true</ruleCurrent>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
@@ -109,6 +115,7 @@
 - a column reference of: if $element has attribute cli:codeListColumnName, then the normalized value of that attribute, else #code. 
 - a data value that is the normalized value of $element. 
 - A value for constraining that is: if $element has attribute cli:codeListConstrainingIndicator, then its value, otherwise true.</ruleText>
+    <ruleCurrent>true</ruleCurrent>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
@@ -124,6 +131,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Any XML content in the namespace http://reference.niem.gov/niem/specification/code-lists/4.0/code-lists-schema-appinfo/ MUST be schema-valid to the XML Schema definitions contained in the schema document in Appendix C, XML Schema document for the code list schema appinfo namespace, below.</ruleText>
+    <ruleCurrent>true</ruleCurrent>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
@@ -139,6 +147,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>An element clsa:SimpleCodeListBinding or clsa:ComplexCodeListBinding MUST have [parent] element xs:appinfo.</ruleText>
+    <ruleCurrent>true</ruleCurrent>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
@@ -154,6 +163,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>An attribute codeListURI that has [owner element] of clsa:SimpleCodeListBinding or clsa:ComplexCodeListBinding MUST have a normalized value that is an absolute URI.</ruleText>
+    <ruleCurrent>true</ruleCurrent>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
@@ -173,6 +183,7 @@
 - element xs:element that defines a global element declaration 
 - element xs:simpleType that defines a global simple type definition 
 - element xs:complexType that defines a global complex type definition</ruleText>
+    <ruleCurrent>true</ruleCurrent>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
@@ -190,6 +201,7 @@
     <ruleText>Element clsa:ComplexCodeListBinding MUST be application information on one of: 
 - element xs:element that defines a global element declaration 
 - element xs:complexType that defines a global complex type definition</ruleText>
+    <ruleCurrent>true</ruleCurrent>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
@@ -211,6 +223,7 @@
 - A column reference of: if $binding-element has attribute columnName, then the normalized value of that attribute, else #code. 
 - A data value that is the normalized value of $attribute 
 - A value for constraining that is: if $binding-element has attribute constrainingIndicator, then its value, otherwise true.</ruleText>
+    <ruleCurrent>true</ruleCurrent>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
@@ -232,6 +245,7 @@
 - A column reference of: if $binding-element has attribute columnName, then the normalized value of that attribute, else #code. 
 - A data value that is the normalized value of $element 
 - A value for constraining that is: if $binding-element has attribute constrainingIndicator, then its value, otherwise true.</ruleText>
+    <ruleCurrent>true</ruleCurrent>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
@@ -259,6 +273,7 @@
 - A column reference of: if $binding-element has attribute columnName, then the normalized value of that attribute, else #code. 
 - A data value that is the normalized value of $element 
 - A value for constraining that is: if $binding-element has attribute constrainingIndicator, then its value, otherwise true.</ruleText>
+    <ruleCurrent>true</ruleCurrent>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
@@ -281,6 +296,7 @@
 - A column reference of: if $element-binding has attribute columnName, then the normalized value of that attribute, else #code. 
 - A data value that is: if it exists, the first element child of $element that is in the substitution group of an element declaration with a name that is equal to the value of attribute elementName of $element-binding, otherwise empty. 
 - A value for constraining that is: if $binding-element has attribute constrainingIndicator, then its value, otherwise true.</ruleText>
+    <ruleCurrent>true</ruleCurrent>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
@@ -303,6 +319,7 @@
 - A column reference of: if $element-binding has attribute columnName, then the normalized value of that attribute, else #code. 
 - A data value that is: if it exists, the first element child of $element that is in the substitution group of an element declaration with a name that is equal to the value of attribute elementName of $element-binding, otherwise empty. 
 - A value for constraining that is: if $binding-element has attribute constrainingIndicator, then its value, otherwise true.</ruleText>
+    <ruleCurrent>true</ruleCurrent>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
@@ -334,6 +351,7 @@
 - If the binding is constraining, then it is invalid. 
 - If the binding is not constraining, then it is valid. 
 - If the binding has one or more matches, then it is valid.</ruleText>
+    <ruleCurrent>true</ruleCurrent>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
@@ -358,6 +376,7 @@
 - $instance-value and $code-value are cast to $comparison-data-type, in accordance with [XPathFunctions] Section 17, Casting. 
 - Equality comparisons are conducted as appropriate for $comparison-data-type. 
 - Inequality comparisons (e.g., less than, greater than) for ranges are conducted as appropriate for lowest atomic base type of $comparison-data-type.</ruleText>
+    <ruleCurrent>true</ruleCurrent>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
@@ -373,6 +392,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>When a code list document defines candidate code list identifiers, a code list identifier against which a code list document resource is resolved MUST be a candidate code list identifier for that code list document.</ruleText>
+    <ruleCurrent>true</ruleCurrent>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
@@ -388,6 +408,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>A CSV code list document MUST be a CSV file.</ruleText>
+    <ruleCurrent>true</ruleCurrent>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
@@ -403,6 +424,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>A CSV code list document MUST have a CSV header.</ruleText>
+    <ruleCurrent>true</ruleCurrent>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
@@ -418,6 +440,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>A CSV column name of a CSV code list document MUST not be empty.</ruleText>
+    <ruleCurrent>true</ruleCurrent>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
@@ -442,6 +465,7 @@
 - a column with CSV column name of code, or 
 - the first column of the CSV file. 
 - A code value in a CSV file has no type; its data type is empty.</ruleText>
+    <ruleCurrent>true</ruleCurrent>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
@@ -457,6 +481,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>A Genericode code list document MUST be a Genericode code list document as defined by [Genericode] Section 3.2, Genericode Document Types, which states: A Genericode code list document has the root element . It contains metadata describing the code list as a whole, as well as explicit code list data — codes and associated values. </ruleText>
+    <ruleCurrent>true</ruleCurrent>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
@@ -472,6 +497,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>A resource with an effective conformance target identifier of http://reference.niem.gov/niem/specification/code-lists/4.0/#GenericodeCodeListDocument MUST be a Genericode code list document.</ruleText>
+    <ruleCurrent>true</ruleCurrent>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
@@ -487,6 +513,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>A Genericode code list document MUST be schema-valid against the schema document for the Genericode namespace as provided at http://docs.oasis-open.org/codelist/ns/genericode/1.0/.</ruleText>
+    <ruleCurrent>true</ruleCurrent>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
@@ -502,6 +529,7 @@
     <ruleClassification>Interpretation</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>A datatype with a namespace name of http://www.w3.org/2001/XMLSchema-datatypes MUST be evaluated as if it had a namespace name of http://www.w3.org/2001/XMLSchema.</ruleText>
+    <ruleCurrent>true</ruleCurrent>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
@@ -528,5 +556,6 @@
 - the column in the first single-column key for the code list, or 
 - the first column in the code list. 
 - A code value in a Genericode file has a type as specified by the data definition of its column. If the Type attribute references an element declaration, then the type is the type of that element. If a Parameter, which introduces gc:DatatypeFacet, is used, then the type is treated as an anonymous type derived from the type of the column. A value for which no data type is specified has an empty data type.</ruleText>
+    <ruleCurrent>true</ruleCurrent>
   </rule>
 </rules>

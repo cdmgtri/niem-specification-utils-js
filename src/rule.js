@@ -67,7 +67,8 @@ class Rule {
       ruleTargets: this.targets,
       ruleClassification: this.classification,
       ruleStyle: this.style,
-      ruleText: this.text
+      ruleText: this.text,
+      ruleCurrent: this.specification.current
     }
   }
 

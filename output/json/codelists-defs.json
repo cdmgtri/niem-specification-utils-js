@@ -8,7 +8,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_absolute_URI",
     "definitionTerm": "absolute URI",
     "definitionText": "The term absolute URI is as defined by [RFC3986] Section 4.3, Absolute URI, identifying a uniform resource identifier that matches the grammar production absolute-URI.",
-    "definitionIsLocal": false
+    "definitionLocal": false,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -19,7 +20,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_application_information",
     "definitionTerm": "application information",
     "definitionText": "The term application information (of a schema component) is defined by [NIEM NDR] Section 10.9, Machine-readable annotations, describing the contents of xs:appinfo annotations on the element that defines a schema component.",
-    "definitionIsLocal": false
+    "definitionLocal": false,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -30,7 +32,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_attribute",
     "definitionTerm": "attribute",
     "definitionText": "The term attribute refers to an attribute information item as defined by [XML Infoset] Section 2.3, Attribute Information Items.",
-    "definitionIsLocal": false
+    "definitionLocal": false,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -41,7 +44,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_attribute_declaration",
     "definitionTerm": "attribute declaration",
     "definitionText": "The term attribute declaration is defined by [XMLSchema1] Section 2.2.2.3, Attribute Declaration.",
-    "definitionIsLocal": false
+    "definitionLocal": false,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -52,7 +56,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_catalog_entry_file",
     "definitionTerm": "catalog entry file",
     "definitionText": "The term catalog entry file is defined by [XML Catalogs] Section 2, Terminology, which states:  A catalog may be physically contained in one or more catalog entry files. A catalog entry file is a document that contains a set of catalog entries.",
-    "definitionIsLocal": false
+    "definitionLocal": false,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -63,7 +68,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_code_list",
     "definitionTerm": "code list",
     "definitionText": "A code list is a set of distinct entries with a corresponding set of columns. A code list may be thought of as a table, with table rows as distinct entries, table columns as code list columns, and individual cells as code values.",
-    "definitionIsLocal": true
+    "definitionLocal": true,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -74,7 +80,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_code_list_binding",
     "definitionTerm": "code list binding",
     "definitionText": "A code list binding is an assigned correspondence between a set of data values, such as data within an XML document, and a set of columns within a code list, identified via a code list identifier and a set of column names.A code list binding has the following properties: a code list identifier a set of column/value pairs, each having: a column reference: either a column name or a well-known column reference, and a data value A boolean value, constraining.",
-    "definitionIsLocal": true
+    "definitionLocal": true,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -85,7 +92,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_code_list_document",
     "definitionTerm": "code list document",
     "definitionText": "A code list document is a file or resource that contains one or more code lists. It is a conformance target of this specification. A code list document MUST conform to all rules of this specification that apply to this conformance target. An XML document with an effective conformance target identifier of http://reference.niem.gov/niem/specification/code-lists/4.0/#CodeListDocument MUST be a code list document.",
-    "definitionIsLocal": true
+    "definitionLocal": true,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -96,7 +104,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_code_list_identifier",
     "definitionTerm": "code list identifier",
     "definitionText": "A code list identifier is an absolute URI that identifies a code list.",
-    "definitionIsLocal": true
+    "definitionLocal": true,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -107,7 +116,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_code_list_validation_set",
     "definitionTerm": "code list validation set",
     "definitionText": "A code list validation set is an abstraction that contains one or more of: The instance, a code list-enabled instance document The catalog, an entity catalog, with its local context The schema, an XML Schema, and A code list document",
-    "definitionIsLocal": true
+    "definitionLocal": true,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -118,7 +128,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_code_list-enabled_instance_document",
     "definitionTerm": "code list-enabled instance document",
     "definitionText": "A code list-enabled instance document is an XML document that leverages this specification to connect data values with code lists. A code list-enabled instance document MUST conform to all rules of this specification that apply to this conformance target. An XML document with an effective conformance target identifier of http://reference.niem.gov/niem/specification/code-lists/4.0/#InstanceDocument MUST be a code list-enabled instance document.",
-    "definitionIsLocal": true
+    "definitionLocal": true,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -129,7 +140,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_code_list-enabled_schema_document",
     "definitionTerm": "code list-enabled schema document",
     "definitionText": "A code list-enabled schema document is an XML Schema document that supports the use of code list documents for validation and meaning. It is a conformance target of this specification. A code list-enabled schema document MUST conform to all rules of this specification that apply to this conformance target. The conformance target identifier for this conformance target is http://reference.niem.gov/niem/specification/code-lists/4.0/#SchemaDocument.",
-    "definitionIsLocal": true
+    "definitionLocal": true,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -140,7 +152,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_code_lists_instance_namespace",
     "definitionTerm": "code lists instance namespace",
     "definitionText": "Defined by this specification, the code lists instance namespace defines attributes that connect XML element content to code lists at run time",
-    "definitionIsLocal": false
+    "definitionLocal": false,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -151,7 +164,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_code_lists_schema_appinfo_namespace",
     "definitionTerm": "code lists schema appinfo namespace",
     "definitionText": "Defined by this specification, the code lists schema appinfo namespace defines an XML vocabulary for use in xs:appinfo on XML Schema component definitions, which connect XML element and attribute content to code lists",
-    "definitionIsLocal": false
+    "definitionLocal": false,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -162,7 +176,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_code_value",
     "definitionTerm": "code value",
     "definitionText": "A code value is a single data value within a distinct entry in a code list. Each code value of a distinct entry corresponds to a column of the code list.",
-    "definitionIsLocal": true
+    "definitionLocal": true,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -173,7 +188,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_column",
     "definitionTerm": "column",
     "definitionText": "A column of a code list is metadata that describes a code value within each distinct entry of the code list. Each code value within the code list corresponds to one column of the code list.",
-    "definitionIsLocal": true
+    "definitionLocal": true,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -184,7 +200,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_column_identifier",
     "definitionTerm": "column identifier",
     "definitionText": "A column identifier is an absolute URI that identifies a column of a code list.",
-    "definitionIsLocal": true
+    "definitionLocal": true,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -195,7 +212,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_column_name",
     "definitionTerm": "column name",
     "definitionText": "A column name is a character string value that identifies a column within the scope of a code list.",
-    "definitionIsLocal": true
+    "definitionLocal": true,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -206,7 +224,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_complex_type_definition",
     "definitionTerm": "complex type definition",
     "definitionText": "The term complex type definition is defined by [XMLSchema1] Section 2.2.1.3, Complex Type Definition.",
-    "definitionIsLocal": false
+    "definitionLocal": false,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -217,7 +236,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_conformance_target",
     "definitionTerm": "conformance target",
     "definitionText": "The term conformance target is defined by [CTAS] Section 3.1, Conformance Target Defined which states:  A conformance target is a class of artifact, such as an interface, protocol, document, platform, process or service, that is the subject of conformance clauses and normative statements. There may be several conformance targets defined within a specification, and these targets may be diverse so as to reflect different aspects of a specification. For example, a protocol message and a protocol engine may be different conformance targets.",
-    "definitionIsLocal": false
+    "definitionLocal": false,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -228,7 +248,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_conformance_target_identifier",
     "definitionTerm": "conformance target identifier",
     "definitionText": "The term conformance target identifier is defined by [CTAS] Section 3.1, Conformance Target Defined, which states:  A conformance target identifier is an internationalized resource identifier that uniquely identifies a conformance target.",
-    "definitionIsLocal": false
+    "definitionLocal": false,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -239,7 +260,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_CSV_code_list_document",
     "definitionTerm": "CSV code list document",
     "definitionText": "A CSV code list document is a code list document. It is a conformance target of this specification. A CSV code list document MUST conform to all rules of this specification that apply to this conformance target. The conformance target identifier for this conformance target is http://reference.niem.gov/niem/specification/code-lists/4.0/#CSVCodeListDocument.",
-    "definitionIsLocal": true
+    "definitionLocal": true,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -250,7 +272,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_CSV_column_name",
     "definitionTerm": "CSV column name",
     "definitionText": "A CSV column name is the portion of a CSV file matching rule name of the ABNF grammar.",
-    "definitionIsLocal": false
+    "definitionLocal": false,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -261,7 +284,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_CSV_field",
     "definitionTerm": "CSV field",
     "definitionText": "A CSV field is the portion of a CSV file matching rule field of the ABNF grammar.",
-    "definitionIsLocal": false
+    "definitionLocal": false,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -272,7 +296,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_CSV_file",
     "definitionTerm": "CSV file",
     "definitionText": "A CSV file is a resource matching rule file of the ABNF grammar.",
-    "definitionIsLocal": false
+    "definitionLocal": false,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -283,7 +308,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_CSV_header",
     "definitionTerm": "CSV header",
     "definitionText": "A CSV header is the portion of a CSV file matching rule header of the ABNF grammar, and which provides names of columns within the CSV file.",
-    "definitionIsLocal": false
+    "definitionLocal": false,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -294,7 +320,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_CSV_record",
     "definitionTerm": "CSV record",
     "definitionText": "A CSV record is the portion of a CSV file matching rule record of the ABNF grammar.",
-    "definitionIsLocal": false
+    "definitionLocal": false,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -305,7 +332,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_derived",
     "definitionTerm": "derived",
     "definitionText": "A type $derived is derived from a type $base if and only if type $derived is validly derived from type $base for {extension, restriction} as defined by [XMLSchema1] Section 3.4.6, Constraints on Complex Type Definition Schema Components, subsection Schema Component Constraint: Type Derivation OK (Complex) and Section 3.14.6, Constraints on Simple Type Definition Schema Components, subsection Schema Component Constraint: Type Derivation OK (Simple).",
-    "definitionIsLocal": false
+    "definitionLocal": false,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -316,7 +344,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_distinct_entry",
     "definitionTerm": "distinct entry",
     "definitionText": "A distinct entry is a single conceptual entity within a code list. It is composed of a set of code values, each corresponding to a column of the code list. It may be thought of as a row of a table, where each individual cell of a row corresponds to a column of the table.",
-    "definitionIsLocal": true
+    "definitionLocal": true,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -327,7 +356,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_effective_conformance_target_identifier",
     "definitionTerm": "effective conformance target identifier",
     "definitionText": "The term effective conformance target identifier is defined by [CTAS] Section 4, Semantics and Use, which states:  An effective conformance target identifier of a conformant document is an internationalized resource identifier reference that occurs in the document’s effective conformance targets attribute.",
-    "definitionIsLocal": false
+    "definitionLocal": false,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -338,7 +368,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_element",
     "definitionTerm": "element",
     "definitionText": "The term element refers to an element information item as defined by [XML Infoset] Section 2.2, Element Information Items.",
-    "definitionIsLocal": false
+    "definitionLocal": false,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -349,7 +380,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_element_declaration",
     "definitionTerm": "element declaration",
     "definitionText": "The term element declaration is defined by [XMLSchema1] Section 2.2.2.1, Element Declaration.",
-    "definitionIsLocal": false
+    "definitionLocal": false,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -360,7 +392,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_entity_catalog",
     "definitionTerm": "entity catalog",
     "definitionText": "The term entity catalog is defined by [XML Catalogs], which states in [XML Catalogs] Section 3, An Entity Catalog:  The catalog is effectively an ordered list of (one or more) catalog entry files. It is up to the application to determine the ordered list of catalog entry files to be used as the logical catalog.",
-    "definitionIsLocal": false
+    "definitionLocal": false,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -371,7 +404,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_exclusive_lower_bound",
     "definitionTerm": "exclusive lower bound",
     "definitionText": "The term exclusive lower bound is as defined by [XMLSchema2] Section 4.2.1, bounded.",
-    "definitionIsLocal": false
+    "definitionLocal": false,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -382,7 +416,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_exclusive_upper_bound",
     "definitionTerm": "exclusive upper bound",
     "definitionText": "The term exclusive upper bound is as defined by [XMLSchema2] Section 4.2.1, bounded.",
-    "definitionIsLocal": false
+    "definitionLocal": false,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -393,7 +428,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_Genericode_code_list_document",
     "definitionTerm": "Genericode code list document",
     "definitionText": "A Genericode code list document is a code list document. It is a conformance target of this specification. A Genericode code list document MUST conform to all rules of this specification that apply to this conformance target. The conformance target identifier for this conformance target is http://reference.niem.gov/niem/specification/code-lists/4.0/#GenericodeCodeListDocument.",
-    "definitionIsLocal": true
+    "definitionLocal": true,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -404,7 +440,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_inclusive_lower_bound",
     "definitionTerm": "inclusive lower bound",
     "definitionText": "The term inclusive lower bound is as defined by [XMLSchema2] Section 4.2.1, bounded.",
-    "definitionIsLocal": false
+    "definitionLocal": false,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -415,7 +452,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_inclusive_upper_bound",
     "definitionTerm": "inclusive upper bound",
     "definitionText": "The term inclusive upper bound is as defined by [XMLSchema2] Section 4.2.1, bounded.",
-    "definitionIsLocal": false
+    "definitionLocal": false,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -426,7 +464,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_local_context",
     "definitionTerm": "local context",
     "definitionText": "The resources (i.e., files) that are within the same local cache, ZIP file, or other contained location as an entity catalog are the local context of the entity catalog.",
-    "definitionIsLocal": false
+    "definitionLocal": false,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -437,7 +476,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_locally-resolved_resource",
     "definitionTerm": "locally-resolved resource",
     "definitionText": "A locally-resolved resource for a URI relative to an entity catalog is the resource yielded through the process of resolving the URI into a resource URI using the entity catalog, and then producing the corresponding resource from the local context of the entity catalog.",
-    "definitionIsLocal": true
+    "definitionLocal": true,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -448,7 +488,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_normalized_value",
     "definitionTerm": "normalized value",
     "definitionText": "The term normalized value is defined by [XMLSchema1] Section 3.1.4, White Space Normalization during Validation.",
-    "definitionIsLocal": false
+    "definitionLocal": false,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -459,7 +500,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_resolve",
     "definitionTerm": "resolve",
     "definitionText": "The term resolve refers to the process of resolving URI references, as described by [XML Catalogs] Section 7.2.2, Resolution of URI references, which defines the process for resolving a URI reference to a URI for a corresponding resource, as identified by an entity catalog.",
-    "definitionIsLocal": false
+    "definitionLocal": false,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -470,7 +512,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_resource",
     "definitionTerm": "resource",
     "definitionText": "The term resource is defined by [RFC3986] Section 1.1, Overview of URIs, which states:  This specification does not limit the scope of what might be a resource; rather, the term resource is used in a general sense for whatever might be identified by a URI. Familiar examples include an electronic document, an image, a source of information with a consistent purpose (e.g., today’s weather report for Los Angeles), a service (e.g., an HTTP-to-SMS gateway), and a collection of other resources.",
-    "definitionIsLocal": false
+    "definitionLocal": false,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -481,7 +524,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_schema_component",
     "definitionTerm": "schema component",
     "definitionText": "The term schema component is defined by [XMLSchema1] Section 2.2, XML Schema Abstract Data Model, which states:  Schema component is the generic term for the building blocks that comprise the abstract data model of the schema.",
-    "definitionIsLocal": false
+    "definitionLocal": false,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -492,7 +536,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_schema_document",
     "definitionTerm": "schema document",
     "definitionText": "The term schema document is defined by [XMLSchema1] Section 3.1.2, XML Representations of Components, which states:  A document in this form (i.e. a  element information item) is a schema document.",
-    "definitionIsLocal": false
+    "definitionLocal": false,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -503,7 +548,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_schema-valid",
     "definitionTerm": "schema-valid",
     "definitionText": "The term schema-valid refers to valid as defined by [XMLSchema1] Section 2.1, Overview of XML Schema.",
-    "definitionIsLocal": false
+    "definitionLocal": false,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -514,7 +560,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_simple_type_definition",
     "definitionTerm": "simple type definition",
     "definitionText": "The term simple type definition is defined by [XMLSchema1] Section 2.2.1.2, Simple Type Definition.",
-    "definitionIsLocal": false
+    "definitionLocal": false,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -525,7 +572,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_substitution_group",
     "definitionTerm": "substitution group",
     "definitionText": "The substitution group of an element declaration is defined by [XMLSchema1] Section 3.3.6, Constraints on Element Declaration Schema Components.",
-    "definitionIsLocal": false
+    "definitionLocal": false,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -536,7 +584,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_text",
     "definitionTerm": "text",
     "definitionText": "The term text refers to the encapsulation of a series of character information items, as defined by defined by [XML Infoset] Section 2.6, Character Information Items. A text item aggregates all contiguous character information items that have the same parent node.",
-    "definitionIsLocal": false
+    "definitionLocal": false,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -547,7 +596,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_type_definition",
     "definitionTerm": "type definition",
     "definitionText": "The term type definition is defined by [XMLSchema1] Section 2.2.1, Type Definition Components.",
-    "definitionIsLocal": false
+    "definitionLocal": false,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -558,7 +608,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_uniform_resource_identifier",
     "definitionTerm": "uniform resource identifier",
     "definitionText": "[RFC3986] defines uniform resource identifier (URI), which it describes as:  A Uniform Resource Identifier (URI) is a compact sequence of characters that identifies an abstract or physical resource.",
-    "definitionIsLocal": false
+    "definitionLocal": false,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -569,7 +620,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_URI",
     "definitionTerm": "URI",
     "definitionText": "[RFC3986] defines uniform resource identifier (URI), which it describes as:  A Uniform Resource Identifier (URI) is a compact sequence of characters that identifies an abstract or physical resource.",
-    "definitionIsLocal": false
+    "definitionLocal": false,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -580,7 +632,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_XML_document",
     "definitionTerm": "XML document",
     "definitionText": "The term XML document is defined by [XML] Section 2, Documents, which states:  A data object is an XML document if it is well-formed, as defined in this specification.",
-    "definitionIsLocal": false
+    "definitionLocal": false,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -591,7 +644,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_XML_Schema",
     "definitionTerm": "XML Schema",
     "definitionText": "The term XML Schema is defined by [XMLSchema1] Section 2.2, XML Schema Abstract Data Model, which states:  An XML Schema is a set of schema components.",
-    "definitionIsLocal": false
+    "definitionLocal": false,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -602,7 +656,8 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_XML_Schema_definition_language",
     "definitionTerm": "XML Schema definition language",
     "definitionText": "The term XML Schema definition language is defined by [XMLSchema1] subsection Abstract, which states:  XML Schema: Structures specifies the XML Schema definition language, which offers facilities for describing the structure and constraining the contents of XML 1.0 documents, including those which exploit the XML Namespace facility. The schema language, which is itself represented in XML 1.0 and uses namespaces, substantially reconstructs and considerably extends the capabilities found in XML 1.0 document type definitions (DTDs).",
-    "definitionIsLocal": false
+    "definitionLocal": false,
+    "definitionCurrent": true
   },
   {
     "specificationID": "CodeLists-4.0",
@@ -613,6 +668,7 @@
     "definitionURL": "https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_XML_Schema_document_set",
     "definitionTerm": "XML Schema document set",
     "definitionText": "The term XML Schema document set is defined by [NIEM NDR] Section 3.4, XML Schema terminology, which states:  An XML Schema document set is a set of schema documents that together define an XML Schema suitable for assessing the validity of an XML document.",
-    "definitionIsLocal": false
+    "definitionLocal": false,
+    "definitionCurrent": true
   }
 ]

@@ -93,7 +93,7 @@ class Parser {
       let section = this.parseSection(defIDNode);
 
       let def = new Definition(this.spec, section);
-      def.isLocal = false;
+      def.local = false;
 
       def.id = defIDNode.attribs["name"];
 
@@ -105,7 +105,7 @@ class Parser {
         // Definition style 1 (div.normativeHead)
         def.term = this.parseDefinitionTerm(defNormativeNode);
         def.text = defNormativeNode.next().text();
-        def.isLocal = true;
+        def.local = true;
       }
       else if (defPNode.length) {
         // Definition style 2 (paragraph)

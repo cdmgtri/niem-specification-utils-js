@@ -10,16 +10,16 @@ class Definition {
    * @param {string} [id=""]
    * @param {string} [term=""]
    * @param {string} [text=""]
-   * @param {Boolean} [isLocal=true] - True if the definition originates from the spec; false if its a reference
+   * @param {Boolean} [local=true] - True if the definition originates from the spec; false if its a reference
    */
-  constructor(specification, section, id="", term="", text="", isLocal=true) {
+  constructor(specification, section, id="", term="", text="", local=true) {
 
     this.specification = specification;
     this.section = section;
     this.id = id;
     this.term = term;
     this.text = text;
-    this.isLocal = isLocal;
+    this.local = local;
 
   }
 
@@ -37,7 +37,8 @@ class Definition {
       definitionURL: this.url,
       definitionTerm: this.term,
       definitionText: this.text,
-      definitionIsLocal: this.isLocal
+      definitionLocal: this.local,
+      definitionCurrent: this.specification.current
     }
   }
 
