@@ -1,7 +1,7 @@
 
 # NIEM Specification Utils
 
-Extracts rule and definition information from NIEM specifications into JSON and YAML files.
+Extracts rule and definition information from NIEM specifications into XML, JSON, YAML, and CSV files.
 
 **Branch status**:
 master:
@@ -23,6 +23,7 @@ Additional metadata has been added to support linking specific NDR rules with th
 - [Usage](#usage)
 - [Load a new specification](#load-a-new-specification)
 - [Update metadata for existing specifications](#update-metadata-for-existing-specifications)
+- [Add a new specification class](#add-a-new-specification-class)
 - [Test changes](#test-changes)
 
 ## Supported specifications
@@ -33,12 +34,13 @@ The following NIEM specifications are supported:
 - [Model Package Description (MPD)](https://reference.niem.gov/niem/specification/model-package-description), version 3.0.1
 - [Code Lists](https://reference.niem.gov/niem/specification/code-lists/), version 4.0
 - [Conformance Targets Attribute Specification](https://reference.niem.gov/niem/specification/conformance-targets-attribute/), version 3.0
+- [NIEM JSON Specification](https://niem.github.io/NIEM-JSON-Spec/), version 4.0
 
 See the update instructions below for information about adding a new set of specifications, or adding a new version of a specification to an existing set.
 
 ## Output
 
-Information about rules and definitions are saved as JSON and YAML files to the `output/` directory
+Information about rules and definitions are saved as XML, JSON, YAML, and CSV files to the `output/` directory
 
 **Sample rule information from niem-rules.yaml**
 
@@ -112,7 +114,7 @@ npm install cdmgtri/niem-specification-utils
 
 ## Usage
 
-The following will generate rule and definition files to the `output/` directory in JSON and YAML:
+The following will generate rule and definition files to the `output/` directory in XML, JSON, YAML, and CSV:
 
 - for each set of specifications (e.g., `ndr-rules.json`, and
 - for all NIEM specifications combined (e.g., `niem-rules.json`).
@@ -145,6 +147,65 @@ Basic metadata about the specification must be manually entered.
 ## Update metadata for existing specifications
 
 To update information like where to view a specification or submit an issue, update the appropriate fields in the `data/index.js` file.
+
+- Change the value of `current` to `false` for the previous version of the specification
+
+- Update the `Supported specifications` section of this `README.md` file to add the new information.
+
+## Add a new specification class
+
+To add a brand new class of NIEM specification, the following edits will need to be made:
+
+- Choose a standard abbreviation to use for the new specification class
+
+  - For example, "NDR" is used for the Naming and Design Rules.
+
+- Save the specification HTML file to the `/specifications/` directory.
+
+  - Rename the specification file with the pattern `ABBREVIATION-VERSION.html` (e.g., `NDR-5.0.html`);
+
+- Add metadata about the new specification class and the specific versions of the specification.
+
+  - *Copy and un-comment the template located at the top of the files or copy an existing entry and modify the values*
+
+  - Add specification class metadata to `/data/classes.yaml/`.  This is for general information that should be applicable across multiple versions of the specification.
+
+  - Add specific specification metadata to `/data/specifications.yaml`.  This will include information like version number and URL for the HTML file.
+
+    - Use the new abbreviation for the `classID` field
+    - Quote the version value to prevent it from being converted to a number (e.g., "4.0" instead of number 4)
+
+- Create a new class that extends class `Specification` (`/src/specification.js`).
+
+  - See `/src/specification-ctas.js` for an example.
+  - Save as `/src/specification-{new abbrev}.js`.
+
+- In the `/src/index.js` file:
+
+  - Import the new class
+  - Add the new class to the constructor
+  - Add the new class to the `SpecificationConstructors` object in function `loadSpecificationMetadata()`
+  - Add the new abbreviation to the JSDoc enumerations for the classID parameter in function `specificationClass()`
+  - Return the new class in the array in the `specificationClasses()` getter function
+
+- Build the new outputs:
+
+  ```sh
+  npm run build
+  ```
+
+  - A message with the new specification ID, number of parsed rules, and number of parsed definitions should appear in the console.
+  - The `/output/` directory should contain new specification-specific rule and definitions files, and the combined `niem-*` files should contain new data.  Scan through the changes to confirm.
+
+- Run the continuous integration script from `package.json` to run tests, generate a code coverage report, and update documentation:
+
+  ```sh
+  npm run ci
+  ```
+
+- Update the `Supported specifications` section of this `README.md` file to add the new information.
+
+- Commit and push changes.  Check the results from GitHub Actions to confirm all checks pass.
 
 ## Test changes
 

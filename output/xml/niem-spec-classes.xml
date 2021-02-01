@@ -56,4 +56,17 @@
     <description>The Conformance Targets Attribute Specification (CTAS) defines how NIEM XML documents indicate what kind of artifact they are through the use of a conformance targets attribute.</description>
     <versions>3.0</versions>
   </specificationClass>
+  <specificationClass>
+    <id>JSON</id>
+    <name>NIEM JSON Specification</name>
+    <repo>https://github.com/NIEM/NIEM-JSON-Spec</repo>
+    <landingPage>https://niem.github.io/NIEM-JSON-Spec/</landingPage>
+    <issueList>https://github.com/NIEM/NIEM-JSON-Spec/issues</issueList>
+    <issueSubmit>https://github.com/NIEM/NIEM-JSON-Spec/issues/new</issueSubmit>
+    <issueTracker>https://github.com/NIEM/NIEM-JSON-Spec/projects/1</issueTracker>
+    <tutorial/>
+    <changeHistory/>
+    <description>The NIEM JSON Specification establishes the technical basis for using JavaScript Object Notation (JSON) as a data format for exchange of information consistent with NIEM-conformant schemas and information exchange package documentations (IEPDs).</description>
+    <versions>4.0</versions>
+  </specificationClass>
 </specificationClasses>

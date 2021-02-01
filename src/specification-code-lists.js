@@ -4,7 +4,7 @@ let Specification = require("./specification");
 /**
  * Information about the NIEM Code Lists Specification
  */
-class CodeLists extends Specification {
+class CodeListsSpecification extends Specification {
 
   /**
    * Handles inconsistencies in Code Lists rules and definitions.
@@ -27,4 +27,4 @@ class CodeLists extends Specification {
 
 }
 
-module.exports = CodeLists;
+module.exports = CodeListsSpecification;

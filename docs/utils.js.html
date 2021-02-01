@@ -3,7 +3,7 @@
 <head>
     
     <meta charset="utf-8">
-    <title>Section - Documentation</title>
+    <title>utils.js - Documentation</title>
     
     
     <script src="scripts/prettify/prettify.js"></script>
@@ -32,418 +32,178 @@
 
 <div id="main">
     
-    <h1 class="page-title">Section</h1>
-    
-
-    
-
-
-
-
-<section>
-
-<header>
-    
-        <h2>
-        Section
-        </h2>
-        
-            <div class="class-description usertext">Information about a section in a NIEM specification.</div>
-        
-    
-</header>
-
-<article>
-    
-        <div class="container-overview">
-        
-            
-
-    
-    <h2>Constructor</h2>
-    
-
-    <h4 class="name" id="Section"><span class="type-signature"></span>new Section<span class="signature">(specification<span class="signature-attributes">opt</span>, id<span class="signature-attributes">opt</span>, label<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-
-<dl class="details">
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="section.js.html">section.js</a>, <a href="section.js.html#line5">line 5</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-        <th>Attributes</th>
-        
-
-        
-        <th>Default</th>
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>specification</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><a href="Specification.html">Specification</a></span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                </td>
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>id</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                    <code>""</code>
-                
-                </td>
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>label</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                    <code>""</code>
-                
-                </td>
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
+    <h1 class="page-title">utils.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>
+let fs = require("fs-extra");
+let json2csv = require("json2csv");
+let path = require("path");
+let trash = require("trash");
+let xmlConverter = require("xml-js");
+let yaml = require("yamljs");
+
+/**
+ * General utility functions to support the project.
+ */
+class Utils {
+
+  /**
+   * Flattens an array of arrays
+   * @template T
+   * @param {T[][]} arrays - An array of arrays
+   * @returns {T[]}
+   */
+  static flatten(arrays) {
+    return [].concat.apply([], arrays);
+  }
+
+  /**
+   * Saves given data as JSON and YAML to the default or given output directory.
+   * Also constructs the file name from the given fields.
+   *
+   * @param {"all"|"class"|"spec"} scope
+   * @param {"rules"|"defs"|"classes"|"specs"} style
+   * @param {"NDR"|"IEPD"|"MPD"|"CodeLists"|"CTAS"} label - Specification class ID or tag
+   * @param {String} version
+   */
+  static nameFile(scope, style, label, version) {
+
+    if (scope == "all") {
+      style = style.replace("classes", "spec-classes");
+      return `niem-${style}`.toLowerCase();
+    }
+    else if (scope == "class") {
+      return `${label.replace("MPD", "IEPD")}-${style}`.toLowerCase();
+    }
+    else if (scope == "spec") {
+      return `${label}-${style}-${version}`.toLowerCase();
+    }
+
+    console.log("Given scope not supported:", scope);
+    return;
+
+  }
+
+  /**
+   * Saves given data as JSON and YAML to the default or given output directory.
+   * Also constructs the file name from the given fields.
+   *
+   * @param {"all"|"class"|"spec"} scope
+   * @param {"rules"|"defs"|"classes"|"specs"} style
+   * @param {"NDR"|"IEPD"|"MPD"|"CodeLists"|"CTAS"} label - Specification class ID or tag
+   * @param {String} version
+   */
+  static nameFileAndSave(scope, style, label, version, data, folder="./output/") {
+    let fileName = Utils.nameFile(scope, style, label, version);
+    return Utils.save(fileName, data, folder, style);
+  }
+
+  /**
+   * Reads the specification html file in the specifications directory with the given tag and version
+   */
+  static readSpecificationHTMLText(tag, version) {
+    let html = fs.readFileSync(`specifications/${tag}-${version}.html`, {encoding: "utf8"});
+    return html;
+  }
+
+  /**
+   * Reads in a YAML file at the given path and returns the data as an object.
+   *
+   * @param {String} filePath
+   * @returns {Object}
+   */
+  static readYAML(filePath) {
+    let normalizedPath = path.join(__dirname, filePath);
+    let text = fs.readFileSync(normalizedPath, "utf-8");
+    return yaml.parse(text);
+  }
+
+  /**
+   * Saves given data as JSON and YAML to the default or given output directory.
+   *
+   * @param {String} fileName - Base file name, no extension or path
+   * @param {Object} data - Data to save
+   * @param {String} [folder='./output/'] - Folder to save output files.  Defaults to /output.
+   * @param {"rules"|"defs"|"classes"|"specs"} style - Used to generate additional XML tags to wrap the data
+   */
+  static save(fileName, data, folder="./output/", style) {
 
+    let originalJSON = JSON.stringify(data);
+    let convertedData = JSON.parse(originalJSON);
 
+    // Create custom subfolders for each export format
+    let subfolder = (extension) => path.join(folder, extension, fileName.toLowerCase() + "." + extension);
 
+    // Save JSON
+    fs.outputJSONSync( subfolder("json"), data, {spaces: 2} );
 
+    // Save YAML (library isn't calling toJSON on stringify so do it manually)
+    fs.outputFileSync( subfolder("yaml"), yaml.stringify(convertedData) );
 
+    // Save XML
+    let xmlData = convertObjectToXML(data, style);
+    fs.outputFileSync( subfolder("xml"), xmlData );
 
+    // Save CSV
+    let csvData = json2csv.parse(convertedData);
+    fs.outputFileSync( subfolder("csv"), csvData );
 
+  }
 
+  /**
+   * Sends files in the given folder to the OS-specific recycle bin.
+   */
+  static async trash(folder) {
+    let normalizedPath = path.resolve(__dirname, folder);
+    return trash(normalizedPath);
+  }
 
+}
 
-        
-        </div>
-    
-
-    
-
-    
-
-    
-    
-    
-
-     
-
-    
-
-    
-        <h3 class="subsection-title">Members</h3>
-
-        
-            
-<h4 class="name" id="id"><span class="type-signature"></span>id<span class="type-signature"></span></h4>
-
-
-
-
-
-<dl class="details">
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="section.js.html">section.js</a>, <a href="section.js.html#line17">line 17</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
+/**
+ * Converts an array of objects to an XML string.
+ * Wraps the array with a root element and adds tags for each element of the array.
+ *
+ * @private
+ * @param {Array&lt;Object>} dataArray
+ * @param {String} rootTag - Word (plural form) to use as the root tag for the XML document
+ */
+function convertObjectToXML(dataArray, rootTag) {
 
+  let xmlObject = {};
 
+  // Adjust tag name
+  if (rootTag == "classes") rootTag = "specificationClasses";
+  if (rootTag == "specs" ) rootTag = "specifications";
+  if (rootTag == "defs") rootTag = "definitions";
 
+  // Root-level tag for the XML
+  xmlObject[rootTag] = {};
 
-    <h5>Example</h5>
-    
-    <pre class="prettyprint"><code>"section_3.4"</code></pre>
-
-
-
-        
-            
-<h4 class="name" id="label"><span class="type-signature"></span>label<span class="type-signature"></span></h4>
-
-
-
-
-
-<dl class="details">
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="section.js.html">section.js</a>, <a href="section.js.html#line20">line 20</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
+  // Generate a tag name to use for the anonymous array elements
+  let elementTag = rootTag.replace(/s$/, "").replace(/Classe$/, "Class");
+  xmlObject[rootTag][elementTag] = dataArray;
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
+  // Convert XML-formatted object to an XML string
+  let json = JSON.stringify(xmlObject);
+  let xmlText = xmlConverter.json2xml(json, {compact: true, spaces: 2});
 
+  return `&lt;?xml version="1.0" encoding="UTF-8"?>\n` + xmlText;
 
-
-
-
-
-
-    <h5>Example</h5>
-    
-    <pre class="prettyprint"><code>"2.5. XML Information Set"</code></pre>
-
-
-
-        
-    
-
-    
-
-    
-
-    
-</article>
+}
 
-</section>
+module.exports = Utils;
+</code></pre>
+        </article>
+    </section>
 
 
 

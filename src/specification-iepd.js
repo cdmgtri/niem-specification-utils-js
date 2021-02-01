@@ -5,7 +5,7 @@ let Specification = require("./specification");
  * Information about the NIEM Information Exchange Package Description (IEPD) specification.
  * Formerly named the Model Package Documentation (MPD) specification.
  */
-class IEPD extends Specification {
+class IEPDSpecification extends Specification {
 
   /**
    * Handles inconsistencies in IEPD specification rules.
@@ -22,4 +22,4 @@ class IEPD extends Specification {
 
 }
 
-module.exports = IEPD;
+module.exports = IEPDSpecification;

@@ -1,13 +1,13 @@
 
 let utils = require("./utils");
 
-let Specification = require("./specification");
 let SpecificationClass = require("./specification-class");
 
 let NDR = require("./specification-ndr");
 let IEPD = require("./specification-iepd");
 let CodeLists = require("./specification-code-lists");
 let CTAS = require("./specification-ctas");
+let JSON = require("./specification-json");
 
 /**
  * Information about the set of NIEM specifications.
@@ -28,6 +28,9 @@ class NIEMSpecifications {
     /** @type {SpecificationClass} */
     this.CTAS;
 
+    /** @type {SpecificationClass} */
+    this.JSON;
+
   }
 
   /**
@@ -44,9 +47,6 @@ class NIEMSpecifications {
    */
   loadSpecificationClassMetadata() {
 
-    /**
-     * @type {{id, name, repo, landingPage, issueTracker, tutorial, changeHistory, description}[]}
-     */
     let metadata = utils.readYAML("../data/classes.yaml");
 
     metadata.forEach( entry => {
@@ -62,11 +62,8 @@ class NIEMSpecifications {
    */
   loadSpecificationMetadata() {
 
-    let SpecificationConstructors = {NDR, IEPD, CodeLists, CTAS};
+    let SpecificationConstructors = {NDR, IEPD, CodeLists, CTAS, JSON};
 
-    /**
-     * @type {{classID, version, url, year, applicableReleases, resources, examples, current}[]}
-     */
     let metadata = utils.readYAML("../data/specifications.yaml");
 
     metadata.forEach( entry => {
@@ -141,7 +138,7 @@ class NIEMSpecifications {
 
   /**
    * Returns the specification class object for the given ID
-   * @param {"NDR"|"IEPD"|"CodeLists"|"CTAS"} classID
+   * @param {"NDR"|"IEPD"|"CodeLists"|"CTAS"|"JSON"} classID
    * @returns {SpecificationClass}
    */
   specificationClass(classID) {
@@ -149,7 +146,7 @@ class NIEMSpecifications {
   }
 
   get specificationClasses() {
-    return [this.NDR, this.IEPD, this.CodeLists, this.CTAS];
+    return [this.NDR, this.IEPD, this.CodeLists, this.CTAS, this.JSON];
   }
 
   /**

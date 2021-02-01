@@ -3,7 +3,7 @@
 <head>
     
     <meta charset="utf-8">
-    <title>Section - Documentation</title>
+    <title>index.js - Documentation</title>
     
     
     <script src="scripts/prettify/prettify.js"></script>
@@ -32,418 +32,192 @@
 
 <div id="main">
     
-    <h1 class="page-title">Section</h1>
+    <h1 class="page-title">index.js</h1>
     
 
     
 
 
 
-
-<section>
-
-<header>
-    
-        <h2>
-        Section
-        </h2>
-        
-            <div class="class-description usertext">Information about a section in a NIEM specification.</div>
-        
-    
-</header>
-
-<article>
-    
-        <div class="container-overview">
-        
-            
-
-    
-    <h2>Constructor</h2>
-    
-
-    <h4 class="name" id="Section"><span class="type-signature"></span>new Section<span class="signature">(specification<span class="signature-attributes">opt</span>, id<span class="signature-attributes">opt</span>, label<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-
-<dl class="details">
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="section.js.html">section.js</a>, <a href="section.js.html#line5">line 5</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-        <th>Attributes</th>
-        
-
-        
-        <th>Default</th>
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>specification</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><a href="Specification.html">Specification</a></span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                </td>
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>id</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                    <code>""</code>
-                
-                </td>
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>label</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                    <code>""</code>
-                
-                </td>
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-        </div>
-    
-
-    
-
-    
-
-    
-    
-    
-
-     
-
-    
-
-    
-        <h3 class="subsection-title">Members</h3>
-
-        
-            
-<h4 class="name" id="id"><span class="type-signature"></span>id<span class="type-signature"></span></h4>
-
-
-
-
-
-<dl class="details">
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="section.js.html">section.js</a>, <a href="section.js.html#line17">line 17</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-    <h5>Example</h5>
-    
-    <pre class="prettyprint"><code>"section_3.4"</code></pre>
-
-
-
-        
-            
-<h4 class="name" id="label"><span class="type-signature"></span>label<span class="type-signature"></span></h4>
-
-
-
-
-
-<dl class="details">
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="section.js.html">section.js</a>, <a href="section.js.html#line20">line 20</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>
+let utils = require("./utils");
 
-    
-
-    
+let SpecificationClass = require("./specification-class");
 
-    
+let NDR = require("./specification-ndr");
+let IEPD = require("./specification-iepd");
+let CodeLists = require("./specification-code-lists");
+let CTAS = require("./specification-ctas");
+let JSON = require("./specification-json");
 
-    
+/**
+ * Information about the set of NIEM specifications.
+ */
+class NIEMSpecifications {
 
-    
+  constructor() {
 
-    
+    /** @type {SpecificationClass} */
+    this.NDR;
 
-    
+    /** @type {SpecificationClass} */
+    this.IEPD;
 
-    
+    /** @type {SpecificationClass} */
+    this.CodeLists;
 
-    
+    /** @type {SpecificationClass} */
+    this.CTAS;
 
-    
+    /** @type {SpecificationClass} */
+    this.JSON;
 
-    
+  }
 
-    
-</dl>
+  /**
+   * Loads metadata about specification classes and individual specifications
+   * from the information in the `/data` directory.
+   */
+  load() {
+    this.loadSpecificationClassMetadata();
+    this.loadSpecificationMetadata();
+  }
 
+  /**
+   * Loads metadata about specification classes from `/data/classes.yaml`.
+   */
+  loadSpecificationClassMetadata() {
 
+    let metadata = utils.readYAML("../data/classes.yaml");
 
+    metadata.forEach( entry => {
 
+      this[entry.id] = new SpecificationClass(entry.id, entry.name, entry.repo, entry.landingPage, entry.issueTracker, entry.tutorial, entry.changeHistory, entry.description);
 
+    });
 
+  }
 
+  /**
+   * Loads metadata about specifications from `/data/specifications.yaml`.
+   */
+  loadSpecificationMetadata() {
 
+    let SpecificationConstructors = {NDR, IEPD, CodeLists, CTAS, JSON};
 
+    let metadata = utils.readYAML("../data/specifications.yaml");
 
+    metadata.forEach( entry => {
 
-    <h5>Example</h5>
-    
-    <pre class="prettyprint"><code>"2.5. XML Information Set"</code></pre>
+      // Get the text from the HTML specification
+      let html = utils.readSpecificationHTMLText(entry.classID, entry.version);
 
+      // Find the corresponding specification class for this specification
+      let specificationClass = this.specificationClass(entry.classID);
 
+      // Create the new specification from the metadata
+      let SpecializedSpecificationConstructor = SpecificationConstructors[entry.classID];
+      let specification = new SpecializedSpecificationConstructor(specificationClass, entry.version, entry.url, entry.year, entry.applicableReleases, entry.resources, entry.examples, entry.current, html);
 
-        
-    
+      // Add the specification object to its specification class
+      specificationClass.specifications.push(specification);
 
-    
+    });
 
-    
+  }
 
-    
-</article>
+  get rules() {
+    return utils.flatten(this.specificationClasses.map( specClass => specClass.rules ));
+  }
 
-</section>
+  get definitions() {
+    return utils.flatten(this.specificationClasses.map( specClass => specClass.defs ));
+  }
+
+  /**
+   * Saves rules and definitions for all NIEM specifications together (e.g,. `niem-rules.json`).
+   * Also calls each specification class individually to save its rules and defs.
+   *
+   * @param {String} [folder] - Saves to the given or default folder.
+   */
+  save(folder) {
+    // Save all metadata about specifications and specification classes
+    utils.nameFileAndSave("all", "classes", null, null, this.specificationClasses, folder);
+    utils.nameFileAndSave("all", "specs", null, null, this.specifications, folder);
+
+    // Save all NIEM rules and definitions
+    utils.nameFileAndSave("all", "rules", null, null, this.rules, folder);
+    utils.nameFileAndSave("all", "defs", null, null, this.definitions, folder);
+
+    // Save each set of rules and definitions
+    this.specificationClasses.forEach( specClass => specClass.save(folder) );
+  }
+
+  /**
+   * Returns the specification with the given ID.
+   * @example "NDR-3.0"
+   * @param {String} specificationID
+   */
+  specification(specificationID) {
+
+    if (!specificationID.includes("-")) return;
+
+    // Parse the specification tag and version from the specification ID
+    let [tag, version] = specificationID.split("-");
+
+    // Adjust the specification class for MPDs.
+    let specClassID = tag.replace("MPD", "IEPD");
+
+    /** @type {SpecificationClass} */
+    let specClass = this[specClassID];
+
+    if (specClass) {
+      return specClass.version(version);
+    }
+
+  }
+
+  /**
+   * Returns the specification class object for the given ID
+   * @param {"NDR"|"IEPD"|"CodeLists"|"CTAS"|"JSON"} classID
+   * @returns {SpecificationClass}
+   */
+  specificationClass(classID) {
+    return this[classID];
+  }
+
+  get specificationClasses() {
+    return [this.NDR, this.IEPD, this.CodeLists, this.CTAS, this.JSON];
+  }
+
+  /**
+   * Returns all specifications
+   */
+  get specifications() {
+    return utils.flatten( this.specificationClasses.map( specClass => specClass.specifications ) );
+  }
+
+  /**
+   * Loads and parses NIEM specifications, and saves rules and definitions.
+   *
+   * @param {String} [folder='./output/'] - Folder to save output files.  Defaults to /output.
+   */
+  static parse(folder="./output/") {
+    let niemSpecs = new NIEMSpecifications();
+    niemSpecs.load();
+    niemSpecs.save(folder);
+    return niemSpecs;
+  }
+
+}
+
+module.exports = NIEMSpecifications;
+</code></pre>
+        </article>
+    </section>
 
 
 

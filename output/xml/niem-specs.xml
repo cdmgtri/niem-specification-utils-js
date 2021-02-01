@@ -78,4 +78,17 @@
     <examples/>
     <current>true</current>
   </specification>
+  <specification>
+    <id>JSON-4.0</id>
+    <classID>JSON</classID>
+    <customID>JSON</customID>
+    <name>NIEM JSON Specification</name>
+    <version>4.0</version>
+    <url>https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html</url>
+    <year>2020</year>
+    <applicableReleases>NIEM 4.0 - NIEM 4.2</applicableReleases>
+    <resources/>
+    <examples/>
+    <current>true</current>
+  </specification>
 </specifications>

@@ -4,7 +4,7 @@ let Specification = require("./specification");
 /**
  * Information about the NIEM Naming and Design Rules specification.
  */
-class NDR extends Specification {
+class NDRSpecification extends Specification {
 
   /**
    * Clean up unclosed tags, simplify rule applicability values, and otherwise
@@ -30,7 +30,7 @@ class NDR extends Specification {
 
 }
 
-module.exports = NDR;
+module.exports = NDRSpecification;
 
 
 /**

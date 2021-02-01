@@ -128,7 +128,8 @@ class Utils {
  * Converts an array of objects to an XML string.
  * Wraps the array with a root element and adds tags for each element of the array.
  *
- * @param {{}[]} dataArray
+ * @private
+ * @param {Array<Object>} dataArray
  * @param {String} rootTag - Word (plural form) to use as the root tag for the XML document
  */
 function convertObjectToXML(dataArray, rootTag) {

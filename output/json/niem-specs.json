@@ -76,5 +76,18 @@
     "resources": null,
     "examples": null,
     "current": true
+  },
+  {
+    "id": "JSON-4.0",
+    "classID": "JSON",
+    "customID": "JSON",
+    "name": "NIEM JSON Specification",
+    "version": "4.0",
+    "url": "https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html",
+    "year": "2020",
+    "applicableReleases": "NIEM 4.0 - NIEM 4.2",
+    "resources": null,
+    "examples": null,
+    "current": true
   }
 ]

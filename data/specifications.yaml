@@ -4,7 +4,7 @@
 
 # -
 #   classID:
-#   version:
+#   version: ""
 #   url:
 #   year:
 #   applicableReleases:
@@ -69,6 +69,16 @@
   url: https://reference.niem.gov/niem/specification/conformance-targets-attribute/3.0/NIEM-CTAS-3.0-2014-07-31.html
   year: 2014
   applicableReleases: NIEM 3.0 and later releases
+  resources:
+  examples:
+  current: true
+
+-
+  classID: JSON
+  version: "4.0"
+  url: https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html
+  year: 2020
+  applicableReleases: NIEM 4.0 - NIEM 4.2
   resources:
   examples:
   current: true
