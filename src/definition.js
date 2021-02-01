@@ -35,6 +35,7 @@ class Definition {
       sectionLabel: this.section.label,
       sectionURL: this.section.url,
       definitionID: this.id,
+      definitionUID: this.specification.id + "-" + this.id,
       definitionURL: this.url,
       definitionTerm: this.term,
       definitionText: this.text,

@@ -10,6 +10,7 @@
     <ruleTitle>MPD Conformance Target Identifier</ruleTitle>
     <ruleName/>
     <ruleID>rule_3-1</ruleID>
+    <ruleUID>MPD-3.0.1-rule_3-1</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_3-1</ruleURL>
     <ruleTargets>WF-MPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -27,6 +28,7 @@
     <ruleTitle>MPD with MPD class of IEPD is an IEPD</ruleTitle>
     <ruleName>rule-mpd-class-iepd</ruleName>
     <ruleID>rule_3-2</ruleID>
+    <ruleUID>MPD-3.0.1-rule_3-2</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_3-2</ruleURL>
     <ruleTargets>MPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -44,6 +46,7 @@
     <ruleTitle>IEPD Conformance Target Identifier</ruleTitle>
     <ruleName/>
     <ruleID>rule_3-3</ruleID>
+    <ruleUID>MPD-3.0.1-rule_3-3</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_3-3</ruleURL>
     <ruleTargets>IEPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -61,6 +64,7 @@
     <ruleTitle>Fundamental NIEM Subset Rule</ruleTitle>
     <ruleName/>
     <ruleID>rule_4-1</ruleID>
+    <ruleUID>MPD-3.0.1-rule_4-1</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_4-1</ruleURL>
     <ruleTargets>Schema-subset</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -78,6 +82,7 @@
     <ruleTitle>MPD Has an mpd-catalog.xml in its Root Directory</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-1</ruleID>
+    <ruleUID>MPD-3.0.1-rule_5-1</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-1</ruleURL>
     <ruleTargets>WF-MPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -95,6 +100,7 @@
     <ruleTitle>MPD Catalog Document Valid to mpd-catalog-3.0.xsd</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-2</ruleID>
+    <ruleUID>MPD-3.0.1-rule_5-2</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-2</ruleURL>
     <ruleTargets>MPD-catalog</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -112,6 +118,7 @@
     <ruleTitle>MPD Catalog Extension XML Catalog Document in Root Directory</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-3</ruleID>
+    <ruleUID>MPD-3.0.1-rule_5-3</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-3</ruleURL>
     <ruleTargets>MPD-catalog</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -129,6 +136,7 @@
     <ruleTitle>MPD Catalog Extension XML Catalog Document Name Is mpd-catalog-extension-xml-catalog.xml</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-4</ruleID>
+    <ruleUID>MPD-3.0.1-rule_5-4</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-4</ruleURL>
     <ruleTargets>MPD-catalog</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -146,6 +154,7 @@
     <ruleTitle>MPD Catalog Extension XML Catalog Document Resolves Namespaces to URIs</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-5</ruleID>
+    <ruleUID>MPD-3.0.1-rule_5-5</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-5</ruleURL>
     <ruleTargets>MPD-catalog</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -163,6 +172,7 @@
     <ruleTitle>MPD Catalog Extension Schema Document Conforms to NDR Extension Rules</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-6</ruleID>
+    <ruleUID>MPD-3.0.1-rule_5-6</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-6</ruleURL>
     <ruleTargets>MPD-catalog</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -180,6 +190,7 @@
     <ruleTitle>MPD Catalog Schema and Its Extensions Conform to NDR Schema Set Rules</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-7</ruleID>
+    <ruleUID>MPD-3.0.1-rule_5-7</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-7</ruleURL>
     <ruleTargets>MPD-catalog</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -197,6 +208,7 @@
     <ruleTitle>MPD Schema Document Extension Support Schemas Are Supersets of Spec Subsets</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-8</ruleID>
+    <ruleUID>MPD-3.0.1-rule_5-8</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-8</ruleURL>
     <ruleTargets>MPD-catalog</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -214,6 +226,7 @@
     <ruleTitle>MPD Class Determined by Conformance Target Identifier in c:mpdClassURIList</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-9</ruleID>
+    <ruleUID>MPD-3.0.1-rule_5-9</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-9</ruleURL>
     <ruleTargets>WF-MPD</ruleTargets>
     <ruleClassification>Interpretation</ruleClassification>
@@ -231,6 +244,7 @@
     <ruleTitle>MPD Version Number Syntax</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-10</ruleID>
+    <ruleUID>MPD-3.0.1-rule_5-10</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-10</ruleURL>
     <ruleTargets>WF-MPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -252,6 +266,7 @@
     <ruleTitle>MPD URI Is Absolute</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-11</ruleID>
+    <ruleUID>MPD-3.0.1-rule_5-11</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-11</ruleURL>
     <ruleTargets>WF-MPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -269,6 +284,7 @@
     <ruleTitle>MPD URI Supports Fragment</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-12</ruleID>
+    <ruleUID>MPD-3.0.1-rule_5-12</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-12</ruleURL>
     <ruleTargets>WF-MPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -286,6 +302,7 @@
     <ruleTitle>MPD URI Has No Fragment</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-13</ruleID>
+    <ruleUID>MPD-3.0.1-rule_5-13</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-13</ruleURL>
     <ruleTargets>WF-MPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -303,6 +320,7 @@
     <ruleTitle>MPD Artifact URI Syntax</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-14</ruleID>
+    <ruleUID>MPD-3.0.1-rule_5-14</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-14</ruleURL>
     <ruleTargets>WF-MPD</ruleTargets>
     <ruleClassification>Interpretation</ruleClassification>
@@ -323,6 +341,7 @@
     <ruleTitle>c:pathURI Resolves to a Resource</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-15</ruleID>
+    <ruleUID>MPD-3.0.1-rule_5-15</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-15</ruleURL>
     <ruleTargets>WF-MPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -340,6 +359,7 @@
     <ruleTitle>c:pathURI for c:XMLCatalog</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-16</ruleID>
+    <ruleUID>MPD-3.0.1-rule_5-16</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-16</ruleURL>
     <ruleTargets>WF-MPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -357,6 +377,7 @@
     <ruleTitle>c:pathURI for c:MPDChangeLog</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-17</ruleID>
+    <ruleUID>MPD-3.0.1-rule_5-17</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-17</ruleURL>
     <ruleTargets>WF-MPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -374,6 +395,7 @@
     <ruleTitle>c:pathURI for c:ReadMe</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-18</ruleID>
+    <ruleUID>MPD-3.0.1-rule_5-18</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-18</ruleURL>
     <ruleTargets>WF-MPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -391,6 +413,7 @@
     <ruleTitle>c:pathURI for c:IEPSampleXMLDocument</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-19</ruleID>
+    <ruleUID>MPD-3.0.1-rule_5-19</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-19</ruleURL>
     <ruleTargets>WF-MPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -408,6 +431,7 @@
     <ruleTitle>c:pathURI for c:BusinessRulesArtifact</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-20</ruleID>
+    <ruleUID>MPD-3.0.1-rule_5-20</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-20</ruleURL>
     <ruleTargets>WF-MPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -425,6 +449,7 @@
     <ruleTitle>c:pathURI for c:XMLSchemaDocument</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-21</ruleID>
+    <ruleUID>MPD-3.0.1-rule_5-21</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-21</ruleURL>
     <ruleTargets>WF-MPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -442,6 +467,7 @@
     <ruleTitle>c:pathURI for c:ExternalSchemaDocument</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-22</ruleID>
+    <ruleUID>MPD-3.0.1-rule_5-22</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-22</ruleURL>
     <ruleTargets>WF-MPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -459,6 +485,7 @@
     <ruleTitle>c:pathURI for c:ReferenceSchemaDocument</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-23</ruleID>
+    <ruleUID>MPD-3.0.1-rule_5-23</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-23</ruleURL>
     <ruleTargets>WF-MPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -476,6 +503,7 @@
     <ruleTitle>c:pathURI for c:ExtensionSchemaDocument</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-24</ruleID>
+    <ruleUID>MPD-3.0.1-rule_5-24</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-24</ruleURL>
     <ruleTargets>WF-MPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -493,6 +521,7 @@
     <ruleTitle>c:pathURI for c:SubsetSchemaDocument</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-25</ruleID>
+    <ruleUID>MPD-3.0.1-rule_5-25</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-25</ruleURL>
     <ruleTargets>WF-MPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -510,6 +539,7 @@
     <ruleTitle>c:pathURI for c:Wantlist</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-26</ruleID>
+    <ruleUID>MPD-3.0.1-rule_5-26</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-26</ruleURL>
     <ruleTargets>WF-MPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -527,6 +557,7 @@
     <ruleTitle>c:pathURI for c:SchematronSchema</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-27</ruleID>
+    <ruleUID>MPD-3.0.1-rule_5-27</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-27</ruleURL>
     <ruleTargets>WF-MPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -544,6 +575,7 @@
     <ruleTitle>c:pathURI for c:RelaxNGSchema</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-28</ruleID>
+    <ruleUID>MPD-3.0.1-rule_5-28</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-28</ruleURL>
     <ruleTargets>WF-MPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -561,6 +593,7 @@
     <ruleTitle>c:pathURI for c:SchemaDocumentSet</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-29</ruleID>
+    <ruleUID>MPD-3.0.1-rule_5-29</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-29</ruleURL>
     <ruleTargets>WF-MPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -578,6 +611,7 @@
     <ruleTitle>c:pathURI for c:ConstraintSchemaDocumentSet</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-30</ruleID>
+    <ruleUID>MPD-3.0.1-rule_5-30</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-30</ruleURL>
     <ruleTargets>WF-MPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -595,6 +629,7 @@
     <ruleTitle>(none)</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-31</ruleID>
+    <ruleUID>MPD-3.0.1-rule_5-31</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-31</ruleURL>
     <ruleTargets>WF-MPD</ruleTargets>
     <ruleClassification>Interpretation</ruleClassification>
@@ -612,6 +647,7 @@
     <ruleTitle>Resolve MPD URI with Fragment</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-32</ruleID>
+    <ruleUID>MPD-3.0.1-rule_5-32</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-32</ruleURL>
     <ruleTargets>WF-MPD</ruleTargets>
     <ruleClassification>Interpretation</ruleClassification>
@@ -634,6 +670,7 @@
     <ruleTitle>XML Catalog uri Value Resolves to Resource</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-33</ruleID>
+    <ruleUID>MPD-3.0.1-rule_5-33</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-33</ruleURL>
     <ruleTargets>XML-catalog</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -651,6 +688,7 @@
     <ruleTitle>XML Catalog uri Value Resolves to Resource with Correct Target Namespace</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-34</ruleID>
+    <ruleUID>MPD-3.0.1-rule_5-34</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-34</ruleURL>
     <ruleTargets>XML-catalog</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -668,6 +706,7 @@
     <ruleTitle>IEPD Has a Change Log</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-35</ruleID>
+    <ruleUID>MPD-3.0.1-rule_5-35</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-35</ruleURL>
     <ruleTargets>IEPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -685,6 +724,7 @@
     <ruleTitle>Readme Describes Purpose, Scope, Business Value, etc.</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-36</ruleID>
+    <ruleUID>MPD-3.0.1-rule_5-36</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-36</ruleURL>
     <ruleTargets>WF-MPD</ruleTargets>
     <ruleClassification>Interpretation</ruleClassification>
@@ -702,6 +742,7 @@
     <ruleTitle>IEPD Has a ReadMe Artifact</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-37</ruleID>
+    <ruleUID>MPD-3.0.1-rule_5-37</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-37</ruleURL>
     <ruleTargets>IEPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -719,6 +760,7 @@
     <ruleTitle>Conformance Target Identifier</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-38</ruleID>
+    <ruleUID>MPD-3.0.1-rule_5-38</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-38</ruleURL>
     <ruleTargets>MPD-catalog</ruleTargets>
     <ruleClassification>Interpretation</ruleClassification>
@@ -739,6 +781,7 @@
     <ruleTitle>IEP Conformance Target Has a structures:id</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-39</ruleID>
+    <ruleUID>MPD-3.0.1-rule_5-39</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-39</ruleURL>
     <ruleTargets>MPD-catalog</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -756,6 +799,7 @@
     <ruleTitle>IEPD Declares One or More IEP Conformance Targets</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-40</ruleID>
+    <ruleUID>MPD-3.0.1-rule_5-40</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-40</ruleURL>
     <ruleTargets>IEPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -773,6 +817,7 @@
     <ruleTitle>(none)</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-41</ruleID>
+    <ruleUID>MPD-3.0.1-rule_5-41</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-41</ruleURL>
     <ruleTargets>MPD-catalog</ruleTargets>
     <ruleClassification>Interpretation</ruleClassification>
@@ -790,6 +835,7 @@
     <ruleTitle>Identifying the Document Element of an IEP</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-42</ruleID>
+    <ruleUID>MPD-3.0.1-rule_5-42</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-42</ruleURL>
     <ruleTargets>IEP</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -807,6 +853,7 @@
     <ruleTitle>Validating an XPath Expression</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-43</ruleID>
+    <ruleUID>MPD-3.0.1-rule_5-43</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-43</ruleURL>
     <ruleTargets>IEP</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -824,6 +871,7 @@
     <ruleTitle>IEPD Has an IEP Sample for Each c:IEPConformanceTarget</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-44</ruleID>
+    <ruleUID>MPD-3.0.1-rule_5-44</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-44</ruleURL>
     <ruleTargets>IEPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -841,6 +889,7 @@
     <ruleTitle>Validating an IEP Sample XML Document</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-45</ruleID>
+    <ruleUID>MPD-3.0.1-rule_5-45</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-45</ruleURL>
     <ruleTargets>IEP</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -858,6 +907,7 @@
     <ruleTitle>IEPD Has Conformance Assertion</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-46</ruleID>
+    <ruleUID>MPD-3.0.1-rule_5-46</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_5-46</ruleURL>
     <ruleTargets>IEPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -875,6 +925,7 @@
     <ruleTitle>Wantlist Location</ruleTitle>
     <ruleName/>
     <ruleID>rule_6-1</ruleID>
+    <ruleUID>MPD-3.0.1-rule_6-1</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_6-1</ruleURL>
     <ruleTargets>WF-MPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -892,6 +943,7 @@
     <ruleTitle>An MPD in ZIP File Format Preserves Logical Directory Structure.</ruleTitle>
     <ruleName/>
     <ruleID>rule_7-1</ruleID>
+    <ruleUID>MPD-3.0.1-rule_7-1</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_7-1</ruleURL>
     <ruleTargets>WF-MPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -909,6 +961,7 @@
     <ruleTitle>XSD and XML Documents Conform to Applicable NDR Conformance Targets</ruleTitle>
     <ruleName/>
     <ruleID>rule_7-2</ruleID>
+    <ruleUID>MPD-3.0.1-rule_7-2</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_7-2</ruleURL>
     <ruleTargets>WF-MPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -926,6 +979,7 @@
     <ruleTitle>MPD Archive Uncompresses to a Single Root Directory</ruleTitle>
     <ruleName/>
     <ruleID>rule_7-3</ruleID>
+    <ruleUID>MPD-3.0.1-rule_7-3</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_7-3</ruleURL>
     <ruleTargets>WF-MPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -943,6 +997,7 @@
     <ruleTitle>Constraint on Elements of Type c:SchemaDocumentSetType</ruleTitle>
     <ruleName/>
     <ruleID>rule_7-4</ruleID>
+    <ruleUID>MPD-3.0.1-rule_7-4</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_7-4</ruleURL>
     <ruleTargets>MPD-catalog</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -960,6 +1015,7 @@
     <ruleTitle>IEPD ZIP file Name Syntax</ruleTitle>
     <ruleName/>
     <ruleID>rule_7-5</ruleID>
+    <ruleUID>MPD-3.0.1-rule_7-5</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_7-5</ruleURL>
     <ruleTargets>IEPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -977,6 +1033,7 @@
     <ruleTitle>MPD Reference to Resource Uses Common URI Scheme</ruleTitle>
     <ruleName/>
     <ruleID>rule_7-6</ruleID>
+    <ruleUID>MPD-3.0.1-rule_7-6</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_7-6</ruleURL>
     <ruleTargets>WF-MPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -994,6 +1051,7 @@
     <ruleTitle>IEPD Completeness</ruleTitle>
     <ruleName/>
     <ruleID>rule_7-7</ruleID>
+    <ruleUID>MPD-3.0.1-rule_7-7</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_7-7</ruleURL>
     <ruleTargets>IEPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1011,6 +1069,7 @@
     <ruleTitle>MPD External Schema Documents Are Local Resources</ruleTitle>
     <ruleName/>
     <ruleID>rule_7-8</ruleID>
+    <ruleUID>MPD-3.0.1-rule_7-8</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_7-8</ruleURL>
     <ruleTargets>WF-MPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1028,6 +1087,7 @@
     <ruleTitle>Key MPD Resources Are Local Resources</ruleTitle>
     <ruleName/>
     <ruleID>rule_7-9</ruleID>
+    <ruleUID>MPD-3.0.1-rule_7-9</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#rule_7-9</ruleURL>
     <ruleTargets>WF-MPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1045,6 +1105,7 @@
     <ruleTitle>IEPD conformance target identifier</ruleTitle>
     <ruleName/>
     <ruleID>rule_3-1</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_3-1</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_3-1</ruleURL>
     <ruleTargets>IEPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1062,6 +1123,7 @@
     <ruleTitle>IEPD is well-formed</ruleTitle>
     <ruleName/>
     <ruleID>rule_3-2</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_3-2</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_3-2</ruleURL>
     <ruleTargets>WF-IEPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1079,6 +1141,7 @@
     <ruleTitle>Fundamental NIEM Subset Rule</ruleTitle>
     <ruleName/>
     <ruleID>rule_4-1</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_4-1</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_4-1</ruleURL>
     <ruleTargets>Schema-subset</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1096,6 +1159,7 @@
     <ruleTitle>IEPD Has an iepd-catalog.xml in its Root Directory</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-1</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_5-1</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_5-1</ruleURL>
     <ruleTargets>WF-IEPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1113,6 +1177,7 @@
     <ruleTitle>IEPD Catalog Document Valid to iepd-catalog.xsd</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-2</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_5-2</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_5-2</ruleURL>
     <ruleTargets>IEPD-catalog</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1130,6 +1195,7 @@
     <ruleTitle>IEPD Catalog Extension XML Catalog Document in Root Directory</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-3</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_5-3</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_5-3</ruleURL>
     <ruleTargets>IEPD-catalog</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1147,6 +1213,7 @@
     <ruleTitle>IEPD Catalog Extension XML Catalog Document Name Is iepd-catalog-extension-xml-catalog.xml</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-4</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_5-4</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_5-4</ruleURL>
     <ruleTargets>IEPD-catalog</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1164,6 +1231,7 @@
     <ruleTitle>IEPD Catalog Extension XML Catalog Document Resolves Namespaces to URIs</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-5</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_5-5</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_5-5</ruleURL>
     <ruleTargets>IEPD-catalog</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1181,6 +1249,7 @@
     <ruleTitle>IEPD Catalog Extension Schema Document Conforms to NDR Extension Schema Document Rules</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-6</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_5-6</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_5-6</ruleURL>
     <ruleTargets>IEPD-catalog</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1198,6 +1267,7 @@
     <ruleTitle>IEPD Catalog Schema and Its Extensions Conform to NDR Schema Set Rules</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-7</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_5-7</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_5-7</ruleURL>
     <ruleTargets>IEPD-catalog</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1215,6 +1285,7 @@
     <ruleTitle>IEPD Schema Document Extension Support Schemas Are Supersets of Spec Subsets</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-8</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_5-8</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_5-8</ruleURL>
     <ruleTargets>IEPD-catalog</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1232,6 +1303,7 @@
     <ruleTitle>IEPD Version Number Syntax</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-9</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_5-9</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_5-9</ruleURL>
     <ruleTargets>WF-IEPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1253,6 +1325,7 @@
     <ruleTitle>IEPD URI Is Absolute</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-10</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_5-10</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_5-10</ruleURL>
     <ruleTargets>WF-IEPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1270,6 +1343,7 @@
     <ruleTitle>IEPD URI Supports Fragment</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-11</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_5-11</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_5-11</ruleURL>
     <ruleTargets>WF-IEPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1287,6 +1361,7 @@
     <ruleTitle>IEPD URI Has No Fragment</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-12</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_5-12</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_5-12</ruleURL>
     <ruleTargets>WF-IEPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1304,6 +1379,7 @@
     <ruleTitle>IEPD Artifact URI Syntax</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-13</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_5-13</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_5-13</ruleURL>
     <ruleTargets>WF-IEPD</ruleTargets>
     <ruleClassification>Interpretation</ruleClassification>
@@ -1324,6 +1400,7 @@
     <ruleTitle>c:pathURI Resolves to a Resource</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-14</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_5-14</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_5-14</ruleURL>
     <ruleTargets>WF-IEPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1341,6 +1418,7 @@
     <ruleTitle>c:pathURI for c:XMLCatalog</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-15</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_5-15</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_5-15</ruleURL>
     <ruleTargets>WF-IEPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1358,6 +1436,7 @@
     <ruleTitle>c:pathURI for c:IEPDChangeLog</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-16</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_5-16</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_5-16</ruleURL>
     <ruleTargets>WF-IEPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1375,6 +1454,7 @@
     <ruleTitle>c:pathURI for c:ReadMe</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-17</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_5-17</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_5-17</ruleURL>
     <ruleTargets>WF-IEPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1392,6 +1472,7 @@
     <ruleTitle>c:pathURI for c:IEPSampleXMLDocument</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-18</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_5-18</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_5-18</ruleURL>
     <ruleTargets>WF-IEPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1409,6 +1490,7 @@
     <ruleTitle>c:pathURI for c:BusinessRulesArtifact</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-19</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_5-19</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_5-19</ruleURL>
     <ruleTargets>WF-IEPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1426,6 +1508,7 @@
     <ruleTitle>c:pathURI for c:XMLSchemaDocument</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-20</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_5-20</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_5-20</ruleURL>
     <ruleTargets>WF-IEPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1443,6 +1526,7 @@
     <ruleTitle>c:pathURI for c:ExternalSchemaDocument</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-21</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_5-21</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_5-21</ruleURL>
     <ruleTargets>WF-IEPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1460,6 +1544,7 @@
     <ruleTitle>c:pathURI for c:ReferenceSchemaDocument</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-22</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_5-22</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_5-22</ruleURL>
     <ruleTargets>WF-IEPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1477,6 +1562,7 @@
     <ruleTitle>c:pathURI for c:ExtensionSchemaDocument</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-23</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_5-23</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_5-23</ruleURL>
     <ruleTargets>WF-IEPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1494,6 +1580,7 @@
     <ruleTitle>c:pathURI for c:SubsetSchemaDocument</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-24</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_5-24</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_5-24</ruleURL>
     <ruleTargets>WF-IEPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1511,6 +1598,7 @@
     <ruleTitle>c:pathURI for c:Wantlist</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-25</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_5-25</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_5-25</ruleURL>
     <ruleTargets>WF-IEPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1528,6 +1616,7 @@
     <ruleTitle>c:pathURI for c:SchematronSchema</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-26</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_5-26</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_5-26</ruleURL>
     <ruleTargets>WF-IEPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1545,6 +1634,7 @@
     <ruleTitle>c:pathURI for c:RelaxNGSchema</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-27</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_5-27</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_5-27</ruleURL>
     <ruleTargets>WF-IEPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1562,6 +1652,7 @@
     <ruleTitle>c:pathURI for c:SchemaDocumentSet</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-28</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_5-28</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_5-28</ruleURL>
     <ruleTargets>WF-IEPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1579,6 +1670,7 @@
     <ruleTitle>c:pathURI for c:ConstraintSchemaDocumentSet</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-29</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_5-29</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_5-29</ruleURL>
     <ruleTargets>WF-IEPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1596,6 +1688,7 @@
     <ruleTitle>Schema document set interpreted as constraint schema document set</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-30</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_5-30</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_5-30</ruleURL>
     <ruleTargets>WF-IEPD</ruleTargets>
     <ruleClassification>Interpretation</ruleClassification>
@@ -1613,6 +1706,7 @@
     <ruleTitle>Resolve IEPD URI with Fragment</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-31</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_5-31</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_5-31</ruleURL>
     <ruleTargets>WF-IEPD</ruleTargets>
     <ruleClassification>Interpretation</ruleClassification>
@@ -1635,6 +1729,7 @@
     <ruleTitle>XML Catalog uri Value Resolves to Resource</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-32</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_5-32</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_5-32</ruleURL>
     <ruleTargets>XML-catalog</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1652,6 +1747,7 @@
     <ruleTitle>XML Catalog uri Value Resolves to Resource with Correct Target Namespace</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-33</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_5-33</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_5-33</ruleURL>
     <ruleTargets>XML-catalog</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1669,6 +1765,7 @@
     <ruleTitle>IEPD Has a Change Log</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-34</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_5-34</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_5-34</ruleURL>
     <ruleTargets>IEPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1686,6 +1783,7 @@
     <ruleTitle>Readme Describes Purpose, Scope, Business Value, etc.</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-35</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_5-35</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_5-35</ruleURL>
     <ruleTargets>WF-IEPD</ruleTargets>
     <ruleClassification>Interpretation</ruleClassification>
@@ -1703,6 +1801,7 @@
     <ruleTitle>IEPD Has a ReadMe Artifact</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-36</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_5-36</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_5-36</ruleURL>
     <ruleTargets>IEPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1720,6 +1819,7 @@
     <ruleTitle>Conformance Target Identifier</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-37</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_5-37</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_5-37</ruleURL>
     <ruleTargets>IEPD-catalog</ruleTargets>
     <ruleClassification>Interpretation</ruleClassification>
@@ -1740,6 +1840,7 @@
     <ruleTitle>IEP Conformance Target Has a structures:id</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-38</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_5-38</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_5-38</ruleURL>
     <ruleTargets>IEPD-catalog</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1757,6 +1858,7 @@
     <ruleTitle>IEPD Declares One or More IEP Conformance Targets</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-39</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_5-39</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_5-39</ruleURL>
     <ruleTargets>IEPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1774,6 +1876,7 @@
     <ruleTitle>Validity contraint context is value of c:xPathText</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-40</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_5-40</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_5-40</ruleURL>
     <ruleTargets>IEPD-catalog</ruleTargets>
     <ruleClassification>Interpretation</ruleClassification>
@@ -1791,6 +1894,7 @@
     <ruleTitle>IEP has Document Element</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-41</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_5-41</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_5-41</ruleURL>
     <ruleTargets>IEP</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1808,6 +1912,7 @@
     <ruleTitle>Validating an XPath Expression</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-42</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_5-42</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_5-42</ruleURL>
     <ruleTargets>IEP</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1825,6 +1930,7 @@
     <ruleTitle>IEPD Has an IEP Sample for Each c:IEPConformanceTarget</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-43</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_5-43</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_5-43</ruleURL>
     <ruleTargets>IEPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1842,6 +1948,7 @@
     <ruleTitle>Validating an IEP Sample XML Document</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-44</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_5-44</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_5-44</ruleURL>
     <ruleTargets>IEP</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1859,6 +1966,7 @@
     <ruleTitle>IEPD Has Conformance Assertion</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-45</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_5-45</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_5-45</ruleURL>
     <ruleTargets>IEPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1876,6 +1984,7 @@
     <ruleTitle>Wantlist Location</ruleTitle>
     <ruleName/>
     <ruleID>rule_6-1</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_6-1</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_6-1</ruleURL>
     <ruleTargets>WF-IEPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1893,6 +2002,7 @@
     <ruleTitle>An IEPD in ZIP File Format Preserves Logical Directory Structure.</ruleTitle>
     <ruleName/>
     <ruleID>rule_7-1</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_7-1</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_7-1</ruleURL>
     <ruleTargets>WF-IEPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1910,6 +2020,7 @@
     <ruleTitle>XSD and XML Documents Conform to Applicable NDR Conformance Targets</ruleTitle>
     <ruleName/>
     <ruleID>rule_7-2</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_7-2</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_7-2</ruleURL>
     <ruleTargets>WF-IEPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1927,6 +2038,7 @@
     <ruleTitle>IEPD Archive Uncompresses to a Single Root Directory</ruleTitle>
     <ruleName/>
     <ruleID>rule_7-3</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_7-3</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_7-3</ruleURL>
     <ruleTargets>WF-IEPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1944,6 +2056,7 @@
     <ruleTitle>Constraint on Elements of Type c:SchemaDocumentSetType</ruleTitle>
     <ruleName/>
     <ruleID>rule_7-4</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_7-4</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_7-4</ruleURL>
     <ruleTargets>IEPD-catalog</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1961,6 +2074,7 @@
     <ruleTitle>IEPD ZIP file Name Syntax</ruleTitle>
     <ruleName/>
     <ruleID>rule_7-5</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_7-5</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_7-5</ruleURL>
     <ruleTargets>IEPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1978,6 +2092,7 @@
     <ruleTitle>IEPD Reference to Resource Uses Common URI Scheme</ruleTitle>
     <ruleName/>
     <ruleID>rule_7-6</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_7-6</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_7-6</ruleURL>
     <ruleTargets>WF-IEPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -1995,6 +2110,7 @@
     <ruleTitle>IEPD Completeness</ruleTitle>
     <ruleName/>
     <ruleID>rule_7-7</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_7-7</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_7-7</ruleURL>
     <ruleTargets>IEPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -2012,6 +2128,7 @@
     <ruleTitle>IEPD External Schema Documents Are Local Resources</ruleTitle>
     <ruleName/>
     <ruleID>rule_7-8</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_7-8</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_7-8</ruleURL>
     <ruleTargets>WF-IEPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -2029,6 +2146,7 @@
     <ruleTitle>Key IEPD Resources Are Local Resources</ruleTitle>
     <ruleName/>
     <ruleID>rule_7-9</ruleID>
+    <ruleUID>IEPD-5.0beta1-rule_7-9</ruleUID>
     <ruleURL>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#rule_7-9</ruleURL>
     <ruleTargets>WF-IEPD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>

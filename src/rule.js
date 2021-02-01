@@ -64,6 +64,7 @@ class Rule {
       ruleTitle: this.title,
       ruleName: this.name,
       ruleID: this.id,
+      ruleUID: this.specification.id + "-" + this.id,
       ruleURL: this.url,
       ruleTargets: this.targets,
       ruleClassification: this.classification,

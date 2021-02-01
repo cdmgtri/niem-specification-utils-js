@@ -8,6 +8,7 @@
     ruleTitle: 'File must be a JSON-LD file'
     ruleName: ""
     ruleID: rule_5-1
+    ruleUID: JSON-4.0-rule_5-1
     ruleURL: 'https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#rule_5-1'
     ruleTargets: [STRICT, LAX]
     ruleClassification: Constraint
@@ -24,6 +25,7 @@
     ruleTitle: 'Strictly conformant JSON corresponds to valid XML'
     ruleName: ""
     ruleID: rule_5-2
+    ruleUID: JSON-4.0-rule_5-2
     ruleURL: 'https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#rule_5-2'
     ruleTargets: [STRICT]
     ruleClassification: Constraint
@@ -40,6 +42,7 @@
     ruleTitle: 'JSON is satisfiable with schema'
     ruleName: ""
     ruleID: rule_5-3
+    ruleUID: JSON-4.0-rule_5-3
     ruleURL: 'https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#rule_5-3'
     ruleTargets: [STRICT, LAX]
     ruleClassification: Constraint
@@ -56,6 +59,7 @@
     ruleTitle: 'JSON interpreted based on schema'
     ruleName: ""
     ruleID: rule_5-4
+    ruleUID: JSON-4.0-rule_5-4
     ruleURL: 'https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#rule_5-4'
     ruleTargets: [STRICT, LAX]
     ruleClassification: Interpretation

@@ -10,6 +10,7 @@
     <ruleTitle>Code list-enabled schema document has conformance target</ruleTitle>
     <ruleName/>
     <ruleID>rule_3-1</ruleID>
+    <ruleUID>CodeLists-4.0-rule_3-1</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_3-1</ruleURL>
     <ruleTargets>XSD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -27,6 +28,7 @@
     <ruleTitle>Document with conformance target is a code list-enabled schema document</ruleTitle>
     <ruleName/>
     <ruleID>rule_3-2</ruleID>
+    <ruleUID>CodeLists-4.0-rule_3-2</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_3-2</ruleURL>
     <ruleTargets>VSET</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -44,6 +46,7 @@
     <ruleTitle>Content in the cli namespace conforms to schema</ruleTitle>
     <ruleName/>
     <ruleID>rule_4-1</ruleID>
+    <ruleUID>CodeLists-4.0-rule_4-1</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_4-1</ruleURL>
     <ruleTargets>INS</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -61,6 +64,7 @@
     <ruleTitle>Code list URI is an absolute URI</ruleTitle>
     <ruleName/>
     <ruleID>rule_4-2</ruleID>
+    <ruleUID>CodeLists-4.0-rule_4-2</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_4-2</ruleURL>
     <ruleTargets>INS</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -78,6 +82,7 @@
     <ruleTitle>Column identifier accompanied by code list identifier</ruleTitle>
     <ruleName/>
     <ruleID>rule_4-3</ruleID>
+    <ruleUID>CodeLists-4.0-rule_4-3</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_4-3</ruleURL>
     <ruleTargets>INS</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -95,6 +100,7 @@
     <ruleTitle>Constraining indicator accompanied by code list identifier</ruleTitle>
     <ruleName/>
     <ruleID>rule_4-4</ruleID>
+    <ruleUID>CodeLists-4.0-rule_4-4</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_4-4</ruleURL>
     <ruleTargets>INS</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -112,6 +118,7 @@
     <ruleTitle>Effective run-time binding.</ruleTitle>
     <ruleName/>
     <ruleID>rule_4-5</ruleID>
+    <ruleUID>CodeLists-4.0-rule_4-5</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_4-5</ruleURL>
     <ruleTargets>INS</ruleTargets>
     <ruleClassification>Interpretation</ruleClassification>
@@ -134,6 +141,7 @@
     <ruleTitle>Content in the clsa namespace conforms to schema</ruleTitle>
     <ruleName/>
     <ruleID>rule_4-6</ruleID>
+    <ruleUID>CodeLists-4.0-rule_4-6</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_4-6</ruleURL>
     <ruleTargets>XSD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -151,6 +159,7 @@
     <ruleTitle>Elements are xs:appinfo annotations</ruleTitle>
     <ruleName/>
     <ruleID>rule_4-7</ruleID>
+    <ruleUID>CodeLists-4.0-rule_4-7</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_4-7</ruleURL>
     <ruleTargets>XSD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -168,6 +177,7 @@
     <ruleTitle>Code list URI is absolute URI</ruleTitle>
     <ruleName/>
     <ruleID>rule_4-8</ruleID>
+    <ruleUID>CodeLists-4.0-rule_4-8</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_4-8</ruleURL>
     <ruleTargets>XSD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -185,6 +195,7 @@
     <ruleTitle>Simple code list binding to schema components</ruleTitle>
     <ruleName/>
     <ruleID>rule_4-9</ruleID>
+    <ruleUID>CodeLists-4.0-rule_4-9</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_4-9</ruleURL>
     <ruleTargets>XSD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -206,6 +217,7 @@
     <ruleTitle>Complex code list binding to schema components</ruleTitle>
     <ruleName/>
     <ruleID>rule_4-10</ruleID>
+    <ruleUID>CodeLists-4.0-rule_4-10</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_4-10</ruleURL>
     <ruleTargets>XSD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -225,6 +237,7 @@
     <ruleTitle>Attribute declaration effective simple binding</ruleTitle>
     <ruleName/>
     <ruleID>rule_4-11</ruleID>
+    <ruleUID>CodeLists-4.0-rule_4-11</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_4-11</ruleURL>
     <ruleTargets>VSET</ruleTargets>
     <ruleClassification>Interpretation</ruleClassification>
@@ -248,6 +261,7 @@
     <ruleTitle>Element declaration effective simple binding</ruleTitle>
     <ruleName/>
     <ruleID>rule_4-12</ruleID>
+    <ruleUID>CodeLists-4.0-rule_4-12</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_4-12</ruleURL>
     <ruleTargets>VSET</ruleTargets>
     <ruleClassification>Interpretation</ruleClassification>
@@ -271,6 +285,7 @@
     <ruleTitle>Type definition effective simple binding</ruleTitle>
     <ruleName/>
     <ruleID>rule_4-13</ruleID>
+    <ruleUID>CodeLists-4.0-rule_4-13</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_4-13</ruleURL>
     <ruleTargets>VSET</ruleTargets>
     <ruleClassification>Interpretation</ruleClassification>
@@ -300,6 +315,7 @@
     <ruleTitle>Element declaration effective complex binding</ruleTitle>
     <ruleName/>
     <ruleID>rule_4-14</ruleID>
+    <ruleUID>CodeLists-4.0-rule_4-14</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_4-14</ruleURL>
     <ruleTargets>VSET</ruleTargets>
     <ruleClassification>Interpretation</ruleClassification>
@@ -324,6 +340,7 @@
     <ruleTitle>Complex type definition effective complex binding</ruleTitle>
     <ruleName/>
     <ruleID>rule_4-15</ruleID>
+    <ruleUID>CodeLists-4.0-rule_4-15</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_4-15</ruleURL>
     <ruleTargets>VSET</ruleTargets>
     <ruleClassification>Interpretation</ruleClassification>
@@ -348,6 +365,7 @@
     <ruleTitle>Matches and validity for a code list binding</ruleTitle>
     <ruleName>rule-matches-for-code-list-binding</ruleName>
     <ruleID>rule_4-16</ruleID>
+    <ruleUID>CodeLists-4.0-rule_4-16</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_4-16</ruleURL>
     <ruleTargets>VSET</ruleTargets>
     <ruleClassification>Interpretation</ruleClassification>
@@ -381,6 +399,7 @@
     <ruleTitle>Value comparisons based on types</ruleTitle>
     <ruleName/>
     <ruleID>rule_4-17</ruleID>
+    <ruleUID>CodeLists-4.0-rule_4-17</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_4-17</ruleURL>
     <ruleTargets>VSET</ruleTargets>
     <ruleClassification>Interpretation</ruleClassification>
@@ -407,6 +426,7 @@
     <ruleTitle>Code list identified by candidate code list identifiers</ruleTitle>
     <ruleName/>
     <ruleID>rule_4-18</ruleID>
+    <ruleUID>CodeLists-4.0-rule_4-18</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_4-18</ruleURL>
     <ruleTargets>VSET</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -424,6 +444,7 @@
     <ruleTitle>CSV code list document is a CSV file</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-1</ruleID>
+    <ruleUID>CodeLists-4.0-rule_5-1</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_5-1</ruleURL>
     <ruleTargets>CSV-CLD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -441,6 +462,7 @@
     <ruleTitle>CSV code list document has header</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-2</ruleID>
+    <ruleUID>CodeLists-4.0-rule_5-2</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_5-2</ruleURL>
     <ruleTargets>CSV-CLD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -458,6 +480,7 @@
     <ruleTitle>CSV column name is not empty</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-3</ruleID>
+    <ruleUID>CodeLists-4.0-rule_5-3</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_5-3</ruleURL>
     <ruleTargets>CSV-CLD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -475,6 +498,7 @@
     <ruleTitle>CSV file as a code list document</ruleTitle>
     <ruleName>rule-csv-implementation</ruleName>
     <ruleID>rule_5-4</ruleID>
+    <ruleUID>CodeLists-4.0-rule_5-4</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_5-4</ruleURL>
     <ruleTargets>CSV-CLD</ruleTargets>
     <ruleClassification>Interpretation</ruleClassification>
@@ -501,6 +525,7 @@
     <ruleTitle>Genericode code list document defined by Genericode</ruleTitle>
     <ruleName/>
     <ruleID>rule_6-1</ruleID>
+    <ruleUID>CodeLists-4.0-rule_6-1</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_6-1</ruleURL>
     <ruleTargets>GC-CLD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -518,6 +543,7 @@
     <ruleTitle>Document with conformance target is Genericode code list document</ruleTitle>
     <ruleName/>
     <ruleID>rule_6-2</ruleID>
+    <ruleUID>CodeLists-4.0-rule_6-2</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_6-2</ruleURL>
     <ruleTargets>VSET</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -535,6 +561,7 @@
     <ruleTitle>Genericode code list document is schema-valid</ruleTitle>
     <ruleName/>
     <ruleID>rule_6-3</ruleID>
+    <ruleUID>CodeLists-4.0-rule_6-3</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_6-3</ruleURL>
     <ruleTargets>GC-CLD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -552,6 +579,7 @@
     <ruleTitle>XML Schema alternate datatypes are treated the same as built in datatypes</ruleTitle>
     <ruleName/>
     <ruleID>rule_6-4</ruleID>
+    <ruleUID>CodeLists-4.0-rule_6-4</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_6-4</ruleURL>
     <ruleTargets>GC-CLD</ruleTargets>
     <ruleClassification>Interpretation</ruleClassification>
@@ -569,6 +597,7 @@
     <ruleTitle>Genericode file as a code list document</ruleTitle>
     <ruleName>rule-genericode-implementation</ruleName>
     <ruleID>rule_6-5</ruleID>
+    <ruleUID>CodeLists-4.0-rule_6-5</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#rule_6-5</ruleURL>
     <ruleTargets>GC-CLD</ruleTargets>
     <ruleClassification>Interpretation</ruleClassification>

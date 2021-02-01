@@ -10,6 +10,7 @@
     <ruleTitle>File must be a JSON-LD file</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-1</ruleID>
+    <ruleUID>JSON-4.0-rule_5-1</ruleUID>
     <ruleURL>https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#rule_5-1</ruleURL>
     <ruleTargets>STRICT</ruleTargets>
     <ruleTargets>LAX</ruleTargets>
@@ -28,6 +29,7 @@
     <ruleTitle>Strictly conformant JSON corresponds to valid XML</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-2</ruleID>
+    <ruleUID>JSON-4.0-rule_5-2</ruleUID>
     <ruleURL>https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#rule_5-2</ruleURL>
     <ruleTargets>STRICT</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
@@ -45,6 +47,7 @@
     <ruleTitle>JSON is satisfiable with schema</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-3</ruleID>
+    <ruleUID>JSON-4.0-rule_5-3</ruleUID>
     <ruleURL>https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#rule_5-3</ruleURL>
     <ruleTargets>STRICT</ruleTargets>
     <ruleTargets>LAX</ruleTargets>
@@ -65,6 +68,7 @@
     <ruleTitle>JSON interpreted based on schema</ruleTitle>
     <ruleName/>
     <ruleID>rule_5-4</ruleID>
+    <ruleUID>JSON-4.0-rule_5-4</ruleUID>
     <ruleURL>https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#rule_5-4</ruleURL>
     <ruleTargets>STRICT</ruleTargets>
     <ruleTargets>LAX</ruleTargets>

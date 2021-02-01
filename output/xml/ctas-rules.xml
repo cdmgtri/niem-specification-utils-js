@@ -10,6 +10,7 @@
     <ruleTitle>Conformant document is an XML document</ruleTitle>
     <ruleName/>
     <ruleID>rule_3-1</ruleID>
+    <ruleUID>CTAS-3.0-rule_3-1</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/conformance-targets-attribute/3.0/NIEM-CTAS-3.0-2014-07-31.html#rule_3-1</ruleURL>
     <ruleTargets/>
     <ruleClassification/>
@@ -27,6 +28,7 @@
     <ruleTitle>Attribute ct:conformanceTargets is valid</ruleTitle>
     <ruleName/>
     <ruleID>rule_3-2</ruleID>
+    <ruleUID>CTAS-3.0-rule_3-2</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/conformance-targets-attribute/3.0/NIEM-CTAS-3.0-2014-07-31.html#rule_3-2</ruleURL>
     <ruleTargets/>
     <ruleClassification/>
@@ -44,6 +46,7 @@
     <ruleTitle>Namespace defines only attribute ct:conformanceTargets</ruleTitle>
     <ruleName/>
     <ruleID>rule_3-3</ruleID>
+    <ruleUID>CTAS-3.0-rule_3-3</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/conformance-targets-attribute/3.0/NIEM-CTAS-3.0-2014-07-31.html#rule_3-3</ruleURL>
     <ruleTargets/>
     <ruleClassification/>
@@ -61,6 +64,7 @@
     <ruleTitle>No reference to types in conformance targets namespace</ruleTitle>
     <ruleName/>
     <ruleID>rule_3-4</ruleID>
+    <ruleUID>CTAS-3.0-rule_3-4</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/conformance-targets-attribute/3.0/NIEM-CTAS-3.0-2014-07-31.html#rule_3-4</ruleURL>
     <ruleTargets/>
     <ruleClassification/>
@@ -78,6 +82,7 @@
     <ruleTitle>Attribute ct:conformanceTargets contains only absolute IRI references</ruleTitle>
     <ruleName/>
     <ruleID>rule_3-5</ruleID>
+    <ruleUID>CTAS-3.0-rule_3-5</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/conformance-targets-attribute/3.0/NIEM-CTAS-3.0-2014-07-31.html#rule_3-5</ruleURL>
     <ruleTargets/>
     <ruleClassification/>
@@ -95,6 +100,7 @@
     <ruleTitle>Document may contain any number of ct:conformanceTargets attributes</ruleTitle>
     <ruleName/>
     <ruleID>rule_3-6</ruleID>
+    <ruleUID>CTAS-3.0-rule_3-6</ruleUID>
     <ruleURL>https://reference.niem.gov/niem/specification/conformance-targets-attribute/3.0/NIEM-CTAS-3.0-2014-07-31.html#rule_3-6</ruleURL>
     <ruleTargets/>
     <ruleClassification/>
