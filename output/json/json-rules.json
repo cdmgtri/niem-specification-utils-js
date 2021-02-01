@@ -1,6 +1,7 @@
 [
   {
     "specificationID": "JSON-4.0",
+    "classID": "JSON",
     "sectionID": "section_5",
     "sectionLabel": "Section 5. Rules",
     "sectionURL": "https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#section_5",
@@ -20,6 +21,7 @@
   },
   {
     "specificationID": "JSON-4.0",
+    "classID": "JSON",
     "sectionID": "section_5",
     "sectionLabel": "Section 5. Rules",
     "sectionURL": "https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#section_5",
@@ -38,6 +40,7 @@
   },
   {
     "specificationID": "JSON-4.0",
+    "classID": "JSON",
     "sectionID": "section_5",
     "sectionLabel": "Section 5. Rules",
     "sectionURL": "https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#section_5",
@@ -57,6 +60,7 @@
   },
   {
     "specificationID": "JSON-4.0",
+    "classID": "JSON",
     "sectionID": "section_5",
     "sectionLabel": "Section 5. Rules",
     "sectionURL": "https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#section_5",

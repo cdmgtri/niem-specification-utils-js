@@ -56,6 +56,7 @@ class Rule {
   toJSON() {
     return {
       specificationID: this.specification.id,
+      classID: this.specification.classID,
       sectionID: this.section.id,
       sectionLabel: this.section.label,
       sectionURL: this.section.url,

@@ -1,6 +1,7 @@
 [
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_3.2.1",
     "sectionLabel": "Section 3.2.1. The Model Package Description Conformance Target",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_3.2.1",
@@ -19,6 +20,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_3.2.2",
     "sectionLabel": "Section 3.2.2. IEPD Conformance Target",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_3.2.2",
@@ -37,6 +39,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_3.2.2",
     "sectionLabel": "Section 3.2.2. IEPD Conformance Target",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_3.2.2",
@@ -55,6 +58,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_4.2.1",
     "sectionLabel": "Section 4.2.1. Basic Subset Concepts",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_4.2.1",
@@ -73,6 +77,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_5.1",
     "sectionLabel": "Section 5.1. NIEM MPD Catalog",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.1",
@@ -91,6 +96,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_5.1",
     "sectionLabel": "Section 5.1. NIEM MPD Catalog",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.1",
@@ -109,6 +115,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_5.1.2",
     "sectionLabel": "Section 5.1.2. Extending an MPD Catalog",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.1.2",
@@ -127,6 +134,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_5.1.2",
     "sectionLabel": "Section 5.1.2. Extending an MPD Catalog",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.1.2",
@@ -145,6 +153,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_5.1.2",
     "sectionLabel": "Section 5.1.2. Extending an MPD Catalog",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.1.2",
@@ -163,6 +172,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_5.1.2",
     "sectionLabel": "Section 5.1.2. Extending an MPD Catalog",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.1.2",
@@ -181,6 +191,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_5.1.2",
     "sectionLabel": "Section 5.1.2. Extending an MPD Catalog",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.1.2",
@@ -199,6 +210,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_5.1.2",
     "sectionLabel": "Section 5.1.2. Extending an MPD Catalog",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.1.2",
@@ -217,6 +229,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_5.2.2",
     "sectionLabel": "Section 5.2.2. MPD Class (c:mpdClassURIList)",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.2",
@@ -235,6 +248,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_5.2.3",
     "sectionLabel": "Section 5.2.3. MPD Version Numbering Scheme (c:mpdVersionID)",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.3",
@@ -253,6 +267,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_5.2.4.1",
     "sectionLabel": "Section 5.2.4.1. MPD URI Scheme (c:mpdURI)",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4.1",
@@ -271,6 +286,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_5.2.4.2",
     "sectionLabel": "Section 5.2.4.2. URI Scheme for MPD Artifacts (c:externalURI)",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4.2",
@@ -289,6 +305,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_5.2.4.2",
     "sectionLabel": "Section 5.2.4.2. URI Scheme for MPD Artifacts (c:externalURI)",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4.2",
@@ -307,6 +324,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_5.2.4.2",
     "sectionLabel": "Section 5.2.4.2. URI Scheme for MPD Artifacts (c:externalURI)",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4.2",
@@ -325,6 +343,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_5.2.4.3",
     "sectionLabel": "Section 5.2.4.3. URI Scheme for Local MPD Artifacts (c:pathURI)",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4.3",
@@ -343,6 +362,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_5.2.4.3",
     "sectionLabel": "Section 5.2.4.3. URI Scheme for Local MPD Artifacts (c:pathURI)",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4.3",
@@ -361,6 +381,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_5.2.4.3",
     "sectionLabel": "Section 5.2.4.3. URI Scheme for Local MPD Artifacts (c:pathURI)",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4.3",
@@ -379,6 +400,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_5.2.4.3",
     "sectionLabel": "Section 5.2.4.3. URI Scheme for Local MPD Artifacts (c:pathURI)",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4.3",
@@ -397,6 +419,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_5.2.4.3",
     "sectionLabel": "Section 5.2.4.3. URI Scheme for Local MPD Artifacts (c:pathURI)",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4.3",
@@ -415,6 +438,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_5.2.4.3",
     "sectionLabel": "Section 5.2.4.3. URI Scheme for Local MPD Artifacts (c:pathURI)",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4.3",
@@ -433,6 +457,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_5.2.4.3",
     "sectionLabel": "Section 5.2.4.3. URI Scheme for Local MPD Artifacts (c:pathURI)",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4.3",
@@ -451,6 +476,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_5.2.4.3",
     "sectionLabel": "Section 5.2.4.3. URI Scheme for Local MPD Artifacts (c:pathURI)",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4.3",
@@ -469,6 +495,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_5.2.4.3",
     "sectionLabel": "Section 5.2.4.3. URI Scheme for Local MPD Artifacts (c:pathURI)",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4.3",
@@ -487,6 +514,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_5.2.4.3",
     "sectionLabel": "Section 5.2.4.3. URI Scheme for Local MPD Artifacts (c:pathURI)",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4.3",
@@ -505,6 +533,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_5.2.4.3",
     "sectionLabel": "Section 5.2.4.3. URI Scheme for Local MPD Artifacts (c:pathURI)",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4.3",
@@ -523,6 +552,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_5.2.4.3",
     "sectionLabel": "Section 5.2.4.3. URI Scheme for Local MPD Artifacts (c:pathURI)",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4.3",
@@ -541,6 +571,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_5.2.4.3",
     "sectionLabel": "Section 5.2.4.3. URI Scheme for Local MPD Artifacts (c:pathURI)",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4.3",
@@ -559,6 +590,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_5.2.4.3",
     "sectionLabel": "Section 5.2.4.3. URI Scheme for Local MPD Artifacts (c:pathURI)",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4.3",
@@ -577,6 +609,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_5.2.4.3",
     "sectionLabel": "Section 5.2.4.3. URI Scheme for Local MPD Artifacts (c:pathURI)",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4.3",
@@ -595,6 +628,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_5.2.4.3",
     "sectionLabel": "Section 5.2.4.3. URI Scheme for Local MPD Artifacts (c:pathURI)",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4.3",
@@ -613,6 +647,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_5.2.4.3",
     "sectionLabel": "Section 5.2.4.3. URI Scheme for Local MPD Artifacts (c:pathURI)",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4.3",
@@ -631,6 +666,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_5.2.4.5",
     "sectionLabel": "Section 5.2.4.5. Resolving an MPD URI with a Fragment",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4.5",
@@ -649,6 +685,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_5.2.4.7",
     "sectionLabel": "Section 5.2.4.7. XML Catalog URI",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4.7",
@@ -667,6 +704,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_5.2.4.7",
     "sectionLabel": "Section 5.2.4.7. XML Catalog URI",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.2.4.7",
@@ -685,6 +723,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_5.3.2",
     "sectionLabel": "Section 5.3.2. Change Log for IEPDs",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.3.2",
@@ -703,6 +742,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_5.4",
     "sectionLabel": "Section 5.4. ReadMe Artifact",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.4",
@@ -721,6 +761,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_5.4",
     "sectionLabel": "Section 5.4. ReadMe Artifact",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.4",
@@ -739,6 +780,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_5.6",
     "sectionLabel": "Section 5.6. Defining Information Exchange Packages",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.6",
@@ -757,6 +799,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_5.6",
     "sectionLabel": "Section 5.6. Defining Information Exchange Packages",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.6",
@@ -775,6 +818,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_5.6",
     "sectionLabel": "Section 5.6. Defining Information Exchange Packages",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.6",
@@ -793,6 +837,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_5.6.2.3",
     "sectionLabel": "Section 5.6.2.3. c:ValidityContext",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.6.2.3",
@@ -811,6 +856,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_5.6.2.4",
     "sectionLabel": "Section 5.6.2.4. c:HasDocumentElement",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.6.2.4",
@@ -829,6 +875,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_5.6.2.5",
     "sectionLabel": "Section 5.6.2.5. c:ValidToXPath",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.6.2.5",
@@ -847,6 +894,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_5.6.3",
     "sectionLabel": "Section 5.6.3. IEP Sample Instance XML Documents",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.6.3",
@@ -865,6 +913,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_5.6.3",
     "sectionLabel": "Section 5.6.3. IEP Sample Instance XML Documents",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.6.3",
@@ -883,6 +932,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_5.7",
     "sectionLabel": "Section 5.7. Conformance Assertion",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_5.7",
@@ -901,6 +951,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_6.1",
     "sectionLabel": "Section 6.1. NIEM Wantlist",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_6.1",
@@ -919,6 +970,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_7",
     "sectionLabel": "Section 7. Organization, Packaging, and Other Criteria",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_7",
@@ -937,6 +989,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_7",
     "sectionLabel": "Section 7. Organization, Packaging, and Other Criteria",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_7",
@@ -955,6 +1008,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_7",
     "sectionLabel": "Section 7. Organization, Packaging, and Other Criteria",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_7",
@@ -973,6 +1027,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_7.1.1",
     "sectionLabel": "Section 7.1.1. Constraint on Elements of Type c:SchemaDocumentSetType",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_7.1.1",
@@ -991,6 +1046,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_7.2",
     "sectionLabel": "Section 7.2. IEPD File Name Syntax",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_7.2",
@@ -1009,6 +1065,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_7.3",
     "sectionLabel": "Section 7.3. Artifact Links to Other Resources",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_7.3",
@@ -1027,6 +1084,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_7.4",
     "sectionLabel": "Section 7.4. IEPD Completeness",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_7.4",
@@ -1045,6 +1103,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_7.4",
     "sectionLabel": "Section 7.4. IEPD Completeness",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_7.4",
@@ -1063,6 +1122,7 @@
   },
   {
     "specificationID": "MPD-3.0.1",
+    "classID": "IEPD",
     "sectionID": "section_7.4",
     "sectionLabel": "Section 7.4. IEPD Completeness",
     "sectionURL": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#section_7.4",
@@ -1081,6 +1141,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_3.2.1",
     "sectionLabel": "Section 3.2.1. Information Exchange Package Documentation",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_3.2.1",
@@ -1099,6 +1160,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_3.2.1.1",
     "sectionLabel": "Section 3.2.1.1. Well-Formed IEPD",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_3.2.1.1",
@@ -1117,6 +1179,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_4.2.1",
     "sectionLabel": "Section 4.2.1. Basic Subset Concepts",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_4.2.1",
@@ -1135,6 +1198,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_5.1",
     "sectionLabel": "Section 5.1. NIEM IEPD Catalog",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.1",
@@ -1153,6 +1217,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_5.1",
     "sectionLabel": "Section 5.1. NIEM IEPD Catalog",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.1",
@@ -1171,6 +1236,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_5.1.2",
     "sectionLabel": "Section 5.1.2. Extending an IEPD Catalog",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.1.2",
@@ -1189,6 +1255,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_5.1.2",
     "sectionLabel": "Section 5.1.2. Extending an IEPD Catalog",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.1.2",
@@ -1207,6 +1274,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_5.1.2",
     "sectionLabel": "Section 5.1.2. Extending an IEPD Catalog",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.1.2",
@@ -1225,6 +1293,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_5.1.2",
     "sectionLabel": "Section 5.1.2. Extending an IEPD Catalog",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.1.2",
@@ -1243,6 +1312,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_5.1.2",
     "sectionLabel": "Section 5.1.2. Extending an IEPD Catalog",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.1.2",
@@ -1261,6 +1331,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_5.1.2",
     "sectionLabel": "Section 5.1.2. Extending an IEPD Catalog",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.1.2",
@@ -1279,6 +1350,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_5.2.3",
     "sectionLabel": "Section 5.2.3. IEPD Version Numbering Scheme (c:iepdVersionID)",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.2.3",
@@ -1297,6 +1369,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_5.2.4.1",
     "sectionLabel": "Section 5.2.4.1. IEPD URI Scheme (c:iepdURI)",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.2.4.1",
@@ -1315,6 +1388,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_5.2.4.2",
     "sectionLabel": "Section 5.2.4.2. URI Scheme for IEPD Artifacts (c:externalURI)",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.2.4.2",
@@ -1333,6 +1407,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_5.2.4.2",
     "sectionLabel": "Section 5.2.4.2. URI Scheme for IEPD Artifacts (c:externalURI)",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.2.4.2",
@@ -1351,6 +1426,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_5.2.4.2",
     "sectionLabel": "Section 5.2.4.2. URI Scheme for IEPD Artifacts (c:externalURI)",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.2.4.2",
@@ -1369,6 +1445,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_5.2.4.3",
     "sectionLabel": "Section 5.2.4.3. URI Scheme for Local IEPD Artifacts (c:pathURI)",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.2.4.3",
@@ -1387,6 +1464,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_5.2.4.3",
     "sectionLabel": "Section 5.2.4.3. URI Scheme for Local IEPD Artifacts (c:pathURI)",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.2.4.3",
@@ -1405,6 +1483,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_5.2.4.3",
     "sectionLabel": "Section 5.2.4.3. URI Scheme for Local IEPD Artifacts (c:pathURI)",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.2.4.3",
@@ -1423,6 +1502,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_5.2.4.3",
     "sectionLabel": "Section 5.2.4.3. URI Scheme for Local IEPD Artifacts (c:pathURI)",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.2.4.3",
@@ -1441,6 +1521,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_5.2.4.3",
     "sectionLabel": "Section 5.2.4.3. URI Scheme for Local IEPD Artifacts (c:pathURI)",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.2.4.3",
@@ -1459,6 +1540,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_5.2.4.3",
     "sectionLabel": "Section 5.2.4.3. URI Scheme for Local IEPD Artifacts (c:pathURI)",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.2.4.3",
@@ -1477,6 +1559,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_5.2.4.3",
     "sectionLabel": "Section 5.2.4.3. URI Scheme for Local IEPD Artifacts (c:pathURI)",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.2.4.3",
@@ -1495,6 +1578,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_5.2.4.3",
     "sectionLabel": "Section 5.2.4.3. URI Scheme for Local IEPD Artifacts (c:pathURI)",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.2.4.3",
@@ -1513,6 +1597,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_5.2.4.3",
     "sectionLabel": "Section 5.2.4.3. URI Scheme for Local IEPD Artifacts (c:pathURI)",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.2.4.3",
@@ -1531,6 +1616,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_5.2.4.3",
     "sectionLabel": "Section 5.2.4.3. URI Scheme for Local IEPD Artifacts (c:pathURI)",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.2.4.3",
@@ -1549,6 +1635,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_5.2.4.3",
     "sectionLabel": "Section 5.2.4.3. URI Scheme for Local IEPD Artifacts (c:pathURI)",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.2.4.3",
@@ -1567,6 +1654,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_5.2.4.3",
     "sectionLabel": "Section 5.2.4.3. URI Scheme for Local IEPD Artifacts (c:pathURI)",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.2.4.3",
@@ -1585,6 +1673,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_5.2.4.3",
     "sectionLabel": "Section 5.2.4.3. URI Scheme for Local IEPD Artifacts (c:pathURI)",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.2.4.3",
@@ -1603,6 +1692,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_5.2.4.3",
     "sectionLabel": "Section 5.2.4.3. URI Scheme for Local IEPD Artifacts (c:pathURI)",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.2.4.3",
@@ -1621,6 +1711,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_5.2.4.3",
     "sectionLabel": "Section 5.2.4.3. URI Scheme for Local IEPD Artifacts (c:pathURI)",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.2.4.3",
@@ -1639,6 +1730,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_5.2.4.3",
     "sectionLabel": "Section 5.2.4.3. URI Scheme for Local IEPD Artifacts (c:pathURI)",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.2.4.3",
@@ -1657,6 +1749,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_5.2.4.3",
     "sectionLabel": "Section 5.2.4.3. URI Scheme for Local IEPD Artifacts (c:pathURI)",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.2.4.3",
@@ -1675,6 +1768,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_5.2.4.5",
     "sectionLabel": "Section 5.2.4.5. Resolving an IEPD URI with a Fragment",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.2.4.5",
@@ -1693,6 +1787,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_5.2.4.7",
     "sectionLabel": "Section 5.2.4.7. XML Catalog URI",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.2.4.7",
@@ -1711,6 +1806,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_5.2.4.7",
     "sectionLabel": "Section 5.2.4.7. XML Catalog URI",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.2.4.7",
@@ -1729,6 +1825,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_5.3",
     "sectionLabel": "Section 5.3. Change Log",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.3",
@@ -1747,6 +1844,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_5.4",
     "sectionLabel": "Section 5.4. ReadMe Artifact",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.4",
@@ -1765,6 +1863,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_5.4",
     "sectionLabel": "Section 5.4. ReadMe Artifact",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.4",
@@ -1783,6 +1882,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_5.6",
     "sectionLabel": "Section 5.6. Defining Information Exchange Packages",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.6",
@@ -1801,6 +1901,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_5.6",
     "sectionLabel": "Section 5.6. Defining Information Exchange Packages",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.6",
@@ -1819,6 +1920,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_5.6",
     "sectionLabel": "Section 5.6. Defining Information Exchange Packages",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.6",
@@ -1837,6 +1939,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_5.6.2.3",
     "sectionLabel": "Section 5.6.2.3. c:ValidityContext",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.6.2.3",
@@ -1855,6 +1958,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_5.6.2.4",
     "sectionLabel": "Section 5.6.2.4. c:HasDocumentElement",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.6.2.4",
@@ -1873,6 +1977,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_5.6.2.5",
     "sectionLabel": "Section 5.6.2.5. c:ValidToXPath",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.6.2.5",
@@ -1891,6 +1996,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_5.6.3",
     "sectionLabel": "Section 5.6.3. IEP Sample Instance XML Documents",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.6.3",
@@ -1909,6 +2015,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_5.6.3",
     "sectionLabel": "Section 5.6.3. IEP Sample Instance XML Documents",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.6.3",
@@ -1927,6 +2034,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_5.7",
     "sectionLabel": "Section 5.7. Conformance Assertion",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.7",
@@ -1945,6 +2053,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_6.1",
     "sectionLabel": "Section 6.1. NIEM Wantlist",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_6.1",
@@ -1963,6 +2072,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_7",
     "sectionLabel": "Section 7. Organization, Packaging, and Other Criteria",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_7",
@@ -1981,6 +2091,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_7",
     "sectionLabel": "Section 7. Organization, Packaging, and Other Criteria",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_7",
@@ -1999,6 +2110,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_7",
     "sectionLabel": "Section 7. Organization, Packaging, and Other Criteria",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_7",
@@ -2017,6 +2129,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_7.1.1",
     "sectionLabel": "Section 7.1.1. Constraint on Elements of Type c:SchemaDocumentSetType",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_7.1.1",
@@ -2035,6 +2148,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_7.2",
     "sectionLabel": "Section 7.2. IEPD File Name Syntax",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_7.2",
@@ -2053,6 +2167,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_7.3",
     "sectionLabel": "Section 7.3. Artifact Links to Other Resources",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_7.3",
@@ -2071,6 +2186,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_7.4",
     "sectionLabel": "Section 7.4. IEPD Completeness",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_7.4",
@@ -2089,6 +2205,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_7.4",
     "sectionLabel": "Section 7.4. IEPD Completeness",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_7.4",
@@ -2107,6 +2224,7 @@
   },
   {
     "specificationID": "IEPD-5.0beta1",
+    "classID": "IEPD",
     "sectionID": "section_7.4",
     "sectionLabel": "Section 7.4. IEPD Completeness",
     "sectionURL": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_7.4",

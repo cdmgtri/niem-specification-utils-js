@@ -2,6 +2,7 @@
 <definitions>
   <definition>
     <specificationID>JSON-4.0</specificationID>
+    <classID>JSON</classID>
     <sectionID>section_3.2</sectionID>
     <sectionLabel>Section 3.2. Conformance Targets Attribute Specification</sectionLabel>
     <sectionURL>https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#section_3.2</sectionURL>
@@ -14,6 +15,7 @@
   </definition>
   <definition>
     <specificationID>JSON-4.0</specificationID>
+    <classID>JSON</classID>
     <sectionID>section_3.2</sectionID>
     <sectionLabel>Section 3.2. Conformance Targets Attribute Specification</sectionLabel>
     <sectionURL>https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#section_3.2</sectionURL>
@@ -26,6 +28,7 @@
   </definition>
   <definition>
     <specificationID>JSON-4.0</specificationID>
+    <classID>JSON</classID>
     <sectionID>section_3.3</sectionID>
     <sectionLabel>Section 3.3. NIEM Naming and Design Rules</sectionLabel>
     <sectionURL>https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#section_3.3</sectionURL>
@@ -38,6 +41,7 @@
   </definition>
   <definition>
     <specificationID>JSON-4.0</specificationID>
+    <classID>JSON</classID>
     <sectionID>section_3.3</sectionID>
     <sectionLabel>Section 3.3. NIEM Naming and Design Rules</sectionLabel>
     <sectionURL>https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#section_3.3</sectionURL>
@@ -50,6 +54,7 @@
   </definition>
   <definition>
     <specificationID>JSON-4.0</specificationID>
+    <classID>JSON</classID>
     <sectionID>section_2.2.1</sectionID>
     <sectionLabel>Section 2.2.1. Rules</sectionLabel>
     <sectionURL>https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#section_2.2.1</sectionURL>
@@ -62,6 +67,7 @@
   </definition>
   <definition>
     <specificationID>JSON-4.0</specificationID>
+    <classID>JSON</classID>
     <sectionID>section_3.2</sectionID>
     <sectionLabel>Section 3.2. Conformance Targets Attribute Specification</sectionLabel>
     <sectionURL>https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#section_3.2</sectionURL>
@@ -74,6 +80,7 @@
   </definition>
   <definition>
     <specificationID>JSON-4.0</specificationID>
+    <classID>JSON</classID>
     <sectionID>section_3.7</sectionID>
     <sectionLabel>Section 3.7. RDF and RDF Schema</sectionLabel>
     <sectionURL>https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#section_3.7</sectionURL>
@@ -86,6 +93,7 @@
   </definition>
   <definition>
     <specificationID>JSON-4.0</specificationID>
+    <classID>JSON</classID>
     <sectionID>section_3.3</sectionID>
     <sectionLabel>Section 3.3. NIEM Naming and Design Rules</sectionLabel>
     <sectionURL>https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#section_3.3</sectionURL>
@@ -98,6 +106,7 @@
   </definition>
   <definition>
     <specificationID>JSON-4.0</specificationID>
+    <classID>JSON</classID>
     <sectionID>section_3.3</sectionID>
     <sectionLabel>Section 3.3. NIEM Naming and Design Rules</sectionLabel>
     <sectionURL>https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#section_3.3</sectionURL>
@@ -110,6 +119,7 @@
   </definition>
   <definition>
     <specificationID>JSON-4.0</specificationID>
+    <classID>JSON</classID>
     <sectionID>section_3.4</sectionID>
     <sectionLabel>Section 3.4. Model Package Description Specification</sectionLabel>
     <sectionURL>https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#section_3.4</sectionURL>
@@ -122,6 +132,7 @@
   </definition>
   <definition>
     <specificationID>JSON-4.0</specificationID>
+    <classID>JSON</classID>
     <sectionID>section_3.4</sectionID>
     <sectionLabel>Section 3.4. Model Package Description Specification</sectionLabel>
     <sectionURL>https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#section_3.4</sectionURL>
@@ -134,6 +145,7 @@
   </definition>
   <definition>
     <specificationID>JSON-4.0</specificationID>
+    <classID>JSON</classID>
     <sectionID>section_3.4</sectionID>
     <sectionLabel>Section 3.4. Model Package Description Specification</sectionLabel>
     <sectionURL>https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#section_3.4</sectionURL>
@@ -146,6 +158,7 @@
   </definition>
   <definition>
     <specificationID>JSON-4.0</specificationID>
+    <classID>JSON</classID>
     <sectionID>section_2.2</sectionID>
     <sectionLabel>Section 2.2. Normative and informative content</sectionLabel>
     <sectionURL>https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#section_2.2</sectionURL>
@@ -158,6 +171,7 @@
   </definition>
   <definition>
     <specificationID>JSON-4.0</specificationID>
+    <classID>JSON</classID>
     <sectionID>section_2.2.1</sectionID>
     <sectionLabel>Section 2.2.1. Rules</sectionLabel>
     <sectionURL>https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#section_2.2.1</sectionURL>
@@ -170,6 +184,7 @@
   </definition>
   <definition>
     <specificationID>JSON-4.0</specificationID>
+    <classID>JSON</classID>
     <sectionID>section_3.5</sectionID>
     <sectionLabel>Section 3.5. JSON</sectionLabel>
     <sectionURL>https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#section_3.5</sectionURL>
@@ -182,6 +197,7 @@
   </definition>
   <definition>
     <specificationID>JSON-4.0</specificationID>
+    <classID>JSON</classID>
     <sectionID>section_3.5</sectionID>
     <sectionLabel>Section 3.5. JSON</sectionLabel>
     <sectionURL>https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#section_3.5</sectionURL>
@@ -194,6 +210,7 @@
   </definition>
   <definition>
     <specificationID>JSON-4.0</specificationID>
+    <classID>JSON</classID>
     <sectionID>section_3.6</sectionID>
     <sectionLabel>Section 3.6. JSON-LD</sectionLabel>
     <sectionURL>https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#section_3.6</sectionURL>
@@ -206,6 +223,7 @@
   </definition>
   <definition>
     <specificationID>JSON-4.0</specificationID>
+    <classID>JSON</classID>
     <sectionID>section_5.1</sectionID>
     <sectionLabel>Section 5.1. Literal-to-object conversion</sectionLabel>
     <sectionURL>https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#section_5.1</sectionURL>
@@ -218,6 +236,7 @@
   </definition>
   <definition>
     <specificationID>JSON-4.0</specificationID>
+    <classID>JSON</classID>
     <sectionID>section_4.2</sectionID>
     <sectionLabel>Section 4.2. NIEM JSON document laxly conformant to a schema</sectionLabel>
     <sectionURL>https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#section_4.2</sectionURL>
@@ -230,6 +249,7 @@
   </definition>
   <definition>
     <specificationID>JSON-4.0</specificationID>
+    <classID>JSON</classID>
     <sectionID>section_4.1</sectionID>
     <sectionLabel>Section 4.1. NIEM JSON document strictly conformant to a schema</sectionLabel>
     <sectionURL>https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#section_4.1</sectionURL>
@@ -242,6 +262,7 @@
   </definition>
   <definition>
     <specificationID>JSON-4.0</specificationID>
+    <classID>JSON</classID>
     <sectionID>section_2.2</sectionID>
     <sectionLabel>Section 2.2. Normative and informative content</sectionLabel>
     <sectionURL>https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#section_2.2</sectionURL>
@@ -254,6 +275,7 @@
   </definition>
   <definition>
     <specificationID>JSON-4.0</specificationID>
+    <classID>JSON</classID>
     <sectionID>section_3.7</sectionID>
     <sectionLabel>Section 3.7. RDF and RDF Schema</sectionLabel>
     <sectionURL>https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#section_3.7</sectionURL>
@@ -266,6 +288,7 @@
   </definition>
   <definition>
     <specificationID>JSON-4.0</specificationID>
+    <classID>JSON</classID>
     <sectionID>section_3.3</sectionID>
     <sectionLabel>Section 3.3. NIEM Naming and Design Rules</sectionLabel>
     <sectionURL>https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#section_3.3</sectionURL>

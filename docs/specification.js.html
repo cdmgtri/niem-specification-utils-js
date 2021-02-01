@@ -61,9 +61,7 @@ class Specification {
    */
   constructor(specificationClass, version="", url="", year="", applicableReleases="", resources="", examples="", current=false, html="") {
 
-    /** @private */
     this.specificationClass = specificationClass;
-
     this.version = version;
     this.url = url;
     this.year = year;
@@ -103,6 +101,14 @@ class Specification {
       return "Model Package Description";
     }
     return this.specificationClass.name;
+  }
+
+
+  /**
+   * Gets the identifier for the general class of this specification (e.g., "NDR", "IEPD")
+   */
+  get classID() {
+    return this.specificationClass.id;
   }
 
   /**

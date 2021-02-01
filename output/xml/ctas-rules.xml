@@ -2,6 +2,7 @@
 <rules>
   <rule>
     <specificationID>CTAS-3.0</specificationID>
+    <classID>CTAS</classID>
     <sectionID>section_3.3</sectionID>
     <sectionLabel>Section 3.3. Syntactic Conformance</sectionLabel>
     <sectionURL>https://reference.niem.gov/niem/specification/conformance-targets-attribute/3.0/NIEM-CTAS-3.0-2014-07-31.html#section_3.3</sectionURL>
@@ -18,6 +19,7 @@
   </rule>
   <rule>
     <specificationID>CTAS-3.0</specificationID>
+    <classID>CTAS</classID>
     <sectionID>section_3.3</sectionID>
     <sectionLabel>Section 3.3. Syntactic Conformance</sectionLabel>
     <sectionURL>https://reference.niem.gov/niem/specification/conformance-targets-attribute/3.0/NIEM-CTAS-3.0-2014-07-31.html#section_3.3</sectionURL>
@@ -34,6 +36,7 @@
   </rule>
   <rule>
     <specificationID>CTAS-3.0</specificationID>
+    <classID>CTAS</classID>
     <sectionID>section_3.3</sectionID>
     <sectionLabel>Section 3.3. Syntactic Conformance</sectionLabel>
     <sectionURL>https://reference.niem.gov/niem/specification/conformance-targets-attribute/3.0/NIEM-CTAS-3.0-2014-07-31.html#section_3.3</sectionURL>
@@ -50,6 +53,7 @@
   </rule>
   <rule>
     <specificationID>CTAS-3.0</specificationID>
+    <classID>CTAS</classID>
     <sectionID>section_3.3</sectionID>
     <sectionLabel>Section 3.3. Syntactic Conformance</sectionLabel>
     <sectionURL>https://reference.niem.gov/niem/specification/conformance-targets-attribute/3.0/NIEM-CTAS-3.0-2014-07-31.html#section_3.3</sectionURL>
@@ -66,6 +70,7 @@
   </rule>
   <rule>
     <specificationID>CTAS-3.0</specificationID>
+    <classID>CTAS</classID>
     <sectionID>section_3.3</sectionID>
     <sectionLabel>Section 3.3. Syntactic Conformance</sectionLabel>
     <sectionURL>https://reference.niem.gov/niem/specification/conformance-targets-attribute/3.0/NIEM-CTAS-3.0-2014-07-31.html#section_3.3</sectionURL>
@@ -82,6 +87,7 @@
   </rule>
   <rule>
     <specificationID>CTAS-3.0</specificationID>
+    <classID>CTAS</classID>
     <sectionID>section_3.3</sectionID>
     <sectionLabel>Section 3.3. Syntactic Conformance</sectionLabel>
     <sectionURL>https://reference.niem.gov/niem/specification/conformance-targets-attribute/3.0/NIEM-CTAS-3.0-2014-07-31.html#section_3.3</sectionURL>
