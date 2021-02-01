@@ -13,7 +13,7 @@ dev:
 
 This project parses [NIEM HTML specifications](https://reference.niem.gov/niem/specification/) to extract rule and definition information that is used on <https://niem.github.io>.
 
-Additional metadata has been added to support linking specific NDR rules with their applicable [NIEM model concepts](https://niem.github.io/reference/concepts/).  See the [modeling references](https://niem.github.io/reference/concepts/augmentation/element/modeling/#references) section on [augmentation elements](https://niem.github.io/reference/concepts/augmentation/element/) for an example.
+Additional metadata has been added to support linking specific NDR rules with their applicable [NIEM model concepts](https://niem.github.io/reference/concepts/).  See the [modeling references](https://niem.github.io/reference/concepts/augmentation/element/modeling/#references) information in the [augmentation elements section](https://niem.github.io/reference/concepts/augmentation/element/) for an example.
 
 **Contents**
 
@@ -135,22 +135,32 @@ Basic metadata about the specification must be manually entered.
 
 - Save the specification HTML file to the `/specifications/` directory.
 
-- Rename the file if necessary so the name follows the same pattern as the other versions of the spec (e.g., `NDR-5.0.html`).
+  - Rename the specification file with the same pattern as other specifications in this class (e.g., `NDR-5.0.html`).
 
-- In the `data/index.js` file,
+- Add metadata about the new specification:
 
-  - add the new version number to the class's static version array
-  - update the static currentVersion constant
+  - *Copy and un-comment the template located at the top of the file or copy an existing entry and modify the values*
 
-- Update the supported specifications section in this `README.md` file.
+  - Add metadata to `/data/specifications.yaml`.  This will include information like version number and URL for the HTML file.
+
+    - Use the same abbreviation as other specifications in this class for the `classID` field (e.g., "NDR")
+    - Quote the version value to prevent it from being converted to a number (e.g., "4.0" instead of number 4)
+    - Update the value of `current` to `false` for the previous version of the specification
+
+- Run the continuous integration script from `package.json` to build outputs, run tests, generate a code coverage report, and update documentation:
+
+  ```sh
+  npm run ci
+  ```
+
+  - A message with the new specification ID, number of parsed rules, and number of parsed definitions should appear in the console.
+  - The `/output/` directory should contain new specification-specific rule and definitions files, and the combined `niem-*` files should contain new data.  Scan through the changes to confirm.
+
+- Update the `Supported specifications` section of this `README.md` file to add the new information.
 
 ## Update metadata for existing specifications
 
-To update information like where to view a specification or submit an issue, update the appropriate fields in the `data/index.js` file.
-
-- Change the value of `current` to `false` for the previous version of the specification
-
-- Update the `Supported specifications` section of this `README.md` file to add the new information.
+To update information like where to view a specification or submit an issue, update the appropriate fields in the `data/specifications.yaml` file.
 
 ## Add a new specification class
 
@@ -162,7 +172,7 @@ To add a brand new class of NIEM specification, the following edits will need to
 
 - Save the specification HTML file to the `/specifications/` directory.
 
-  - Rename the specification file with the pattern `ABBREVIATION-VERSION.html` (e.g., `NDR-5.0.html`);
+  - Rename the specification file with the pattern `ABBREVIATION-VERSION.html` (e.g., `NDR-5.0.html`).
 
 - Add metadata about the new specification class and the specific versions of the specification.
 
@@ -188,20 +198,14 @@ To add a brand new class of NIEM specification, the following edits will need to
   - Add the new abbreviation to the JSDoc enumerations for the classID parameter in function `specificationClass()`
   - Return the new class in the array in the `specificationClasses()` getter function
 
-- Build the new outputs:
-
-  ```sh
-  npm run build
-  ```
-
-  - A message with the new specification ID, number of parsed rules, and number of parsed definitions should appear in the console.
-  - The `/output/` directory should contain new specification-specific rule and definitions files, and the combined `niem-*` files should contain new data.  Scan through the changes to confirm.
-
-- Run the continuous integration script from `package.json` to run tests, generate a code coverage report, and update documentation:
+- Run the continuous integration script from `package.json` to build outputs, run tests, generate a code coverage report, and update documentation:
 
   ```sh
   npm run ci
   ```
+
+  - A message with the new specification ID, number of parsed rules, and number of parsed definitions should appear in the console.
+  - The `/output/` directory should contain new specification-specific rule and definitions files, and the combined `niem-*` files should contain new data.  Scan through the changes to confirm.
 
 - Update the `Supported specifications` section of this `README.md` file to add the new information.
 

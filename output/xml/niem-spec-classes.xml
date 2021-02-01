@@ -12,7 +12,8 @@
     <tutorialRelativeURL>/reference/specifications/ndr/</tutorialRelativeURL>
     <changeHistory/>
     <description>The NIEM Naming and Design Rules specifies the data model XML Schema components and XML data for use with the National Information Exchange Model (NIEM).</description>
-    <versions>3.0, 4.0, 5.0</versions>
+    <versionCount>3</versionCount>
+    <versionNumbers>3.0, 4.0, 5.0</versionNumbers>
   </specificationClass>
   <specificationClass>
     <id>IEPD</id>
@@ -26,7 +27,8 @@
     <tutorialRelativeURL>/reference/specifications/mpd/</tutorialRelativeURL>
     <changeHistory/>
     <description>The NIEM Information Exchange Package Documentation (IEPD) Specification specifies normative rules and non-normative guidance for building NIEM information exchange messages. It defines IEPD artifacts like subset schemas, extension schemas, and MPD catalogs; and recommends how the package should be structured.  Prior to NIEM 5.0, this specification was known as the NIEM Model Package Description (MPD) Specification.</description>
-    <versions>3.0.1</versions>
+    <versionCount>2</versionCount>
+    <versionNumbers>3.0.1, 5.0beta1</versionNumbers>
   </specificationClass>
   <specificationClass>
     <id>CodeLists</id>
@@ -40,7 +42,8 @@
     <tutorialRelativeURL>/reference/specifications/code-lists/</tutorialRelativeURL>
     <changeHistory/>
     <description>The Code Lists Specification adds support for new capabilities of NIEM code lists beyond the basic enumeration representations provided by XML and JSON schema.  Key features include the definition of codes in CSV or Genericode files, dynamic code lists via run-time binding, and multi-column code table support.</description>
-    <versions>4.0</versions>
+    <versionCount>1</versionCount>
+    <versionNumbers>4.0</versionNumbers>
   </specificationClass>
   <specificationClass>
     <id>CTAS</id>
@@ -54,7 +57,8 @@
     <tutorialRelativeURL>/reference/specifications/conformance-targets/</tutorialRelativeURL>
     <changeHistory/>
     <description>The Conformance Targets Attribute Specification (CTAS) defines how NIEM XML documents indicate what kind of artifact they are through the use of a conformance targets attribute.</description>
-    <versions>3.0</versions>
+    <versionCount>1</versionCount>
+    <versionNumbers>3.0</versionNumbers>
   </specificationClass>
   <specificationClass>
     <id>JSON</id>
@@ -67,6 +71,7 @@
     <tutorial/>
     <changeHistory/>
     <description>The NIEM JSON Specification establishes the technical basis for using JavaScript Object Notation (JSON) as a data format for exchange of information consistent with NIEM-conformant schemas and information exchange package documentations (IEPDs).</description>
-    <versions>4.0</versions>
+    <versionCount>1</versionCount>
+    <versionNumbers>4.0</versionNumbers>
   </specificationClass>
 </specificationClasses>

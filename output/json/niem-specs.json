@@ -10,7 +10,9 @@
     "applicableReleases": "NIEM 3.0 - NIEM 3.2",
     "resources": "https://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/niem-ndr-3.0.zip",
     "examples": null,
-    "current": false
+    "current": false,
+    "ruleCount": 239,
+    "definitionCount": 54
   },
   {
     "id": "NDR-4.0",
@@ -23,7 +25,9 @@
     "applicableReleases": "NIEM 4.0 - NIEM 4.2",
     "resources": "https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.zip",
     "examples": null,
-    "current": false
+    "current": false,
+    "ruleCount": 255,
+    "definitionCount": 52
   },
   {
     "id": "NDR-5.0",
@@ -36,7 +40,9 @@
     "applicableReleases": "NIEM 5.0 - NIEM 5.2 (future)",
     "resources": "https://niem.github.io/NIEM-NDR/v5.0/niem-ndr-v5.0.zip",
     "examples": null,
-    "current": true
+    "current": true,
+    "ruleCount": 260,
+    "definitionCount": 52
   },
   {
     "id": "MPD-3.0.1",
@@ -49,7 +55,24 @@
     "applicableReleases": "NIEM 3.0 - NIEM 4.2",
     "resources": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/mpd-toolkit-3.0.zip",
     "examples": "https://reference.niem.gov/niem/specification/model-package-description/3.0.1/iepd-examples/",
-    "current": true
+    "current": true,
+    "ruleCount": 60,
+    "definitionCount": 44
+  },
+  {
+    "id": "IEPD-5.0beta1",
+    "classID": "IEPD",
+    "customID": "IEPD",
+    "name": "Information Exchange Package Documentation",
+    "version": "5.0beta1",
+    "url": "https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html",
+    "year": "2015",
+    "applicableReleases": null,
+    "resources": null,
+    "examples": null,
+    "current": false,
+    "ruleCount": 58,
+    "definitionCount": 42
   },
   {
     "id": "CodeLists-4.0",
@@ -62,7 +85,9 @@
     "applicableReleases": "NIEM 4.0 - NIEM 4.2",
     "resources": null,
     "examples": "https://github.com/NIEM/NIEM-Releases/blob/niem-4.0/niem/codes/genc/geo-political/3-6/genc_geo-political_3-6_char3.csv",
-    "current": true
+    "current": true,
+    "ruleCount": 29,
+    "definitionCount": 56
   },
   {
     "id": "CTAS-3.0",
@@ -75,7 +100,9 @@
     "applicableReleases": "NIEM 3.0 and later releases",
     "resources": null,
     "examples": null,
-    "current": true
+    "current": true,
+    "ruleCount": 6,
+    "definitionCount": 5
   },
   {
     "id": "JSON-4.0",
@@ -88,6 +115,8 @@
     "applicableReleases": "NIEM 4.0 - NIEM 4.2",
     "resources": null,
     "examples": null,
-    "current": true
+    "current": true,
+    "ruleCount": 4,
+    "definitionCount": 23
   }
 ]

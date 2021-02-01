@@ -9,10 +9,10 @@
   "scripts": {
     "build": "npm run clean && node bin/index.js",
     "build:debug": "cross-env DEBUG=niem npm run build",
-    "ci": "npm run test:cov && npm run coverage && npm run docs",
+    "ci": "npm run build && npm run test:cov && npm run coverage && npm run docs",
     "clean": "trash output && trash test/output",
     "coverage": "coveralls < coverage/lcov.info",
-    "docs": "trash docs && jsdoc . ./src/index.js ./src ./README.md -d docs -t node_modules/docdash",
+    "docs": "trash docs && jsdoc . ./src/index.js ./src ./README.md -d docs -t node_modules/docdash -c jsdoc.config.json",
     "test": "jest",
     "test:cov": "jest --coverage"
   },

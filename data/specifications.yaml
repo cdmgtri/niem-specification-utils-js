@@ -54,6 +54,16 @@
   current: true
 
 -
+  classID: IEPD
+  version: "5.0beta1"
+  url: https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html
+  year: 2015
+  applicableReleases:
+  resources:
+  examples:
+  current: false
+
+-
   classID: CodeLists
   version: "4.0"
   url: https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html
