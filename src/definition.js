@@ -40,7 +40,7 @@ class Definition {
       definitionTerm: this.term,
       definitionText: this.text,
       definitionLocal: this.local,
-      definitionCurrent: this.specification.current
+      definitionStatus: this.specification.status
     }
   }
 

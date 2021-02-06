@@ -16,7 +16,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>An MPD MUST have an MPD class of http://reference.niem.gov/niem/specification/model-package-description/3.0/#MPD.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -34,7 +34,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>A model package description with an MPD class of http://reference.niem.gov/niem/specification/model-package-description/3.0/#IEPD MUST be an information exchange package documentation.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -52,7 +52,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>An IEPD MUST have the conformance target identifier http://reference.niem.gov/niem/specification/model-package-description/3.0/#IEPD as a value of its c:mpdClassURIList attribute.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -70,7 +70,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>A schema document subset ($SUBSET) for a given reference schema document set ($REFERENCE) MUST be defined such that for all instance XML documents ($XML), where $XML is valid to $SUBSET, $XML is valid to $REFERENCE.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -88,7 +88,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within its root directory, an MPD MUST contain an MPD catalog document artifact with name mpd-catalog.xml.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -106,7 +106,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>An MPD catalog document MUST be valid to mpd-catalog-3.0.xsd Appendix A, MPD Catalog XML Schema Document, below.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -124,7 +124,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>An MPD catalog extension XML catalog document MUST reside in the same relative directory as the mpd-catalog.xml artifact (normally in the MPD root directory)</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -142,7 +142,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>An MPD catalog extension XML catalog document MUST bear the file name (and type) mpd-catalog-extension-xml-catalog.xml.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -160,7 +160,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>An MPD catalog extension XML catalog document MUST resolve all MPD catalog schema extension document namespaces to the correct corresponding local URIs in the MPD.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -178,7 +178,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>An MPD catalog extension schema document MUST conform to the [NIEM Naming and Design Rules 3.0] extension schema conformance target rules.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -196,7 +196,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within an MPD, the schema set formed by mpd-catalog-3.0.xsd and all MPD catalog extension schema documents MUST conform to the [NIEM Naming and Design Rules 3.0] schema set conformance target rules.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -214,7 +214,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Subset schema documents provided to support an MPD schema document extension MUST be a superset of the subset schema documents provided with this specification to support the MPD catalog schema document.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -232,7 +232,7 @@
     <ruleClassification>Interpretation</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>An MPD MUST have an MPD class of a conformance target identifier if and only if that conformance target identifier appears in the c:mpdClassURIList attribute within its MPD catalog document.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -254,7 +254,7 @@
 - beta indicates late development; but changing or incomplete. 
 - rc indicates release candidate; complete but not approved as operational. 
 - rev indicates very minor revision that does not impact schema validation.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -272,7 +272,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>In an MPD catalog document, the value of a c:mpdURI attribute of type xs:anyURI MUST match the production &lt;absolute-URI&gt; as defined by [RFC 3986 URI],  §4.3, Absolute URI.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -290,7 +290,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>A valid MPD URI MUST support the inclusion of a fragment identifier (as a suffix) [RFC 3986 URI].</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -308,7 +308,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>A valid MPD URI MUST NOT contain a fragment identifier [RFC 3986 URI].</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -329,7 +329,7 @@
 - The URI of the MPD that contains the artifact. 
 - A pound-sign character ("#" — also known as a hashtag character). 
 - An identifier that is the artifact’s locally unique path name relative to the MPD root directory.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -347,7 +347,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within an MPD catalog document, the value of a c:pathURI attribute MUST resolve to a resource.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -365,7 +365,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within an MPD catalog document, the value of a c:pathURI attribute owned by a c:XMLCatalog element MUST resolve to an XML catalog document.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -383,7 +383,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within an MPD catalog document, the value of a c:pathURI attribute owned by a c:MPDChangeLog element MUST resolve to a change log.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -401,7 +401,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within an MPD catalog document, the value of a c:pathURI attribute owned by a c:ReadMe element MUST resolve to a readme artifact.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -419,7 +419,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within an MPD catalog document, the value of a c:pathURI attribute owned by a c:IEPSampleXMLDocument element MUST resolve to an XML document.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -437,7 +437,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within an MPD catalog document, the value of a c:pathURI attribute owned by a c:BusinessRulesArtifact element MUST resolve to a business rule schema or business rules artifact.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -455,7 +455,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within an MPD catalog document, the value of a c:pathURI attribute owned by a c:XMLSchemaDocument element MUST resolve to an XML schema document.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -473,7 +473,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within an MPD catalog document, the value of a c:pathURI attribute owned by a c:ExternalSchemaDocument element MUST resolve to an XML schema document.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -491,7 +491,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within an MPD catalog document, the value of a c:pathURI attribute owned by a c:ReferenceSchemaDocument element MUST resolve to a NIEM reference schema document.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -509,7 +509,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within an MPD catalog document, the value of a c:pathURI attribute owned by a c:ExtensionSchemaDocument element MUST resolve to a NIEM extension schema document.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -527,7 +527,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within an MPD catalog document, the value of a c:pathURI attribute owned by a c:SubsetSchemaDocument element MUST resolve to a NIEM subset schema document.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -545,7 +545,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within an MPD catalog document, the value of a c:pathURI attribute owned by a c:Wantlist element MUST resolve to a NIEM wantlist XML document.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -563,7 +563,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within an MPD catalog document, the value of a c:pathURI attribute owned by a c:SchematronSchema element MUST resolve to a Schematron schema.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -581,7 +581,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within an MPD catalog document, the value of a c:pathURI attribute owned by a c:RelaxNGSchema element MUST resolve to a RelaxNG schema.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -599,7 +599,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within an MPD catalog document, the value of a c:pathURI attribute owned by a c:SchemaDocumentSet element MUST resolve to an XML schema document set.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -617,7 +617,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within an MPD catalog document, the value of a c:pathURI attribute owned by a c:ConstraintSchemaDocumentSet element MUST resolve to a NIEM XML schema document set.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -635,7 +635,7 @@
     <ruleClassification>Interpretation</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Any XML schema document set whose c:pathURI attribute resolves to a constraint schema document set MUST be interpreted to be a constraint schema document set.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -658,7 +658,7 @@
 - Locate a structures:id attribute value that matches the fragment string. If more than one exist, then fail (ambiguity error). If none exists, then continue. 
 - Locate a path name (for a directory or file) that matches the fragment string. If more than one exist, then fail (ambiguity error). If none exists, then fail (existence error). 
 - Return the element, directory, or file found.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -676,7 +676,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within an XML catalog document, the value of a uri attribute owned by a er:uri element MUST resolve to a resource.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -694,7 +694,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within an XML catalog document, given an XML schema document resolved by the value of a uri attribute owned by a er:uri element, the XML schema document target namespace MUST equal the value of the name (a namespace string) attribute owned by the er:uri element.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -712,7 +712,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>An IEPD MUST contain a change log artifact that is identified by a c:MPDChangeLog element in its MPD catalog document.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -730,7 +730,7 @@
     <ruleClassification>Interpretation</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>A readme artifact SHOULD (at a minimum) describe the MPD purpose, scope, business value, exchange information, typical senders/receivers, interactions, and references to other documentation.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -748,7 +748,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>An IEPD MUST contain a readme artifact that is identified by a c:ReadMe element in its MPD catalog document.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -769,7 +769,7 @@
 - the IEPD URI, and 
 - the pound sign character (#). and 
 - a locally unique NCName (i.e., a non-colonized name, as defined by [W3C XML Schema Part 2 Datatypes], §3.3.7, NCName).</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -787,7 +787,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>A c:IEPConformanceTarget element MUST own a structures:id attribute.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -805,7 +805,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>The MPD catalog document of an IEPD MUST contain one or more c:IEPConformanceTarget elements.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -823,7 +823,7 @@
     <ruleClassification>Interpretation</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Given a c:xPathText attribute owned by c:ValidityContext, the validity constraint context for the descendant’s validity constraint SHALL be the value of c:xPathText evaluated against the IEP’s document information item (See [W3-XML-InfoSet],  §2.1, The Document Information Item).</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -841,7 +841,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within an MPD catalog document, if an c:IEPConformanceTarget element for an IEP has a c:HasDocumentElement child element owning a c:qualifiedNameList attribute with a value of $LIST, then the document element of the IEP MUST have a QName that is a member of $LIST.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -859,7 +859,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within an MPD catalog document with a c:xPathText attribute owned by a c:ValidToXPath element, a candidate IEP is a valid IEP, ONLY IF the value of c:ValidToXPath applied to the candidate IEP (an XML document) has an effective Boolean value (EBV) equal to true. EBV is defined by [W3C XPath 2.0],  §2.4.3, Effective Boolean Value.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -877,7 +877,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within the MPD catalog document of an IEPD, a c:IEPConformanceTarget element MUST contain a c:IEPSampleXMLDocument child element.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -895,7 +895,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within an MPD catalog document with a c:pathURI attribute owned by a c:IEPSampleXMLDocument, the artifact resolved by the value of c:pathURI MUST be valid for the validity constraints of the c:IEPConformanceTarget parent of c:IEPSampleXMLDocument.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -913,7 +913,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>An IEPD MUST contain a conformance assertion artifact that is identified by a c:ConformanceAssertion element in its MPD catalog document.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -931,7 +931,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>If present, a NIEM wantlist MUST reside within the root of the MPD subdirectory that groups and defines its corresponding subset schema document set (e.g., niem).</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -949,7 +949,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>An MPD in ZIP file format represents a sub-tree of a file system. Such an archive MUST preserve and store the logical directory structure intended by its author for respository format.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -967,7 +967,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within an MPD, each XML schema document (XSD) or instance XML document (XML) artifact that uses a conformance targets attribute (as defined by [NIEM Conformance Targets Attribute Specification 3.0]) MUST satisfy the [NIEM Naming and Design Rules 3.0] rules for the conformance targets it declares.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -985,7 +985,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>An MPD in ZIP file format MUST uncompress (unzip) to one and only one MPD root directory.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -1003,7 +1003,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>An element information item with a type definition validly derived from c:SchemaDocumentSetType MUST have a child element with an element declaration that is in the substitution group of c:XMLCatalog or c:XMLSchemaDocument.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -1021,7 +1021,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>The file name of an IEPD ZIP file (iepd-filename) SHOULD adhere to the syntax defined by the regular expression:The status values are as defined in Rule 5-10, MPD Version Number Syntax, above.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -1039,7 +1039,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>An absolute reference to an Internet resource MUST use a well-known URI scheme (e.g., http, https, ftp, ftps) and MUST resolve. If applicable, documentation SHOULD describe how to resolve with security, account, and/or password information.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -1057,7 +1057,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>An IEPD SHOULD contain all artifacts needed to understand it and facilitate its correct implementation.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -1075,7 +1075,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within an MPD, a non-NIEM-conformant external schema document reference to another schema document and/or namespace MUST resolve to a local resource. schemaLocation attributes or XML catalogs can be used to ensure resolution.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>MPD-3.0.1</specificationID>
@@ -1093,7 +1093,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within any artifact of an MPD, any direct reference to another resource (i.e., another artifact such as an image, schema, stylesheet, etc.) that is required to process or display an artifact SHOULD exist within the MPD at the location specified by that reference.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -1111,7 +1111,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>An IEPD MUST have an IEPD conformance target identifier of http://reference.niem.gov/niem/specification/iepd/5.0/#IEPD as a value of its c:iepdConformanceTargetIdentifierURIList attribute.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -1129,7 +1129,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>An IEPD MUST have an IEPD conformance target identifier of http://reference.niem.gov/niem/specification/iepd/5.0/#WF-IEPD.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -1147,7 +1147,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>A schema document subset ($SUBSET) for a given reference schema document set ($REFERENCE) MUST be defined such that for all instance XML documents ($XML), where $XML is valid to $SUBSET, $XML is valid to $REFERENCE.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -1165,7 +1165,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within its root directory, an IEPD MUST contain an IEPD catalog document artifact with name iepd-catalog.xml.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -1183,7 +1183,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>An IEPD catalog document MUST be valid to iepd-catalog.xsd as provided by Appendix A, IEPD Catalog XML Schema Document, below.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -1201,7 +1201,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>An IEPD catalog extension XML catalog document MUST reside in the same relative directory as the iepd-catalog.xml artifact (normally in the IEPD root directory)</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -1219,7 +1219,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>An IEPD catalog extension XML catalog document MUST bear the file name (and type) iepd-catalog-extension-xml-catalog.xml.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -1237,7 +1237,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>An IEPD catalog extension XML catalog document MUST resolve all IEPD catalog schema extension document namespaces to the correct corresponding local URIs in the IEPD.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -1255,7 +1255,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>An IEPD catalog extension schema document MUST conform to the [NIEM Naming and Design Rules] extension schema document conformance target rules.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -1273,7 +1273,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within an IEPD, the schema set formed by iepd-catalog.xsd and all IEPD catalog extension schema documents MUST conform to the [NIEM Naming and Design Rules] schema set conformance target rules.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -1291,7 +1291,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Subset schema documents provided to support an IEPD schema document extension MUST be a superset of the subset schema documents provided with this specification to support the IEPD catalog schema document.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -1313,7 +1313,7 @@
 - beta indicates late development; but changing or incomplete. 
 - rc indicates release candidate; complete but not approved as operational. 
 - rev indicates very minor revision that does not impact schema validation.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -1331,7 +1331,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>In an IEPD catalog document, the value of a c:iepdURI attribute of type xs:anyURI MUST match the production &lt;absolute-URI&gt; as defined by [RFC 3986 URI],  §4.3, Absolute URI.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -1349,7 +1349,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>A valid IEPD URI MUST support the inclusion of a fragment identifier (as a suffix) [RFC 3986 URI].</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -1367,7 +1367,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>A valid IEPD URI MUST NOT contain a fragment identifier [RFC 3986 URI].</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -1388,7 +1388,7 @@
 - The URI of the IEPD that contains the artifact. 
 - A pound-sign character ("#" — also known as a hashtag character). 
 - An identifier that is the artifact’s locally unique path name relative to the IEPD root directory.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -1406,7 +1406,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within an IEPD catalog document, the value of a c:pathURI attribute MUST resolve to a resource.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -1424,7 +1424,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within an IEPD catalog document, the value of a c:pathURI attribute owned by a c:XMLCatalog element MUST resolve to an XML catalog document.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -1442,7 +1442,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within an IEPD catalog document, the value of a c:pathURI attribute owned by a c:IEPDChangeLog element MUST resolve to a change log.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -1460,7 +1460,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within an IEPD catalog document, the value of a c:pathURI attribute owned by a c:ReadMe element MUST resolve to a readme artifact.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -1478,7 +1478,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within an IEPD catalog document, the value of a c:pathURI attribute owned by a c:IEPSampleXMLDocument element MUST resolve to an XML document.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -1496,7 +1496,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within an IEPD catalog document, the value of a c:pathURI attribute owned by a c:BusinessRulesArtifact element MUST resolve to a business rule schema or business rules artifact.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -1514,7 +1514,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within an IEPD catalog document, the value of a c:pathURI attribute owned by a c:XMLSchemaDocument element MUST resolve to an XML schema document.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -1532,7 +1532,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within an IEPD catalog document, the value of a c:pathURI attribute owned by a c:ExternalSchemaDocument element MUST resolve to an XML schema document.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -1550,7 +1550,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within an IEPD catalog document, the value of a c:pathURI attribute owned by a c:ReferenceSchemaDocument element MUST resolve to a NIEM reference schema document.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -1568,7 +1568,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within an IEPD catalog document, the value of a c:pathURI attribute owned by a c:ExtensionSchemaDocument element MUST resolve to a NIEM extension schema document.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -1586,7 +1586,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within an IEPD catalog document, the value of a c:pathURI attribute owned by a c:SubsetSchemaDocument element MUST resolve to a NIEM subset schema document.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -1604,7 +1604,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within an IEPD catalog document, the value of a c:pathURI attribute owned by a c:Wantlist element MUST resolve to a NIEM wantlist XML document.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -1622,7 +1622,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within an IEPD catalog document, the value of a c:pathURI attribute owned by a c:SchematronSchema element MUST resolve to a Schematron schema.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -1640,7 +1640,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within an IEPD catalog document, the value of a c:pathURI attribute owned by a c:RelaxNGSchema element MUST resolve to a RelaxNG schema.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -1658,7 +1658,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within an IEPD catalog document, the value of a c:pathURI attribute owned by a c:SchemaDocumentSet element MUST resolve to an XML schema document set.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -1676,7 +1676,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within an IEPD catalog document, the value of a c:pathURI attribute owned by a c:ConstraintSchemaDocumentSet element MUST resolve to a NIEM XML schema document set.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -1694,7 +1694,7 @@
     <ruleClassification>Interpretation</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Any XML schema document set whose c:pathURI attribute resolves to a constraint schema document set MUST be interpreted to be a constraint schema document set.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -1717,7 +1717,7 @@
 - Locate a structures:id attribute value that matches the fragment string. If more than one exist, then fail (ambiguity error). If none exists, then continue. 
 - Locate a path name (for a directory or file) that matches the fragment string. If more than one exist, then fail (ambiguity error). If none exists, then fail (existence error). 
 - Return the element, directory, or file found.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -1735,7 +1735,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within an XML catalog document, the value of a uri attribute owned by a er:uri element MUST resolve to a resource.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -1753,7 +1753,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within an XML catalog document, given an XML schema document resolved by the value of a uri attribute owned by a er:uri element, the XML schema document target namespace MUST equal the value of the name (a namespace string) attribute owned by the er:uri element.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -1771,7 +1771,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>An IEPD MUST contain a change log artifact that is identified by a c:IEPDChangeLog element in its IEPD catalog document.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -1789,7 +1789,7 @@
     <ruleClassification>Interpretation</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>A readme artifact SHOULD (at a minimum) describe the IEPD purpose, scope, business value, exchange information, typical senders/receivers, interactions, and references to other documentation.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -1807,7 +1807,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>An IEPD MUST contain a readme artifact that is identified by a c:ReadMe element in its IEPD catalog document.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -1828,7 +1828,7 @@
 - the IEPD URI, and 
 - the pound sign character (#). and 
 - a locally unique NCName (i.e., a non-colonized name, as defined by [W3C XML Schema Part 2 Datatypes], §3.3.7, NCName).</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -1846,7 +1846,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>A c:IEPConformanceTarget element MUST own a structures:id attribute.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -1864,7 +1864,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>The IEPD catalog document of an IEPD MUST contain one or more c:IEPConformanceTarget elements.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -1882,7 +1882,7 @@
     <ruleClassification>Interpretation</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Given a c:xPathText attribute owned by c:ValidityContext, the validity constraint context for the descendant’s validity constraint SHALL be the value of c:xPathText evaluated against the IEP’s document information item (See [W3-XML-InfoSet],  §2.1, The Document Information Item).</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -1900,7 +1900,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within an IEPD catalog document, if an c:IEPConformanceTarget element for an IEP has a c:HasDocumentElement child element owning a c:qualifiedNameList attribute with a value of $LIST, then the document element of the IEP MUST have a QName that is a member of $LIST.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -1918,7 +1918,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within an IEPD catalog document with a c:xPathText attribute owned by a c:ValidToXPath element, a candidate IEP is a valid IEP, ONLY IF the value of c:ValidToXPath applied to the candidate IEP (an XML document) has an effective Boolean value (EBV) equal to true. EBV is defined by [W3C XPath 3.1],  §2.4.3, Effective Boolean Value.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -1936,7 +1936,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within the IEPD catalog document of an IEPD, a c:IEPConformanceTarget element MUST contain a c:IEPSampleXMLDocument child element.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -1954,7 +1954,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within an IEPD catalog document with a c:pathURI attribute owned by a c:IEPSampleXMLDocument, the artifact resolved by the value of c:pathURI MUST be valid for the validity constraints of the c:IEPConformanceTarget parent of c:IEPSampleXMLDocument.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -1972,7 +1972,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>An IEPD MUST contain a conformance assertion artifact that is identified by a c:ConformanceAssertion element in its IEPD catalog document.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -1990,7 +1990,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>If present, a NIEM wantlist MUST reside within the root of the IEPD subdirectory that groups and defines its corresponding subset schema document set (e.g., niem).</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -2008,7 +2008,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>An IEPD in ZIP file format represents a sub-tree of a file system. Such an archive MUST preserve and store the logical directory structure intended by its author for respository format.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -2026,7 +2026,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within an IEPD, each XML schema document (XSD) or instance XML document (XML) artifact that uses a conformance targets attribute (as defined by [NIEM Conformance Targets Attribute Specification]) MUST satisfy the [NIEM Naming and Design Rules] rules for the conformance targets it declares.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -2044,7 +2044,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>An IEPD in ZIP file format MUST uncompress (unzip) to one and only one IEPD root directory.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -2062,7 +2062,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>An element information item with a type definition validly derived from c:SchemaDocumentSetType MUST have a child element with an element declaration that is in the substitution group of c:XMLCatalog or c:XMLSchemaDocument.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -2080,7 +2080,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>The file name of an IEPD ZIP file (iepd-filename) SHOULD adhere to the syntax defined by the regular expression:The status values are as defined in Rule 5-9, IEPD Version Number Syntax (WF-IEPD), above.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -2098,7 +2098,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>An absolute reference to an Internet resource MUST use a well-known URI scheme (e.g., http, https, ftp, ftps) and MUST resolve. If applicable, documentation SHOULD describe how to resolve with security, account, and/or password information.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -2116,7 +2116,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>An IEPD SHOULD contain all artifacts needed to understand it and facilitate its correct implementation.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -2134,7 +2134,7 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within an IEPD, a non-NIEM-conformant external schema document reference to another schema document and/or namespace MUST resolve to a local resource. schemaLocation attributes or XML catalogs can be used to ensure resolution.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
   <rule>
     <specificationID>IEPD-5.0beta1</specificationID>
@@ -2152,6 +2152,6 @@
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within any artifact of an IEPD, any direct reference to another resource (i.e., another artifact such as an image, schema, stylesheet, etc.) that is required to process or display an artifact SHOULD exist within the IEPD at the location specified by that reference.</ruleText>
-    <ruleCurrent>false</ruleCurrent>
+    <ruleStatus>draft</ruleStatus>
   </rule>
 </rules>

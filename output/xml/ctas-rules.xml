@@ -16,7 +16,7 @@
     <ruleClassification/>
     <ruleStyle>text</ruleStyle>
     <ruleText>A conformant document MUST be an XML document.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>CTAS-3.0</specificationID>
@@ -34,7 +34,7 @@
     <ruleClassification/>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within a conformant document, every occurrence of the attribute {http://release.niem.gov/niem/conformanceTargets/3.0/}conformanceTargets MUST be locally schema-valid to the XML Schema component definition contained in Figure B-1, XML Schema Document for Conformance Targets Attribute.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>CTAS-3.0</specificationID>
@@ -52,7 +52,7 @@
     <ruleClassification/>
     <ruleStyle>text</ruleStyle>
     <ruleText>A conformant document MUST NOT contain any element or attribute information item that has the namespace name http://release.niem.gov/niem/conformanceTargets/3.0/, other than attribute {http://release.niem.gov/niem/conformanceTargets/3.0/}conformanceTargets.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>CTAS-3.0</specificationID>
@@ -70,7 +70,7 @@
     <ruleClassification/>
     <ruleStyle>text</ruleStyle>
     <ruleText>A conformant document MUST NOT contain an attribute {http://www.w3.org/2001/XMLSchema-instance}type with a value that has a namespace name of http://release.niem.gov/niem/conformanceTargets/3.0/.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>CTAS-3.0</specificationID>
@@ -88,7 +88,7 @@
     <ruleClassification/>
     <ruleStyle>text</ruleStyle>
     <ruleText>Within a conformant document, each item in the value of an attribute {http://release.niem.gov/niem/conformanceTargets/3.0/}conformanceTargets MUST be an absolute IRI reference.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
   <rule>
     <specificationID>CTAS-3.0</specificationID>
@@ -106,6 +106,6 @@
     <ruleClassification/>
     <ruleStyle>text</ruleStyle>
     <ruleText>A conformant document MAY include any number of occurrences of the attribute {http://release.niem.gov/niem/conformanceTargets/3.0/}conformanceTargets.</ruleText>
-    <ruleCurrent>true</ruleCurrent>
+    <ruleStatus>current</ruleStatus>
   </rule>
 </rules>

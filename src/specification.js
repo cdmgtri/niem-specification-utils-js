@@ -12,10 +12,10 @@ class Specification {
    * @param {String} applicableReleases - NIEM releases for which this spec applies
    * @param {String} resources - URL to view or download additional resources for this spec
    * @param {String} examples - URL to view examples associated with this spec
-   * @param {Boolean} current - True if this specification is the most current of its class
+   * @param {"current"|"draft"|"archived"|""} status - current, draft, archived, or blank for a previous version
    * @param {String} html - The HTML text of the specification.
    */
-  constructor(specificationClass, version="", url="", year="", applicableReleases="", resources="", examples="", current=false, html="") {
+  constructor(specificationClass, version="", url="", year="", applicableReleases="", resources="", examples="", status="", html="") {
 
     this.specificationClass = specificationClass;
     this.version = version;
@@ -24,7 +24,7 @@ class Specification {
     this.applicableReleases = applicableReleases;
     this.resources = resources;
     this.examples = examples;
-    this.current = current;
+    this.status = status;
     this.html = html;
 
     /** @type {Rule[]} */
@@ -122,7 +122,7 @@ class Specification {
       applicableReleases: this.applicableReleases,
       resources: this.resources,
       examples: this.examples,
-      current: this.current,
+      status: this.status,
       ruleCount: this.rules.length,
       definitionCount: this.defs.length
     }

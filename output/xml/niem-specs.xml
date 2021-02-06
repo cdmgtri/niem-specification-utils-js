@@ -11,7 +11,7 @@
     <applicableReleases>NIEM 3.0 - NIEM 3.2</applicableReleases>
     <resources>https://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/niem-ndr-3.0.zip</resources>
     <examples/>
-    <current>false</current>
+    <status/>
     <ruleCount>239</ruleCount>
     <definitionCount>54</definitionCount>
   </specification>
@@ -26,7 +26,7 @@
     <applicableReleases>NIEM 4.0 - NIEM 4.2</applicableReleases>
     <resources>https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.zip</resources>
     <examples/>
-    <current>false</current>
+    <status/>
     <ruleCount>255</ruleCount>
     <definitionCount>52</definitionCount>
   </specification>
@@ -38,10 +38,10 @@
     <version>5.0</version>
     <url>https://niem.github.io/NIEM-NDR/v5.0/niem-ndr.html</url>
     <year>2020</year>
-    <applicableReleases>NIEM 5.0 - NIEM 5.2 (future)</applicableReleases>
+    <applicableReleases>NIEM 5.0 - NIEM 5.2</applicableReleases>
     <resources>https://niem.github.io/NIEM-NDR/v5.0/niem-ndr-v5.0.zip</resources>
     <examples/>
-    <current>true</current>
+    <status>current</status>
     <ruleCount>260</ruleCount>
     <definitionCount>52</definitionCount>
   </specification>
@@ -56,7 +56,7 @@
     <applicableReleases>NIEM 3.0 - NIEM 4.2</applicableReleases>
     <resources>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/mpd-toolkit-3.0.zip</resources>
     <examples>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/iepd-examples/</examples>
-    <current>true</current>
+    <status>current</status>
     <ruleCount>60</ruleCount>
     <definitionCount>44</definitionCount>
   </specification>
@@ -71,7 +71,7 @@
     <applicableReleases/>
     <resources/>
     <examples/>
-    <current>false</current>
+    <status>draft</status>
     <ruleCount>58</ruleCount>
     <definitionCount>42</definitionCount>
   </specification>
@@ -86,7 +86,7 @@
     <applicableReleases>NIEM 4.0 - NIEM 4.2</applicableReleases>
     <resources/>
     <examples>https://github.com/NIEM/NIEM-Releases/blob/niem-4.0/niem/codes/genc/geo-political/3-6/genc_geo-political_3-6_char3.csv</examples>
-    <current>true</current>
+    <status>current</status>
     <ruleCount>29</ruleCount>
     <definitionCount>56</definitionCount>
   </specification>
@@ -101,7 +101,7 @@
     <applicableReleases>NIEM 3.0 and later releases</applicableReleases>
     <resources/>
     <examples/>
-    <current>true</current>
+    <status>current</status>
     <ruleCount>6</ruleCount>
     <definitionCount>5</definitionCount>
   </specification>
@@ -116,7 +116,7 @@
     <applicableReleases>NIEM 4.0 - NIEM 4.2</applicableReleases>
     <resources/>
     <examples/>
-    <current>true</current>
+    <status>current</status>
     <ruleCount>4</ruleCount>
     <definitionCount>23</definitionCount>
   </specification>

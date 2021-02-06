@@ -11,7 +11,7 @@
     "definitionTerm": "conformance target",
     "definitionText": "A conformance target is a class of artifact, such as an interface, protocol, document, platform, process or service, that is the subject of conformance clauses and normative statements. There may be several conformance targets defined within a specification, and these targets may be diverse so as to reflect different aspects of a specification. For example, a protocol message and a protocol engine may be different conformance targets.",
     "definitionLocal": true,
-    "definitionCurrent": true
+    "definitionStatus": "current"
   },
   {
     "specificationID": "CTAS-3.0",
@@ -25,7 +25,7 @@
     "definitionTerm": "conformance target identifier",
     "definitionText": "A conformance target identifier is an internationalized resource identifier that uniquely identifies a conformance target.",
     "definitionLocal": true,
-    "definitionCurrent": true
+    "definitionStatus": "current"
   },
   {
     "specificationID": "CTAS-3.0",
@@ -39,7 +39,7 @@
     "definitionTerm": "conformant document",
     "definitionText": "A conformant document is a document that uses the conformance targets attribute defined by this specification to express a claim that it conforms to specific conformance targets. A conformant document MUST satisfy all rules in this specification for conformant documents.",
     "definitionLocal": true,
-    "definitionCurrent": true
+    "definitionStatus": "current"
   },
   {
     "specificationID": "CTAS-3.0",
@@ -53,7 +53,7 @@
     "definitionTerm": "effective conformance target identifier",
     "definitionText": "An effective conformance target identifier of a conformant document is an internationalized resource identifier reference that occurs in the document's effective conformance targets attribute.",
     "definitionLocal": true,
-    "definitionCurrent": true
+    "definitionStatus": "current"
   },
   {
     "specificationID": "CTAS-3.0",
@@ -67,6 +67,6 @@
     "definitionTerm": "effective conformance targets attribute",
     "definitionText": "The effective conformance targets attribute of a conformant document is the first occurrence of the attribute {http://release.niem.gov/niem/conformanceTargets/3.0/}conformanceTargets, in document order.",
     "definitionLocal": true,
-    "definitionCurrent": true
+    "definitionStatus": "current"
   }
 ]

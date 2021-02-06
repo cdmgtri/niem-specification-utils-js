@@ -12,7 +12,7 @@
     <definitionTerm>conformance target</definitionTerm>
     <definitionText>A conformance target is a class of artifact, such as an interface, protocol, document, platform, process or service, that is the subject of conformance clauses and normative statements. There may be several conformance targets defined within a specification, and these targets may be diverse so as to reflect different aspects of a specification. For example, a protocol message and a protocol engine may be different conformance targets.</definitionText>
     <definitionLocal>true</definitionLocal>
-    <definitionCurrent>true</definitionCurrent>
+    <definitionStatus>current</definitionStatus>
   </definition>
   <definition>
     <specificationID>CTAS-3.0</specificationID>
@@ -26,7 +26,7 @@
     <definitionTerm>conformance target identifier</definitionTerm>
     <definitionText>A conformance target identifier is an internationalized resource identifier that uniquely identifies a conformance target.</definitionText>
     <definitionLocal>true</definitionLocal>
-    <definitionCurrent>true</definitionCurrent>
+    <definitionStatus>current</definitionStatus>
   </definition>
   <definition>
     <specificationID>CTAS-3.0</specificationID>
@@ -40,7 +40,7 @@
     <definitionTerm>conformant document</definitionTerm>
     <definitionText>A conformant document is a document that uses the conformance targets attribute defined by this specification to express a claim that it conforms to specific conformance targets. A conformant document MUST satisfy all rules in this specification for conformant documents.</definitionText>
     <definitionLocal>true</definitionLocal>
-    <definitionCurrent>true</definitionCurrent>
+    <definitionStatus>current</definitionStatus>
   </definition>
   <definition>
     <specificationID>CTAS-3.0</specificationID>
@@ -54,7 +54,7 @@
     <definitionTerm>effective conformance target identifier</definitionTerm>
     <definitionText>An effective conformance target identifier of a conformant document is an internationalized resource identifier reference that occurs in the document's effective conformance targets attribute.</definitionText>
     <definitionLocal>true</definitionLocal>
-    <definitionCurrent>true</definitionCurrent>
+    <definitionStatus>current</definitionStatus>
   </definition>
   <definition>
     <specificationID>CTAS-3.0</specificationID>
@@ -68,6 +68,6 @@
     <definitionTerm>effective conformance targets attribute</definitionTerm>
     <definitionText>The effective conformance targets attribute of a conformant document is the first occurrence of the attribute {http://release.niem.gov/niem/conformanceTargets/3.0/}conformanceTargets, in document order.</definitionText>
     <definitionLocal>true</definitionLocal>
-    <definitionCurrent>true</definitionCurrent>
+    <definitionStatus>current</definitionStatus>
   </definition>
 </definitions>

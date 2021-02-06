@@ -76,7 +76,7 @@ class NIEMSpecifications {
 
       // Create the new specification from the metadata
       let SpecializedSpecificationConstructor = SpecificationConstructors[entry.classID];
-      let specification = new SpecializedSpecificationConstructor(specificationClass, entry.version, entry.url, entry.year, entry.applicableReleases, entry.resources, entry.examples, entry.current, html);
+      let specification = new SpecializedSpecificationConstructor(specificationClass, entry.version, entry.url, entry.year, entry.applicableReleases, entry.resources, entry.examples, entry.status, html);
 
       // Add the specification object to its specification class
       specificationClass.specifications.push(specification);

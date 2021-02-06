@@ -70,7 +70,7 @@ class Rule {
       ruleClassification: this.classification,
       ruleStyle: this.style,
       ruleText: this.text,
-      ruleCurrent: this.specification.current
+      ruleStatus: this.specification.status
     }
   }
 

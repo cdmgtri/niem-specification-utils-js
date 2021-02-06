@@ -10,7 +10,7 @@
 #   applicableReleases:
 #   resources:
 #   examples:
-#   current:
+#   status:
 
 
 -
@@ -21,7 +21,7 @@
   applicableReleases: NIEM 3.0 - NIEM 3.2
   resources: https://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/niem-ndr-3.0.zip
   examples:
-  current: false
+  status:
 
 -
   classID: NDR
@@ -31,17 +31,17 @@
   applicableReleases: NIEM 4.0 - NIEM 4.2
   resources: https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.zip
   examples:
-  current: false
+  status:
 
 -
   classID: NDR
   version: "5.0"
   url: https://niem.github.io/NIEM-NDR/v5.0/niem-ndr.html
   year: 2020
-  applicableReleases: NIEM 5.0 - NIEM 5.2 (future)
+  applicableReleases: NIEM 5.0 - NIEM 5.2
   resources: https://niem.github.io/NIEM-NDR/v5.0/niem-ndr-v5.0.zip
   examples:
-  current: true
+  status: current
 
 -
   classID: IEPD
@@ -51,7 +51,7 @@
   applicableReleases: NIEM 3.0 - NIEM 4.2
   resources: https://reference.niem.gov/niem/specification/model-package-description/3.0.1/mpd-toolkit-3.0.zip
   examples: https://reference.niem.gov/niem/specification/model-package-description/3.0.1/iepd-examples/
-  current: true
+  status: current
 
 -
   classID: IEPD
@@ -61,7 +61,7 @@
   applicableReleases:
   resources:
   examples:
-  current: false
+  status: draft
 
 -
   classID: CodeLists
@@ -71,7 +71,7 @@
   applicableReleases: NIEM 4.0 - NIEM 4.2
   resources:
   examples: https://github.com/NIEM/NIEM-Releases/blob/niem-4.0/niem/codes/genc/geo-political/3-6/genc_geo-political_3-6_char3.csv
-  current: true
+  status: current
 
 -
   classID: CTAS
@@ -81,7 +81,7 @@
   applicableReleases: NIEM 3.0 and later releases
   resources:
   examples:
-  current: true
+  status: current
 
 -
   classID: JSON
@@ -91,4 +91,4 @@
   applicableReleases: NIEM 4.0 - NIEM 4.2
   resources:
   examples:
-  current: true
+  status: current

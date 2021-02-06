@@ -10,7 +10,7 @@
     definitionTerm: 'appinfo namespace'
     definitionText: 'The appinfo namespace is the namespace represented by the URI http://release.niem.gov/niem/appinfo/3.0/.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -23,7 +23,7 @@
     definitionTerm: 'application information'
     definitionText: 'A component is said to have application information of some element $element when the XML Schema element that defines the component has an immediate child element xs:annotation, which has an immediate child element xs:appinfo, which has as an immediate child the element $element.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -36,7 +36,7 @@
     definitionTerm: association
     definitionText: 'In a NIEM-conformant schema, an association is an element whose type is an association type.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -49,7 +49,7 @@
     definitionTerm: 'association type'
     definitionText: 'In a NIEM-conformant schema, an association type is a type that establishes a relationship between objects, along with the properties of that relationship. An association type provides a structure that does not establish existence of an object but instead specifies relationships between objects.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -62,7 +62,7 @@
     definitionTerm: attribute
     definitionText: 'An attribute is an attribute information item, as defined by [XML Infoset] Section 2.3, Attribute Information Items'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -75,7 +75,7 @@
     definitionTerm: 'augmentable type'
     definitionText: 'An augmentable type is complex type definition that is defined by either a reference schema document or by an extension schema document, and is either an association type, or an object type that has complex content and is not an external adapter type.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -88,7 +88,7 @@
     definitionTerm: augmentation
     definitionText: 'An augmentation is an element that is a child of an element that is an instance of an augmentable type, and is a member of the substitution group of the augmentation point element declaration for the augmentable type.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -101,7 +101,7 @@
     definitionTerm: 'augmentation element declaration'
     definitionText: 'An augmentation element declaration is an element declaration that has a type that is an augmentation type, and carries elements that establish a relationship to its parent object or association is designed to be used as an augmentation of its parent object or association'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -114,7 +114,7 @@
     definitionTerm: 'augmentation type'
     definitionText: 'An augmentation type is a complex type definition that provides elements that establish relationships to a base object or association, rather than to the instance of the augmentation type itself, and is designed to be the type of an augmentation element declaration.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -127,7 +127,7 @@
     definitionTerm: 'base type definition'
     definitionText: 'The term base type definition is as defined by [XML Schema Structures] Section 2.2.1.1, Type Definition Hierarchy, which states:A type definition used as the basis for an extension or restriction is known as the base type definition of that definition.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -140,7 +140,7 @@
     definitionTerm: 'code simple type'
     definitionText: 'A code simple type is a simple type definition schema component that is constrained by one or more enumeration facets.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -153,7 +153,7 @@
     definitionTerm: 'code type'
     definitionText: 'A code type is a NIEM object type with a content model that is constrained by one or more enumeration facets.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -166,7 +166,7 @@
     definitionTerm: 'complex type definition'
     definitionText: 'The term complex type definition is as defined by [XML Schema Structures] Section 2.2.1.3, Complex Type Definition.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -179,7 +179,7 @@
     definitionTerm: 'conformance target'
     definitionText: 'The term conformance target is as defined by [CTAS], which states:A conformance target is a class of artifact, such as an interface, protocol, document, platform, process or service, that is the subject of conformance clauses and normative statements. There may be several conformance targets defined within a specification, and these targets may be diverse so as to reflect different aspects of a specification. For example, a protocol message and a protocol engine may be different conformance targets.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -192,7 +192,7 @@
     definitionTerm: 'conformance target identifier'
     definitionText: 'The term conformance target identifier is as defined by [CTAS], which states:A conformance target identifier is an internationalized resource identifier that uniquely identifies a conformance target.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -205,7 +205,7 @@
     definitionTerm: 'conformant element information item'
     definitionText: 'A conformant element information item is an element information item that satisfies all of the following criteria: Its [namespace name] and [local name] matches an element declared by a reference schema document or extension schema document. It occurs within a conformant instance XML document. It is locally schema-valid. It satisfies all rules specified in this document applicable to an element in a conformant instance XML document.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -218,7 +218,7 @@
     definitionTerm: 'conformant instance XML document'
     definitionText: 'A conformant instance XML document is an XML document that is instance document valid to a conformant schema document set. It is a conformance target of this specification. A conformant instance XML document MUST conform to all rules of this specification that apply to this conformance target.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -231,7 +231,7 @@
     definitionTerm: 'conformant schema document set'
     definitionText: 'A conformant schema document set is a collection of schema documents that together are capable of validating a conformant instance XML document. It is a conformance target of this specification. A conformant schema document set MUST conform to all rules of this specification that apply to this conformance target.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -244,7 +244,7 @@
     definitionTerm: 'constraint rule'
     definitionText: 'A constraint rule is a rule that sets a requirement on an artifact with respect to its conformance to a conformance target.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -257,7 +257,7 @@
     definitionTerm: 'content element'
     definitionText: 'A content element is an element information item that does not contain an attribute structures:ref. A content element expresses its value as text and element content of the element information item.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -270,7 +270,7 @@
     definitionTerm: 'data definition'
     definitionText: 'The data definition of a schema component is the content of the first occurrence of the element xs:documentation that is an immediate child of an occurrence of an element xs:annotation that is an immediate child of the element that defines the component.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -283,7 +283,7 @@
     definitionTerm: 'deprecated component'
     definitionText: 'A deprecated component is one that developers are discouraged from using, typically because a better alternative exists, yet which is maintained in the schema for compatibility with previous versions of the namespace.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -296,7 +296,7 @@
     definitionTerm: 'documented component'
     definitionText: 'In a NIEM-conformant schema, a documented component is schema component that has an associated data definition. Each documented component has a textual definition, so that the component may be well-understood.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -309,7 +309,7 @@
     definitionTerm: 'effective conformance target identifier'
     definitionText: 'The term effective conformance target identifier is as defined by [CTAS] Section 4, Semantics and Use, which states:An effective conformance target identifier of a conformant document is an internationalized resource identifier reference that occurs in the document’s effective conformance targets attribute.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -322,7 +322,7 @@
     definitionTerm: element
     definitionText: 'An element is an element information item, as defined by [XML Infoset] Section 2.2, Element Information Items'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -335,7 +335,7 @@
     definitionTerm: 'element declaration'
     definitionText: 'The term element declaration is as defined by [XML Schema Structures] Section 2.2.2.1, Element Declaration.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -348,7 +348,7 @@
     definitionTerm: 'extension schema document'
     definitionText: 'An extension schema document is a schema document that is intended to provide definitions of schema components that are intended for reuse within a more narrow scope than those defined by a reference schema document. It is a conformance target of this specification. An extension schema document MUST conform to all rules of this specification that apply to this conformance target. An XML document with a conformance target identifier of http://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/#ExtensionSchemaDocument MUST be an extension schema document.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -361,7 +361,7 @@
     definitionTerm: 'external adapter type'
     definitionText: 'An external adapter type is a NIEM-conformant type that adapts external components for use within NIEM. An external adapter type creates a new class of object that embodies a single concept composed of external components. A NIEM-conformant schema defines an external adapter type.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -374,7 +374,7 @@
     definitionTerm: 'external schema document'
     definitionText: 'An external schema document is any schema document that is not one of a reference schema document, an extension schema document, or a schema document that has the structures namespace as its target namespace.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -387,7 +387,7 @@
     definitionTerm: informative
     definitionText: 'The term informative is as defined by [ConfReq] Section 7.2, Conformance by key words, which states:INFORMATIVE (NON-NORMATIVE) — statements provided for informational purposes, intended to assist the understanding or use of the specification and shall not contain provisions that are required for conformance.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -400,7 +400,7 @@
     definitionTerm: 'instance document'
     definitionText: 'An instance document (of an XML Schema) is an XML document that is valid against the XML Schema.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -413,7 +413,7 @@
     definitionTerm: 'interpretation rule'
     definitionText: 'An interpretation rule is a rule that sets the methodology, pattern, or procedure for understanding some aspect of an instance of a conformance target.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -426,7 +426,7 @@
     definitionTerm: 'local term'
     definitionText: 'In a conformant schema document, a local term is a word, phrase, acronym, or other string of characters for which all of the following are true: It is not a term defined in the [OED], or it has a non-OED definition, or its word sense may not be clear. It is introduced into the schema document via an appinfo element with a [namespace name] of the local terminology appinfo namespace. It is used in the local name of a schema component within the schema document.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -439,7 +439,7 @@
     definitionTerm: 'local terminology appinfo namespace'
     definitionText: 'The local terminology appinfo namespace is the XML Schema namespace represented by the URI http://release.niem.gov/niem/localTerminology/3.0/.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -452,7 +452,7 @@
     definitionTerm: 'machine-readable annotation'
     definitionText: 'An information item within a schema is defined to be a machine-readable annotation when all of the following are true: It is one of the following: It is an element information item that is a child of an xs:appinfo element. It is an attribute information item that satisfies the {any attributes with non- schema namespace . . .} clause within the declaration of an XML Schema element. The namespace name property of the item is not the XML namespace, XML Schema namespace, or the XSI namespace.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -465,7 +465,7 @@
     definitionTerm: 'metadata element declaration'
     definitionText: 'A metadata element declaration is an element declaration defined by a reference schema document or an extension schema document that defines a metadata object. A metadata element declaration has a name ending in Metadata, and a {type definition} that is a metadata type.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -478,7 +478,7 @@
     definitionTerm: 'metadata type'
     definitionText: 'A metadata type describes data about data, that is, information that is not descriptive of objects and their relationships, but is descriptive of the data itself. It is useful to provide a general mechanism for data about data. This provides required flexibility to precisely represent information.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -491,7 +491,7 @@
     definitionTerm: normative
     definitionText: 'The term normative is as defined by [ConfReq] Section 7.2, Conformance by key words, which states:NORMATIVE — statements provided for the prescriptive parts of the specification, providing that which is necessary in order to be able to claim conformance to the specification.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -504,7 +504,7 @@
     definitionTerm: 'object type'
     definitionText: 'In a NIEM-conformant schema, an object type is a complex type definition, an instance of which asserts the existence of an object. An object type represents some kind of object: a thing with its own lifespan that has some existence. The object may or may not be a physical object. It may be a conceptual object.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -517,7 +517,7 @@
     definitionTerm: 'reference element'
     definitionText: 'A reference element is an element information item that has an attribute structures:ref. A reference element refers to its value by reference, instead of carrying it as content.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -530,7 +530,7 @@
     definitionTerm: 'reference schema document'
     definitionText: 'A reference schema document is a schema document that is intended to provide the authoritative definitions of broadly reusable schema components. It is a conformance target of this specification. A reference schema document MUST conform to all rules of this specification that apply to this conformance target. An XML document with a conformance target identifier of http://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/#ReferenceSchemaDocument MUST be a conformant reference schema document.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -543,7 +543,7 @@
     definitionTerm: 'representation element declaration'
     definitionText: 'A representation element declaration is an element declaration that is abstract, and that has a {name} that ends in Representation.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -556,7 +556,7 @@
     definitionTerm: 'resolved element information item'
     definitionText: 'Within an XML document $document, for any element information item $element there is a resolved element information item, which is: If all of the following are true: $document is a conformant instance XML document. $element and $referent are conformant element information items within $document. $element owns attribute information item structures:ref with a value $ref. $referent owns attribute information item structures:id with a value $id. $ref is equal to $id.Then the resolved element information item for $element is $referent. Otherwise, the resolved element information item for $element is $element.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -569,7 +569,7 @@
     definitionTerm: 'role type'
     definitionText: 'A role type is an object type that represents a particular function, purpose, usage, or role of one or more objects of its base type.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -582,7 +582,7 @@
     definitionTerm: 'RoleOf element'
     definitionText: 'A RoleOf element is an element declaration that is defined by a reference schema document or an extension schema document, and has a {name} that begins with RoleOf.A RoleOf element represents a base type for a role type.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -595,7 +595,7 @@
     definitionTerm: 'schema component'
     definitionText: 'The term schema component is as defined by [XML Schema Structures] Section 2.2, XML Schema Abstract Data Model, which states:Schema component is the generic term for the building blocks that comprise the abstract data model of the schema.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -608,7 +608,7 @@
     definitionTerm: 'schema document'
     definitionText: 'The term schema document is as defined by [XML Schema Structures] Section 3.1.2, XML Representations of Components, which states:A document in this form (i.e. a  element information item) is a schema document.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -621,7 +621,7 @@
     definitionTerm: 'simple type definition'
     definitionText: 'The term simple type definition is as defined by [XML Schema Structures] Section 2.2.1.2, Simple Type Definition.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -634,7 +634,7 @@
     definitionTerm: 'structures namespace'
     definitionText: 'The structures namespace is the namespace represented by the URI http://release.niem.gov/niem/structures/3.0/.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -647,7 +647,7 @@
     definitionTerm: valid
     definitionText: 'The term valid is as defined by [XML Schema Structures] Section 2.1, Overview of XML Schema, which states:[Definition:] the word valid and its derivatives are used to refer to clause 1 above, the determination of local schema-validity.The referenced clause 1 is a part of a description of schema-validity:Schema-validity assessment has two aspects: Determining local schema-validity, that is whether an element or attribute information item satisfies the constraints embodied in the relevant components of an XML Schema; Synthesizing an overall validation outcome for the item, combining local schema-validity with the results of schema-validity assessments of its descendants, if any, and adding appropriate augmentations to the infoset to record this outcome.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -660,7 +660,7 @@
     definitionTerm: 'XML document'
     definitionText: 'The term XML document is as defined by [XML] Section 2, Documents, which states:A data object is an XML document if it is well-formed, as defined in this specification. In addition, the XML document is valid if it meets certain further constraints.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -673,7 +673,7 @@
     definitionTerm: 'XML Schema'
     definitionText: 'The term XML Schema is as defined by [XML Schema Structures] Section 2.2, XML Schema Abstract Data Model, which states:An XML Schema is a set of schema components.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -686,7 +686,7 @@
     definitionTerm: 'XML Schema definition language'
     definitionText: 'The term XML Schema definition language is as defined by [XML Schema Structures] subsection Abstract, which states:XML Schema: Structures specifies the XML Schema definition language, which offers facilities for describing the structure and constraining the contents of XML 1.0 documents, including those which exploit the XML Namespace facility. The schema language, which is itself represented in XML 1.0 and uses namespaces, substantially reconstructs and considerably extends the capabilities found in XML 1.0 document type definitions (DTDs).'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-3.0
     classID: NDR
@@ -699,7 +699,7 @@
     definitionTerm: 'XML Schema document set'
     definitionText: 'An XML Schema document set is a set of schema documents that together define an XML Schema suitable for assessing the validity of an XML document.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -712,7 +712,7 @@
     definitionTerm: 'appinfo namespace'
     definitionText: 'The appinfo namespace is the namespace represented by the URI http://release.niem.gov/niem/appinfo/4.0/.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -725,7 +725,7 @@
     definitionTerm: 'application information'
     definitionText: 'A component is said to have application information of some element $element when the XML Schema element that defines the component has an immediate child element xs:annotation, which has an immediate child element xs:appinfo, which has as an immediate child the element $element.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -738,7 +738,7 @@
     definitionTerm: association
     definitionText: 'An association is a conformant element information item that establishes a relationship between two or more objects, optionally including properties of that relationship. An association is an instance of an association element declaration, and has a type that is an association type. '
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -751,7 +751,7 @@
     definitionTerm: 'association element declaration'
     definitionText: 'An association element declaration is an element declaration declared in a reference schema document or extension schema document that describes a relationship between two or more objects, optionally including properties of that relationship.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -764,7 +764,7 @@
     definitionTerm: 'association type'
     definitionText: 'In a NIEM-conformant schema, an association type is a complex type definition defined in a reference schema document or extension schema document that establishes a relationship between two or more objects, optionally including the properties of that relationship.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -777,7 +777,7 @@
     definitionTerm: attribute
     definitionText: 'An attribute is an attribute information item, as defined by [XML Infoset] Section 2.3, Attribute Information Items'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -790,7 +790,7 @@
     definitionTerm: 'augmentable type'
     definitionText: 'An augmentable type is complex type definition that is defined by either a reference schema document or by an extension schema document, and is either an association type, or an object type that has complex content and is not an external adapter type.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -803,7 +803,7 @@
     definitionTerm: augmentation
     definitionText: 'An augmentation is a conformant element information item that: is an instance of an augmentation element declaration, is a child of a conformant element information item that is an instance of an augmentable type, and appears in the instance as a substitution for an augmentation point element.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -816,7 +816,7 @@
     definitionTerm: 'augmentation element declaration'
     definitionText: 'An augmentation element declaration is an element declaration that has a type that is an augmentation type, and carries elements that establish a relationship to its parent object or association is designed to be used as an augmentation of its parent object or association'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -829,7 +829,7 @@
     definitionTerm: 'augmentation type'
     definitionText: 'An augmentation type is a complex type definition that provides elements that establish relationships to a base object or association, rather than to the instance of the augmentation type itself, and is designed to be the type of an augmentation element declaration.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -842,7 +842,7 @@
     definitionTerm: 'base type definition'
     definitionText: 'The term base type definition is as defined by [XML Schema Structures] Section 2.2.1.1, Type Definition Hierarchy, which states:A type definition used as the basis for an extension or restriction is known as the base type definition of that definition.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -855,7 +855,7 @@
     definitionTerm: 'code simple type'
     definitionText: 'A code simple type is a simple type definition schema component for which each value carried by the type corresponds to an entry in a list of distinct conceptual entities.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -868,7 +868,7 @@
     definitionTerm: 'code type'
     definitionText: 'A code type is a NIEM object type for which each simple value carried by the type corresponds to an entry in a list of distinct conceptual entities.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -881,7 +881,7 @@
     definitionTerm: 'complex type definition'
     definitionText: 'The term complex type definition is as defined by [XML Schema Structures] Section 2.2.1.3, Complex Type Definition.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -894,7 +894,7 @@
     definitionTerm: 'conformance target'
     definitionText: 'The term conformance target is as defined by [CTAS], which states:A conformance target is a class of artifact, such as an interface, protocol, document, platform, process or service, that is the subject of conformance clauses and normative statements. There may be several conformance targets defined within a specification, and these targets may be diverse so as to reflect different aspects of a specification. For example, a protocol message and a protocol engine may be different conformance targets.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -907,7 +907,7 @@
     definitionTerm: 'conformance target identifier'
     definitionText: 'The term conformance target identifier is as defined by [CTAS], which states:A conformance target identifier is an internationalized resource identifier that uniquely identifies a conformance target.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -920,7 +920,7 @@
     definitionTerm: 'conformant element information item'
     definitionText: 'A conformant element information item is an element information item that satisfies all of the following criteria: Its [namespace name] and [local name] matches an element declared by a reference schema document or extension schema document. It occurs within a conformant instance XML document. It is locally schema-valid. It satisfies all rules specified in this document applicable to an element in a conformant instance XML document.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -933,7 +933,7 @@
     definitionTerm: 'conformant instance XML document'
     definitionText: 'A conformant instance XML document is an XML document that is instance document valid to a conformant schema document set. It is a conformance target of this specification. A conformant instance XML document MUST conform to all rules of this specification that apply to this conformance target.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -946,7 +946,7 @@
     definitionTerm: 'conformant schema document set'
     definitionText: 'A conformant schema document set is a collection of schema documents that together are capable of validating a conformant instance XML document. It is a conformance target of this specification. A conformant schema document set MUST conform to all rules of this specification that apply to this conformance target.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -959,7 +959,7 @@
     definitionTerm: 'constraint rule'
     definitionText: 'A constraint rule is a rule that sets a requirement on an artifact with respect to its conformance to a conformance target.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -972,7 +972,7 @@
     definitionTerm: 'data definition'
     definitionText: 'The data definition of a schema component is the content of the first occurrence of the element xs:documentation that is an immediate child of an occurrence of an element xs:annotation that is an immediate child of the element that defines the component.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -985,7 +985,7 @@
     definitionTerm: 'deprecated component'
     definitionText: 'A deprecated component is one that developers are discouraged from using, typically because a better alternative exists, yet which is maintained in the schema for compatibility with previous versions of the namespace.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -998,7 +998,7 @@
     definitionTerm: 'document element'
     definitionText: 'the value of the [document element] property of a document information item; preferred over the term root element.'
     definitionLocal: false
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -1011,7 +1011,7 @@
     definitionTerm: 'documented component'
     definitionText: 'In a NIEM-conformant schema, a documented component is schema component that has an associated data definition. Each documented component has a textual definition, so that the component may be well-understood.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -1024,7 +1024,7 @@
     definitionTerm: 'effective conformance target identifier'
     definitionText: 'The term effective conformance target identifier is as defined by [CTAS] Section 4, Semantics and Use, which states:An effective conformance target identifier of a conformant document is an internationalized resource identifier reference that occurs in the document’s effective conformance targets attribute.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -1037,7 +1037,7 @@
     definitionTerm: element
     definitionText: 'An element is an element information item, as defined by [XML Infoset] Section 2.2, Element Information Items'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -1050,7 +1050,7 @@
     definitionTerm: 'element declaration'
     definitionText: 'The term element declaration is as defined by [XML Schema Structures] Section 2.2.2.1, Element Declaration.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -1063,7 +1063,7 @@
     definitionTerm: 'extension schema document'
     definitionText: 'An extension schema document is a schema document that is intended to provide definitions of schema components that are intended for reuse within a more narrow scope than those defined by a reference schema document. It is a conformance target of this specification. An extension schema document MUST conform to all rules of this specification that apply to this conformance target. An XML document with a conformance target identifier of http://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/#ExtensionSchemaDocument MUST be an extension schema document.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -1076,7 +1076,7 @@
     definitionTerm: 'external adapter type'
     definitionText: 'An external adapter type is a NIEM-conformant type that adapts external components for use within NIEM. An external adapter type creates a new class of object that embodies a single concept composed of external components. A NIEM-conformant schema defines an external adapter type.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -1089,7 +1089,7 @@
     definitionTerm: 'external schema document'
     definitionText: 'An external schema document is any schema document that is not one of a reference schema document, an extension schema document, or a schema document that has the structures namespace as its target namespace.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -1102,7 +1102,7 @@
     definitionTerm: informative
     definitionText: 'The term informative is as defined by [ConfReq] Section 7.2, Conformance by key words, which states:INFORMATIVE (NON-NORMATIVE) — statements provided for informational purposes, intended to assist the understanding or use of the specification and shall not contain provisions that are required for conformance.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -1115,7 +1115,7 @@
     definitionTerm: 'instance document'
     definitionText: 'An instance document (of an XML Schema) is an XML document that is valid against the XML Schema.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -1128,7 +1128,7 @@
     definitionTerm: 'interpretation rule'
     definitionText: 'An interpretation rule is a rule that sets the methodology, pattern, or procedure for understanding some aspect of an instance of a conformance target.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -1141,7 +1141,7 @@
     definitionTerm: 'local term'
     definitionText: 'In a conformant schema document, a local term is a word, phrase, acronym, or other string of characters for which all of the following are true: It is not a term defined in the [OED], or it has a non-OED definition, or its word sense may not be clear. It is introduced into the schema document via an appinfo element appinfo:LocalTerm. It may be used in the local name of a schema component within the schema document.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -1154,7 +1154,7 @@
     definitionTerm: 'machine-readable annotation'
     definitionText: 'An information item within a schema is defined to be a machine-readable annotation when all of the following are true: It is one of the following: It is an element information item that is a child of an xs:appinfo element. It is an attribute information item that satisfies the {any attributes with non- schema namespace . . .} clause within the declaration of an XML Schema element. The namespace name property of the item is not the XML namespace, XML Schema namespace, or the XSI namespace.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -1167,7 +1167,7 @@
     definitionTerm: 'metadata element declaration'
     definitionText: 'A metadata element declaration is an element declaration defined by a reference schema document or an extension schema document that defines a metadata object. A metadata element declaration has a name ending in Metadata, and a {type definition} that is a metadata type.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -1180,7 +1180,7 @@
     definitionTerm: 'metadata type'
     definitionText: 'A metadata type describes data about data, that is, information that is not descriptive of objects and their relationships, but is descriptive of the data itself. It is useful to provide a general mechanism for data about data. This provides required flexibility to precisely represent information.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -1193,7 +1193,7 @@
     definitionTerm: normative
     definitionText: 'The term normative is as defined by [ConfReq] Section 7.2, Conformance by key words, which states:NORMATIVE — statements provided for the prescriptive parts of the specification, providing that which is necessary in order to be able to claim conformance to the specification.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -1206,7 +1206,7 @@
     definitionTerm: 'object type'
     definitionText: 'In a NIEM-conformant schema, an object type is a complex type definition, an instance of which asserts the existence of an object. An object type represents some kind of object: a thing with its own lifespan that has some existence. The object may or may not be a physical object. It may be a conceptual object.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -1219,7 +1219,7 @@
     definitionTerm: 'reference schema document'
     definitionText: 'A reference schema document is a schema document that is intended to provide the authoritative definitions of broadly reusable schema components. It is a conformance target of this specification. A reference schema document MUST conform to all rules of this specification that apply to this conformance target. An XML document with a conformance target identifier of http://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/#ReferenceSchemaDocument MUST be a conformant reference schema document.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -1232,7 +1232,7 @@
     definitionTerm: 'representation element declaration'
     definitionText: 'A representation element declaration is an element declaration that is abstract, and that has a {name} that ends in Representation.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -1245,7 +1245,7 @@
     definitionTerm: 'role type'
     definitionText: 'A role type is an object type that represents a particular function, purpose, usage, or role of one or more objects of its base type.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -1258,7 +1258,7 @@
     definitionTerm: 'RoleOf element'
     definitionText: 'A RoleOf element is an element declaration that is defined by a reference schema document or an extension schema document, and has a {name} that begins with RoleOf.A RoleOf element represents a base type for a role type.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -1271,7 +1271,7 @@
     definitionTerm: 'schema component'
     definitionText: 'The term schema component is as defined by [XML Schema Structures] Section 2.2, XML Schema Abstract Data Model, which states:Schema component is the generic term for the building blocks that comprise the abstract data model of the schema.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -1284,7 +1284,7 @@
     definitionTerm: 'schema document'
     definitionText: 'The term schema document is as defined by [XML Schema Structures] Section 3.1.2, XML Representations of Components, which states:A document in this form (i.e. a  element information item) is a schema document.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -1297,7 +1297,7 @@
     definitionTerm: 'simple type definition'
     definitionText: 'The term simple type definition is as defined by [XML Schema Structures] Section 2.2.1.2, Simple Type Definition.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -1310,7 +1310,7 @@
     definitionTerm: 'structures namespace'
     definitionText: 'The structures namespace is the namespace represented by the URI http://release.niem.gov/niem/structures/4.0/.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -1323,7 +1323,7 @@
     definitionTerm: valid
     definitionText: 'The term valid is as defined by [XML Schema Structures] Section 2.1, Overview of XML Schema, which states:[Definition:] the word valid and its derivatives are used to refer to clause 1 above, the determination of local schema-validity.The referenced clause 1 is a part of a description of schema-validity:Schema-validity assessment has two aspects: Determining local schema-validity, that is whether an element or attribute information item satisfies the constraints embodied in the relevant components of an XML Schema; Synthesizing an overall validation outcome for the item, combining local schema-validity with the results of schema-validity assessments of its descendants, if any, and adding appropriate augmentations to the infoset to record this outcome.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -1336,7 +1336,7 @@
     definitionTerm: 'XML document'
     definitionText: 'The term XML document is as defined by [XML] Section 2, Documents, which states:A data object is an XML document if it is well-formed, as defined in this specification. In addition, the XML document is valid if it meets certain further constraints.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -1349,7 +1349,7 @@
     definitionTerm: 'XML Schema'
     definitionText: 'The term XML Schema is as defined by [XML Schema Structures] Section 2.2, XML Schema Abstract Data Model, which states:An XML Schema is a set of schema components.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -1362,7 +1362,7 @@
     definitionTerm: 'XML Schema definition language'
     definitionText: 'The term XML Schema definition language is as defined by [XML Schema Structures] subsection Abstract, which states:XML Schema: Structures specifies the XML Schema definition language, which offers facilities for describing the structure and constraining the contents of XML 1.0 documents, including those which exploit the XML Namespace facility. The schema language, which is itself represented in XML 1.0 and uses namespaces, substantially reconstructs and considerably extends the capabilities found in XML 1.0 document type definitions (DTDs).'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-4.0
     classID: NDR
@@ -1375,7 +1375,7 @@
     definitionTerm: 'XML Schema document set'
     definitionText: 'An XML Schema document set is a set of schema documents that together define an XML Schema suitable for assessing the validity of an XML document.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: null
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -1388,7 +1388,7 @@
     definitionTerm: 'appinfo namespace'
     definitionText: 'The appinfo namespace is the namespace represented by the URI http://release.niem.gov/niem/appinfo/5.0/.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -1401,7 +1401,7 @@
     definitionTerm: 'application information'
     definitionText: 'A component is said to have application information of some element $element when the XML Schema element that defines the component has an immediate child element xs:annotation, which has an immediate child element xs:appinfo, which has as an immediate child the element $element.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -1414,7 +1414,7 @@
     definitionTerm: association
     definitionText: 'An association is a conformant element information item that establishes a relationship between two or more objects, optionally including properties of that relationship. An association is an instance of an association element declaration, and has a type that is an association type. '
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -1427,7 +1427,7 @@
     definitionTerm: 'association element declaration'
     definitionText: 'An association element declaration is an element declaration declared in a reference schema document or extension schema document that describes a relationship between two or more objects, optionally including properties of that relationship.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -1440,7 +1440,7 @@
     definitionTerm: 'association type'
     definitionText: 'In a NIEM-conformant schema, an association type is a complex type definition defined in a reference schema document or extension schema document that establishes a relationship between two or more objects, optionally including the properties of that relationship.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -1453,7 +1453,7 @@
     definitionTerm: attribute
     definitionText: 'An attribute is an attribute information item, as defined by [XML Infoset] Section 2.3, Attribute Information Items'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -1466,7 +1466,7 @@
     definitionTerm: 'augmentable type'
     definitionText: 'An augmentable type is complex type definition that is defined by either a reference schema document or by an extension schema document, and is either an association type, or an object type that has complex content and is not an external adapter type.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -1479,7 +1479,7 @@
     definitionTerm: augmentation
     definitionText: 'An augmentation is a conformant element information item that: is an instance of an augmentation element declaration, is a child of a conformant element information item that is an instance of an augmentable type, and appears in the instance as a substitution for an augmentation point element.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -1492,7 +1492,7 @@
     definitionTerm: 'augmentation element declaration'
     definitionText: 'An augmentation element declaration is an element declaration that has a type that is an augmentation type, and carries elements that establish a relationship to its parent object or association is designed to be used as an augmentation of its parent object or association'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -1505,7 +1505,7 @@
     definitionTerm: 'augmentation type'
     definitionText: 'An augmentation type is a complex type definition that provides elements that establish relationships to a base object or association, rather than to the instance of the augmentation type itself, and is designed to be the type of an augmentation element declaration.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -1518,7 +1518,7 @@
     definitionTerm: 'base type definition'
     definitionText: 'The term base type definition is as defined by [XML Schema Structures] Section 2.2.1.1, Type Definition Hierarchy, which states:A type definition used as the basis for an extension or restriction is known as the base type definition of that definition.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -1531,7 +1531,7 @@
     definitionTerm: 'code simple type'
     definitionText: 'A code simple type is a simple type definition schema component for which each value carried by the type corresponds to an entry in a list of distinct conceptual entities.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -1544,7 +1544,7 @@
     definitionTerm: 'code type'
     definitionText: 'A code type is a NIEM object type for which each simple value carried by the type corresponds to an entry in a list of distinct conceptual entities.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -1557,7 +1557,7 @@
     definitionTerm: 'complex type definition'
     definitionText: 'The term complex type definition is as defined by [XML Schema Structures] Section 2.2.1.3, Complex Type Definition.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -1570,7 +1570,7 @@
     definitionTerm: 'conformance target'
     definitionText: 'The term conformance target is as defined by [CTAS], which states:A conformance target is a class of artifact, such as an interface, protocol, document, platform, process or service, that is the subject of conformance clauses and normative statements. There may be several conformance targets defined within a specification, and these targets may be diverse so as to reflect different aspects of a specification. For example, a protocol message and a protocol engine may be different conformance targets.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -1583,7 +1583,7 @@
     definitionTerm: 'conformance target identifier'
     definitionText: 'The term conformance target identifier is as defined by [CTAS], which states:A conformance target identifier is an internationalized resource identifier that uniquely identifies a conformance target.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -1596,7 +1596,7 @@
     definitionTerm: 'conformant element information item'
     definitionText: 'A conformant element information item is an element information item that satisfies all of the following criteria: Its [namespace name] and [local name] matches an element declared by a reference schema document or extension schema document. It occurs within a conformant instance XML document. It is locally schema-valid. It satisfies all rules specified in this document applicable to an element in a conformant instance XML document.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -1609,7 +1609,7 @@
     definitionTerm: 'conformant instance XML document'
     definitionText: 'A conformant instance XML document is an XML document that is an instance document valid to a conformant schema document set. It is a conformance target of this specification. A conformant instance XML document MUST conform to all rules of this specification that apply to this conformance target.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -1622,7 +1622,7 @@
     definitionTerm: 'conformant schema document set'
     definitionText: 'A conformant schema document set is a collection of schema documents that together are capable of validating a conformant instance XML document. It is a conformance target of this specification. A conformant schema document set MUST conform to all rules of this specification that apply to this conformance target.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -1635,7 +1635,7 @@
     definitionTerm: 'constraint rule'
     definitionText: 'A constraint rule is a rule that sets a requirement on an artifact with respect to its conformance to a conformance target.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -1648,7 +1648,7 @@
     definitionTerm: 'data definition'
     definitionText: 'The data definition of a schema component is the content of the first occurrence of the element xs:documentation that is an immediate child of an occurrence of an element xs:annotation that is an immediate child of the element that defines the component.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -1661,7 +1661,7 @@
     definitionTerm: 'deprecated component'
     definitionText: 'A deprecated component is one that developers are discouraged from using, typically because a better alternative exists, yet which is maintained in the schema for compatibility with previous versions of the namespace.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -1674,7 +1674,7 @@
     definitionTerm: 'document element'
     definitionText: 'the value of the [document element] property of a document information item; preferred over the term root element.'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -1687,7 +1687,7 @@
     definitionTerm: 'documented component'
     definitionText: 'In a NIEM-conformant schema, a documented component is schema component that has an associated data definition. Each documented component has a textual definition, so that the component may be well-understood.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -1700,7 +1700,7 @@
     definitionTerm: 'effective conformance target identifier'
     definitionText: 'The term effective conformance target identifier is as defined by [CTAS] Section 4, Semantics and Use, which states:An effective conformance target identifier of a conformant document is an internationalized resource identifier reference that occurs in the document’s effective conformance targets attribute.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -1713,7 +1713,7 @@
     definitionTerm: element
     definitionText: 'An element is an element information item, as defined by [XML Infoset] Section 2.2, Element Information Items'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -1726,7 +1726,7 @@
     definitionTerm: 'element declaration'
     definitionText: 'The term element declaration is as defined by [XML Schema Structures] Section 2.2.2.1, Element Declaration.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -1739,7 +1739,7 @@
     definitionTerm: 'extension schema document'
     definitionText: 'An extension schema document is a schema document that is intended to provide definitions of schema components that are intended for reuse within a more narrow scope than those defined by a reference schema document. It is a conformance target of this specification. An extension schema document MUST conform to all rules of this specification that apply to this conformance target. An XML document with a conformance target identifier of http://reference.niem.gov/niem/specification/naming-and-design-rules/5.0/#ExtensionSchemaDocument MUST be an extension schema document.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -1752,7 +1752,7 @@
     definitionTerm: 'external adapter type'
     definitionText: 'An external adapter type is a NIEM-conformant type that adapts external components for use within NIEM. An external adapter type creates a new class of object that embodies a single concept composed of external components. A NIEM-conformant schema defines an external adapter type.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -1765,7 +1765,7 @@
     definitionTerm: 'external schema document'
     definitionText: 'An external schema document is any schema document that is not one of a reference schema document, an extension schema document, or a schema document that has the structures namespace as its target namespace.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -1778,7 +1778,7 @@
     definitionTerm: informative
     definitionText: 'The term informative is as defined by [ConfReq] Section 7.2, Conformance by key words, which states:INFORMATIVE (NON-NORMATIVE) — statements provided for informational purposes, intended to assist the understanding or use of the specification and shall not contain provisions that are required for conformance.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -1791,7 +1791,7 @@
     definitionTerm: 'instance document'
     definitionText: 'An instance document (of an XML Schema) is an XML document that is valid against the XML Schema.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -1804,7 +1804,7 @@
     definitionTerm: 'interpretation rule'
     definitionText: 'An interpretation rule is a rule that sets the methodology, pattern, or procedure for understanding some aspect of an instance of a conformance target.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -1817,7 +1817,7 @@
     definitionTerm: 'local term'
     definitionText: 'In a conformant schema document, a local term is a word, phrase, acronym, or other string of characters for which all of the following are true: It is not a term defined in the [OED], or it has a non-OED definition, or its word sense may not be clear. It is introduced into the schema document via an appinfo element appinfo:LocalTerm. It may be used in the local name of a schema component within the schema document.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -1830,7 +1830,7 @@
     definitionTerm: 'machine-readable annotation'
     definitionText: 'An information item within a schema is defined to be a machine-readable annotation when all of the following are true: It is one of the following: It is an element information item that is a child of an xs:appinfo element. It is an attribute information item that satisfies the {any attributes with non- schema namespace . . .} clause within the declaration of an XML Schema element. The namespace name property of the item is not the XML namespace, XML Schema namespace, or the XSI namespace.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -1843,7 +1843,7 @@
     definitionTerm: 'metadata element declaration'
     definitionText: 'A metadata element declaration is an element declaration defined by a reference schema document or an extension schema document that defines a metadata object. A metadata element declaration has a name ending in Metadata, and a {type definition} that is a metadata type.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -1856,7 +1856,7 @@
     definitionTerm: 'metadata type'
     definitionText: 'A metadata type describes data about data, that is, information that is not descriptive of objects and their relationships, but is descriptive of the data itself. It is useful to provide a general mechanism for data about data. This provides required flexibility to precisely represent information.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -1869,7 +1869,7 @@
     definitionTerm: normative
     definitionText: 'The term normative is as defined by [ConfReq] Section 7.2, Conformance by key words, which states:NORMATIVE — statements provided for the prescriptive parts of the specification, providing that which is necessary in order to be able to claim conformance to the specification.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -1882,7 +1882,7 @@
     definitionTerm: 'object type'
     definitionText: 'In a NIEM-conformant schema, an object type is a complex type definition, an instance of which asserts the existence of an object. An object type represents some kind of object: a thing with its own lifespan that has some existence. The object may or may not be a physical object. It may be a conceptual object.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -1895,7 +1895,7 @@
     definitionTerm: 'reference schema document'
     definitionText: 'A reference schema document is a schema document that is intended to provide the authoritative definitions of broadly reusable schema components. It is a conformance target of this specification. A reference schema document MUST conform to all rules of this specification that apply to this conformance target. An XML document with a conformance target identifier of http://reference.niem.gov/niem/specification/naming-and-design-rules/5.0/#ReferenceSchemaDocument MUST be a conformant reference schema document.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -1908,7 +1908,7 @@
     definitionTerm: 'representation element declaration'
     definitionText: 'A representation element declaration is an element declaration that is abstract, and that has a {name} that ends in Representation.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -1921,7 +1921,7 @@
     definitionTerm: 'role type'
     definitionText: 'A role type is an object type that represents a particular function, purpose, usage, or role of one or more objects of its base type.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -1934,7 +1934,7 @@
     definitionTerm: 'RoleOf element'
     definitionText: 'A RoleOf element is an element declaration that is defined by a reference schema document or an extension schema document, and has a {name} that begins with RoleOf.A RoleOf element represents a base type for a role type.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -1947,7 +1947,7 @@
     definitionTerm: 'schema component'
     definitionText: 'The term schema component is as defined by [XML Schema Structures] Section 2.2, XML Schema Abstract Data Model, which states:Schema component is the generic term for the building blocks that comprise the abstract data model of the schema.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -1960,7 +1960,7 @@
     definitionTerm: 'schema document'
     definitionText: 'The term schema document is as defined by [XML Schema Structures] Section 3.1.2, XML Representations of Components, which states:A document in this form (i.e. a  element information item) is a schema document.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -1973,7 +1973,7 @@
     definitionTerm: 'simple type definition'
     definitionText: 'The term simple type definition is as defined by [XML Schema Structures] Section 2.2.1.2, Simple Type Definition.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -1986,7 +1986,7 @@
     definitionTerm: 'structures namespace'
     definitionText: 'The structures namespace is the namespace represented by the URI http://release.niem.gov/niem/structures/5.0/.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -1999,7 +1999,7 @@
     definitionTerm: valid
     definitionText: 'The term valid is as defined by [XML Schema Structures] Section 2.1, Overview of XML Schema, which states:[Definition:] the word valid and its derivatives are used to refer to clause 1 above, the determination of local schema-validity.The referenced clause 1 is a part of a description of schema-validity:Schema-validity assessment has two aspects: Determining local schema-validity, that is whether an element or attribute information item satisfies the constraints embodied in the relevant components of an XML Schema; Synthesizing an overall validation outcome for the item, combining local schema-validity with the results of schema-validity assessments of its descendants, if any, and adding appropriate augmentations to the infoset to record this outcome.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -2012,7 +2012,7 @@
     definitionTerm: 'XML document'
     definitionText: 'The term XML document is as defined by [XML] Section 2, Documents, which states:A data object is an XML document if it is well-formed, as defined in this specification. In addition, the XML document is valid if it meets certain further constraints.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -2025,7 +2025,7 @@
     definitionTerm: 'XML Schema'
     definitionText: 'The term XML Schema is as defined by [XML Schema Structures] Section 2.2, XML Schema Abstract Data Model, which states:An XML Schema is a set of schema components.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -2038,7 +2038,7 @@
     definitionTerm: 'XML Schema definition language'
     definitionText: 'The term XML Schema definition language is as defined by [XML Schema Structures] subsection Abstract, which states:XML Schema: Structures specifies the XML Schema definition language, which offers facilities for describing the structure and constraining the contents of XML 1.0 documents, including those which exploit the XML Namespace facility. The schema language, which is itself represented in XML 1.0 and uses namespaces, substantially reconstructs and considerably extends the capabilities found in XML 1.0 document type definitions (DTDs).'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: NDR-5.0
     classID: NDR
@@ -2051,7 +2051,7 @@
     definitionTerm: 'XML Schema document set'
     definitionText: 'An XML Schema document set is a set of schema documents that together define an XML Schema suitable for assessing the validity of an XML document.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: MPD-3.0.1
     classID: IEPD
@@ -2064,7 +2064,7 @@
     definitionTerm: artifact
     definitionText: 'A single file with a defined purpose.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: MPD-3.0.1
     classID: IEPD
@@ -2077,7 +2077,7 @@
     definitionTerm: 'artifact set'
     definitionText: 'A collection of artifacts logically grouped for a defined purpose.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: MPD-3.0.1
     classID: IEPD
@@ -2090,7 +2090,7 @@
     definitionTerm: 'business rule schema'
     definitionText: 'An artifact that contains business rules in a formal representation language with the intent to automatically process them on an XML document to enforce business constraints.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: MPD-3.0.1
     classID: IEPD
@@ -2103,7 +2103,7 @@
     definitionTerm: 'business rules'
     definitionText: 'Formal or informal statements that describe business policy or procedure, and in doing so define or constrain some aspect of a process or procedure in order to impose control.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: MPD-3.0.1
     classID: IEPD
@@ -2116,7 +2116,7 @@
     definitionTerm: 'change log'
     definitionText: 'An artifact that describes the changes applied to an MPD since its previous version.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: MPD-3.0.1
     classID: IEPD
@@ -2129,7 +2129,7 @@
     definitionTerm: 'conformance assertion'
     definitionText: 'An artifact that provides a declaration that an MPD conforms to relevant NIEM specifications and associated rules, including [NIEM Conformance 3.0], [NIEM Naming and Design Rules 3.0], [NIEM Conformance Targets Attribute Specification 3.0] and [NIEM MPD Specification 3.0] (this NIEM MPD Specification).'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: MPD-3.0.1
     classID: IEPD
@@ -2142,7 +2142,7 @@
     definitionTerm: 'conformance target'
     definitionText: 'As defined by [NIEM Conformance Targets Attribute Specification 3.0]:A class of artifact, such as an interface, protocol, document, platform, process or service, that is the subject of conformance clauses and normative statements. There may be several conformance targets defined within a specification, and these targets may be diverse so as to reflect different aspects of a specification. For example, a protocol message and a protocol engine may be different conformance targets.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: MPD-3.0.1
     classID: IEPD
@@ -2155,7 +2155,7 @@
     definitionTerm: 'conformance target identifier'
     definitionText: 'As defined by [NIEM Conformance Targets Attribute Specification 3.0]:An internationalized resource identifier [RFC 3987 IRI] that uniquely identifies a conformance target.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: MPD-3.0.1
     classID: IEPD
@@ -2168,7 +2168,7 @@
     definitionTerm: 'constraint rule'
     definitionText: 'A rule that sets a requirement on an artifact with respect to its conformance to a conformance target.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: MPD-3.0.1
     classID: IEPD
@@ -2181,7 +2181,7 @@
     definitionTerm: 'constraint schema document set'
     definitionText: 'A set of related constraint schema documents that work together; for example, a constraint schema document set could be built by adding constraints to a schema document subset.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: MPD-3.0.1
     classID: IEPD
@@ -2194,7 +2194,7 @@
     definitionTerm: 'data component'
     definitionText: 'An XML Schema type or attribute group definition; or an XML Schema element or attribute declaration.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: MPD-3.0.1
     classID: IEPD
@@ -2207,7 +2207,7 @@
     definitionTerm: 'extension schema document'
     definitionText: 'As defined by [NIEM Naming and Design Rules 3.0]:An XML schema document that is intended to provide definitions of schema components that are intended for reuse within a more narrow scope than those defined by a reference schema document. It is a conformance target of [NIEM Naming and Design Rules 3.0]. An extension schema document MUST conform to all rules of [NIEM Naming and Design Rules 3.0] that apply to this conformance target. An XML document with a conformance target identifier of http://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/#ExtensionSchemaDocument MUST be an extension schema document.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: MPD-3.0.1
     classID: IEPD
@@ -2220,7 +2220,7 @@
     definitionTerm: 'external adapter type'
     definitionText: 'As defined by [NIEM Naming and Design Rules 3.0]:A NIEM-conformant type that adapts external components for use within NIEM. An external adapter type creates a new class of object that embodies a single concept composed of external components. External adapter types are defined in NIEM-conformant schemas.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: MPD-3.0.1
     classID: IEPD
@@ -2233,7 +2233,7 @@
     definitionTerm: 'external schema document'
     definitionText: 'As defined by [NIEM Naming and Design Rules 3.0]:Any XML schema document that is not one of: a reference schema document, an extension schema document, or an XML schema document that has the structures namespace as its target namespace.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: MPD-3.0.1
     classID: IEPD
@@ -2246,7 +2246,7 @@
     definitionTerm: 'full NIEM information exchange package'
     definitionText: 'An information exchange package that satisfies all the validity constraints for its class as defined by a model package description, and that has an XML document element that is declared in either a NIEM reference or extension schema document.This term may be abbreviated full NIEM IEP. Rules specifying this conformance target use the applicability code FN-IEP.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: MPD-3.0.1
     classID: IEPD
@@ -2259,7 +2259,7 @@
     definitionTerm: harmonization
     definitionText: 'The process of reviewing a data model’s existing data definitions and declarations; reviewing how it structures and represents data; integrating new data components; and refactoring data components as necessary to remove (or reduce to the maximum extent feasible) semantic duplication and/or overlap among all data structures and definitions resulting in quality improvements to representation and usability.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: MPD-3.0.1
     classID: IEPD
@@ -2272,7 +2272,7 @@
     definitionTerm: 'IEP conformance target'
     definitionText: 'A conformance target that is a class or category of IEP which has a set of one or more validity constraints and a conformance target identifier. Every IEP is an instance of one or more IEP conformance targets.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: MPD-3.0.1
     classID: IEPD
@@ -2285,7 +2285,7 @@
     definitionTerm: 'information exchange package'
     definitionText: 'An XML instance XML document that conforms to the conformance target defined by a c:IEPConformanceTarget element in the MPD catalog document of a model package description.This term may be abbreviated IEP. Rules specifying this conformance target use the applicability code IEP.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: MPD-3.0.1
     classID: IEPD
@@ -2298,7 +2298,7 @@
     definitionTerm: 'information exchange package documentation'
     definitionText: 'An information exchange package documentation is a model package description that: has an MPD class of http://reference.niem.gov/niem/specification/model-package-description/3.0/#IEPD, and conforms to all the rules in this specification for the conformance target information exchange package documentation (i.e., applicability code IEPD).This term may be abbreviated IEPD. Rules specifying this conformance target use the applicability code IEPD.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: MPD-3.0.1
     classID: IEPD
@@ -2311,7 +2311,7 @@
     definitionTerm: 'instance XML document'
     definitionText: 'An instance XML document is an XML document that is valid against an XML Schema. An instance XML document is said to be an instance of the schema to which it validates.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: MPD-3.0.1
     classID: IEPD
@@ -2324,7 +2324,7 @@
     definitionTerm: 'interpretation rule'
     definitionText: 'A rule that sets the methodology, pattern, or procedure for understanding or using some aspect of an instance of a conformance target.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: MPD-3.0.1
     classID: IEPD
@@ -2337,7 +2337,7 @@
     definitionTerm: 'model package description'
     definitionText: 'A model package description is a set of artifacts (possibly in a ZIP file) that: includes a set of logically cohesive W3C XML Schema documents and other supporting files that represent one or more reusable or implementable XML information models, and has an MPD class of http://reference.niem.gov/niem/specification/model-package-description/3.0/#MPD, and adheres to all the rules within this specification for the model package description conformance target.This term may be abbreviated MPD. Rules specifying this conformance target use the applicability code WF-MPD.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: MPD-3.0.1
     classID: IEPD
@@ -2350,7 +2350,7 @@
     definitionTerm: 'MPD catalog document'
     definitionText: 'An instance XML document that: conforms to all the rules in this specification for the conformance target MPD catalog document (i.e., applicability code MPD-catalog), and contains metadata describing: MPD unique identification Conformance targets Basic characteristics and properties Key artifacts and directory structure Relationships to other MPDs and their artifactsThis term may be abbreviated MPD-catalog. Rules specifying this conformance target use the applicability code MPD-catalog.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: MPD-3.0.1
     classID: IEPD
@@ -2363,7 +2363,7 @@
     definitionTerm: 'MPD class'
     definitionText: 'A conformance target identifier to which a given MPD claims to conform. The MPD class of an MPD is established by Rule 5-9, MPD Class Determined by Conformance Target Identifier in c:mpdClassURIList, below.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: MPD-3.0.1
     classID: IEPD
@@ -2376,7 +2376,7 @@
     definitionTerm: 'MPD root directory'
     definitionText: 'The top level file directory relative to all MPD artifacts and subdirectories.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: MPD-3.0.1
     classID: IEPD
@@ -2389,7 +2389,7 @@
     definitionTerm: 'NIEM wantlist'
     definitionText: 'An XML document that represents a complete NIEM schema document subset.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: MPD-3.0.1
     classID: IEPD
@@ -2402,7 +2402,7 @@
     definitionTerm: 'path name'
     definitionText: 'A general form of the name of a file or directory that specifies a unique location in a file system. A path name points to a file system location by following the directory tree hierarchy expressed in a string of characters in which path components, separated by a delimiting character, represent each subdirectory. If a path name terminates in a file name, then it specifies the location of that file.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: MPD-3.0.1
     classID: IEPD
@@ -2415,7 +2415,7 @@
     definitionTerm: 'readme artifact'
     definitionText: 'An informal documentation artifact contained in a model package description that serves as the initial general source of human readable descriptive or instructional information. A readme artifact or file (formerly known as a master document) may index or reference other more specific documentation or other explanatory materials within the MPD.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: MPD-3.0.1
     classID: IEPD
@@ -2428,7 +2428,7 @@
     definitionTerm: 'reference element'
     definitionText: 'A reference element is an element information item that has an attribute structures:ref. A reference element refers to its value by reference, instead of carrying it as content.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: MPD-3.0.1
     classID: IEPD
@@ -2441,7 +2441,7 @@
     definitionTerm: 'reference schema document'
     definitionText: 'As defined by [NIEM Naming and Design Rules 3.0]:An XML schema document that is intended to provide the authoritative definitions of broadly reusable schema components. It is a conformance target of [NIEM Naming and Design Rules 3.0]. A reference schema document MUST conform to all rules of [NIEM Naming and Design Rules 3.0] that apply to this conformance target. An instance XML document with a conformance target identifier of http://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/#ReferenceSchemaDocument MUST be a conformant reference schema document.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: MPD-3.0.1
     classID: IEPD
@@ -2454,7 +2454,7 @@
     definitionTerm: 'reference schema document set'
     definitionText: 'A set of related reference schema documents, such as a NIEM release.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: MPD-3.0.1
     classID: IEPD
@@ -2467,7 +2467,7 @@
     definitionTerm: 'resolve URI'
     definitionText: 'A function (or action) that takes a URI string of the form xs:anyURI and returns the resource it identifies. If the URI is local (i.e., within an MPD) and the resource does not exist, then this function fails. If a URI is remote or of unknown location (e.g., a URN), then this function (or action) may require human assistance to determine if a resource associated with the URI exists (pass) or not (fail).'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: MPD-3.0.1
     classID: IEPD
@@ -2480,7 +2480,7 @@
     definitionTerm: 'schema component'
     definitionText: 'The generic term for the building blocks that comprise the abstract data model of a schema.(as defined by [W3C XML Schema Part 1 Structures],  §2.2, XML Schema Abstract Data Model)'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: MPD-3.0.1
     classID: IEPD
@@ -2493,7 +2493,7 @@
     definitionTerm: 'schema document subset'
     definitionText: 'An XML schema document set based on a reference schema document set intended to ensure that any instance XML document valid to the schema document subset is also valid to the reference schema document set.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: MPD-3.0.1
     classID: IEPD
@@ -2506,7 +2506,7 @@
     definitionTerm: 'Schematron schema'
     definitionText: 'A business rule schema that adheres to [ISO Schematron].'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: MPD-3.0.1
     classID: IEPD
@@ -2519,7 +2519,7 @@
     definitionTerm: 'subset schema document'
     definitionText: 'An XML schema document that meets all of the following criteria: It is built from a reference schema document set where one or more reference schema documents have been substituted by corresponding subset schema documents. It is built from a reference schema document by applying subset operations to the XML schema statements in a reference schema document. It is explicitly designated as a subset schema document. This is accomplished by declaration in the relevant MPD catalog or by a tool-specific mechanism outside the subset schema document. It has a target namespace previously defined by a reference schema document. That is, it does not provide original definitions and declarations for schema components, but instead provides an alternate schema representation of components that are defined by a reference schema document. It does not alter the business semantics of components in its namespace. The reference schema document defines these business semantics. It is intended to express the limited vocabulary necessary for an IEPD and to support XML Schema validation for an IEPD.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: MPD-3.0.1
     classID: IEPD
@@ -2532,7 +2532,7 @@
     definitionTerm: 'validity constraint context'
     definitionText: 'A set of information items that establishes the applicability of certain validity constraints.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: MPD-3.0.1
     classID: IEPD
@@ -2545,7 +2545,7 @@
     definitionTerm: 'XML catalog document'
     definitionText: 'As defined by [XML Catalogs 1.1], which states:An entity catalog.An XML catalog document MUST conform to all the rules in this specification for the conformance target XML catalog document.Rules specifying this conformance target use the applicability code XML-catalog.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: MPD-3.0.1
     classID: IEPD
@@ -2558,7 +2558,7 @@
     definitionTerm: 'XML document'
     definitionText: 'A document in XML format.(as defined by [W3C XML 1.0],  §2, Documents)'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: MPD-3.0.1
     classID: IEPD
@@ -2571,7 +2571,7 @@
     definitionTerm: 'XML Schema'
     definitionText: 'A set of schema components.(as defined by [W3C XML Schema Part 1 Structures],  §2.2, XML Schema Abstract Data Model)'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: MPD-3.0.1
     classID: IEPD
@@ -2584,7 +2584,7 @@
     definitionTerm: 'XML schema assembly'
     definitionText: 'A process that uses XML schema documents to identify the constituent schema components for an XML Schema, and correctly sequences and structures these components to construct a single entity, the XML Schema.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: MPD-3.0.1
     classID: IEPD
@@ -2597,7 +2597,7 @@
     definitionTerm: 'XML schema document'
     definitionText: 'A physical (file) representation of part or all of an XML Schema. One or more XML schema documents are used to assemble schema components into an XML Schema.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: MPD-3.0.1
     classID: IEPD
@@ -2610,7 +2610,7 @@
     definitionTerm: 'XML schema validation'
     definitionText: 'The process of checking an XML document to confirm that it is both well-formed (as defined by [W3C XML 1.0],  §2.1, Well-Formed XML Documents) and valid (as defined by [W3C XML Schema Part 1 Structures],  §2.3, Constraints and Validation Rules), in that it follows the structure defined by an associated XML Schema. A well-formed document follows the syntactic rules of XML, which are the same for all XML documents.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: MPD-3.0.1
     classID: IEPD
@@ -2623,7 +2623,7 @@
     definitionTerm: 'ZIP file'
     definitionText: 'As defined by [PKZIP], which states that it defines:... a cross-platform, interoperable file storage and transfer format ... used to aggregate, compress, and encrypt files into a single interoperable container.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: IEPD-5.0beta1
     classID: IEPD
@@ -2636,7 +2636,7 @@
     definitionTerm: artifact
     definitionText: 'A single file with a defined purpose.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
     classID: IEPD
@@ -2649,7 +2649,7 @@
     definitionTerm: 'artifact set'
     definitionText: 'A collection of artifacts logically grouped for a defined purpose.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
     classID: IEPD
@@ -2662,7 +2662,7 @@
     definitionTerm: 'business rule schema'
     definitionText: 'An artifact that contains business rules in a formal representation language with the intent to automatically process them on an XML document to enforce business constraints.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
     classID: IEPD
@@ -2675,7 +2675,7 @@
     definitionTerm: 'business rules'
     definitionText: 'Formal or informal statements that describe business policy or procedure, and in doing so define or constrain some aspect of a process or procedure in order to impose control.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
     classID: IEPD
@@ -2688,7 +2688,7 @@
     definitionTerm: 'change log'
     definitionText: 'An artifact that describes the changes applied to an IEPD since its previous version.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
     classID: IEPD
@@ -2701,7 +2701,7 @@
     definitionTerm: 'conformance assertion'
     definitionText: 'An artifact that provides a declaration that an IEPD conforms to relevant NIEM specifications and associated rules, including [NIEM Conformance Specification], [NIEM Naming and Design Rules], [NIEM Conformance Targets Attribute Specification] and this NIEM IEPD Specification.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
     classID: IEPD
@@ -2714,7 +2714,7 @@
     definitionTerm: 'conformance target'
     definitionText: 'As defined by [NIEM Conformance Targets Attribute Specification]:A class of artifact, such as an interface, protocol, document, platform, process or service, that is the subject of conformance clauses and normative statements. There may be several conformance targets defined within a specification, and these targets may be diverse so as to reflect different aspects of a specification. For example, a protocol message and a protocol engine may be different conformance targets.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
     classID: IEPD
@@ -2727,7 +2727,7 @@
     definitionTerm: 'conformance target identifier'
     definitionText: 'As defined by [NIEM Conformance Targets Attribute Specification]:An internationalized resource identifier [RFC 3987 IRI] that uniquely identifies a conformance target.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
     classID: IEPD
@@ -2740,7 +2740,7 @@
     definitionTerm: 'constraint rule'
     definitionText: 'A rule that sets a requirement on an artifact with respect to its conformance to a conformance target.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
     classID: IEPD
@@ -2753,7 +2753,7 @@
     definitionTerm: 'constraint schema document set'
     definitionText: 'A set of related constraint schema documents that work together; for example, a constraint schema document set could be built by adding constraints to a schema document subset.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
     classID: IEPD
@@ -2766,7 +2766,7 @@
     definitionTerm: 'data component'
     definitionText: 'An XML Schema type or attribute group definition; or an XML Schema element or attribute declaration.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
     classID: IEPD
@@ -2779,7 +2779,7 @@
     definitionTerm: 'extension schema document'
     definitionText: 'As defined by [NIEM Naming and Design Rules]:An XML schema document that is intended to provide definitions of schema components that are intended for reuse within a more narrow scope than those defined by a reference schema document.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
     classID: IEPD
@@ -2792,7 +2792,7 @@
     definitionTerm: 'external adapter type'
     definitionText: 'As defined by [NIEM Naming and Design Rules]:A NIEM-conformant type that adapts external components for use within NIEM. An external adapter type creates a new class of object that embodies a single concept composed of external components. External adapter types are defined in NIEM-conformant schemas.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
     classID: IEPD
@@ -2805,7 +2805,7 @@
     definitionTerm: 'external schema document'
     definitionText: 'As defined by [NIEM Naming and Design Rules]:Any XML schema document that is not one of: a reference schema document, an extension schema document, or an XML schema document that has the structures namespace as its target namespace.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
     classID: IEPD
@@ -2818,7 +2818,7 @@
     definitionTerm: 'full NIEM information exchange package'
     definitionText: 'An information exchange package that satisfies all the validity constraints for its class as defined by an information exchange package documentation, and that has an XML document element that is declared in either a NIEM reference or extension schema document.This term may be abbreviated full NIEM IEP. Rules specifying this conformance target use the applicability code FN-IEP.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
     classID: IEPD
@@ -2831,7 +2831,7 @@
     definitionTerm: 'IEP conformance target'
     definitionText: 'A conformance target that is a class or category of IEP which has a set of one or more validity constraints and a conformance target identifier. Every IEP is an instance of one or more IEP conformance targets.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
     classID: IEPD
@@ -2844,7 +2844,7 @@
     definitionTerm: 'IEPD catalog document'
     definitionText: 'An instance XML document that: conforms to all the rules in this specification for the conformance target IEPD catalog document (i.e., applicability code IEPD-catalog), and contains metadata describing: IEPD unique identification  Conformance targets  Basic characteristics and properties Key artifacts and directory structure Relationships to other IEPDs and their artifactsThis term may be abbreviated IEPD-catalog. Rules specifying this conformance target use the applicability code IEPD-catalog.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
     classID: IEPD
@@ -2857,7 +2857,7 @@
     definitionTerm: 'IEPD conformance target identifier'
     definitionText: 'A conformance target identifier to which a given IEPD claims to conform.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
     classID: IEPD
@@ -2870,7 +2870,7 @@
     definitionTerm: 'IEPD root directory'
     definitionText: 'The top level file directory relative to all IEPD artifacts and subdirectories.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
     classID: IEPD
@@ -2883,7 +2883,7 @@
     definitionTerm: 'information exchange package'
     definitionText: 'An instance XML document that conforms to the conformance target defined by a c:IEPConformanceTarget element in the IEPD catalog document of an information exchange package documentation.This term may be abbreviated IEP. Rules specifying this conformance target use the applicability code IEP.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
     classID: IEPD
@@ -2896,7 +2896,7 @@
     definitionTerm: 'information exchange package documentation'
     definitionText: 'An information exchange package documentation is a set of artifacts (possibly in a ZIP file) that: includes a set of logically cohesive W3C XML Schema documents and other supporting files, that represent one or more reusable or implementable XML information models, and has an IEPD conformance target identifier http://reference.niem.gov/niem/specification/iepd/5.0/#IEPD, and conforms to all the rules in this specification for the conformance target information exchange package documentation (i.e., applicability code IEPD), and is well-formed (conforms to all the rules with applicability code WF-IEPD).This term may be abbreviated IEPD. Rules specifying this conformance target use the applicability code IEPD.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
     classID: IEPD
@@ -2909,7 +2909,7 @@
     definitionTerm: 'instance XML document'
     definitionText: 'An instance XML document is an XML document that is valid against an XML Schema. An instance XML document is said to be an instance of the schema to which it validates.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
     classID: IEPD
@@ -2922,7 +2922,7 @@
     definitionTerm: 'interpretation rule'
     definitionText: 'A rule that sets the methodology, pattern, or procedure for understanding or using some aspect of an instance of a conformance target.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
     classID: IEPD
@@ -2935,7 +2935,7 @@
     definitionTerm: 'NIEM wantlist'
     definitionText: 'An XML document that represents a complete NIEM schema document subset.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
     classID: IEPD
@@ -2948,7 +2948,7 @@
     definitionTerm: 'path name'
     definitionText: 'A general form of the name of a file or directory that specifies a unique location in a file system. A path name points to a file system location by following the directory tree hierarchy expressed in a string of characters in which path components, separated by a delimiting character, represent each subdirectory. If a path name terminates in a file name, then it specifies the location of that file.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
     classID: IEPD
@@ -2961,7 +2961,7 @@
     definitionTerm: 'readme artifact'
     definitionText: 'An informal documentation artifact contained in an information exchange package documentation that serves as the initial general source of human readable descriptive or instructional information. A readme artifact or file (formerly known as a master document) may index or reference other more specific documentation or other explanatory materials within the IEPD.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
     classID: IEPD
@@ -2974,7 +2974,7 @@
     definitionTerm: 'reference schema document'
     definitionText: 'As defined by [NIEM Naming and Design Rules]:An XML schema document that is intended to provide the authoritative definitions of broadly reusable schema components.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
     classID: IEPD
@@ -2987,7 +2987,7 @@
     definitionTerm: 'reference schema document set'
     definitionText: 'A set of related reference schema documents, such as a NIEM release.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
     classID: IEPD
@@ -3000,7 +3000,7 @@
     definitionTerm: 'resolve URI'
     definitionText: 'A function (or action) that takes a URI string of the form xs:anyURI and returns the resource it identifies. If the URI is local (i.e., within an IEPD) and the resource does not exist, then this function fails. If a URI is remote or of unknown location (e.g., a URN), then this function (or action) may require human assistance to determine if a resource associated with the URI exists (pass) or not (fail).'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
     classID: IEPD
@@ -3013,7 +3013,7 @@
     definitionTerm: 'schema component'
     definitionText: 'The generic term for the building blocks that comprise the abstract data model of a schema.(as defined by [W3C XML Schema Part 1 Structures],  §2.2, XML Schema Abstract Data Model)'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
     classID: IEPD
@@ -3026,7 +3026,7 @@
     definitionTerm: 'schema document subset'
     definitionText: 'An XML schema document set based on a reference schema document set intended to ensure that any instance XML document valid to the schema document subset is also valid to the reference schema document set.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
     classID: IEPD
@@ -3039,7 +3039,7 @@
     definitionTerm: 'Schematron schema'
     definitionText: 'A business rule schema that adheres to [ISO Schematron].'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
     classID: IEPD
@@ -3052,7 +3052,7 @@
     definitionTerm: 'subset schema document'
     definitionText: 'An XML schema document that meets all of the following criteria: It is built from a reference schema document set where one or more reference schema documents have been substituted by corresponding subset schema documents. It is built from a reference schema document by applying subset operations to the XML schema statements in a reference schema document. It is explicitly designated as a subset schema document. This is accomplished by declaration in the relevant IEPD catalog or by a tool-specific mechanism outside the subset schema document. It has a target namespace previously defined by a reference schema document. That is, it does not provide original definitions and declarations for schema components, but instead provides an alternate schema representation of components that are defined by a reference schema document. It does not alter the business semantics of components in its namespace. The reference schema document defines these business semantics. It is intended to express the limited vocabulary necessary for an IEPD and to support XML Schema validation for an IEPD.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
     classID: IEPD
@@ -3065,7 +3065,7 @@
     definitionTerm: 'validity constraint context'
     definitionText: 'A set of information items that establishes the applicability of certain validity constraints.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
     classID: IEPD
@@ -3078,7 +3078,7 @@
     definitionTerm: 'well-formed IEPD'
     definitionText: 'A well-formed IEPD is an IEPD that: has an IEPD conformance target identifier of http://reference.niem.gov/niem/specification/iepd/5.0/#WF-IEPD, and adheres to all the rules within this specification for the well-formed IEPD conformance target (i.e., applicability code WF-IEPD).This term may be abbreviated WF-IEPD. Rules specifying this conformance target use the applicability code WF-IEPD.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
     classID: IEPD
@@ -3091,7 +3091,7 @@
     definitionTerm: 'XML catalog document'
     definitionText: 'As defined by [XML Catalogs 1.1], which states:An entity catalog.An XML catalog document MUST conform to all the rules in this specification for the conformance target XML catalog document.Rules specifying this conformance target use the applicability code XML-catalog.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
     classID: IEPD
@@ -3104,7 +3104,7 @@
     definitionTerm: 'XML document'
     definitionText: 'A document in XML format.(as defined by [W3C XML 1.0],  §2, Documents)'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
     classID: IEPD
@@ -3117,7 +3117,7 @@
     definitionTerm: 'XML Schema'
     definitionText: 'A set of schema components.(as defined by [W3C XML Schema Part 1 Structures],  §2.2, XML Schema Abstract Data Model)'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
     classID: IEPD
@@ -3130,7 +3130,7 @@
     definitionTerm: 'XML schema assembly'
     definitionText: 'A process that uses XML schema documents to identify the constituent schema components for an XML Schema, and correctly sequences and structures these components to construct a single entity, the XML Schema.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
     classID: IEPD
@@ -3143,7 +3143,7 @@
     definitionTerm: 'XML schema document'
     definitionText: 'A physical (file) representation of part or all of an XML Schema. One or more XML schema documents are used to assemble schema components into an XML Schema.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
     classID: IEPD
@@ -3156,7 +3156,7 @@
     definitionTerm: 'XML schema validation'
     definitionText: 'The process of checking an XML document to confirm that it is both well-formed (as defined by [W3C XML 1.0],  §2.1, Well-Formed XML Documents) and valid (as defined by [W3C XML Schema Part 1 Structures],  §2.3, Constraints and Validation Rules), in that it follows the structure defined by an associated XML Schema. A well-formed document follows the syntactic rules of XML, which are the same for all XML documents.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
     classID: IEPD
@@ -3169,7 +3169,7 @@
     definitionTerm: 'ZIP file'
     definitionText: 'As defined by [PKZIP], which states that it defines:... a cross-platform, interoperable file storage and transfer format ... used to aggregate, compress, and encrypt files into a single interoperable container.'
     definitionLocal: true
-    definitionCurrent: false
+    definitionStatus: draft
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3182,7 +3182,7 @@
     definitionTerm: 'absolute URI'
     definitionText: 'The term absolute URI is as defined by [RFC3986] Section 4.3, Absolute URI, identifying a uniform resource identifier that matches the grammar production absolute-URI.'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3195,7 +3195,7 @@
     definitionTerm: 'application information'
     definitionText: 'The term application information (of a schema component) is defined by [NIEM NDR] Section 10.9, Machine-readable annotations, describing the contents of xs:appinfo annotations on the element that defines a schema component.'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3208,7 +3208,7 @@
     definitionTerm: attribute
     definitionText: 'The term attribute refers to an attribute information item as defined by [XML Infoset] Section 2.3, Attribute Information Items.'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3221,7 +3221,7 @@
     definitionTerm: 'attribute declaration'
     definitionText: 'The term attribute declaration is defined by [XMLSchema1] Section 2.2.2.3, Attribute Declaration.'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3234,7 +3234,7 @@
     definitionTerm: 'catalog entry file'
     definitionText: 'The term catalog entry file is defined by [XML Catalogs] Section 2, Terminology, which states:  A catalog may be physically contained in one or more catalog entry files. A catalog entry file is a document that contains a set of catalog entries.'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3247,7 +3247,7 @@
     definitionTerm: 'code list'
     definitionText: 'A code list is a set of distinct entries with a corresponding set of columns. A code list may be thought of as a table, with table rows as distinct entries, table columns as code list columns, and individual cells as code values.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3260,7 +3260,7 @@
     definitionTerm: 'code list binding'
     definitionText: 'A code list binding is an assigned correspondence between a set of data values, such as data within an XML document, and a set of columns within a code list, identified via a code list identifier and a set of column names.A code list binding has the following properties: a code list identifier a set of column/value pairs, each having: a column reference: either a column name or a well-known column reference, and a data value A boolean value, constraining.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3273,7 +3273,7 @@
     definitionTerm: 'code list document'
     definitionText: 'A code list document is a file or resource that contains one or more code lists. It is a conformance target of this specification. A code list document MUST conform to all rules of this specification that apply to this conformance target. An XML document with an effective conformance target identifier of http://reference.niem.gov/niem/specification/code-lists/4.0/#CodeListDocument MUST be a code list document.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3286,7 +3286,7 @@
     definitionTerm: 'code list identifier'
     definitionText: 'A code list identifier is an absolute URI that identifies a code list.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3299,7 +3299,7 @@
     definitionTerm: 'code list validation set'
     definitionText: 'A code list validation set is an abstraction that contains one or more of: The instance, a code list-enabled instance document The catalog, an entity catalog, with its local context The schema, an XML Schema, and A code list document'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3312,7 +3312,7 @@
     definitionTerm: 'code list-enabled instance document'
     definitionText: 'A code list-enabled instance document is an XML document that leverages this specification to connect data values with code lists. A code list-enabled instance document MUST conform to all rules of this specification that apply to this conformance target. An XML document with an effective conformance target identifier of http://reference.niem.gov/niem/specification/code-lists/4.0/#InstanceDocument MUST be a code list-enabled instance document.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3325,7 +3325,7 @@
     definitionTerm: 'code list-enabled schema document'
     definitionText: 'A code list-enabled schema document is an XML Schema document that supports the use of code list documents for validation and meaning. It is a conformance target of this specification. A code list-enabled schema document MUST conform to all rules of this specification that apply to this conformance target. The conformance target identifier for this conformance target is http://reference.niem.gov/niem/specification/code-lists/4.0/#SchemaDocument.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3338,7 +3338,7 @@
     definitionTerm: 'code lists instance namespace'
     definitionText: 'Defined by this specification, the code lists instance namespace defines attributes that connect XML element content to code lists at run time'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3351,7 +3351,7 @@
     definitionTerm: 'code lists schema appinfo namespace'
     definitionText: 'Defined by this specification, the code lists schema appinfo namespace defines an XML vocabulary for use in xs:appinfo on XML Schema component definitions, which connect XML element and attribute content to code lists'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3364,7 +3364,7 @@
     definitionTerm: 'code value'
     definitionText: 'A code value is a single data value within a distinct entry in a code list. Each code value of a distinct entry corresponds to a column of the code list.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3377,7 +3377,7 @@
     definitionTerm: column
     definitionText: 'A column of a code list is metadata that describes a code value within each distinct entry of the code list. Each code value within the code list corresponds to one column of the code list.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3390,7 +3390,7 @@
     definitionTerm: 'column identifier'
     definitionText: 'A column identifier is an absolute URI that identifies a column of a code list.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3403,7 +3403,7 @@
     definitionTerm: 'column name'
     definitionText: 'A column name is a character string value that identifies a column within the scope of a code list.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3416,7 +3416,7 @@
     definitionTerm: 'complex type definition'
     definitionText: 'The term complex type definition is defined by [XMLSchema1] Section 2.2.1.3, Complex Type Definition.'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3429,7 +3429,7 @@
     definitionTerm: 'conformance target'
     definitionText: 'The term conformance target is defined by [CTAS] Section 3.1, Conformance Target Defined which states:  A conformance target is a class of artifact, such as an interface, protocol, document, platform, process or service, that is the subject of conformance clauses and normative statements. There may be several conformance targets defined within a specification, and these targets may be diverse so as to reflect different aspects of a specification. For example, a protocol message and a protocol engine may be different conformance targets.'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3442,7 +3442,7 @@
     definitionTerm: 'conformance target identifier'
     definitionText: 'The term conformance target identifier is defined by [CTAS] Section 3.1, Conformance Target Defined, which states:  A conformance target identifier is an internationalized resource identifier that uniquely identifies a conformance target.'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3455,7 +3455,7 @@
     definitionTerm: 'CSV code list document'
     definitionText: 'A CSV code list document is a code list document. It is a conformance target of this specification. A CSV code list document MUST conform to all rules of this specification that apply to this conformance target. The conformance target identifier for this conformance target is http://reference.niem.gov/niem/specification/code-lists/4.0/#CSVCodeListDocument.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3468,7 +3468,7 @@
     definitionTerm: 'CSV column name'
     definitionText: 'A CSV column name is the portion of a CSV file matching rule name of the ABNF grammar.'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3481,7 +3481,7 @@
     definitionTerm: 'CSV field'
     definitionText: 'A CSV field is the portion of a CSV file matching rule field of the ABNF grammar.'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3494,7 +3494,7 @@
     definitionTerm: 'CSV file'
     definitionText: 'A CSV file is a resource matching rule file of the ABNF grammar.'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3507,7 +3507,7 @@
     definitionTerm: 'CSV header'
     definitionText: 'A CSV header is the portion of a CSV file matching rule header of the ABNF grammar, and which provides names of columns within the CSV file.'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3520,7 +3520,7 @@
     definitionTerm: 'CSV record'
     definitionText: 'A CSV record is the portion of a CSV file matching rule record of the ABNF grammar.'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3533,7 +3533,7 @@
     definitionTerm: derived
     definitionText: 'A type $derived is derived from a type $base if and only if type $derived is validly derived from type $base for {extension, restriction} as defined by [XMLSchema1] Section 3.4.6, Constraints on Complex Type Definition Schema Components, subsection Schema Component Constraint: Type Derivation OK (Complex) and Section 3.14.6, Constraints on Simple Type Definition Schema Components, subsection Schema Component Constraint: Type Derivation OK (Simple).'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3546,7 +3546,7 @@
     definitionTerm: 'distinct entry'
     definitionText: 'A distinct entry is a single conceptual entity within a code list. It is composed of a set of code values, each corresponding to a column of the code list. It may be thought of as a row of a table, where each individual cell of a row corresponds to a column of the table.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3559,7 +3559,7 @@
     definitionTerm: 'effective conformance target identifier'
     definitionText: 'The term effective conformance target identifier is defined by [CTAS] Section 4, Semantics and Use, which states:  An effective conformance target identifier of a conformant document is an internationalized resource identifier reference that occurs in the document’s effective conformance targets attribute.'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3572,7 +3572,7 @@
     definitionTerm: element
     definitionText: 'The term element refers to an element information item as defined by [XML Infoset] Section 2.2, Element Information Items.'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3585,7 +3585,7 @@
     definitionTerm: 'element declaration'
     definitionText: 'The term element declaration is defined by [XMLSchema1] Section 2.2.2.1, Element Declaration.'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3598,7 +3598,7 @@
     definitionTerm: 'entity catalog'
     definitionText: 'The term entity catalog is defined by [XML Catalogs], which states in [XML Catalogs] Section 3, An Entity Catalog:  The catalog is effectively an ordered list of (one or more) catalog entry files. It is up to the application to determine the ordered list of catalog entry files to be used as the logical catalog.'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3611,7 +3611,7 @@
     definitionTerm: 'exclusive lower bound'
     definitionText: 'The term exclusive lower bound is as defined by [XMLSchema2] Section 4.2.1, bounded.'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3624,7 +3624,7 @@
     definitionTerm: 'exclusive upper bound'
     definitionText: 'The term exclusive upper bound is as defined by [XMLSchema2] Section 4.2.1, bounded.'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3637,7 +3637,7 @@
     definitionTerm: 'Genericode code list document'
     definitionText: 'A Genericode code list document is a code list document. It is a conformance target of this specification. A Genericode code list document MUST conform to all rules of this specification that apply to this conformance target. The conformance target identifier for this conformance target is http://reference.niem.gov/niem/specification/code-lists/4.0/#GenericodeCodeListDocument.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3650,7 +3650,7 @@
     definitionTerm: 'inclusive lower bound'
     definitionText: 'The term inclusive lower bound is as defined by [XMLSchema2] Section 4.2.1, bounded.'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3663,7 +3663,7 @@
     definitionTerm: 'inclusive upper bound'
     definitionText: 'The term inclusive upper bound is as defined by [XMLSchema2] Section 4.2.1, bounded.'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3676,7 +3676,7 @@
     definitionTerm: 'local context'
     definitionText: 'The resources (i.e., files) that are within the same local cache, ZIP file, or other contained location as an entity catalog are the local context of the entity catalog.'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3689,7 +3689,7 @@
     definitionTerm: 'locally-resolved resource'
     definitionText: 'A locally-resolved resource for a URI relative to an entity catalog is the resource yielded through the process of resolving the URI into a resource URI using the entity catalog, and then producing the corresponding resource from the local context of the entity catalog.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3702,7 +3702,7 @@
     definitionTerm: 'normalized value'
     definitionText: 'The term normalized value is defined by [XMLSchema1] Section 3.1.4, White Space Normalization during Validation.'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3715,7 +3715,7 @@
     definitionTerm: resolve
     definitionText: 'The term resolve refers to the process of resolving URI references, as described by [XML Catalogs] Section 7.2.2, Resolution of URI references, which defines the process for resolving a URI reference to a URI for a corresponding resource, as identified by an entity catalog.'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3728,7 +3728,7 @@
     definitionTerm: resource
     definitionText: 'The term resource is defined by [RFC3986] Section 1.1, Overview of URIs, which states:  This specification does not limit the scope of what might be a resource; rather, the term resource is used in a general sense for whatever might be identified by a URI. Familiar examples include an electronic document, an image, a source of information with a consistent purpose (e.g., today’s weather report for Los Angeles), a service (e.g., an HTTP-to-SMS gateway), and a collection of other resources.'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3741,7 +3741,7 @@
     definitionTerm: 'schema component'
     definitionText: 'The term schema component is defined by [XMLSchema1] Section 2.2, XML Schema Abstract Data Model, which states:  Schema component is the generic term for the building blocks that comprise the abstract data model of the schema.'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3754,7 +3754,7 @@
     definitionTerm: 'schema document'
     definitionText: 'The term schema document is defined by [XMLSchema1] Section 3.1.2, XML Representations of Components, which states:  A document in this form (i.e. a  element information item) is a schema document.'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3767,7 +3767,7 @@
     definitionTerm: schema-valid
     definitionText: 'The term schema-valid refers to valid as defined by [XMLSchema1] Section 2.1, Overview of XML Schema.'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3780,7 +3780,7 @@
     definitionTerm: 'simple type definition'
     definitionText: 'The term simple type definition is defined by [XMLSchema1] Section 2.2.1.2, Simple Type Definition.'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3793,7 +3793,7 @@
     definitionTerm: 'substitution group'
     definitionText: 'The substitution group of an element declaration is defined by [XMLSchema1] Section 3.3.6, Constraints on Element Declaration Schema Components.'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3806,7 +3806,7 @@
     definitionTerm: text
     definitionText: 'The term text refers to the encapsulation of a series of character information items, as defined by defined by [XML Infoset] Section 2.6, Character Information Items. A text item aggregates all contiguous character information items that have the same parent node.'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3819,7 +3819,7 @@
     definitionTerm: 'type definition'
     definitionText: 'The term type definition is defined by [XMLSchema1] Section 2.2.1, Type Definition Components.'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3832,7 +3832,7 @@
     definitionTerm: 'uniform resource identifier'
     definitionText: '[RFC3986] defines uniform resource identifier (URI), which it describes as:  A Uniform Resource Identifier (URI) is a compact sequence of characters that identifies an abstract or physical resource.'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3845,7 +3845,7 @@
     definitionTerm: URI
     definitionText: '[RFC3986] defines uniform resource identifier (URI), which it describes as:  A Uniform Resource Identifier (URI) is a compact sequence of characters that identifies an abstract or physical resource.'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3858,7 +3858,7 @@
     definitionTerm: 'XML document'
     definitionText: 'The term XML document is defined by [XML] Section 2, Documents, which states:  A data object is an XML document if it is well-formed, as defined in this specification.'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3871,7 +3871,7 @@
     definitionTerm: 'XML Schema'
     definitionText: 'The term XML Schema is defined by [XMLSchema1] Section 2.2, XML Schema Abstract Data Model, which states:  An XML Schema is a set of schema components.'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3884,7 +3884,7 @@
     definitionTerm: 'XML Schema definition language'
     definitionText: 'The term XML Schema definition language is defined by [XMLSchema1] subsection Abstract, which states:  XML Schema: Structures specifies the XML Schema definition language, which offers facilities for describing the structure and constraining the contents of XML 1.0 documents, including those which exploit the XML Namespace facility. The schema language, which is itself represented in XML 1.0 and uses namespaces, substantially reconstructs and considerably extends the capabilities found in XML 1.0 document type definitions (DTDs).'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CodeLists-4.0
     classID: CodeLists
@@ -3897,7 +3897,7 @@
     definitionTerm: 'XML Schema document set'
     definitionText: 'The term XML Schema document set is defined by [NIEM NDR] Section 3.4, XML Schema terminology, which states:  An XML Schema document set is a set of schema documents that together define an XML Schema suitable for assessing the validity of an XML document.'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CTAS-3.0
     classID: CTAS
@@ -3910,7 +3910,7 @@
     definitionTerm: 'conformance target'
     definitionText: 'A conformance target is a class of artifact, such as an interface, protocol, document, platform, process or service, that is the subject of conformance clauses and normative statements. There may be several conformance targets defined within a specification, and these targets may be diverse so as to reflect different aspects of a specification. For example, a protocol message and a protocol engine may be different conformance targets.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CTAS-3.0
     classID: CTAS
@@ -3923,7 +3923,7 @@
     definitionTerm: 'conformance target identifier'
     definitionText: 'A conformance target identifier is an internationalized resource identifier that uniquely identifies a conformance target.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CTAS-3.0
     classID: CTAS
@@ -3936,7 +3936,7 @@
     definitionTerm: 'conformant document'
     definitionText: 'A conformant document is a document that uses the conformance targets attribute defined by this specification to express a claim that it conforms to specific conformance targets. A conformant document MUST satisfy all rules in this specification for conformant documents.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CTAS-3.0
     classID: CTAS
@@ -3949,7 +3949,7 @@
     definitionTerm: 'effective conformance target identifier'
     definitionText: 'An effective conformance target identifier of a conformant document is an internationalized resource identifier reference that occurs in the document''s effective conformance targets attribute.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: CTAS-3.0
     classID: CTAS
@@ -3962,7 +3962,7 @@
     definitionTerm: 'effective conformance targets attribute'
     definitionText: 'The effective conformance targets attribute of a conformant document is the first occurrence of the attribute {http://release.niem.gov/niem/conformanceTargets/3.0/}conformanceTargets, in document order.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: JSON-4.0
     classID: JSON
@@ -3975,7 +3975,7 @@
     definitionTerm: 'conformance target'
     definitionText: 'The term conformance target is defined by [CTAS] Section 3.1, Conformance Target Defined which states:  A conformance target is a class of artifact, such as an interface, protocol, document, platform, process or service, that is the subject of conformance clauses and normative statements. There may be several conformance targets defined within a specification, and these targets may be diverse so as to reflect different aspects of a specification. For example, a protocol message and a protocol engine may be different conformance targets.'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: JSON-4.0
     classID: JSON
@@ -3988,7 +3988,7 @@
     definitionTerm: 'conformance target identifier'
     definitionText: 'The term conformance target identifier is defined by [CTAS] Section 3.1, Conformance Target Defined, which states:  A conformance target identifier is an internationalized resource identifier that uniquely identifies a conformance target.'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: JSON-4.0
     classID: JSON
@@ -4001,7 +4001,7 @@
     definitionTerm: 'conformant instance XML document'
     definitionText: 'The term conformant instance XML document is a conformance target defined by the [NIEM NDR] Section 4.1.4, Instance documents and elements, which states: '
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: JSON-4.0
     classID: JSON
@@ -4014,7 +4014,7 @@
     definitionTerm: 'conformant schema document set'
     definitionText: 'The term conformant schema document set is a conformance target defined by the [NIEM NDR] Section 4.1.3, Schema document set, which states: '
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: JSON-4.0
     classID: JSON
@@ -4027,7 +4027,7 @@
     definitionTerm: 'constraint rule'
     definitionText: 'A constraint rule is a rule that sets a requirement on an artifact with respect to its conformance to a conformance target.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: JSON-4.0
     classID: JSON
@@ -4040,7 +4040,7 @@
     definitionTerm: 'effective conformance target identifier'
     definitionText: 'The term effective conformance target identifier is defined by [CTAS] Section 4, Semantics and Use, which states:  An effective conformance target identifier of a conformant document is an internationalized resource identifier reference that occurs in the document’s effective conformance targets attribute.'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: JSON-4.0
     classID: JSON
@@ -4053,7 +4053,7 @@
     definitionTerm: equivalent
     definitionText: '[RDF-Concepts] Section 1.7, Equivalence, Entailment and Inconsistency defines the term equivalent:  Two RDF graphs A and B are equivalent if they make the same claim about the world. A is equivalent to B if and only if A entails B and B entails A.'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: JSON-4.0
     classID: JSON
@@ -4066,7 +4066,7 @@
     definitionTerm: 'extension schema document'
     definitionText: 'The term extension schema document is a conformance target defined by the [NIEM NDR] Section 4.1.2, Extension schema document, which states: '
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: JSON-4.0
     classID: JSON
@@ -4079,7 +4079,7 @@
     definitionTerm: 'external schema document'
     definitionText: 'The term external schema document is defined by the [NIEM NDR] Section 10.2.3, External adapter types and external components, which states: '
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: JSON-4.0
     classID: JSON
@@ -4092,7 +4092,7 @@
     definitionTerm: 'IEP conformance target'
     definitionText: 'The term IEP conformance target is defined by [MPD] Section 5.6, Defining Information Exchange Packages. An IEP conformance target defines a set of conformance criteria for a class of information exchange package (IEP).'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: JSON-4.0
     classID: JSON
@@ -4105,7 +4105,7 @@
     definitionTerm: 'information exchange packageIEP'
     definitionText: 'The term information exchange package is defined by [MPD] Section 3.2.3, IEP Conformance Targets. An information exchange package (IEP) is an XML document that conforms to the criteria defined for an IEP conformance target.'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: JSON-4.0
     classID: JSON
@@ -4118,7 +4118,7 @@
     definitionTerm: 'information exchange packageIEP'
     definitionText: 'The term information exchange package is defined by [MPD] Section 3.2.3, IEP Conformance Targets. An information exchange package (IEP) is an XML document that conforms to the criteria defined for an IEP conformance target.'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: JSON-4.0
     classID: JSON
@@ -4131,7 +4131,7 @@
     definitionTerm: informative
     definitionText: 'The term informative is as defined by [ConfReq] Section 7.2, Conformance by key words, which states:INFORMATIVE (NON-NORMATIVE) — statements provided for informational purposes, intended to assist the understanding or use of the specification and shall not contain provisions that are required for conformance.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: JSON-4.0
     classID: JSON
@@ -4144,7 +4144,7 @@
     definitionTerm: 'interpretation rule'
     definitionText: 'An interpretation rule is a rule that sets the methodology, pattern, or procedure for understanding some aspect of an instance of a conformance target.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: JSON-4.0
     classID: JSON
@@ -4157,7 +4157,7 @@
     definitionTerm: 'JSON document'
     definitionText: 'The term JSON document, when used within this document, is synonymous with JSON text.'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: JSON-4.0
     classID: JSON
@@ -4170,7 +4170,7 @@
     definitionTerm: 'JSON text'
     definitionText: 'The term JSON text is defined by [RFC8259] Section 2, JSON Grammar, which defines it as a single serialized JSON value.'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: JSON-4.0
     classID: JSON
@@ -4183,7 +4183,7 @@
     definitionTerm: 'JSON-LD document'
     definitionText: '[JSON-LD] defines JSON-LD, a JSON-based format to serialize linked data. [JSON-LD] defines the term JSON-LD document. [JSON-LD] Section 7, Data Model provides a summary of what constitutes a JSON-LD document. [JSON-LD] Section 8, JSON-LD Grammar states:  A JSON-LD document MUST be a valid JSON document as described in [RFC4627].'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: JSON-4.0
     classID: JSON
@@ -4196,7 +4196,7 @@
     definitionTerm: 'literal-to-object conversion'
     definitionText: 'Within this document, literal-to-object conversion is a process by which a JSON value is transformed from a value of false, null, true, number, or string, into an object containing only the property rdf:value. Evaluation of conformance of a JSON document is conducted on the results of literal-to-object conversion of that document.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: JSON-4.0
     classID: JSON
@@ -4209,7 +4209,7 @@
     definitionTerm: 'NIEM JSON document laxly conformant to a schema'
     definitionText: 'A NIEM JSON document laxly conformant to a schema is a JSON-LD document that may be interpreted using the RDF vocabulary defined by a conformant schema document set. It is a conformance target of this specification. A NIEM JSON document laxly conformant to a schema MUST conform to all rules of this specification that apply to this conformance target. The conformance target identifier for this conformance target is http://reference.niem.gov/niem/specification/niem-json-spec/4.0/#Lax.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: JSON-4.0
     classID: JSON
@@ -4222,7 +4222,7 @@
     definitionTerm: 'NIEM JSON document strictly conformant to a schema'
     definitionText: 'A NIEM JSON document strictly conformant to a schema is a JSON-LD document that may be assigned a one-to-one correspondence to a conformant instance XML document valid against a conformant schema document set. It is a conformance target of this specification. A NIEM JSON document strictly conformant to a schema MUST conform to all rules of this specification that apply to this conformance target. The conformance target identifier for this conformance target is http://reference.niem.gov/niem/specification/niem-json-spec/4.0/#Strict.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: JSON-4.0
     classID: JSON
@@ -4235,7 +4235,7 @@
     definitionTerm: normative
     definitionText: 'The term normative is as defined by [ConfReq] Section 7.2, Conformance by key words, which states:NORMATIVE — statements provided for the prescriptive parts of the specification, providing that which is necessary in order to be able to claim conformance to the specification.'
     definitionLocal: true
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: JSON-4.0
     classID: JSON
@@ -4248,7 +4248,7 @@
     definitionTerm: 'RDF graph'
     definitionText: '[RDF-Concepts] Section 3, RDF Graphs defines the term RDF graph:  An RDF graph is a set of RDF triples.'
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
 -
     specificationID: JSON-4.0
     classID: JSON
@@ -4261,4 +4261,4 @@
     definitionTerm: 'reference schema document'
     definitionText: 'The term reference schema document is a conformance target defined by the [NIEM NDR] Section 4.1.1, Reference schema document, which states: '
     definitionLocal: false
-    definitionCurrent: true
+    definitionStatus: current
