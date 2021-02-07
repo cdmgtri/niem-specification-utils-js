@@ -1,5 +1,6 @@
 -
     specificationID: JSON-4.0
+    specificationSelector: JSON-4_0
     classID: JSON
     sectionID: section_3.2
     sectionLabel: 'Section 3.2. Conformance Targets Attribute Specification'
@@ -8,11 +9,12 @@
     definitionUID: JSON-4.0-definition_conformance_target
     definitionURL: 'https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#definition_conformance_target'
     definitionTerm: 'conformance target'
-    definitionText: 'The term conformance target is defined by [CTAS] Section 3.1, Conformance Target Defined which states:  A conformance target is a class of artifact, such as an interface, protocol, document, platform, process or service, that is the subject of conformance clauses and normative statements. There may be several conformance targets defined within a specification, and these targets may be diverse so as to reflect different aspects of a specification. For example, a protocol message and a protocol engine may be different conformance targets.'
+    definitionText: 'The term conformance target is defined by [CTAS] Section 3.1, Conformance Target Defined which states: A conformance target is a class of artifact, such as an interface, protocol, document, platform, process or service, that is the subject of conformance clauses and normative statements. There may be several conformance targets defined within a specification, and these targets may be diverse so as to reflect different aspects of a specification. For example, a protocol message and a protocol engine may be different conformance targets.'
     definitionLocal: false
     definitionStatus: current
 -
     specificationID: JSON-4.0
+    specificationSelector: JSON-4_0
     classID: JSON
     sectionID: section_3.2
     sectionLabel: 'Section 3.2. Conformance Targets Attribute Specification'
@@ -21,11 +23,12 @@
     definitionUID: JSON-4.0-definition_conformance_target_identifier
     definitionURL: 'https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#definition_conformance_target_identifier'
     definitionTerm: 'conformance target identifier'
-    definitionText: 'The term conformance target identifier is defined by [CTAS] Section 3.1, Conformance Target Defined, which states:  A conformance target identifier is an internationalized resource identifier that uniquely identifies a conformance target.'
+    definitionText: 'The term conformance target identifier is defined by [CTAS] Section 3.1, Conformance Target Defined, which states: A conformance target identifier is an internationalized resource identifier that uniquely identifies a conformance target.'
     definitionLocal: false
     definitionStatus: current
 -
     specificationID: JSON-4.0
+    specificationSelector: JSON-4_0
     classID: JSON
     sectionID: section_3.3
     sectionLabel: 'Section 3.3. NIEM Naming and Design Rules'
@@ -34,11 +37,12 @@
     definitionUID: JSON-4.0-definition_conformant_instance_XML_document
     definitionURL: 'https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#definition_conformant_instance_XML_document'
     definitionTerm: 'conformant instance XML document'
-    definitionText: 'The term conformant instance XML document is a conformance target defined by the [NIEM NDR] Section 4.1.4, Instance documents and elements, which states: '
+    definitionText: 'The term conformant instance XML document is a conformance target defined by the [NIEM NDR] Section 4.1.4, Instance documents and elements, which states:'
     definitionLocal: false
     definitionStatus: current
 -
     specificationID: JSON-4.0
+    specificationSelector: JSON-4_0
     classID: JSON
     sectionID: section_3.3
     sectionLabel: 'Section 3.3. NIEM Naming and Design Rules'
@@ -47,11 +51,12 @@
     definitionUID: JSON-4.0-definition_conformant_schema_document_set
     definitionURL: 'https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#definition_conformant_schema_document_set'
     definitionTerm: 'conformant schema document set'
-    definitionText: 'The term conformant schema document set is a conformance target defined by the [NIEM NDR] Section 4.1.3, Schema document set, which states: '
+    definitionText: 'The term conformant schema document set is a conformance target defined by the [NIEM NDR] Section 4.1.3, Schema document set, which states:'
     definitionLocal: false
     definitionStatus: current
 -
     specificationID: JSON-4.0
+    specificationSelector: JSON-4_0
     classID: JSON
     sectionID: section_2.2.1
     sectionLabel: 'Section 2.2.1. Rules'
@@ -65,6 +70,7 @@
     definitionStatus: current
 -
     specificationID: JSON-4.0
+    specificationSelector: JSON-4_0
     classID: JSON
     sectionID: section_3.2
     sectionLabel: 'Section 3.2. Conformance Targets Attribute Specification'
@@ -73,11 +79,12 @@
     definitionUID: JSON-4.0-definition_effective_conformance_target_identifier
     definitionURL: 'https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#definition_effective_conformance_target_identifier'
     definitionTerm: 'effective conformance target identifier'
-    definitionText: 'The term effective conformance target identifier is defined by [CTAS] Section 4, Semantics and Use, which states:  An effective conformance target identifier of a conformant document is an internationalized resource identifier reference that occurs in the document’s effective conformance targets attribute.'
+    definitionText: 'The term effective conformance target identifier is defined by [CTAS] Section 4, Semantics and Use, which states: An effective conformance target identifier of a conformant document is an internationalized resource identifier reference that occurs in the document’s effective conformance targets attribute.'
     definitionLocal: false
     definitionStatus: current
 -
     specificationID: JSON-4.0
+    specificationSelector: JSON-4_0
     classID: JSON
     sectionID: section_3.7
     sectionLabel: 'Section 3.7. RDF and RDF Schema'
@@ -86,11 +93,12 @@
     definitionUID: JSON-4.0-definition_equivalent
     definitionURL: 'https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#definition_equivalent'
     definitionTerm: equivalent
-    definitionText: '[RDF-Concepts] Section 1.7, Equivalence, Entailment and Inconsistency defines the term equivalent:  Two RDF graphs A and B are equivalent if they make the same claim about the world. A is equivalent to B if and only if A entails B and B entails A.'
+    definitionText: '[RDF-Concepts] Section 1.7, Equivalence, Entailment and Inconsistency defines the term equivalent: Two RDF graphs A and B are equivalent if they make the same claim about the world. A is equivalent to B if and only if A entails B and B entails A.'
     definitionLocal: false
     definitionStatus: current
 -
     specificationID: JSON-4.0
+    specificationSelector: JSON-4_0
     classID: JSON
     sectionID: section_3.3
     sectionLabel: 'Section 3.3. NIEM Naming and Design Rules'
@@ -99,11 +107,12 @@
     definitionUID: JSON-4.0-definition_extension_schema_document
     definitionURL: 'https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#definition_extension_schema_document'
     definitionTerm: 'extension schema document'
-    definitionText: 'The term extension schema document is a conformance target defined by the [NIEM NDR] Section 4.1.2, Extension schema document, which states: '
+    definitionText: 'The term extension schema document is a conformance target defined by the [NIEM NDR] Section 4.1.2, Extension schema document, which states:'
     definitionLocal: false
     definitionStatus: current
 -
     specificationID: JSON-4.0
+    specificationSelector: JSON-4_0
     classID: JSON
     sectionID: section_3.3
     sectionLabel: 'Section 3.3. NIEM Naming and Design Rules'
@@ -112,11 +121,12 @@
     definitionUID: JSON-4.0-definition_external_schema_document
     definitionURL: 'https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#definition_external_schema_document'
     definitionTerm: 'external schema document'
-    definitionText: 'The term external schema document is defined by the [NIEM NDR] Section 10.2.3, External adapter types and external components, which states: '
+    definitionText: 'The term external schema document is defined by the [NIEM NDR] Section 10.2.3, External adapter types and external components, which states:'
     definitionLocal: false
     definitionStatus: current
 -
     specificationID: JSON-4.0
+    specificationSelector: JSON-4_0
     classID: JSON
     sectionID: section_3.4
     sectionLabel: 'Section 3.4. Model Package Description Specification'
@@ -130,6 +140,7 @@
     definitionStatus: current
 -
     specificationID: JSON-4.0
+    specificationSelector: JSON-4_0
     classID: JSON
     sectionID: section_3.4
     sectionLabel: 'Section 3.4. Model Package Description Specification'
@@ -143,6 +154,7 @@
     definitionStatus: current
 -
     specificationID: JSON-4.0
+    specificationSelector: JSON-4_0
     classID: JSON
     sectionID: section_3.4
     sectionLabel: 'Section 3.4. Model Package Description Specification'
@@ -156,6 +168,7 @@
     definitionStatus: current
 -
     specificationID: JSON-4.0
+    specificationSelector: JSON-4_0
     classID: JSON
     sectionID: section_2.2
     sectionLabel: 'Section 2.2. Normative and informative content'
@@ -169,6 +182,7 @@
     definitionStatus: current
 -
     specificationID: JSON-4.0
+    specificationSelector: JSON-4_0
     classID: JSON
     sectionID: section_2.2.1
     sectionLabel: 'Section 2.2.1. Rules'
@@ -182,6 +196,7 @@
     definitionStatus: current
 -
     specificationID: JSON-4.0
+    specificationSelector: JSON-4_0
     classID: JSON
     sectionID: section_3.5
     sectionLabel: 'Section 3.5. JSON'
@@ -195,6 +210,7 @@
     definitionStatus: current
 -
     specificationID: JSON-4.0
+    specificationSelector: JSON-4_0
     classID: JSON
     sectionID: section_3.5
     sectionLabel: 'Section 3.5. JSON'
@@ -208,6 +224,7 @@
     definitionStatus: current
 -
     specificationID: JSON-4.0
+    specificationSelector: JSON-4_0
     classID: JSON
     sectionID: section_3.6
     sectionLabel: 'Section 3.6. JSON-LD'
@@ -216,11 +233,12 @@
     definitionUID: JSON-4.0-definition_JSON-LD_document
     definitionURL: 'https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#definition_JSON-LD_document'
     definitionTerm: 'JSON-LD document'
-    definitionText: '[JSON-LD] defines JSON-LD, a JSON-based format to serialize linked data. [JSON-LD] defines the term JSON-LD document. [JSON-LD] Section 7, Data Model provides a summary of what constitutes a JSON-LD document. [JSON-LD] Section 8, JSON-LD Grammar states:  A JSON-LD document MUST be a valid JSON document as described in [RFC4627].'
+    definitionText: '[JSON-LD] defines JSON-LD, a JSON-based format to serialize linked data. [JSON-LD] defines the term JSON-LD document. [JSON-LD] Section 7, Data Model provides a summary of what constitutes a JSON-LD document. [JSON-LD] Section 8, JSON-LD Grammar states: A JSON-LD document MUST be a valid JSON document as described in [RFC4627].'
     definitionLocal: false
     definitionStatus: current
 -
     specificationID: JSON-4.0
+    specificationSelector: JSON-4_0
     classID: JSON
     sectionID: section_5.1
     sectionLabel: 'Section 5.1. Literal-to-object conversion'
@@ -234,6 +252,7 @@
     definitionStatus: current
 -
     specificationID: JSON-4.0
+    specificationSelector: JSON-4_0
     classID: JSON
     sectionID: section_4.2
     sectionLabel: 'Section 4.2. NIEM JSON document laxly conformant to a schema'
@@ -247,6 +266,7 @@
     definitionStatus: current
 -
     specificationID: JSON-4.0
+    specificationSelector: JSON-4_0
     classID: JSON
     sectionID: section_4.1
     sectionLabel: 'Section 4.1. NIEM JSON document strictly conformant to a schema'
@@ -260,6 +280,7 @@
     definitionStatus: current
 -
     specificationID: JSON-4.0
+    specificationSelector: JSON-4_0
     classID: JSON
     sectionID: section_2.2
     sectionLabel: 'Section 2.2. Normative and informative content'
@@ -273,6 +294,7 @@
     definitionStatus: current
 -
     specificationID: JSON-4.0
+    specificationSelector: JSON-4_0
     classID: JSON
     sectionID: section_3.7
     sectionLabel: 'Section 3.7. RDF and RDF Schema'
@@ -281,11 +303,12 @@
     definitionUID: JSON-4.0-definition_RDF_graph
     definitionURL: 'https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#definition_RDF_graph'
     definitionTerm: 'RDF graph'
-    definitionText: '[RDF-Concepts] Section 3, RDF Graphs defines the term RDF graph:  An RDF graph is a set of RDF triples.'
+    definitionText: '[RDF-Concepts] Section 3, RDF Graphs defines the term RDF graph: An RDF graph is a set of RDF triples.'
     definitionLocal: false
     definitionStatus: current
 -
     specificationID: JSON-4.0
+    specificationSelector: JSON-4_0
     classID: JSON
     sectionID: section_3.3
     sectionLabel: 'Section 3.3. NIEM Naming and Design Rules'
@@ -294,6 +317,6 @@
     definitionUID: JSON-4.0-definition_reference_schema_document
     definitionURL: 'https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#definition_reference_schema_document'
     definitionTerm: 'reference schema document'
-    definitionText: 'The term reference schema document is a conformance target defined by the [NIEM NDR] Section 4.1.1, Reference schema document, which states: '
+    definitionText: 'The term reference schema document is a conformance target defined by the [NIEM NDR] Section 4.1.1, Reference schema document, which states:'
     definitionLocal: false
     definitionStatus: current

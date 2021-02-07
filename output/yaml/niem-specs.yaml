@@ -12,6 +12,8 @@
     status: null
     ruleCount: 239
     definitionCount: 54
+    selector: NDR-3_0
+    targetCount: 4
 -
     id: NDR-4.0
     classID: NDR
@@ -26,6 +28,8 @@
     status: null
     ruleCount: 255
     definitionCount: 52
+    selector: NDR-4_0
+    targetCount: 4
 -
     id: NDR-5.0
     classID: NDR
@@ -40,6 +44,8 @@
     status: current
     ruleCount: 260
     definitionCount: 52
+    selector: NDR-5_0
+    targetCount: 4
 -
     id: MPD-3.0.1
     classID: IEPD
@@ -54,13 +60,15 @@
     status: current
     ruleCount: 60
     definitionCount: 44
+    selector: MPD-3_0_1
+    targetCount: 6
 -
     id: IEPD-5.0beta1
     classID: IEPD
     customID: IEPD
     name: 'Information Exchange Package Documentation'
     version: 5.0beta1
-    url: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html'
+    url: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html'
     year: '2015'
     applicableReleases: null
     resources: null
@@ -68,6 +76,8 @@
     status: draft
     ruleCount: 58
     definitionCount: 42
+    selector: IEPD-5_0beta1
+    targetCount: 7
 -
     id: CodeLists-4.0
     classID: CodeLists
@@ -82,6 +92,8 @@
     status: current
     ruleCount: 29
     definitionCount: 56
+    selector: CodeLists-4_0
+    targetCount: 6
 -
     id: CTAS-3.0
     classID: CTAS
@@ -96,6 +108,8 @@
     status: current
     ruleCount: 6
     definitionCount: 5
+    selector: CTAS-3_0
+    targetCount: 0
 -
     id: JSON-4.0
     classID: JSON
@@ -110,3 +124,5 @@
     status: current
     ruleCount: 4
     definitionCount: 23
+    selector: JSON-4_0
+    targetCount: 2

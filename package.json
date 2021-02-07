@@ -30,6 +30,7 @@
     "yamljs": "^0.3.0"
   },
   "devDependencies": {
+    "@types/cheerio": "^0.22.23",
     "@types/jest": "^26.0.20",
     "coveralls": "^3.1.0",
     "docdash": "^1.2.0",

@@ -2,6 +2,7 @@
 <rules>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
+    <specificationSelector>CodeLists-4_0</specificationSelector>
     <classID>CodeLists</classID>
     <sectionID>section_3.4</sectionID>
     <sectionLabel>Section 3.4. Code list-enabled schema document</sectionLabel>
@@ -15,11 +16,13 @@
     <ruleTargets>XSD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
-    <ruleText>A code list-enabled schema document MUST have an effective conformance target identifier of http://reference.niem.gov/niem/specification/code-lists/4.0/#SchemaDocument </ruleText>
+    <ruleText>A code list-enabled schema document MUST have an effective conformance target identifier of http://reference.niem.gov/niem/specification/code-lists/4.0/#SchemaDocument</ruleText>
     <ruleStatus>current</ruleStatus>
+    <ruleSelector>CodeLists-4_0-rule_3-1</ruleSelector>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
+    <specificationSelector>CodeLists-4_0</specificationSelector>
     <classID>CodeLists</classID>
     <sectionID>section_3.4</sectionID>
     <sectionLabel>Section 3.4. Code list-enabled schema document</sectionLabel>
@@ -35,9 +38,11 @@
     <ruleStyle>text</ruleStyle>
     <ruleText>A resource with an effective conformance target identifier of http://reference.niem.gov/niem/specification/code-lists/4.0/#SchemaDocument MUST be a code list-enabled schema document.</ruleText>
     <ruleStatus>current</ruleStatus>
+    <ruleSelector>CodeLists-4_0-rule_3-2</ruleSelector>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
+    <specificationSelector>CodeLists-4_0</specificationSelector>
     <classID>CodeLists</classID>
     <sectionID>section_4.4.1</sectionID>
     <sectionLabel>Section 4.4.1. Syntax for run-time code list binding</sectionLabel>
@@ -53,9 +58,11 @@
     <ruleStyle>text</ruleStyle>
     <ruleText>Any XML content in the namespace http://reference.niem.gov/niem/specification/code-lists/4.0/code-lists-instance/ MUST be schema-valid to the XML Schema definitions contained in the schema document in Appendix B, XML Schema document for the code lists instance namespace, below.</ruleText>
     <ruleStatus>current</ruleStatus>
+    <ruleSelector>CodeLists-4_0-rule_4-1</ruleSelector>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
+    <specificationSelector>CodeLists-4_0</specificationSelector>
     <classID>CodeLists</classID>
     <sectionID>section_4.4.1</sectionID>
     <sectionLabel>Section 4.4.1. Syntax for run-time code list binding</sectionLabel>
@@ -71,9 +78,11 @@
     <ruleStyle>text</ruleStyle>
     <ruleText>The normalized value of an attribute cli:codeListURI MUST be an absolute URI.</ruleText>
     <ruleStatus>current</ruleStatus>
+    <ruleSelector>CodeLists-4_0-rule_4-2</ruleSelector>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
+    <specificationSelector>CodeLists-4_0</specificationSelector>
     <classID>CodeLists</classID>
     <sectionID>section_4.4.1</sectionID>
     <sectionLabel>Section 4.4.1. Syntax for run-time code list binding</sectionLabel>
@@ -89,9 +98,11 @@
     <ruleStyle>text</ruleStyle>
     <ruleText>An element having an attribute cli:codeListColumnName MUST have an attribute cli:codeListURI.</ruleText>
     <ruleStatus>current</ruleStatus>
+    <ruleSelector>CodeLists-4_0-rule_4-3</ruleSelector>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
+    <specificationSelector>CodeLists-4_0</specificationSelector>
     <classID>CodeLists</classID>
     <sectionID>section_4.4.1</sectionID>
     <sectionLabel>Section 4.4.1. Syntax for run-time code list binding</sectionLabel>
@@ -107,9 +118,11 @@
     <ruleStyle>text</ruleStyle>
     <ruleText>An element having an attribute cli:codeListConstrainingIndicator MUST have an attribute cli:codeListURI.</ruleText>
     <ruleStatus>current</ruleStatus>
+    <ruleSelector>CodeLists-4_0-rule_4-4</ruleSelector>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
+    <specificationSelector>CodeLists-4_0</specificationSelector>
     <classID>CodeLists</classID>
     <sectionID>section_4.4.2</sectionID>
     <sectionLabel>Section 4.4.2. Run-time effective code list binding</sectionLabel>
@@ -130,9 +143,11 @@
 - a data value that is the normalized value of $element. 
 - A value for constraining that is: if $element has attribute cli:codeListConstrainingIndicator, then its value, otherwise true.</ruleText>
     <ruleStatus>current</ruleStatus>
+    <ruleSelector>CodeLists-4_0-rule_4-5</ruleSelector>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
+    <specificationSelector>CodeLists-4_0</specificationSelector>
     <classID>CodeLists</classID>
     <sectionID>section_4.5.1</sectionID>
     <sectionLabel>Section 4.5.1. Syntax for schema-time code list binding</sectionLabel>
@@ -148,9 +163,11 @@
     <ruleStyle>text</ruleStyle>
     <ruleText>Any XML content in the namespace http://reference.niem.gov/niem/specification/code-lists/4.0/code-lists-schema-appinfo/ MUST be schema-valid to the XML Schema definitions contained in the schema document in Appendix C, XML Schema document for the code list schema appinfo namespace, below.</ruleText>
     <ruleStatus>current</ruleStatus>
+    <ruleSelector>CodeLists-4_0-rule_4-6</ruleSelector>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
+    <specificationSelector>CodeLists-4_0</specificationSelector>
     <classID>CodeLists</classID>
     <sectionID>section_4.5.1</sectionID>
     <sectionLabel>Section 4.5.1. Syntax for schema-time code list binding</sectionLabel>
@@ -166,9 +183,11 @@
     <ruleStyle>text</ruleStyle>
     <ruleText>An element clsa:SimpleCodeListBinding or clsa:ComplexCodeListBinding MUST have [parent] element xs:appinfo.</ruleText>
     <ruleStatus>current</ruleStatus>
+    <ruleSelector>CodeLists-4_0-rule_4-7</ruleSelector>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
+    <specificationSelector>CodeLists-4_0</specificationSelector>
     <classID>CodeLists</classID>
     <sectionID>section_4.5.1</sectionID>
     <sectionLabel>Section 4.5.1. Syntax for schema-time code list binding</sectionLabel>
@@ -184,9 +203,11 @@
     <ruleStyle>text</ruleStyle>
     <ruleText>An attribute codeListURI that has [owner element] of clsa:SimpleCodeListBinding or clsa:ComplexCodeListBinding MUST have a normalized value that is an absolute URI.</ruleText>
     <ruleStatus>current</ruleStatus>
+    <ruleSelector>CodeLists-4_0-rule_4-8</ruleSelector>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
+    <specificationSelector>CodeLists-4_0</specificationSelector>
     <classID>CodeLists</classID>
     <sectionID>section_4.5.1</sectionID>
     <sectionLabel>Section 4.5.1. Syntax for schema-time code list binding</sectionLabel>
@@ -206,9 +227,11 @@
 - element xs:simpleType that defines a global simple type definition 
 - element xs:complexType that defines a global complex type definition</ruleText>
     <ruleStatus>current</ruleStatus>
+    <ruleSelector>CodeLists-4_0-rule_4-9</ruleSelector>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
+    <specificationSelector>CodeLists-4_0</specificationSelector>
     <classID>CodeLists</classID>
     <sectionID>section_4.5.1</sectionID>
     <sectionLabel>Section 4.5.1. Syntax for schema-time code list binding</sectionLabel>
@@ -226,9 +249,11 @@
 - element xs:element that defines a global element declaration 
 - element xs:complexType that defines a global complex type definition</ruleText>
     <ruleStatus>current</ruleStatus>
+    <ruleSelector>CodeLists-4_0-rule_4-10</ruleSelector>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
+    <specificationSelector>CodeLists-4_0</specificationSelector>
     <classID>CodeLists</classID>
     <sectionID>section_4.5.2</sectionID>
     <sectionLabel>Section 4.5.2. Simple binding of schema components</sectionLabel>
@@ -250,9 +275,11 @@
 - A data value that is the normalized value of $attribute 
 - A value for constraining that is: if $binding-element has attribute constrainingIndicator, then its value, otherwise true.</ruleText>
     <ruleStatus>current</ruleStatus>
+    <ruleSelector>CodeLists-4_0-rule_4-11</ruleSelector>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
+    <specificationSelector>CodeLists-4_0</specificationSelector>
     <classID>CodeLists</classID>
     <sectionID>section_4.5.2</sectionID>
     <sectionLabel>Section 4.5.2. Simple binding of schema components</sectionLabel>
@@ -274,9 +301,11 @@
 - A data value that is the normalized value of $element 
 - A value for constraining that is: if $binding-element has attribute constrainingIndicator, then its value, otherwise true.</ruleText>
     <ruleStatus>current</ruleStatus>
+    <ruleSelector>CodeLists-4_0-rule_4-12</ruleSelector>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
+    <specificationSelector>CodeLists-4_0</specificationSelector>
     <classID>CodeLists</classID>
     <sectionID>section_4.5.2</sectionID>
     <sectionLabel>Section 4.5.2. Simple binding of schema components</sectionLabel>
@@ -304,9 +333,11 @@
 - A data value that is the normalized value of $element 
 - A value for constraining that is: if $binding-element has attribute constrainingIndicator, then its value, otherwise true.</ruleText>
     <ruleStatus>current</ruleStatus>
+    <ruleSelector>CodeLists-4_0-rule_4-13</ruleSelector>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
+    <specificationSelector>CodeLists-4_0</specificationSelector>
     <classID>CodeLists</classID>
     <sectionID>section_4.5.3</sectionID>
     <sectionLabel>Section 4.5.3. Complex binding of schema components</sectionLabel>
@@ -329,9 +360,11 @@
 - A data value that is: if it exists, the first element child of $element that is in the substitution group of an element declaration with a name that is equal to the value of attribute elementName of $element-binding, otherwise empty. 
 - A value for constraining that is: if $binding-element has attribute constrainingIndicator, then its value, otherwise true.</ruleText>
     <ruleStatus>current</ruleStatus>
+    <ruleSelector>CodeLists-4_0-rule_4-14</ruleSelector>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
+    <specificationSelector>CodeLists-4_0</specificationSelector>
     <classID>CodeLists</classID>
     <sectionID>section_4.5.3</sectionID>
     <sectionLabel>Section 4.5.3. Complex binding of schema components</sectionLabel>
@@ -354,9 +387,11 @@
 - A data value that is: if it exists, the first element child of $element that is in the substitution group of an element declaration with a name that is equal to the value of attribute elementName of $element-binding, otherwise empty. 
 - A value for constraining that is: if $binding-element has attribute constrainingIndicator, then its value, otherwise true.</ruleText>
     <ruleStatus>current</ruleStatus>
+    <ruleSelector>CodeLists-4_0-rule_4-15</ruleSelector>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
+    <specificationSelector>CodeLists-4_0</specificationSelector>
     <classID>CodeLists</classID>
     <sectionID>section_4.6</sectionID>
     <sectionLabel>Section 4.6. Matches for code list bindings</sectionLabel>
@@ -388,9 +423,11 @@
 - If the binding is not constraining, then it is valid. 
 - If the binding has one or more matches, then it is valid.</ruleText>
     <ruleStatus>current</ruleStatus>
+    <ruleSelector>CodeLists-4_0-rule_4-16</ruleSelector>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
+    <specificationSelector>CodeLists-4_0</specificationSelector>
     <classID>CodeLists</classID>
     <sectionID>section_4.6</sectionID>
     <sectionLabel>Section 4.6. Matches for code list bindings</sectionLabel>
@@ -415,9 +452,11 @@
 - Equality comparisons are conducted as appropriate for $comparison-data-type. 
 - Inequality comparisons (e.g., less than, greater than) for ranges are conducted as appropriate for lowest atomic base type of $comparison-data-type.</ruleText>
     <ruleStatus>current</ruleStatus>
+    <ruleSelector>CodeLists-4_0-rule_4-17</ruleSelector>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
+    <specificationSelector>CodeLists-4_0</specificationSelector>
     <classID>CodeLists</classID>
     <sectionID>section_4.6</sectionID>
     <sectionLabel>Section 4.6. Matches for code list bindings</sectionLabel>
@@ -433,9 +472,11 @@
     <ruleStyle>text</ruleStyle>
     <ruleText>When a code list document defines candidate code list identifiers, a code list identifier against which a code list document resource is resolved MUST be a candidate code list identifier for that code list document.</ruleText>
     <ruleStatus>current</ruleStatus>
+    <ruleSelector>CodeLists-4_0-rule_4-18</ruleSelector>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
+    <specificationSelector>CodeLists-4_0</specificationSelector>
     <classID>CodeLists</classID>
     <sectionID>section_5</sectionID>
     <sectionLabel>Section 5. Comma-separated values (CSV) code lists</sectionLabel>
@@ -451,9 +492,11 @@
     <ruleStyle>text</ruleStyle>
     <ruleText>A CSV code list document MUST be a CSV file.</ruleText>
     <ruleStatus>current</ruleStatus>
+    <ruleSelector>CodeLists-4_0-rule_5-1</ruleSelector>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
+    <specificationSelector>CodeLists-4_0</specificationSelector>
     <classID>CodeLists</classID>
     <sectionID>section_5</sectionID>
     <sectionLabel>Section 5. Comma-separated values (CSV) code lists</sectionLabel>
@@ -469,9 +512,11 @@
     <ruleStyle>text</ruleStyle>
     <ruleText>A CSV code list document MUST have a CSV header.</ruleText>
     <ruleStatus>current</ruleStatus>
+    <ruleSelector>CodeLists-4_0-rule_5-2</ruleSelector>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
+    <specificationSelector>CodeLists-4_0</specificationSelector>
     <classID>CodeLists</classID>
     <sectionID>section_5</sectionID>
     <sectionLabel>Section 5. Comma-separated values (CSV) code lists</sectionLabel>
@@ -487,9 +532,11 @@
     <ruleStyle>text</ruleStyle>
     <ruleText>A CSV column name of a CSV code list document MUST not be empty.</ruleText>
     <ruleStatus>current</ruleStatus>
+    <ruleSelector>CodeLists-4_0-rule_5-3</ruleSelector>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
+    <specificationSelector>CodeLists-4_0</specificationSelector>
     <classID>CodeLists</classID>
     <sectionID>section_5</sectionID>
     <sectionLabel>Section 5. Comma-separated values (CSV) code lists</sectionLabel>
@@ -514,9 +561,11 @@
 - the first column of the CSV file. 
 - A code value in a CSV file has no type; its data type is empty.</ruleText>
     <ruleStatus>current</ruleStatus>
+    <ruleSelector>CodeLists-4_0-rule_5-4</ruleSelector>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
+    <specificationSelector>CodeLists-4_0</specificationSelector>
     <classID>CodeLists</classID>
     <sectionID>section_6</sectionID>
     <sectionLabel>Section 6. Genericode code lists</sectionLabel>
@@ -530,11 +579,13 @@
     <ruleTargets>GC-CLD</ruleTargets>
     <ruleClassification>Constraint</ruleClassification>
     <ruleStyle>text</ruleStyle>
-    <ruleText>A Genericode code list document MUST be a Genericode code list document as defined by [Genericode] Section 3.2, Genericode Document Types, which states: A Genericode code list document has the root element . It contains metadata describing the code list as a whole, as well as explicit code list data — codes and associated values. </ruleText>
+    <ruleText>A Genericode code list document MUST be a Genericode code list document as defined by [Genericode] Section 3.2, Genericode Document Types, which states: A Genericode code list document has the root element . It contains metadata describing the code list as a whole, as well as explicit code list data — codes and associated values.</ruleText>
     <ruleStatus>current</ruleStatus>
+    <ruleSelector>CodeLists-4_0-rule_6-1</ruleSelector>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
+    <specificationSelector>CodeLists-4_0</specificationSelector>
     <classID>CodeLists</classID>
     <sectionID>section_6</sectionID>
     <sectionLabel>Section 6. Genericode code lists</sectionLabel>
@@ -550,9 +601,11 @@
     <ruleStyle>text</ruleStyle>
     <ruleText>A resource with an effective conformance target identifier of http://reference.niem.gov/niem/specification/code-lists/4.0/#GenericodeCodeListDocument MUST be a Genericode code list document.</ruleText>
     <ruleStatus>current</ruleStatus>
+    <ruleSelector>CodeLists-4_0-rule_6-2</ruleSelector>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
+    <specificationSelector>CodeLists-4_0</specificationSelector>
     <classID>CodeLists</classID>
     <sectionID>section_6</sectionID>
     <sectionLabel>Section 6. Genericode code lists</sectionLabel>
@@ -568,9 +621,11 @@
     <ruleStyle>text</ruleStyle>
     <ruleText>A Genericode code list document MUST be schema-valid against the schema document for the Genericode namespace as provided at http://docs.oasis-open.org/codelist/ns/genericode/1.0/.</ruleText>
     <ruleStatus>current</ruleStatus>
+    <ruleSelector>CodeLists-4_0-rule_6-3</ruleSelector>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
+    <specificationSelector>CodeLists-4_0</specificationSelector>
     <classID>CodeLists</classID>
     <sectionID>section_6</sectionID>
     <sectionLabel>Section 6. Genericode code lists</sectionLabel>
@@ -586,9 +641,11 @@
     <ruleStyle>text</ruleStyle>
     <ruleText>A datatype with a namespace name of http://www.w3.org/2001/XMLSchema-datatypes MUST be evaluated as if it had a namespace name of http://www.w3.org/2001/XMLSchema.</ruleText>
     <ruleStatus>current</ruleStatus>
+    <ruleSelector>CodeLists-4_0-rule_6-4</ruleSelector>
   </rule>
   <rule>
     <specificationID>CodeLists-4.0</specificationID>
+    <specificationSelector>CodeLists-4_0</specificationSelector>
     <classID>CodeLists</classID>
     <sectionID>section_6</sectionID>
     <sectionLabel>Section 6. Genericode code lists</sectionLabel>
@@ -615,5 +672,6 @@
 - the first column in the code list. 
 - A code value in a Genericode file has a type as specified by the data definition of its column. If the Type attribute references an element declaration, then the type is the type of that element. If a Parameter, which introduces gc:DatatypeFacet, is used, then the type is treated as an anonymous type derived from the type of the column. A value for which no data type is specified has an empty data type.</ruleText>
     <ruleStatus>current</ruleStatus>
+    <ruleSelector>CodeLists-4_0-rule_6-5</ruleSelector>
   </rule>
 </rules>

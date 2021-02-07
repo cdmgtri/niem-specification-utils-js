@@ -42,6 +42,10 @@ class SpecificationClass {
     return utils.flatten( this.specifications.map( spec => spec.defs ) );
   }
 
+  get targets() {
+    return utils.flatten( this.specifications.map( spec => spec.targets ) );
+  }
+
   /**
    * URL to view all issues
    */

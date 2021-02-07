@@ -1,5 +1,6 @@
 -
     specificationID: CTAS-3.0
+    specificationSelector: CTAS-3_0
     classID: CTAS
     sectionID: section_3.3
     sectionLabel: 'Section 3.3. Syntactic Conformance'
@@ -15,8 +16,10 @@
     ruleStyle: text
     ruleText: 'A conformant document MUST be an XML document.'
     ruleStatus: current
+    ruleSelector: CTAS-3_0-rule_3-1
 -
     specificationID: CTAS-3.0
+    specificationSelector: CTAS-3_0
     classID: CTAS
     sectionID: section_3.3
     sectionLabel: 'Section 3.3. Syntactic Conformance'
@@ -32,8 +35,10 @@
     ruleStyle: text
     ruleText: 'Within a conformant document, every occurrence of the attribute {http://release.niem.gov/niem/conformanceTargets/3.0/}conformanceTargets MUST be locally schema-valid to the XML Schema component definition contained in Figure B-1, XML Schema Document for Conformance Targets Attribute.'
     ruleStatus: current
+    ruleSelector: CTAS-3_0-rule_3-2
 -
     specificationID: CTAS-3.0
+    specificationSelector: CTAS-3_0
     classID: CTAS
     sectionID: section_3.3
     sectionLabel: 'Section 3.3. Syntactic Conformance'
@@ -49,8 +54,10 @@
     ruleStyle: text
     ruleText: 'A conformant document MUST NOT contain any element or attribute information item that has the namespace name http://release.niem.gov/niem/conformanceTargets/3.0/, other than attribute {http://release.niem.gov/niem/conformanceTargets/3.0/}conformanceTargets.'
     ruleStatus: current
+    ruleSelector: CTAS-3_0-rule_3-3
 -
     specificationID: CTAS-3.0
+    specificationSelector: CTAS-3_0
     classID: CTAS
     sectionID: section_3.3
     sectionLabel: 'Section 3.3. Syntactic Conformance'
@@ -66,8 +73,10 @@
     ruleStyle: text
     ruleText: 'A conformant document MUST NOT contain an attribute {http://www.w3.org/2001/XMLSchema-instance}type with a value that has a namespace name of http://release.niem.gov/niem/conformanceTargets/3.0/.'
     ruleStatus: current
+    ruleSelector: CTAS-3_0-rule_3-4
 -
     specificationID: CTAS-3.0
+    specificationSelector: CTAS-3_0
     classID: CTAS
     sectionID: section_3.3
     sectionLabel: 'Section 3.3. Syntactic Conformance'
@@ -83,8 +92,10 @@
     ruleStyle: text
     ruleText: 'Within a conformant document, each item in the value of an attribute {http://release.niem.gov/niem/conformanceTargets/3.0/}conformanceTargets MUST be an absolute IRI reference.'
     ruleStatus: current
+    ruleSelector: CTAS-3_0-rule_3-5
 -
     specificationID: CTAS-3.0
+    specificationSelector: CTAS-3_0
     classID: CTAS
     sectionID: section_3.3
     sectionLabel: 'Section 3.3. Syntactic Conformance'
@@ -100,3 +111,4 @@
     ruleStyle: text
     ruleText: 'A conformant document MAY include any number of occurrences of the attribute {http://release.niem.gov/niem/conformanceTargets/3.0/}conformanceTargets.'
     ruleStatus: current
+    ruleSelector: CTAS-3_0-rule_3-6

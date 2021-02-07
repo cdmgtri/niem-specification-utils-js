@@ -3,12 +3,15 @@ let cheerio = require("cheerio");
 let debug = require("debug")("niem");
 
 let Rule = require("./rule");
-let Section = require("./section");
 let Definition = require("./definition");
+let Section = require("./section");
+let Target = require("./target");
+
+let { root } = cheerio;
 
 /**
  * @private
- * @type {CheerioStatic}
+ * @type {root}
  */
 let $;
 
@@ -134,7 +137,6 @@ class Parser {
     this.spec.defs = this.spec.defs.sort( (a, b) => ( a.term.toLowerCase() < b.term.toLowerCase() ) ? -1 : 1 );
 
   }
-
 
   /**
    * Parses a node for the definition term inside the <dfn></dfn> tags.

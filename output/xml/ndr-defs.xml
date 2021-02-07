@@ -2,6 +2,7 @@
 <definitions>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.9.1</sectionID>
     <sectionLabel>Section 10.9.1. The NIEM appinfo namespace</sectionLabel>
@@ -16,6 +17,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.9</sectionID>
     <sectionLabel>Section 10.9. Machine-readable annotations</sectionLabel>
@@ -30,6 +32,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.3</sectionID>
     <sectionLabel>Section 10.3. Associations</sectionLabel>
@@ -44,6 +47,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.3</sectionID>
     <sectionLabel>Section 10.3. Associations</sectionLabel>
@@ -58,6 +62,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.3</sectionID>
     <sectionLabel>Section 3.3. XML Information Set terminology</sectionLabel>
@@ -72,6 +77,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.4.1</sectionID>
     <sectionLabel>Section 10.4.1. Augmentable types</sectionLabel>
@@ -86,6 +92,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.4</sectionID>
     <sectionLabel>Section 10.4. Augmentations</sectionLabel>
@@ -100,6 +107,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.4.4</sectionID>
     <sectionLabel>Section 10.4.4. Augmentation types</sectionLabel>
@@ -114,6 +122,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.4.4</sectionID>
     <sectionLabel>Section 10.4.4. Augmentation types</sectionLabel>
@@ -128,6 +137,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.4.1</sectionID>
     <sectionLabel>Section 3.4.1. Schema components</sectionLabel>
@@ -142,6 +152,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_11.1.2.3</sectionID>
     <sectionLabel>Section 11.1.2.3. Code simple types</sectionLabel>
@@ -156,6 +167,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.2.4</sectionID>
     <sectionLabel>Section 10.2.4. Code types</sectionLabel>
@@ -170,6 +182,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.4.1</sectionID>
     <sectionLabel>Section 3.4.1. Schema components</sectionLabel>
@@ -184,6 +197,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.6</sectionID>
     <sectionLabel>Section 3.6. Conformance Targets Attribute Specification terminology</sectionLabel>
@@ -198,6 +212,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.6</sectionID>
     <sectionLabel>Section 3.6. Conformance Targets Attribute Specification terminology</sectionLabel>
@@ -212,6 +227,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_4.1.4</sectionID>
     <sectionLabel>Section 4.1.4. Instance documents and elements</sectionLabel>
@@ -226,6 +242,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_4.1.4</sectionID>
     <sectionLabel>Section 4.1.4. Instance documents and elements</sectionLabel>
@@ -240,6 +257,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_4.1.3</sectionID>
     <sectionLabel>Section 4.1.3. Schema document set</sectionLabel>
@@ -254,6 +272,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_2.4.1</sectionID>
     <sectionLabel>Section 2.4.1. Rules</sectionLabel>
@@ -268,6 +287,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_12.1</sectionID>
     <sectionLabel>Section 12.1. Content elements</sectionLabel>
@@ -282,6 +302,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_7.4</sectionID>
     <sectionLabel>Section 7.4. ISO 11179 Part 4</sectionLabel>
@@ -296,6 +317,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.9.1.1</sectionID>
     <sectionLabel>Section 10.9.1.1. Deprecation</sectionLabel>
@@ -310,6 +332,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_7.4</sectionID>
     <sectionLabel>Section 7.4. ISO 11179 Part 4</sectionLabel>
@@ -324,6 +347,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.6</sectionID>
     <sectionLabel>Section 3.6. Conformance Targets Attribute Specification terminology</sectionLabel>
@@ -338,6 +362,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.3</sectionID>
     <sectionLabel>Section 3.3. XML Information Set terminology</sectionLabel>
@@ -352,6 +377,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.4.1</sectionID>
     <sectionLabel>Section 3.4.1. Schema components</sectionLabel>
@@ -366,6 +392,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_4.1.2</sectionID>
     <sectionLabel>Section 4.1.2. Extension schema document</sectionLabel>
@@ -380,6 +407,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.2.3.2</sectionID>
     <sectionLabel>Section 10.2.3.2. External adapter types</sectionLabel>
@@ -394,6 +422,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.2.3</sectionID>
     <sectionLabel>Section 10.2.3. External adapter types and external components</sectionLabel>
@@ -408,6 +437,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_2.4</sectionID>
     <sectionLabel>Section 2.4. Normative and informative content</sectionLabel>
@@ -422,6 +452,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.4</sectionID>
     <sectionLabel>Section 3.4. XML Schema terminology</sectionLabel>
@@ -436,6 +467,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_2.4.1</sectionID>
     <sectionLabel>Section 2.4.1. Rules</sectionLabel>
@@ -450,6 +482,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.8.2.1</sectionID>
     <sectionLabel>Section 10.8.2.1. Use of Acronyms, Initialisms, Abbreviations, and Jargon</sectionLabel>
@@ -464,6 +497,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.8.2.1</sectionID>
     <sectionLabel>Section 10.8.2.1. Use of Acronyms, Initialisms, Abbreviations, and Jargon</sectionLabel>
@@ -478,6 +512,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.9</sectionID>
     <sectionLabel>Section 10.9. Machine-readable annotations</sectionLabel>
@@ -492,6 +527,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.5.2</sectionID>
     <sectionLabel>Section 10.5.2. Metadata element declarations</sectionLabel>
@@ -506,6 +542,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.5.1</sectionID>
     <sectionLabel>Section 10.5.1. Metadata types</sectionLabel>
@@ -520,6 +557,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_2.4</sectionID>
     <sectionLabel>Section 2.4. Normative and informative content</sectionLabel>
@@ -534,6 +572,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.2.1</sectionID>
     <sectionLabel>Section 10.2.1. General object types</sectionLabel>
@@ -548,6 +587,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_12.2</sectionID>
     <sectionLabel>Section 12.2. Reference elements</sectionLabel>
@@ -562,6 +602,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_4.1.1</sectionID>
     <sectionLabel>Section 4.1.1. Reference schema document</sectionLabel>
@@ -576,6 +617,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10</sectionID>
     <sectionLabel>Section 10. Rules for NIEM modeling, by NIEM concept</sectionLabel>
@@ -590,6 +632,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_5.6.4</sectionID>
     <sectionLabel>Section 5.6.4. Resolved element</sectionLabel>
@@ -604,6 +647,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.2.2</sectionID>
     <sectionLabel>Section 10.2.2. Role types and roles</sectionLabel>
@@ -618,6 +662,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.2.2</sectionID>
     <sectionLabel>Section 10.2.2. Role types and roles</sectionLabel>
@@ -632,6 +677,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.4</sectionID>
     <sectionLabel>Section 3.4. XML Schema terminology</sectionLabel>
@@ -646,6 +692,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.4</sectionID>
     <sectionLabel>Section 3.4. XML Schema terminology</sectionLabel>
@@ -654,12 +701,13 @@
     <definitionUID>NDR-3.0-definition_schema_document</definitionUID>
     <definitionURL>https://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/niem-ndr-3.0.html#definition_schema_document</definitionURL>
     <definitionTerm>schema document</definitionTerm>
-    <definitionText>The term schema document is as defined by [XML Schema Structures] Section 3.1.2, XML Representations of Components, which states:A document in this form (i.e. a  element information item) is a schema document.</definitionText>
+    <definitionText>The term schema document is as defined by [XML Schema Structures] Section 3.1.2, XML Representations of Components, which states:A document in this form (i.e. a element information item) is a schema document.</definitionText>
     <definitionLocal>true</definitionLocal>
     <definitionStatus/>
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.4.1</sectionID>
     <sectionLabel>Section 3.4.1. Schema components</sectionLabel>
@@ -674,6 +722,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.10</sectionID>
     <sectionLabel>Section 10.10. NIEM structural facilities</sectionLabel>
@@ -688,6 +737,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.4</sectionID>
     <sectionLabel>Section 3.4. XML Schema terminology</sectionLabel>
@@ -702,6 +752,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.2</sectionID>
     <sectionLabel>Section 3.2. XML terminology</sectionLabel>
@@ -716,6 +767,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.4</sectionID>
     <sectionLabel>Section 3.4. XML Schema terminology</sectionLabel>
@@ -730,6 +782,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.4</sectionID>
     <sectionLabel>Section 3.4. XML Schema terminology</sectionLabel>
@@ -744,6 +797,7 @@
   </definition>
   <definition>
     <specificationID>NDR-3.0</specificationID>
+    <specificationSelector>NDR-3_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.4</sectionID>
     <sectionLabel>Section 3.4. XML Schema terminology</sectionLabel>
@@ -758,6 +812,7 @@
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.9.1</sectionID>
     <sectionLabel>Section 10.9.1. The NIEM appinfo namespace</sectionLabel>
@@ -772,6 +827,7 @@
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.9</sectionID>
     <sectionLabel>Section 10.9. Machine-readable annotations</sectionLabel>
@@ -786,6 +842,7 @@
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.3</sectionID>
     <sectionLabel>Section 10.3. Associations</sectionLabel>
@@ -794,12 +851,13 @@
     <definitionUID>NDR-4.0-definition_association</definitionUID>
     <definitionURL>https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_association</definitionURL>
     <definitionTerm>association</definitionTerm>
-    <definitionText>An association is a conformant element information item that establishes a relationship between two or more objects, optionally including properties of that relationship. An association is an instance of an association element declaration, and has a type that is an association type. </definitionText>
+    <definitionText>An association is a conformant element information item that establishes a relationship between two or more objects, optionally including properties of that relationship. An association is an instance of an association element declaration, and has a type that is an association type.</definitionText>
     <definitionLocal>true</definitionLocal>
     <definitionStatus/>
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.3</sectionID>
     <sectionLabel>Section 10.3. Associations</sectionLabel>
@@ -814,6 +872,7 @@
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.3</sectionID>
     <sectionLabel>Section 10.3. Associations</sectionLabel>
@@ -828,6 +887,7 @@
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.3</sectionID>
     <sectionLabel>Section 3.3. XML Information Set terminology</sectionLabel>
@@ -842,6 +902,7 @@
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.4.1</sectionID>
     <sectionLabel>Section 10.4.1. Augmentable types</sectionLabel>
@@ -856,6 +917,7 @@
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.4</sectionID>
     <sectionLabel>Section 10.4. Augmentations</sectionLabel>
@@ -870,6 +932,7 @@
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.4.4</sectionID>
     <sectionLabel>Section 10.4.4. Augmentation types</sectionLabel>
@@ -884,6 +947,7 @@
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.4.4</sectionID>
     <sectionLabel>Section 10.4.4. Augmentation types</sectionLabel>
@@ -898,6 +962,7 @@
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.4.1</sectionID>
     <sectionLabel>Section 3.4.1. Schema components</sectionLabel>
@@ -912,6 +977,7 @@
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_11.1.2.3</sectionID>
     <sectionLabel>Section 11.1.2.3. Code simple types</sectionLabel>
@@ -926,6 +992,7 @@
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.2.4</sectionID>
     <sectionLabel>Section 10.2.4. Code types</sectionLabel>
@@ -940,6 +1007,7 @@
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.4.1</sectionID>
     <sectionLabel>Section 3.4.1. Schema components</sectionLabel>
@@ -954,6 +1022,7 @@
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.6</sectionID>
     <sectionLabel>Section 3.6. Conformance Targets Attribute Specification terminology</sectionLabel>
@@ -968,6 +1037,7 @@
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.6</sectionID>
     <sectionLabel>Section 3.6. Conformance Targets Attribute Specification terminology</sectionLabel>
@@ -982,6 +1052,7 @@
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_4.1.4</sectionID>
     <sectionLabel>Section 4.1.4. Instance documents and elements</sectionLabel>
@@ -996,6 +1067,7 @@
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_4.1.4</sectionID>
     <sectionLabel>Section 4.1.4. Instance documents and elements</sectionLabel>
@@ -1010,6 +1082,7 @@
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_4.1.3</sectionID>
     <sectionLabel>Section 4.1.3. Schema document set</sectionLabel>
@@ -1024,6 +1097,7 @@
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_2.4.1</sectionID>
     <sectionLabel>Section 2.4.1. Rules</sectionLabel>
@@ -1038,6 +1112,7 @@
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_7.4</sectionID>
     <sectionLabel>Section 7.4. ISO 11179 Part 4</sectionLabel>
@@ -1052,6 +1127,7 @@
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.9.1.1</sectionID>
     <sectionLabel>Section 10.9.1.1. Deprecation</sectionLabel>
@@ -1066,6 +1142,7 @@
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.3</sectionID>
     <sectionLabel>Section 3.3. XML Information Set terminology</sectionLabel>
@@ -1080,6 +1157,7 @@
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_7.4</sectionID>
     <sectionLabel>Section 7.4. ISO 11179 Part 4</sectionLabel>
@@ -1094,6 +1172,7 @@
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.6</sectionID>
     <sectionLabel>Section 3.6. Conformance Targets Attribute Specification terminology</sectionLabel>
@@ -1108,6 +1187,7 @@
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.3</sectionID>
     <sectionLabel>Section 3.3. XML Information Set terminology</sectionLabel>
@@ -1122,6 +1202,7 @@
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.4.1</sectionID>
     <sectionLabel>Section 3.4.1. Schema components</sectionLabel>
@@ -1136,6 +1217,7 @@
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_4.1.2</sectionID>
     <sectionLabel>Section 4.1.2. Extension schema document</sectionLabel>
@@ -1150,6 +1232,7 @@
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.2.3.2</sectionID>
     <sectionLabel>Section 10.2.3.2. External adapter types</sectionLabel>
@@ -1164,6 +1247,7 @@
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.2.3</sectionID>
     <sectionLabel>Section 10.2.3. External adapter types and external components</sectionLabel>
@@ -1178,6 +1262,7 @@
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_2.4</sectionID>
     <sectionLabel>Section 2.4. Normative and informative content</sectionLabel>
@@ -1192,6 +1277,7 @@
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.4</sectionID>
     <sectionLabel>Section 3.4. XML Schema terminology</sectionLabel>
@@ -1206,6 +1292,7 @@
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_2.4.1</sectionID>
     <sectionLabel>Section 2.4.1. Rules</sectionLabel>
@@ -1220,6 +1307,7 @@
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.8.2.1</sectionID>
     <sectionLabel>Section 10.8.2.1. Use of Acronyms, Initialisms, Abbreviations, and Jargon</sectionLabel>
@@ -1234,6 +1322,7 @@
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.9</sectionID>
     <sectionLabel>Section 10.9. Machine-readable annotations</sectionLabel>
@@ -1248,6 +1337,7 @@
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.5.2</sectionID>
     <sectionLabel>Section 10.5.2. Metadata element declarations</sectionLabel>
@@ -1262,6 +1352,7 @@
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.5.1</sectionID>
     <sectionLabel>Section 10.5.1. Metadata types</sectionLabel>
@@ -1276,6 +1367,7 @@
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_2.4</sectionID>
     <sectionLabel>Section 2.4. Normative and informative content</sectionLabel>
@@ -1290,6 +1382,7 @@
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.2.1</sectionID>
     <sectionLabel>Section 10.2.1. General object types</sectionLabel>
@@ -1304,6 +1397,7 @@
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_4.1.1</sectionID>
     <sectionLabel>Section 4.1.1. Reference schema document</sectionLabel>
@@ -1318,6 +1412,7 @@
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.7</sectionID>
     <sectionLabel>Section 10.7. The Representation pattern</sectionLabel>
@@ -1332,6 +1427,7 @@
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.2.2</sectionID>
     <sectionLabel>Section 10.2.2. Role types and roles</sectionLabel>
@@ -1346,6 +1442,7 @@
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.2.2</sectionID>
     <sectionLabel>Section 10.2.2. Role types and roles</sectionLabel>
@@ -1360,6 +1457,7 @@
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.4</sectionID>
     <sectionLabel>Section 3.4. XML Schema terminology</sectionLabel>
@@ -1374,6 +1472,7 @@
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.4</sectionID>
     <sectionLabel>Section 3.4. XML Schema terminology</sectionLabel>
@@ -1382,12 +1481,13 @@
     <definitionUID>NDR-4.0-definition_schema_document</definitionUID>
     <definitionURL>https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_schema_document</definitionURL>
     <definitionTerm>schema document</definitionTerm>
-    <definitionText>The term schema document is as defined by [XML Schema Structures] Section 3.1.2, XML Representations of Components, which states:A document in this form (i.e. a  element information item) is a schema document.</definitionText>
+    <definitionText>The term schema document is as defined by [XML Schema Structures] Section 3.1.2, XML Representations of Components, which states:A document in this form (i.e. a element information item) is a schema document.</definitionText>
     <definitionLocal>true</definitionLocal>
     <definitionStatus/>
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.4.1</sectionID>
     <sectionLabel>Section 3.4.1. Schema components</sectionLabel>
@@ -1402,6 +1502,7 @@
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.10</sectionID>
     <sectionLabel>Section 10.10. NIEM structural facilities</sectionLabel>
@@ -1416,6 +1517,7 @@
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.4</sectionID>
     <sectionLabel>Section 3.4. XML Schema terminology</sectionLabel>
@@ -1430,6 +1532,7 @@
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.2</sectionID>
     <sectionLabel>Section 3.2. XML terminology</sectionLabel>
@@ -1444,6 +1547,7 @@
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.4</sectionID>
     <sectionLabel>Section 3.4. XML Schema terminology</sectionLabel>
@@ -1458,6 +1562,7 @@
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.4</sectionID>
     <sectionLabel>Section 3.4. XML Schema terminology</sectionLabel>
@@ -1472,6 +1577,7 @@
   </definition>
   <definition>
     <specificationID>NDR-4.0</specificationID>
+    <specificationSelector>NDR-4_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.4</sectionID>
     <sectionLabel>Section 3.4. XML Schema terminology</sectionLabel>
@@ -1486,6 +1592,7 @@
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.9.1</sectionID>
     <sectionLabel>Section 10.9.1. The NIEM appinfo namespace</sectionLabel>
@@ -1500,6 +1607,7 @@
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.9</sectionID>
     <sectionLabel>Section 10.9. Machine-readable annotations</sectionLabel>
@@ -1514,6 +1622,7 @@
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.3</sectionID>
     <sectionLabel>Section 10.3. Associations</sectionLabel>
@@ -1522,12 +1631,13 @@
     <definitionUID>NDR-5.0-definition_association</definitionUID>
     <definitionURL>https://niem.github.io/NIEM-NDR/v5.0/niem-ndr.html#definition_association</definitionURL>
     <definitionTerm>association</definitionTerm>
-    <definitionText>An association is a conformant element information item that establishes a relationship between two or more objects, optionally including properties of that relationship. An association is an instance of an association element declaration, and has a type that is an association type. </definitionText>
+    <definitionText>An association is a conformant element information item that establishes a relationship between two or more objects, optionally including properties of that relationship. An association is an instance of an association element declaration, and has a type that is an association type.</definitionText>
     <definitionLocal>true</definitionLocal>
     <definitionStatus>current</definitionStatus>
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.3</sectionID>
     <sectionLabel>Section 10.3. Associations</sectionLabel>
@@ -1542,6 +1652,7 @@
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.3</sectionID>
     <sectionLabel>Section 10.3. Associations</sectionLabel>
@@ -1556,6 +1667,7 @@
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.3</sectionID>
     <sectionLabel>Section 3.3. XML Information Set terminology</sectionLabel>
@@ -1570,6 +1682,7 @@
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.4.1</sectionID>
     <sectionLabel>Section 10.4.1. Augmentable types</sectionLabel>
@@ -1584,6 +1697,7 @@
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.4</sectionID>
     <sectionLabel>Section 10.4. Augmentations</sectionLabel>
@@ -1598,6 +1712,7 @@
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.4.4</sectionID>
     <sectionLabel>Section 10.4.4. Augmentation types</sectionLabel>
@@ -1612,6 +1727,7 @@
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.4.4</sectionID>
     <sectionLabel>Section 10.4.4. Augmentation types</sectionLabel>
@@ -1626,6 +1742,7 @@
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.4.1</sectionID>
     <sectionLabel>Section 3.4.1. Schema components</sectionLabel>
@@ -1640,6 +1757,7 @@
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_11.1.2.3</sectionID>
     <sectionLabel>Section 11.1.2.3. Code simple types</sectionLabel>
@@ -1654,6 +1772,7 @@
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.2.4</sectionID>
     <sectionLabel>Section 10.2.4. Code types</sectionLabel>
@@ -1668,6 +1787,7 @@
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.4.1</sectionID>
     <sectionLabel>Section 3.4.1. Schema components</sectionLabel>
@@ -1682,6 +1802,7 @@
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.6</sectionID>
     <sectionLabel>Section 3.6. Conformance Targets Attribute Specification terminology</sectionLabel>
@@ -1696,6 +1817,7 @@
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.6</sectionID>
     <sectionLabel>Section 3.6. Conformance Targets Attribute Specification terminology</sectionLabel>
@@ -1710,6 +1832,7 @@
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_4.1.4</sectionID>
     <sectionLabel>Section 4.1.4. Instance documents and elements</sectionLabel>
@@ -1724,6 +1847,7 @@
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_4.1.4</sectionID>
     <sectionLabel>Section 4.1.4. Instance documents and elements</sectionLabel>
@@ -1738,6 +1862,7 @@
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_4.1.3</sectionID>
     <sectionLabel>Section 4.1.3. Schema document set</sectionLabel>
@@ -1752,6 +1877,7 @@
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_2.4.1</sectionID>
     <sectionLabel>Section 2.4.1. Rules</sectionLabel>
@@ -1766,6 +1892,7 @@
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_7.4</sectionID>
     <sectionLabel>Section 7.4. ISO 11179 Part 4</sectionLabel>
@@ -1780,6 +1907,7 @@
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.9.1.1</sectionID>
     <sectionLabel>Section 10.9.1.1. Deprecation</sectionLabel>
@@ -1794,6 +1922,7 @@
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.3</sectionID>
     <sectionLabel>Section 3.3. XML Information Set terminology</sectionLabel>
@@ -1808,6 +1937,7 @@
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_7.4</sectionID>
     <sectionLabel>Section 7.4. ISO 11179 Part 4</sectionLabel>
@@ -1822,6 +1952,7 @@
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.6</sectionID>
     <sectionLabel>Section 3.6. Conformance Targets Attribute Specification terminology</sectionLabel>
@@ -1836,6 +1967,7 @@
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.3</sectionID>
     <sectionLabel>Section 3.3. XML Information Set terminology</sectionLabel>
@@ -1850,6 +1982,7 @@
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.4.1</sectionID>
     <sectionLabel>Section 3.4.1. Schema components</sectionLabel>
@@ -1864,6 +1997,7 @@
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_4.1.2</sectionID>
     <sectionLabel>Section 4.1.2. Extension schema document</sectionLabel>
@@ -1878,6 +2012,7 @@
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.2.3.2</sectionID>
     <sectionLabel>Section 10.2.3.2. External adapter types</sectionLabel>
@@ -1892,6 +2027,7 @@
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.2.3</sectionID>
     <sectionLabel>Section 10.2.3. External adapter types and external components</sectionLabel>
@@ -1906,6 +2042,7 @@
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_2.4</sectionID>
     <sectionLabel>Section 2.4. Normative and informative content</sectionLabel>
@@ -1920,6 +2057,7 @@
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.4</sectionID>
     <sectionLabel>Section 3.4. XML Schema terminology</sectionLabel>
@@ -1934,6 +2072,7 @@
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_2.4.1</sectionID>
     <sectionLabel>Section 2.4.1. Rules</sectionLabel>
@@ -1948,6 +2087,7 @@
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.8.2.1</sectionID>
     <sectionLabel>Section 10.8.2.1. Use of Acronyms, Initialisms, Abbreviations, and Jargon</sectionLabel>
@@ -1962,6 +2102,7 @@
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.9</sectionID>
     <sectionLabel>Section 10.9. Machine-readable annotations</sectionLabel>
@@ -1976,6 +2117,7 @@
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.5.2</sectionID>
     <sectionLabel>Section 10.5.2. Metadata element declarations</sectionLabel>
@@ -1990,6 +2132,7 @@
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.5.1</sectionID>
     <sectionLabel>Section 10.5.1. Metadata types</sectionLabel>
@@ -2004,6 +2147,7 @@
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_2.4</sectionID>
     <sectionLabel>Section 2.4. Normative and informative content</sectionLabel>
@@ -2018,6 +2162,7 @@
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.2.1</sectionID>
     <sectionLabel>Section 10.2.1. General object types</sectionLabel>
@@ -2032,6 +2177,7 @@
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_4.1.1</sectionID>
     <sectionLabel>Section 4.1.1. Reference schema document</sectionLabel>
@@ -2046,6 +2192,7 @@
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.7</sectionID>
     <sectionLabel>Section 10.7. The Representation pattern</sectionLabel>
@@ -2060,6 +2207,7 @@
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.2.2</sectionID>
     <sectionLabel>Section 10.2.2. Role types and roles</sectionLabel>
@@ -2074,6 +2222,7 @@
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.2.2</sectionID>
     <sectionLabel>Section 10.2.2. Role types and roles</sectionLabel>
@@ -2088,6 +2237,7 @@
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.4</sectionID>
     <sectionLabel>Section 3.4. XML Schema terminology</sectionLabel>
@@ -2102,6 +2252,7 @@
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.4</sectionID>
     <sectionLabel>Section 3.4. XML Schema terminology</sectionLabel>
@@ -2110,12 +2261,13 @@
     <definitionUID>NDR-5.0-definition_schema_document</definitionUID>
     <definitionURL>https://niem.github.io/NIEM-NDR/v5.0/niem-ndr.html#definition_schema_document</definitionURL>
     <definitionTerm>schema document</definitionTerm>
-    <definitionText>The term schema document is as defined by [XML Schema Structures] Section 3.1.2, XML Representations of Components, which states:A document in this form (i.e. a  element information item) is a schema document.</definitionText>
+    <definitionText>The term schema document is as defined by [XML Schema Structures] Section 3.1.2, XML Representations of Components, which states:A document in this form (i.e. a element information item) is a schema document.</definitionText>
     <definitionLocal>true</definitionLocal>
     <definitionStatus>current</definitionStatus>
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.4.1</sectionID>
     <sectionLabel>Section 3.4.1. Schema components</sectionLabel>
@@ -2130,6 +2282,7 @@
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_10.10</sectionID>
     <sectionLabel>Section 10.10. NIEM structural facilities</sectionLabel>
@@ -2144,6 +2297,7 @@
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.4</sectionID>
     <sectionLabel>Section 3.4. XML Schema terminology</sectionLabel>
@@ -2158,6 +2312,7 @@
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.2</sectionID>
     <sectionLabel>Section 3.2. XML terminology</sectionLabel>
@@ -2172,6 +2327,7 @@
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.4</sectionID>
     <sectionLabel>Section 3.4. XML Schema terminology</sectionLabel>
@@ -2186,6 +2342,7 @@
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.4</sectionID>
     <sectionLabel>Section 3.4. XML Schema terminology</sectionLabel>
@@ -2200,6 +2357,7 @@
   </definition>
   <definition>
     <specificationID>NDR-5.0</specificationID>
+    <specificationSelector>NDR-5_0</specificationSelector>
     <classID>NDR</classID>
     <sectionID>section_3.4</sectionID>
     <sectionLabel>Section 3.4. XML Schema terminology</sectionLabel>

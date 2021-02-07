@@ -2,6 +2,7 @@
 <rules>
   <rule>
     <specificationID>JSON-4.0</specificationID>
+    <specificationSelector>JSON-4_0</specificationSelector>
     <classID>JSON</classID>
     <sectionID>section_5</sectionID>
     <sectionLabel>Section 5. Rules</sectionLabel>
@@ -18,9 +19,11 @@
     <ruleStyle>text</ruleStyle>
     <ruleText>A NIEM JSON document strictly conformant to a schema or NIEM JSON document laxly conformant to a schema MUST be a JSON-LD document.</ruleText>
     <ruleStatus>current</ruleStatus>
+    <ruleSelector>JSON-4_0-rule_5-1</ruleSelector>
   </rule>
   <rule>
     <specificationID>JSON-4.0</specificationID>
+    <specificationSelector>JSON-4_0</specificationSelector>
     <classID>JSON</classID>
     <sectionID>section_5</sectionID>
     <sectionLabel>Section 5. Rules</sectionLabel>
@@ -36,9 +39,11 @@
     <ruleStyle>text</ruleStyle>
     <ruleText>The RDF graph entailed by a NIEM JSON document strictly conformant to a schema MUST be equivalent to the RDF graph entailed by a corresponding conformant instance XML document instance of the schema, accounting for literal-to-object conversion and the omission of external content.</ruleText>
     <ruleStatus>current</ruleStatus>
+    <ruleSelector>JSON-4_0-rule_5-2</ruleSelector>
   </rule>
   <rule>
     <specificationID>JSON-4.0</specificationID>
+    <specificationSelector>JSON-4_0</specificationSelector>
     <classID>JSON</classID>
     <sectionID>section_5</sectionID>
     <sectionLabel>Section 5. Rules</sectionLabel>
@@ -57,9 +62,11 @@
 - the RDF graph entailed by the JSON document and 
 - the RDF graph entailed by the schema</ruleText>
     <ruleStatus>current</ruleStatus>
+    <ruleSelector>JSON-4_0-rule_5-3</ruleSelector>
   </rule>
   <rule>
     <specificationID>JSON-4.0</specificationID>
+    <specificationSelector>JSON-4_0</specificationSelector>
     <classID>JSON</classID>
     <sectionID>section_5</sectionID>
     <sectionLabel>Section 5. Rules</sectionLabel>
@@ -76,5 +83,6 @@
     <ruleStyle>text</ruleStyle>
     <ruleText>A NIEM JSON document strictly conformant to a schema or NIEM JSON document laxly conformant to a schema MUST be interpreted as an RDFS interpretation of the RDF graph composed of the RDF entailed by the JSON document together with the RDF entailed by the schema.</ruleText>
     <ruleStatus>current</ruleStatus>
+    <ruleSelector>JSON-4_0-rule_5-4</ruleSelector>
   </rule>
 </rules>

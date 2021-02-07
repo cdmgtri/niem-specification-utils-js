@@ -1,5 +1,6 @@
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_10.9.1
     sectionLabel: 'Section 10.9.1. The NIEM appinfo namespace'
@@ -13,6 +14,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_10.9
     sectionLabel: 'Section 10.9. Machine-readable annotations'
@@ -26,6 +28,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_10.3
     sectionLabel: 'Section 10.3. Associations'
@@ -39,6 +42,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_10.3
     sectionLabel: 'Section 10.3. Associations'
@@ -52,6 +56,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_3.3
     sectionLabel: 'Section 3.3. XML Information Set terminology'
@@ -65,6 +70,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_10.4.1
     sectionLabel: 'Section 10.4.1. Augmentable types'
@@ -78,6 +84,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_10.4
     sectionLabel: 'Section 10.4. Augmentations'
@@ -91,6 +98,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_10.4.4
     sectionLabel: 'Section 10.4.4. Augmentation types'
@@ -104,6 +112,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_10.4.4
     sectionLabel: 'Section 10.4.4. Augmentation types'
@@ -117,6 +126,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_3.4.1
     sectionLabel: 'Section 3.4.1. Schema components'
@@ -130,6 +140,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_11.1.2.3
     sectionLabel: 'Section 11.1.2.3. Code simple types'
@@ -143,6 +154,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_10.2.4
     sectionLabel: 'Section 10.2.4. Code types'
@@ -156,6 +168,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_3.4.1
     sectionLabel: 'Section 3.4.1. Schema components'
@@ -169,6 +182,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_3.6
     sectionLabel: 'Section 3.6. Conformance Targets Attribute Specification terminology'
@@ -182,6 +196,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_3.6
     sectionLabel: 'Section 3.6. Conformance Targets Attribute Specification terminology'
@@ -195,6 +210,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_4.1.4
     sectionLabel: 'Section 4.1.4. Instance documents and elements'
@@ -208,6 +224,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_4.1.4
     sectionLabel: 'Section 4.1.4. Instance documents and elements'
@@ -221,6 +238,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_4.1.3
     sectionLabel: 'Section 4.1.3. Schema document set'
@@ -234,6 +252,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_2.4.1
     sectionLabel: 'Section 2.4.1. Rules'
@@ -247,6 +266,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_12.1
     sectionLabel: 'Section 12.1. Content elements'
@@ -260,6 +280,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_7.4
     sectionLabel: 'Section 7.4. ISO 11179 Part 4'
@@ -273,6 +294,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_10.9.1.1
     sectionLabel: 'Section 10.9.1.1. Deprecation'
@@ -286,6 +308,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_7.4
     sectionLabel: 'Section 7.4. ISO 11179 Part 4'
@@ -299,6 +322,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_3.6
     sectionLabel: 'Section 3.6. Conformance Targets Attribute Specification terminology'
@@ -312,6 +336,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_3.3
     sectionLabel: 'Section 3.3. XML Information Set terminology'
@@ -325,6 +350,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_3.4.1
     sectionLabel: 'Section 3.4.1. Schema components'
@@ -338,6 +364,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_4.1.2
     sectionLabel: 'Section 4.1.2. Extension schema document'
@@ -351,6 +378,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_10.2.3.2
     sectionLabel: 'Section 10.2.3.2. External adapter types'
@@ -364,6 +392,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_10.2.3
     sectionLabel: 'Section 10.2.3. External adapter types and external components'
@@ -377,6 +406,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_2.4
     sectionLabel: 'Section 2.4. Normative and informative content'
@@ -390,6 +420,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_3.4
     sectionLabel: 'Section 3.4. XML Schema terminology'
@@ -403,6 +434,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_2.4.1
     sectionLabel: 'Section 2.4.1. Rules'
@@ -416,6 +448,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_10.8.2.1
     sectionLabel: 'Section 10.8.2.1. Use of Acronyms, Initialisms, Abbreviations, and Jargon'
@@ -429,6 +462,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_10.8.2.1
     sectionLabel: 'Section 10.8.2.1. Use of Acronyms, Initialisms, Abbreviations, and Jargon'
@@ -442,6 +476,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_10.9
     sectionLabel: 'Section 10.9. Machine-readable annotations'
@@ -455,6 +490,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_10.5.2
     sectionLabel: 'Section 10.5.2. Metadata element declarations'
@@ -468,6 +504,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_10.5.1
     sectionLabel: 'Section 10.5.1. Metadata types'
@@ -481,6 +518,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_2.4
     sectionLabel: 'Section 2.4. Normative and informative content'
@@ -494,6 +532,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_10.2.1
     sectionLabel: 'Section 10.2.1. General object types'
@@ -507,6 +546,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_12.2
     sectionLabel: 'Section 12.2. Reference elements'
@@ -520,6 +560,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_4.1.1
     sectionLabel: 'Section 4.1.1. Reference schema document'
@@ -533,6 +574,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_10
     sectionLabel: 'Section 10. Rules for NIEM modeling, by NIEM concept'
@@ -546,6 +588,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_5.6.4
     sectionLabel: 'Section 5.6.4. Resolved element'
@@ -559,6 +602,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_10.2.2
     sectionLabel: 'Section 10.2.2. Role types and roles'
@@ -572,6 +616,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_10.2.2
     sectionLabel: 'Section 10.2.2. Role types and roles'
@@ -585,6 +630,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_3.4
     sectionLabel: 'Section 3.4. XML Schema terminology'
@@ -598,6 +644,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_3.4
     sectionLabel: 'Section 3.4. XML Schema terminology'
@@ -606,11 +653,12 @@
     definitionUID: NDR-3.0-definition_schema_document
     definitionURL: 'https://reference.niem.gov/niem/specification/naming-and-design-rules/3.0/niem-ndr-3.0.html#definition_schema_document'
     definitionTerm: 'schema document'
-    definitionText: 'The term schema document is as defined by [XML Schema Structures] Section 3.1.2, XML Representations of Components, which states:A document in this form (i.e. a  element information item) is a schema document.'
+    definitionText: 'The term schema document is as defined by [XML Schema Structures] Section 3.1.2, XML Representations of Components, which states:A document in this form (i.e. a element information item) is a schema document.'
     definitionLocal: true
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_3.4.1
     sectionLabel: 'Section 3.4.1. Schema components'
@@ -624,6 +672,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_10.10
     sectionLabel: 'Section 10.10. NIEM structural facilities'
@@ -637,6 +686,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_3.4
     sectionLabel: 'Section 3.4. XML Schema terminology'
@@ -650,6 +700,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_3.2
     sectionLabel: 'Section 3.2. XML terminology'
@@ -663,6 +714,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_3.4
     sectionLabel: 'Section 3.4. XML Schema terminology'
@@ -676,6 +728,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_3.4
     sectionLabel: 'Section 3.4. XML Schema terminology'
@@ -689,6 +742,7 @@
     definitionStatus: null
 -
     specificationID: NDR-3.0
+    specificationSelector: NDR-3_0
     classID: NDR
     sectionID: section_3.4
     sectionLabel: 'Section 3.4. XML Schema terminology'
@@ -702,6 +756,7 @@
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_10.9.1
     sectionLabel: 'Section 10.9.1. The NIEM appinfo namespace'
@@ -715,6 +770,7 @@
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_10.9
     sectionLabel: 'Section 10.9. Machine-readable annotations'
@@ -728,6 +784,7 @@
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_10.3
     sectionLabel: 'Section 10.3. Associations'
@@ -736,11 +793,12 @@
     definitionUID: NDR-4.0-definition_association
     definitionURL: 'https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_association'
     definitionTerm: association
-    definitionText: 'An association is a conformant element information item that establishes a relationship between two or more objects, optionally including properties of that relationship. An association is an instance of an association element declaration, and has a type that is an association type. '
+    definitionText: 'An association is a conformant element information item that establishes a relationship between two or more objects, optionally including properties of that relationship. An association is an instance of an association element declaration, and has a type that is an association type.'
     definitionLocal: true
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_10.3
     sectionLabel: 'Section 10.3. Associations'
@@ -754,6 +812,7 @@
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_10.3
     sectionLabel: 'Section 10.3. Associations'
@@ -767,6 +826,7 @@
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_3.3
     sectionLabel: 'Section 3.3. XML Information Set terminology'
@@ -780,6 +840,7 @@
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_10.4.1
     sectionLabel: 'Section 10.4.1. Augmentable types'
@@ -793,6 +854,7 @@
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_10.4
     sectionLabel: 'Section 10.4. Augmentations'
@@ -806,6 +868,7 @@
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_10.4.4
     sectionLabel: 'Section 10.4.4. Augmentation types'
@@ -819,6 +882,7 @@
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_10.4.4
     sectionLabel: 'Section 10.4.4. Augmentation types'
@@ -832,6 +896,7 @@
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_3.4.1
     sectionLabel: 'Section 3.4.1. Schema components'
@@ -845,6 +910,7 @@
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_11.1.2.3
     sectionLabel: 'Section 11.1.2.3. Code simple types'
@@ -858,6 +924,7 @@
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_10.2.4
     sectionLabel: 'Section 10.2.4. Code types'
@@ -871,6 +938,7 @@
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_3.4.1
     sectionLabel: 'Section 3.4.1. Schema components'
@@ -884,6 +952,7 @@
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_3.6
     sectionLabel: 'Section 3.6. Conformance Targets Attribute Specification terminology'
@@ -897,6 +966,7 @@
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_3.6
     sectionLabel: 'Section 3.6. Conformance Targets Attribute Specification terminology'
@@ -910,6 +980,7 @@
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_4.1.4
     sectionLabel: 'Section 4.1.4. Instance documents and elements'
@@ -923,6 +994,7 @@
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_4.1.4
     sectionLabel: 'Section 4.1.4. Instance documents and elements'
@@ -936,6 +1008,7 @@
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_4.1.3
     sectionLabel: 'Section 4.1.3. Schema document set'
@@ -949,6 +1022,7 @@
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_2.4.1
     sectionLabel: 'Section 2.4.1. Rules'
@@ -962,6 +1036,7 @@
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_7.4
     sectionLabel: 'Section 7.4. ISO 11179 Part 4'
@@ -975,6 +1050,7 @@
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_10.9.1.1
     sectionLabel: 'Section 10.9.1.1. Deprecation'
@@ -988,6 +1064,7 @@
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_3.3
     sectionLabel: 'Section 3.3. XML Information Set terminology'
@@ -1001,6 +1078,7 @@
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_7.4
     sectionLabel: 'Section 7.4. ISO 11179 Part 4'
@@ -1014,6 +1092,7 @@
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_3.6
     sectionLabel: 'Section 3.6. Conformance Targets Attribute Specification terminology'
@@ -1027,6 +1106,7 @@
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_3.3
     sectionLabel: 'Section 3.3. XML Information Set terminology'
@@ -1040,6 +1120,7 @@
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_3.4.1
     sectionLabel: 'Section 3.4.1. Schema components'
@@ -1053,6 +1134,7 @@
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_4.1.2
     sectionLabel: 'Section 4.1.2. Extension schema document'
@@ -1066,6 +1148,7 @@
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_10.2.3.2
     sectionLabel: 'Section 10.2.3.2. External adapter types'
@@ -1079,6 +1162,7 @@
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_10.2.3
     sectionLabel: 'Section 10.2.3. External adapter types and external components'
@@ -1092,6 +1176,7 @@
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_2.4
     sectionLabel: 'Section 2.4. Normative and informative content'
@@ -1105,6 +1190,7 @@
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_3.4
     sectionLabel: 'Section 3.4. XML Schema terminology'
@@ -1118,6 +1204,7 @@
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_2.4.1
     sectionLabel: 'Section 2.4.1. Rules'
@@ -1131,6 +1218,7 @@
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_10.8.2.1
     sectionLabel: 'Section 10.8.2.1. Use of Acronyms, Initialisms, Abbreviations, and Jargon'
@@ -1144,6 +1232,7 @@
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_10.9
     sectionLabel: 'Section 10.9. Machine-readable annotations'
@@ -1157,6 +1246,7 @@
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_10.5.2
     sectionLabel: 'Section 10.5.2. Metadata element declarations'
@@ -1170,6 +1260,7 @@
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_10.5.1
     sectionLabel: 'Section 10.5.1. Metadata types'
@@ -1183,6 +1274,7 @@
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_2.4
     sectionLabel: 'Section 2.4. Normative and informative content'
@@ -1196,6 +1288,7 @@
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_10.2.1
     sectionLabel: 'Section 10.2.1. General object types'
@@ -1209,6 +1302,7 @@
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_4.1.1
     sectionLabel: 'Section 4.1.1. Reference schema document'
@@ -1222,6 +1316,7 @@
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_10.7
     sectionLabel: 'Section 10.7. The Representation pattern'
@@ -1235,6 +1330,7 @@
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_10.2.2
     sectionLabel: 'Section 10.2.2. Role types and roles'
@@ -1248,6 +1344,7 @@
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_10.2.2
     sectionLabel: 'Section 10.2.2. Role types and roles'
@@ -1261,6 +1358,7 @@
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_3.4
     sectionLabel: 'Section 3.4. XML Schema terminology'
@@ -1274,6 +1372,7 @@
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_3.4
     sectionLabel: 'Section 3.4. XML Schema terminology'
@@ -1282,11 +1381,12 @@
     definitionUID: NDR-4.0-definition_schema_document
     definitionURL: 'https://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html#definition_schema_document'
     definitionTerm: 'schema document'
-    definitionText: 'The term schema document is as defined by [XML Schema Structures] Section 3.1.2, XML Representations of Components, which states:A document in this form (i.e. a  element information item) is a schema document.'
+    definitionText: 'The term schema document is as defined by [XML Schema Structures] Section 3.1.2, XML Representations of Components, which states:A document in this form (i.e. a element information item) is a schema document.'
     definitionLocal: true
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_3.4.1
     sectionLabel: 'Section 3.4.1. Schema components'
@@ -1300,6 +1400,7 @@
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_10.10
     sectionLabel: 'Section 10.10. NIEM structural facilities'
@@ -1313,6 +1414,7 @@
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_3.4
     sectionLabel: 'Section 3.4. XML Schema terminology'
@@ -1326,6 +1428,7 @@
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_3.2
     sectionLabel: 'Section 3.2. XML terminology'
@@ -1339,6 +1442,7 @@
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_3.4
     sectionLabel: 'Section 3.4. XML Schema terminology'
@@ -1352,6 +1456,7 @@
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_3.4
     sectionLabel: 'Section 3.4. XML Schema terminology'
@@ -1365,6 +1470,7 @@
     definitionStatus: null
 -
     specificationID: NDR-4.0
+    specificationSelector: NDR-4_0
     classID: NDR
     sectionID: section_3.4
     sectionLabel: 'Section 3.4. XML Schema terminology'
@@ -1378,6 +1484,7 @@
     definitionStatus: null
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_10.9.1
     sectionLabel: 'Section 10.9.1. The NIEM appinfo namespace'
@@ -1391,6 +1498,7 @@
     definitionStatus: current
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_10.9
     sectionLabel: 'Section 10.9. Machine-readable annotations'
@@ -1404,6 +1512,7 @@
     definitionStatus: current
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_10.3
     sectionLabel: 'Section 10.3. Associations'
@@ -1412,11 +1521,12 @@
     definitionUID: NDR-5.0-definition_association
     definitionURL: 'https://niem.github.io/NIEM-NDR/v5.0/niem-ndr.html#definition_association'
     definitionTerm: association
-    definitionText: 'An association is a conformant element information item that establishes a relationship between two or more objects, optionally including properties of that relationship. An association is an instance of an association element declaration, and has a type that is an association type. '
+    definitionText: 'An association is a conformant element information item that establishes a relationship between two or more objects, optionally including properties of that relationship. An association is an instance of an association element declaration, and has a type that is an association type.'
     definitionLocal: true
     definitionStatus: current
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_10.3
     sectionLabel: 'Section 10.3. Associations'
@@ -1430,6 +1540,7 @@
     definitionStatus: current
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_10.3
     sectionLabel: 'Section 10.3. Associations'
@@ -1443,6 +1554,7 @@
     definitionStatus: current
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_3.3
     sectionLabel: 'Section 3.3. XML Information Set terminology'
@@ -1456,6 +1568,7 @@
     definitionStatus: current
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_10.4.1
     sectionLabel: 'Section 10.4.1. Augmentable types'
@@ -1469,6 +1582,7 @@
     definitionStatus: current
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_10.4
     sectionLabel: 'Section 10.4. Augmentations'
@@ -1482,6 +1596,7 @@
     definitionStatus: current
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_10.4.4
     sectionLabel: 'Section 10.4.4. Augmentation types'
@@ -1495,6 +1610,7 @@
     definitionStatus: current
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_10.4.4
     sectionLabel: 'Section 10.4.4. Augmentation types'
@@ -1508,6 +1624,7 @@
     definitionStatus: current
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_3.4.1
     sectionLabel: 'Section 3.4.1. Schema components'
@@ -1521,6 +1638,7 @@
     definitionStatus: current
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_11.1.2.3
     sectionLabel: 'Section 11.1.2.3. Code simple types'
@@ -1534,6 +1652,7 @@
     definitionStatus: current
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_10.2.4
     sectionLabel: 'Section 10.2.4. Code types'
@@ -1547,6 +1666,7 @@
     definitionStatus: current
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_3.4.1
     sectionLabel: 'Section 3.4.1. Schema components'
@@ -1560,6 +1680,7 @@
     definitionStatus: current
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_3.6
     sectionLabel: 'Section 3.6. Conformance Targets Attribute Specification terminology'
@@ -1573,6 +1694,7 @@
     definitionStatus: current
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_3.6
     sectionLabel: 'Section 3.6. Conformance Targets Attribute Specification terminology'
@@ -1586,6 +1708,7 @@
     definitionStatus: current
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_4.1.4
     sectionLabel: 'Section 4.1.4. Instance documents and elements'
@@ -1599,6 +1722,7 @@
     definitionStatus: current
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_4.1.4
     sectionLabel: 'Section 4.1.4. Instance documents and elements'
@@ -1612,6 +1736,7 @@
     definitionStatus: current
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_4.1.3
     sectionLabel: 'Section 4.1.3. Schema document set'
@@ -1625,6 +1750,7 @@
     definitionStatus: current
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_2.4.1
     sectionLabel: 'Section 2.4.1. Rules'
@@ -1638,6 +1764,7 @@
     definitionStatus: current
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_7.4
     sectionLabel: 'Section 7.4. ISO 11179 Part 4'
@@ -1651,6 +1778,7 @@
     definitionStatus: current
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_10.9.1.1
     sectionLabel: 'Section 10.9.1.1. Deprecation'
@@ -1664,6 +1792,7 @@
     definitionStatus: current
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_3.3
     sectionLabel: 'Section 3.3. XML Information Set terminology'
@@ -1677,6 +1806,7 @@
     definitionStatus: current
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_7.4
     sectionLabel: 'Section 7.4. ISO 11179 Part 4'
@@ -1690,6 +1820,7 @@
     definitionStatus: current
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_3.6
     sectionLabel: 'Section 3.6. Conformance Targets Attribute Specification terminology'
@@ -1703,6 +1834,7 @@
     definitionStatus: current
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_3.3
     sectionLabel: 'Section 3.3. XML Information Set terminology'
@@ -1716,6 +1848,7 @@
     definitionStatus: current
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_3.4.1
     sectionLabel: 'Section 3.4.1. Schema components'
@@ -1729,6 +1862,7 @@
     definitionStatus: current
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_4.1.2
     sectionLabel: 'Section 4.1.2. Extension schema document'
@@ -1742,6 +1876,7 @@
     definitionStatus: current
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_10.2.3.2
     sectionLabel: 'Section 10.2.3.2. External adapter types'
@@ -1755,6 +1890,7 @@
     definitionStatus: current
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_10.2.3
     sectionLabel: 'Section 10.2.3. External adapter types and external components'
@@ -1768,6 +1904,7 @@
     definitionStatus: current
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_2.4
     sectionLabel: 'Section 2.4. Normative and informative content'
@@ -1781,6 +1918,7 @@
     definitionStatus: current
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_3.4
     sectionLabel: 'Section 3.4. XML Schema terminology'
@@ -1794,6 +1932,7 @@
     definitionStatus: current
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_2.4.1
     sectionLabel: 'Section 2.4.1. Rules'
@@ -1807,6 +1946,7 @@
     definitionStatus: current
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_10.8.2.1
     sectionLabel: 'Section 10.8.2.1. Use of Acronyms, Initialisms, Abbreviations, and Jargon'
@@ -1820,6 +1960,7 @@
     definitionStatus: current
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_10.9
     sectionLabel: 'Section 10.9. Machine-readable annotations'
@@ -1833,6 +1974,7 @@
     definitionStatus: current
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_10.5.2
     sectionLabel: 'Section 10.5.2. Metadata element declarations'
@@ -1846,6 +1988,7 @@
     definitionStatus: current
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_10.5.1
     sectionLabel: 'Section 10.5.1. Metadata types'
@@ -1859,6 +2002,7 @@
     definitionStatus: current
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_2.4
     sectionLabel: 'Section 2.4. Normative and informative content'
@@ -1872,6 +2016,7 @@
     definitionStatus: current
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_10.2.1
     sectionLabel: 'Section 10.2.1. General object types'
@@ -1885,6 +2030,7 @@
     definitionStatus: current
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_4.1.1
     sectionLabel: 'Section 4.1.1. Reference schema document'
@@ -1898,6 +2044,7 @@
     definitionStatus: current
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_10.7
     sectionLabel: 'Section 10.7. The Representation pattern'
@@ -1911,6 +2058,7 @@
     definitionStatus: current
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_10.2.2
     sectionLabel: 'Section 10.2.2. Role types and roles'
@@ -1924,6 +2072,7 @@
     definitionStatus: current
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_10.2.2
     sectionLabel: 'Section 10.2.2. Role types and roles'
@@ -1937,6 +2086,7 @@
     definitionStatus: current
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_3.4
     sectionLabel: 'Section 3.4. XML Schema terminology'
@@ -1950,6 +2100,7 @@
     definitionStatus: current
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_3.4
     sectionLabel: 'Section 3.4. XML Schema terminology'
@@ -1958,11 +2109,12 @@
     definitionUID: NDR-5.0-definition_schema_document
     definitionURL: 'https://niem.github.io/NIEM-NDR/v5.0/niem-ndr.html#definition_schema_document'
     definitionTerm: 'schema document'
-    definitionText: 'The term schema document is as defined by [XML Schema Structures] Section 3.1.2, XML Representations of Components, which states:A document in this form (i.e. a  element information item) is a schema document.'
+    definitionText: 'The term schema document is as defined by [XML Schema Structures] Section 3.1.2, XML Representations of Components, which states:A document in this form (i.e. a element information item) is a schema document.'
     definitionLocal: true
     definitionStatus: current
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_3.4.1
     sectionLabel: 'Section 3.4.1. Schema components'
@@ -1976,6 +2128,7 @@
     definitionStatus: current
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_10.10
     sectionLabel: 'Section 10.10. NIEM structural facilities'
@@ -1989,6 +2142,7 @@
     definitionStatus: current
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_3.4
     sectionLabel: 'Section 3.4. XML Schema terminology'
@@ -2002,6 +2156,7 @@
     definitionStatus: current
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_3.2
     sectionLabel: 'Section 3.2. XML terminology'
@@ -2015,6 +2170,7 @@
     definitionStatus: current
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_3.4
     sectionLabel: 'Section 3.4. XML Schema terminology'
@@ -2028,6 +2184,7 @@
     definitionStatus: current
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_3.4
     sectionLabel: 'Section 3.4. XML Schema terminology'
@@ -2041,6 +2198,7 @@
     definitionStatus: current
 -
     specificationID: NDR-5.0
+    specificationSelector: NDR-5_0
     classID: NDR
     sectionID: section_3.4
     sectionLabel: 'Section 3.4. XML Schema terminology'
@@ -2054,6 +2212,7 @@
     definitionStatus: current
 -
     specificationID: MPD-3.0.1
+    specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_2.3
     sectionLabel: 'Section 2.3. Artifacts'
@@ -2067,6 +2226,7 @@
     definitionStatus: current
 -
     specificationID: MPD-3.0.1
+    specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_2.3
     sectionLabel: 'Section 2.3. Artifacts'
@@ -2080,6 +2240,7 @@
     definitionStatus: current
 -
     specificationID: MPD-3.0.1
+    specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_6.2
     sectionLabel: 'Section 6.2. Business Rules'
@@ -2093,6 +2254,7 @@
     definitionStatus: current
 -
     specificationID: MPD-3.0.1
+    specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_6.2
     sectionLabel: 'Section 6.2. Business Rules'
@@ -2106,6 +2268,7 @@
     definitionStatus: current
 -
     specificationID: MPD-3.0.1
+    specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_5.3
     sectionLabel: 'Section 5.3. Change Log'
@@ -2119,6 +2282,7 @@
     definitionStatus: current
 -
     specificationID: MPD-3.0.1
+    specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_5.7
     sectionLabel: 'Section 5.7. Conformance Assertion'
@@ -2132,6 +2296,7 @@
     definitionStatus: current
 -
     specificationID: MPD-3.0.1
+    specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_3.1
     sectionLabel: 'Section 3.1. Conformance Target Terminology'
@@ -2145,6 +2310,7 @@
     definitionStatus: current
 -
     specificationID: MPD-3.0.1
+    specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_3.1
     sectionLabel: 'Section 3.1. Conformance Target Terminology'
@@ -2158,6 +2324,7 @@
     definitionStatus: current
 -
     specificationID: MPD-3.0.1
+    specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_2.9
     sectionLabel: 'Section 2.9. Rules'
@@ -2171,6 +2338,7 @@
     definitionStatus: current
 -
     specificationID: MPD-3.0.1
+    specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_4.5
     sectionLabel: 'Section 4.5. Constraint Schema Document Sets'
@@ -2184,6 +2352,7 @@
     definitionStatus: current
 -
     specificationID: MPD-3.0.1
+    specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_2.6
     sectionLabel: 'Section 2.6. Harmonization'
@@ -2197,6 +2366,7 @@
     definitionStatus: current
 -
     specificationID: MPD-3.0.1
+    specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_4.3
     sectionLabel: 'Section 4.3. Extension Schema Documents'
@@ -2210,6 +2380,7 @@
     definitionStatus: current
 -
     specificationID: MPD-3.0.1
+    specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_4.4
     sectionLabel: 'Section 4.4. External Schema Documents'
@@ -2223,6 +2394,7 @@
     definitionStatus: current
 -
     specificationID: MPD-3.0.1
+    specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_4.4
     sectionLabel: 'Section 4.4. External Schema Documents'
@@ -2236,6 +2408,7 @@
     definitionStatus: current
 -
     specificationID: MPD-3.0.1
+    specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_3.2.3
     sectionLabel: 'Section 3.2.3. IEP Conformance Targets'
@@ -2249,6 +2422,7 @@
     definitionStatus: current
 -
     specificationID: MPD-3.0.1
+    specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_2.6
     sectionLabel: 'Section 2.6. Harmonization'
@@ -2262,6 +2436,7 @@
     definitionStatus: current
 -
     specificationID: MPD-3.0.1
+    specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_5.6
     sectionLabel: 'Section 5.6. Defining Information Exchange Packages'
@@ -2275,6 +2450,7 @@
     definitionStatus: current
 -
     specificationID: MPD-3.0.1
+    specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_3.2.3
     sectionLabel: 'Section 3.2.3. IEP Conformance Targets'
@@ -2288,6 +2464,7 @@
     definitionStatus: current
 -
     specificationID: MPD-3.0.1
+    specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_3.2.2
     sectionLabel: 'Section 3.2.2. IEPD Conformance Target'
@@ -2301,6 +2478,7 @@
     definitionStatus: current
 -
     specificationID: MPD-3.0.1
+    specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_3.2.2
     sectionLabel: 'Section 3.2.2. IEPD Conformance Target'
@@ -2314,6 +2492,7 @@
     definitionStatus: current
 -
     specificationID: MPD-3.0.1
+    specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_2.9
     sectionLabel: 'Section 2.9. Rules'
@@ -2327,6 +2506,7 @@
     definitionStatus: current
 -
     specificationID: MPD-3.0.1
+    specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_3.2.1
     sectionLabel: 'Section 3.2.1. The Model Package Description Conformance Target'
@@ -2340,6 +2520,7 @@
     definitionStatus: current
 -
     specificationID: MPD-3.0.1
+    specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_5.1
     sectionLabel: 'Section 5.1. NIEM MPD Catalog'
@@ -2353,6 +2534,7 @@
     definitionStatus: current
 -
     specificationID: MPD-3.0.1
+    specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_3.1
     sectionLabel: 'Section 3.1. Conformance Target Terminology'
@@ -2366,6 +2548,7 @@
     definitionStatus: current
 -
     specificationID: MPD-3.0.1
+    specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_7
     sectionLabel: 'Section 7. Organization, Packaging, and Other Criteria'
@@ -2379,6 +2562,7 @@
     definitionStatus: current
 -
     specificationID: MPD-3.0.1
+    specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_6.1
     sectionLabel: 'Section 6.1. NIEM Wantlist'
@@ -2392,6 +2576,7 @@
     definitionStatus: current
 -
     specificationID: MPD-3.0.1
+    specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_5.2.4
     sectionLabel: 'Section 5.2.4. URI Schemes'
@@ -2405,6 +2590,7 @@
     definitionStatus: current
 -
     specificationID: MPD-3.0.1
+    specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_5.4
     sectionLabel: 'Section 5.4. ReadMe Artifact'
@@ -2418,6 +2604,7 @@
     definitionStatus: current
 -
     specificationID: MPD-3.0.1
+    specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_5.2.4.6
     sectionLabel: 'Section 5.2.4.6. URI Resolution Involving Reference Elements'
@@ -2431,6 +2618,7 @@
     definitionStatus: current
 -
     specificationID: MPD-3.0.1
+    specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_2.8
     sectionLabel: 'Section 2.8. Reference Schema Documents'
@@ -2444,6 +2632,7 @@
     definitionStatus: current
 -
     specificationID: MPD-3.0.1
+    specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_2.8
     sectionLabel: 'Section 2.8. Reference Schema Documents'
@@ -2457,6 +2646,7 @@
     definitionStatus: current
 -
     specificationID: MPD-3.0.1
+    specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_5.2.4
     sectionLabel: 'Section 5.2.4. URI Schemes'
@@ -2470,6 +2660,7 @@
     definitionStatus: current
 -
     specificationID: MPD-3.0.1
+    specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_2.7
     sectionLabel: 'Section 2.7. XML Validation'
@@ -2478,11 +2669,12 @@
     definitionUID: MPD-3.0.1-definition_schema_component
     definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_schema_component'
     definitionTerm: 'schema component'
-    definitionText: 'The generic term for the building blocks that comprise the abstract data model of a schema.(as defined by [W3C XML Schema Part 1 Structures],  §2.2, XML Schema Abstract Data Model)'
+    definitionText: 'The generic term for the building blocks that comprise the abstract data model of a schema.(as defined by [W3C XML Schema Part 1 Structures], §2.2, XML Schema Abstract Data Model)'
     definitionLocal: true
     definitionStatus: current
 -
     specificationID: MPD-3.0.1
+    specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_4.2.1
     sectionLabel: 'Section 4.2.1. Basic Subset Concepts'
@@ -2496,6 +2688,7 @@
     definitionStatus: current
 -
     specificationID: MPD-3.0.1
+    specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_6.2
     sectionLabel: 'Section 6.2. Business Rules'
@@ -2509,6 +2702,7 @@
     definitionStatus: current
 -
     specificationID: MPD-3.0.1
+    specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_4.2.1
     sectionLabel: 'Section 4.2.1. Basic Subset Concepts'
@@ -2522,6 +2716,7 @@
     definitionStatus: current
 -
     specificationID: MPD-3.0.1
+    specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_5.6.1
     sectionLabel: 'Section 5.6.1. Validity Context and Constraints'
@@ -2535,6 +2730,7 @@
     definitionStatus: current
 -
     specificationID: MPD-3.0.1
+    specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_5.5
     sectionLabel: 'Section 5.5. XML Catalogs'
@@ -2548,6 +2744,7 @@
     definitionStatus: current
 -
     specificationID: MPD-3.0.1
+    specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_2.7
     sectionLabel: 'Section 2.7. XML Validation'
@@ -2556,11 +2753,12 @@
     definitionUID: MPD-3.0.1-definition_XML_document
     definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_XML_document'
     definitionTerm: 'XML document'
-    definitionText: 'A document in XML format.(as defined by [W3C XML 1.0],  §2, Documents)'
+    definitionText: 'A document in XML format.(as defined by [W3C XML 1.0], §2, Documents)'
     definitionLocal: true
     definitionStatus: current
 -
     specificationID: MPD-3.0.1
+    specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_2.7
     sectionLabel: 'Section 2.7. XML Validation'
@@ -2569,11 +2767,12 @@
     definitionUID: MPD-3.0.1-definition_XML_Schema
     definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_XML_Schema'
     definitionTerm: 'XML Schema'
-    definitionText: 'A set of schema components.(as defined by [W3C XML Schema Part 1 Structures],  §2.2, XML Schema Abstract Data Model)'
+    definitionText: 'A set of schema components.(as defined by [W3C XML Schema Part 1 Structures], §2.2, XML Schema Abstract Data Model)'
     definitionLocal: true
     definitionStatus: current
 -
     specificationID: MPD-3.0.1
+    specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_2.7
     sectionLabel: 'Section 2.7. XML Validation'
@@ -2587,6 +2786,7 @@
     definitionStatus: current
 -
     specificationID: MPD-3.0.1
+    specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_2.7
     sectionLabel: 'Section 2.7. XML Validation'
@@ -2600,6 +2800,7 @@
     definitionStatus: current
 -
     specificationID: MPD-3.0.1
+    specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_2.7
     sectionLabel: 'Section 2.7. XML Validation'
@@ -2608,11 +2809,12 @@
     definitionUID: MPD-3.0.1-definition_XML_schema_validation
     definitionURL: 'https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_XML_schema_validation'
     definitionTerm: 'XML schema validation'
-    definitionText: 'The process of checking an XML document to confirm that it is both well-formed (as defined by [W3C XML 1.0],  §2.1, Well-Formed XML Documents) and valid (as defined by [W3C XML Schema Part 1 Structures],  §2.3, Constraints and Validation Rules), in that it follows the structure defined by an associated XML Schema. A well-formed document follows the syntactic rules of XML, which are the same for all XML documents.'
+    definitionText: 'The process of checking an XML document to confirm that it is both well-formed (as defined by [W3C XML 1.0], §2.1, Well-Formed XML Documents) and valid (as defined by [W3C XML Schema Part 1 Structures], §2.3, Constraints and Validation Rules), in that it follows the structure defined by an associated XML Schema. A well-formed document follows the syntactic rules of XML, which are the same for all XML documents.'
     definitionLocal: true
     definitionStatus: current
 -
     specificationID: MPD-3.0.1
+    specificationSelector: MPD-3_0_1
     classID: IEPD
     sectionID: section_3.2
     sectionLabel: 'Section 3.2. MPD Conformance Targets'
@@ -2626,552 +2828,595 @@
     definitionStatus: current
 -
     specificationID: IEPD-5.0beta1
+    specificationSelector: IEPD-5_0beta1
     classID: IEPD
     sectionID: section_2.3
     sectionLabel: 'Section 2.3. Artifacts'
-    sectionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_2.3'
+    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_2.3'
     definitionID: definition_artifact
     definitionUID: IEPD-5.0beta1-definition_artifact
-    definitionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#definition_artifact'
+    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_artifact'
     definitionTerm: artifact
     definitionText: 'A single file with a defined purpose.'
     definitionLocal: true
     definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
+    specificationSelector: IEPD-5_0beta1
     classID: IEPD
     sectionID: section_2.3
     sectionLabel: 'Section 2.3. Artifacts'
-    sectionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_2.3'
+    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_2.3'
     definitionID: definition_artifact_set
     definitionUID: IEPD-5.0beta1-definition_artifact_set
-    definitionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#definition_artifact_set'
+    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_artifact_set'
     definitionTerm: 'artifact set'
     definitionText: 'A collection of artifacts logically grouped for a defined purpose.'
     definitionLocal: true
     definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
+    specificationSelector: IEPD-5_0beta1
     classID: IEPD
     sectionID: section_6.2
     sectionLabel: 'Section 6.2. Business Rules'
-    sectionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_6.2'
+    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_6.2'
     definitionID: definition_business_rule_schema
     definitionUID: IEPD-5.0beta1-definition_business_rule_schema
-    definitionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#definition_business_rule_schema'
+    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_business_rule_schema'
     definitionTerm: 'business rule schema'
     definitionText: 'An artifact that contains business rules in a formal representation language with the intent to automatically process them on an XML document to enforce business constraints.'
     definitionLocal: true
     definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
+    specificationSelector: IEPD-5_0beta1
     classID: IEPD
     sectionID: section_6.2
     sectionLabel: 'Section 6.2. Business Rules'
-    sectionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_6.2'
+    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_6.2'
     definitionID: definition_business_rules
     definitionUID: IEPD-5.0beta1-definition_business_rules
-    definitionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#definition_business_rules'
+    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_business_rules'
     definitionTerm: 'business rules'
     definitionText: 'Formal or informal statements that describe business policy or procedure, and in doing so define or constrain some aspect of a process or procedure in order to impose control.'
     definitionLocal: true
     definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
+    specificationSelector: IEPD-5_0beta1
     classID: IEPD
     sectionID: section_5.3
     sectionLabel: 'Section 5.3. Change Log'
-    sectionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.3'
+    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_5.3'
     definitionID: definition_change_log
     definitionUID: IEPD-5.0beta1-definition_change_log
-    definitionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#definition_change_log'
+    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_change_log'
     definitionTerm: 'change log'
     definitionText: 'An artifact that describes the changes applied to an IEPD since its previous version.'
     definitionLocal: true
     definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
+    specificationSelector: IEPD-5_0beta1
     classID: IEPD
     sectionID: section_5.7
     sectionLabel: 'Section 5.7. Conformance Assertion'
-    sectionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.7'
+    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_5.7'
     definitionID: definition_conformance_assertion
     definitionUID: IEPD-5.0beta1-definition_conformance_assertion
-    definitionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#definition_conformance_assertion'
+    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_conformance_assertion'
     definitionTerm: 'conformance assertion'
     definitionText: 'An artifact that provides a declaration that an IEPD conforms to relevant NIEM specifications and associated rules, including [NIEM Conformance Specification], [NIEM Naming and Design Rules], [NIEM Conformance Targets Attribute Specification] and this NIEM IEPD Specification.'
     definitionLocal: true
     definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
+    specificationSelector: IEPD-5_0beta1
     classID: IEPD
     sectionID: section_3.1
     sectionLabel: 'Section 3.1. Conformance Target Terminology'
-    sectionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_3.1'
+    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_3.1'
     definitionID: definition_conformance_target
     definitionUID: IEPD-5.0beta1-definition_conformance_target
-    definitionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#definition_conformance_target'
+    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_conformance_target'
     definitionTerm: 'conformance target'
     definitionText: 'As defined by [NIEM Conformance Targets Attribute Specification]:A class of artifact, such as an interface, protocol, document, platform, process or service, that is the subject of conformance clauses and normative statements. There may be several conformance targets defined within a specification, and these targets may be diverse so as to reflect different aspects of a specification. For example, a protocol message and a protocol engine may be different conformance targets.'
     definitionLocal: true
     definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
+    specificationSelector: IEPD-5_0beta1
     classID: IEPD
     sectionID: section_3.1
     sectionLabel: 'Section 3.1. Conformance Target Terminology'
-    sectionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_3.1'
+    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_3.1'
     definitionID: definition_conformance_target_identifier
     definitionUID: IEPD-5.0beta1-definition_conformance_target_identifier
-    definitionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#definition_conformance_target_identifier'
+    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_conformance_target_identifier'
     definitionTerm: 'conformance target identifier'
     definitionText: 'As defined by [NIEM Conformance Targets Attribute Specification]:An internationalized resource identifier [RFC 3987 IRI] that uniquely identifies a conformance target.'
     definitionLocal: true
     definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
+    specificationSelector: IEPD-5_0beta1
     classID: IEPD
     sectionID: section_2.8
     sectionLabel: 'Section 2.8. Rules'
-    sectionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_2.8'
+    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_2.8'
     definitionID: definition_constraint_rule
     definitionUID: IEPD-5.0beta1-definition_constraint_rule
-    definitionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#definition_constraint_rule'
+    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_constraint_rule'
     definitionTerm: 'constraint rule'
     definitionText: 'A rule that sets a requirement on an artifact with respect to its conformance to a conformance target.'
     definitionLocal: true
     definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
+    specificationSelector: IEPD-5_0beta1
     classID: IEPD
     sectionID: section_4.5
     sectionLabel: 'Section 4.5. Constraint Schema Document Sets'
-    sectionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_4.5'
+    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_4.5'
     definitionID: definition_constraint_schema_document_set
     definitionUID: IEPD-5.0beta1-definition_constraint_schema_document_set
-    definitionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#definition_constraint_schema_document_set'
+    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_constraint_schema_document_set'
     definitionTerm: 'constraint schema document set'
     definitionText: 'A set of related constraint schema documents that work together; for example, a constraint schema document set could be built by adding constraints to a schema document subset.'
     definitionLocal: true
     definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
+    specificationSelector: IEPD-5_0beta1
     classID: IEPD
     sectionID: section_2.7
     sectionLabel: 'Section 2.7. Reference Schema Documents'
-    sectionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_2.7'
+    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_2.7'
     definitionID: definition_data_component
     definitionUID: IEPD-5.0beta1-definition_data_component
-    definitionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#definition_data_component'
+    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_data_component'
     definitionTerm: 'data component'
     definitionText: 'An XML Schema type or attribute group definition; or an XML Schema element or attribute declaration.'
     definitionLocal: true
     definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
+    specificationSelector: IEPD-5_0beta1
     classID: IEPD
     sectionID: section_4.3
     sectionLabel: 'Section 4.3. Extension Schema Documents'
-    sectionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_4.3'
+    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_4.3'
     definitionID: definition_extension_schema_document
     definitionUID: IEPD-5.0beta1-definition_extension_schema_document
-    definitionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#definition_extension_schema_document'
+    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_extension_schema_document'
     definitionTerm: 'extension schema document'
     definitionText: 'As defined by [NIEM Naming and Design Rules]:An XML schema document that is intended to provide definitions of schema components that are intended for reuse within a more narrow scope than those defined by a reference schema document.'
     definitionLocal: true
     definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
+    specificationSelector: IEPD-5_0beta1
     classID: IEPD
     sectionID: section_4.4
     sectionLabel: 'Section 4.4. External Schema Documents'
-    sectionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_4.4'
+    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_4.4'
     definitionID: definition_external_adapter_type
     definitionUID: IEPD-5.0beta1-definition_external_adapter_type
-    definitionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#definition_external_adapter_type'
+    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_external_adapter_type'
     definitionTerm: 'external adapter type'
     definitionText: 'As defined by [NIEM Naming and Design Rules]:A NIEM-conformant type that adapts external components for use within NIEM. An external adapter type creates a new class of object that embodies a single concept composed of external components. External adapter types are defined in NIEM-conformant schemas.'
     definitionLocal: true
     definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
+    specificationSelector: IEPD-5_0beta1
     classID: IEPD
     sectionID: section_4.4
     sectionLabel: 'Section 4.4. External Schema Documents'
-    sectionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_4.4'
+    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_4.4'
     definitionID: definition_external_schema_document
     definitionUID: IEPD-5.0beta1-definition_external_schema_document
-    definitionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#definition_external_schema_document'
+    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_external_schema_document'
     definitionTerm: 'external schema document'
     definitionText: 'As defined by [NIEM Naming and Design Rules]:Any XML schema document that is not one of: a reference schema document, an extension schema document, or an XML schema document that has the structures namespace as its target namespace.'
     definitionLocal: true
     definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
+    specificationSelector: IEPD-5_0beta1
     classID: IEPD
     sectionID: section_3.2.2
     sectionLabel: 'Section 3.2.2. IEP Conformance Targets'
-    sectionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_3.2.2'
+    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_3.2.2'
     definitionID: definition_full_NIEM_information_exchange_package
     definitionUID: IEPD-5.0beta1-definition_full_NIEM_information_exchange_package
-    definitionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#definition_full_NIEM_information_exchange_package'
+    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_full_NIEM_information_exchange_package'
     definitionTerm: 'full NIEM information exchange package'
     definitionText: 'An information exchange package that satisfies all the validity constraints for its class as defined by an information exchange package documentation, and that has an XML document element that is declared in either a NIEM reference or extension schema document.This term may be abbreviated full NIEM IEP. Rules specifying this conformance target use the applicability code FN-IEP.'
     definitionLocal: true
     definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
+    specificationSelector: IEPD-5_0beta1
     classID: IEPD
     sectionID: section_5.6
     sectionLabel: 'Section 5.6. Defining Information Exchange Packages'
-    sectionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.6'
+    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_5.6'
     definitionID: definition_IEP_conformance_target
     definitionUID: IEPD-5.0beta1-definition_IEP_conformance_target
-    definitionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#definition_IEP_conformance_target'
+    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_IEP_conformance_target'
     definitionTerm: 'IEP conformance target'
     definitionText: 'A conformance target that is a class or category of IEP which has a set of one or more validity constraints and a conformance target identifier. Every IEP is an instance of one or more IEP conformance targets.'
     definitionLocal: true
     definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
+    specificationSelector: IEPD-5_0beta1
     classID: IEPD
     sectionID: section_5.1
     sectionLabel: 'Section 5.1. NIEM IEPD Catalog'
-    sectionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.1'
+    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_5.1'
     definitionID: definition_IEPD_catalog_document
     definitionUID: IEPD-5.0beta1-definition_IEPD_catalog_document
-    definitionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#definition_IEPD_catalog_document'
+    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_IEPD_catalog_document'
     definitionTerm: 'IEPD catalog document'
-    definitionText: 'An instance XML document that: conforms to all the rules in this specification for the conformance target IEPD catalog document (i.e., applicability code IEPD-catalog), and contains metadata describing: IEPD unique identification  Conformance targets  Basic characteristics and properties Key artifacts and directory structure Relationships to other IEPDs and their artifactsThis term may be abbreviated IEPD-catalog. Rules specifying this conformance target use the applicability code IEPD-catalog.'
+    definitionText: 'An instance XML document that: conforms to all the rules in this specification for the conformance target IEPD catalog document (i.e., applicability code IEPD-catalog), and contains metadata describing: IEPD unique identification Conformance targets Basic characteristics and properties Key artifacts and directory structure Relationships to other IEPDs and their artifactsThis term may be abbreviated IEPD-catalog. Rules specifying this conformance target use the applicability code IEPD-catalog.'
     definitionLocal: true
     definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
+    specificationSelector: IEPD-5_0beta1
     classID: IEPD
     sectionID: section_3.1
     sectionLabel: 'Section 3.1. Conformance Target Terminology'
-    sectionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_3.1'
+    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_3.1'
     definitionID: definition_IEPD_conformance_target_identifier
     definitionUID: IEPD-5.0beta1-definition_IEPD_conformance_target_identifier
-    definitionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#definition_IEPD_conformance_target_identifier'
+    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_IEPD_conformance_target_identifier'
     definitionTerm: 'IEPD conformance target identifier'
     definitionText: 'A conformance target identifier to which a given IEPD claims to conform.'
     definitionLocal: true
     definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
+    specificationSelector: IEPD-5_0beta1
     classID: IEPD
     sectionID: section_7
     sectionLabel: 'Section 7. Organization, Packaging, and Other Criteria'
-    sectionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_7'
+    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_7'
     definitionID: definition_IEPD_root_directory
     definitionUID: IEPD-5.0beta1-definition_IEPD_root_directory
-    definitionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#definition_IEPD_root_directory'
+    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_IEPD_root_directory'
     definitionTerm: 'IEPD root directory'
     definitionText: 'The top level file directory relative to all IEPD artifacts and subdirectories.'
     definitionLocal: true
     definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
+    specificationSelector: IEPD-5_0beta1
     classID: IEPD
     sectionID: section_3.2.2
     sectionLabel: 'Section 3.2.2. IEP Conformance Targets'
-    sectionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_3.2.2'
+    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_3.2.2'
     definitionID: definition_information_exchange_package
     definitionUID: IEPD-5.0beta1-definition_information_exchange_package
-    definitionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#definition_information_exchange_package'
+    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_information_exchange_package'
     definitionTerm: 'information exchange package'
     definitionText: 'An instance XML document that conforms to the conformance target defined by a c:IEPConformanceTarget element in the IEPD catalog document of an information exchange package documentation.This term may be abbreviated IEP. Rules specifying this conformance target use the applicability code IEP.'
     definitionLocal: true
     definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
+    specificationSelector: IEPD-5_0beta1
     classID: IEPD
     sectionID: section_3.2.1
     sectionLabel: 'Section 3.2.1. Information Exchange Package Documentation'
-    sectionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_3.2.1'
+    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_3.2.1'
     definitionID: definition_information_exchange_package_documentation
     definitionUID: IEPD-5.0beta1-definition_information_exchange_package_documentation
-    definitionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#definition_information_exchange_package_documentation'
+    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_information_exchange_package_documentation'
     definitionTerm: 'information exchange package documentation'
     definitionText: 'An information exchange package documentation is a set of artifacts (possibly in a ZIP file) that: includes a set of logically cohesive W3C XML Schema documents and other supporting files, that represent one or more reusable or implementable XML information models, and has an IEPD conformance target identifier http://reference.niem.gov/niem/specification/iepd/5.0/#IEPD, and conforms to all the rules in this specification for the conformance target information exchange package documentation (i.e., applicability code IEPD), and is well-formed (conforms to all the rules with applicability code WF-IEPD).This term may be abbreviated IEPD. Rules specifying this conformance target use the applicability code IEPD.'
     definitionLocal: true
     definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
+    specificationSelector: IEPD-5_0beta1
     classID: IEPD
     sectionID: section_3.2.1
     sectionLabel: 'Section 3.2.1. Information Exchange Package Documentation'
-    sectionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_3.2.1'
+    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_3.2.1'
     definitionID: definition_instance_XML_document
     definitionUID: IEPD-5.0beta1-definition_instance_XML_document
-    definitionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#definition_instance_XML_document'
+    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_instance_XML_document'
     definitionTerm: 'instance XML document'
     definitionText: 'An instance XML document is an XML document that is valid against an XML Schema. An instance XML document is said to be an instance of the schema to which it validates.'
     definitionLocal: true
     definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
+    specificationSelector: IEPD-5_0beta1
     classID: IEPD
     sectionID: section_2.8
     sectionLabel: 'Section 2.8. Rules'
-    sectionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_2.8'
+    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_2.8'
     definitionID: definition_interpretation_rule
     definitionUID: IEPD-5.0beta1-definition_interpretation_rule
-    definitionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#definition_interpretation_rule'
+    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_interpretation_rule'
     definitionTerm: 'interpretation rule'
     definitionText: 'A rule that sets the methodology, pattern, or procedure for understanding or using some aspect of an instance of a conformance target.'
     definitionLocal: true
     definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
+    specificationSelector: IEPD-5_0beta1
     classID: IEPD
     sectionID: section_6.1
     sectionLabel: 'Section 6.1. NIEM Wantlist'
-    sectionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_6.1'
+    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_6.1'
     definitionID: definition_NIEM_wantlist
     definitionUID: IEPD-5.0beta1-definition_NIEM_wantlist
-    definitionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#definition_NIEM_wantlist'
+    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_NIEM_wantlist'
     definitionTerm: 'NIEM wantlist'
     definitionText: 'An XML document that represents a complete NIEM schema document subset.'
     definitionLocal: true
     definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
+    specificationSelector: IEPD-5_0beta1
     classID: IEPD
     sectionID: section_5.2.4
     sectionLabel: 'Section 5.2.4. URI Schemes'
-    sectionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.2.4'
+    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_5.2.4'
     definitionID: definition_path_name
     definitionUID: IEPD-5.0beta1-definition_path_name
-    definitionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#definition_path_name'
+    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_path_name'
     definitionTerm: 'path name'
     definitionText: 'A general form of the name of a file or directory that specifies a unique location in a file system. A path name points to a file system location by following the directory tree hierarchy expressed in a string of characters in which path components, separated by a delimiting character, represent each subdirectory. If a path name terminates in a file name, then it specifies the location of that file.'
     definitionLocal: true
     definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
+    specificationSelector: IEPD-5_0beta1
     classID: IEPD
     sectionID: section_5.4
     sectionLabel: 'Section 5.4. ReadMe Artifact'
-    sectionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.4'
+    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_5.4'
     definitionID: definition_readme_artifact
     definitionUID: IEPD-5.0beta1-definition_readme_artifact
-    definitionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#definition_readme_artifact'
+    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_readme_artifact'
     definitionTerm: 'readme artifact'
     definitionText: 'An informal documentation artifact contained in an information exchange package documentation that serves as the initial general source of human readable descriptive or instructional information. A readme artifact or file (formerly known as a master document) may index or reference other more specific documentation or other explanatory materials within the IEPD.'
     definitionLocal: true
     definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
+    specificationSelector: IEPD-5_0beta1
     classID: IEPD
     sectionID: section_2.7
     sectionLabel: 'Section 2.7. Reference Schema Documents'
-    sectionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_2.7'
+    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_2.7'
     definitionID: definition_reference_schema_document
     definitionUID: IEPD-5.0beta1-definition_reference_schema_document
-    definitionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#definition_reference_schema_document'
+    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_reference_schema_document'
     definitionTerm: 'reference schema document'
     definitionText: 'As defined by [NIEM Naming and Design Rules]:An XML schema document that is intended to provide the authoritative definitions of broadly reusable schema components.'
     definitionLocal: true
     definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
+    specificationSelector: IEPD-5_0beta1
     classID: IEPD
     sectionID: section_2.7
     sectionLabel: 'Section 2.7. Reference Schema Documents'
-    sectionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_2.7'
+    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_2.7'
     definitionID: definition_reference_schema_document_set
     definitionUID: IEPD-5.0beta1-definition_reference_schema_document_set
-    definitionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#definition_reference_schema_document_set'
+    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_reference_schema_document_set'
     definitionTerm: 'reference schema document set'
     definitionText: 'A set of related reference schema documents, such as a NIEM release.'
     definitionLocal: true
     definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
+    specificationSelector: IEPD-5_0beta1
     classID: IEPD
     sectionID: section_5.2.4
     sectionLabel: 'Section 5.2.4. URI Schemes'
-    sectionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.2.4'
+    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_5.2.4'
     definitionID: definition_resolve_URI
     definitionUID: IEPD-5.0beta1-definition_resolve_URI
-    definitionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#definition_resolve_URI'
+    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_resolve_URI'
     definitionTerm: 'resolve URI'
     definitionText: 'A function (or action) that takes a URI string of the form xs:anyURI and returns the resource it identifies. If the URI is local (i.e., within an IEPD) and the resource does not exist, then this function fails. If a URI is remote or of unknown location (e.g., a URN), then this function (or action) may require human assistance to determine if a resource associated with the URI exists (pass) or not (fail).'
     definitionLocal: true
     definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
+    specificationSelector: IEPD-5_0beta1
     classID: IEPD
     sectionID: section_2.6
     sectionLabel: 'Section 2.6. XML Validation'
-    sectionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_2.6'
+    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_2.6'
     definitionID: definition_schema_component
     definitionUID: IEPD-5.0beta1-definition_schema_component
-    definitionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#definition_schema_component'
+    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_schema_component'
     definitionTerm: 'schema component'
-    definitionText: 'The generic term for the building blocks that comprise the abstract data model of a schema.(as defined by [W3C XML Schema Part 1 Structures],  §2.2, XML Schema Abstract Data Model)'
+    definitionText: 'The generic term for the building blocks that comprise the abstract data model of a schema.(as defined by [W3C XML Schema Part 1 Structures], §2.2, XML Schema Abstract Data Model)'
     definitionLocal: true
     definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
+    specificationSelector: IEPD-5_0beta1
     classID: IEPD
     sectionID: section_4.2.1
     sectionLabel: 'Section 4.2.1. Basic Subset Concepts'
-    sectionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_4.2.1'
+    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_4.2.1'
     definitionID: definition_schema_document_subset
     definitionUID: IEPD-5.0beta1-definition_schema_document_subset
-    definitionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#definition_schema_document_subset'
+    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_schema_document_subset'
     definitionTerm: 'schema document subset'
     definitionText: 'An XML schema document set based on a reference schema document set intended to ensure that any instance XML document valid to the schema document subset is also valid to the reference schema document set.'
     definitionLocal: true
     definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
+    specificationSelector: IEPD-5_0beta1
     classID: IEPD
     sectionID: section_6.2
     sectionLabel: 'Section 6.2. Business Rules'
-    sectionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_6.2'
+    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_6.2'
     definitionID: definition_Schematron_schema
     definitionUID: IEPD-5.0beta1-definition_Schematron_schema
-    definitionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#definition_Schematron_schema'
+    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_Schematron_schema'
     definitionTerm: 'Schematron schema'
     definitionText: 'A business rule schema that adheres to [ISO Schematron].'
     definitionLocal: true
     definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
+    specificationSelector: IEPD-5_0beta1
     classID: IEPD
     sectionID: section_4.2.1
     sectionLabel: 'Section 4.2.1. Basic Subset Concepts'
-    sectionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_4.2.1'
+    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_4.2.1'
     definitionID: definition_subset_schema_document
     definitionUID: IEPD-5.0beta1-definition_subset_schema_document
-    definitionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#definition_subset_schema_document'
+    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_subset_schema_document'
     definitionTerm: 'subset schema document'
     definitionText: 'An XML schema document that meets all of the following criteria: It is built from a reference schema document set where one or more reference schema documents have been substituted by corresponding subset schema documents. It is built from a reference schema document by applying subset operations to the XML schema statements in a reference schema document. It is explicitly designated as a subset schema document. This is accomplished by declaration in the relevant IEPD catalog or by a tool-specific mechanism outside the subset schema document. It has a target namespace previously defined by a reference schema document. That is, it does not provide original definitions and declarations for schema components, but instead provides an alternate schema representation of components that are defined by a reference schema document. It does not alter the business semantics of components in its namespace. The reference schema document defines these business semantics. It is intended to express the limited vocabulary necessary for an IEPD and to support XML Schema validation for an IEPD.'
     definitionLocal: true
     definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
+    specificationSelector: IEPD-5_0beta1
     classID: IEPD
     sectionID: section_5.6.1
     sectionLabel: 'Section 5.6.1. Validity Context and Constraints'
-    sectionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.6.1'
+    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_5.6.1'
     definitionID: definition_validity_constraint_context
     definitionUID: IEPD-5.0beta1-definition_validity_constraint_context
-    definitionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#definition_validity_constraint_context'
+    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_validity_constraint_context'
     definitionTerm: 'validity constraint context'
     definitionText: 'A set of information items that establishes the applicability of certain validity constraints.'
     definitionLocal: true
     definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
+    specificationSelector: IEPD-5_0beta1
     classID: IEPD
     sectionID: section_3.2.1.1
     sectionLabel: 'Section 3.2.1.1. Well-Formed IEPD'
-    sectionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_3.2.1.1'
+    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_3.2.1.1'
     definitionID: definition_well-formed_IEPD
     definitionUID: IEPD-5.0beta1-definition_well-formed_IEPD
-    definitionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#definition_well-formed_IEPD'
+    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_well-formed_IEPD'
     definitionTerm: 'well-formed IEPD'
     definitionText: 'A well-formed IEPD is an IEPD that: has an IEPD conformance target identifier of http://reference.niem.gov/niem/specification/iepd/5.0/#WF-IEPD, and adheres to all the rules within this specification for the well-formed IEPD conformance target (i.e., applicability code WF-IEPD).This term may be abbreviated WF-IEPD. Rules specifying this conformance target use the applicability code WF-IEPD.'
     definitionLocal: true
     definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
+    specificationSelector: IEPD-5_0beta1
     classID: IEPD
     sectionID: section_5.5
     sectionLabel: 'Section 5.5. XML Catalogs'
-    sectionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_5.5'
+    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_5.5'
     definitionID: definition_XML_catalog_document
     definitionUID: IEPD-5.0beta1-definition_XML_catalog_document
-    definitionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#definition_XML_catalog_document'
+    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_XML_catalog_document'
     definitionTerm: 'XML catalog document'
     definitionText: 'As defined by [XML Catalogs 1.1], which states:An entity catalog.An XML catalog document MUST conform to all the rules in this specification for the conformance target XML catalog document.Rules specifying this conformance target use the applicability code XML-catalog.'
     definitionLocal: true
     definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
+    specificationSelector: IEPD-5_0beta1
     classID: IEPD
     sectionID: section_2.6
     sectionLabel: 'Section 2.6. XML Validation'
-    sectionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_2.6'
+    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_2.6'
     definitionID: definition_XML_document
     definitionUID: IEPD-5.0beta1-definition_XML_document
-    definitionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#definition_XML_document'
+    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_XML_document'
     definitionTerm: 'XML document'
-    definitionText: 'A document in XML format.(as defined by [W3C XML 1.0],  §2, Documents)'
+    definitionText: 'A document in XML format.(as defined by [W3C XML 1.0], §2, Documents)'
     definitionLocal: true
     definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
+    specificationSelector: IEPD-5_0beta1
     classID: IEPD
     sectionID: section_2.6
     sectionLabel: 'Section 2.6. XML Validation'
-    sectionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_2.6'
+    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_2.6'
     definitionID: definition_XML_Schema
     definitionUID: IEPD-5.0beta1-definition_XML_Schema
-    definitionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#definition_XML_Schema'
+    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_XML_Schema'
     definitionTerm: 'XML Schema'
-    definitionText: 'A set of schema components.(as defined by [W3C XML Schema Part 1 Structures],  §2.2, XML Schema Abstract Data Model)'
+    definitionText: 'A set of schema components.(as defined by [W3C XML Schema Part 1 Structures], §2.2, XML Schema Abstract Data Model)'
     definitionLocal: true
     definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
+    specificationSelector: IEPD-5_0beta1
     classID: IEPD
     sectionID: section_2.6
     sectionLabel: 'Section 2.6. XML Validation'
-    sectionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_2.6'
+    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_2.6'
     definitionID: definition_XML_schema_assembly
     definitionUID: IEPD-5.0beta1-definition_XML_schema_assembly
-    definitionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#definition_XML_schema_assembly'
+    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_XML_schema_assembly'
     definitionTerm: 'XML schema assembly'
     definitionText: 'A process that uses XML schema documents to identify the constituent schema components for an XML Schema, and correctly sequences and structures these components to construct a single entity, the XML Schema.'
     definitionLocal: true
     definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
+    specificationSelector: IEPD-5_0beta1
     classID: IEPD
     sectionID: section_2.6
     sectionLabel: 'Section 2.6. XML Validation'
-    sectionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_2.6'
+    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_2.6'
     definitionID: definition_XML_schema_document
     definitionUID: IEPD-5.0beta1-definition_XML_schema_document
-    definitionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#definition_XML_schema_document'
+    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_XML_schema_document'
     definitionTerm: 'XML schema document'
     definitionText: 'A physical (file) representation of part or all of an XML Schema. One or more XML schema documents are used to assemble schema components into an XML Schema.'
     definitionLocal: true
     definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
+    specificationSelector: IEPD-5_0beta1
     classID: IEPD
     sectionID: section_2.6
     sectionLabel: 'Section 2.6. XML Validation'
-    sectionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_2.6'
+    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_2.6'
     definitionID: definition_XML_schema_validation
     definitionUID: IEPD-5.0beta1-definition_XML_schema_validation
-    definitionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#definition_XML_schema_validation'
+    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_XML_schema_validation'
     definitionTerm: 'XML schema validation'
-    definitionText: 'The process of checking an XML document to confirm that it is both well-formed (as defined by [W3C XML 1.0],  §2.1, Well-Formed XML Documents) and valid (as defined by [W3C XML Schema Part 1 Structures],  §2.3, Constraints and Validation Rules), in that it follows the structure defined by an associated XML Schema. A well-formed document follows the syntactic rules of XML, which are the same for all XML documents.'
+    definitionText: 'The process of checking an XML document to confirm that it is both well-formed (as defined by [W3C XML 1.0], §2.1, Well-Formed XML Documents) and valid (as defined by [W3C XML Schema Part 1 Structures], §2.3, Constraints and Validation Rules), in that it follows the structure defined by an associated XML Schema. A well-formed document follows the syntactic rules of XML, which are the same for all XML documents.'
     definitionLocal: true
     definitionStatus: draft
 -
     specificationID: IEPD-5.0beta1
+    specificationSelector: IEPD-5_0beta1
     classID: IEPD
     sectionID: section_3.2.1.1
     sectionLabel: 'Section 3.2.1.1. Well-Formed IEPD'
-    sectionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#section_3.2.1.1'
+    sectionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#section_3.2.1.1'
     definitionID: definition_ZIP_file
     definitionUID: IEPD-5.0beta1-definition_ZIP_file
-    definitionURL: 'https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html#definition_ZIP_file'
+    definitionURL: 'https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_ZIP_file'
     definitionTerm: 'ZIP file'
     definitionText: 'As defined by [PKZIP], which states that it defines:... a cross-platform, interoperable file storage and transfer format ... used to aggregate, compress, and encrypt files into a single interoperable container.'
     definitionLocal: true
     definitionStatus: draft
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_2.2
     sectionLabel: 'Section 2.2. RFC 3986: Uniform Resource Identifier (URI): Generic Syntax'
@@ -3185,6 +3430,7 @@
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_2.8
     sectionLabel: 'Section 2.8. NIEM Naming and Design Rules'
@@ -3198,6 +3444,7 @@
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_2.5
     sectionLabel: 'Section 2.5. XML Information Set'
@@ -3211,6 +3458,7 @@
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_2.6
     sectionLabel: 'Section 2.6. XML Schema'
@@ -3224,6 +3472,7 @@
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_2.11
     sectionLabel: 'Section 2.11. XML Catalogs'
@@ -3232,11 +3481,12 @@
     definitionUID: CodeLists-4.0-definition_catalog_entry_file
     definitionURL: 'https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_catalog_entry_file'
     definitionTerm: 'catalog entry file'
-    definitionText: 'The term catalog entry file is defined by [XML Catalogs] Section 2, Terminology, which states:  A catalog may be physically contained in one or more catalog entry files. A catalog entry file is a document that contains a set of catalog entries.'
+    definitionText: 'The term catalog entry file is defined by [XML Catalogs] Section 2, Terminology, which states: A catalog may be physically contained in one or more catalog entry files. A catalog entry file is a document that contains a set of catalog entries.'
     definitionLocal: false
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_2.9
     sectionLabel: 'Section 2.9. Code Lists'
@@ -3250,6 +3500,7 @@
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_4.3
     sectionLabel: 'Section 4.3. Definition of code list binding'
@@ -3263,6 +3514,7 @@
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_3.1
     sectionLabel: 'Section 3.1. Code list document'
@@ -3276,6 +3528,7 @@
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_2.9
     sectionLabel: 'Section 2.9. Code Lists'
@@ -3289,6 +3542,7 @@
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_3.6
     sectionLabel: 'Section 3.6. Code list validation set'
@@ -3302,6 +3556,7 @@
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_3.5
     sectionLabel: 'Section 3.5. Code list-enabled instance document'
@@ -3315,6 +3570,7 @@
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_3.4
     sectionLabel: 'Section 3.4. Code list-enabled schema document'
@@ -3328,6 +3584,7 @@
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_2.4
     sectionLabel: 'Section 2.4. XML Namespaces'
@@ -3341,6 +3598,7 @@
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_2.4
     sectionLabel: 'Section 2.4. XML Namespaces'
@@ -3354,6 +3612,7 @@
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_2.9
     sectionLabel: 'Section 2.9. Code Lists'
@@ -3367,6 +3626,7 @@
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_2.9
     sectionLabel: 'Section 2.9. Code Lists'
@@ -3380,6 +3640,7 @@
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_2.9
     sectionLabel: 'Section 2.9. Code Lists'
@@ -3393,6 +3654,7 @@
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_2.9
     sectionLabel: 'Section 2.9. Code Lists'
@@ -3406,6 +3668,7 @@
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_2.6
     sectionLabel: 'Section 2.6. XML Schema'
@@ -3419,6 +3682,7 @@
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_2.7
     sectionLabel: 'Section 2.7. Conformance Targets Attribute Specification'
@@ -3427,11 +3691,12 @@
     definitionUID: CodeLists-4.0-definition_conformance_target
     definitionURL: 'https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_conformance_target'
     definitionTerm: 'conformance target'
-    definitionText: 'The term conformance target is defined by [CTAS] Section 3.1, Conformance Target Defined which states:  A conformance target is a class of artifact, such as an interface, protocol, document, platform, process or service, that is the subject of conformance clauses and normative statements. There may be several conformance targets defined within a specification, and these targets may be diverse so as to reflect different aspects of a specification. For example, a protocol message and a protocol engine may be different conformance targets.'
+    definitionText: 'The term conformance target is defined by [CTAS] Section 3.1, Conformance Target Defined which states: A conformance target is a class of artifact, such as an interface, protocol, document, platform, process or service, that is the subject of conformance clauses and normative statements. There may be several conformance targets defined within a specification, and these targets may be diverse so as to reflect different aspects of a specification. For example, a protocol message and a protocol engine may be different conformance targets.'
     definitionLocal: false
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_2.7
     sectionLabel: 'Section 2.7. Conformance Targets Attribute Specification'
@@ -3440,11 +3705,12 @@
     definitionUID: CodeLists-4.0-definition_conformance_target_identifier
     definitionURL: 'https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_conformance_target_identifier'
     definitionTerm: 'conformance target identifier'
-    definitionText: 'The term conformance target identifier is defined by [CTAS] Section 3.1, Conformance Target Defined, which states:  A conformance target identifier is an internationalized resource identifier that uniquely identifies a conformance target.'
+    definitionText: 'The term conformance target identifier is defined by [CTAS] Section 3.1, Conformance Target Defined, which states: A conformance target identifier is an internationalized resource identifier that uniquely identifies a conformance target.'
     definitionLocal: false
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_3.3
     sectionLabel: 'Section 3.3. CSV code list document'
@@ -3458,6 +3724,7 @@
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_2.10
     sectionLabel: 'Section 2.10. RFC 4180: Comma-separated values (CSV) files'
@@ -3471,6 +3738,7 @@
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_2.10
     sectionLabel: 'Section 2.10. RFC 4180: Comma-separated values (CSV) files'
@@ -3484,6 +3752,7 @@
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_2.10
     sectionLabel: 'Section 2.10. RFC 4180: Comma-separated values (CSV) files'
@@ -3497,6 +3766,7 @@
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_2.10
     sectionLabel: 'Section 2.10. RFC 4180: Comma-separated values (CSV) files'
@@ -3510,6 +3780,7 @@
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_2.10
     sectionLabel: 'Section 2.10. RFC 4180: Comma-separated values (CSV) files'
@@ -3523,6 +3794,7 @@
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_2.6
     sectionLabel: 'Section 2.6. XML Schema'
@@ -3536,6 +3808,7 @@
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_2.9
     sectionLabel: 'Section 2.9. Code Lists'
@@ -3549,6 +3822,7 @@
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_2.7
     sectionLabel: 'Section 2.7. Conformance Targets Attribute Specification'
@@ -3557,11 +3831,12 @@
     definitionUID: CodeLists-4.0-definition_effective_conformance_target_identifier
     definitionURL: 'https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_effective_conformance_target_identifier'
     definitionTerm: 'effective conformance target identifier'
-    definitionText: 'The term effective conformance target identifier is defined by [CTAS] Section 4, Semantics and Use, which states:  An effective conformance target identifier of a conformant document is an internationalized resource identifier reference that occurs in the document’s effective conformance targets attribute.'
+    definitionText: 'The term effective conformance target identifier is defined by [CTAS] Section 4, Semantics and Use, which states: An effective conformance target identifier of a conformant document is an internationalized resource identifier reference that occurs in the document’s effective conformance targets attribute.'
     definitionLocal: false
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_2.5
     sectionLabel: 'Section 2.5. XML Information Set'
@@ -3575,6 +3850,7 @@
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_2.6
     sectionLabel: 'Section 2.6. XML Schema'
@@ -3588,6 +3864,7 @@
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_2.11
     sectionLabel: 'Section 2.11. XML Catalogs'
@@ -3596,11 +3873,12 @@
     definitionUID: CodeLists-4.0-definition_entity_catalog
     definitionURL: 'https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_entity_catalog'
     definitionTerm: 'entity catalog'
-    definitionText: 'The term entity catalog is defined by [XML Catalogs], which states in [XML Catalogs] Section 3, An Entity Catalog:  The catalog is effectively an ordered list of (one or more) catalog entry files. It is up to the application to determine the ordered list of catalog entry files to be used as the logical catalog.'
+    definitionText: 'The term entity catalog is defined by [XML Catalogs], which states in [XML Catalogs] Section 3, An Entity Catalog: The catalog is effectively an ordered list of (one or more) catalog entry files. It is up to the application to determine the ordered list of catalog entry files to be used as the logical catalog.'
     definitionLocal: false
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_2.6
     sectionLabel: 'Section 2.6. XML Schema'
@@ -3614,6 +3892,7 @@
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_2.6
     sectionLabel: 'Section 2.6. XML Schema'
@@ -3627,6 +3906,7 @@
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_3.2
     sectionLabel: 'Section 3.2. Genericode code list document'
@@ -3640,6 +3920,7 @@
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_2.6
     sectionLabel: 'Section 2.6. XML Schema'
@@ -3653,6 +3934,7 @@
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_2.6
     sectionLabel: 'Section 2.6. XML Schema'
@@ -3666,6 +3948,7 @@
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_2.11
     sectionLabel: 'Section 2.11. XML Catalogs'
@@ -3679,6 +3962,7 @@
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_2.11
     sectionLabel: 'Section 2.11. XML Catalogs'
@@ -3692,6 +3976,7 @@
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_2.6
     sectionLabel: 'Section 2.6. XML Schema'
@@ -3705,6 +3990,7 @@
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_2.11
     sectionLabel: 'Section 2.11. XML Catalogs'
@@ -3718,6 +4004,7 @@
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_2.2
     sectionLabel: 'Section 2.2. RFC 3986: Uniform Resource Identifier (URI): Generic Syntax'
@@ -3726,11 +4013,12 @@
     definitionUID: CodeLists-4.0-definition_resource
     definitionURL: 'https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_resource'
     definitionTerm: resource
-    definitionText: 'The term resource is defined by [RFC3986] Section 1.1, Overview of URIs, which states:  This specification does not limit the scope of what might be a resource; rather, the term resource is used in a general sense for whatever might be identified by a URI. Familiar examples include an electronic document, an image, a source of information with a consistent purpose (e.g., today’s weather report for Los Angeles), a service (e.g., an HTTP-to-SMS gateway), and a collection of other resources.'
+    definitionText: 'The term resource is defined by [RFC3986] Section 1.1, Overview of URIs, which states: This specification does not limit the scope of what might be a resource; rather, the term resource is used in a general sense for whatever might be identified by a URI. Familiar examples include an electronic document, an image, a source of information with a consistent purpose (e.g., today’s weather report for Los Angeles), a service (e.g., an HTTP-to-SMS gateway), and a collection of other resources.'
     definitionLocal: false
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_2.6
     sectionLabel: 'Section 2.6. XML Schema'
@@ -3739,11 +4027,12 @@
     definitionUID: CodeLists-4.0-definition_schema_component
     definitionURL: 'https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_schema_component'
     definitionTerm: 'schema component'
-    definitionText: 'The term schema component is defined by [XMLSchema1] Section 2.2, XML Schema Abstract Data Model, which states:  Schema component is the generic term for the building blocks that comprise the abstract data model of the schema.'
+    definitionText: 'The term schema component is defined by [XMLSchema1] Section 2.2, XML Schema Abstract Data Model, which states: Schema component is the generic term for the building blocks that comprise the abstract data model of the schema.'
     definitionLocal: false
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_2.6
     sectionLabel: 'Section 2.6. XML Schema'
@@ -3752,11 +4041,12 @@
     definitionUID: CodeLists-4.0-definition_schema_document
     definitionURL: 'https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_schema_document'
     definitionTerm: 'schema document'
-    definitionText: 'The term schema document is defined by [XMLSchema1] Section 3.1.2, XML Representations of Components, which states:  A document in this form (i.e. a  element information item) is a schema document.'
+    definitionText: 'The term schema document is defined by [XMLSchema1] Section 3.1.2, XML Representations of Components, which states: A document in this form (i.e. a element information item) is a schema document.'
     definitionLocal: false
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_2.6
     sectionLabel: 'Section 2.6. XML Schema'
@@ -3770,6 +4060,7 @@
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_2.6
     sectionLabel: 'Section 2.6. XML Schema'
@@ -3783,6 +4074,7 @@
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_2.6
     sectionLabel: 'Section 2.6. XML Schema'
@@ -3796,6 +4088,7 @@
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_2.5
     sectionLabel: 'Section 2.5. XML Information Set'
@@ -3809,6 +4102,7 @@
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_2.6
     sectionLabel: 'Section 2.6. XML Schema'
@@ -3822,6 +4116,7 @@
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_2.2
     sectionLabel: 'Section 2.2. RFC 3986: Uniform Resource Identifier (URI): Generic Syntax'
@@ -3830,11 +4125,12 @@
     definitionUID: CodeLists-4.0-definition_uniform_resource_identifier
     definitionURL: 'https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_uniform_resource_identifier'
     definitionTerm: 'uniform resource identifier'
-    definitionText: '[RFC3986] defines uniform resource identifier (URI), which it describes as:  A Uniform Resource Identifier (URI) is a compact sequence of characters that identifies an abstract or physical resource.'
+    definitionText: '[RFC3986] defines uniform resource identifier (URI), which it describes as: A Uniform Resource Identifier (URI) is a compact sequence of characters that identifies an abstract or physical resource.'
     definitionLocal: false
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_2.2
     sectionLabel: 'Section 2.2. RFC 3986: Uniform Resource Identifier (URI): Generic Syntax'
@@ -3843,11 +4139,12 @@
     definitionUID: CodeLists-4.0-definition_URI
     definitionURL: 'https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_URI'
     definitionTerm: URI
-    definitionText: '[RFC3986] defines uniform resource identifier (URI), which it describes as:  A Uniform Resource Identifier (URI) is a compact sequence of characters that identifies an abstract or physical resource.'
+    definitionText: '[RFC3986] defines uniform resource identifier (URI), which it describes as: A Uniform Resource Identifier (URI) is a compact sequence of characters that identifies an abstract or physical resource.'
     definitionLocal: false
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_2.3
     sectionLabel: 'Section 2.3. XML'
@@ -3856,11 +4153,12 @@
     definitionUID: CodeLists-4.0-definition_XML_document
     definitionURL: 'https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_XML_document'
     definitionTerm: 'XML document'
-    definitionText: 'The term XML document is defined by [XML] Section 2, Documents, which states:  A data object is an XML document if it is well-formed, as defined in this specification.'
+    definitionText: 'The term XML document is defined by [XML] Section 2, Documents, which states: A data object is an XML document if it is well-formed, as defined in this specification.'
     definitionLocal: false
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_2.6
     sectionLabel: 'Section 2.6. XML Schema'
@@ -3869,11 +4167,12 @@
     definitionUID: CodeLists-4.0-definition_XML_Schema
     definitionURL: 'https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_XML_Schema'
     definitionTerm: 'XML Schema'
-    definitionText: 'The term XML Schema is defined by [XMLSchema1] Section 2.2, XML Schema Abstract Data Model, which states:  An XML Schema is a set of schema components.'
+    definitionText: 'The term XML Schema is defined by [XMLSchema1] Section 2.2, XML Schema Abstract Data Model, which states: An XML Schema is a set of schema components.'
     definitionLocal: false
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_2.6
     sectionLabel: 'Section 2.6. XML Schema'
@@ -3882,11 +4181,12 @@
     definitionUID: CodeLists-4.0-definition_XML_Schema_definition_language
     definitionURL: 'https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_XML_Schema_definition_language'
     definitionTerm: 'XML Schema definition language'
-    definitionText: 'The term XML Schema definition language is defined by [XMLSchema1] subsection Abstract, which states:  XML Schema: Structures specifies the XML Schema definition language, which offers facilities for describing the structure and constraining the contents of XML 1.0 documents, including those which exploit the XML Namespace facility. The schema language, which is itself represented in XML 1.0 and uses namespaces, substantially reconstructs and considerably extends the capabilities found in XML 1.0 document type definitions (DTDs).'
+    definitionText: 'The term XML Schema definition language is defined by [XMLSchema1] subsection Abstract, which states: XML Schema: Structures specifies the XML Schema definition language, which offers facilities for describing the structure and constraining the contents of XML 1.0 documents, including those which exploit the XML Namespace facility. The schema language, which is itself represented in XML 1.0 and uses namespaces, substantially reconstructs and considerably extends the capabilities found in XML 1.0 document type definitions (DTDs).'
     definitionLocal: false
     definitionStatus: current
 -
     specificationID: CodeLists-4.0
+    specificationSelector: CodeLists-4_0
     classID: CodeLists
     sectionID: section_2.8
     sectionLabel: 'Section 2.8. NIEM Naming and Design Rules'
@@ -3895,11 +4195,12 @@
     definitionUID: CodeLists-4.0-definition_XML_Schema_document_set
     definitionURL: 'https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html#definition_XML_Schema_document_set'
     definitionTerm: 'XML Schema document set'
-    definitionText: 'The term XML Schema document set is defined by [NIEM NDR] Section 3.4, XML Schema terminology, which states:  An XML Schema document set is a set of schema documents that together define an XML Schema suitable for assessing the validity of an XML document.'
+    definitionText: 'The term XML Schema document set is defined by [NIEM NDR] Section 3.4, XML Schema terminology, which states: An XML Schema document set is a set of schema documents that together define an XML Schema suitable for assessing the validity of an XML document.'
     definitionLocal: false
     definitionStatus: current
 -
     specificationID: CTAS-3.0
+    specificationSelector: CTAS-3_0
     classID: CTAS
     sectionID: section_3.1
     sectionLabel: 'Section 3.1. Conformance Target Defined'
@@ -3913,6 +4214,7 @@
     definitionStatus: current
 -
     specificationID: CTAS-3.0
+    specificationSelector: CTAS-3_0
     classID: CTAS
     sectionID: section_3.1
     sectionLabel: 'Section 3.1. Conformance Target Defined'
@@ -3926,6 +4228,7 @@
     definitionStatus: current
 -
     specificationID: CTAS-3.0
+    specificationSelector: CTAS-3_0
     classID: CTAS
     sectionID: section_3.2
     sectionLabel: 'Section 3.2. Conformance to this Specification'
@@ -3939,6 +4242,7 @@
     definitionStatus: current
 -
     specificationID: CTAS-3.0
+    specificationSelector: CTAS-3_0
     classID: CTAS
     sectionID: section_4
     sectionLabel: 'Section 4. Semantics and Use'
@@ -3952,6 +4256,7 @@
     definitionStatus: current
 -
     specificationID: CTAS-3.0
+    specificationSelector: CTAS-3_0
     classID: CTAS
     sectionID: section_4
     sectionLabel: 'Section 4. Semantics and Use'
@@ -3965,6 +4270,7 @@
     definitionStatus: current
 -
     specificationID: JSON-4.0
+    specificationSelector: JSON-4_0
     classID: JSON
     sectionID: section_3.2
     sectionLabel: 'Section 3.2. Conformance Targets Attribute Specification'
@@ -3973,11 +4279,12 @@
     definitionUID: JSON-4.0-definition_conformance_target
     definitionURL: 'https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#definition_conformance_target'
     definitionTerm: 'conformance target'
-    definitionText: 'The term conformance target is defined by [CTAS] Section 3.1, Conformance Target Defined which states:  A conformance target is a class of artifact, such as an interface, protocol, document, platform, process or service, that is the subject of conformance clauses and normative statements. There may be several conformance targets defined within a specification, and these targets may be diverse so as to reflect different aspects of a specification. For example, a protocol message and a protocol engine may be different conformance targets.'
+    definitionText: 'The term conformance target is defined by [CTAS] Section 3.1, Conformance Target Defined which states: A conformance target is a class of artifact, such as an interface, protocol, document, platform, process or service, that is the subject of conformance clauses and normative statements. There may be several conformance targets defined within a specification, and these targets may be diverse so as to reflect different aspects of a specification. For example, a protocol message and a protocol engine may be different conformance targets.'
     definitionLocal: false
     definitionStatus: current
 -
     specificationID: JSON-4.0
+    specificationSelector: JSON-4_0
     classID: JSON
     sectionID: section_3.2
     sectionLabel: 'Section 3.2. Conformance Targets Attribute Specification'
@@ -3986,11 +4293,12 @@
     definitionUID: JSON-4.0-definition_conformance_target_identifier
     definitionURL: 'https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#definition_conformance_target_identifier'
     definitionTerm: 'conformance target identifier'
-    definitionText: 'The term conformance target identifier is defined by [CTAS] Section 3.1, Conformance Target Defined, which states:  A conformance target identifier is an internationalized resource identifier that uniquely identifies a conformance target.'
+    definitionText: 'The term conformance target identifier is defined by [CTAS] Section 3.1, Conformance Target Defined, which states: A conformance target identifier is an internationalized resource identifier that uniquely identifies a conformance target.'
     definitionLocal: false
     definitionStatus: current
 -
     specificationID: JSON-4.0
+    specificationSelector: JSON-4_0
     classID: JSON
     sectionID: section_3.3
     sectionLabel: 'Section 3.3. NIEM Naming and Design Rules'
@@ -3999,11 +4307,12 @@
     definitionUID: JSON-4.0-definition_conformant_instance_XML_document
     definitionURL: 'https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#definition_conformant_instance_XML_document'
     definitionTerm: 'conformant instance XML document'
-    definitionText: 'The term conformant instance XML document is a conformance target defined by the [NIEM NDR] Section 4.1.4, Instance documents and elements, which states: '
+    definitionText: 'The term conformant instance XML document is a conformance target defined by the [NIEM NDR] Section 4.1.4, Instance documents and elements, which states:'
     definitionLocal: false
     definitionStatus: current
 -
     specificationID: JSON-4.0
+    specificationSelector: JSON-4_0
     classID: JSON
     sectionID: section_3.3
     sectionLabel: 'Section 3.3. NIEM Naming and Design Rules'
@@ -4012,11 +4321,12 @@
     definitionUID: JSON-4.0-definition_conformant_schema_document_set
     definitionURL: 'https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#definition_conformant_schema_document_set'
     definitionTerm: 'conformant schema document set'
-    definitionText: 'The term conformant schema document set is a conformance target defined by the [NIEM NDR] Section 4.1.3, Schema document set, which states: '
+    definitionText: 'The term conformant schema document set is a conformance target defined by the [NIEM NDR] Section 4.1.3, Schema document set, which states:'
     definitionLocal: false
     definitionStatus: current
 -
     specificationID: JSON-4.0
+    specificationSelector: JSON-4_0
     classID: JSON
     sectionID: section_2.2.1
     sectionLabel: 'Section 2.2.1. Rules'
@@ -4030,6 +4340,7 @@
     definitionStatus: current
 -
     specificationID: JSON-4.0
+    specificationSelector: JSON-4_0
     classID: JSON
     sectionID: section_3.2
     sectionLabel: 'Section 3.2. Conformance Targets Attribute Specification'
@@ -4038,11 +4349,12 @@
     definitionUID: JSON-4.0-definition_effective_conformance_target_identifier
     definitionURL: 'https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#definition_effective_conformance_target_identifier'
     definitionTerm: 'effective conformance target identifier'
-    definitionText: 'The term effective conformance target identifier is defined by [CTAS] Section 4, Semantics and Use, which states:  An effective conformance target identifier of a conformant document is an internationalized resource identifier reference that occurs in the document’s effective conformance targets attribute.'
+    definitionText: 'The term effective conformance target identifier is defined by [CTAS] Section 4, Semantics and Use, which states: An effective conformance target identifier of a conformant document is an internationalized resource identifier reference that occurs in the document’s effective conformance targets attribute.'
     definitionLocal: false
     definitionStatus: current
 -
     specificationID: JSON-4.0
+    specificationSelector: JSON-4_0
     classID: JSON
     sectionID: section_3.7
     sectionLabel: 'Section 3.7. RDF and RDF Schema'
@@ -4051,11 +4363,12 @@
     definitionUID: JSON-4.0-definition_equivalent
     definitionURL: 'https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#definition_equivalent'
     definitionTerm: equivalent
-    definitionText: '[RDF-Concepts] Section 1.7, Equivalence, Entailment and Inconsistency defines the term equivalent:  Two RDF graphs A and B are equivalent if they make the same claim about the world. A is equivalent to B if and only if A entails B and B entails A.'
+    definitionText: '[RDF-Concepts] Section 1.7, Equivalence, Entailment and Inconsistency defines the term equivalent: Two RDF graphs A and B are equivalent if they make the same claim about the world. A is equivalent to B if and only if A entails B and B entails A.'
     definitionLocal: false
     definitionStatus: current
 -
     specificationID: JSON-4.0
+    specificationSelector: JSON-4_0
     classID: JSON
     sectionID: section_3.3
     sectionLabel: 'Section 3.3. NIEM Naming and Design Rules'
@@ -4064,11 +4377,12 @@
     definitionUID: JSON-4.0-definition_extension_schema_document
     definitionURL: 'https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#definition_extension_schema_document'
     definitionTerm: 'extension schema document'
-    definitionText: 'The term extension schema document is a conformance target defined by the [NIEM NDR] Section 4.1.2, Extension schema document, which states: '
+    definitionText: 'The term extension schema document is a conformance target defined by the [NIEM NDR] Section 4.1.2, Extension schema document, which states:'
     definitionLocal: false
     definitionStatus: current
 -
     specificationID: JSON-4.0
+    specificationSelector: JSON-4_0
     classID: JSON
     sectionID: section_3.3
     sectionLabel: 'Section 3.3. NIEM Naming and Design Rules'
@@ -4077,11 +4391,12 @@
     definitionUID: JSON-4.0-definition_external_schema_document
     definitionURL: 'https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#definition_external_schema_document'
     definitionTerm: 'external schema document'
-    definitionText: 'The term external schema document is defined by the [NIEM NDR] Section 10.2.3, External adapter types and external components, which states: '
+    definitionText: 'The term external schema document is defined by the [NIEM NDR] Section 10.2.3, External adapter types and external components, which states:'
     definitionLocal: false
     definitionStatus: current
 -
     specificationID: JSON-4.0
+    specificationSelector: JSON-4_0
     classID: JSON
     sectionID: section_3.4
     sectionLabel: 'Section 3.4. Model Package Description Specification'
@@ -4095,6 +4410,7 @@
     definitionStatus: current
 -
     specificationID: JSON-4.0
+    specificationSelector: JSON-4_0
     classID: JSON
     sectionID: section_3.4
     sectionLabel: 'Section 3.4. Model Package Description Specification'
@@ -4108,6 +4424,7 @@
     definitionStatus: current
 -
     specificationID: JSON-4.0
+    specificationSelector: JSON-4_0
     classID: JSON
     sectionID: section_3.4
     sectionLabel: 'Section 3.4. Model Package Description Specification'
@@ -4121,6 +4438,7 @@
     definitionStatus: current
 -
     specificationID: JSON-4.0
+    specificationSelector: JSON-4_0
     classID: JSON
     sectionID: section_2.2
     sectionLabel: 'Section 2.2. Normative and informative content'
@@ -4134,6 +4452,7 @@
     definitionStatus: current
 -
     specificationID: JSON-4.0
+    specificationSelector: JSON-4_0
     classID: JSON
     sectionID: section_2.2.1
     sectionLabel: 'Section 2.2.1. Rules'
@@ -4147,6 +4466,7 @@
     definitionStatus: current
 -
     specificationID: JSON-4.0
+    specificationSelector: JSON-4_0
     classID: JSON
     sectionID: section_3.5
     sectionLabel: 'Section 3.5. JSON'
@@ -4160,6 +4480,7 @@
     definitionStatus: current
 -
     specificationID: JSON-4.0
+    specificationSelector: JSON-4_0
     classID: JSON
     sectionID: section_3.5
     sectionLabel: 'Section 3.5. JSON'
@@ -4173,6 +4494,7 @@
     definitionStatus: current
 -
     specificationID: JSON-4.0
+    specificationSelector: JSON-4_0
     classID: JSON
     sectionID: section_3.6
     sectionLabel: 'Section 3.6. JSON-LD'
@@ -4181,11 +4503,12 @@
     definitionUID: JSON-4.0-definition_JSON-LD_document
     definitionURL: 'https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#definition_JSON-LD_document'
     definitionTerm: 'JSON-LD document'
-    definitionText: '[JSON-LD] defines JSON-LD, a JSON-based format to serialize linked data. [JSON-LD] defines the term JSON-LD document. [JSON-LD] Section 7, Data Model provides a summary of what constitutes a JSON-LD document. [JSON-LD] Section 8, JSON-LD Grammar states:  A JSON-LD document MUST be a valid JSON document as described in [RFC4627].'
+    definitionText: '[JSON-LD] defines JSON-LD, a JSON-based format to serialize linked data. [JSON-LD] defines the term JSON-LD document. [JSON-LD] Section 7, Data Model provides a summary of what constitutes a JSON-LD document. [JSON-LD] Section 8, JSON-LD Grammar states: A JSON-LD document MUST be a valid JSON document as described in [RFC4627].'
     definitionLocal: false
     definitionStatus: current
 -
     specificationID: JSON-4.0
+    specificationSelector: JSON-4_0
     classID: JSON
     sectionID: section_5.1
     sectionLabel: 'Section 5.1. Literal-to-object conversion'
@@ -4199,6 +4522,7 @@
     definitionStatus: current
 -
     specificationID: JSON-4.0
+    specificationSelector: JSON-4_0
     classID: JSON
     sectionID: section_4.2
     sectionLabel: 'Section 4.2. NIEM JSON document laxly conformant to a schema'
@@ -4212,6 +4536,7 @@
     definitionStatus: current
 -
     specificationID: JSON-4.0
+    specificationSelector: JSON-4_0
     classID: JSON
     sectionID: section_4.1
     sectionLabel: 'Section 4.1. NIEM JSON document strictly conformant to a schema'
@@ -4225,6 +4550,7 @@
     definitionStatus: current
 -
     specificationID: JSON-4.0
+    specificationSelector: JSON-4_0
     classID: JSON
     sectionID: section_2.2
     sectionLabel: 'Section 2.2. Normative and informative content'
@@ -4238,6 +4564,7 @@
     definitionStatus: current
 -
     specificationID: JSON-4.0
+    specificationSelector: JSON-4_0
     classID: JSON
     sectionID: section_3.7
     sectionLabel: 'Section 3.7. RDF and RDF Schema'
@@ -4246,11 +4573,12 @@
     definitionUID: JSON-4.0-definition_RDF_graph
     definitionURL: 'https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#definition_RDF_graph'
     definitionTerm: 'RDF graph'
-    definitionText: '[RDF-Concepts] Section 3, RDF Graphs defines the term RDF graph:  An RDF graph is a set of RDF triples.'
+    definitionText: '[RDF-Concepts] Section 3, RDF Graphs defines the term RDF graph: An RDF graph is a set of RDF triples.'
     definitionLocal: false
     definitionStatus: current
 -
     specificationID: JSON-4.0
+    specificationSelector: JSON-4_0
     classID: JSON
     sectionID: section_3.3
     sectionLabel: 'Section 3.3. NIEM Naming and Design Rules'
@@ -4259,6 +4587,6 @@
     definitionUID: JSON-4.0-definition_reference_schema_document
     definitionURL: 'https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#definition_reference_schema_document'
     definitionTerm: 'reference schema document'
-    definitionText: 'The term reference schema document is a conformance target defined by the [NIEM NDR] Section 4.1.1, Reference schema document, which states: '
+    definitionText: 'The term reference schema document is a conformance target defined by the [NIEM NDR] Section 4.1.1, Reference schema document, which states:'
     definitionLocal: false
     definitionStatus: current

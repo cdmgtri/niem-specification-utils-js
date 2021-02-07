@@ -49,13 +49,31 @@ class Rule {
     return "rule_" + this.number;
   }
 
+  /**
+   * @example "NDR-3.0-rule_3-1"
+   */
+  get uid() {
+    return this.specification.id + "-" + this.id
+  }
+
+  /**
+   * @example "NDR-3_0-rule_3-1"
+   */
+  get selector() {
+    return this.uid.replace(".", "_");
+  }
+
   get url() {
     return this.specification.url + "#" + this.id;
   }
 
   toJSON() {
+
+    let Specification = require("./specification");
+
     return {
       specificationID: this.specification.id,
+      specificationSelector: this.specification.selector,
       classID: this.specification.classID,
       sectionID: this.section.id,
       sectionLabel: this.section.label,
@@ -64,13 +82,14 @@ class Rule {
       ruleTitle: this.title,
       ruleName: this.name,
       ruleID: this.id,
-      ruleUID: this.specification.id + "-" + this.id,
+      ruleUID: this.uid,
       ruleURL: this.url,
       ruleTargets: this.targets,
       ruleClassification: this.classification,
       ruleStyle: this.style,
-      ruleText: this.text,
-      ruleStatus: this.specification.status
+      ruleText: Specification.formatText(this.text),
+      ruleStatus: this.specification.status,
+      ruleSelector: this.selector
     }
   }
 

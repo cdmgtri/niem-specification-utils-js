@@ -1,6 +1,7 @@
 [
   {
     "specificationID": "JSON-4.0",
+    "specificationSelector": "JSON-4_0",
     "classID": "JSON",
     "sectionID": "section_5",
     "sectionLabel": "Section 5. Rules",
@@ -18,10 +19,12 @@
     "ruleClassification": "Constraint",
     "ruleStyle": "text",
     "ruleText": "A NIEM JSON document strictly conformant to a schema or NIEM JSON document laxly conformant to a schema MUST be a JSON-LD document.",
-    "ruleStatus": "current"
+    "ruleStatus": "current",
+    "ruleSelector": "JSON-4_0-rule_5-1"
   },
   {
     "specificationID": "JSON-4.0",
+    "specificationSelector": "JSON-4_0",
     "classID": "JSON",
     "sectionID": "section_5",
     "sectionLabel": "Section 5. Rules",
@@ -38,10 +41,12 @@
     "ruleClassification": "Constraint",
     "ruleStyle": "text",
     "ruleText": "The RDF graph entailed by a NIEM JSON document strictly conformant to a schema MUST be equivalent to the RDF graph entailed by a corresponding conformant instance XML document instance of the schema, accounting for literal-to-object conversion and the omission of external content.",
-    "ruleStatus": "current"
+    "ruleStatus": "current",
+    "ruleSelector": "JSON-4_0-rule_5-2"
   },
   {
     "specificationID": "JSON-4.0",
+    "specificationSelector": "JSON-4_0",
     "classID": "JSON",
     "sectionID": "section_5",
     "sectionLabel": "Section 5. Rules",
@@ -59,10 +64,12 @@
     "ruleClassification": "Constraint",
     "ruleStyle": "text",
     "ruleText": "The RDF graph consisting of the union of:MUST be RDFS satisfiable, accounting for literal-to-object conversion and the omission of external content. \n- the RDF graph entailed by the JSON document and \n- the RDF graph entailed by the schema",
-    "ruleStatus": "current"
+    "ruleStatus": "current",
+    "ruleSelector": "JSON-4_0-rule_5-3"
   },
   {
     "specificationID": "JSON-4.0",
+    "specificationSelector": "JSON-4_0",
     "classID": "JSON",
     "sectionID": "section_5",
     "sectionLabel": "Section 5. Rules",
@@ -80,6 +87,7 @@
     "ruleClassification": "Interpretation",
     "ruleStyle": "text",
     "ruleText": "A NIEM JSON document strictly conformant to a schema or NIEM JSON document laxly conformant to a schema MUST be interpreted as an RDFS interpretation of the RDF graph composed of the RDF entailed by the JSON document together with the RDF entailed by the schema.",
-    "ruleStatus": "current"
+    "ruleStatus": "current",
+    "ruleSelector": "JSON-4_0-rule_5-4"
   }
 ]

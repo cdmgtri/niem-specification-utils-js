@@ -28,8 +28,12 @@ class Definition {
   }
 
   toJSON() {
+
+    let Specification = require("./specification");
+
     return {
       specificationID: this.specification.id,
+      specificationSelector: this.specification.selector,
       classID: this.specification.classID,
       sectionID: this.section.id,
       sectionLabel: this.section.label,
@@ -38,9 +42,9 @@ class Definition {
       definitionUID: this.specification.id + "-" + this.id,
       definitionURL: this.url,
       definitionTerm: this.term,
-      definitionText: this.text,
+      definitionText: Specification.formatText(this.text),
       definitionLocal: this.local,
-      definitionStatus: this.specification.status
+      definitionStatus: this.specification.status,
     }
   }
 

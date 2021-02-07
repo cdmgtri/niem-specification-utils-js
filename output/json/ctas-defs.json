@@ -1,6 +1,7 @@
 [
   {
     "specificationID": "CTAS-3.0",
+    "specificationSelector": "CTAS-3_0",
     "classID": "CTAS",
     "sectionID": "section_3.1",
     "sectionLabel": "Section 3.1. Conformance Target Defined",
@@ -15,6 +16,7 @@
   },
   {
     "specificationID": "CTAS-3.0",
+    "specificationSelector": "CTAS-3_0",
     "classID": "CTAS",
     "sectionID": "section_3.1",
     "sectionLabel": "Section 3.1. Conformance Target Defined",
@@ -29,6 +31,7 @@
   },
   {
     "specificationID": "CTAS-3.0",
+    "specificationSelector": "CTAS-3_0",
     "classID": "CTAS",
     "sectionID": "section_3.2",
     "sectionLabel": "Section 3.2. Conformance to this Specification",
@@ -43,6 +46,7 @@
   },
   {
     "specificationID": "CTAS-3.0",
+    "specificationSelector": "CTAS-3_0",
     "classID": "CTAS",
     "sectionID": "section_4",
     "sectionLabel": "Section 4. Semantics and Use",
@@ -57,6 +61,7 @@
   },
   {
     "specificationID": "CTAS-3.0",
+    "specificationSelector": "CTAS-3_0",
     "classID": "CTAS",
     "sectionID": "section_4",
     "sectionLabel": "Section 4. Semantics and Use",

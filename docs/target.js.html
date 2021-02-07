@@ -3,7 +3,7 @@
 <head>
     
     <meta charset="utf-8">
-    <title>definition.js - Documentation</title>
+    <title>target.js - Documentation</title>
     
     
     <script src="scripts/prettify/prettify.js"></script>
@@ -32,7 +32,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">definition.js</h1>
+    <h1 class="page-title">target.js</h1>
     
 
     
@@ -43,61 +43,50 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>
-class Definition {
+class Target {
 
   /**
-   * Information about a term defined by a NIEM specification.
-   *
-   * @param {Specification} [specification]
-   * @param {Section} [section]
-   *
-   * @param {string} [id=""]
-   * @param {string} [term=""]
-   * @param {string} [text=""]
-   * @param {Boolean} [local=true] - True if the definition originates from the spec; false if its a reference
+   * @param {Specification}  specification
+   * @param {String} code
+   * @param {String} target
+   * @param {String} definitionFragment
+   * @param {String} description
+   * @param {String} tutorial
    */
-  constructor(specification, section, id="", term="", text="", local=true) {
+  constructor(specification, code, target, definitionFragment, description, tutorial) {
 
     this.specification = specification;
-    this.section = section;
-    this.id = id;
-    this.term = term;
-    this.text = text;
-    this.local = local;
+    this.code = code;
+    this.target = target;
+    this.definitionFragment = definitionFragment;
+    this.description = description;
+    this.tutorial = tutorial;
 
   }
 
   get url() {
-    return this.specification.url + "#" + this.id
+    return this.specification.url + "#" + this.definitionFragment;
   }
 
   toJSON() {
-
-    let Specification = require("./specification");
-
     return {
       specificationID: this.specification.id,
       specificationSelector: this.specification.selector,
       classID: this.specification.classID,
-      sectionID: this.section.id,
-      sectionLabel: this.section.label,
-      sectionURL: this.section.url,
-      definitionID: this.id,
-      definitionUID: this.specification.id + "-" + this.id,
-      definitionURL: this.url,
-      definitionTerm: this.term,
-      definitionText: Specification.formatText(this.text),
-      definitionLocal: this.local,
-      definitionStatus: this.specification.status,
+      targetCode: this.code,
+      targetName: this.target,
+      targetURL: this.url,
+      targetDescription: this.description,
+      targetTutorial: this.tutorial,
+      targetStatus: this.specification.status
     }
   }
 
 }
 
 let Specification = require("./specification");
-let Section = require("./section");
 
-module.exports = Definition;
+module.exports = Target;
 </code></pre>
         </article>
     </section>

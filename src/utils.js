@@ -53,7 +53,7 @@ class Utils {
    * Also constructs the file name from the given fields.
    *
    * @param {"all"|"class"|"spec"} scope
-   * @param {"rules"|"defs"|"classes"|"specs"} style
+   * @param {"rules"|"defs"|"targets"|"classes"|"specs"} style
    * @param {"NDR"|"IEPD"|"MPD"|"CodeLists"|"CTAS"} label - Specification class ID or tag
    * @param {String} version
    */
@@ -88,7 +88,7 @@ class Utils {
    * @param {String} fileName - Base file name, no extension or path
    * @param {Object} data - Data to save
    * @param {String} [folder='./output/'] - Folder to save output files.  Defaults to /output.
-   * @param {"rules"|"defs"|"classes"|"specs"} style - Used to generate additional XML tags to wrap the data
+   * @param {"rules"|"defs"|"targets"|"classes"|"specs"} style - Used to generate additional XML tags to wrap the data
    */
   static save(fileName, data, folder="./output/", style) {
 
@@ -109,8 +109,10 @@ class Utils {
     fs.outputFileSync( subfolder("xml"), xmlData );
 
     // Save CSV
-    let csvData = json2csv.parse(convertedData);
-    fs.outputFileSync( subfolder("csv"), csvData );
+    if (convertedData.length > 0) {
+      let csvData = json2csv.parse(convertedData);
+      fs.outputFileSync( subfolder("csv"), csvData );
+    }
 
   }
 

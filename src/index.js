@@ -2,6 +2,8 @@
 let utils = require("./utils");
 
 let SpecificationClass = require("./specification-class");
+let Specification = require("./specification");
+let Target = require("./target");
 
 let NDR = require("./specification-ndr");
 let IEPD = require("./specification-iepd");
@@ -40,6 +42,7 @@ class NIEMSpecifications {
   load() {
     this.loadSpecificationClassMetadata();
     this.loadSpecificationMetadata();
+    this.loadTargets();
   }
 
   /**
@@ -85,12 +88,56 @@ class NIEMSpecifications {
 
   }
 
+  /**
+   * Loads metadata about targets from `/data/targets.yaml`.
+   *
+   * Default targets are defined for a specification class but can be overridden by a specific
+   * version of a specification when it differs from the default.
+   */
+  loadTargets() {
+
+    /** @type {Object[]} */
+    let metadata = utils.readYAML("../data/targets.yaml");
+
+
+    metadata.forEach( entry => {
+
+      let target = new Target( null, entry.code, entry.target, entry.definitionFragment, entry.description, entry.tutorial);
+
+      if (entry.classID) {
+        // Add class-default targets to specifications that do not override the defaults
+        let specs = this.specificationClass(entry.classID).specifications;
+        specs.forEach( spec => {
+          // Add target to spec if that spec does not override the class defaults
+          if (!metadata.some( entry => entry.specID == spec.id )) {
+            // Make sure to create a separate target object per spec
+            let specTarget = Object.assign(new Target(), target);
+            specTarget.specification = spec;
+            spec.targets.push(specTarget);
+          }
+        });
+      }
+      else {
+        // Add specification-specific target
+        let spec = this.specification(entry.specID);
+        target.specification = spec;
+        spec.targets.push(target);
+      }
+
+    });
+
+  }
+
   get rules() {
     return utils.flatten(this.specificationClasses.map( specClass => specClass.rules ));
   }
 
   get definitions() {
     return utils.flatten(this.specificationClasses.map( specClass => specClass.defs ));
+  }
+
+  get targets() {
+    return utils.flatten(this.specificationClasses.map( specClass => specClass.targets ));
   }
 
   /**
@@ -104,9 +151,10 @@ class NIEMSpecifications {
     utils.nameFileAndSave("all", "classes", null, null, this.specificationClasses, folder);
     utils.nameFileAndSave("all", "specs", null, null, this.specifications, folder);
 
-    // Save all NIEM rules and definitions
+    // Save all NIEM rules, definitions, and targets
     utils.nameFileAndSave("all", "rules", null, null, this.rules, folder);
     utils.nameFileAndSave("all", "defs", null, null, this.definitions, folder);
+    utils.nameFileAndSave("all", "targets", null, null, this.targets, folder);
 
     // Save each set of rules and definitions
     this.specificationClasses.forEach( specClass => specClass.save(folder) );

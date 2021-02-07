@@ -33,6 +33,9 @@ class Specification {
     /** @type {Definition[]} */
     this.defs = [];
 
+    /** @type {Target[]} */
+    this.targets = [];
+
     // Apply any needed specification-specific adjustments to the HTML text and parse
     parseSpecification(this);
 
@@ -47,6 +50,13 @@ class Specification {
   }
 
   /**
+   * Replaces the id with a valid string to use for a CSS selector.
+   */
+  get selector() {
+    return this.id.replace(/\./g, "_");
+  }
+
+  /**
    * The standard name for this specific version of the specification.
    * Adds support for the legacy "MPD" name.
    */
@@ -58,7 +68,6 @@ class Specification {
     }
     return this.specificationClass.name;
   }
-
 
   /**
    * Gets the identifier for the general class of this specification (e.g., "NDR", "IEPD")
@@ -99,7 +108,6 @@ class Specification {
   postProcessData() {
   }
 
-
   /**
    * Saves all rules and definitions for the specification (e.g., `ndr-rules-3.0.json`).
    *
@@ -124,14 +132,27 @@ class Specification {
       examples: this.examples,
       status: this.status,
       ruleCount: this.rules.length,
-      definitionCount: this.defs.length
+      definitionCount: this.defs.length,
+      selector: this.selector,
+      targetCount: this.targets.length
     }
+  }
+
+  /**
+   * Formats text to remove leading, trailing, and double spaces.
+   */
+  static formatText(text) {
+    return text
+    .trim()
+    .replace(/  /g, " ")
+    .replace(/^xs(:)(?=\w)/, ": ");
   }
 
 }
 
 let Rule = require("./rule");
 let Definition = require("./definition");
+let Target = require("./target");
 let SpecificationClass = require("./specification-class");
 
 module.exports = Specification;

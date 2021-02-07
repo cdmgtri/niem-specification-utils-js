@@ -14,6 +14,8 @@
     <status/>
     <ruleCount>239</ruleCount>
     <definitionCount>54</definitionCount>
+    <selector>NDR-3_0</selector>
+    <targetCount>4</targetCount>
   </specification>
   <specification>
     <id>NDR-4.0</id>
@@ -29,6 +31,8 @@
     <status/>
     <ruleCount>255</ruleCount>
     <definitionCount>52</definitionCount>
+    <selector>NDR-4_0</selector>
+    <targetCount>4</targetCount>
   </specification>
   <specification>
     <id>NDR-5.0</id>
@@ -44,6 +48,8 @@
     <status>current</status>
     <ruleCount>260</ruleCount>
     <definitionCount>52</definitionCount>
+    <selector>NDR-5_0</selector>
+    <targetCount>4</targetCount>
   </specification>
   <specification>
     <id>MPD-3.0.1</id>
@@ -59,6 +65,8 @@
     <status>current</status>
     <ruleCount>60</ruleCount>
     <definitionCount>44</definitionCount>
+    <selector>MPD-3_0_1</selector>
+    <targetCount>6</targetCount>
   </specification>
   <specification>
     <id>IEPD-5.0beta1</id>
@@ -66,7 +74,7 @@
     <customID>IEPD</customID>
     <name>Information Exchange Package Documentation</name>
     <version>5.0beta1</version>
-    <url>https://cdmgtri.github.io/MPD-Spec/niem-iepd-spec.html</url>
+    <url>https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html</url>
     <year>2015</year>
     <applicableReleases/>
     <resources/>
@@ -74,6 +82,8 @@
     <status>draft</status>
     <ruleCount>58</ruleCount>
     <definitionCount>42</definitionCount>
+    <selector>IEPD-5_0beta1</selector>
+    <targetCount>7</targetCount>
   </specification>
   <specification>
     <id>CodeLists-4.0</id>
@@ -89,6 +99,8 @@
     <status>current</status>
     <ruleCount>29</ruleCount>
     <definitionCount>56</definitionCount>
+    <selector>CodeLists-4_0</selector>
+    <targetCount>6</targetCount>
   </specification>
   <specification>
     <id>CTAS-3.0</id>
@@ -104,6 +116,8 @@
     <status>current</status>
     <ruleCount>6</ruleCount>
     <definitionCount>5</definitionCount>
+    <selector>CTAS-3_0</selector>
+    <targetCount>0</targetCount>
   </specification>
   <specification>
     <id>JSON-4.0</id>
@@ -119,5 +133,7 @@
     <status>current</status>
     <ruleCount>4</ruleCount>
     <definitionCount>23</definitionCount>
+    <selector>JSON-4_0</selector>
+    <targetCount>2</targetCount>
   </specification>
 </specifications>

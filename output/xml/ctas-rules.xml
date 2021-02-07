@@ -2,6 +2,7 @@
 <rules>
   <rule>
     <specificationID>CTAS-3.0</specificationID>
+    <specificationSelector>CTAS-3_0</specificationSelector>
     <classID>CTAS</classID>
     <sectionID>section_3.3</sectionID>
     <sectionLabel>Section 3.3. Syntactic Conformance</sectionLabel>
@@ -17,9 +18,11 @@
     <ruleStyle>text</ruleStyle>
     <ruleText>A conformant document MUST be an XML document.</ruleText>
     <ruleStatus>current</ruleStatus>
+    <ruleSelector>CTAS-3_0-rule_3-1</ruleSelector>
   </rule>
   <rule>
     <specificationID>CTAS-3.0</specificationID>
+    <specificationSelector>CTAS-3_0</specificationSelector>
     <classID>CTAS</classID>
     <sectionID>section_3.3</sectionID>
     <sectionLabel>Section 3.3. Syntactic Conformance</sectionLabel>
@@ -35,9 +38,11 @@
     <ruleStyle>text</ruleStyle>
     <ruleText>Within a conformant document, every occurrence of the attribute {http://release.niem.gov/niem/conformanceTargets/3.0/}conformanceTargets MUST be locally schema-valid to the XML Schema component definition contained in Figure B-1, XML Schema Document for Conformance Targets Attribute.</ruleText>
     <ruleStatus>current</ruleStatus>
+    <ruleSelector>CTAS-3_0-rule_3-2</ruleSelector>
   </rule>
   <rule>
     <specificationID>CTAS-3.0</specificationID>
+    <specificationSelector>CTAS-3_0</specificationSelector>
     <classID>CTAS</classID>
     <sectionID>section_3.3</sectionID>
     <sectionLabel>Section 3.3. Syntactic Conformance</sectionLabel>
@@ -53,9 +58,11 @@
     <ruleStyle>text</ruleStyle>
     <ruleText>A conformant document MUST NOT contain any element or attribute information item that has the namespace name http://release.niem.gov/niem/conformanceTargets/3.0/, other than attribute {http://release.niem.gov/niem/conformanceTargets/3.0/}conformanceTargets.</ruleText>
     <ruleStatus>current</ruleStatus>
+    <ruleSelector>CTAS-3_0-rule_3-3</ruleSelector>
   </rule>
   <rule>
     <specificationID>CTAS-3.0</specificationID>
+    <specificationSelector>CTAS-3_0</specificationSelector>
     <classID>CTAS</classID>
     <sectionID>section_3.3</sectionID>
     <sectionLabel>Section 3.3. Syntactic Conformance</sectionLabel>
@@ -71,9 +78,11 @@
     <ruleStyle>text</ruleStyle>
     <ruleText>A conformant document MUST NOT contain an attribute {http://www.w3.org/2001/XMLSchema-instance}type with a value that has a namespace name of http://release.niem.gov/niem/conformanceTargets/3.0/.</ruleText>
     <ruleStatus>current</ruleStatus>
+    <ruleSelector>CTAS-3_0-rule_3-4</ruleSelector>
   </rule>
   <rule>
     <specificationID>CTAS-3.0</specificationID>
+    <specificationSelector>CTAS-3_0</specificationSelector>
     <classID>CTAS</classID>
     <sectionID>section_3.3</sectionID>
     <sectionLabel>Section 3.3. Syntactic Conformance</sectionLabel>
@@ -89,9 +98,11 @@
     <ruleStyle>text</ruleStyle>
     <ruleText>Within a conformant document, each item in the value of an attribute {http://release.niem.gov/niem/conformanceTargets/3.0/}conformanceTargets MUST be an absolute IRI reference.</ruleText>
     <ruleStatus>current</ruleStatus>
+    <ruleSelector>CTAS-3_0-rule_3-5</ruleSelector>
   </rule>
   <rule>
     <specificationID>CTAS-3.0</specificationID>
+    <specificationSelector>CTAS-3_0</specificationSelector>
     <classID>CTAS</classID>
     <sectionID>section_3.3</sectionID>
     <sectionLabel>Section 3.3. Syntactic Conformance</sectionLabel>
@@ -107,5 +118,6 @@
     <ruleStyle>text</ruleStyle>
     <ruleText>A conformant document MAY include any number of occurrences of the attribute {http://release.niem.gov/niem/conformanceTargets/3.0/}conformanceTargets.</ruleText>
     <ruleStatus>current</ruleStatus>
+    <ruleSelector>CTAS-3_0-rule_3-6</ruleSelector>
   </rule>
 </rules>

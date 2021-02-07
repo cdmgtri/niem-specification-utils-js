@@ -2,6 +2,7 @@
 <definitions>
   <definition>
     <specificationID>CTAS-3.0</specificationID>
+    <specificationSelector>CTAS-3_0</specificationSelector>
     <classID>CTAS</classID>
     <sectionID>section_3.1</sectionID>
     <sectionLabel>Section 3.1. Conformance Target Defined</sectionLabel>
@@ -16,6 +17,7 @@
   </definition>
   <definition>
     <specificationID>CTAS-3.0</specificationID>
+    <specificationSelector>CTAS-3_0</specificationSelector>
     <classID>CTAS</classID>
     <sectionID>section_3.1</sectionID>
     <sectionLabel>Section 3.1. Conformance Target Defined</sectionLabel>
@@ -30,6 +32,7 @@
   </definition>
   <definition>
     <specificationID>CTAS-3.0</specificationID>
+    <specificationSelector>CTAS-3_0</specificationSelector>
     <classID>CTAS</classID>
     <sectionID>section_3.2</sectionID>
     <sectionLabel>Section 3.2. Conformance to this Specification</sectionLabel>
@@ -44,6 +47,7 @@
   </definition>
   <definition>
     <specificationID>CTAS-3.0</specificationID>
+    <specificationSelector>CTAS-3_0</specificationSelector>
     <classID>CTAS</classID>
     <sectionID>section_4</sectionID>
     <sectionLabel>Section 4. Semantics and Use</sectionLabel>
@@ -58,6 +62,7 @@
   </definition>
   <definition>
     <specificationID>CTAS-3.0</specificationID>
+    <specificationSelector>CTAS-3_0</specificationSelector>
     <classID>CTAS</classID>
     <sectionID>section_4</sectionID>
     <sectionLabel>Section 4. Semantics and Use</sectionLabel>
