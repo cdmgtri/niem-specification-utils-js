@@ -17,17 +17,23 @@ class SpecificationClass {
    * @param {String} tutorial - URL for page on niem.github.io or other general info page
    * @param {String} changeHistory - URL for a description of version changes
    * @param {String} description - A basic description of the specification class
+   * @param {String} note - An additional note about the specification class
    */
-  constructor(id="", name="", repo="", landingPage="", issueTracker="", tutorial="", changeHistory="", description="") {
+  constructor(id="", name="", repo="", landingPage="", issueTracker="", tutorial="", changeHistory="", description="", note="") {
 
     this.id = id;
     this.name = name;
-    this.repo = repo.replace(/\/$/, "");  // Make sure the URL does not end with a trailing '/'
+    this.repo = repo;
     this.landingPage = landingPage;
     this.issueTracker = issueTracker;
     this.tutorial = tutorial,
     this.changeHistory = changeHistory;
     this.description = description;
+    this.note = note;
+
+    if (this.repo) {
+      this.repo = this.repo.replace(/\/$/, "");  // Make sure the URL does not end with a trailing '/'
+    }
 
     /** @type {Specification[]} */
     this.specifications = [];
@@ -50,14 +56,18 @@ class SpecificationClass {
    * URL to view all issues
    */
   get issueList() {
-    return this.repo + "/issues";
+    if (this.repo) {
+      return this.repo + "/issues";
+    }
   }
 
   /**
    * URL to submit a new issue
    */
   get issueSubmit() {
-    return this.repo + "/issues/new";
+    if (this.repo) {
+      return this.repo + "/issues/new";
+    }
   }
 
   /**
@@ -99,6 +109,7 @@ class SpecificationClass {
       changeHistory: this.changeHistory,
       changeHistoryRelativeURL: convertURL(this.changeHistory),
       description: this.description,
+      note: this.note,
       versionCount: this.specifications.length,
       versionNumbers: this.specifications.map( spec => spec.version ).join(", ")
     }

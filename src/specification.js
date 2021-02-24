@@ -10,18 +10,20 @@ class Specification {
    * @param {String} url - URL for reading the spec
    * @param {String} year - Year the spec was published
    * @param {String} applicableReleases - NIEM releases for which this spec applies
+   * @param {String} changeHistory - URL for a description of changes since the last version
    * @param {String} resources - URL to view or download additional resources for this spec
    * @param {String} examples - URL to view examples associated with this spec
    * @param {"current"|"draft"|"archived"|""} status - current, draft, archived, or blank for a previous version
    * @param {String} html - The HTML text of the specification.
    */
-  constructor(specificationClass, version="", url="", year="", applicableReleases="", resources="", examples="", status="", html="") {
+  constructor(specificationClass, version="", url="", year="", applicableReleases="", changeHistory, resources="", examples="", status="", html="") {
 
     this.specificationClass = specificationClass;
     this.version = version;
     this.url = url;
     this.year = year;
     this.applicableReleases = applicableReleases;
+    this.changeHistory = changeHistory;
     this.resources = resources;
     this.examples = examples;
     this.status = status;
@@ -53,7 +55,7 @@ class Specification {
    * Replaces the id with a valid string to use for a CSS selector.
    */
   get selector() {
-    return this.id.replace(/\./g, "_");
+    return this.id.replace(/\./g, "_").replace(/ /g, "");
   }
 
   /**
@@ -122,19 +124,26 @@ class Specification {
     return {
       id: this.id,
       classID: this.specificationClass.id,
-      customID: this.customID,
-      name: this.name,
-      version: this.version,
-      url: this.url,
-      year: this.year.toString(),
-      applicableReleases: this.applicableReleases,
-      resources: this.resources,
-      examples: this.examples,
-      status: this.status,
-      ruleCount: this.rules.length,
-      definitionCount: this.defs.length,
-      selector: this.selector,
-      targetCount: this.targets.length
+      className: this.specificationClass.name,
+      classRepo: this.specificationClass.repo,
+      classLandingPage: this.specificationClass.landingPage,
+      classIssueTracker: this.specificationClass.issueTracker,
+      classDescription: this.specificationClass.description,
+      specID: this.id,
+      specCustomID: this.customID,
+      specName: this.name,
+      specVersion: this.version,
+      specURL: this.url,
+      specYear: this.year.toString(),
+      specApplicableReleases: this.applicableReleases,
+      specChangeHistory: this.changeHistory,
+      specResources: this.resources,
+      specExamples: this.examples,
+      specStatus: this.status,
+      specRuleCount: this.rules.length,
+      specDefinitionCount: this.defs.length,
+      specSelector: this.selector,
+      specTargetCount: this.targets.length
     }
   }
 

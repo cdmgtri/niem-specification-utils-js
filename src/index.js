@@ -8,8 +8,10 @@ let Target = require("./target");
 let NDR = require("./specification-ndr");
 let IEPD = require("./specification-iepd");
 let CodeLists = require("./specification-code-lists");
+let Conformance = require("./specification-conformance");
 let CTAS = require("./specification-ctas");
 let JSON = require("./specification-json");
+let HLVA = require("./specification-hlva");
 
 /**
  * Information about the set of NIEM specifications.
@@ -28,10 +30,16 @@ class NIEMSpecifications {
     this.CodeLists;
 
     /** @type {SpecificationClass} */
+    this.Conformance;
+
+    /** @type {SpecificationClass} */
     this.CTAS;
 
     /** @type {SpecificationClass} */
     this.JSON;
+
+    /** @type {SpecificationClass} */
+    this.HLVA;
 
   }
 
@@ -54,7 +62,7 @@ class NIEMSpecifications {
 
     metadata.forEach( entry => {
 
-      this[entry.id] = new SpecificationClass(entry.id, entry.name, entry.repo, entry.landingPage, entry.issueTracker, entry.tutorial, entry.changeHistory, entry.description);
+      this[entry.id] = new SpecificationClass(entry.id, entry.name, entry.repo, entry.landingPage, entry.issueTracker, entry.tutorial, entry.changeHistory, entry.description, entry.note);
 
     });
 
@@ -65,7 +73,7 @@ class NIEMSpecifications {
    */
   loadSpecificationMetadata() {
 
-    let SpecificationConstructors = {NDR, IEPD, CodeLists, CTAS, JSON};
+    let SpecificationConstructors = {NDR, IEPD, CodeLists, Conformance, CTAS, JSON, HLVA};
 
     let metadata = utils.readYAML("../data/specifications.yaml");
 
@@ -79,7 +87,7 @@ class NIEMSpecifications {
 
       // Create the new specification from the metadata
       let SpecializedSpecificationConstructor = SpecificationConstructors[entry.classID];
-      let specification = new SpecializedSpecificationConstructor(specificationClass, entry.version, entry.url, entry.year, entry.applicableReleases, entry.resources, entry.examples, entry.status, html);
+      let specification = new SpecializedSpecificationConstructor(specificationClass, entry.version, entry.url, entry.year, entry.applicableReleases, entry.changeHistory, entry.resources, entry.examples, entry.status, html);
 
       // Add the specification object to its specification class
       specificationClass.specifications.push(specification);
@@ -186,7 +194,7 @@ class NIEMSpecifications {
 
   /**
    * Returns the specification class object for the given ID
-   * @param {"NDR"|"IEPD"|"CodeLists"|"CTAS"|"JSON"} classID
+   * @param {"NDR"|"IEPD"|"CodeLists"|"Conformance"|"CTAS"|"JSON"|"HLVA"} classID
    * @returns {SpecificationClass}
    */
   specificationClass(classID) {
@@ -194,7 +202,7 @@ class NIEMSpecifications {
   }
 
   get specificationClasses() {
-    return [this.NDR, this.IEPD, this.CodeLists, this.CTAS, this.JSON];
+    return [this.NDR, this.IEPD, this.CodeLists, this.Conformance, this.CTAS, this.JSON, this.HLVA];
   }
 
   /**

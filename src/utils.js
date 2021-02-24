@@ -66,8 +66,13 @@ class Utils {
    * Reads the specification html file in the specifications directory with the given tag and version
    */
   static readSpecificationHTMLText(tag, version) {
-    let html = fs.readFileSync(`specifications/${tag}-${version}.html`, {encoding: "utf8"});
-    return html;
+    let filePath = `specifications/${tag}-${version}.html`;
+    try {
+      let html = fs.readFileSync(filePath, {encoding: "utf8"});
+      return html;
+    }
+    catch {
+    }
   }
 
   /**

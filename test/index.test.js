@@ -55,7 +55,7 @@ describe("Specification checks", () => {
    */
   test("#check for invalid IDs", () => {
 
-    niem.specifications.forEach( spec => {
+    niem.specifications.filter( spec => spec.html ).forEach( spec => {
       // Combine all parsed rule and definition IDs
       let parsedIDs = [...spec.rules.map( rule => rule.id ), ...spec.defs.map( def => def.id )];
 

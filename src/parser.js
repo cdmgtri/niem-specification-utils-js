@@ -52,7 +52,9 @@ class Parser {
     // Apply any necessary special fixes
     this.spec.postProcessData();
 
-    console.log(`${this.spec.id} (${this.spec.rules.length} rules, ${this.spec.defs.length} defs)`);
+    let notFound = this.html ? "" : " - specification HTML not found";
+
+    console.log(`${this.spec.id} (${this.spec.rules.length} rules, ${this.spec.defs.length} defs) ${notFound}`);
 
   }
 
