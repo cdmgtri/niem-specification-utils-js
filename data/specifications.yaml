@@ -61,31 +61,31 @@
 -
   classID: IEPD
   version: "3.0.1"
-  url: https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html
+  url: https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html
   year: 2015
   applicableReleases: NIEM 3.0 - NIEM 4.2
   changeHistory:
   resources: https://reference.niem.gov/niem/specification/model-package-description/3.0.1/mpd-toolkit-3.0.zip
   examples: https://reference.niem.gov/niem/specification/model-package-description/3.0.1/iepd-examples/
-  status: current
+  status:
 
 -
   classID: IEPD
-  version: "5.0 beta1"
-  url: https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html
-  year: Feb 2021
+  version: "5.0"
+  url: https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html
+  year: 2021
   applicableReleases: NIEM 5.0 - NIEM 5.2
-  changeHistory: https://github.com/NIEM/MPD-Spec/releases/tag/v5.0beta1
+  changeHistory: https://github.com/NIEM/MPD-Spec/releases/tag/v5.0
   resources:
   examples:
-  status: draft
+  status: current
 
 -
   classID: CodeLists
   version: "4.0"
   url: https://reference.niem.gov/niem/specification/code-lists/4.0/niem-code-lists-4.0.html
   year: 2017
-  applicableReleases: NIEM 4.0 - NIEM 4.2
+  applicableReleases: NIEM 4.0 - NIEM 5.2
   changeHistory:
   resources:
   examples: https://github.com/NIEM/NIEM-Releases/blob/niem-4.0/niem/codes/genc/geo-political/3-6/genc_geo-political_3-6_char3.csv
@@ -114,6 +114,17 @@
   status: current
 
 -
+  classID: JSON
+  version: "5.0 beta 1"
+  url: https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html
+  year: 2021
+  applicableReleases: NIEM 5.0 - NIEM 5.2
+  changeHistory: https://github.com/NIEM/NIEM-JSON-Spec/releases/tag/v5.0beta1
+  resources:
+  examples:
+  status: draft
+
+-
   classID: Conformance
   version: "1.0"
   url: https://reference.niem.gov/niem/specification/conformance/1.0/conformance-1.0.pdf
@@ -133,18 +144,18 @@
   changeHistory:
   resources:
   examples:
-  status: current
+  status:
 
 -
   classID: Conformance
-  version: "5.0 beta1"
-  url: https://niem.github.io/NIEM-Conformance-Spec/draft/niem-conformance-spec.html
-  year: Dec 2020
+  version: "5.0"
+  url: https://niem.github.io/NIEM-Conformance-Spec/v5.0/niem-conformance-spec.html
+  year: 2021
   applicableReleases: NIEM 5.0 - NIEM 5.2
-  changeHistory: https://github.com/NIEM/NIEM-Conformance-Spec/releases/tag/v5.0beta1
+  changeHistory: https://github.com/NIEM/NIEM-Conformance-Spec/releases/tag/v5.0
   resources:
   examples:
-  status: draft
+  status: current
 
 -
   classID: HLVA

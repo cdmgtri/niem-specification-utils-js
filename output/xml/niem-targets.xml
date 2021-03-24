@@ -182,9 +182,9 @@
     <classID>IEPD</classID>
     <targetCode>WF-MPD</targetCode>
     <targetName>Model Package Description</targetName>
-    <targetURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_model_package_description</targetURL>
+    <targetURL>https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_model_package_description</targetURL>
     <targetDescription>A set of cohesive XML schema documents and other supporting files that represent one or more reusable or implementable XML information models.</targetDescription>
-    <targetStatus>current</targetStatus>
+    <targetStatus/>
   </target>
   <target>
     <specificationID>MPD-3.0.1</specificationID>
@@ -192,9 +192,9 @@
     <classID>IEPD</classID>
     <targetCode>IEPD</targetCode>
     <targetName>Information Exchange Package Documentation</targetName>
-    <targetURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_information_exchange_package_documentation</targetURL>
+    <targetURL>https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_information_exchange_package_documentation</targetURL>
     <targetDescription>A special kind of MPD that defines the content, structure, and meaning of an information exchange message.</targetDescription>
-    <targetStatus>current</targetStatus>
+    <targetStatus/>
   </target>
   <target>
     <specificationID>MPD-3.0.1</specificationID>
@@ -202,9 +202,9 @@
     <classID>IEPD</classID>
     <targetCode>IEP</targetCode>
     <targetName>Information Exchange Package</targetName>
-    <targetURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_information_exchange_package</targetURL>
+    <targetURL>https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_information_exchange_package</targetURL>
     <targetDescription>An information exchange message, as an XML instance document.</targetDescription>
-    <targetStatus>current</targetStatus>
+    <targetStatus/>
   </target>
   <target>
     <specificationID>MPD-3.0.1</specificationID>
@@ -212,9 +212,9 @@
     <classID>IEPD</classID>
     <targetCode>Schema-subset</targetCode>
     <targetName>Schema Document Subset</targetName>
-    <targetURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_schema_document_subset</targetURL>
+    <targetURL>https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_schema_document_subset</targetURL>
     <targetDescription>A set of schemas, corresponding to a set of full reference schemas, that have been reduced and constrained to include only the files and components needed for an information exchange.</targetDescription>
-    <targetStatus>current</targetStatus>
+    <targetStatus/>
   </target>
   <target>
     <specificationID>MPD-3.0.1</specificationID>
@@ -222,9 +222,9 @@
     <classID>IEPD</classID>
     <targetCode>MPD-catalog</targetCode>
     <targetName>MPD catalog document</targetName>
-    <targetURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_MPD_catalog_document</targetURL>
+    <targetURL>https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_MPD_catalog_document</targetURL>
     <targetDescription>A XML file that contains metadata about the MPD, including descriptive information and an index of the files it contains.</targetDescription>
-    <targetStatus>current</targetStatus>
+    <targetStatus/>
   </target>
   <target>
     <specificationID>MPD-3.0.1</specificationID>
@@ -232,79 +232,79 @@
     <classID>IEPD</classID>
     <targetCode>XML-catalog</targetCode>
     <targetName>XML catalog document</targetName>
-    <targetURL>https://reference.niem.gov/niem/specification/model-package-description/3.0.1/model-package-description-3.0.1.html#definition_XML_catalog_document</targetURL>
+    <targetURL>https://niem.github.io/MPD-Spec/v3.0.1/model-package-description-3.0.1.html#definition_XML_catalog_document</targetURL>
     <targetDescription>A XML file that maps namespaces to file locations.</targetDescription>
-    <targetStatus>current</targetStatus>
+    <targetStatus/>
   </target>
   <target>
-    <specificationID>IEPD-5.0 beta1</specificationID>
-    <specificationSelector>IEPD-5_0beta1</specificationSelector>
+    <specificationID>IEPD-5.0</specificationID>
+    <specificationSelector>IEPD-5_0</specificationSelector>
     <classID>IEPD</classID>
     <targetCode>IEPD</targetCode>
     <targetName>Information Exchange Package Documentation</targetName>
-    <targetURL>https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_information_exchange_package_documentation</targetURL>
+    <targetURL>https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_information_exchange_package_documentation</targetURL>
     <targetDescription>A set of artifacts that define the content, structure, and meaning of an information exchange message.  The schemas contained by the IEPD must conform to the NIEM Naming and Design Rules (NDR).</targetDescription>
-    <targetStatus>draft</targetStatus>
+    <targetStatus>current</targetStatus>
   </target>
   <target>
-    <specificationID>IEPD-5.0 beta1</specificationID>
-    <specificationSelector>IEPD-5_0beta1</specificationSelector>
+    <specificationID>IEPD-5.0</specificationID>
+    <specificationSelector>IEPD-5_0</specificationSelector>
     <classID>IEPD</classID>
     <targetCode>WF-IEPD</targetCode>
     <targetName>Well-formed IEPD</targetName>
-    <targetURL>https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_well-formed_IEPD</targetURL>
+    <targetURL>https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_well-formed_IEPD</targetURL>
     <targetDescription>An IEPD with a less-strict set of requirements.  A well-formed IEPD focuses on the format and structure of the package, includes a valid IEPD catalog with no broken links, and includes and uses other general IEPD artifacts correctly; however, schema conformance to the NIEM Naming and Design Rules (NDR) is not required.</targetDescription>
-    <targetStatus>draft</targetStatus>
+    <targetStatus>current</targetStatus>
   </target>
   <target>
-    <specificationID>IEPD-5.0 beta1</specificationID>
-    <specificationSelector>IEPD-5_0beta1</specificationSelector>
+    <specificationID>IEPD-5.0</specificationID>
+    <specificationSelector>IEPD-5_0</specificationSelector>
     <classID>IEPD</classID>
     <targetCode>IEP</targetCode>
     <targetName>Information Exchange Package</targetName>
-    <targetURL>https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_information_exchange_package</targetURL>
+    <targetURL>https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_information_exchange_package</targetURL>
     <targetDescription>An information exchange message, as an XML instance document.  The use of NIEM-defined elements is not required.</targetDescription>
-    <targetStatus>draft</targetStatus>
+    <targetStatus>current</targetStatus>
   </target>
   <target>
-    <specificationID>IEPD-5.0 beta1</specificationID>
-    <specificationSelector>IEPD-5_0beta1</specificationSelector>
+    <specificationID>IEPD-5.0</specificationID>
+    <specificationSelector>IEPD-5_0</specificationSelector>
     <classID>IEPD</classID>
     <targetCode>FN-IEP</targetCode>
     <targetName>Full NIEM IEP</targetName>
-    <targetURL>https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_full_NIEM_information_exchange_package</targetURL>
+    <targetURL>https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_full_NIEM_information_exchange_package</targetURL>
     <targetDescription>An information exchange message, as an XML instance document.  Ths use of elements defined by NIEM reference or extension schemas is required.</targetDescription>
-    <targetStatus>draft</targetStatus>
+    <targetStatus>current</targetStatus>
   </target>
   <target>
-    <specificationID>IEPD-5.0 beta1</specificationID>
-    <specificationSelector>IEPD-5_0beta1</specificationSelector>
+    <specificationID>IEPD-5.0</specificationID>
+    <specificationSelector>IEPD-5_0</specificationSelector>
     <classID>IEPD</classID>
     <targetCode>Schema-subset</targetCode>
     <targetName>Schema document subset</targetName>
-    <targetURL>https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_schema_document_subset</targetURL>
+    <targetURL>https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_schema_document_subset</targetURL>
     <targetDescription>A set of schemas, corresponding to a set of full reference schemas, that have been reduced and constrained to include only the files and components needed for an information exchange.</targetDescription>
-    <targetStatus>draft</targetStatus>
+    <targetStatus>current</targetStatus>
   </target>
   <target>
-    <specificationID>IEPD-5.0 beta1</specificationID>
-    <specificationSelector>IEPD-5_0beta1</specificationSelector>
+    <specificationID>IEPD-5.0</specificationID>
+    <specificationSelector>IEPD-5_0</specificationSelector>
     <classID>IEPD</classID>
     <targetCode>IEPD-catalog</targetCode>
     <targetName>IEPD catalog document</targetName>
-    <targetURL>https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_IEPD_catalog_document</targetURL>
+    <targetURL>https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_IEPD_catalog_document</targetURL>
     <targetDescription>A XML file that contains metadata about the IEPD, including descriptive information and an index of the files it contains.</targetDescription>
-    <targetStatus>draft</targetStatus>
+    <targetStatus>current</targetStatus>
   </target>
   <target>
-    <specificationID>IEPD-5.0 beta1</specificationID>
-    <specificationSelector>IEPD-5_0beta1</specificationSelector>
+    <specificationID>IEPD-5.0</specificationID>
+    <specificationSelector>IEPD-5_0</specificationSelector>
     <classID>IEPD</classID>
     <targetCode>XML-catalog</targetCode>
     <targetName>XML catalog document</targetName>
-    <targetURL>https://niem.github.io/MPD-Spec/draft/niem-iepd-spec.html#definition_XML_catalog_document</targetURL>
+    <targetURL>https://niem.github.io/MPD-Spec/v5.0/niem-iepd-spec.html#definition_XML_catalog_document</targetURL>
     <targetDescription>A XML file that maps namespaces to file locations.</targetDescription>
-    <targetStatus>draft</targetStatus>
+    <targetStatus>current</targetStatus>
   </target>
   <target>
     <specificationID>CodeLists-4.0</specificationID>
@@ -385,5 +385,25 @@
     <targetURL>https://niem.github.io/NIEM-JSON-Spec/v4.0/niem-json-spec.html#definition_NIEM_JSON_document_laxly_conformant_to_a_schema</targetURL>
     <targetDescription>A NIEM JSON document laxly conformant to a schema is a JSON-LD document that may be interpreted using the RDF vocabulary defined by a conformant schema document set.</targetDescription>
     <targetStatus>current</targetStatus>
+  </target>
+  <target>
+    <specificationID>JSON-5.0 beta 1</specificationID>
+    <specificationSelector>JSON-5_0beta1</specificationSelector>
+    <classID>JSON</classID>
+    <targetCode>STRICT</targetCode>
+    <targetName>NIEM JSON document strictly conformant to a schema</targetName>
+    <targetURL>https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html#definition_NIEM_JSON_document_strictly_conformant_to_a_schema</targetURL>
+    <targetDescription>A NIEM JSON document strictly conformant to a schema is a JSON-LD document that may be assigned a one-to-one correspondence to a conformant instance XML document valid against a conformant schema document set.</targetDescription>
+    <targetStatus>draft</targetStatus>
+  </target>
+  <target>
+    <specificationID>JSON-5.0 beta 1</specificationID>
+    <specificationSelector>JSON-5_0beta1</specificationSelector>
+    <classID>JSON</classID>
+    <targetCode>LAX</targetCode>
+    <targetName>NIEM JSON document laxly conformant to a schema</targetName>
+    <targetURL>https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html#definition_NIEM_JSON_document_laxly_conformant_to_a_schema</targetURL>
+    <targetDescription>A NIEM JSON document laxly conformant to a schema is a JSON-LD document that may be interpreted using the RDF vocabulary defined by a conformant schema document set.</targetDescription>
+    <targetStatus>draft</targetStatus>
   </target>
 </targets>

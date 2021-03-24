@@ -48,7 +48,7 @@ class Specification {
    * @example "NDR-4.0"
    */
   get id() {
-    return this.customID + "-" + this.version;
+    return this.customID + "-" + this.version.replace("release candidate ", "rc");
   }
 
   /**
