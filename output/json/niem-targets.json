@@ -386,8 +386,8 @@
     "targetStatus": "current"
   },
   {
-    "specificationID": "JSON-5.0 beta 1",
-    "specificationSelector": "JSON-5_0beta1",
+    "specificationID": "JSON-5.0 rc1",
+    "specificationSelector": "JSON-5_0rc1",
     "classID": "JSON",
     "targetCode": "STRICT",
     "targetName": "NIEM JSON document strictly conformant to a schema",
@@ -396,8 +396,8 @@
     "targetStatus": "draft"
   },
   {
-    "specificationID": "JSON-5.0 beta 1",
-    "specificationSelector": "JSON-5_0beta1",
+    "specificationID": "JSON-5.0 rc1",
+    "specificationSelector": "JSON-5_0rc1",
     "classID": "JSON",
     "targetCode": "LAX",
     "targetName": "NIEM JSON document laxly conformant to a schema",

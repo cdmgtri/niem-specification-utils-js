@@ -115,11 +115,11 @@
 
 -
   classID: JSON
-  version: "5.0 beta 1"
+  version: "5.0 release candidate 1"
   url: https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html
   year: 2021
   applicableReleases: NIEM 5.0 - NIEM 5.2
-  changeHistory: https://github.com/NIEM/NIEM-JSON-Spec/releases/tag/v5.0beta1
+  changeHistory: https://github.com/NIEM/NIEM-JSON-Spec/releases/tag/v5.0rc1
   resources:
   examples:
   status: draft

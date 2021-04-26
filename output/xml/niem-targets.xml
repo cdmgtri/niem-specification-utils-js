@@ -387,8 +387,8 @@
     <targetStatus>current</targetStatus>
   </target>
   <target>
-    <specificationID>JSON-5.0 beta 1</specificationID>
-    <specificationSelector>JSON-5_0beta1</specificationSelector>
+    <specificationID>JSON-5.0 rc1</specificationID>
+    <specificationSelector>JSON-5_0rc1</specificationSelector>
     <classID>JSON</classID>
     <targetCode>STRICT</targetCode>
     <targetName>NIEM JSON document strictly conformant to a schema</targetName>
@@ -397,8 +397,8 @@
     <targetStatus>draft</targetStatus>
   </target>
   <target>
-    <specificationID>JSON-5.0 beta 1</specificationID>
-    <specificationSelector>JSON-5_0beta1</specificationSelector>
+    <specificationID>JSON-5.0 rc1</specificationID>
+    <specificationSelector>JSON-5_0rc1</specificationSelector>
     <classID>JSON</classID>
     <targetCode>LAX</targetCode>
     <targetName>NIEM JSON document laxly conformant to a schema</targetName>
