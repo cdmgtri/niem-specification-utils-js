@@ -282,34 +282,34 @@
     <specChangeHistory/>
     <specResources/>
     <specExamples/>
-    <specStatus>current</specStatus>
+    <specStatus/>
     <specRuleCount>4</specRuleCount>
     <specDefinitionCount>23</specDefinitionCount>
     <specSelector>JSON-4_0</specSelector>
     <specTargetCount>2</specTargetCount>
   </specification>
   <specification>
-    <id>JSON-5.0 rc1</id>
+    <id>JSON-5.0</id>
     <classID>JSON</classID>
     <className>NIEM JSON Specification</className>
     <classRepo>https://github.com/NIEM/NIEM-JSON-Spec</classRepo>
     <classLandingPage>https://niem.github.io/NIEM-JSON-Spec/</classLandingPage>
     <classIssueTracker>https://github.com/NIEM/NIEM-JSON-Spec/projects/1</classIssueTracker>
     <classDescription>The NIEM JSON Specification establishes the technical basis for using JavaScript Object Notation (JSON) as a data format for exchange of information consistent with NIEM-conformant schemas and information exchange package documentations (IEPDs).</classDescription>
-    <specID>JSON-5.0 rc1</specID>
+    <specID>JSON-5.0</specID>
     <specCustomID>JSON</specCustomID>
     <specName>NIEM JSON Specification</specName>
-    <specVersion>5.0 release candidate 1</specVersion>
-    <specURL>https://niem.github.io/NIEM-JSON-Spec/draft/niem-json-spec.html</specURL>
+    <specVersion>5.0</specVersion>
+    <specURL>https://niem.github.io/NIEM-JSON-Spec/v5.0/niem-json-spec.html</specURL>
     <specYear>2021</specYear>
     <specApplicableReleases>NIEM 5.0 - NIEM 5.2</specApplicableReleases>
-    <specChangeHistory>https://github.com/NIEM/NIEM-JSON-Spec/releases/tag/v5.0rc1</specChangeHistory>
+    <specChangeHistory>https://github.com/NIEM/NIEM-JSON-Spec/releases/tag/v5.0</specChangeHistory>
     <specResources/>
     <specExamples/>
-    <specStatus>draft</specStatus>
+    <specStatus>current</specStatus>
     <specRuleCount>4</specRuleCount>
     <specDefinitionCount>24</specDefinitionCount>
-    <specSelector>JSON-5_0rc1</specSelector>
+    <specSelector>JSON-5_0</specSelector>
     <specTargetCount>2</specTargetCount>
   </specification>
   <specification>
